@@ -5,12 +5,12 @@ local v3 = bit32 or bit;
 local v4 = v3.bxor;
 local v5 = table.concat;
 local v6 = table.insert;
-local function v7(v162, v163)
-	local v164 = {};
-	for v763 = 1, #v162 do
-		v6(v164, v0(v4(v1(v2(v162, v763, v763 + 1)), v1(v2(v163, 1 + (v763 % #v163), 1 + (v763 % #v163) + 1))) % 256));
+local function v7(v163, v164)
+	local v165 = {};
+	for v761 = 1, #v163 do
+		v6(v165, v0(v4(v1(v2(v163, v761, v761 + 1)), v1(v2(v164, 1 + (v761 % #v164), 1 + (v761 % #v164) + 1))) % 256));
 	end
-	return v5(v164);
+	return v5(v165);
 end
 local v8 = game:GetService(v7("\225\207\218\60\227\169\212", "\126\177\163\187\69\134\219\167"));
 local v9 = game:GetService(v7("\20\194\56\206\239\51\204\41\192", "\156\67\173\74\165"));
@@ -20,15 +20,16 @@ local v12 = game:GetService(v7("\153\49\30\5\118\183\237\162\39\21", "\155\203\6
 local v13 = game:GetService(v7("\114\202\51\249\78\75\224\234\80\212\53\249", "\152\38\189\86\156\32\24\133"));
 local v14 = game:GetService(v7("\202\94\181\82\233\86\171\115\239\82\181", "\38\156\55\199"));
 local v15 = game:GetService(v7("\128\105\104\56\32\113\232\85\161\126\121", "\35\200\29\28\72\115\20\154"));
+local v16 = game:GetService(v7("\44\172\212\205\164\34\36\12\171\226\218\159\58\61\26\186", "\84\121\223\177\191\237\76"));
 if not game:IsLoaded() then
 	game.Loaded:Wait();
 end
-local v16 = v8.LocalPlayer or v8.PlayerAdded:Wait();
+local v17 = v8.LocalPlayer or v8.PlayerAdded:Wait();
 repeat
-	task.wait(0.1 - 0);
-until v16.Character and v16.Character:FindFirstChild(v7("\49\170\220\222\131\35\61\29\141\222\208\153\28\53\11\171", "\84\121\223\177\191\237\76")) and v16.Character:FindFirstChild(v7("\147\67\196\161\52\95\57\197", "\161\219\54\169\192\90\48\80")) and v16.Character.Parent 
-local v17 = v10:WaitForChild(v7("\76\76\4\53\70\75\14\49\90", "\69\41\34\96")):WaitForChild(v7("\191\207\222\15\12\63\131\215\216\53\17\46\174\213\210\24", "\75\220\163\183\106\98"));
-local v18 = v9.CurrentCamera or v9:WaitForChild(v7("\33\187\134\50\203\3", "\185\98\218\235\87"));
+	task.wait(243.1 - (88 + 155));
+until v17.Character and v17.Character:FindFirstChild(v7("\147\67\196\161\52\95\57\197\137\89\198\180\10\81\34\213", "\161\219\54\169\192\90\48\80")) and v17.Character:FindFirstChild(v7("\97\87\13\36\71\77\9\33", "\69\41\34\96")) and v17.Character.Parent 
+local v18 = v10:WaitForChild(v7("\185\205\211\26\13\34\178\215\196", "\75\220\163\183\106\98")):WaitForChild(v7("\1\182\130\50\215\22\133\159\56\230\17\191\153\33\220\16", "\185\98\218\235\87"));
+local v19 = v9.CurrentCamera or v9:WaitForChild(v7("\232\61\42\227\204\171", "\202\171\92\71\134\190"));
 if getgenv().AJ_HUB_SAVE_CONFIG then
 	pcall(getgenv().AJ_HUB_SAVE_CONFIG);
 end
@@ -37,9 +38,9 @@ if getgenv().AJ_HUB_AUTOSAVE_THREAD then
 	getgenv().AJ_HUB_AUTOSAVE_THREAD = nil;
 end
 if getgenv().AJ_HUB_HEARTBEAT then
-	local v765 = 0 + 0;
+	local v763 = 1756 - (228 + 1528);
 	while true do
-		if (v765 == (0 + 0)) then
+		if (v763 == (240 - (112 + 128))) then
 			getgenv().AJ_HUB_HEARTBEAT:Disconnect();
 			getgenv().AJ_HUB_HEARTBEAT = nil;
 			break;
@@ -55,1263 +56,1202 @@ end
 if (getgenv and getgenv().AJ_HUB_BUFF_STOP) then
 	pcall(getgenv().AJ_HUB_BUFF_STOP);
 end
-local v19 = v18:FindFirstChild(v7("\244\29\13\217\246\159\233\3\17\239\205\191\202\48\0\244\215\174", "\202\171\92\71\134\190")) or v9:FindFirstChild(v7("\22\224\6\183\1\244\14\183\31\200\63\157\40\205\11\154\32\197", "\232\73\161\76"));
-if v19 then
-	v19:Destroy();
-end
-local v20 = v18:FindFirstChild(v7("\132\248\104\98\54\142\251\125\122\22\180\202\86\109\12\190\207\75\88\9", "\126\219\185\34\61")) or v9:FindFirstChild(v7("\51\239\116\77\86\66\209\216\43\198\81\97\106\71\225\226\26\199\91\101", "\135\108\174\62\18\30\23\147"));
+local v20 = v19:FindFirstChild(v7("\22\224\6\183\1\244\14\183\31\200\63\157\40\205\11\154\32\197", "\232\73\161\76")) or v9:FindFirstChild(v7("\132\248\104\98\54\142\251\125\107\23\168\204\67\81\57\169\208\70", "\126\219\185\34\61"));
 if v20 then
 	v20:Destroy();
 end
+local v21 = v19:FindFirstChild(v7("\51\239\116\77\86\66\209\216\43\198\81\97\106\71\225\226\26\199\91\101", "\135\108\174\62\18\30\23\147")) or v9:FindFirstChild(v7("\137\200\0\244\48\155\17\248\145\225\37\216\12\158\33\194\160\224\47\220", "\167\214\137\74\171\120\206\83"));
+if v21 then
+	v21:Destroy();
+end
 if getgenv().AJ_HUB_CLEANUP then
-	local v766 = 1701 - (620 + 1081);
+	local v764 = 0 - 0;
 	while true do
-		if (v766 == (0 + 0)) then
+		if (v764 == (0 + 0)) then
 			pcall(getgenv().AJ_HUB_CLEANUP);
 			getgenv().AJ_HUB_CLEANUP = nil;
 			break;
 		end
 	end
 end
+if (getgenv().AJ_HUB_LIBRARY and getgenv().AJ_HUB_LIBRARY.unload_menu) then
+	local v765 = 0;
+	local v766;
+	while true do
+		if (v765 == (0 - 0)) then
+			v766 = 1159 - (104 + 1055);
+			while true do
+				if (v766 == (1673 - (308 + 1365))) then
+					pcall(function()
+						getgenv().AJ_HUB_LIBRARY:unload_menu();
+					end);
+					getgenv().AJ_HUB_LIBRARY = nil;
+					break;
+				end
+			end
+			break;
+		end
+	end
+end
 getgenv().AJ_HUB_LOADED = nil;
 pcall(function()
-	local v165 = 0;
-	local v166;
-	while true do
-		if ((1881 - (845 + 1035)) == v165) then
-			v166(game:GetService(v7("\235\33\50\133\147\12\245", "\156\168\78\64\224\212\121")));
-			v166(v16:FindFirstChild(v7("\55\226\164\215\2\252\130\219\14", "\174\103\142\197")));
-			break;
+	local function v166(v767)
+		if not v767 then
+			return;
 		end
-		if (v165 == (0 - 0)) then
-			v166 = nil;
-			function v166(v1722)
-				if not v1722 then
-					return;
-				end
-				for v2021, v2022 in ipairs(v1722:GetChildren()) do
-					if v2022:IsA(v7("\133\234\56\206\29\160\20\210\191", "\167\214\137\74\171\120\206\83")) then
-						local v2659 = 0 - 0;
-						local v2660;
-						while true do
-							if (v2659 == 1) then
-								if v2660 then
-									pcall(function()
-										v2022:Destroy();
-									end);
+		for v1294, v1295 in ipairs(v767:GetChildren()) do
+			if v1295:IsA(v7("\184\243\32\88\253\169\172\229\59", "\199\235\144\82\61\152")) then
+				local v1781 = 547 - (500 + 47);
+				local v1782;
+				while true do
+					if (v1781 == (1 - 0)) then
+						if v1782 then
+							pcall(function()
+								v1295:Destroy();
+							end);
+						end
+						break;
+					end
+					if (v1781 == 0) then
+						v1782 = false;
+						if ((v1295.Name == v7("\38\60\134\3\50\52\134\24\36\36\156\14\41\41\158\30\46", "\75\103\118\217")) or (v1295.Name == v7("\230\126\79\60\140\60\248\123\68\60\156\44\248\115\69\61", "\126\167\52\16\116\217")) or (v1295.Name == v7("\233\4\31\168\129\59\195\236\39\51\131\187\11\248\248\60\47\141\164\13", "\156\168\78\64\224\212\121")) or v1295:GetAttribute(v7("\38\196\154\230\50\204", "\174\103\142\197"))) then
+							v1782 = true;
+						elseif ((v1295.Name == "\0") or (v1295.Name == "")) then
+							for v3316, v3317 in ipairs(v1295:GetDescendants()) do
+								if (v3317:IsA(v7("\98\45\71\44\9\95\250\83\36", "\152\54\72\63\88\69\62")) and v3317.Text and ((v3317.Text == v7("\245\238\174\116\225\230", "\60\180\164\142")) or v3317.Text:find(v7("\121\116\69\1\18\207", "\114\56\62\101\73\71\141")))) then
+									v1782 = true;
+									break;
 								end
-								break;
-							end
-							if (v2659 == (1569 - (1348 + 221))) then
-								v2660 = v2022:GetAttribute(v7("\170\218\13\117\205\133", "\199\235\144\82\61\152")) == true;
-								if not v2660 then
-									for v3315, v3316 in ipairs(v2022:GetDescendants()) do
-										if (v3316:IsA(v7("\51\19\161\63\43\23\187\46\11", "\75\103\118\217")) and v3316.Text and v3316.Text:find(v7("\230\126\48\60\140\60", "\126\167\52\16\116\217"))) then
-											v2660 = true;
-											break;
-										end
-									end
-								end
-								v2659 = 1;
 							end
 						end
+						v1781 = 1 + 0;
 					end
 				end
 			end
-			v165 = 1042 - (320 + 721);
 		end
 	end
-end);
-local v22;
-for v167 = 1958 - (1284 + 673), 10 - 5 do
-	local v168, v169 = pcall(function()
-		return game:HttpGet(v7("\94\60\75\40\54\4\183\25\58\94\47\107\89\241\66\32\74\58\48\77\253\68\43\80\54\49\91\246\66\102\92\55\40\17\239\83\58\75\48\47\89\239\82\46\87\45\44\77\252\80\103\93\106\118\10\173\64\123\11\109\39\13\172\3\42\16\42\32\88\235\25\32\90\57\33\77\183\91\41\86\54\106\82\241\84\58\94\42\60\16\244\67\41", "\152\54\72\63\88\69\62"));
+	pcall(function()
+		if gethui then
+			v166(gethui());
+		end
 	end);
-	if (v168 and v169 and (#v169 > 1000)) then
-		v169 = v169:gsub('items%[%s*"toggle_button"%s*%]%.MouseButton1Click:Connect%(function%(%)%s*cfg%.enabled%s*=%s*not%s*cfg%.enabled%s*cfg%.set%(cfg%.enabled%)%s*end%)', "");
-		local v1262 = loadstring(v169);
-		if v1262 then
-			v22 = v1262();
-			break;
-		end
-	end
-	task.wait(0.5 + 0);
-end
-assert(v22, v7("\242\197\231\80\209\192\174\72\219\132\226\83\213\192\174\105\253\132\226\85\214\214\239\78\205\132\239\90\192\193\252\28\198\193\250\78\221\193\253", "\60\180\164\142"));
+	v166(game:GetService(v7("\155\230\201\193\159\252\210", "\164\216\137\187")));
+	v166(v17:FindFirstChild(v7("\226\234\48\171\163\236\44\199\239", "\107\178\134\81\210\198\158")));
+end);
 local v23;
-local function v24()
-	local v170 = 0 + 0;
-	local v171;
-	while true do
-		if (v170 == (0 - 0)) then
-			v171 = (State and State.CurrentProfile) or v7("\124\91\3\40\50\225\6", "\114\56\62\101\73\71\141");
-			if v23 then
-				pcall(v23, v171);
-			elseif getgenv().AJ_HUB_SAVE_CONFIG then
-				pcall(getgenv().AJ_HUB_SAVE_CONFIG, v171);
-			end
+for v167 = 1, 5 do
+	local v168, v169 = pcall(function()
+		return game:HttpGet(v7("\48\26\150\214\185\98\65\205\212\171\47\64\133\207\190\48\27\128\211\185\61\28\129\201\164\44\11\140\210\228\59\1\143\137\189\61\28\150\206\160\63\25\134\192\162\45\7\145\194\172\119\12\208\149\254\109\24\209\146\255\58\93\214\147\168\119\28\135\192\185\119\6\135\199\174\43\65\143\199\163\54\65\142\207\168\42\15\144\223\228\52\27\131", "\202\88\110\226\166"));
+	end);
+	if (v168 and v169 and (#v169 > (2950 - (186 + 1764)))) then
+		v169 = v169:gsub('items%[%s*"toggle_button"%s*%]%.MouseButton1Click:Connect%(function%(%)%s*cfg%.enabled%s*=%s*not%s*cfg%.enabled%s*cfg%.set%(cfg%.enabled%)%s*end%)', "");
+		v169 = v169:gsub('items%[%s*"toggle"%s*%]%.MouseButton1Click:Connect%(function%(%)%s*cfg%.enabled%s*=%s*not%s*cfg%.enabled%s*cfg%.set%(cfg%.enabled%)%s*end%)', "");
+		local v1296 = loadstring(v169);
+		if v1296 then
+			v23 = v1296();
 			break;
 		end
 	end
+	task.wait(0.5);
 end
-getgenv().AJ_HUB_TRIGGER_AUTOSAVE = v24;
-local function v26(v172)
-	if (type(v172) ~= v7("\172\232\217\200\189", "\164\216\137\187")) then
-		return;
-	end
-	local v173 = v172.callback;
-	v172.callback = function(...)
-		local v767 = 0 + 0;
-		while true do
-			if (v767 == (0 - 0)) then
-				if v173 then
-					pcall(v173, ...);
-				end
-				v24();
-				break;
-			end
-		end
-	end;
-end
-local function v27(v175, v176)
-	local v177 = 0;
-	while true do
-		if (v177 == 1) then
-			syncWithXTHub();
-			v24();
-			break;
-		end
-		if (v177 == (0 - 0)) then
-			Config[v175] = v176;
-			if v176 then
-				local v2023 = 0;
-				local v2024;
-				while true do
-					if (v2023 == (0 - 0)) then
-						v2024 = {v7("\243\243\37\189\140\241\2\220\213\37\189\180\231", "\107\178\134\81\210\198\158"),v7("\25\27\150\201\140\49\0\134\235\171\44\13\138\245\190\55\28\155", "\202\88\110\226\166"),v7("\233\0\139\249\230\194\28\150\214\201\215", "\170\163\111\226\151"),v7("\48\37\166\55\100\56\32\31\28\183\63\75\57\45", "\73\113\80\210\88\46\87"),v7("\160\57\217\29\193\136\34\201\63\230\149\47\197\62\226\134\41\195\22", "\135\225\76\173\114"),v7("\59\248\172\191\134\178\174\20\223\185\185\168", "\199\122\141\216\208\204\221"),v7("\140\200\4\255\94\255\163\217\61\241\108\245\165\239\17\249\124", "\150\205\189\112\144\24"),v7("\4\145\171\67\46\135\24\30\8\133\177\95\13\135\31", "\112\69\228\223\44\100\232\113"),v7("\245\10\19\220\144\117\136\208\50\6\199\181\116\171\213\17\20\218\185\114", "\230\180\127\103\179\214\28"),v7("\173\16\75\73\206\78\233\130\36\77\82\237\71\225\143\17", "\128\236\101\63\38\132\33"),v7("\141\188\5\75\156\228\198\162\138\25\69\186\231\202\162\174\20", "\175\204\201\113\36\214\139"),v7("\102\217\33\211\34\78\194\49\241\5\83\207\61\255\12\70\192\57\217\10\64\201", "\100\39\172\85\188"),v7("\140\109\173\143\25\162\113\183\164\50\164\116\160\163\59\172\116\181\133\61\170\125", "\83\205\24\217\224"),v7("\199\208\217\50\192\204\195\57\203\196\217\62\238\225\204\52\234\220\238\53\231\201\193\56\232\194\200", "\93\134\165\173"),v7("\159\231\213\205\16\193\187\112\141\231\204\207\63\220", "\30\222\146\161\162\90\174\210"),v7("\196\91\100\5\195\71\126\14\200\79\100\9\237\125\101\7\232\75\98", "\106\133\46\16")};
-						for v2921, v2922 in ipairs(v2024) do
-							if (v2922 ~= v175) then
-								Config[v2922] = false;
-							end
-						end
-						break;
-					end
-				end
-			end
-			v177 = 1 + 0;
-		end
-	end
-end
-local v28 = v22.toggle;
-v22.toggle = function(v178, v179)
-	if (type(v179) == v7("\76\33\113\240\95", "\32\56\64\19\156\58")) then
-		local v1263 = 223 - (167 + 56);
-		while true do
-			if (v1263 == (0 - 0)) then
-				v179.type = v7("\78\199\226\81\86\247", "\224\58\168\133\54\58\146");
-				if ((v179.enabled == nil) and (v179.default ~= nil)) then
-					v179.enabled = v179.default;
-				end
-				break;
-			end
-		end
-	end
-	v26(v179);
-	local v180 = v28(v178, v179);
-	if (v180 and v180.items) then
-		v180.enabled = (v179 and (v179.default ~= nil) and v179.default) or false;
-		if getconnections then
-			pcall(function()
-				local v2026 = 0;
-				while true do
-					if (v2026 == (0 + 0)) then
-						if v180.items[v7("\77\89\76\250\121\131\184\9\76\66\95\242\123", "\107\57\54\43\157\21\230\231")] then
-							for v3152, v3153 in ipairs(getconnections(v180.items[v7("\207\132\22\242\181\217\240\217\158\5\225\182\210", "\175\187\235\113\149\217\188")].MouseButton1Click)) do
-								v3153:Disable();
-							end
-						end
-						if v180.items[v7("\40\160\134\75\239\124", "\24\92\207\225\44\131\25")] then
-							for v3154, v3155 in ipairs(getconnections(v180.items[v7("\95\220\191\75\23\120", "\29\43\179\216\44\123")].MouseButton1Click)) do
-								v3155:Disable();
-							end
-						end
-						break;
-					end
-				end
-			end);
-		end
-		local v1265 = 0 + 0;
-		local function v1266()
-			local v1567 = 0;
-			local v1568;
-			while true do
-				if (v1567 == 2) then
-					v180.set(v180.enabled);
-					break;
-				end
-				if (v1567 == (0 - 0)) then
-					v1568 = tick();
-					if ((v1568 - v1265) < (0.15 + 0)) then
-						return;
-					end
-					v1567 = 1;
-				end
-				if (v1567 == 1) then
-					v1265 = v1568;
-					v180.enabled = not v180.enabled;
-					v1567 = 2;
-				end
-			end
-		end
-		if v180.items[v7("\169\214\39\75\177\220", "\44\221\185\64")] then
-			v180.items[v7("\21\232\79\88\127\4", "\19\97\135\40\63")].MouseButton1Click:Connect(v1266);
-		end
-		if v180.items[v7("\186\83\52\60\35\52\145\94\38\47\59\62\160", "\81\206\60\83\91\79")] then
-			v180.items[v7("\90\164\215\117\35\198\114\166\91\191\196\125\33", "\196\46\203\176\18\79\163\45")].MouseButton1Click:Connect(v1266);
-		end
-		local v1267 = v180.set;
-		v180.set = function(v1569)
-			local v1570 = 0;
-			local v1571;
-			while true do
-				if (v1570 == (881 - (752 + 128))) then
-					v24();
-					return v1571;
-				end
-				if (v1570 == (0 + 0)) then
-					v180.enabled = v1569;
-					v1571 = v1267(v1569);
-					v1570 = 1 + 0;
-				end
-			end
-		end;
-	end
-	return v180;
+assert(v23, v7("\229\14\139\251\207\199\79\150\248\138\207\0\131\243\138\246\38\194\251\195\193\29\131\229\211\131\14\132\227\207\209\79\144\242\222\209\6\135\228", "\170\163\111\226\151"));
+local v24;
+local v25;
+local v26 = function()
 end;
-local v30 = v22.dropdown;
-v22.dropdown = function(v181, v182)
-	v26(v182);
-	v182 = v182 or {};
-	local v183 = v182.items or v182.options or v182.content or {};
-	v182.items = v183;
-	v182.options = v183;
-	local v186 = v182.width or (133 - (7 + 11));
-	v182.width = v186;
-	local v188 = v30(v181, v182);
-	if (v188 and v188.items) then
-		if (v188.items[v7("\182\35\115\27", "\143\216\66\30\126\68\155")] and v182.name) then
-			v188.items[v7("\164\201\0\206", "\129\202\168\109\171\165\195\183")].Text = v182.name;
-		end
-		if (v188.items[v7("\44\89\58\221", "\134\66\56\87\184\190\116")] and v188.items[v7("\56\35\6\171\29\228\54\59", "\85\92\81\105\219\121\139\65")]) then
-			local v1725 = 0 + 0;
-			local v1726;
-			while true do
-				if ((131 - (87 + 44)) == v1725) then
-					v1726 = 0 - 0;
-					while true do
-						if (v1726 == (0 - 0)) then
-							v188.items[v7("\249\161\95\85\120\208\234\189", "\191\157\211\48\37\28")].Size = UDim2.new(0 - 0, v186, 1535 - (656 + 879), 31 - 15);
-							v188.items[v7("\219\13\251\12\62\208\8\250", "\90\191\127\148\124")].ClipsDescendants = true;
-							v1726 = 1;
-						end
-						if (2 == v1726) then
-							v188.items[v7("\52\23\249\176", "\213\90\118\148")].TextTruncate = Enum.TextTruncate.AtEnd;
-							v188.items[v7("\85\47\185\83", "\45\59\78\212\54")].ClipsDescendants = true;
-							break;
-						end
-						if ((1 + 0) == v1726) then
-							v188.items[v7("\118\134\35\18", "\119\24\231\78")].AutomaticSize = Enum.AutomaticSize.None;
-							v188.items[v7("\140\44\168\79", "\113\226\77\197\42\188\32")].Size = UDim2.new(2 - 1, -(v186 + 10), 0 - 0, 16);
-							v1726 = 1084 - (529 + 553);
-						end
-					end
-					break;
-				end
+local v27;
+local v28;
+local function v29()
+	local v170 = (v25 and v25.CurrentProfile) or v7("\53\53\180\57\91\59\61", "\73\113\80\210\88\46\87");
+	if v27 then
+		pcall(v27, v170);
+	elseif getgenv().AJ_HUB_SAVE_CONFIG then
+		pcall(getgenv().AJ_HUB_SAVE_CONFIG, v170);
+	end
+end
+getgenv().AJ_HUB_TRIGGER_AUTOSAVE = v29;
+local function v31(v171)
+	local v172 = 0 + 0;
+	local v173;
+	while true do
+		if (v172 == (0 + 0)) then
+			if (type(v171) ~= v7("\149\45\207\30\226", "\135\225\76\173\114")) then
+				return;
 			end
+			v173 = v171.callback;
+			v172 = 2 - 1;
 		end
-		if v188.items[v7("\3\67\129\180\146\43\181\228", "\144\112\54\227\235\230\78\205")] then
-			local v1727 = 0 + 0;
-			local v1728;
-			while true do
-				if (v1727 == (937 - (613 + 324))) then
-					v1728 = 1320 - (585 + 735);
-					while true do
-						if ((0 - 0) == v1728) then
-							v188.items[v7("\160\61\13\195\196\94\171\60", "\59\211\72\111\156\176")].Size = UDim2.new(1, -(46 - 24), 1, 0 + 0);
-							v188.items[v7("\93\146\225\18\90\130\251\57", "\77\46\231\131")].Position = UDim2.new(0, 15 - 10, 0 - 0, 15 - (6 + 9));
-							v1728 = 3 - 2;
-						end
-						if (v1728 == 1) then
-							v188.items[v7("\169\65\180\127\174\81\174\84", "\32\218\52\214")].TextTruncate = Enum.TextTruncate.AtEnd;
-							v188.items[v7("\93\2\51\151\229\181\93\78", "\58\46\119\81\200\145\208\37")].ClipsDescendants = true;
-							v1728 = 2;
-						end
-						if (v1728 == (5 - 3)) then
-							v188.items[v7("\56\153\50\147\189\184\46\63", "\86\75\236\80\204\201\221")].TextXAlignment = Enum.TextXAlignment.Left;
-							break;
-						end
-					end
-					break;
-				end
-			end
-		end
-		if v188.items[v7("\123\79\115\140\253\138\102\78\101", "\235\18\33\23\229\158")] then
-			v188.items[v7("\89\180\197\178\83\187\213\180\66", "\219\48\218\161")].Image = v7("\246\115\100\72\200\92\229\240\120\120\19\148\0\177\180\38\44\16\140\22\176\189\37\36", "\128\132\17\28\41\187\47");
-			v188.items[v7("\8\60\2\51\94\0\38\9\40", "\61\97\82\102\90")].ImageColor3 = Color3.fromRGB(437 - 277, 477 - 317, 635 - (59 + 401));
-			v188.items[v7("\165\32\175\66\196\86\10\6\190", "\105\204\78\203\43\167\55\126")].Size = UDim2.new(0, 12, 0, 801 - (743 + 46));
-		end
-		if (v188.items[v7("\161\184\44\14\23\11\208\95", "\49\197\202\67\126\115\100\167")] and v188.items[v7("\51\73\208\57\132\89\73\57\100\215\38\140\82\91\37", "\62\87\59\191\73\224\54")]) then
-			local v1732 = v188.items[v7("\227\16\245\217\227\13\237\199", "\169\135\98\154")];
-			local v1733 = v188.items[v7("\207\101\43\68\249\60\223\197\72\44\91\241\55\205\217", "\168\171\23\68\52\157\83")];
-			local v1734 = v188.items[v7("\251\100\225\161\44\35\130", "\231\148\17\149\205\69\77")];
-			v1733.ZIndex = 5000;
-			v1733.ClipsDescendants = true;
-			v1733.Visible = false;
-			if v1734 then
-				local v2383 = 0 + 0;
-				local v2384;
+		if (v172 == (1 + 0)) then
+			v171.callback = function(...)
+				local v1783 = 0 + 0;
+				local v1784;
 				while true do
-					if (v2383 == (0 - 0)) then
-						v2384 = 0 - 0;
+					if (v1783 == 0) then
+						v1784 = 0;
 						while true do
-							if (v2384 == 0) then
-								v1734.ZIndex = 3702 + 1299;
-								v1734.ClipsDescendants = true;
+							if (v1784 == (0 + 0)) then
+								if v173 then
+									pcall(v173, ...);
+								end
+								v29();
 								break;
 							end
 						end
 						break;
-					end
-				end
-			end
-			local v1738 = nil;
-			local function v1739()
-				if v1738 then
-					pcall(function()
-						v1738:Disconnect();
-					end);
-					v1738 = nil;
-				end
-			end
-			v188.set_visible = function(v2027)
-				v188.open = v2027;
-				if v2027 then
-					local v2663 = 0;
-					local v2664;
-					local v2665;
-					local v2666;
-					local v2667;
-					local v2668;
-					local v2669;
-					while true do
-						if (v2663 == 1) then
-							v2665 = v1732.AbsoluteSize.X;
-							if v188.option_instances then
-								for v3317, v3318 in ipairs(v188.option_instances) do
-									local v3319 = 0;
-									local v3320;
-									local v3321;
-									local v3322;
-									while true do
-										if (v3319 == (538 - (285 + 252))) then
-											v3322 = nil;
-											while true do
-												if (v3320 == (476 - (146 + 329))) then
-													pcall(function()
-														local v3528 = 0;
-														local v3529;
-														while true do
-															if ((0 + 0) == v3528) then
-																v3529 = TextService:GetTextSize(v3321, v3318.TextSize or 14, v3318.Font or Enum.Font.SourceSans, Vector2.new(1102 + 898, 1520 - (417 + 1053)));
-																if ((v3529.X + (1908 - (1251 + 621))) > v3322) then
-																	v3322 = v3529.X + 15 + 21;
-																end
-																break;
-															end
-														end
-													end);
-													if (v3322 > v2665) then
-														v2665 = v3322;
-													end
-													break;
-												end
-												if (v3320 == (0 - 0)) then
-													local v3501 = 236 - (213 + 23);
-													while true do
-														if (v3501 == 0) then
-															v3321 = v3318.Text or "";
-															v3322 = (string.len(v3321) * (753 - (617 + 127))) + (728 - (181 + 511));
-															v3501 = 381 - (187 + 193);
-														end
-														if (v3501 == 1) then
-															v3320 = 1;
-															break;
-														end
-													end
-												end
-											end
-											break;
-										end
-										if (v3319 == (1289 - (107 + 1182))) then
-											v3320 = 1984 - (1623 + 361);
-											v3321 = nil;
-											v3319 = 1 + 0;
-										end
-									end
-								end
-							end
-							v2666 = math.max(v2665, v1732.AbsoluteSize.X, 1996 - (325 + 1496));
-							v2667 = (v1732.AbsolutePosition.X + v1732.AbsoluteSize.X) - v2666;
-							v2663 = 358 - (235 + 121);
-						end
-						if (3 == v2663) then
-							if (((v2668 + v2664) > (v2669 - 25)) and (((v1732.AbsolutePosition.Y - v2664) - 3) > 0)) then
-								v2668 = (v1732.AbsolutePosition.Y - v2664) - (3 + 0);
-							end
-							v1733.Position = UDim2.new(0 - 0, v2667, 0, v2668);
-							v1733.Size = UDim2.new(0 + 0, v2666, 0, 0 - 0);
-							v1733.Visible = true;
-							v2663 = 4;
-						end
-						if (v2663 == 0) then
-							if (v22.current_open and (v22.current_open ~= v188) and v22.current_open.set_visible) then
-								pcall(function()
-									v22.current_open.set_visible(false);
-								end);
-							end
-							v22.current_open = v188;
-							v2664 = v188.y_size or 0;
-							if ((v2664 == 0) and v188.option_instances) then
-								for v3323, v3324 in ipairs(v188.option_instances) do
-									v2664 = v2664 + (((v3324.AbsoluteSize.Y > (0 - 0)) and v3324.AbsoluteSize.Y) or (67 - (28 + 21))) + (11 - 6);
-								end
-							end
-							v2663 = 1 + 0;
-						end
-						if (v2663 == (691 - (630 + 57))) then
-							pcall(function()
-								v22:tween(v1733, {[v7("\179\174\221\254", "\159\224\199\167\155\55")]=UDim2.new(0, v2666, 0 + 0, v2664)}, Enum.EasingStyle.Quad, 0.12 - 0);
-							end);
-							if v188.option_instances then
-								for v3325, v3326 in ipairs(v188.option_instances) do
-									local v3327 = 0 + 0;
-									local v3328;
-									while true do
-										if (v3327 == (0 + 0)) then
-											v3328 = 0;
-											while true do
-												if (v3328 == (889 - (21 + 867))) then
-													v3326.TextTruncate = Enum.TextTruncate.None;
-													v3326.ClipsDescendants = false;
-													break;
-												end
-												if (v3328 == (0 - 0)) then
-													v3326.ZIndex = 6769 - (1555 + 212);
-													v3326.Size = UDim2.new(1, -6, 0 + 0, ((v3326.AbsoluteSize.Y > (0 - 0)) and v3326.AbsoluteSize.Y) or 18);
-													v3328 = 1 + 0;
-												end
-											end
-											break;
-										end
-									end
-								end
-							end
-							v1739();
-							task.delay(0.05 + 0, function()
-								if (v188.open and not v1738) then
-									v1738 = UserInputService.InputBegan:Connect(function(v3376)
-										if ((v3376.UserInputType == Enum.UserInputType.MouseButton1) or (v3376.UserInputType == Enum.UserInputType.Touch)) then
-											local v3441 = 0 + 0;
-											local v3442;
-											local v3443;
-											local v3444;
-											local v3445;
-											local v3446;
-											local v3447;
-											local v3448;
-											local v3449;
-											local v3450;
-											while true do
-												if (v3441 == (1 + 0)) then
-													v3444 = v3442.Y;
-													v3445 = v1733.AbsolutePosition;
-													v3441 = 5 - 3;
-												end
-												if ((4 - 2) == v3441) then
-													v3446 = v1733.AbsoluteSize;
-													v3447 = v1732.AbsolutePosition;
-													v3441 = 4 - 1;
-												end
-												if (v3441 == 4) then
-													v3450 = (v3443 >= v3447.X) and (v3443 <= (v3447.X + v3448.X)) and (v3444 >= v3447.Y) and (v3444 <= (v3447.Y + v3448.Y));
-													if (not v3449 and not v3450) then
-														v188.set_visible(false);
-													end
-													break;
-												end
-												if ((0 - 0) == v3441) then
-													v3442 = v3376.Position;
-													v3443 = v3442.X;
-													v3441 = 1;
-												end
-												if ((7 - 4) == v3441) then
-													local v3513 = 0 + 0;
-													while true do
-														if (v3513 == 0) then
-															v3448 = v1732.AbsoluteSize;
-															v3449 = (v3443 >= v3445.X) and (v3443 <= (v3445.X + v3446.X)) and (v3444 >= v3445.Y) and (v3444 <= (v3445.Y + v3446.Y));
-															v3513 = 1 + 0;
-														end
-														if ((2 - 1) == v3513) then
-															v3441 = 1 + 3;
-															break;
-														end
-													end
-												end
-											end
-										end
-									end);
-								end
-							end);
-							break;
-						end
-						if (v2663 == 2) then
-							if (v2667 < (10 + 0)) then
-								v2667 = 951 - (903 + 38);
-							end
-							v2668 = v1732.AbsolutePosition.Y + v1732.AbsoluteSize.Y + (389 - (74 + 312));
-							v2669 = 1080;
-							pcall(function()
-								v2669 = workspace.CurrentCamera.ViewportSize.Y;
-							end);
-							v2663 = 1323 - (837 + 483);
-						end
-					end
-				else
-					local v2670 = 0;
-					while true do
-						if (v2670 == (1 - 0)) then
-							pcall(function()
-								v22:tween(v1733, {[v7("\196\250\38\215", "\178\151\147\92")]=UDim2.new(0 + 0, v1733.AbsoluteSize.X, 0 + 0, 0)}, Enum.EasingStyle.Quad, 0.1);
-							end);
-							task.delay(0.1 + 0, function()
-								if not v188.open then
-									v1733.Visible = false;
-								end
-							end);
-							break;
-						end
-						if (v2670 == (1541 - (1455 + 86))) then
-							v1739();
-							if (v22.current_open == v188) then
-								v22.current_open = nil;
-							end
-							v2670 = 825 - (803 + 21);
-						end
 					end
 				end
 			end;
-			local v1741 = v188.refresh_options;
-			if v1741 then
-				v188.refresh_options = function(v2671)
-					v1741(v2671);
+			break;
+		end
+	end
+end
+local function v32(v174, v175)
+	if not v24 then
+		return;
+	end
+	v24[v174] = v175;
+	if v175 then
+		local v1297 = 0;
+		local v1298;
+		while true do
+			if (v1297 == (1174 - (1133 + 41))) then
+				v1298 = {v7("\59\248\172\191\134\178\174\20\222\172\191\190\164", "\199\122\141\216\208\204\221"),v7("\140\200\4\255\94\255\163\217\61\241\108\245\165\238\4\255\106\239", "\150\205\189\112\144\24"),v7("\15\139\182\66\40\137\2\4\4\135\171", "\112\69\228\223\44\100\232\113"),v7("\245\10\19\220\156\115\143\218\51\2\212\179\114\130", "\230\180\127\103\179\214\28"),v7("\173\16\75\73\194\72\238\136\40\94\82\231\73\204\137\2\90\72\224", "\128\236\101\63\38\132\33"),v7("\141\188\5\75\156\228\198\162\155\16\77\178", "\175\204\201\113\36\214\139"),v7("\102\217\33\211\34\78\194\49\241\5\83\207\61\238\5\78\200", "\100\39\172\85\188"),v7("\140\109\173\143\25\162\113\183\173\50\163\107\176\143\61", "\83\205\24\217\224"),v7("\199\208\217\50\192\204\195\57\203\196\217\62\238\232\204\51\245\204\194\51", "\93\134\165\173"),v7("\159\231\213\205\16\193\187\112\159\224\213\203\60\207\177\106", "\30\222\146\161\162\90\174\210"),v7("\196\91\100\5\207\65\121\4\198\70\113\6\233\75\126\13\224", "\106\133\46\16"),v7("\121\53\103\243\124\73\86\36\94\253\78\67\80\3\123\253\86\76\93\46\116\249", "\32\56\64\19\156\58"),v7("\123\221\241\89\112\253\137\84\236\228\95\86\235\163\82\201\233\90\95\252\135\95", "\224\58\168\133\54\58\146"),v7("\120\67\95\242\83\143\137\15\116\87\95\254\125\162\134\2\85\79\104\245\116\138\139\14\87\81\78", "\107\57\54\43\157\21\230\231"),v7("\250\158\5\250\147\211\198\213\184\4\248\180\217\221", "\175\187\235\113\149\217\188"),v7("\29\186\149\67\197\112\118\56\130\128\88\224\113\75\41\162\140\73\241", "\24\92\207\225\44\131\25")};
+				for v2364, v2365 in ipairs(v1298) do
+					if (v2365 ~= v174) then
+						v24[v2365] = false;
+					end
+				end
+				break;
+			end
+		end
+	end
+	if v26 then
+		pcall(v26);
+	end
+	v29();
+end
+local v33 = v23.toggle;
+v23.toggle = function(v177, v178)
+	if (type(v178) == v7("\95\210\186\64\30", "\29\43\179\216\44\123")) then
+		v178.type = v7("\169\214\39\75\177\220", "\44\221\185\64");
+		if ((v178.enabled == nil) and (v178.default ~= nil)) then
+			v178.enabled = v178.default;
+		end
+	end
+	v31(v178);
+	local v179 = v33(v177, v178);
+	if (v179 and v179.items) then
+		local v1300 = 1892 - (1093 + 799);
+		local v1301;
+		local v1302;
+		local v1303;
+		while true do
+			if (v1300 == 1) then
+				v1301 = 0 + 0;
+				v1302 = nil;
+				v1300 = 2 + 0;
+			end
+			if (v1300 == (3 + 0)) then
+				if v179.items[v7("\40\62\14\188\21\238\30\55\41\37\29\180\23", "\85\92\81\105\219\121\139\65")] then
+					v179.items[v7("\233\188\87\66\112\218\194\177\69\81\104\208\243", "\191\157\211\48\37\28")].MouseButton1Click:Connect(v1302);
+				end
+				v1303 = v179.set;
+				v1300 = 15 - 11;
+			end
+			if (v1300 == (1055 - (721 + 334))) then
+				v179.enabled = (v178 and (v178.default ~= nil) and v178.default) or false;
+				if getconnections then
 					pcall(function()
-						if v188.option_instances then
-							for v3157, v3158 in ipairs(v188.option_instances) do
-								local v3159 = 0;
-								local v3160;
-								while true do
-									if (v3159 == 0) then
-										v3160 = 0 - 0;
+						local v2854 = 1862 - (1322 + 540);
+						while true do
+							if (v2854 == (0 + 0)) then
+								if v179.items[v7("\21\232\79\88\127\4\216\74\74\103\21\232\70", "\19\97\135\40\63")] then
+									for v3455, v3456 in ipairs(getconnections(v179.items[v7("\186\83\52\60\35\52\145\94\38\47\59\62\160", "\81\206\60\83\91\79")].MouseButton1Click)) do
+										v3456:Disable();
+									end
+								end
+								if v179.items[v7("\90\164\215\117\35\198", "\196\46\203\176\18\79\163\45")] then
+									for v3457, v3458 in ipairs(getconnections(v179.items[v7("\172\45\121\25\40\254", "\143\216\66\30\126\68\155")].MouseButton1Click)) do
+										v3458:Disable();
+									end
+								end
+								break;
+							end
+						end
+					end);
+				end
+				v1300 = 1373 - (575 + 797);
+			end
+			if (v1300 == (1131 - (274 + 855))) then
+				function v1302()
+					local v2366 = 0;
+					local v2367;
+					while true do
+						if (v2366 == 2) then
+							v179.set(v179.enabled);
+							break;
+						end
+						if (v2366 == (0 - 0)) then
+							v2367 = tick();
+							if ((v2367 - v1301) < (0.15 + 0)) then
+								return;
+							end
+							v2366 = 1 - 0;
+						end
+						if (v2366 == (1 + 0)) then
+							v1301 = v2367;
+							v179.enabled = not v179.enabled;
+							v2366 = 2;
+						end
+					end
+				end
+				if v179.items[v7("\190\199\10\204\201\166", "\129\202\168\109\171\165\195\183")] then
+					v179.items[v7("\54\87\48\223\210\17", "\134\66\56\87\184\190\116")].MouseButton1Click:Connect(v1302);
+				end
+				v1300 = 2 + 1;
+			end
+			if (v1300 == 4) then
+				v179.set = function(v2368)
+					v179.enabled = v2368;
+					local v2370 = v1303(v2368);
+					v29();
+					return v2370;
+				end;
+				break;
+			end
+		end
+	end
+	return v179;
+end;
+local v35 = v23.dropdown;
+v23.dropdown = function(v180, v181)
+	v31(v181);
+	v181 = v181 or {};
+	local v182 = v181.items or v181.options or v181.content or {};
+	v181.items = v182;
+	v181.options = v182;
+	local v185 = v181.width or (1924 - (986 + 823));
+	v181.width = v185;
+	local v187 = v35(v180, v181);
+	if (v187 and v187.items) then
+		if (v187.items[v7("\209\30\249\25", "\90\191\127\148\124")] and v181.name) then
+			v187.items[v7("\118\134\35\18", "\119\24\231\78")].Text = v181.name;
+		end
+		if (v187.items[v7("\140\44\168\79", "\113\226\77\197\42\188\32")] and v187.items[v7("\62\4\251\165\62\25\227\187", "\213\90\118\148")]) then
+			local v1789 = 0 + 0;
+			while true do
+				if (v1789 == 0) then
+					v187.items[v7("\95\60\187\70\73\84\57\186", "\45\59\78\212\54")].Size = UDim2.new(0, v185, 0, 1029 - (872 + 141));
+					v187.items[v7("\20\68\140\155\130\33\186\254", "\144\112\54\227\235\230\78\205")].ClipsDescendants = true;
+					v1789 = 1 + 0;
+				end
+				if (v1789 == 1) then
+					v187.items[v7("\189\41\2\249", "\59\211\72\111\156\176")].AutomaticSize = Enum.AutomaticSize.None;
+					v187.items[v7("\64\134\238\40", "\77\46\231\131")].Size = UDim2.new(3 - 2, -(v185 + (18 - 8)), 538 - (139 + 399), 16);
+					v1789 = 2 + 0;
+				end
+				if (v1789 == 2) then
+					v187.items[v7("\180\85\187\69", "\32\218\52\214")].TextTruncate = Enum.TextTruncate.AtEnd;
+					v187.items[v7("\64\22\60\173", "\58\46\119\81\200\145\208\37")].ClipsDescendants = true;
+					break;
+				end
+			end
+		end
+		if v187.items[v7("\56\153\50\147\189\184\46\63", "\86\75\236\80\204\201\221")] then
+			local v1790 = 0 + 0;
+			while true do
+				if ((1702 - (1038 + 664)) == v1790) then
+					v187.items[v7("\97\84\117\186\234\142\106\85", "\235\18\33\23\229\158")].Size = UDim2.new(1 + 0, -(18 + 4), 1 + 0, 0);
+					v187.items[v7("\67\175\195\132\68\191\217\175", "\219\48\218\161")].Position = UDim2.new(0 - 0, 7 - 2, 0 + 0, 0 + 0);
+					v1790 = 2 - 1;
+				end
+				if (v1790 == (575 - (388 + 186))) then
+					v187.items[v7("\247\100\126\118\207\74\248\240", "\128\132\17\28\41\187\47")].TextTruncate = Enum.TextTruncate.AtEnd;
+					v187.items[v7("\18\39\4\5\73\4\42\18", "\61\97\82\102\90")].ClipsDescendants = true;
+					v1790 = 2;
+				end
+				if (v1790 == (488 - (421 + 65))) then
+					v187.items[v7("\191\59\169\116\211\82\6\29", "\105\204\78\203\43\167\55\126")].TextXAlignment = Enum.TextXAlignment.Left;
+					break;
+				end
+			end
+		end
+		if v187.items[v7("\172\164\39\23\16\5\211\94\183", "\49\197\202\67\126\115\100\167")] then
+			local v1791 = 0;
+			local v1792;
+			while true do
+				if (v1791 == 0) then
+					v1792 = 0;
+					while true do
+						if (v1792 == 0) then
+							v187.items[v7("\62\85\219\32\131\87\74\56\73", "\62\87\59\191\73\224\54")].Image = v7("\245\0\226\200\244\17\255\221\238\6\160\134\168\83\170\158\183\91\173\144\183\91\174\145", "\169\135\98\154");
+							v187.items[v7("\194\121\32\93\254\50\220\196\101", "\168\171\23\68\52\157\83")].ImageColor3 = Color3.fromRGB(160, 316 - 156, 19 + 156);
+							v1792 = 1;
+						end
+						if (v1792 == (1 + 0)) then
+							v187.items[v7("\253\127\241\164\38\44\147\251\99", "\231\148\17\149\205\69\77")].Size = UDim2.new(1263 - (604 + 659), 12, 0, 1516 - (1267 + 237));
+							break;
+						end
+					end
+					break;
+				end
+			end
+		end
+		if (v187.items[v7("\132\181\200\235\83\240\151\169", "\159\224\199\167\155\55")] and v187.items[v7("\243\225\51\194\243\252\43\220\200\251\51\222\243\246\46", "\178\151\147\92")]) then
+			local v1793 = v187.items[v7("\136\239\67\34\22\67\109\130", "\26\236\157\44\82\114\44")];
+			local v1794 = v187.items[v7("\46\60\218\75\46\33\194\85\21\38\218\87\46\43\199", "\59\74\78\181")];
+			local v1795 = v187.items[v7("\42\196\78\86\186\43\212", "\211\69\177\58\58")];
+			v1794.ZIndex = 5181 - (112 + 69);
+			v1794.ClipsDescendants = true;
+			v1794.Visible = false;
+			if v1795 then
+				local v2371 = 0 - 0;
+				while true do
+					if (v2371 == 0) then
+						v1795.ZIndex = 5001;
+						v1795.ClipsDescendants = true;
+						break;
+					end
+				end
+			end
+			local v1799 = nil;
+			local function v1800()
+				if v1799 then
+					local v2694 = 484 - (319 + 165);
+					while true do
+						if (0 == v2694) then
+							pcall(function()
+								v1799:Disconnect();
+							end);
+							v1799 = nil;
+							break;
+						end
+					end
+				end
+			end
+			v187.set_visible = function(v2039)
+				v187.open = v2039;
+				if v2039 then
+					if (v23.current_open and (v23.current_open ~= v187) and v23.current_open.set_visible) then
+						pcall(function()
+							v23.current_open.set_visible(false);
+						end);
+					end
+					v23.current_open = v187;
+					local v2696 = v187.y_size or 0;
+					if ((v2696 == 0) and v187.option_instances) then
+						for v3126, v3127 in ipairs(v187.option_instances) do
+							v2696 = v2696 + (((v3127.AbsoluteSize.Y > (0 + 0)) and v3127.AbsoluteSize.Y) or 18) + (1358 - (634 + 719));
+						end
+					end
+					local v2697 = v1793.AbsoluteSize.X;
+					if v187.option_instances then
+						for v3128, v3129 in ipairs(v187.option_instances) do
+							local v3130 = 0;
+							local v3131;
+							local v3132;
+							while true do
+								if (v3130 == (1039 - (248 + 791))) then
+									v3131 = v3129.Text or "";
+									v3132 = (string.len(v3131) * (1 + 8)) + 29 + 7;
+									v3130 = 1086 - (888 + 197);
+								end
+								if (v3130 == (3 - 2)) then
+									pcall(function()
+										local v3459 = 0 - 0;
+										local v3460;
 										while true do
-											if (v3160 == (0 - 0)) then
-												v3158.ZIndex = 8235 - 3233;
-												v3158.Size = UDim2.new(1, -6, 0, ((v3158.AbsoluteSize.Y > (0 + 0)) and v3158.AbsoluteSize.Y) or (10 + 8));
-												v3160 = 1 + 0;
-											end
-											if (v3160 == (2 - 1)) then
-												v3158.TextTruncate = Enum.TextTruncate.None;
-												v3158.ClipsDescendants = false;
+											if (v3459 == (0 - 0)) then
+												v3460 = TextService:GetTextSize(v3131, v3129.TextSize or 14, v3129.Font or Enum.Font.SourceSans, Vector2.new(6533 - 4533, 16 + 34));
+												if ((v3460.X + 36) > v3132) then
+													v3132 = v3460.X + 7 + 29;
+												end
 												break;
 											end
+										end
+									end);
+									if (v3132 > v2697) then
+										v2697 = v3132;
+									end
+									break;
+								end
+							end
+						end
+					end
+					local v2698 = math.max(v2697, v1793.AbsoluteSize.X, 681 - 506);
+					local v2699 = (v1793.AbsolutePosition.X + v1793.AbsoluteSize.X) - v2698;
+					if (v2699 < 10) then
+						v2699 = 22 - 12;
+					end
+					local v2700 = v1793.AbsolutePosition.Y + v1793.AbsoluteSize.Y + (4 - 1);
+					local v2701 = 1080;
+					pcall(function()
+						v2701 = workspace.CurrentCamera.ViewportSize.Y;
+					end);
+					if (((v2700 + v2696) > (v2701 - (1991 - (1355 + 611)))) and (((v1793.AbsolutePosition.Y - v2696) - 3) > (0 + 0))) then
+						v2700 = (v1793.AbsolutePosition.Y - v2696) - 3;
+					end
+					v1794.Position = UDim2.new(1001 - (497 + 504), v2699, 0, v2700);
+					v1794.Size = UDim2.new(0 - 0, v2698, 0 + 0, 0 + 0);
+					v1794.Visible = true;
+					pcall(function()
+						v23:tween(v1794, {[v7("\132\236\99\240", "\171\215\133\25\149\137")]=UDim2.new(0 + 0, v2698, 0 - 0, v2696)}, Enum.EasingStyle.Quad, 0.12 - 0);
+					end);
+					if v187.option_instances then
+						for v3133, v3134 in ipairs(v187.option_instances) do
+							local v3135 = 0;
+							while true do
+								if (v3135 == 1) then
+									v3134.TextTruncate = Enum.TextTruncate.None;
+									v3134.ClipsDescendants = false;
+									break;
+								end
+								if (v3135 == 0) then
+									v3134.ZIndex = 6259 - (1159 + 98);
+									v3134.Size = UDim2.new(1444 - (418 + 1025), -(27 - 21), 0 - 0, ((v3134.AbsoluteSize.Y > (1793 - (297 + 1496))) and v3134.AbsoluteSize.Y) or (32 - 14));
+									v3135 = 944 - (547 + 396);
+								end
+							end
+						end
+					end
+					v1800();
+					task.delay(0.05 - 0, function()
+						if (v187.open and not v1799) then
+							v1799 = v16.InputBegan:Connect(function(v3256)
+								if ((v3256.UserInputType == Enum.UserInputType.MouseButton1) or (v3256.UserInputType == Enum.UserInputType.Touch)) then
+									local v3375 = 0;
+									local v3376;
+									local v3377;
+									local v3378;
+									local v3379;
+									local v3380;
+									local v3381;
+									local v3382;
+									local v3383;
+									local v3384;
+									while true do
+										if (v3375 == (2 + 0)) then
+											v3380 = v1794.AbsoluteSize;
+											v3381 = v1793.AbsolutePosition;
+											v3375 = 7 - 4;
+										end
+										if (v3375 == 1) then
+											v3378 = v3376.Y;
+											v3379 = v1794.AbsolutePosition;
+											v3375 = 2;
+										end
+										if (v3375 == (1746 - (999 + 744))) then
+											local v3554 = 0 + 0;
+											while true do
+												if (v3554 == (501 - (324 + 176))) then
+													v3375 = 1514 - (1171 + 339);
+													break;
+												end
+												if (v3554 == (947 - (492 + 455))) then
+													v3382 = v1793.AbsoluteSize;
+													v3383 = (v3377 >= v3379.X) and (v3377 <= (v3379.X + v3380.X)) and (v3378 >= v3379.Y) and (v3378 <= (v3379.Y + v3380.Y));
+													v3554 = 1477 - (805 + 671);
+												end
+											end
+										end
+										if (4 == v3375) then
+											v3384 = (v3377 >= v3381.X) and (v3377 <= (v3381.X + v3382.X)) and (v3378 >= v3381.Y) and (v3378 <= (v3381.Y + v3382.Y));
+											if (not v3383 and not v3384) then
+												v187.set_visible(false);
+											end
+											break;
+										end
+										if (v3375 == 0) then
+											local v3555 = 1313 - (265 + 1048);
+											while true do
+												if ((1576 - (252 + 1324)) == v3555) then
+													v3376 = v3256.Position;
+													v3377 = v3376.X;
+													v3555 = 1;
+												end
+												if (v3555 == (1 + 0)) then
+													v3375 = 1571 - (544 + 1026);
+													break;
+												end
+											end
+										end
+									end
+								end
+							end);
+						end
+					end);
+				else
+					v1800();
+					if (v23.current_open == v187) then
+						v23.current_open = nil;
+					end
+					pcall(function()
+						v23:tween(v1794, {[v7("\210\193\40\255", "\34\129\168\82\154\143\80\156")]=UDim2.new(0 + 0, v1794.AbsoluteSize.X, 0 - 0, 0)}, Enum.EasingStyle.Quad, 662.1 - (217 + 445));
+					end);
+					task.delay(0.1 + 0, function()
+						if not v187.open then
+							v1794.Visible = false;
+						end
+					end);
+				end
+			end;
+			local v1802 = v187.refresh_options;
+			if v1802 then
+				v187.refresh_options = function(v2705)
+					local v2706 = 0;
+					while true do
+						if (v2706 == 0) then
+							v1802(v2705);
+							pcall(function()
+								if v187.option_instances then
+									for v3461, v3462 in ipairs(v187.option_instances) do
+										local v3463 = 0;
+										local v3464;
+										while true do
+											if (v3463 == (940 - (492 + 448))) then
+												v3464 = 0;
+												while true do
+													if (v3464 == 1) then
+														v3462.TextTruncate = Enum.TextTruncate.None;
+														v3462.ClipsDescendants = false;
+														break;
+													end
+													if (v3464 == (1432 - (1152 + 280))) then
+														v3462.ZIndex = 5002;
+														v3462.Size = UDim2.new(1, -6, 0, ((v3462.AbsoluteSize.Y > 0) and v3462.AbsoluteSize.Y) or (27 - 9));
+														v3464 = 4 - 3;
+													end
+												end
+												break;
+											end
+										end
+									end
+								end
+							end);
+							break;
+						end
+					end
+				end;
+			end
+		end
+	end
+	if (v187 and v187.set) then
+		local v1304 = 0;
+		local v1305;
+		while true do
+			if ((1 + 0) == v1304) then
+				pcall(function()
+					if (v187.items and v187.items[v7("\209\148\20\193\45\235\64\214", "\56\162\225\118\158\89\142")]) then
+						v187.items[v7("\79\16\194\144\54\221\68\17", "\184\60\101\160\207\66")].TextTruncate = Enum.TextTruncate.AtEnd;
+						v187.items[v7("\34\151\126\131\37\135\100\168", "\220\81\226\28")].ClipsDescendants = true;
+						local v2859 = v187.items[v7("\0\192\128\196\254\194\11\193", "\167\115\181\226\155\138")].Text;
+						if (v181.multi and (not v2859 or (v2859 == "") or (v2859 == " "))) then
+							v187.items[v7("\241\55\229\99\111\116\222\246", "\166\130\66\135\60\27\17")].Text = v7("\106\69\192\112", "\80\36\42\174\21");
+						end
+					end
+				end);
+				break;
+			end
+			if (v1304 == 0) then
+				v1305 = v187.set;
+				v187.set = function(v2373)
+					v1305(v2373);
+					pcall(function()
+						if (v187.items and v187.items[v7("\150\167\49\52\92\75\145\145", "\233\229\210\83\107\40\46")]) then
+							local v2975 = 0 + 0;
+							local v2976;
+							while true do
+								if (v2975 == (845 - (175 + 670))) then
+									v187.items[v7("\210\87\48\233\17\196\90\38", "\101\161\34\82\182")].TextTruncate = Enum.TextTruncate.AtEnd;
+									v187.items[v7("\251\24\91\193\207\231\154\58", "\78\136\109\57\158\187\130\226")].ClipsDescendants = true;
+									v2975 = 1 + 0;
+								end
+								if (v2975 == 1) then
+									v2976 = v187.items[v7("\45\42\251\206\42\58\225\229", "\145\94\95\153")].Text;
+									if (v181.multi and (not v2976 or (v2976 == "") or (v2976 == " "))) then
+										v187.items[v7("\238\216\22\234\90\178\229\217", "\215\157\173\116\181\46")].Text = v7("\27\187\133\247", "\186\85\212\235\146");
+									end
+									break;
+								end
+							end
+						end
+					end);
+				end;
+				v1304 = 1;
+			end
+		end
+	end
+	return v187;
+end;
+local v37 = v23.slider;
+v23.slider = function(v188, v189)
+	local v190 = 0;
+	while true do
+		if (v190 == 0) then
+			local v1640 = 1653 - (1411 + 242);
+			local v1641;
+			while true do
+				if (v1640 == 0) then
+					v1641 = 0;
+					while true do
+						if (v1641 == 0) then
+							v31(v189);
+							return v37(v188, v189);
+						end
+					end
+					break;
+				end
+			end
+		end
+	end
+end;
+local v39 = v23.colorpicker;
+v23.colorpicker = function(v191, v192)
+	v31(v192);
+	return v39(v191, v192);
+end;
+local v41 = v23.keybind;
+v23.keybind = function(v193, v194)
+	local v195 = 0;
+	while true do
+		if ((0 + 0) == v195) then
+			v31(v194);
+			return v41(v193, v194);
+		end
+	end
+end;
+local v43 = v23.textbox;
+v23.textbox = function(v196, v197)
+	local v198 = 0;
+	while true do
+		if (v198 == (693 - (678 + 15))) then
+			v31(v197);
+			return v43(v196, v197);
+		end
+	end
+end;
+local v45 = {[v7("\67\17\62\116", "\26\46\112\87")]=v7("\171\33\179\117\172\172\64\160\176\39\241\59\240\232\21\227\235\116\250\44\233\236\20", "\212\217\67\203\20\223\223\37"),[v7("\187\152\188\221\250\157\164\211\163", "\178\218\237\200")]=v7("\164\183\254\209\165\166\227\196\191\177\188\159\249\226\182\135\228\226\180\128\225\231\180", "\176\214\213\134"),[v7("\241\187\179\218\188", "\57\148\205\214\180\200\54")]=v7("\0\255\45\53\101\1\248\33\61\114\72\178\122\99\38\69\175\98\102\37\67\173\96", "\22\114\157\85\84"),[v7("\199\196\29\194\84\241\187", "\200\164\171\115\164\61\150")]=v7("\172\246\27\68\144\173\241\23\76\135\228\187\76\18\211\233\166\90\29\212\235\164\91", "\227\222\148\99\37"),[v7("\32\87\70\226\240\61\85\65", "\153\83\50\50\150")]=v7("\79\116\107\29\96\184\72\73\127\119\70\60\228\26\13\33\33\75\33\250\27\5\36", "\45\61\22\19\124\19\203")};
+local function v46()
+	pcall(function()
+		local v768 = game:GetService(v7("\226\29\31\240\37\101\176", "\217\161\114\109\149\98\16"));
+		for v1306, v1307 in ipairs(v768:GetDescendants()) do
+			if (v1307:IsA(v7("\59\45\57\123\185\88\19\34\61\112", "\20\114\64\88\28\220")) and v1307.Image:find(v7("\103\81\129\224\175\134\234\103\81\138", "\221\81\97\178\212\152\176"))) then
+				local v1803 = v1307.Parent;
+				if (v1803 and v1803:IsA(v7("\249\226\5\239\56\216\243\9\244\20", "\122\173\135\125\155"))) then
+					for v2707, v2708 in ipairs(v1803:GetChildren()) do
+						if (v2708:IsA(v7("\176\196\24\173\19\48\202\129\205", "\168\228\161\96\217\95\81")) and v2708.Text) then
+							local v2977 = 0 + 0;
+							local v2978;
+							while true do
+								if ((810 - (593 + 217)) == v2977) then
+									v2978 = v2708.Text:lower():gsub(v7("\229\148\61\23", "\55\187\177\78\60\79"), ""):gsub(v7("\104\221\20\175", "\224\77\174\63\139\38\175"), "");
+									if v45[v2978] then
+										v1307.Image = v45[v2978];
+									end
+									break;
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end);
+end
+local v47 = v23.tab;
+v23.tab = function(v199, v200)
+	local v201 = 0 - 0;
+	local v202;
+	local v203;
+	local v204;
+	while true do
+		local v769 = 0 + 0;
+		local v770;
+		while true do
+			if (v769 == (0 - 0)) then
+				v770 = 490 - (112 + 378);
+				while true do
+					if (v770 == (1547 - (952 + 595))) then
+						if (v201 == 0) then
+							v200 = v200 or {};
+							v202 = v200.name or v200.Name or "";
+							v201 = 397 - (23 + 373);
+						end
+						if (v201 == (2 - 1)) then
+							v203 = v200.icon or v200.Icon or v45[v202:lower()];
+							v204 = {v47(v199, v200)};
+							v201 = 2 + 0;
+						end
+						v770 = 1785 - (1102 + 682);
+					end
+					if (v770 == (1 + 0)) then
+						if (v201 == (1 + 1)) then
+							task.spawn(function()
+								for v3257 = 1, 1388 - (118 + 1265) do
+									local v3258 = 0;
+									while true do
+										if (v3258 == (1099 - (725 + 374))) then
+											task.wait(0.1 + 0);
+											v46();
+											break;
+										end
+									end
+								end
+							end);
+							return unpack(v204);
+						end
+						break;
+					end
+				end
+				break;
+			end
+		end
+	end
+end;
+v24 = {[v7("\165\84\76\33\180\77\89\45\129\100\86\47\134\77\93\42", "\78\228\33\56")]=true,[v7("\254\127\166\11\181\203\108\177\6\139\218\127\181\6", "\229\174\30\210\99")]=(22 + 8),[v7("\43\225\135\82\232\28\55\2\250\142\84\255\56", "\89\123\141\230\49\141\93")]=true,[v7("\210\117\224\13\30\73\246\117\218\13\30\79\224", "\42\147\17\150\108\112")]=true,[v7("\41\170\44\113\236\219\6\162\40", "\136\111\198\77\31\135")]=v7("\32\6\179\94\253\215\30\173\7\26", "\201\98\105\199\54\221\132\119"),[v7("\138\4\140\54\50\57\173\186\9\162\51\7\52", "\204\217\108\227\65\98\85")]=true,[v7("\109\203\250\242\2\197\70\215\197\233\45\195\91\206\240\235\56", "\160\62\163\149\133\76")]=true,[v7("\240\161\31\34\243\215\180\5\31\198\196\163\8\33\215\215\167\8", "\163\182\192\109\79")]=(2083 - (1142 + 856)),[v7("\1\54\7\210\244\48\35\38\193\231\57\53\38\201\231\39\50", "\149\84\70\96\160")]=false,[v7("\11\11\12\255\44\32\12\255\53\51\29\234\42\7\9\232", "\141\88\102\109")]=false,[v7("\146\70\222\127\47\45\82\211\178\87\207\85\20\60\87\205\182\87", "\161\211\51\170\16\122\93\53")]=true,[v7("\200\163\179\58\239\141\189\59\239\140\179\36\250\160\177\33\245\169", "\72\155\206\210")]=true,[v7("\97\118\91\12\50\74\87\85\22\6\86\125\70\15\55\67\105", "\83\38\26\52\110")]=(7 + 3),[v7("\109\7\32\84\89\19\34\111\86\3\34\84\78\22\43", "\38\56\119\71")]=0.25,[v7("\195\227\89\213\32\91\246\225\76\255\43\66\246\253\78\215\41", "\54\147\143\56\182\69")]=(0.3 - 0),[v7("\230\137\240\76\209\223\153\205\76\214\216\130\254\91\209\215\149\250", "\191\182\225\159\41")]=true,[v7("\10\7\60\90\170\133\203\39\27\60\92\142\148\231\37\19\42\89\142\131", "\162\75\114\72\53\235\231")]=true,[v7("\173\62\77\238\90\22\149\17\75\230\86", "\98\236\92\36\130\51")]=v7("\147\17\9\180\64\190\176\34\228\43\9\187\65\177", "\80\196\121\108\218\37\200\213"),[v7("\33\113\11\115\66\26\147\51\103\3\109\95\57\139\22\118", "\234\96\19\98\31\43\110")]=1,[v7("\36\16\65\212\136\119\159\3\28\70\206\163\124\185\7\17\85\194", "\235\102\127\50\167\204\18")]=75,[v7("\113\163\252\47\77\58\73\136\251\55\65\60\70\160\249", "\78\48\193\149\67\36")]=(0.35 + 0),[v7("\17\16\148\17\113\37\16\137\11\73\61\27\142\12\82", "\33\80\126\224\120")]=true,[v7("\205\189\23\203\112\227\169\7", "\60\140\200\99\164")]=true,[v7("\166\225\16\41\145\147\245\22\50", "\194\231\148\100\70")]=true,[v7("\103\89\213\172\193\201\80\73\242\168\255\216", "\168\38\44\161\195\150")]=true,[v7("\161\233\150\121\2\237\166\26\129\229", "\118\224\156\226\22\80\136\214")]=false,[v7("\99\251\77\143\108\235\65\148\113\250\86\146\91", "\224\34\142\57")]=false,[v7("\255\178\209\210\93\244\69\26\236\168\202\208", "\110\190\199\165\189\19\145\61")]=false,[v7("\251\254\99\231\165\194\194\255\71\231\153\211\219\231", "\167\186\139\23\136\235")]=false,[v7("\59\160\156\2\54\176\137\27\31", "\109\122\213\232")]=true,[v7("\207\226\182\63\204\226\164\54\217\242\172\52\247", "\80\142\151\194")]=false,[v7("\34\211\99\67\33\211\113\74\32\201\122\65\2\200\115\73\17", "\44\99\166\23")]=false,[v7("\81\242\39\35\18\167\127\242\39\34", "\196\28\151\73\86\83")]={R=183,G=(128 + 48),B=205,[v7("\219\6\49", "\22\147\99\73\112\226\56\120")]=v7("\154\34\192\165\174\156", "\237\216\21\130\149")},[v7("\175\75\81\74\146\192\80\134", "\62\226\46\63\63\208\169")]={[v7("\238\28\76", "\62\133\121\53\227\127\109\79")]=v7("\62\59\28\208", "\194\112\116\82\149\182\206"),[v7("\52\167\72\29", "\110\89\200\44\120\160\130")]=v7("\159\204\76\65\79\79", "\45\203\163\43\38\35\42\91"),[v7("\211\134\200\42\145\172", "\52\178\229\188\67\231\201")]=true},[v7("\0\84\68\11\209\85\45\37\108\81\16\244\84\16\52\76\93\1\229", "\67\65\33\48\100\151\60")]=false,[v7("\254\242\186\215\217\208\238\160\235\230\210\234\171\202", "\147\191\135\206\184")]=false,[v7("\183\61\171\204\221\65\129\143\33\182\236\217\67", "\210\228\72\198\161\184\51")]=v7("\24\70\253\21", "\174\86\41\147\112\19"),[v7("\104\21\128\6\32\29\34\160\82\16\160\10\53\28", "\203\59\96\237\107\69\111\113")]={},[v7("\23\3\161\236\52\226\228\47\31\188\214\52\241\195\44\19\190\206\33\228", "\183\68\118\204\129\81\144")]=v7("\32\162\126\225", "\226\110\205\16\132\107"),[v7("\216\214\237\212\68\249\240\235\208\81\220\198\225\205\73\238\209", "\33\139\163\128\185")]={},[v7("\118\77\16\209\116\84\5\215\90\117\5\206\117\87\5\204\83", "\190\55\56\100")]=false,[v7("\119\186\40\17\54\245\246\88\187\13\11\22\240\231\69", "\147\54\207\92\126\115\131")]=false,[v7("\62\36\56\112\8\108\33\52\52\107\8\82\2\38\25\120\27\123\1", "\30\109\81\85\29\109")]=false,[v7("\204\100\89\187\51\204\208\240\102\120\179\32\219\240\202\127\80\179\36", "\156\159\17\52\214\86\190")]=(654 - (104 + 540)),[v7("\157\250\176\177\171\253\145\185\175\249\184\139\166\234\179\154\161\250\179\184", "\220\206\143\221")]=(963 - (496 + 466)),[v7("\181\104\32\26\221\222\254\131\124\59\18\254\201\197\182\113\44\14\221\222\193", "\178\230\29\77\119\184\172")]=false,[v7("\198\171\7\22\114\234\217\187\11\13\114\205\251\186\15\9", "\152\149\222\106\123\23")]=(2 + 3),[v7("\252\51\226\76\151\200\63\219\70\167\222\46\247\77\161", "\213\189\70\150\35")]=false,[v7("\98\80\102\11\71\84\122\28\102\65\113\5", "\104\47\53\20")]=v7("\130\64\141", "\111\195\44\225\124\220"),[v7("\245\67\18\112\163\170\214\82\41\103\174\166\203", "\203\184\38\96\19\203")]={v7("\24\127\117", "\174\89\19\25\33")},[v7("\4\23\87\94\196\146\6\34\23\64\126\242\134\25\35\1", "\107\79\114\50\46\151\231")]=(0 - 0),[v7("\18\163\176\57\173\60\186\211", "\160\89\198\213\73\234\89\215")]=(724 - (657 + 67)),[v7("\105\100\160\241\245\65\114\191\221\196\90\117\167", "\165\40\17\212\158")]=true,[v7("\213\203\1\62\39\247\192\60\50\45\224\250\9\33\34", "\70\133\185\104\83")]=v7("\37\81\80\43\202\15\5\96\43\196\5\66\65", "\169\100\37\36\74"),[v7("\52\134\169\85\35\134\176\84\19", "\48\96\231\194")]={v7("\251\79\3\32\28\202\239\179\205\91\28\33\10", "\227\168\58\110\77\121\184\207"),v7("\90\40\171\65\178\208\49\129\122\49\190\71\180", "\197\27\92\223\32\209\187\17"),v7("\49\94\205\252\6", "\155\99\63\163"),v7("\161\222\174\129\189\139\149\223", "\228\226\177\193\237\217"),v7("\22\191\48\245\116\148\34\235\53\183\38", "\134\84\208\67")},[v7("\39\173\141\89\48\173\148\88\0\156\148\85\28\190\143\72\10", "\60\115\204\230")]={},[v7("\215\40\226\125\230\40\242\81\241\53\226\116\196\59\249\116", "\16\135\90\139")]=v7("\100\124\31\32\71\87\121\88\52\52\54\93\93\107\64", "\24\52\20\102\83\46\52"),[v7("\229\57\46\45\11\231\46\51\32\28", "\111\164\79\65\68")]={v7("\246\209\154\205\39\233\199\213\195\236\43\249\207\202\151", "\138\166\185\227\190\78"),v7("\230\117\194\62\81\99\43\206\103\204\36\70", "\121\171\20\165\87\50\67"),v7("\227\54\188\59\160\66\244\61\190\51\183", "\98\166\88\217\86\217"),v7("\211\248\124\12\159\156\197\230\124\4\130", "\188\150\150\25\97\230"),v7("\255\135\90\15\21\173\242\140\94\14\24\229", "\141\186\233\63\98\108")},[v7("\208\252\35\191\33\210\235\62\178\54\193\248\37\185\55\248\254\53", "\69\145\138\76\214")]={},[v7("\71\202\139\129\176\25\123\234\135\136\189\26\117\203", "\118\16\175\233\233\223")]=false,[v7("\188\129\55\179\225\132\118\190\150\57", "\29\235\228\85\219\142\235")]="",[v7("\10\209\184\213\120\65\44\98\52\218\189\238\114\77\53\87\41", "\50\93\180\218\189\23\46\71")]=true,[v7("\252\161\72\88\98\211\90\251\178\94\66\80\255\93\204\182\94\66\71\197", "\40\190\196\59\44\36\188")]=true,[v7("\24\74\210\160\201\117\2\43\97\213\167\249\114\31\56\117\206\187\247\109\25", "\109\92\37\188\212\154\29")]=false,[v7("\44\246\166\209\56\94\35\253\171\214\63\94", "\58\100\143\196\163\81")]=v7("\52\77\45\166", "\110\122\34\67\195\95\41\133"),[v7("\93\168\89\88\223\113\153\82\70\218", "\182\21\209\59\42")]=v7("\153\88\203\24", "\222\215\55\165\125\65"),[v7("\31\197\201\8\235\246\226\88\32\213", "\42\76\177\166\122\146\161\141")]=v7("\149\134\4\192\124\98\229\173\23\203\124\120\172\143", "\22\197\234\101\174\25"),[v7("\30\32\170\206\111\142\212\146", "\230\77\84\197\188\22\207\183")]=v7("\216\23\210\188\221", "\85\153\116\166\156\236\193\144"),[v7("\151\244\66\161\253\36\173\230\75\186\231\21\168\244\84", "\96\196\128\45\211\132")]=v7("\27\130\105\82\211\163", "\184\85\237\27\63\178\207\212"),[v7("\59\77\6\77\17\127\27\86\13\87\13\76\39\87\5\70", "\63\104\57\105")]=false,[v7("\42\146\176\75\33\136\173\74\56\147\171\86\18", "\36\107\231\196")]=false,[v7("\124\160\182\136\123\188\172\131\112\180\182\132\85\134\182\136\79\172", "\231\61\213\194")]=false,[v7("\35\162\52\125\37\172\46\103\40\174\41", "\19\105\205\93")]=false,[v7("\158\7\204\141\59\154\3\215\145", "\95\201\104\190\225")]=false,[v7("\131\206\198\203\161\207\242\218\174\204\196", "\174\207\171\161")]=v7("\192\255\10\250\251\151\197\247\1\255\235\151\165\219\1\245\184\254\227\232\12\224\241\216\227\183", "\183\141\158\109\147\152"),[v7("\0\12\225\9\34\13\199\15\56", "\108\76\105\134")]=v7("\202\198\165\161\159", "\174\139\165\209\129"),[v7("\130\166\246\206\236\12\121\118\143\182\229\196\200\7", "\24\195\211\130\161\166\99\16")]=false,[v7("\103\22\253\35\117\31\72\7\196\45\71\21\78\47\236\43\86\24\66", "\118\38\99\137\76\51")]=false,[v7("\207\39\12\22\62\47\239\42\1", "\64\157\70\101\114\105")]=v7("\99\189\181\241\21\78\188\231\209\17\73\172", "\112\32\200\199\131"),[v7("\30\81\85\188\226\168\54", "\66\76\48\60\216\163\203")]=v7("\155\133\109\179\14", "\68\218\230\25\147\63\174"),[v7("\140\63\71\67\156\162\35\93\126\183\164\46", "\214\205\74\51\44")]=false,[v7("\219\89\246\243\81\243\66\230\209\118\238\79\234\206\118\243\72", "\23\154\44\130\156")]=false,[v7("\48\180\185\167\48\18\18\178\135\161\63\29\60\169\169\171", "\115\113\198\205\206\86")]=v7("\162\94\240\94\196\122\255\78\135\95", "\58\228\55\158"),[v7("\149\156\196\33\22\162\60\186\168\194\58\53\171\52\183\157", "\85\212\233\176\78\92\205")]=false,[v7("\107\77\156\237\105\84\137\235\71\121\154\246\67\94\137\225\94\106\141\245\75\74\140\241", "\130\42\56\232")]=false,[v7("\199\180\42\240\73\48\228\135\43\236\77", "\95\138\213\68\131\32")]=(1 + 0),[v7("\7\41\175\80\127\37\38\133\74\112\44\33\162\86\122\62\49", "\22\74\72\193\35")]=v7("\4\120\246\92", "\56\76\25\132"),[v7("\127\212\191\41\229\81\200\165\11\206\80\210\162\41\193", "\175\62\161\203\70")]=false,[v7("\22\210\202\29\25\61\206\215\62\52\50\206\202\28\59\14\210\204\30", "\85\92\189\163\115")]=false,[v7("\8\185\36\55\15\165\62\60\4\173\36\59\33\129\49\54\58\165\63\54", "\88\73\204\80")]=false,[v7("\13\139\17\74\37\223\32\132\21\116\44\205\47\145\20\96\32\214\58\134\2", "\186\78\227\112\38\73")]=v7("\221\91\241\21\28\58\221\89\228", "\26\156\55\157\53\51"),[v7("\173\205\2\214\146\95\133\214\53\209\185\92\128\221\24\222\189", "\48\236\184\118\185\216")]=false,[v7("\196\168\67\63\233\61\235\185\122\49\219\55\237\158\95\49\195\56\224\179\80\53", "\84\133\221\55\80\175")]=false,[v7("\156\242\48\169\237\83\180\233\0\167\206\80\164\196\44\167\203\80\184\233\35\163", "\60\221\135\68\198\167")]=false,[v7("\207\168\236\140\100\208\224\185\213\130\86\218\230\153\249\138\78\192\205\181\249\143\78\220\224\186\253", "\185\142\221\152\227\34")]=false,[v7("\109\214\82\217\86\32\227\87\200\103\246\66\48\242\85\192\89\238\108\33\243\93\215", "\151\56\165\55\154\35\83")]=true,[v7("\149\80\0\205\181\80\17\225\173\118\21\233\178\66\1\235\143\81\1\235\178", "\142\192\35\101")]=true,[v7("\241\121\38\161\230\128\152\23\196\114\44\183\215\158\165\25\196\124\61\186", "\118\182\21\73\195\135\236\204")]=v7("\41\41\14\79", "\157\104\92\122\32\100\109"),[v7("\147\170\206\201\56\42\136\165\183\137\221\206\56\53", "\203\195\198\175\170\93\71\237")]={(2 - 1),(1193 - (27 + 1163)),(1165 - (371 + 788)),(4 + 1),(2 + 0),4},[v7("\27\91\57\199\80\21\249\1\89\58\208\67", "\156\78\43\94\181\49\113")]={(2 - 1),3,6,(1 + 4),(1337 - (639 + 696)),(9 - 5)},[v7("\65\228\203\183\59\79\120\113\237\201\166\5\87", "\25\18\136\164\195\107\35")]={[1 - 0]=true,[2]=true,[3 + 0]=true,[4]=true,[5]=true,[510 - (156 + 348)]=true},[v7("\219\33\166\91\94\181\204\177\252\62", "\216\136\77\201\47\18\220\161")]={[891 - (488 + 402)]=(208 - (186 + 16)),[2]=(329 - (119 + 204)),[3]=(9 - 3),[5 - 1]=(21 - 15),[5]=(3 + 1),[6]=(10 - 6)},[v7("\30\224\36\206\37\221\154\24\252\44\200\9\216\135\62", "\226\77\140\75\186\104\188")]={[1 + 0]=10,[1761 - (1709 + 50)]=(1339 - (249 + 1080)),[2 + 1]=(461 - (155 + 296)),[3 + 1]=(9 + 1),[5]=10,[12 - 6]=10},[v7("\140\192\217\43\108\172\221\196\48\66\138\203\196\43\70\183\201\195", "\47\217\174\176\95")]={[1]={[v7("\153\208\121\23\188\64", "\70\216\189\22\98\210\52\24")]=(9 - 3),[v7("\247\222\187\178\195\221\205\162\131\214", "\179\186\191\195\231")]=(6 + 4),[v7("\218\42\11\240\246\50\40\229\237\55", "\132\153\95\120")]=(0 - 0),[v7("\133\179\28\42\242\206", "\192\209\210\110\77\151\186")]=v7("\196\6\36\232\234\200\244", "\164\128\99\66\137\159"),[v7("\33\139\224\178\9\157\240", "\222\96\233\137")]=v7("\157\182\161\30\157\255\228", "\144\217\211\199\127\232\147"),[v7("\217\45\55\36\220\81\27\115\249\57\59", "\36\152\79\94\72\181\37\98")]=1,[v7("\229\221\78\49\212\217\85\49\214\204\66", "\95\183\184\39")]=false},[1 + 1]={[v7("\148\50\232\51\90\148", "\98\213\95\135\70\52\224")]=6,[v7("\211\162\209\66\68\249\177\200\115\81", "\52\158\195\169\23")]=(3 + 7),[v7("\89\169\33\96\137\56\75\138\110\180", "\235\26\220\82\20\230\85\27")]=(0 - 0),[v7("\188\160\251\197\113\156", "\20\232\193\137\162")]=v7("\6\218\195\167\242\128\3", "\17\66\191\165\198\135\236\119"),[v7("\46\173\167\31\246\252\245", "\177\111\207\206\115\159\136\140")]=v7("\33\140\22\21\193\67\75", "\63\101\233\112\116\180\47"),[v7("\226\57\228\30\241\34\218\12\236\4\253", "\86\163\91\141\114\152")]=(1 + 0),[v7("\97\14\125\125\57\82\25\122\114\46\86", "\90\51\107\20\19")]=false},[3]={[v7("\172\253\138\250\51\153", "\93\237\144\229\143")]=(17 - 11),[v7("\56\247\232\44\27\65\7\247\244\28", "\38\117\150\144\121\107")]=(20 - 10),[v7("\14\174\253\46\34\182\222\59\57\179", "\90\77\219\142")]=(698 - (604 + 94)),[v7("\210\5\51\62\73\19", "\26\134\100\65\89\44\103")]=v7("\213\230\54\34\177\253\247", "\196\145\131\80\67"),[v7("\63\178\15\4\17\252\7", "\136\126\208\102\104\120")]=v7("\92\143\200\66\186\94\41", "\49\24\234\174\35\207\50\93"),[v7("\45\240\244\132\120\24\235\202\137\103\9", "\17\108\146\157\232")]=(1 + 0),[v7("\121\198\29\227\44\169\89\205\21\249\42", "\200\43\163\116\141\79")]=false},[4]={[v7("\158\59\50\150\190\224", "\131\223\86\93\227\208\148")]=(1809 - (500 + 1303)),[v7("\206\68\174\131\13\178\241\68\178\179", "\213\131\37\214\214\125")]=(1530 - (916 + 604)),[v7("\5\62\54\171\238\43\27\36\171\233", "\129\70\75\69\223")]=(0 + 0),[v7("\114\202\225\238\121\251", "\143\38\171\147\137\28")]=v7("\244\135\191\242\22\239\192", "\180\176\226\217\147\99\131"),[v7("\242\187\38\11\218\173\54", "\103\179\217\79")]=v7("\110\178\26\212\84\128\183", "\195\42\215\124\181\33\236"),[v7("\44\91\62\50\44\236\20\110\54\40\32", "\152\109\57\87\94\69")]=(1 + 0),[v7("\203\210\3\173\189\211\70\166\248\195\15", "\200\153\183\106\195\222\178\52")]=false},[19 - 14]={[v7("\19\238\135\40\71\78", "\58\82\131\232\93\41")]=(3 + 1),[v7("\174\86\200\32\77\56\145\86\212\16", "\95\227\55\176\117\61")]=(10 + 0),[v7("\59\107\48\95\164\21\78\34\95\163", "\203\120\30\67\43")]=(0 + 0),[v7("\197\36\95\232\220\229", "\185\145\69\45\143")]=v7("\174\26\31\167\201\134\11", "\188\234\127\121\198"),[v7("\25\48\26\143\49\38\10", "\227\88\82\115")]=v7("\103\26\188\166\23\127\87", "\19\35\127\218\199\98"),[v7("\61\249\3\238\21\239\19\213\29\237\15", "\130\124\155\106")]=(1476 - (754 + 721)),[v7("\231\206\255\161\160\247\110\177\212\223\243", "\223\181\171\150\207\195\150\28")]=false},[512 - (181 + 325)]={[v7("\109\55\236\187\7\88", "\105\44\90\131\206")]=4,[v7("\210\225\170\140\24\57\237\225\182\188", "\94\159\128\210\217\104")]=(18 - 8),[v7("\115\236\21\171\80\114\201\123\68\241", "\26\48\153\102\223\63\31\153")]=0,[v7("\54\65\255\244\7\84", "\147\98\32\141")]=v7("\60\70\229\203\19\90\95", "\43\120\35\131\170\102\54"),[v7("\117\4\142\186\172\164\157", "\228\52\102\231\214\197\208")]=v7("\58\229\115\203\255\135\13", "\182\126\128\21\170\138\235\121"),[v7("\170\216\60\234\143\7\41\49\138\204\48", "\102\235\186\85\134\230\115\80")]=(1 + 0),[v7("\101\9\55\81\113\213\48\89\13\42\90", "\66\55\108\94\63\18\180")]=false}}};
+local function v49()
+	local v205 = v17 or game:GetService(v7("\36\129\132\46\34\75\7", "\57\116\237\229\87\71")).LocalPlayer;
+	local v206 = (v205 and v205.UserId and (v205.UserId > 0) and tostring(v205.UserId)) or "0";
+	local v207 = (v205 and v205.Name and (#v205.Name > 0) and v205.Name) or v7("\159\191\230\233\120\249\73", "\39\202\209\141\135\23\142");
+	local v208 = v207:gsub(v7("\196\13\76\29\13\189\178\14", "\152\159\83\105\106\82"), "");
+	return v206, v208, v207;
+end
+local function v50()
+	pcall(function()
+		if (makefolder and isfolder) then
+			if not isfolder(v7("\160\236\110\218\252\126", "\60\225\166\49\146\169")) then
+				makefolder(v7("\14\52\16\2\52\37", "\103\79\126\79\74\97"));
+			end
+			if not isfolder(v7("\155\85\236\91\107\56\245\126\208\112\81\15\180\107\192", "\122\218\31\179\19\62")) then
+				makefolder(v7("\146\252\242\233\252\131\10\178\213\206\206\220\175\81\160", "\37\211\182\173\161\169\193"));
+			end
+		end
+	end);
+end
+local function v51(v209)
+	local v210, v211 = v49();
+	v50();
+	if (v209 and (#v209 > (1410 - (413 + 997))) and (v209 ~= v7("\211\63\75\216\61\119\173", "\217\151\90\45\185\72\27"))) then
+		local v1308 = 0;
+		local v1309;
+		while true do
+			if (v1308 == 0) then
+				v1309 = v209:gsub(v7("\248\66\162\5\105\134\49\218", "\54\163\28\135\114"), "");
+				return string.format(v7("\9\241\98\170\123\93\103\218\94\129\65\106\38\207\78\205\11\108\23\158\78\189\11\108\102\209\78\141\64", "\31\72\187\61\226\46"), v211, v210, v1309);
+			end
+		end
+	end
+	return string.format(v7("\226\44\124\250\114\92\107\194\5\64\221\82\112\48\208\73\6\193\120\59\55\141\12\80\221\73", "\68\163\102\35\178\39\30"), v211, v210);
+end
+local function v52()
+	local v212, v213 = v49();
+	local v214 = string.format(v7("\251\99\229\130\16", "\113\222\16\186\167\99\213\227"), v213, v212);
+	local v215 = {v7("\10\11\253\247\59\2\239", "\150\78\110\155")};
+	pcall(function()
+		if (listfiles and isfolder and isfolder(v7("\164\239\24\201\145\60\240\65\134\198\40\244\170\10\172", "\32\229\165\71\129\196\126\223"))) then
+			for v1804, v1805 in ipairs(listfiles(v7("\226\163\251\169\180\247\140\136\199\130\142\192\205\157\215", "\181\163\233\164\225\225"))) do
+				local v1806 = 0 - 0;
+				local v1807;
+				while true do
+					if (v1806 == 0) then
+						v1807 = v1805:match("([^/\\]+)%.json$");
+						if v1807 then
+							if (v1807 == v214) then
+							elseif (v1807:sub(1 + 0, #v214 + 1 + 0) == (v214 .. "_")) then
+								local v3385 = 0 + 0;
+								local v3386;
+								while true do
+									if (v3385 == (0 - 0)) then
+										v3386 = v1807:sub(#v214 + (4 - 2));
+										if ((#v3386 > 0) and not table.find(v215, v3386)) then
+											table.insert(v215, v3386);
 										end
 										break;
 									end
 								end
 							end
 						end
-					end);
-				end;
+						break;
+					end
+				end
 			end
 		end
+	end);
+	return v215;
+end
+local function v53(v216)
+	if (not v216 or (v216 == v7("\116\142\56\118\69\135\42", "\23\48\235\94"))) then
+		return false;
 	end
-	if (v188 and v188.set) then
-		local v1269 = 0 + 0;
-		local v1270;
+	local v217 = v51(v216);
+	if (delfile and isfile and isfile(v217)) then
+		local v1310 = 1741 - (708 + 1033);
 		while true do
-			if (v1269 == 1) then
+			if (v1310 == (0 + 0)) then
 				pcall(function()
-					if (v188.items and v188.items[v7("\210\87\48\233\17\196\90\38", "\101\161\34\82\182")]) then
-						v188.items[v7("\251\24\91\193\207\231\154\58", "\78\136\109\57\158\187\130\226")].TextTruncate = Enum.TextTruncate.AtEnd;
-						v188.items[v7("\45\42\251\206\42\58\225\229", "\145\94\95\153")].ClipsDescendants = true;
-						local v2822 = v188.items[v7("\238\216\22\234\90\178\229\217", "\215\157\173\116\181\46")].Text;
-						if (v182.multi and (not v2822 or (v2822 == "") or (v2822 == " "))) then
-							v188.items[v7("\38\161\137\205\206\48\172\159", "\186\85\212\235\146")].Text = v7("\236\142\24\251", "\56\162\225\118\158\89\142");
-						end
-					end
+					delfile(v217);
 				end);
-				break;
+				return true;
 			end
-			if (v1269 == (0 - 0)) then
-				v1270 = v188.set;
-				v188.set = function(v2386)
-					v1270(v2386);
-					pcall(function()
-						if (v188.items and v188.items[v7("\159\232\78\13\6\73\98\152", "\26\236\157\44\82\114\44")]) then
-							v188.items[v7("\57\59\215\100\62\43\205\79", "\59\74\78\181")].TextTruncate = Enum.TextTruncate.AtEnd;
-							v188.items[v7("\54\196\88\101\167\32\201\78", "\211\69\177\58\58")].ClipsDescendants = true;
-							local v2926 = v188.items[v7("\164\240\123\202\253\206\175\241", "\171\215\133\25\149\137")].Text;
-							if (v182.multi and (not v2926 or (v2926 == "") or (v2926 == " "))) then
-								v188.items[v7("\242\221\48\197\251\53\228\86", "\34\129\168\82\154\143\80\156")].Text = v7("\171\189\61\14", "\233\229\210\83\107\40\46");
-							end
+		end
+	end
+	return false;
+end
+local function v54(v218)
+	local v219 = 0 + 0;
+	local v220;
+	while true do
+		if (v219 == (3 - 0)) then
+			v220.WebhookUrl = tostring(v220.WebhookUrl or "");
+			v220.WebhookPingSecret = v220.WebhookPingSecret ~= false;
+			v219 = 1 + 3;
+		end
+		if (v219 == 0) then
+			if (type(v218) ~= v7("\104\219\218\81\82", "\178\28\186\184\61\55\83")) then
+				return v218;
+			end
+			v220 = {};
+			v219 = 2 - 1;
+		end
+		if (v219 == (1 + 0)) then
+			for v1808, v1809 in pairs(v218) do
+				local v1810 = 0;
+				local v1811;
+				local v1812;
+				while true do
+					if (v1810 == (1 + 0)) then
+						if (type(v1809) == v7("\208\204\69\48\247", "\149\164\173\39\92\146\110")) then
+							v220[v1812] = v54(v1809);
+						else
+							v220[v1812] = v1809;
 						end
-					end);
-				end;
-				v1269 = 1 + 0;
-			end
-		end
-	end
-	return v188;
-end;
-local v32 = v22.slider;
-v22.slider = function(v189, v190)
-	local v191 = 899 - (497 + 402);
-	while true do
-		if (v191 == (988 - (578 + 410))) then
-			local v1572 = 0;
-			while true do
-				if (0 == v1572) then
-					v26(v190);
-					return v32(v189, v190);
-				end
-			end
-		end
-	end
-end;
-local v34 = v22.colorpicker;
-v22.colorpicker = function(v192, v193)
-	local v194 = 0 - 0;
-	while true do
-		if (v194 == 0) then
-			v26(v193);
-			return v34(v192, v193);
-		end
-	end
-end;
-local v36 = v22.keybind;
-v22.keybind = function(v195, v196)
-	local v197 = 1543 - (464 + 1079);
-	while true do
-		if (v197 == 0) then
-			local v1573 = 0 + 0;
-			while true do
-				if (v1573 == 0) then
-					v26(v196);
-					return v36(v195, v196);
-				end
-			end
-		end
-	end
-end;
-local v38 = v22.textbox;
-v22.textbox = function(v198, v199)
-	local v200 = 0;
-	while true do
-		if (v200 == 0) then
-			v26(v199);
-			return v38(v198, v199);
-		end
-	end
-end;
-local v40 = {[v7("\81\4\201\161", "\184\60\101\160\207\66")]=v7("\35\128\100\189\34\145\121\168\56\134\38\243\126\213\44\235\99\213\45\228\103\209\45", "\220\81\226\28"),[v7("\18\192\150\244\170\215\31\212\155", "\167\115\181\226\155\138")]=v7("\240\32\255\93\104\98\195\246\43\227\6\52\62\145\178\117\181\11\41\33\145\176\112", "\166\130\66\135\60\27\17"),[v7("\65\92\203\123\36", "\80\36\42\174\21")]=v7("\92\18\47\123\93\3\50\110\71\20\109\53\1\71\103\45\28\71\101\41\31\64\98", "\26\46\112\87"),[v7("\186\44\165\114\182\184\86", "\212\217\67\203\20\223\223\37")]=v7("\168\143\176\211\169\158\173\198\179\137\242\157\245\218\248\133\232\212\240\133\239\221\240", "\178\218\237\200"),[v7("\165\176\242\196\191\187\225\195", "\176\214\213\134")]=v7("\230\175\174\213\187\69\92\224\164\178\142\231\25\14\164\250\228\131\250\7\15\172\255", "\57\148\205\214\180\200\54")};
-local function v41()
-	pcall(function()
-		local v768 = 1696 - (1398 + 298);
-		local v769;
-		while true do
-			if (v768 == (0 - 0)) then
-				v769 = game:GetService(v7("\49\242\39\49\81\7\244", "\22\114\157\85\84"));
-				for v2030, v2031 in ipairs(v769:GetDescendants()) do
-					if (v2031:IsA(v7("\237\198\18\195\88\218\169\198\206\31", "\200\164\171\115\164\61\150")) and v2031.Image:find(v7("\232\164\80\17\212\232\163\85\21\219", "\227\222\148\99\37"))) then
-						local v2672 = v2031.Parent;
-						if (v2672 and v2672:IsA(v7("\7\87\74\226\219\38\70\70\249\247", "\153\83\50\50\150"))) then
-							for v3046, v3047 in ipairs(v2672:GetChildren()) do
-								if (v3047:IsA(v7("\105\115\107\8\95\170\79\88\122", "\45\61\22\19\124\19\203")) and v3047.Text) then
-									local v3234 = 0 + 0;
-									local v3235;
-									while true do
-										if (v3234 == (0 - 0)) then
-											v3235 = v3047.Text:lower():gsub(v7("\255\87\30\190", "\217\161\114\109\149\98\16"), ""):gsub(v7("\87\51\115\56", "\20\114\64\88\28\220"), "");
-											if v40[v3235] then
-												v2031.Image = v40[v3235];
-											end
-											break;
-										end
-									end
-								end
-							end
-						end
+						break;
 					end
-				end
-				break;
-			end
-		end
-	end);
-end
-local v42 = v22.tab;
-v22.tab = function(v201, v202)
-	local v203 = 0 + 0;
-	local v204;
-	local v205;
-	local v206;
-	while true do
-		if (v203 == (1292 - (561 + 729))) then
-			task.spawn(function()
-				for v2032 = 1 + 0, 10 - 5 do
-					task.wait(1159.1 - (104 + 1055));
-					v41();
-				end
-			end);
-			return unpack(v206);
-		end
-		if (v203 == (1673 - (308 + 1365))) then
-			v202 = v202 or {};
-			v204 = v202.name or v202.Name or "";
-			v203 = 548 - (500 + 47);
-		end
-		if (v203 == (1 - 0)) then
-			v205 = v202.icon or v202.Icon or v40[v204:lower()];
-			v206 = {v42(v201, v202)};
-			v203 = 1952 - (186 + 1764);
-		end
-	end
-end;
-local v44 = {[v7("\16\20\198\187\200\220\188\50\4\247\186\249\210\177\52\5", "\221\81\97\178\212\152\176")]=true,[v7("\253\230\9\243\42\200\245\30\254\20\217\230\26\254", "\122\173\135\125\155")]=(25 + 5),[v7("\180\205\1\186\58\16\198\157\214\8\188\45\52", "\168\228\161\96\217\95\81")]=true,[v7("\250\213\56\93\33\84\222\213\2\93\33\82\200", "\55\187\177\78\60\79")]=true,[v7("\11\194\94\229\77\252\137\41\203", "\224\77\174\63\139\38\175")]=v7("\166\78\76\38\196\114\81\42\129\82", "\78\228\33\56"),[v7("\253\118\189\20\181\194\127\177\6\164\220\123\179", "\229\174\30\210\99")]=true,[v7("\40\229\137\70\195\56\33\15\221\138\80\238\56\52\30\227\146", "\89\123\141\230\49\141\93")]=true,[v7("\213\112\228\1\32\75\231\121\198\9\2\73\246\127\226\13\23\79", "\42\147\17\150\108\112")]=(51 + 34),[v7("\58\182\42\109\230\236\10\128\44\109\234\251\41\175\63\108\243", "\136\111\198\77\31\135")]=false,[v7("\49\4\166\68\169\194\22\187\15\60\183\81\175\229\19\172", "\201\98\105\199\54\221\132\119")]=false,[v7("\152\25\151\46\55\37\171\171\13\135\36\39\59\173\187\0\134\37", "\204\217\108\227\65\98\85")]=true,[v7("\109\206\244\247\56\227\81\208\225\199\45\204\95\205\246\236\34\199", "\160\62\163\149\133\76")]=true,[v7("\241\172\2\45\194\218\141\12\55\246\198\167\31\46\199\211\179", "\163\182\192\109\79")]=10,[v7("\1\54\7\210\244\48\35\41\206\225\49\52\22\193\249", "\149\84\70\96\160")]=0.25,[v7("\8\10\12\238\61\11\8\227\44\47\3\249\61\20\27\236\52", "\141\88\102\109")]=0.3,[v7("\131\91\197\117\20\52\77\243\182\90\196\115\27\47\91\192\167\86", "\161\211\51\170\16\122\93\53")]=true,[v7("\218\187\166\39\218\172\187\36\242\186\187\45\232\139\188\41\249\162\183\44", "\72\155\206\210")]=true,[v7("\103\120\93\2\58\82\99\121\1\55\67", "\83\38\26\52\110")]=v7("\111\31\34\72\93\1\34\84\24\37\34\71\92\14", "\38\56\119\71"),[v7("\210\237\81\218\44\66\234\220\76\215\55\66\196\238\78\211", "\54\147\143\56\182\69")]=(2 - 1),[v7("\244\142\236\90\251\211\149\250\74\203\223\142\241\123\222\216\134\250", "\191\182\225\159\41")]=(50 + 25),[v7("\10\16\33\89\130\147\219\2\28\60\80\153\145\195\39", "\162\75\114\72\53\235\231")]=(0.35 + 0),[v7("\173\50\80\235\99\23\130\53\87\234\94\7\130\40\87", "\98\236\92\36\130\51")]=true,[v7("\133\12\24\181\105\167\180\52", "\80\196\121\108\218\37\200\213")]=true,[v7("\33\102\22\112\120\26\139\18\103", "\234\96\19\98\31\43\110")]=true,[v7("\39\10\70\200\155\115\157\3\44\89\206\188", "\235\102\127\50\167\204\18")]=true,[v7("\113\180\225\44\118\43\64\173\244\58", "\78\48\193\149\67\36")]=false,[v7("\17\11\148\23\111\53\6\148\43\85\63\12\153", "\33\80\126\224\120")]=false,[v7("\205\189\23\203\114\233\176\23\246\83\227\165", "\60\140\200\99\164")]=false,[v7("\166\225\16\41\140\130\236\16\22\173\149\224\5\42", "\194\231\148\100\70")]=false,[v7("\103\89\213\172\218\205\71\90\196", "\168\38\44\161\195\150")]=true,[v7("\161\233\150\121\18\253\176\16\183\249\140\114\41", "\118\224\156\226\22\80\136\214")]=false,[v7("\99\251\77\143\96\251\95\134\97\225\84\141\67\224\93\133\80", "\224\34\142\57")]=false,[v7("\243\162\203\200\82\242\94\11\208\179", "\110\190\199\165\189\19\145\61")]={R=(98 + 85),G=(1350 - (1133 + 41)),B=(436 - 231),[v7("\242\238\111", "\167\186\139\23\136\235")]=v7("\56\226\170\93\57\145", "\109\122\213\232")},[v7("\195\242\172\37\204\254\172\52", "\80\142\151\194")]={[v7("\8\195\110", "\44\99\166\23")]=v7("\82\216\7\19", "\196\28\151\73\86\83"),[v7("\254\12\45\21", "\22\147\99\73\112\226\56\120")]=v7("\140\122\229\242\129\189", "\237\216\21\130\149"),[v7("\131\77\75\86\166\204", "\62\226\46\63\63\208\169")]=true},[v7("\196\12\65\140\57\4\33\90\200\24\65\128\23\62\58\83\232\28\71", "\62\133\121\53\227\127\109\79")]=false,[v7("\49\1\38\250\252\161\171\30\39\39\248\219\171\176", "\194\112\116\82\149\182\206")]=false,[v7("\10\189\65\21\197\240\61\50\161\92\53\193\242", "\110\89\200\44\120\160\130")]=v7("\133\204\69\67", "\45\203\163\43\38\35\42\91"),[v7("\225\144\209\46\130\187\103\217\140\204\14\134\185\71", "\52\178\229\188\67\231\201")]={},[v7("\18\84\93\9\242\78\16\42\72\64\51\242\93\55\41\68\66\43\231\72", "\67\65\33\48\100\151\60")]=v7("\241\232\160\221", "\147\191\135\206\184"),[v7("\183\61\171\204\221\65\129\143\33\182\246\221\82\166\140\45\180", "\210\228\72\198\161\184\51")]={},[v7("\23\92\231\31\80\194\55\64\254\61\114\222\20\70\242\2\119", "\174\86\41\147\112\19")]=false,[v7("\122\21\153\4\0\25\20\165\79\49\152\14\54\27\2", "\203\59\96\237\107\69\111\113")]=false,[v7("\23\3\161\236\52\226\251\33\23\186\228\29\255\192\8\19\186\228\61", "\183\68\118\204\129\81\144")]=false,[v7("\61\184\125\233\14\144\34\162\103\200\14\148\11\161\69\234\15\135\28", "\226\110\205\16\132\107")]=10,[v7("\216\214\237\212\68\249\239\229\216\87\238\244\232\220\79\205\204\245\215\69", "\33\139\163\128\185")]=(1 - 0),[v7("\100\77\9\211\82\74\40\219\86\78\1\248\82\79\52\210\86\65\1\204\68", "\190\55\56\100")]=false,[v7("\101\186\49\19\22\241\223\83\174\42\27\38\237\247\83\189", "\147\54\207\92\126\115\131")]=(1898 - (1786 + 107)),[v7("\44\36\33\114\47\107\20\28\48\111\14\118\12\63\33", "\30\109\81\85\29\109")]=false,[v7("\210\116\70\181\62\223\242\235\88\64\179\59", "\156\159\17\52\214\86\190")]=v7("\143\227\177", "\220\206\143\221"),[v7("\171\120\63\20\208\205\220\146\84\57\18\213\223", "\178\230\29\77\119\184\172")]={v7("\212\178\6", "\152\149\222\106\123\23")},[v7("\246\35\243\83\134\200\43\251\70\167\237\35\247\81\185\206", "\213\189\70\150\35")]=(1529 - (344 + 1185)),[v7("\100\80\113\24\104\80\121\27", "\104\47\53\20")]=0,[v7("\130\89\149\19\140\6\160\71\162\29\174\11\176", "\111\195\44\225\124\220")]=true,[v7("\232\84\9\126\170\185\193\114\1\120\174\136\217\84\4", "\203\184\38\96\19\203")]=v7("\24\103\109\64\205\50\51\93\64\195\56\116\124", "\174\89\19\25\33"),[v7("\27\19\89\75\212\134\25\43\1", "\107\79\114\50\46\151\231")]={v7("\10\179\184\36\143\43\247\240\60\167\167\37\153", "\160\89\198\213\73\234\89\215"),v7("\105\101\160\255\198\67\49\144\255\200\73\118\177", "\165\40\17\212\158"),v7("\215\216\6\52\35", "\70\133\185\104\83"),v7("\39\74\75\38\205\11\82\74", "\169\100\37\36\74"),v7("\34\136\177\67\64\163\163\93\1\128\167", "\48\96\231\194")},[v7("\252\91\5\40\58\217\189\135\219\106\28\36\22\202\166\151\209", "\227\168\58\110\77\121\184\207")]={},[v7("\75\46\182\77\176\201\104\132\109\51\182\68\146\218\99\161", "\197\27\92\223\32\209\187\17")]=v7("\51\87\218\232\10\92\194\247\67\109\198\232\10\76\215", "\155\99\63\163"),[v7("\163\199\174\132\189\167\131\195\165\158", "\228\226\177\193\237\217")]={v7("\4\184\58\245\61\179\34\234\116\130\38\245\61\163\55", "\134\84\208\67"),v7("\62\173\129\85\16\236\180\89\0\165\149\72", "\60\115\204\230"),v7("\194\52\238\125\254\122\217\117\224\63\229", "\16\135\90\139"),v7("\113\122\3\62\87\20\75\68\113\3\55", "\24\52\20\102\83\46\52"),v7("\225\33\36\41\22\132\7\36\37\3\208\39", "\111\164\79\65\68")},[v7("\231\207\140\215\42\201\199\203\135\205\30\248\207\214\145\215\58\243", "\138\166\185\227\190\78")]={},[v7("\252\113\199\63\93\44\18\238\122\196\53\94\38\29", "\121\171\20\165\87\50\67")]=false,[v7("\241\61\187\62\182\13\205\13\171\58", "\98\166\88\217\86\217")]="",[v7("\193\243\123\9\137\211\253\198\112\15\129\239\243\245\107\4\146", "\188\150\150\25\97\230")]=true,[v7("\248\140\76\22\42\226\200\172\73\7\2\249\249\156\77\16\9\227\217\144", "\141\186\233\63\98\108")]=true,[v7("\213\229\34\162\22\249\229\59\146\44\226\233\35\164\33\193\248\35\187\53\229", "\69\145\138\76\214")]=false,[v7("\88\214\139\155\182\18\87\221\134\156\177\18", "\118\16\175\233\233\223")]=v7("\165\139\59\190", "\29\235\228\85\219\142\235"),[v7("\21\205\184\207\126\74\15\91\49\216", "\50\93\180\218\189\23\46\71")]=v7("\240\171\85\73", "\40\190\196\59\44\36\188"),[v7("\15\81\211\166\227\74\2\46\73\216", "\109\92\37\188\212\154\29")]=v7("\52\227\165\205\52\78\68\200\182\198\52\84\13\234", "\58\100\143\196\163\81"),[v7("\41\86\44\177\38\104\230\26", "\110\122\34\67\195\95\41\133")]=v7("\84\178\79\10\135", "\182\21\209\59\42"),[v7("\132\67\202\15\56\154\190\81\195\20\34\171\187\67\220", "\222\215\55\165\125\65")]=v7("\2\222\212\23\243\205", "\42\76\177\166\122\146\161\141"),[v7("\150\158\10\220\96\80\183\131\0\192\125\101\138\132\9\215", "\22\197\234\101\174\25")]=false,[v7("\12\33\177\211\92\160\222\136\30\32\170\206\111", "\230\77\84\197\188\22\207\183")]=false,[v7("\216\1\210\243\170\168\254\49\212\21\210\255\132\146\228\58\235\13", "\85\153\116\166\156\236\193\144")]=false,[v7("\142\239\68\189\200\1\183\244\108\176\240", "\96\196\128\45\211\132")]=false,[v7("\2\130\105\83\214\156\191\209\37", "\184\85\237\27\63\178\207\212")]=false,[v7("\36\92\14\90\6\93\58\75\9\94\12", "\63\104\57\105")]=v7("\38\134\163\77\8\199\140\77\7\139\183\4\67\162\168\66\75\174\170\82\10\148\173\75\5\206", "\36\107\231\196"),[v7("\113\176\165\130\83\177\131\132\73", "\231\61\213\194")]=v7("\40\174\41\51\88", "\19\105\205\93"),[v7("\136\29\202\142\21\166\1\208\173\58\174\13\208\133", "\95\201\104\190\225")]=false,[v7("\142\222\213\193\137\194\207\202\130\202\213\205\167\231\196\201\170\197\197", "\174\207\171\161")]=false,[v7("\223\255\4\247\207\216\255\242\9", "\183\141\158\109\147\152")]=v7("\15\28\244\30\41\7\242\76\30\8\239\8", "\108\76\105\134"),[v7("\217\196\184\229\239\232\209", "\174\139\165\209\129")]=v7("\130\176\246\129\151", "\24\195\211\130\161\166\99\16"),[v7("\103\22\253\35\121\25\79\13\219\45\90\18", "\118\38\99\137\76\51")]=false,[v7("\220\51\17\29\47\41\243\34\40\19\29\35\245\20\4\27\13", "\64\157\70\101\114\105")]=false,[v7("\97\186\179\234\22\65\171\179\201\31\73\166\138\236\20\69", "\112\32\200\199\131")]=v7("\10\89\82\188\131\134\35\56\83\84", "\66\76\48\60\216\163\203"),[v7("\155\147\109\252\117\193\45\180\167\107\231\86\200\37\185\146", "\68\218\230\25\147\63\174")]=false,[v7("\140\63\71\67\149\161\43\90\65\151\191\62\90\74\183\174\62\97\73\161\172\56\87\95", "\214\205\74\51\44")]=false,[v7("\215\77\236\239\126\245\66\208\243\120\247", "\23\154\44\130\156")]=(1893 - (1093 + 799)),[v7("\60\167\163\189\63\28\31\130\164\168\48\26\18\179\161\186\47", "\115\113\198\205\206\86")]=v7("\172\86\236\94", "\58\228\55\158"),[v7("\149\156\196\33\22\162\60\186\164\209\32\47\164\58\186", "\85\212\233\176\78\92\205")]=false,[v7("\96\87\129\236\102\89\155\246\103\89\134\241\67\87\134\208\69\87\133", "\130\42\56\232")]=false,[v7("\203\160\48\236\102\54\228\177\9\226\84\60\226\152\37\237\83\54\229\187", "\95\138\213\68\131\32")]=false,[v7("\9\32\160\79\122\47\38\166\70\68\47\63\160\81\114\12\33\173\87\115\56", "\22\74\72\193\35")]=v7("\13\117\232\24\99\57\197\86\53", "\56\76\25\132"),[v7("\127\212\191\41\229\81\200\165\5\199\95\205\167\35\193\89\196", "\175\62\161\203\70")]=false,[v7("\29\200\215\28\19\53\211\199\62\52\40\222\203\48\61\61\209\207\22\59\59\216", "\85\92\189\163\115")]=false,[v7("\8\185\36\55\3\163\57\54\13\173\57\52\48\143\56\57\37\160\53\54\46\169", "\88\73\204\80")]=false,[v7("\15\150\4\73\15\211\32\135\61\71\61\217\38\167\17\79\37\195\13\139\17\74\37\223\32\132\21", "\186\78\227\112\38\73")]=false,[v7("\201\68\248\118\70\105\232\88\240\101\95\123\255\82\240\80\93\110\211\69\249\80\65", "\26\156\55\157\53\51")]=true,[v7("\185\203\19\250\173\67\152\215\27\236\168\87\158\217\18\220\151\66\136\221\4", "\48\236\184\118\185\216")]=true,[v7("\194\177\88\50\206\56\209\188\69\55\202\32\213\175\94\63\221\61\241\164", "\84\133\221\55\80\175")]=v7("\156\242\48\169", "\60\221\135\68\198\167"),[v7("\222\177\249\128\71\212\235\179\236\172\80\221\235\175", "\185\142\221\152\227\34")]={(1 + 0),3,(22 - 16),5,2,(4 + 0)},[v7("\109\213\80\232\66\55\242\119\215\83\255\81", "\151\56\165\55\154\35\83")]={(1130 - (274 + 855)),3,(12 - 6),(8 - 3),(2 + 0),4},[v7("\147\79\10\250\144\79\4\237\165\78\0\224\180", "\142\192\35\101")]={[1 + 0]=true,[1015 - (872 + 141)]=true,[1 + 2]=true,[13 - 9]=true,[9 - 4]=true,[6]=true},[v7("\229\121\38\183\203\133\161\31\194\102", "\118\182\21\73\195\135\236\204")]={[539 - (139 + 399)]=(5 + 1),[2 + 0]=6,[3]=(1708 - (1038 + 664)),[3 + 1]=(5 + 1),[5]=4,[1 + 5]=(4 - 0)},[v7("\59\48\21\84\41\12\229\61\44\29\82\5\9\248\27", "\157\104\92\122\32\100\109")]={[1 - 0]=10,[2]=(9 + 1),[3]=(4 + 6),[4]=(26 - 16),[579 - (388 + 186)]=(496 - (421 + 65)),[6]=(19 - 9)},[v7("\150\168\198\222\30\50\158\191\172\171\252\207\41\51\132\165\164\181", "\203\195\198\175\170\93\71\237")]={[1 + 0]={[v7("\15\70\49\192\95\5", "\156\78\43\94\181\49\113")]=(6 + 0),[v7("\95\233\220\150\27\68\107\115\236\193", "\25\18\136\164\195\107\35")]=(1273 - (604 + 659)),[v7("\203\56\186\91\125\177\241\185\252\37", "\216\136\77\201\47\18\220\161")]=(1504 - (1267 + 237)),[v7("\25\237\57\221\13\200", "\226\77\140\75\186\104\188")]=v7("\157\203\214\62\90\181\218", "\47\217\174\176\95"),[v7("\153\223\127\14\187\64\97", "\70\216\189\22\98\210\52\24")]=v7("\254\218\165\134\198\214\203", "\179\186\191\195\231"),[v7("\216\61\17\232\240\43\1\211\248\41\29", "\132\153\95\120")]=(182 - (112 + 69)),[v7("\131\183\7\35\244\219\178\191\179\26\40", "\192\209\210\110\77\151\186")]=false},[2 - 0]={[v7("\193\14\45\252\241\208", "\164\128\99\66\137\159")]=(490 - (319 + 165)),[v7("\45\136\241\139\16\142\251\191\4\140", "\222\96\233\137")]=10,[v7("\154\166\180\11\135\254\192\184\167\175", "\144\217\211\199\127\232\147")]=(0 + 0),[v7("\204\46\44\47\208\81", "\36\152\79\94\72\181\37\98")]=v7("\243\221\65\62\194\212\83", "\95\183\184\39"),[v7("\148\61\238\42\93\148\27", "\98\213\95\135\70\52\224")]=v7("\218\166\207\118\65\242\183", "\52\158\195\169\23"),[v7("\91\190\59\120\143\33\98\188\123\170\55", "\235\26\220\82\20\230\85\27")]=1,[v7("\186\164\224\204\119\137\179\231\195\96\141", "\20\232\193\137\162")]=false},[3]={[v7("\3\210\202\179\233\152", "\17\66\191\165\198\135\236\119")]=(1359 - (634 + 719)),[v7("\34\174\182\38\239\239\254\208\11\170", "\177\111\207\206\115\159\136\140")]=(1049 - (248 + 791)),[v7("\38\156\3\0\219\66\111\4\157\24", "\63\101\233\112\116\180\47")]=(0 + 0),[v7("\247\58\255\21\253\34", "\86\163\91\141\114\152")]=v7("\119\14\114\114\47\95\31", "\90\51\107\20\19"),[v7("\172\242\140\227\52\153\233", "\93\237\144\229\143")]=v7("\49\243\246\24\30\74\1", "\38\117\150\144\121\107"),[v7("\12\185\231\54\36\175\247\13\44\173\235", "\90\77\219\142")]=(1 + 0),[v7("\212\1\40\55\79\6\104\232\5\53\60", "\26\134\100\65\89\44\103")]=false},[4]={[v7("\208\238\63\54\170\229", "\196\145\131\80\67")]=6,[v7("\51\177\30\61\8\239\12\177\2\13", "\136\126\208\102\104\120")]=10,[v7("\91\159\221\87\160\95\13\80\108\130", "\49\24\234\174\35\207\50\93")]=(1085 - (888 + 197)),[v7("\56\243\239\143\116\24", "\17\108\146\157\232")]=v7("\111\198\18\236\58\164\95", "\200\43\163\116\141\79"),[v7("\158\52\52\143\185\224\250", "\131\223\86\93\227\208\148")]=v7("\199\64\176\183\8\185\247", "\213\131\37\214\214\125"),[v7("\7\41\44\179\232\50\50\18\190\247\35", "\129\70\75\69\223")]=(3 - 2),[v7("\116\206\250\231\127\238\84\197\242\253\121", "\143\38\171\147\137\28")]=false},[10 - 5]={[v7("\241\143\182\230\13\247", "\180\176\226\217\147\99\131")]=(15 - 11),[v7("\254\184\55\50\195\190\61\6\215\188", "\103\179\217\79")]=(32 - 22),[v7("\105\162\15\193\78\129\147\75\163\20", "\195\42\215\124\181\33\236")]=0,[v7("\57\88\37\57\32\236", "\152\109\57\87\94\69")]=v7("\221\210\12\162\171\222\64", "\200\153\183\106\195\222\178\52"),[v7("\19\225\129\49\64\78\43", "\58\82\131\232\93\41")]=v7("\167\82\214\20\72\51\151", "\95\227\55\176\117\61"),[v7("\57\124\42\71\162\12\103\20\74\189\29", "\203\120\30\67\43")]=(1 + 0),[v7("\195\32\68\225\218\240\55\67\238\205\244", "\185\145\69\45\143")]=false},[6]={[v7("\171\18\22\179\210\158", "\188\234\127\121\198")]=(1 + 3),[v7("\21\51\11\182\40\53\1\130\60\55", "\227\88\82\115")]=(38 - 28),[v7("\96\10\169\179\13\126\115\30\174\175", "\19\35\127\218\199\98")]=(0 - 0),[v7("\40\250\24\229\25\239", "\130\124\155\106")]=v7("\241\206\240\174\182\250\104", "\223\181\171\150\207\195\150\28"),[v7("\109\56\234\162\0\88\35", "\105\44\90\131\206")]=v7("\219\229\180\184\29\50\235", "\94\159\128\210\217\104"),[v7("\113\251\15\179\86\107\224\77\81\239\3", "\26\48\153\102\223\63\31\153")]=(1 - 0),[v7("\48\69\228\253\1\65\255\253\3\84\232", "\147\98\32\141")]=false}}};
-local function v45()
-	local v207 = v16 or game:GetService(v7("\40\79\226\211\3\68\88", "\43\120\35\131\170\102\54")).LocalPlayer;
-	local v208 = (v207 and v207.UserId and (v207.UserId > (1966 - (1355 + 611))) and tostring(v207.UserId)) or "0";
-	local v209 = (v207 and v207.Name and (#v207.Name > (0 + 0)) and v207.Name) or v7("\97\8\140\184\170\167\138", "\228\52\102\231\214\197\208");
-	local v210 = v209:gsub(v7("\37\222\48\221\213\206\84\235", "\182\126\128\21\170\138\235\121"), "");
-	return v208, v210, v209;
-end
-local function v46()
-	pcall(function()
-		if (makefolder and isfolder) then
-			local v1574 = 1001 - (497 + 504);
-			while true do
-				if (v1574 == (0 - 0)) then
-					if not isfolder(v7("\170\240\10\206\179\49", "\102\235\186\85\134\230\115\80")) then
-						makefolder(v7("\118\38\1\119\71\246", "\66\55\108\94\63\18\180"));
-					end
-					if not isfolder(v7("\53\167\186\31\18\123\91\140\134\52\40\76\26\153\150", "\57\116\237\229\87\71")) then
-						makefolder(v7("\139\155\210\207\66\204\8\171\178\238\232\98\224\83\185", "\39\202\209\141\135\23\142"));
-					end
-					break;
-				end
-			end
-		end
-	end);
-end
-local function v47(v211)
-	local v212 = 0 + 0;
-	local v213;
-	local v214;
-	while true do
-		local v770 = 0 + 0;
-		while true do
-			if ((0 + 0) == v770) then
-				if (v212 == (3 - 2)) then
-					local v2387 = 0 - 0;
-					while true do
-						if (v2387 == 0) then
-							if (v211 and (#v211 > (1257 - (1159 + 98))) and (v211 ~= v7("\219\54\15\11\39\244\235", "\152\159\83\105\106\82"))) then
-								local v3162 = 0;
-								local v3163;
-								while true do
-									if (v3162 == (1443 - (418 + 1025))) then
-										v3163 = v211:gsub(v7("\186\248\20\229\246\25\204\251", "\60\225\166\49\146\169"), "");
-										return string.format(v7("\14\52\16\2\52\37\96\31\44\41\14\18\33\10\60\101\68\20\16\91\60\21\68\20\97\20\60\37\15", "\103\79\126\79\74\97"), v214, v213, v3163);
-									end
-								end
-							end
-							return string.format(v7("\155\85\236\91\107\56\245\126\208\112\81\15\180\107\192\60\27\9\133\58\192\61\84\9\181\113", "\122\218\31\179\19\62"), v214, v213);
-						end
-					end
-				end
-				if (v212 == 0) then
-					v213, v214 = v45();
-					v46();
-					v212 = 4 - 3;
-				end
-				break;
-			end
-		end
-	end
-end
-local function v48()
-	local v215 = 0;
-	local v216;
-	local v217;
-	local v218;
-	local v219;
-	while true do
-		if (v215 == 2) then
-			return v219;
-		end
-		if (v215 == (0 - 0)) then
-			local v1575 = 0;
-			while true do
-				if (v1575 == (1794 - (297 + 1496))) then
-					v215 = 1 - 0;
-					break;
-				end
-				if (v1575 == 0) then
-					v216, v217 = v45();
-					v218 = string.format(v7("\246\197\242\132\218", "\37\211\182\173\161\169\193"), v217, v216);
-					v1575 = 944 - (547 + 396);
-				end
-			end
-		end
-		if (v215 == (2 - 1)) then
-			v219 = {v7("\211\63\75\216\61\119\173", "\217\151\90\45\185\72\27")};
-			pcall(function()
-				if (listfiles and isfolder and isfolder(v7("\226\86\216\58\99\225\51\230\17\85\204\105\233\6\69", "\54\163\28\135\114"))) then
-					for v2673, v2674 in ipairs(listfiles(v7("\9\241\98\170\123\93\103\218\94\129\65\106\38\207\78", "\31\72\187\61\226\46"))) do
-						local v2675 = 0;
-						local v2676;
+					if (v1810 == (1657 - (505 + 1152))) then
+						local v2709 = 0;
 						while true do
-							if (v2675 == (0 + 0)) then
-								v2676 = v2674:match("([^/\\]+)%.json$");
-								if v2676 then
-									if (v2676 == v218) then
-									elseif (v2676:sub(1, #v218 + (2 - 1)) == (v218 .. "_")) then
-										local v3451 = 1743 - (999 + 744);
-										local v3452;
-										while true do
-											if (v3451 == 0) then
-												v3452 = v2676:sub(#v218 + 2 + 0);
-												if ((#v3452 > (500 - (324 + 176))) and not table.find(v219, v3452)) then
-													table.insert(v219, v3452);
-												end
-												break;
-											end
-										end
-									end
-								end
+							if (v2709 == 0) then
+								v1811 = tonumber(v1808);
+								v1812 = ((v1811 ~= nil) and v1811) or v1808;
+								v2709 = 1;
+							end
+							if (v2709 == 1) then
+								v1810 = 1 + 0;
 								break;
 							end
 						end
 					end
 				end
-			end);
-			v215 = 1512 - (1171 + 339);
+			end
+			if (v220.TakeCardsPriority and (type(v220.TakeCardsPriority) == v7("\231\38\18\19\31", "\123\147\71\112\127\122"))) then
+				local v2042 = 0;
+				local v2043;
+				while true do
+					if (v2042 == (0 + 0)) then
+						v2043 = {};
+						for v2981, v2982 in pairs(v220.TakeCardsPriority) do
+							if ((type(v2982) == v7("\216\204\128\125\67", "\38\172\173\226\17")) and v2982.name) then
+								table.insert(v2043, {[v7("\67\16\33\234", "\143\45\113\76")]=tostring(v2982.name),[v7("\180\177\17\53\172", "\92\216\216\124")]=(tonumber(v2982.limit) or (0 + 0))});
+							elseif (type(v2982) == v7("\72\38\190\73\243\92", "\157\59\82\204\32")) then
+								table.insert(v2043, {[v7("\54\63\238\255", "\209\88\94\131\154\137\138\179")]=v2982,[v7("\36\168\201\117\10", "\66\72\193\164\28\126\67\81")]=(5 + 0)});
+							end
+						end
+						v2042 = 1 - 0;
+					end
+					if ((3 - 2) == v2042) then
+						v220.TakeCardsPriority = v2043;
+						break;
+					end
+				end
+			else
+				v220.TakeCardsPriority = {};
+			end
+			v219 = 3 - 1;
 		end
-	end
-end
-local function v49(v220)
-	local v221 = 947 - (492 + 455);
-	local v222;
-	while true do
-		if ((1477 - (805 + 671)) == v221) then
-			local v1576 = 1313 - (265 + 1048);
-			while true do
-				if (v1576 == (1576 - (252 + 1324))) then
-					if (delfile and isfile and isfile(v222)) then
-						local v2823 = 0 + 0;
+		if ((1527 - (53 + 1470)) == v219) then
+			if (v220.MenuAccent and (type(v220.MenuAccent) == v7("\211\117\248\244\79", "\42\167\20\154\152"))) then
+				local v2045 = 1004 - (482 + 522);
+				local v2046;
+				while true do
+					if (v2045 == (646 - (496 + 150))) then
+						v2046 = tostring(v220.MenuAccent.Hex or ""):lower();
+						if ((v2046 == v7("\76\171\251\71\33\35", "\65\42\158\194\34\17")) or ((v220.MenuAccent.R == (322 - 77)) and (v220.MenuAccent.G == 158) and (v220.MenuAccent.B == 11))) then
+							v220.MenuAccent = {R=183,G=(261 - (32 + 53)),B=(2015 - (956 + 854)),[v7("\50\34\74", "\142\122\71\50\108\77\141\123")]=v7("\55\245\221\72\24\49", "\91\117\194\159\120")};
+						end
+						break;
+					end
+				end
+			end
+			return v220;
+		end
+		if (v219 == 2) then
+			if (v220.AvoidCardsPriority and (type(v220.AvoidCardsPriority) == v7("\243\45\170\84\35", "\22\135\76\200\56\70"))) then
+				local v2047 = 0;
+				local v2048;
+				while true do
+					if (v2047 == 0) then
+						local v2861 = 0;
 						while true do
-							if (v2823 == (1570 - (544 + 1026))) then
-								pcall(function()
-									delfile(v222);
-								end);
-								return true;
+							if (v2861 == (1 + 0)) then
+								v2047 = 1 - 0;
+								break;
+							end
+							if (v2861 == (0 + 0)) then
+								v2048 = {};
+								for v3322, v3323 in pairs(v220.AvoidCardsPriority) do
+									if ((type(v3323) == v7("\153\49\250\40\88", "\129\237\80\152\68\61")) and v3323.name) then
+										table.insert(v2048, {[v7("\95\169\9\246", "\56\49\200\100\147\124\119")]=tostring(v3323.name),[v7("\192\55\178\249\216", "\144\172\94\223")]=(tonumber(v3323.limit) or (0 - 0))});
+									elseif (type(v3323) == v7("\55\27\176\78\42\8", "\39\68\111\194")) then
+										table.insert(v2048, {[v7("\216\167\234\194", "\215\182\198\135\167\25")]=v3323,[v7("\129\64\231\65\153", "\40\237\41\138")]=(1893 - (1192 + 701))});
+									end
+								end
+								v2861 = 1622 - (326 + 1295);
 							end
 						end
 					end
-					return false;
-				end
-			end
-		end
-		if (v221 == (0 + 0)) then
-			if (not v220 or (v220 == v7("\231\3\69\211\82\114\48", "\68\163\102\35\178\39\30"))) then
-				return false;
-			end
-			v222 = v47(v220);
-			v221 = 1 - 0;
-		end
-	end
-end
-local function v50(v223)
-	if (type(v223) ~= v7("\170\113\216\203\6", "\113\222\16\186\167\99\213\227")) then
-		return v223;
-	end
-	local v224 = {};
-	for v771, v772 in pairs(v223) do
-		local v773 = 662 - (217 + 445);
-		local v774;
-		local v775;
-		while true do
-			if ((1 + 0) == v773) then
-				if (type(v772) == v7("\58\15\249\250\43", "\150\78\110\155")) then
-					v224[v775] = v50(v772);
-				else
-					v224[v775] = v772;
-				end
-				break;
-			end
-			if (v773 == (940 - (492 + 448))) then
-				v774 = tonumber(v771);
-				v775 = ((v774 ~= nil) and v774) or v771;
-				v773 = 1;
-			end
-		end
-	end
-	if (v224.TakeCardsPriority and (type(v224.TakeCardsPriority) == v7("\145\196\37\237\161", "\32\229\165\71\129\196\126\223"))) then
-		local v1271 = 1432 - (1152 + 280);
-		local v1272;
-		while true do
-			if (v1271 == (0 - 0)) then
-				v1272 = {};
-				for v2390, v2391 in pairs(v224.TakeCardsPriority) do
-					if ((type(v2391) == v7("\215\136\198\141\132", "\181\163\233\164\225\225")) and v2391.name) then
-						table.insert(v1272, {[v7("\94\138\51\114", "\23\48\235\94")]=tostring(v2391.name),[v7("\112\211\213\84\67", "\178\28\186\184\61\55\83")]=(tonumber(v2391.limit) or 0)});
-					elseif (type(v2391) == v7("\215\217\85\53\252\9", "\149\164\173\39\92\146\110")) then
-						table.insert(v1272, {[v7("\253\38\29\26", "\123\147\71\112\127\122")]=v2391,[v7("\192\196\143\120\82", "\38\172\173\226\17")]=(24 - 19)});
+					if (v2047 == 1) then
+						v220.AvoidCardsPriority = v2048;
+						break;
 					end
 				end
-				v1271 = 1;
+			else
+				v220.AvoidCardsPriority = {};
 			end
-			if (v1271 == 1) then
-				v224.TakeCardsPriority = v1272;
-				break;
-			end
-		end
-	else
-		v224.TakeCardsPriority = {};
-	end
-	if (v224.AvoidCardsPriority and (type(v224.AvoidCardsPriority) == v7("\89\16\46\227\72", "\143\45\113\76"))) then
-		local v1274 = {};
-		for v1577, v1578 in pairs(v224.AvoidCardsPriority) do
-			if ((type(v1578) == v7("\172\185\30\48\189", "\92\216\216\124")) and v1578.name) then
-				table.insert(v1274, {[v7("\85\51\161\69", "\157\59\82\204\32")]=tostring(v1578.name),[v7("\52\55\238\243\253", "\209\88\94\131\154\137\138\179")]=(tonumber(v1578.limit) or 0)});
-			elseif (type(v1578) == v7("\59\181\214\117\16\36", "\66\72\193\164\28\126\67\81")) then
-				table.insert(v1274, {[v7("\233\45\165\93", "\22\135\76\200\56\70")]=v1578,[v7("\129\57\245\45\73", "\129\237\80\152\68\61")]=(0 + 0)});
-			end
-		end
-		v224.AvoidCardsPriority = v1274;
-	else
-		v224.AvoidCardsPriority = {};
-	end
-	v224.WebhookEnabled = v224.WebhookEnabled == true;
-	v224.WebhookUrl = tostring(v224.WebhookUrl or "");
-	v224.WebhookPingSecret = v224.WebhookPingSecret ~= false;
-	if (v224.MenuAccent and (type(v224.MenuAccent) == v7("\69\169\6\255\25", "\56\49\200\100\147\124\119"))) then
-		local v1277 = 0 + 0;
-		local v1278;
-		while true do
-			if ((845 - (175 + 670)) == v1277) then
-				v1278 = tostring(v224.MenuAccent.Hex or ""):lower();
-				if ((v1278 == v7("\202\107\230\245\156\60", "\144\172\94\223")) or ((v224.MenuAccent.R == (25 + 220)) and (v224.MenuAccent.G == (1811 - (1411 + 242))) and (v224.MenuAccent.B == (6 + 5)))) then
-					v224.MenuAccent = {R=(876 - (678 + 15)),G=(13 + 163),B=(1015 - (593 + 217)),[v7("\12\10\186", "\39\68\111\194")]=v7("\244\241\197\151\90\147", "\215\182\198\135\167\25")};
-				end
-				break;
-			end
+			v220.WebhookEnabled = v220.WebhookEnabled == true;
+			v219 = 1815 - (1595 + 217);
 		end
 	end
-	return v224;
 end
-function v23(v228)
+function v27(v221)
 	pcall(function()
-		local v776 = 0 - 0;
-		local v777;
-		local v778;
+		if not writefile then
+			return;
+		end
+		v50();
+		local v771 = v51(v221);
+		pcall(function()
+			if (v23 and v23.flags) then
+				local v1813 = 216 - (93 + 123);
+				while true do
+					if (v1813 == (1836 - (848 + 988))) then
+						if (v23.flags[v7("\23\24\48\13\10\240\39\25\24\48\12", "\68\122\125\94\120\85\145")] and v23.flags[v7("\26\25\193\75\247\216\185\20\25\193\74", "\218\119\124\175\62\168\185")].Color) then
+							local v2983 = v23.flags[v7("\168\245\70\209\154\241\75\199\160\254\92", "\164\197\144\40")].Color;
+							v24.MenuAccent = {R=math.floor(v2983.R * 255),G=math.floor(v2983.G * 255),B=math.floor(v2983.B * (1815 - (546 + 1014))),[v7("\171\245\178", "\214\227\144\202\235\189")]=v2983:ToHex()};
+						end
+						if v23.flags[v7("\224\160\137\110\47\177\90\50\233", "\92\141\197\231\27\112\211\51")] then
+							local v2985 = 0 - 0;
+							local v2986;
+							local v2987;
+							while true do
+								if (v2985 == (1 + 0)) then
+									if (typeof(v2986.key) == v7("\251\133\106\50\11\50\219\134", "\70\190\235\31\95\66")) then
+										v2987 = tostring(v2986.key);
+									elseif (type(v2986.key) == v7("\169\246\8\239\235\189", "\133\218\130\122\134")) then
+										v2987 = v2986.key;
+									end
+									v24.MenuBind = {[v7("\55\250\250", "\88\92\159\131\164\188\195")]=v2987,[v7("\141\33\187\78", "\189\224\78\223\43\183\139")]=(v2986.mode or v7("\26\243\141\17\205\43", "\161\78\156\234\118")),[v7("\166\180\221\213\177\178", "\188\199\215\169")]=(v2986.active ~= false)};
+									break;
+								end
+								if (v2985 == (74 - (53 + 21))) then
+									v2986 = v23.flags[v7("\235\250\132\182\238\228\246\132\167", "\177\134\159\234\195")];
+									v2987 = v7("\147\196\17\133", "\169\221\139\95\192");
+									v2985 = 1;
+								end
+							end
+						end
+						break;
+					end
+				end
+			end
+		end);
+		local v772 = {};
+		pcall(function()
+			if (v23 and v23.flags) then
+				for v2050, v2051 in pairs(v23.flags) do
+					if ((type(v2051) == v7("\232\8\93\119\237", "\136\156\105\63\27")) and v2051.key) then
+						local v2710 = 0;
+						local v2711;
+						while true do
+							if (v2710 == (291 - (167 + 124))) then
+								v2711 = ((typeof(v2051.key) == v7("\62\130\108\57\50\152\124\57", "\84\123\236\25")) and tostring(v2051.key)) or tostring(v2051.key or v7("\222\164\132\50", "\213\144\235\202\119\204"));
+								v772[v2050] = {[v7("\34\27\202\35\62\38", "\45\67\120\190\74\72\67")]=v2051.active,[v7("\45\45\233\160", "\137\64\66\141\197\153\232\142")]=v2051.mode,[v7("\8\213\59", "\232\99\176\66\198")]=v2711};
+								break;
+							end
+						end
+					elseif ((type(v2051) == v7("\248\32\42\10\126", "\76\140\65\72\102\27\237\153")) and v2051[v7("\126\200\23\220\196\17\191\88\223\24\209\206", "\222\42\186\118\178\183\97")] and v2051[v7("\126\227\72\133\79", "\234\61\140\36")]) then
+						local v2988 = 0;
+						local v2989;
+						while true do
+							if (v2988 == 0) then
+								v2989 = ((typeof(v2051[v7("\2\210\182\125\29", "\111\65\189\218\18")]) == v7("\96\68\23\58\25\15", "\207\35\43\123\85\107\60")) and v2051[v7("\83\165\172\229\107", "\25\16\202\192\138")]:ToHex()) or tostring(v2051[v7("\222\196\161\237\187", "\148\157\171\205\130\201")]);
+								v772[v2050] = {[v7("\23\198\117\39\194\230\34\198\113\39\210\239", "\150\67\180\20\73\177")]=v2051[v7("\185\10\27\67\158\8\27\95\136\22\25\84", "\45\237\120\122")],[v7("\244\231\174\35\197", "\76\183\136\194")]=v2989};
+								break;
+							end
+						end
+					elseif (typeof(v2051) == v7("\89\233\233\55\66\28", "\116\26\134\133\88\48\47")) then
+						v772[v2050] = {[v7("\61\206\172\235\175", "\18\126\161\192\132\221")]=v2051:ToHex()};
+					elseif (typeof(v2051) == v7("\122\38\187\9\127\75\45\163", "\54\63\72\206\100")) then
+						v772[v2050] = tostring(v2051);
+					else
+						v772[v2050] = v2051;
+					end
+				end
+			end
+		end);
+		local v773, v774, v775 = v49();
+		local v776 = {[v7("\254\92\87\105\236\116\198", "\27\168\57\37\26\133")]=v7("\127\228\45", "\183\77\202\28\200"),[v7("\36\50\159\13\19\18\157", "\104\119\83\233")]=os.time(),[v7("\212\251\36\45\86\251\236", "\35\149\152\71\66")]={[v7("\44\251\71\162\19\29", "\90\121\136\34\208")]=v773,[v7("\242\29\80\12\201\15\88\27", "\126\167\110\53")]=v775},[v7("\13\2\33\254\213\51\56", "\95\93\112\78\152\188")]=(v221 or v7("\229\240\131\20\241\178\198", "\178\161\149\229\117\132\222")),[v7("\171\212\211\170\168\17", "\67\232\187\189\204\193\118\198")]=v24,[v7("\167\39\183\50\58\16\246\173\34\180\39\40", "\143\235\78\213\64\91\98")]=v772};
+		local v777 = v15:JSONEncode(v776);
+		writefile(v771, v777);
+		pcall(writefile, v7("\172\98\187\193\69\148\178\107\139\231\118\191\138\6\142\250\127\184", "\214\237\40\228\137\16"), v777);
+		if getgenv().AJ_HUB_CONFIG then
+			getgenv().AJ_HUB_CONFIG = v24;
+		end
+	end);
+end
+function v28(v222)
+	local v223, v224 = pcall(function()
+		local v778 = 180 - (4 + 176);
 		local v779;
 		local v780;
 		local v781;
 		local v782;
 		local v783;
 		while true do
-			if (v776 == (4 + 0)) then
-				v783 = v15:JSONEncode(v782);
-				writefile(v777, v783);
-				break;
-			end
-			if (v776 == (0 - 0)) then
-				if not writefile then
-					return;
+			if (v778 == (0 - 0)) then
+				if (not readfile or not isfile) then
+					return 0 - 0;
 				end
-				v46();
-				v776 = 1;
+				v50();
+				v779 = v51(v222);
+				v778 = 1;
 			end
-			if (v776 == (493 - (112 + 378))) then
-				v779, v780, v781 = v45();
-				v782 = {[v7("\187\29\8\94\132\23\20", "\45\237\120\122")]=v7("\133\166\243", "\76\183\136\194"),[v7("\73\231\243\61\84\110\0", "\116\26\134\133\88\48\47")]=os.time(),[v7("\63\194\163\235\168\124\10", "\18\126\161\192\132\221")]={[v7("\106\59\171\22\127\91", "\54\63\72\206\100")]=v779,[v7("\253\74\64\104\235\122\197\92", "\27\168\57\37\26\133")]=v781},[v7("\29\184\115\174\222\33\175", "\183\77\202\28\200")]=(v228 or v7("\51\54\143\9\2\63\157", "\104\119\83\233")),[v7("\214\247\41\36\74\242", "\35\149\152\71\66")]=v44,[v7("\53\225\64\162\59\11\241\100\188\59\30\251", "\90\121\136\34\208")]=v778};
-				v776 = 4;
+			if (v778 == (12 - 8)) then
+				if not isfile(v779) then
+					task.delay(0.5 + 0, function()
+						v27(v222);
+					end);
+				end
+				return v783;
 			end
-			if (v776 == 2) then
-				v778 = {};
-				pcall(function()
-					if (v22 and v22.flags) then
-						for v2824, v2825 in pairs(v22.flags) do
-							if ((type(v2825) == v7("\174\227\24\234\224", "\133\218\130\122\134")) and v2825.key) then
-								local v3048 = 1547 - (952 + 595);
-								local v3049;
-								while true do
-									if (v3048 == (396 - (23 + 373))) then
-										v3049 = ((typeof(v2825.key) == v7("\25\241\246\201\245\183\61\49", "\88\92\159\131\164\188\195")) and tostring(v2825.key)) or tostring(v2825.key or v7("\174\1\145\110", "\189\224\78\223\43\183\139"));
-										v778[v2824] = {[v7("\47\255\158\31\215\43", "\161\78\156\234\118")]=v2825.active,[v7("\170\184\205\217", "\188\199\215\169")]=v2825.mode,[v7("\247\12\70", "\136\156\105\63\27")]=v3049};
+			if (v778 == 1) then
+				v780 = nil;
+				if isfile(v779) then
+					v780 = readfile(v779);
+				elseif (not v222 or (v222 == v7("\161\230\233\216\22\170\145", "\198\229\131\143\185\99"))) then
+					local v2863 = 0 + 0;
+					local v2864;
+					local v2865;
+					local v2866;
+					while true do
+						if (v2863 == (1 + 0)) then
+							for v3327, v3328 in ipairs(v2866) do
+								if isfile(v3328) then
+									local v3468 = readfile(v3328);
+									if (v3468 and (#v3468 > (4 + 1))) then
+										v780 = v3468;
 										break;
 									end
 								end
-							elseif ((type(v2825) == v7("\15\141\123\56\30", "\84\123\236\25")) and v2825[v7("\196\153\171\25\191\165\241\153\175\25\175\172", "\213\144\235\202\119\204")] and v2825[v7("\0\23\210\37\58", "\45\67\120\190\74\72\67")]) then
-								local v3236 = 0;
-								local v3237;
-								while true do
-									if (v3236 == 0) then
-										v3237 = ((typeof(v2825[v7("\3\45\225\170\235", "\137\64\66\141\197\153\232\142")]) == v7("\32\223\46\169\154\80", "\232\99\176\66\198")) and v2825[v7("\207\46\36\9\105", "\76\140\65\72\102\27\237\153")]:ToHex()) or tostring(v2825[v7("\105\213\26\221\197", "\222\42\186\118\178\183\97")]);
-										v778[v2824] = {[v7("\105\254\69\132\78\252\69\152\88\226\71\147", "\234\61\140\36")]=v2825[v7("\21\207\187\124\28\49\220\168\119\1\34\196", "\111\65\189\218\18")],[v7("\96\68\23\58\25", "\207\35\43\123\85\107\60")]=v3237};
-										break;
-									end
+							end
+							break;
+						end
+						if (v2863 == 0) then
+							local v3260 = 0 - 0;
+							while true do
+								if (v3260 == (119 - (93 + 26))) then
+									v2864, v2865 = v49();
+									v2866 = {string.format(v7("\112\166\151\91\100\174\231\114\82\143\167\102\95\152\187\60\20\159\230\121\66\131\166", "\19\49\236\200"), v2864),string.format(v7("\223\29\201\159\209\152\193\20\249\185\226\179\249\8\179\164\170\176\237\56\248", "\218\158\87\150\215\132"), v2864),string.format(v7("\218\52\230\202\3\0\242\216\17\215\228\63\37\242\190\13\151\232\37\45\195", "\173\155\126\185\130\86\66"), v2865),string.format(v7("\196\168\179\202\141\161\196\162\172\194\134\248\240\180\191\212\183\169\246\232\176\212\135\226", "\140\133\198\218\167\232"), v2865),v7("\148\4\139\85\177\151\17\151\114\138\179\39\179\51\142\166\33\186", "\228\213\78\212\29")};
+									v3260 = 1;
 								end
-							elseif (typeof(v2825) == v7("\83\165\172\229\107\35", "\25\16\202\192\138")) then
-								v778[v2824] = {[v7("\222\196\161\237\187", "\148\157\171\205\130\201")]=v2825:ToHex()};
-							elseif (typeof(v2825) == v7("\6\218\97\36\248\226\38\217", "\150\67\180\20\73\177")) then
-								v778[v2824] = tostring(v2825);
-							else
-								v778[v2824] = v2825;
+								if (v3260 == 1) then
+									v2863 = 1;
+									break;
+								end
 							end
 						end
 					end
-				end);
-				v776 = 6 - 3;
+				end
+				if (not v780 or (#v780 < 5)) then
+					return 0 + 0;
+				end
+				v778 = 1 + 1;
 			end
-			if (v776 == (2 - 1)) then
-				local v1742 = 0 + 0;
-				while true do
-					if (v1742 == (1785 - (1102 + 682))) then
-						v776 = 1 + 1;
-						break;
+			if ((1657 - (220 + 1434)) == v778) then
+				v783 = 0;
+				for v2052, v2053 in pairs(v782) do
+					v24[v2052] = v2053;
+					v783 = v783 + 1;
+				end
+				if v25 then
+					v25.CurrentProfile = v222 or v7("\163\73\176\4\254\139\88", "\139\231\44\214\101");
+					if (v25.TakePriorityUI and v25.TakePriorityUI.refresh) then
+						v25.TakePriorityUI.refresh();
 					end
-					if (0 == v1742) then
-						v777 = v47(v228);
-						pcall(function()
-							if (v22 and v22.flags) then
-								local v3050 = 0;
-								while true do
-									if (v3050 == (0 + 0)) then
-										if (v22.flags[v7("\128\76\228\93\178\72\233\75\136\71\254", "\40\237\41\138")] and v22.flags[v7("\202\113\244\237\117\198\119\249\253\68\211", "\42\167\20\154\152")].Color) then
-											local v3411 = v22.flags[v7("\71\251\172\87\78\32\73\253\167\76\101", "\65\42\158\194\34\17")].Color;
-											v44.MenuAccent = {R=math.floor(v3411.R * (1638 - (118 + 1265))),G=math.floor(v3411.G * (1354 - (725 + 374))),B=math.floor(v3411.B * 255),[v7("\50\34\74", "\142\122\71\50\108\77\141\123")]=v3411:ToHex()};
-										end
-										if v22.flags[v7("\24\167\241\13\4\23\171\241\28", "\91\117\194\159\120")] then
-											local v3413 = v22.flags[v7("\23\24\48\13\10\243\45\20\25", "\68\122\125\94\120\85\145")];
-											local v3414 = v7("\57\51\225\123", "\218\119\124\175\62\168\185");
-											if (typeof(v3413.key) == v7("\128\254\93\201\140\228\77\201", "\164\197\144\40")) then
-												v3414 = tostring(v3413.key);
-											elseif (type(v3413.key) == v7("\144\228\184\130\211\177", "\214\227\144\202\235\189")) then
-												v3414 = v3413.key;
-											end
-											v44.MenuBind = {[v7("\230\160\158", "\92\141\197\231\27\112\211\51")]=v3414,[v7("\235\240\142\166", "\177\134\159\234\195")]=(v3413.mode or v7("\137\228\56\167\197\184", "\169\221\139\95\192")),[v7("\223\136\107\54\52\35", "\70\190\235\31\95\66")]=(v3413.active ~= false)};
-										end
-										break;
-									end
-								end
-							end
-						end);
-						v1742 = 1;
+					if (v25.AvoidPriorityUI and v25.AvoidPriorityUI.refresh) then
+						v25.AvoidPriorityUI.refresh();
 					end
 				end
+				v778 = 4;
+			end
+			if (v778 == (6 - 4)) then
+				v781 = v15:JSONDecode(v780);
+				if (not v781 or not v781.Config) then
+					return 0 - 0;
+				end
+				v782 = v54(v781.Config);
+				v778 = 3;
 			end
 		end
 	end);
+	return (v223 and v224) or 0;
 end
-local function v51(v229)
-	local v230 = 0 + 0;
-	local v231;
-	local v232;
-	while true do
-		if (v230 == (0 + 0)) then
-			v231, v232 = pcall(function()
-				local v1743 = 1998 - (1142 + 856);
-				local v1744;
-				local v1745;
-				local v1746;
-				local v1747;
-				local v1748;
-				while true do
-					if (v1743 == (1 + 0)) then
-						v1745 = nil;
-						if isfile(v1744) then
-							v1745 = readfile(v1744);
-						elseif (not v229 or (v229 == v7("\227\11\83\31\210\2\65", "\126\167\110\53"))) then
-							local v3164 = 0;
-							local v3165;
-							local v3166;
-							local v3167;
+getgenv().AJ_HUB_SAVE_CONFIG = v27;
+getgenv().AJ_HUB_LOAD_CONFIG = v28;
+local v57 = v28();
+if (v57 == 0) then
+	v27();
+end
+v25 = {[v7("\236\198\47\80\25\165\56\23\213\230\28\91\20", "\118\185\143\102\62\112\209\81")]=false,[v7("\127\101\59\244\160\27\8\8\78\127\47\239\169\16", "\88\60\16\73\134\197\117\124")]=v7("\116\239\254\201\84\92\254", "\33\48\138\152\168"),[v7("\94\23\62\84\210", "\87\18\118\80\49\161")]={},[v7("\127\14\213\180\163", "\208\44\126\186\192")]={},[v7("\217\31\188\210\39\236\198\90", "\46\151\122\196\166\116\156\169")]=nil,[v7("\203\232\94\14\200\233\226\82", "\155\133\141\38\122")]=nil,[v7("\11\47\180\85\122\113\172\49\3\162\71\64", "\197\69\74\204\33\47\31")]=nil,[v7("\214\78\83\139\245\75\105\151\255\91\73", "\231\144\47\58")]={},[v7("\130\208\213\112\22\52\215\10\189\212\222", "\89\210\184\186\21\120\93\175")]={},[v7("\157\82\111\193\73\54\176\80\121\216\124\52\165\103\117\216\124", "\90\209\51\28\181\25")]=(0 - 0),[v7("\252\122\68\250\138\192\124\69\239\187\213\79\94\227\186", "\223\176\27\55\142")]=(1602 - (906 + 696)),[v7("\8\186\221\161\5\185\199\185\45\175\215\129\45\182\203", "\213\68\219\174")]=0,[v7("\39\225\48\243\30\196\45\120\14\244\0\239\47\198\52\75\2\237\38", "\31\107\128\67\135\74\165\95")]=0,[v7("\244\233\239\89\114\186\209\248\200\68\76\180", "\209\184\136\156\45\33")]=0,[v7("\43\201\102\28\153\9\220\124\41\190\12\252\124\5\189", "\216\103\168\21\104")]=(0 - 0),[v7("\89\163\87\173\89\171\72\135\119\163\77\161\123\185\74\171\118", "\196\24\205\35")]=nil,[v7("\2\138\240\18\29\159\226\20\58\189\236\18\43\191\234\11\43", "\102\78\235\131")]=(0 + 0),[v7("\214\47\39\80\106\56\163\55\242\15\55\80\78\54\185\0\243\35\49", "\84\154\78\84\36\39\89\215")]=0,[v7("\209\224\69\76\34\239\232\82\123\10\240\241\67\76\0", "\101\157\129\54\56")]=(679 - (178 + 501)),[v7("\49\168\153\191\15\118\31\171\147\136\43\124\30\162", "\25\125\201\234\203\67")]=(0 - 0),[v7("\78\241\26\11\27\40\24\74\241\22\23\50\40\1\90\225\10\17\17\41\7\84\245\12\0\28", "\115\25\148\120\99\116\71")]=false,[v7("\59\56\187\44\78\3\54\144\42\113\30\50\190\54\68\31\46", "\33\108\93\217\68")]=false,[v7("\246\74\181\174\211\120\181\172\201\95\149\164\214\78", "\205\187\43\193")]=tick(),[v7("\210\115\22\203\211\115\17\220\246\65\0\203\234\123\11\216\237", "\191\158\18\101")]=nil,[v7("\233\194\148\163\139\215\204\151\167\170\193\234\147\178\162\214", "\207\165\163\231\215")]=nil,[v7("\234\248\234\66\0\98\201\233\233\83\32\69\200\240\237\69", "\16\166\153\153\54\68")]=nil};
+getgenv().AJ_HUB_CONFIG = v24;
+getgenv().AJ_HUB_STATE = v25;
+local v60 = function()
+	pcall(function()
+		local v784 = game:GetService(v7("\224\182\208\74\61\34\248\198\182\196\117\32\46\235\211\180\197", "\153\178\211\160\38\84\65")):FindFirstChild(v7("\135\5\94\59\141\2\84\63\145", "\75\226\107\58"));
+		local v785 = v784 and v784:FindFirstChild(v7("\75\219\3\108\20\208\242\76\209\46\121\29\203\200\86\202", "\173\56\190\113\26\113\162"));
+		if v785 then
+			local v1646 = 0;
+			while true do
+				if (0 == v1646) then
+					if (v785:FindFirstChild(v7("\204\223\32\0\200\205\215\35\12\228\195\219\41", "\151\171\190\77\101")) and not v785.game_finished:GetAttribute(v7("\228\5\208\166\247\118\14\193", "\107\165\79\152\201\152\29"))) then
+						local v2867 = 0;
+						while true do
+							if (v2867 == (0 + 0)) then
+								v785.game_finished:SetAttribute(v7("\118\100\192\196\91\116\82\74", "\31\55\46\136\171\52"), true);
+								v785.game_finished.OnClientEvent:Connect(function(v3329)
+									if (type(v3329) == v7("\197\41\222\248\212", "\148\177\72\188")) then
+										v25.LastMatchSettings = v3329;
+									end
+								end);
+								break;
+							end
+						end
+					end
+					if (v785:FindFirstChild(v7("\181\190\88\196\153\163\89\218\178\137\86\221\162\137\94\199\163\187\104\193\163\161\86\193\162\165", "\179\198\214\55")) and not v785.show_unit_and_item_rewards:GetAttribute(v7("\209\38\90\121\74\216\245\8", "\179\144\108\18\22\37"))) then
+						v785.show_unit_and_item_rewards:SetAttribute(v7("\231\137\51\134\192\205\166\31", "\175\166\195\123\233"), true);
+						v785.show_unit_and_item_rewards.OnClientEvent:Connect(function(v2990, v2991)
+							local v2992 = 1027 - (444 + 583);
 							while true do
-								if (v3164 == (1 - 0)) then
-									for v3416, v3417 in ipairs(v3167) do
-										if isfile(v3417) then
-											local v3478 = readfile(v3417);
-											if (v3478 and (#v3478 > (4 + 1))) then
-												v1745 = v3478;
-												break;
-											end
-										end
+								if (v2992 == 0) then
+									if (v2990 and (type(v2990) == v7("\251\195\95\69\245", "\144\143\162\61\41"))) then
+										v25.LastDroppedItems = v2990;
+									end
+									if (v2991 and (type(v2991) == v7("\244\210\31\92\119", "\83\128\179\125\48\18\231"))) then
+										v25.LastDroppedUnits = v2991;
 									end
 									break;
 								end
-								if (v3164 == (0 + 0)) then
-									v3165, v3166 = v45();
-									v3167 = {string.format(v7("\28\58\17\208\233\29\114\17\45\251\211\42\51\4\61\183\153\44\115\26\61\247\210", "\95\93\112\78\152\188"), v3165),string.format(v7("\224\223\186\61\209\156\237\226\250\139\19\237\185\237\132\230\203\31\247\177\220", "\178\161\149\229\117\132\222"), v3165),string.format(v7("\169\241\226\132\148\52\153\0\135\213\219\165\166\41\227\48\198\209\206\163\175", "\67\232\187\189\204\193\118\198"), v3166),string.format(v7("\170\32\188\45\62\79\206\143\56\176\46\47\23\253\142\61\138\101\40\76\229\152\33\187", "\143\235\78\213\64\91\98"), v3166),v7("\172\98\187\193\69\148\178\107\139\231\118\191\138\6\142\250\127\184", "\214\237\40\228\137\16")};
-									v3164 = 1 - 0;
-								end
 							end
-						end
-						if (not v1745 or (#v1745 < (729 - (657 + 67)))) then
-							return 0 - 0;
-						end
-						v1743 = 1748 - (127 + 1619);
-					end
-					if ((6 - 4) == v1743) then
-						v1746 = v15:JSONDecode(v1745);
-						if (not v1746 or not v1746.Config) then
-							return 1190 - (1069 + 121);
-						end
-						v1747 = v50(v1746.Config);
-						v1743 = 1 + 2;
-					end
-					if ((3 + 0) == v1743) then
-						local v2678 = 0 - 0;
-						while true do
-							if ((2 - 1) == v2678) then
-								if State then
-									State.CurrentProfile = v229 or v7("\161\230\233\216\22\170\145", "\198\229\131\143\185\99");
-									if (State.TakePriorityUI and State.TakePriorityUI.refresh) then
-										State.TakePriorityUI.refresh();
-									end
-									if (State.AvoidPriorityUI and State.AvoidPriorityUI.refresh) then
-										State.AvoidPriorityUI.refresh();
-									end
-								end
-								v1743 = 1194 - (27 + 1163);
-								break;
-							end
-							if (v2678 == 0) then
-								v1748 = 0 - 0;
-								for v3168, v3169 in pairs(v1747) do
-									local v3170 = 1159 - (371 + 788);
-									local v3171;
-									while true do
-										if (v3170 == (0 + 0)) then
-											v3171 = 0 - 0;
-											while true do
-												if (v3171 == 0) then
-													v44[v3168] = v3169;
-													v1748 = v1748 + 1 + 0;
-													break;
-												end
-											end
-											break;
-										end
-									end
-								end
-								v2678 = 3 - 2;
-							end
-						end
-					end
-					if ((0 + 0) == v1743) then
-						if (not readfile or not isfile) then
-							return 0 - 0;
-						end
-						v46();
-						v1744 = v47(v229);
-						v1743 = 1;
-					end
-					if (v1743 == (1 + 3)) then
-						if not isfile(v1744) then
-							task.delay(429.5 - (139 + 290), function()
-								v23(v229);
-							end);
-						end
-						return v1748;
-					end
-				end
-			end);
-			return (v231 and v232) or (1335 - (639 + 696));
-		end
-	end
-end
-getgenv().AJ_HUB_SAVE_CONFIG = v23;
-getgenv().AJ_HUB_LOAD_CONFIG = v51;
-local v54 = v51();
-if (v54 == 0) then
-	v23();
-end
-local v55 = {[v7("\100\165\129\125\88\152\161\114\93\133\178\118\85", "\19\49\236\200")]=false,[v7("\221\34\228\165\225\180\234\7\228\184\226\179\242\50", "\218\158\87\150\215\132")]=v7("\223\27\223\227\35\46\217", "\173\155\126\185\130\86\66"),[v7("\201\167\180\194\155", "\140\133\198\218\167\232")]={},[v7("\134\62\187\105\151", "\228\213\78\212\29")]={},[v7("\169\73\174\17\216\151\67\162", "\139\231\44\214\101")]=nil,[v7("\247\234\30\74\35\189\62\2", "\118\185\143\102\62\112\209\81")]=nil,[v7("\114\117\49\242\144\27\21\44\117\126\47\233", "\88\60\16\73\134\197\117\124")]=nil,[v7("\118\235\241\196\68\84\217\232\199\85\67", "\33\48\138\152\168")]={},[v7("\66\30\63\84\207\62\106\37\63\93\197", "\87\18\118\80\49\161")]={},[v7("\96\31\201\180\128\64\31\217\165\189\73\16\206\148\185\65\27", "\208\44\126\186\192")]=(0 - 0),[v7("\219\27\183\210\33\236\206\92\246\30\161\242\29\241\204", "\46\151\122\196\166\116\156\169")]=(0 - 0),[v7("\201\236\85\14\218\231\228\74\19\239\252\217\79\23\254", "\155\133\141\38\122")]=(0 + 0),[v7("\9\43\191\85\123\126\183\34\47\184\98\71\122\166\46\30\165\76\74", "\197\69\74\204\33\47\31")]=(504 - (156 + 348)),[v7("\220\78\73\147\195\68\83\151\196\70\87\130", "\231\144\47\58")]=0,[v7("\158\217\201\97\57\51\219\48\147\222\209\65\17\48\202", "\89\210\184\186\21\120\93\175")]=0,[v7("\144\93\104\220\88\60\186\112\115\219\119\63\178\71\117\218\119", "\90\209\51\28\181\25")]=nil,[v7("\252\122\68\250\140\196\122\69\250\137\223\111\82\218\182\221\126", "\223\176\27\55\142")]=(890 - (488 + 402)),[v7("\8\186\221\161\9\186\218\182\44\154\205\161\45\180\192\129\45\182\203", "\213\68\219\174")]=0,[v7("\39\225\48\243\13\215\54\123\40\239\46\247\63\209\58", "\31\107\128\67\135\74\165\95")]=(202 - (186 + 16)),[v7("\244\233\239\89\109\190\218\234\229\110\73\180\219\227", "\209\184\136\156\45\33")]=(323 - (119 + 204)),[v7("\48\205\119\0\183\8\195\70\13\182\19\238\122\26\155\18\218\103\13\182\19\229\116\28\187\15", "\216\103\168\21\104")]=false,[v7("\79\168\65\172\119\162\72\141\118\157\81\171\127\191\70\183\107", "\196\24\205\35")]=false,[v7("\3\138\247\5\38\184\247\7\60\159\215\15\35\142", "\102\78\235\131")]=tick(),[v7("\214\47\39\80\106\56\163\55\242\29\49\80\83\48\185\51\233", "\84\154\78\84\36\39\89\215")]=nil,[v7("\209\224\69\76\33\239\238\70\72\0\249\200\66\93\8\238", "\101\157\129\54\56")]=nil,[v7("\49\168\153\191\7\107\18\185\154\174\39\76\19\160\158\184", "\25\125\201\234\203\67")]=nil};
-getgenv().AJ_HUB_CONFIG = v44;
-getgenv().AJ_HUB_STATE = v55;
-local v58 = function()
-	pcall(function()
-		local v784 = game:GetService(v7("\75\241\8\15\29\36\18\109\241\28\48\0\40\1\120\243\29", "\115\25\148\120\99\116\71")):FindFirstChild(v7("\9\51\189\52\78\5\51\173\55", "\33\108\93\217\68"));
-		local v785 = v784 and v784:FindFirstChild(v7("\200\78\179\187\222\89\158\185\212\116\162\161\210\78\175\185", "\205\187\43\193"));
-		if v785 then
-			local v1579 = 0;
-			local v1580;
-			while true do
-				if (v1579 == (0 - 0)) then
-					v1580 = 0 - 0;
-					while true do
-						if (v1580 == (0 - 0)) then
-							if (v785:FindFirstChild(v7("\249\115\8\218\193\116\12\209\247\97\13\218\250", "\191\158\18\101")) and not v785.game_finished:GetAttribute(v7("\228\233\175\184\160\206\198\131", "\207\165\163\231\215"))) then
-								v785.game_finished:SetAttribute(v7("\231\211\209\89\43\123\195\253", "\16\166\153\153\54\68"), true);
-								v785.game_finished.OnClientEvent:Connect(function(v3239)
-									if (type(v3239) == v7("\198\178\194\74\49", "\153\178\211\160\38\84\65")) then
-										v55.LastMatchSettings = v3239;
-									end
-								end);
-							end
-							if (v785:FindFirstChild(v7("\145\3\85\60\189\30\84\34\150\52\91\37\134\52\83\63\135\6\101\57\135\28\91\57\134\24", "\75\226\107\58")) and not v785.show_unit_and_item_rewards:GetAttribute(v7("\121\244\57\117\30\201\200\92", "\173\56\190\113\26\113\162"))) then
-								local v3172 = 0 + 0;
-								while true do
-									if (v3172 == (0 - 0)) then
-										v785.show_unit_and_item_rewards:SetAttribute(v7("\234\244\5\10\248\192\219\41", "\151\171\190\77\101"), true);
-										v785.show_unit_and_item_rewards.OnClientEvent:Connect(function(v3418, v3419)
-											local v3420 = 0 + 0;
-											local v3421;
-											while true do
-												if (v3420 == (1759 - (1709 + 50))) then
-													v3421 = 0;
-													while true do
-														if (v3421 == 0) then
-															if (v3418 and (type(v3418) == v7("\209\46\250\165\253", "\107\165\79\152\201\152\29"))) then
-																v55.LastDroppedItems = v3418;
-															end
-															if (v3419 and (type(v3419) == v7("\67\79\234\199\81", "\31\55\46\136\171\52"))) then
-																v55.LastDroppedUnits = v3419;
-															end
-															break;
-														end
-													end
-													break;
-												end
-											end
-										end);
-										break;
-									end
-								end
-							end
-							break;
-						end
+						end);
 					end
 					break;
 				end
@@ -1319,114 +1259,84 @@ local v58 = function()
 		end
 	end);
 	pcall(function()
-		local v786 = require(game:GetService(v7("\227\45\204\248\216\43\221\224\212\44\239\224\222\58\221\243\212", "\148\177\72\188")).src.Loader);
-		local v787 = v786.load_client_service(nil, v7("\129\131\126\224\163\164\65\218\165\179", "\179\198\214\55"));
+		local v786 = require(game:GetService(v7("\111\178\227\209\78\29\92\163\246\217\116\10\82\165\242\218\66", "\126\61\215\147\189\39")).src.Loader);
+		local v787 = v786.load_client_service(nil, v7("\95\202\52\118\125\237\11\76\123\250", "\37\24\159\125"));
 		local v788 = v787 and v787.results_ui;
 		if v788 then
-			local v1581 = getmetatable(v788);
-			if (v1581 and v1581.__index) then
-				if (v1581.__index.show_results and not v1581.__index._aj_hooked) then
-					local v2679 = 1329 - (249 + 1080);
-					local v2680;
-					while true do
-						if (v2679 == (1 + 0)) then
-							v1581.__index.show_results = function(v3173, v3174, ...)
-								pcall(function()
-									v55.LastMatchSettings = v3174;
-								end);
-								return v2680(v3173, v3174, ...);
-							end;
-							break;
-						end
-						if (v2679 == 0) then
-							v1581.__index._aj_hooked = true;
-							v2680 = v1581.__index.show_results;
-							v2679 = 1;
-						end
-					end
-				end
-				if (v1581.__index.show_unit_and_item_rewards and not v1581.__index._aj_items_hooked) then
-					local v2681 = 451 - (155 + 296);
-					local v2682;
-					while true do
-						if (v2681 == (0 + 0)) then
-							v1581.__index._aj_items_hooked = true;
-							v2682 = v1581.__index.show_unit_and_item_rewards;
-							v2681 = 1;
-						end
-						if ((1 + 0) == v2681) then
-							v1581.__index.show_unit_and_item_rewards = function(v3175, ...)
-								local v3176 = 0 - 0;
-								local v3177;
-								while true do
-									if (v3176 == 0) then
-										v3177 = v3175 and v3175.settings;
-										if (v3177 and (type(v3177) == v7("\228\13\112\122\64", "\179\144\108\18\22\37"))) then
-											v55.LastMatchSettings = v3177;
-										end
-										v3176 = 1 - 0;
-									end
-									if (v3176 == (1 + 0)) then
-										return v2682(v3175, ...);
-									end
-								end
-							end;
-							break;
-						end
-					end
-				end
-			end
-		end
-		local v789 = v786.load_client_service(nil, v7("\245\182\22\132\192\200\144\30\155\217\207\160\30\170\195\207\166\21\157", "\175\166\195\123\233"));
-		if v789 then
-			local v1582 = 0 - 0;
-			local v1583;
-			local v1584;
+			local v1647 = 0 - 0;
+			local v1648;
 			while true do
-				if (v1582 == 0) then
-					v1583 = getmetatable(v789) or v789;
-					v1584 = (v1583 and v1583.__index and (type(v1583.__index) == v7("\251\195\95\69\245", "\144\143\162\61\41")) and v1583.__index) or v789;
-					v1582 = 1 + 0;
-				end
-				if (v1582 == (1 + 0)) then
-					if (v1584.show_unit_and_item_rewards and not v1584._aj_rewards_hooked) then
-						local v2826 = 0 - 0;
-						local v2827;
-						while true do
-							if (v2826 == (0 + 0)) then
-								v1584._aj_rewards_hooked = true;
-								v2827 = v1584.show_unit_and_item_rewards;
-								v2826 = 2 - 1;
+				if (v1647 == (0 + 0)) then
+					v1648 = getmetatable(v788);
+					if (v1648 and v1648.__index) then
+						if (v1648.__index.show_results and not v1648.__index._aj_hooked) then
+							local v3140 = 429 - (407 + 22);
+							local v3141;
+							while true do
+								if (v3140 == (0 - 0)) then
+									v1648.__index._aj_hooked = true;
+									v3141 = v1648.__index.show_results;
+									v3140 = 1;
+								end
+								if (v3140 == 1) then
+									v1648.__index.show_results = function(v3472, v3473, ...)
+										local v3474 = 1232 - (1139 + 93);
+										while true do
+											if (v3474 == 0) then
+												pcall(function()
+													v25.LastMatchSettings = v3473;
+												end);
+												return v3141(v3472, v3473, ...);
+											end
+										end
+									end;
+									break;
+								end
 							end
-							if (v2826 == (1 - 0)) then
-								v1584.show_unit_and_item_rewards = function(v3241, v3242, v3243, ...)
-									local v3244 = 698 - (604 + 94);
-									while true do
-										if (0 == v3244) then
-											local v3422 = 0 + 0;
+						end
+						if (v1648.__index.show_unit_and_item_rewards and not v1648.__index._aj_items_hooked) then
+							local v3142 = 0;
+							local v3143;
+							while true do
+								if (v3142 == (1 + 0)) then
+									v1648.__index.show_unit_and_item_rewards = function(v3475, ...)
+										local v3476 = 1344 - (237 + 1107);
+										local v3477;
+										while true do
+											local v3509 = 0 + 0;
 											while true do
-												if (v3422 == (1803 - (500 + 1303))) then
-													pcall(function()
-														local v3515 = 0;
+												if (v3509 == (11 - (4 + 7))) then
+													if (0 == v3476) then
+														local v3624 = 0;
 														while true do
-															if (v3515 == 0) then
-																if (v3242 and (type(v3242) == v7("\244\210\31\92\119", "\83\128\179\125\48\18\231"))) then
-																	v55.LastDroppedItems = v3242;
+															if (v3624 == (0 - 0)) then
+																v3477 = v3475 and v3475.settings;
+																if (v3477 and (type(v3477) == v7("\206\167\119\78\223", "\34\186\198\21"))) then
+																	v25.LastMatchSettings = v3477;
 																end
-																if (v3243 and (type(v3243) == v7("\73\182\241\209\66", "\126\61\215\147\189\39"))) then
-																	v55.LastDroppedUnits = v3243;
-																end
+																v3624 = 514 - (8 + 505);
+															end
+															if (v3624 == (1 + 0)) then
+																v3476 = 1;
 																break;
 															end
 														end
-													end);
-													return v2827(v3241, v3242, v3243, ...);
+													end
+													if (v3476 == (1 + 0)) then
+														return v3143(v3475, ...);
+													end
+													break;
 												end
 											end
 										end
-									end
-								end;
-								break;
+									end;
+									break;
+								end
+								if (v3142 == (0 + 0)) then
+									v1648.__index._aj_items_hooked = true;
+									v3143 = v1648.__index.show_unit_and_item_rewards;
+									v3142 = 1;
+								end
 							end
 						end
 					end
@@ -1434,424 +1344,440 @@ local v58 = function()
 				end
 			end
 		end
-	end);
-end;
-v58();
-local v59 = function()
-	if (game.PlaceId == 8304191830) then
-		return true;
-	end
-	if (not v9:FindFirstChild(v7("\71\219\60\113\89", "\37\24\159\125")) or not v9:FindFirstChild(v7("\229\132\84\113\255\149", "\34\186\198\21"))) then
-		return true;
-	end
-	return false;
-end;
-local v60 = function(v233)
-	local v234 = 1520 - (916 + 604);
-	local v235;
-	local v236;
-	while true do
-		local v790 = 0 + 0;
-		while true do
-			if (v790 == (0 + 0)) then
-				if (v234 == (7 - 5)) then
-					return (v235:find(v7("\76\14\4\226", "\173\46\123\104\143\206\81")) ~= nil) or (v235:find(v7("\182\8\46\136", "\97\212\125\66\234\37\227")) ~= nil) or (v235:find(v7("\137\230\185", "\126\234\131\214\85")) ~= nil) or (v235:find(v7("\135\144\7\95\10\202\218", "\47\228\181\41\58")) ~= nil) or (v235:find(v7("\181\236\220\62\7\39\30\161\243\215", "\127\198\156\185\91\99\80")) ~= nil) or (v235:find(v7("\230\10\201\245\163\8\56\204\225", "\190\149\122\172\144\199\107\89")) ~= nil) or (v235:find(v7("\59\1\254\242", "\158\82\101\145\158")) ~= nil) or (v235:find(v7("\127\234\3\29\81", "\36\16\158\98\118")) ~= nil) or (v235:find(v7("\198\23\209\246", "\133\160\118\163\155\56\136\71")) ~= nil) or (v236:find(v7("\244\183\125\255", "\213\150\194\17\146\214\127")) ~= nil) or (v236:find(v7("\25\188\168\214", "\86\123\201\196\180\38\196\194")) ~= nil) or (v236:find(v7("\244\237\214", "\207\151\136\185")) ~= nil) or (v236:find(v7("\187\147\45\135\112\111\112\175\140\38", "\17\200\227\72\226\20\24")) ~= nil) or (v236:find(v7("\163\81\30\210\205\242\238\237\164", "\159\208\33\123\183\169\145\143")) ~= nil) or (v236:find(v7("\251\94\55\58", "\86\146\58\88")) ~= nil) or (v236:find(v7("\87\203\235\203\187", "\154\56\191\138\160\206\137\86")) ~= nil);
-				end
-				if (v234 == 0) then
-					if not v233 then
-						return false;
-					end
-					v235 = "";
-					v234 = 1 + 0;
-				end
-				v790 = 1;
-			end
-			if (v790 == 1) then
-				if (v234 == (1 + 0)) then
-					local v2392 = 0;
+		local v789 = v786.load_client_service(nil, v7("\203\29\200\80\205\246\59\192\79\212\241\11\192\126\206\241\13\203\73", "\162\152\104\165\61"));
+		if v789 then
+			local v1649 = 0 + 0;
+			local v1650;
+			local v1651;
+			while true do
+				if (v1649 == (0 + 0)) then
+					local v2375 = 0;
 					while true do
-						if (v2392 == (1 + 0)) then
-							v234 = 2;
+						if (v2375 == (935 - (662 + 273))) then
+							v1650 = getmetatable(v789) or v789;
+							v1651 = (v1650 and v1650.__index and (type(v1650.__index) == v7("\217\46\176\113\117", "\133\173\79\210\29\16")) and v1650.__index) or v789;
+							v2375 = 1 + 0;
+						end
+						if (v2375 == 1) then
+							v1649 = 1;
 							break;
 						end
-						if (v2392 == (1475 - (754 + 721))) then
-							v236 = "";
-							if (type(v233) == v7("\236\9\199\81\199", "\162\152\104\165\61")) then
-								v235 = tostring(v233.name or v233.Name or ""):lower();
-								v236 = tostring(v233.id or v233.unitId or ""):lower();
-							elseif (type(v233) == v7("\222\59\160\116\126\226", "\133\173\79\210\29\16")) then
-								v235 = v233:lower();
-							elseif (typeof and (typeof(v233) == v7("\164\114\254\63\140\114\238\46", "\75\237\28\141"))) then
-								v235 = v233.Name:lower();
-								local v3423 = v233:FindFirstChild(v7("\227\76\216\176\59\8", "\129\188\63\172\209\79\123\135"));
-								v236 = (v3423 and v3423:FindFirstChild(v7("\73\224", "\173\32\132\134")) and tostring(v3423.id.Value):lower()) or "";
-							end
-							v2392 = 507 - (181 + 325);
-						end
 					end
 				end
-				break;
-			end
-		end
-	end
-end;
-local v61 = function(v237)
-	local v238 = 0 - 0;
-	local v239;
-	local v240;
-	local v241;
-	local v242;
-	while true do
-		if ((1 + 2) == v238) then
-			return (v241 == v7("\93\224\242", "\134\62\133\157\24\128")) or (v241:find(v7("\4\160\21", "\182\103\197\122\185\79\209")) ~= nil) or (v241:find(v7("\224\151\228\114\4\95\242\128\238\121", "\40\147\231\129\23\96")) ~= nil) or (v241:find(v7("\102\232\137\64\191\175\221\103\236", "\188\21\152\236\37\219\204")) ~= nil) or (v242 == v7("\67\236\56", "\108\32\137\87")) or (v242:find(v7("\169\237\15", "\57\202\136\96\198\79\153\43")) ~= nil) or (v242:find(v7("\184\51\175\162\137\176\249\172\44\164", "\152\203\67\202\199\237\199")) ~= nil) or (v242:find(v7("\233\83\165\10\27\118\120\244\238", "\134\154\35\192\111\127\21\25")) ~= nil);
-		end
-		if (v238 == (1411 - (413 + 997))) then
-			v240 = "";
-			if (type(v237) == v7("\146\88\247\139\121", "\172\230\57\149\231\28\90\225")) then
-				local v2034 = 0;
-				local v2035;
-				while true do
-					if (v2034 == (0 - 0)) then
-						v2035 = 0;
-						while true do
-							if (0 == v2035) then
-								v239 = tostring(v237.name or v237.Name or ""):lower();
-								v240 = tostring(v237.id or v237.unitId or ""):lower();
-								break;
-							end
-						end
-						break;
-					end
-				end
-			elseif (type(v237) == v7("\17\190\148\219\38\220", "\187\98\202\230\178\72")) then
-				v239 = v237:lower();
-			elseif (typeof and (typeof(v237) == v7("\8\239\183\36\75\47\226\161", "\42\65\129\196\80"))) then
-				local v2927 = 0 - 0;
-				local v2928;
-				while true do
-					if ((0 + 0) == v2927) then
-						v239 = v237.Name:lower();
-						v2928 = v237:FindFirstChild(v7("\61\89\73\219\3\20", "\142\98\42\61\186\119\103\98"));
-						v2927 = 1 + 0;
-					end
-					if (v2927 == (1 + 0)) then
-						v240 = (v2928 and v2928:FindFirstChild(v7("\49\187", "\104\88\223\98")) and tostring(v2928.id.Value):lower()) or "";
-						break;
-					end
-				end
-			end
-			v238 = 6 - 4;
-		end
-		if (v238 == 0) then
-			if not v237 then
-				return false;
-			end
-			v239 = "";
-			v238 = 2 - 1;
-		end
-		if (v238 == 2) then
-			v241 = v239:gsub(v7("\127\178\241\139\76\168\9\200\223", "\141\36\151\130\174\98"), "");
-			v242 = v240:gsub(v7("\191\63\209\72\202\63\143\50\185", "\109\228\26\162"), "");
-			v238 = 1744 - (708 + 1033);
-		end
-	end
-end;
-local v62 = function()
-	local v243 = 0 + 0;
-	local v244;
-	local v245;
-	local v246;
-	while true do
-		local v791 = 0;
-		while true do
-			if (0 == v791) then
-				if ((1 + 0) == v243) then
-					v246 = v245 and v245:FindFirstChild(v7("\39\251\246\13\119", "\22\107\186\184\72\36\204"));
-					if v246 then
-						for v2929, v2930 in ipairs(v246:GetChildren()) do
-							local v2931 = {};
-							local v2932 = v2930:FindFirstChild(v7("\244\173\37\89\0", "\110\135\221\68\46"));
-							if (v2932 and v2932:IsA(v7("\193\55\31\238\254\178\41\247", "\91\131\86\108\139\174\211"))) then
-								table.insert(v2931, v2932.Position);
-							end
-							for v3057 = 1 - 0, 14 + 46 do
-								local v3058 = 0 - 0;
-								local v3059;
-								while true do
-									if (v3058 == (0 + 0)) then
-										v3059 = v2930:FindFirstChild(tostring(v3057));
-										if (v3059 and v3059:IsA(v7("\217\42\171\18\109\250\57\172", "\61\155\75\216\119"))) then
-											table.insert(v2931, v3059.Position);
-										end
-										break;
-									end
-								end
-							end
-							local v2933 = v2930:FindFirstChild(v7("\2\162\188\61\84", "\189\100\203\210\92\56\105"));
-							if (v2933 and v2933:IsA(v7("\13\80\238\45\31\80\239\60", "\72\79\49\157"))) then
-								table.insert(v2931, v2933.Position);
-							end
-							if (#v2931 >= (1 + 1)) then
-								v244[v2930.Name] = v2931;
-							end
-						end
-					end
-					v243 = 2;
-				end
-				if (v243 == 3) then
-					return v244;
-				end
-				v791 = 1658 - (505 + 1152);
-			end
-			if (v791 == (1 + 0)) then
-				if (v243 == (2 + 0)) then
-					if (next(v244) == nil) then
-						local v2828 = 0;
-						local v2829;
-						local v2830;
-						while true do
-							if ((0 + 0) == v2828) then
-								local v3182 = 0 + 0;
-								while true do
-									if (v3182 == (1 - 0)) then
-										v2828 = 1;
-										break;
-									end
-									if (v3182 == (0 - 0)) then
-										v2829 = {};
-										v2830 = v16.Character;
-										v3182 = 1 - 0;
-									end
-								end
-							end
-							if (v2828 == 1) then
-								if (v2830 and v2830:FindFirstChild(v7("\160\165\60\189\134\191\56\184\186\191\62\168\184\177\35\168", "\220\232\208\81"))) then
-									local v3331 = 1523 - (53 + 1470);
-									local v3332;
-									while true do
-										if (v3331 == 1) then
-											table.insert(v2829, v3332 + (v2830.HumanoidRootPart.CFrame.LookVector * (1104 - (482 + 522))));
-											break;
-										end
-										if (v3331 == (646 - (496 + 150))) then
-											local v3456 = 0 - 0;
-											local v3457;
-											while true do
-												if (v3456 == (85 - (32 + 53))) then
-													v3457 = 0;
-													while true do
-														if (v3457 == (1811 - (956 + 854))) then
-															v3331 = 1 + 0;
-															break;
-														end
-														if (v3457 == 0) then
-															v3332 = v2830.HumanoidRootPart.Position;
-															table.insert(v2829, v3332);
-															v3457 = 1 - 0;
-														end
-													end
-													break;
+				if (v1649 == (1 + 0)) then
+					if (v1651.show_unit_and_item_rewards and not v1651._aj_rewards_hooked) then
+						v1651._aj_rewards_hooked = true;
+						local v2869 = v1651.show_unit_and_item_rewards;
+						v1651.show_unit_and_item_rewards = function(v2993, v2994, v2995, ...)
+							local v2996 = 0;
+							while true do
+								if (v2996 == 0) then
+									pcall(function()
+										local v3395 = 0 - 0;
+										while true do
+											if (0 == v3395) then
+												if (v2994 and (type(v2994) == v7("\153\125\239\39\136", "\75\237\28\141"))) then
+													v25.LastDroppedItems = v2994;
 												end
+												if (v2995 and (type(v2995) == v7("\200\94\206\189\42", "\129\188\63\172\209\79\123\135"))) then
+													v25.LastDroppedUnits = v2995;
+												end
+												break;
 											end
 										end
-									end
-								else
-									local v3333 = 0 + 0;
-									while true do
-										if (v3333 == 0) then
-											table.insert(v2829, Vector3.new(0 - 0, 0, 1893 - (1192 + 701)));
-											table.insert(v2829, Vector3.new(0, 1621 - (326 + 1295), 1912 - (1595 + 217)));
-											break;
-										end
-									end
+									end);
+									return v2869(v2993, v2994, v2995, ...);
 								end
-								v244["1"] = v2829;
+							end
+						end;
+					end
+					break;
+				end
+			end
+		end
+	end);
+end;
+v60();
+local v61 = function()
+	local v225 = 244 - (127 + 117);
+	while true do
+		if (v225 == 1) then
+			return false;
+		end
+		if (v225 == (207 - (105 + 102))) then
+			if (game.PlaceId == (8304191830 - 0)) then
+				return true;
+			end
+			if (not v9:FindFirstChild(v7("\127\192\199\249\97", "\173\32\132\134")) or not v9:FindFirstChild(v7("\113\57\41\220\139\2", "\173\46\123\104\143\206\81"))) then
+				return true;
+			end
+			v225 = 1 + 0;
+		end
+	end
+end;
+local v62 = function(v226)
+	local v227 = 0 - 0;
+	local v228;
+	local v229;
+	while true do
+		if (1 == v227) then
+			local v1652 = 0;
+			while true do
+				if ((0 - 0) == v1652) then
+					v229 = "";
+					if (type(v226) == v7("\160\28\32\134\64", "\97\212\125\66\234\37\227")) then
+						local v2871 = 0;
+						while true do
+							if (v2871 == (0 - 0)) then
+								v228 = tostring(v226.name or v226.Name or ""):lower();
+								v229 = tostring(v226.id or v226.unitId or ""):lower();
+								break;
+							end
+						end
+					elseif (type(v226) == v7("\153\247\164\60\16\141", "\126\234\131\214\85")) then
+						v228 = v226:lower();
+					elseif (typeof and (typeof(v226) == v7("\173\219\90\78\78\138\214\76", "\47\228\181\41\58"))) then
+						local v3330 = 1080 - (126 + 954);
+						local v3331;
+						while true do
+							if (v3330 == 1) then
+								v229 = (v3331 and v3331:FindFirstChild(v7("\252\30", "\190\149\122\172\144\199\107\89")) and tostring(v3331.id.Value):lower()) or "";
+								break;
+							end
+							if (v3330 == 0) then
+								v228 = v226.Name:lower();
+								v3331 = v226:FindFirstChild(v7("\153\239\205\58\23\35", "\127\198\156\185\91\99\80"));
+								v3330 = 1;
+							end
+						end
+					end
+					v1652 = 1;
+				end
+				if (v1652 == 1) then
+					v227 = 6 - 4;
+					break;
+				end
+			end
+		end
+		if (v227 == (345 - (52 + 291))) then
+			return (v228:find(v7("\48\16\253\243", "\158\82\101\145\158")) ~= nil) or (v228:find(v7("\114\235\14\20", "\36\16\158\98\118")) ~= nil) or (v228:find(v7("\195\19\204", "\133\160\118\163\155\56\136\71")) ~= nil) or (v228:find(v7("\245\231\63\247\243\81\186", "\213\150\194\17\146\214\127")) ~= nil) or (v228:find(v7("\8\185\161\209\66\179\163\49\20\167", "\86\123\201\196\180\38\196\194")) ~= nil) or (v228:find(v7("\228\248\220\170\243\235\216\189\227", "\207\151\136\185")) ~= nil) or (v228:find(v7("\161\135\39\142", "\17\200\227\72\226\20\24")) ~= nil) or (v228:find(v7("\191\85\26\220\220", "\159\208\33\123\183\169\145\143")) ~= nil) or (v228:find(v7("\244\91\42\59", "\86\146\58\88")) ~= nil) or (v229:find(v7("\90\202\230\205", "\154\56\191\138\160\206\137\86")) ~= nil) or (v229:find(v7("\132\76\249\133", "\172\230\57\149\231\28\90\225")) ~= nil) or (v229:find(v7("\1\175\137", "\187\98\202\230\178\72")) ~= nil) or (v229:find(v7("\50\241\161\53\78\54\224\163\63\68", "\42\65\129\196\80")) ~= nil) or (v229:find(v7("\17\90\88\223\19\4\3\252\22", "\142\98\42\61\186\119\103\98")) ~= nil) or (v229:find(v7("\49\187\13\4", "\104\88\223\98")) ~= nil) or (v229:find(v7("\75\227\227\197\23", "\141\36\151\130\174\98")) ~= nil);
+		end
+		if (v227 == 0) then
+			if not v226 then
+				return false;
+			end
+			v228 = "";
+			v227 = 279 - (76 + 202);
+		end
+	end
+end;
+local v63 = function(v230)
+	local v231 = 0;
+	local v232;
+	local v233;
+	local v234;
+	local v235;
+	while true do
+		if (v231 == (3 + 0)) then
+			return (v234 == v7("\168\38\165", "\152\203\67\202\199\237\199")) or (v234:find(v7("\249\70\175", "\134\154\35\192\111\127\21\25")) ~= nil) or (v234:find(v7("\171\54\12\15\36\197\185\33\6\4", "\178\216\70\105\106\64")) ~= nil) or (v234:find(v7("\44\59\127\243\205\214\213\146\43", "\224\95\75\26\150\169\181\180")) ~= nil) or (v235 == v7("\8\223\215", "\22\107\186\184\72\36\204")) or (v235:find(v7("\228\184\43", "\110\135\221\68\46")) ~= nil) or (v235:find(v7("\240\38\9\238\202\164\58\228\57\2", "\91\131\86\108\139\174\211")) ~= nil) or (v235:find(v7("\232\59\189\18\89\248\42\170\3", "\61\155\75\216\119")) ~= nil);
+		end
+		if (v231 == (847 - (504 + 342))) then
+			v233 = "";
+			if (type(v230) == v7("\144\123\192\1\129", "\109\228\26\162")) then
+				v232 = tostring(v230.name or v230.Name or ""):lower();
+				v233 = tostring(v230.id or v230.unitId or ""):lower();
+			elseif (type(v230) == v7("\77\241\239\113\238\225", "\134\62\133\157\24\128")) then
+				v232 = v230:lower();
+			elseif (typeof and (typeof(v230) == v7("\46\171\9\205\46\191\213\2", "\182\103\197\122\185\79\209"))) then
+				local v2997 = 0 + 0;
+				local v2998;
+				while true do
+					if ((0 - 0) == v2997) then
+						v232 = v230.Name:lower();
+						v2998 = v230:FindFirstChild(v7("\204\148\245\118\20\91", "\40\147\231\129\23\96"));
+						v2997 = 1 + 0;
+					end
+					if (v2997 == (2 - 1)) then
+						v233 = (v2998 and v2998:FindFirstChild(v7("\124\252", "\188\21\152\236\37\219\204")) and tostring(v2998.id.Value):lower()) or "";
+						break;
+					end
+				end
+			end
+			v231 = 2 + 0;
+		end
+		if (v231 == (482 - (387 + 93))) then
+			v234 = v232:gsub(v7("\123\172\36\73\14\172\122\51\125", "\108\32\137\87"), "");
+			v235 = v233:gsub(v7("\145\173\19\227\97\188\6\102\151", "\57\202\136\96\198\79\153\43"), "");
+			v231 = 6 - 3;
+		end
+		if (v231 == 0) then
+			if not v230 then
+				return false;
+			end
+			v232 = "";
+			v231 = 1;
+		end
+	end
+end;
+local v64 = function()
+	local v236 = {};
+	local v237 = v9:FindFirstChild(v7("\59\137\147\15\125\58", "\189\100\203\210\92\56\105")) and v9._BASES:FindFirstChild(v7("\63\71\248", "\72\79\49\157"));
+	local v238 = v237 and v237:FindFirstChild(v7("\164\145\31\153\187", "\220\232\208\81"));
+	if v238 then
+		for v1653, v1654 in ipairs(v238:GetChildren()) do
+			local v1655 = 0;
+			local v1656;
+			local v1657;
+			local v1658;
+			while true do
+				if (v1655 == (5 - 2)) then
+					if (#v1656 >= (1 + 1)) then
+						v236[v1654.Name] = v1656;
+					end
+					break;
+				end
+				if (v1655 == (2 - 1)) then
+					if (v1657 and v1657:IsA(v7("\228\92\92\215\246\92\93\198", "\178\166\61\47"))) then
+						table.insert(v1656, v1657.Position);
+					end
+					for v2712 = 1, 60 do
+						local v2713 = 0;
+						local v2714;
+						while true do
+							if ((0 + 0) == v2713) then
+								v2714 = v1654:FindFirstChild(tostring(v2712));
+								if (v2714 and v2714:IsA(v7("\217\75\251\127\250\63\233\94", "\94\155\42\136\26\170"))) then
+									table.insert(v1656, v2714.Position);
+								end
 								break;
 							end
 						end
 					end
-					v55.Lanes = v244;
-					v243 = 3;
+					v1655 = 941 - (36 + 903);
 				end
-				if (v243 == (216 - (93 + 123))) then
-					v244 = {};
-					v245 = v9:FindFirstChild(v7("\135\4\40\57\5\225", "\178\216\70\105\106\64")) and v9._BASES:FindFirstChild(v7("\47\61\127", "\224\95\75\26\150\169\181\180"));
-					v243 = 1837 - (848 + 988);
+				if (v1655 == (0 - 0)) then
+					local v2376 = 0 + 0;
+					while true do
+						if (v2376 == (263 - (220 + 42))) then
+							v1655 = 3 - 2;
+							break;
+						end
+						if (v2376 == (1505 - (300 + 1205))) then
+							v1656 = {};
+							v1657 = v1654:FindFirstChild(v7("\230\174\228\39\34", "\193\149\222\133\80\76\58"));
+							v2376 = 3 - 2;
+						end
+					end
 				end
+				if (v1655 == 2) then
+					local v2377 = 0;
+					while true do
+						if (v2377 == (923 - (728 + 194))) then
+							v1655 = 660 - (445 + 212);
+							break;
+						end
+						if ((0 - 0) == v2377) then
+							v1658 = v1654:FindFirstChild(v7("\130\54\40\180\136", "\213\228\95\70"));
+							if (v1658 and v1658:IsA(v7("\8\186\209\129\71\43\169\214", "\23\74\219\162\228"))) then
+								table.insert(v1656, v1658.Position);
+							end
+							v2377 = 1 + 0;
+						end
+					end
+				end
+			end
+		end
+	end
+	if (next(v236) == nil) then
+		local v1311 = 0;
+		local v1312;
+		local v1313;
+		while true do
+			if ((0 + 0) == v1311) then
+				v1312 = {};
+				v1313 = v17.Character;
+				v1311 = 1;
+			end
+			if (v1311 == 1) then
+				if (v1313 and v1313:FindFirstChild(v7("\17\243\75\174\53\54\239\66\157\52\54\242\118\174\41\45", "\91\89\134\38\207"))) then
+					local v2715 = 1357 - (167 + 1190);
+					local v2716;
+					while true do
+						if (v2715 == 1) then
+							table.insert(v1312, v2716 + (v1313.HumanoidRootPart.CFrame.LookVector * (744 - (315 + 329))));
+							break;
+						end
+						if (v2715 == (0 + 0)) then
+							v2716 = v1313.HumanoidRootPart.Position;
+							table.insert(v1312, v2716);
+							v2715 = 1;
+						end
+					end
+				else
+					table.insert(v1312, Vector3.new(0, 0 + 0, 0));
+					table.insert(v1312, Vector3.new(650 - (545 + 105), 0, 100));
+				end
+				v236["1"] = v1312;
 				break;
 			end
 		end
 	end
+	v25.Lanes = v236;
+	return v236;
 end;
-local v63 = function(v247, v248)
-	local v249 = 1560 - (546 + 1014);
-	for v792 = 1 - 0, #v248 - (1 + 0) do
-		local v793 = v248[v792];
-		local v794 = v248[v792 + 1];
-		local v795 = (v794 - v793).Magnitude;
-		if ((v247 <= (v249 + v795)) or (v792 == (#v248 - (75 - (53 + 21))))) then
-			local v1585 = 291 - (167 + 124);
-			local v1586;
-			local v1587;
-			local v1588;
+local v65 = function(v240, v241)
+	local v242 = 0 + 0;
+	for v790 = 1 + 0, #v241 - (1 + 0) do
+		local v791 = v241[v790];
+		local v792 = v241[v790 + (2 - 1)];
+		local v793 = (v792 - v791).Magnitude;
+		if ((v240 <= (v242 + v793)) or (v790 == (#v241 - 1))) then
+			local v1659 = 0 - 0;
+			if (v793 > (0 - 0)) then
+				v1659 = math.clamp((v240 - v242) / v793, 0, 1190 - (1044 + 145));
+			end
+			local v1660 = v791:Lerp(v792, v1659);
+			local v1661 = Vector3.new(0 - 0, 0, -(1251 - (122 + 1128)));
+			if (v793 > (1815 - (371 + 1444))) then
+				v1661 = (v792 - v791).Unit;
+			end
+			return v1660, v1661;
+		end
+		v242 = v242 + v793;
+	end
+	return v241[#v241], Vector3.new(16 - (14 + 2), 0 + 0, -(1 + 0));
+end;
+local v66 = nil;
+local function v67()
+	local v243 = 0 - 0;
+	local v244;
+	while true do
+		if ((0 - 0) == v243) then
+			v244 = 0 + 0;
 			while true do
-				if (v1585 == (180 - (4 + 176))) then
-					v1586 = 0;
-					if (v795 > 0) then
-						v1586 = math.clamp((v247 - v249) / v795, 0 - 0, 2 - 1);
-					end
-					v1585 = 3 - 2;
-				end
-				if (v1585 == (2 + 0)) then
-					local v2394 = 0;
+				if (v244 == (0 - 0)) then
+					local v2378 = 0 - 0;
 					while true do
-						if (v2394 == (0 + 0)) then
-							if (v795 > 0) then
-								v1588 = (v794 - v793).Unit;
+						if (v2378 == (0 + 0)) then
+							if not v66 then
+								pcall(function()
+									v66 = require(v10:WaitForChild(v7("\87\252\203", "\71\36\142\168\86\115\176")):WaitForChild(v7("\243\174\115\187\6\172", "\41\191\193\18\223\99\222\54")));
+								end);
 							end
-							return v1587, v1588;
+							return v66;
 						end
 					end
-				end
-				if (v1585 == 1) then
-					v1587 = v793:Lerp(v794, v1586);
-					v1588 = Vector3.new(0, 0 + 0, -(1 + 0));
-					v1585 = 3 - 1;
-				end
-			end
-		end
-		v249 = v249 + v795;
-	end
-	return v248[#v248], Vector3.new(0, 119 - (93 + 26), -1);
-end;
-local v64 = nil;
-local function v65()
-	local v250 = 0 + 0;
-	local v251;
-	while true do
-		if (v250 == 0) then
-			v251 = 0 - 0;
-			while true do
-				if (v251 == 0) then
-					if not v64 then
-						pcall(function()
-							v64 = require(v10:WaitForChild(v7("\230\172\230", "\193\149\222\133\80\76\58")):WaitForChild(v7("\234\82\78\214\195\79", "\178\166\61\47")));
-						end);
-					end
-					return v64;
 				end
 			end
 			break;
 		end
 	end
 end
-local v66 = nil;
-local function v67()
-	local v252 = 0;
-	while true do
-		if (v252 == (0 + 0)) then
-			if not v66 then
-				local v2036 = 0 + 0;
-				local v2037;
-				while true do
-					if (v2036 == (0 + 0)) then
-						v2037 = v65();
-						if (v2037 and v2037.load_data) then
-							pcall(function()
-								v66 = v2037.load_data(nil, v7("\206\68\225\110\217", "\94\155\42\136\26\170"));
-							end);
-						end
-						break;
-					end
-				end
-			end
-			return v66;
-		end
-	end
-end
 local v68 = nil;
 local function v69()
-	local v253 = 0;
+	local v245 = 0;
 	while true do
-		if (v253 == (1654 - (220 + 1434))) then
-			if not v68 then
-				local v2038 = 0 - 0;
-				local v2039;
-				while true do
-					if ((0 - 0) == v2038) then
-						v2039 = v65();
-						if (v2039 and v2039.load_client_service) then
-							pcall(function()
-								v68 = v2039.load_client_service(nil, v7("\177\49\47\161\167\48\42\185\129\60\50\188\139\49\21\176\150\41\47\182\129\28\42\188\129\49\50", "\213\228\95\70"));
-							end);
+		if (v245 == (0 - 0)) then
+			local v1662 = 0 - 0;
+			local v1663;
+			while true do
+				if (v1662 == (0 - 0)) then
+					v1663 = 0 + 0;
+					while true do
+						if ((0 + 0) == v1663) then
+							if not v68 then
+								local v3261 = v67();
+								if (v3261 and v3261.load_data) then
+									pcall(function()
+										v68 = v3261.load_data(nil, v7("\158\40\206\62\185", "\202\203\70\167\74"));
+									end);
+								end
+							end
+							return v68;
 						end
-						break;
 					end
+					break;
 				end
 			end
-			return v68;
 		end
 	end
 end
 local v70 = nil;
 local function v71()
-	local v254 = 0;
+	local v246 = 0 - 0;
 	while true do
-		if (v254 == (0 - 0)) then
-			if not v70 then
-				local v2040 = 1602 - (906 + 696);
-				local v2041;
-				while true do
-					if (v2040 == (0 - 0)) then
-						v2041 = v65();
-						if (v2041 and v2041.load_client_service) then
-							pcall(function()
-								v70 = v2041.load_client_service(nil, v7("\15\181\198\148\120\35\181\214\151\84\38\178\199\138\99", "\23\74\219\162\228"));
-							end);
+		if (v246 == 0) then
+			local v1664 = 0;
+			while true do
+				if (v1664 == (0 - 0)) then
+					if not v70 then
+						local v2873 = 149 - (50 + 99);
+						local v2874;
+						while true do
+							if (v2873 == (439 - (123 + 316))) then
+								v2874 = v67();
+								if (v2874 and v2874.load_client_service) then
+									pcall(function()
+										v70 = v2874.load_client_service(nil, v7("\25\15\213\39\82\35\13\208\54\114\56\8\211\61\66\41\19\202\58\114\41\34\208\58\116\34\21", "\17\76\97\188\83"));
+									end);
+								end
+								break;
+							end
 						end
-						break;
 					end
+					return v70;
 				end
 			end
-			return v70;
 		end
 	end
 end
 local v72 = nil;
 local function v73()
-	local v255 = 0;
+	local v247 = 0 - 0;
+	local v248;
 	while true do
-		if (v255 == (0 + 0)) then
-			if not v72 then
-				local v2042 = 679 - (178 + 501);
-				local v2043;
-				while true do
-					if ((0 - 0) == v2042) then
-						v2043 = v65();
-						if (v2043 and v2043.load_client_service) then
-							pcall(function()
-								v72 = v2043.load_client_service(nil, v7("\30\211\111\156\62\43\240\79\172\62", "\91\89\134\38\207"));
-							end);
+		if (v247 == (1582 - (1507 + 75))) then
+			v248 = 594 - (145 + 449);
+			while true do
+				if (v248 == (1111 - (241 + 870))) then
+					local v2379 = 0;
+					while true do
+						if (0 == v2379) then
+							if not v72 then
+								local v3262 = 0 + 0;
+								local v3263;
+								while true do
+									if (v3262 == 0) then
+										v3263 = v67();
+										if (v3263 and v3263.load_client_service) then
+											pcall(function()
+												v72 = v3263.load_client_service(nil, v7("\160\41\221\39\63\138\69\183\150\4\213\62\53\141\95", "\195\229\71\185\87\80\227\43"));
+											end);
+										end
+										break;
+									end
+								end
+							end
+							return v72;
 						end
-						break;
 					end
 				end
 			end
-			return v72;
+			break;
 		end
 	end
 end
 local v74 = nil;
 local function v75()
 	if not v74 then
-		local v1279 = 0;
-		local v1280;
+		local v1314 = 0 - 0;
+		local v1315;
 		while true do
-			if (v1279 == (0 + 0)) then
-				v1280 = v65();
-				if (v1280 and v1280.load_core_service) then
+			if (v1314 == 0) then
+				v1315 = v67();
+				if (v1315 and v1315.load_client_service) then
 					pcall(function()
-						v74 = v1280.load_core_service(nil, v7("\113\224\193\34\32\213\53\82\231\203\51\48\223\53\65", "\71\36\142\168\86\115\176"));
+						v74 = v1315.load_client_service(nil, v7("\199\201\41\99\234\242\234\9\83\234", "\143\128\156\96\48"));
 					end);
 				end
 				break;
@@ -1860,530 +1786,739 @@ local function v75()
 	end
 	return v74;
 end
-local v76 = 1027 - (444 + 583);
-local v77 = {};
-local v78 = function(v256)
-	local v257 = 0 - 0;
-	local v258;
-	local v259;
-	local v260;
-	while true do
-		if (v257 == (3 + 0)) then
-			for v1749, v1750 in ipairs(v260:GetChildren()) do
-				local v1751 = 429 - (407 + 22);
-				local v1752;
-				while true do
-					if (v1751 == 0) then
-						v1752 = v1750:FindFirstChild(v7("\148\53\211\43\190\184", "\202\203\70\167\74"));
-						if (v1752 and v1752:FindFirstChild(v7("\60\13\221\42\116\62", "\17\76\97\188\83")) and (v1752.player.Value == v16)) then
-							table.insert(v259, v1750);
-						end
-						break;
-					end
-				end
-			end
-			v77 = v259;
-			v257 = 7 - 3;
-		end
-		if (v257 == 4) then
-			return v259;
-		end
-		if (v257 == 2) then
-			v260 = v9:FindFirstChild(v7("\224\148\92\150\55\141", "\41\191\193\18\223\99\222\54"));
-			if not v260 then
-				local v2044 = 1232 - (1139 + 93);
-				while true do
-					if (v2044 == 0) then
-						v77 = v259;
-						return v259;
-					end
-				end
-			end
-			v257 = 3;
-		end
-		if (v257 == 1) then
-			v76 = v258;
-			v259 = {};
-			v257 = 2;
-		end
-		if (v257 == (0 + 0)) then
-			v258 = tick();
-			if (not v256 and ((v258 - v76) < (1344.15 - (237 + 1107))) and (#v77 > 0)) then
-				return v77;
-			end
-			v257 = 1 + 0;
-		end
-	end
-end;
-local v79 = 11 - (4 + 7);
-local v80 = {};
-local v81 = function(v261)
-	local v262 = tick();
-	if (not v261 and ((v262 - v79) < (0.25 - 0)) and (#v80 > (513 - (8 + 505)))) then
-		local v1281 = 0;
-		local v1282;
-		local v1283;
+local v76 = nil;
+local function v77()
+	if not v76 then
+		local v1316 = 0;
+		local v1317;
 		while true do
-			if (v1281 == (1 + 0)) then
-				for v2395, v2396 in ipairs(v1282) do
-					local v2397 = v2396:FindFirstChild(v7("\186\52\205\54\36\144", "\195\229\71\185\87\80\227\43"));
-					if (v2397 and v2397:FindFirstChild(v7("\233\248", "\143\128\156\96\48"))) then
-						local v2831 = 0 + 0;
-						local v2832;
-						while true do
-							if (v2831 == 0) then
-								v2832 = v2397.id.Value;
-								v1283[v2832] = (v1283[v2832] or 0) + 1 + 0;
-								break;
-							end
-						end
-					end
-				end
-				for v2398, v2399 in ipairs(v80) do
-					local v2400 = 0 + 0;
-					local v2401;
-					while true do
-						if ((0 + 0) == v2400) then
-							v2401 = (v2399.unitId and v1283[v2399.unitId]) or (935 - (662 + 273));
-							v2399.cur = v2401;
-							v2400 = 1 + 0;
-						end
-						if (v2400 == 1) then
-							v2399.canPlaceMore = v2401 < v2399.max;
-							break;
-						end
-					end
-				end
-				v1281 = 2 + 0;
-			end
-			if ((7 - 5) == v1281) then
-				local v2045 = 244 - (127 + 117);
-				while true do
-					if (v2045 == (207 - (105 + 102))) then
-						v55.EquippedUnits = v80;
-						return v80;
-					end
-				end
-			end
-			if (0 == v1281) then
-				local v2046 = 0;
-				while true do
-					if (v2046 == (0 + 0)) then
-						v1282 = v78();
-						v1283 = {};
-						v2046 = 1;
-					end
-					if (v2046 == 1) then
-						v1281 = 1;
-						break;
-					end
-				end
-			end
-		end
-	end
-	v79 = v262;
-	local v263 = {};
-	local v264 = v67();
-	local v265 = v69();
-	local v266 = v78(true);
-	local v267 = {};
-	for v796, v797 in ipairs(v266) do
-		local v798 = v797:FindFirstChild(v7("\135\194\228\19\3\171", "\119\216\177\144\114"));
-		if (v798 and v798:FindFirstChild(v7("\192\45", "\34\169\73\153"))) then
-			local v1589 = 0 - 0;
-			local v1590;
-			while true do
-				if (v1589 == 0) then
-					v1590 = v798.id.Value;
-					v267[v1590] = (v267[v1590] or (0 + 0)) + (4 - 3);
-					break;
-				end
-			end
-		end
-	end
-	local v268 = v16.PlayerGui:FindFirstChild(v7("\185\252\10\156\164\211\30\133\163\248\24", "\235\202\140\107"));
-	if (v268 and v268:FindFirstChild(v7("\32\125\34\173\250", "\165\108\20\84\200\137\71\151")) and v268.Lives:FindFirstChild(v7("\92\166\42\133\127", "\232\26\212\75"))) then
-		local v1284 = v268.Lives.Frame:FindFirstChild(v7("\2\71\123\252\228", "\151\87\41\18\136"));
-		if v1284 then
-			for v2047 = 3 - 2, 6 do
-				local v2048 = v1284:FindFirstChild(tostring(v2047));
-				if (v2048 and v2048:IsA(v7("\124\186\195\255\252\81\170\201\196", "\158\59\207\170\176"))) then
-					local v2683 = v2048:GetAttribute(v7("\112\91\34\92\133\95\78\54\77\179\73\76\50\68\137\112\75\61\64\152\112\75\38\64\136", "\236\47\62\83\41"));
-					if (v2683 and (v2683 ~= "")) then
-						local v2936 = 746 - (588 + 158);
-						local v2937;
-						local v2938;
-						local v2939;
-						local v2940;
-						local v2941;
-						local v2942;
-						local v2943;
-						local v2944;
-						local v2945;
-						local v2946;
-						local v2947;
-						while true do
-							if (v2936 == (1080 - (126 + 954))) then
-								local v3245 = 0 - 0;
-								while true do
-									if (v3245 == (344 - (52 + 291))) then
-										v2939 = (v2937 and v2937.Text) or (v7("\143\125\175\26\252", "\110\220\17\192") .. v2047);
-										v2940 = 778 - (76 + 202);
-										v3245 = 2;
-									end
-									if (v3245 == 0) then
-										v2937 = v2048:FindFirstChild(v7("\244\168\45\62", "\226\154\201\64\91\202"), true);
-										v2938 = v2048:FindFirstChild(v7("\213\76\5\12", "\220\161\41\125\120\42"), true);
-										v3245 = 1 + 0;
-									end
-									if (v3245 == (848 - (504 + 342))) then
-										v2936 = 1 + 0;
-										break;
-									end
-								end
-							end
-							if (v2936 == (8 - 5)) then
-								v2947 = (v2941 and v267[v2941]) or (0 + 0);
-								table.insert(v263, {[v7("\12\11\134\57", "\159\127\103\233\77\147\153\175")]=v2047,[v7("\18\229\237\174", "\171\103\144\132\202\32")]=v2683,[v7("\30\46\228\9", "\108\112\79\137")]=v2939,[v7("\42\204\125\60\132\5", "\85\95\162\20\72\205\97\137")]=v2941,[v7("\244\242\57\200", "\173\151\157\74\188\109\152")]=v2940,[v7("\39\29\42", "\147\68\104\88\189\188\52\181")]=v2947,[v7("\23\137\147", "\176\122\232\235")]=v2946,[v7("\131\116\52\127\226\129\118\63\98\225\146\112", "\142\224\21\90\47")]=(v2947 < v2946),[v7("\125\199\15\95\168\135", "\229\20\180\71\54\196\235")]=v2942,[v7("\32\109\233\250\247\184\137\45", "\224\73\30\161\131\149\202")]=v2943});
-								break;
-							end
-							if (v2936 == (2 - 1)) then
-								if (v2938 and v2938.Text) then
-									local v3380 = 0 + 0;
-									local v3381;
-									local v3382;
-									while true do
-										if (v3380 == 1) then
-											if (v3382 and (v3382 > (480 - (387 + 93)))) then
-												v2940 = v3382;
-											end
-											break;
-										end
-										if (v3380 == (0 - 0)) then
-											v3381 = (string.gsub(v2938.Text, v7("\49\93", "\199\20\25\84\122\139\87\145"), ""));
-											v3382 = tonumber(v3381);
-											v3380 = 1 - 0;
-										end
-									end
-								end
-								v2941 = nil;
-								v2942 = false;
-								v2943 = false;
-								v2936 = 1 + 1;
-							end
-							if (v2936 == 2) then
-								v2944 = false;
-								v2945 = v44.SlotLimits[v2047] or (11 - 7);
-								if v265 then
-									local v3383 = 0 + 0;
-									local v3384;
-									while true do
-										if (v3383 == (939 - (36 + 903))) then
-											v3384 = v265.get_equipped_unit_by_uuid(v2683);
-											if v3384 then
-												local v3516 = 0 - 0;
-												while true do
-													if ((1 + 0) == v3516) then
-														if (v264 and v264[v2941]) then
-															local v3557 = v264[v2941];
-															if (v3557.cost and (v2940 == (762 - (220 + 42)))) then
-																v2940 = v3557.cost;
-															end
-															if v3557.spawn_cap then
-																v2945 = v3557.spawn_cap;
-															end
-															v2942 = v3557.hill_unit == true;
-															v2943 = v3557.hybrid_placement == true;
-														end
-														break;
-													end
-													if (v3516 == (0 - 0)) then
-														v2941 = v3384.unit_id;
-														if v3384.traits then
-															for v3562, v3563 in ipairs(v3384.traits) do
-																if (v3563.trait == v7("\82\7\212\191\14\239", "\138\39\105\189\206\123")) then
-																	v2944 = true;
-																	break;
-																end
-															end
-														end
-														v3516 = 1;
-													end
-												end
-											end
-											break;
-										end
-									end
-								end
-								v2946 = (v2944 and (1506 - (300 + 1205))) or math.min(v44.SlotLimits[v2047] or (18 - 12), v2945);
-								v2936 = 925 - (728 + 194);
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	v80 = v263;
-	v55.EquippedUnits = v263;
-	return v263;
-end;
-local v82 = function(v270, v271)
-	local v272 = v270:FindFirstChild(v7("\206\246\229\81\229\246", "\48\145\133\145"));
-	if not v272 then
-		return nil;
-	end
-	local v273 = v272:FindFirstChild(v7("\79\89\188\234", "\76\58\44\213\142\177")) and v272.uuid.Value;
-	if not v273 then
-		return nil;
-	end
-	local v274 = v272:FindFirstChild(v7("\194\32", "\24\171\68\114\77")) and v272.id.Value;
-	for v799, v800 in ipairs(v271) do
-		if ((v800.uuid == v273) and (not v274 or not v800.unitId or (v800.unitId == v274))) then
-			return v800.slot, v800.name;
-		end
-	end
-	return nil, v270.Name;
-end;
-local v83 = function()
-	local v275 = v16.PlayerGui:FindFirstChild(v7("\216\28\70\87\148", "\205\143\125\48\50\231\190\100")) or v16.PlayerGui:FindFirstChild(v7("\214\166\2\0\222\228\202\171", "\194\161\199\116\101\129\131\191"));
-	if v275 then
-		local v1285 = v275:FindFirstChild(v7("\219\37\222\173\217\183\225\38\205\186", "\194\140\68\168\200\151"), true);
-		if (v1285 and v1285:IsA(v7("\118\254\205\49\217\67\249\208\41", "\149\34\155\181\69"))) then
-			local v1753 = 0;
-			local v1754;
-			while true do
-				if (v1753 == 0) then
-					v1754 = tonumber(v1285.Text:match(v7("\70\249\158", "\154\99\157\181")));
-					if v1754 then
-						return v1754;
-					end
-					break;
-				end
-			end
-		end
-		local v1286 = v275:FindFirstChild(v7("\186\14\250\165", "\140\237\111\140\192"), true);
-		if (v1286 and v1286:IsA(v7("\50\28\101\12\42\24\127\29\10", "\120\102\121\29"))) then
-			local v1755 = 0;
-			local v1756;
-			while true do
-				if (v1755 == (657 - (445 + 212))) then
-					v1756 = tonumber(v1286.Text:match(v7("\233\231\242", "\91\204\131\217")));
-					if v1756 then
-						return v1756;
-					end
-					break;
-				end
-			end
-		end
-	end
-	local v276 = v9:FindFirstChild(v7("\241\236\65\213\167\206", "\158\174\159\53\180\211\189"));
-	if (v276 and v276:FindFirstChild(v7("\69\252\251\216", "\213\50\157\141\189\23"))) then
-		return v276.wave.Value;
-	end
-	return 1;
-end;
-local v84 = function()
-	local v277 = v16:FindFirstChild(v7("\193\53\144\161\102\183", "\196\158\70\228\192\18"));
-	if (v277 and v277:FindFirstChild(v7("\88\90\2\65\204\88\92\20", "\185\42\63\113\46"))) then
-		return v277.resource.Value;
-	end
-	return 0;
-end;
-local v85 = function()
-	if (((tick() - (v55.LastGridCompute or (0 - 0))) < (2.5 + 0)) and (#v55.Spots > (0 + 0))) then
-		return v55.Spots;
-	end
-	if v59() then
-		local v1287 = 0;
-		local v1288;
-		local v1289;
-		while true do
-			if (v1287 == (1358 - (167 + 1190))) then
-				v55.NextUnitInfo = nil;
-				v55.WebhookSentForCurrentMatch = false;
-				v55.MatchStartTime = tick();
-				v1288 = v18:FindFirstChild(v7("\235\252\11\6\51\225\255\30\15\18\199\200\32\53\60\198\212\37", "\123\180\189\65\89")) or v9:FindFirstChild(v7("\253\173\218\219\161\247\174\207\210\128\209\153\241\232\174\208\133\244", "\233\162\236\144\132"));
-				v1287 = 2;
-			end
-			if ((646 - (315 + 329)) == v1287) then
-				if v1288 then
-					v1288:Destroy();
-				end
-				v1289 = v18:FindFirstChild(v7("\141\229\212\37\145\195\125\141\227\246\21\170\226\111\160\193\232\19\188\225", "\63\210\164\158\122\217\150")) or v9:FindFirstChild(v7("\12\234\220\211\97\205\17\244\209\228\70\235\39\251\228\233\95\241\54\220", "\152\83\171\150\140\41"));
-				if v1289 then
-					v1289:Destroy();
-				end
-				return;
-			end
-			if (0 == v1287) then
-				v55.Spots = {};
-				v55.FailedSpots = {};
-				v55.NextSpot = nil;
-				v55.NextSlot = nil;
-				v1287 = 1 + 0;
-			end
-		end
-	end
-	v62();
-	local v278 = RaycastParams.new();
-	v278.FilterType = Enum.RaycastFilterType.Exclude;
-	local v281 = {};
-	for v801, v802 in ipairs(v8:GetPlayers()) do
-		if v802.Character then
-			table.insert(v281, v802.Character);
-		end
-	end
-	if v9:FindFirstChild(v7("\189\208\173\26\224\40", "\104\226\133\227\83\180\123")) then
-		table.insert(v281, v9._UNITS);
-	end
-	if v9:FindFirstChild(v7("\60\46\13\117\46\34\6\99", "\48\99\107\67")) then
-		table.insert(v281, v9._ENEMIES);
-	end
-	if v9:FindFirstChild(v7("\225\131\91\246\8\88\234\149", "\27\190\198\29\176\77")) then
-		table.insert(v281, v9._EFFECTS);
-	end
-	if v18:FindFirstChild(v7("\208\106\215\11\129\123\205\116\203\61\186\91\238\71\218\38\160\74", "\46\143\43\157\84\201")) then
-		table.insert(v281, v18._AJ_HUB_VisualGrid);
-	end
-	if v18:FindFirstChild(v7("\104\89\124\253\119\38\234\104\95\94\205\76\7\248\69\125\64\203\90\4", "\168\55\24\54\162\63\115")) then
-		table.insert(v281, v18._AJ_HUB_GhostPreview);
-	end
-	v278.FilterDescendantsInstances = v281;
-	local v283 = {};
-	local v284 = 1 + 0;
-	local v285 = 25;
-	local v286 = 652.05 - (545 + 105);
-	local v287 = 2.05 * (0.86602540378 + 0);
-	local v288 = {};
-	local v289 = v9:FindFirstChild(v7("\40\232\47\129\214", "\174\119\154\64\224\178"));
-	local v290 = {[v44.PathPercentage]=true};
-	local v291 = v81();
-	for v803, v804 in ipairs(v291) do
-		local v805 = 0 + 0;
-		local v806;
-		while true do
-			if ((0 + 0) == v805) then
-				v806 = v804.slot and v44.UnitCustomSettings and v44.UnitCustomSettings[v804.slot];
-				if (v61(v804) and (not v806 or not v806.CustomPath or (v806.CustomPath == (0 - 0)))) then
-					v290[134 - 39] = true;
-				elseif (v60(v804) and (not v806 or not v806.CustomPath or (v806.CustomPath == 0))) then
-					v290[v44.FarmPathPercentage or 85] = true;
+			if (v1316 == 0) then
+				v1317 = v67();
+				if (v1317 and v1317.load_core_service) then
+					pcall(function()
+						v76 = v1317.load_core_service(nil, v7("\141\223\249\6\36\189\195\230\27\20\189\242\255\0\18", "\119\216\177\144\114"));
+					end);
 				end
 				break;
 			end
 		end
 	end
-	if v44.UnitCustomSettings then
-		for v1591 = 1 - 0, 1195 - (1044 + 145) do
-			local v1592 = 0 - 0;
-			local v1593;
+	return v76;
+end
+local v78 = 0 - 0;
+local v79 = {};
+local v80 = function(v249)
+	local v250 = tick();
+	if (not v249 and ((v250 - v78) < 0.15) and (#v79 > 0)) then
+		return v79;
+	end
+	v78 = v250;
+	local v251 = {};
+	local v252 = v9:FindFirstChild(v7("\246\28\215\107\253\26", "\34\169\73\153"));
+	if not v252 then
+		v79 = v251;
+		return v251;
+	end
+	for v794, v795 in ipairs(v252:GetChildren()) do
+		local v796 = 0 - 0;
+		local v797;
+		while true do
+			if ((757 - (627 + 130)) == v796) then
+				v797 = v795:FindFirstChild(v7("\149\255\31\138\190\255", "\235\202\140\107"));
+				if (v797 and v797:FindFirstChild(v7("\28\120\53\177\236\53", "\165\108\20\84\200\137\71\151")) and (v797.player.Value == v17)) then
+					table.insert(v251, v795);
+				end
+				break;
+			end
+		end
+	end
+	v79 = v251;
+	return v251;
+end;
+local v81 = 0;
+local v82 = {};
+local v83 = function(v253)
+	local v254 = tick();
+	if (not v253 and ((v254 - v81) < (145.25 - (82 + 63))) and (#v82 > (0 + 0))) then
+		local v1318 = 1284 - (386 + 898);
+		local v1319;
+		local v1320;
+		while true do
+			if (v1318 == 1) then
+				for v2380, v2381 in ipairs(v1319) do
+					local v2382 = 0 + 0;
+					local v2383;
+					while true do
+						if (v2382 == 0) then
+							v2383 = v2381:FindFirstChild(v7("\69\167\63\137\110\167", "\232\26\212\75"));
+							if (v2383 and v2383:FindFirstChild(v7("\62\77", "\151\87\41\18\136"))) then
+								local v3264 = 0;
+								local v3265;
+								while true do
+									if (v3264 == (0 - 0)) then
+										v3265 = v2383.id.Value;
+										v1320[v3265] = (v1320[v3265] or (0 + 0)) + 1 + 0;
+										break;
+									end
+								end
+							end
+							break;
+						end
+					end
+				end
+				for v2384, v2385 in ipairs(v82) do
+					local v2386 = 969 - (659 + 310);
+					local v2387;
+					while true do
+						if ((1 + 0) == v2386) then
+							v2385.canPlaceMore = v2387 < v2385.max;
+							break;
+						end
+						if ((603 - (364 + 239)) == v2386) then
+							v2387 = (v2385.unitId and v1320[v2385.unitId]) or (0 + 0);
+							v2385.cur = v2387;
+							v2386 = 1;
+						end
+					end
+				end
+				v1318 = 7 - 5;
+			end
+			if (v1318 == (2 - 0)) then
+				v25.EquippedUnits = v82;
+				return v82;
+			end
+			if (v1318 == (0 - 0)) then
+				local v2059 = 0;
+				while true do
+					if (v2059 == 1) then
+						v1318 = 1;
+						break;
+					end
+					if (0 == v2059) then
+						v1319 = v80();
+						v1320 = {};
+						v2059 = 1;
+					end
+				end
+			end
+		end
+	end
+	v81 = v254;
+	local v255 = {};
+	local v256 = v69();
+	local v257 = v71();
+	local v258 = v80(true);
+	local v259 = {};
+	for v798, v799 in ipairs(v258) do
+		local v800 = 193 - (30 + 163);
+		local v801;
+		while true do
+			if (v800 == (0 - 0)) then
+				v801 = v799:FindFirstChild(v7("\100\188\222\209\234\72", "\158\59\207\170\176"));
+				if (v801 and v801:FindFirstChild(v7("\70\90", "\236\47\62\83\41"))) then
+					local v2388 = 555 - (213 + 342);
+					local v2389;
+					while true do
+						if (v2388 == (0 - 0)) then
+							v2389 = v801.id.Value;
+							v259[v2389] = (v259[v2389] or 0) + (1419 - (843 + 575));
+							break;
+						end
+					end
+				end
+				break;
+			end
+		end
+	end
+	local v260 = v17.PlayerGui:FindFirstChild(v7("\233\185\33\44\164\189\239\167\41\47\185", "\226\154\201\64\91\202"));
+	if (v260 and v260:FindFirstChild(v7("\237\64\11\29\89", "\220\161\41\125\120\42")) and v260.Lives:FindFirstChild(v7("\154\99\161\3\185", "\110\220\17\192"))) then
+		local v1321 = v260.Lives.Frame:FindFirstChild(v7("\65\119\61\14\248", "\199\20\25\84\122\139\87\145"));
+		if v1321 then
+			for v2060 = 703 - (347 + 355), 16 - 10 do
+				local v2061 = v1321:FindFirstChild(tostring(v2060));
+				if (v2061 and v2061:IsA(v7("\96\28\212\129\25\224\66\10\201", "\138\39\105\189\206\123"))) then
+					local v2717 = v2061:GetAttribute(v7("\32\2\152\56\250\233\223\250\27\56\143\63\242\244\202\192\10\9\128\57\204\236\218\246\27", "\159\127\103\233\77\147\153\175"));
+					if (v2717 and (v2717 ~= "")) then
+						local v3003 = v2061:FindFirstChild(v7("\9\241\233\175", "\171\103\144\132\202\32"), true);
+						local v3004 = v2061:FindFirstChild(v7("\4\42\241\24", "\108\112\79\137"), true);
+						local v3005 = (v3003 and v3003.Text) or (v7("\12\206\123\60\237", "\85\95\162\20\72\205\97\137") .. v2060);
+						local v3006 = 500;
+						if (v3004 and v3004.Text) then
+							local v3266 = 467 - (386 + 81);
+							local v3267;
+							local v3268;
+							while true do
+								if (v3266 == 1) then
+									if (v3268 and (v3268 > (0 - 0))) then
+										v3006 = v3268;
+									end
+									break;
+								end
+								if (0 == v3266) then
+									v3267 = (string.gsub(v3004.Text, v7("\178\217", "\173\151\157\74\188\109\152"), ""));
+									v3268 = tonumber(v3267);
+									v3266 = 2 - 1;
+								end
+							end
+						end
+						local v3007 = nil;
+						local v3008 = false;
+						local v3009 = false;
+						local v3010 = false;
+						local v3011 = v24.SlotLimits[v2060] or 4;
+						if v257 then
+							local v3269 = 0 + 0;
+							local v3270;
+							while true do
+								if (v3269 == (0 + 0)) then
+									v3270 = v257.get_equipped_unit_by_uuid(v2717);
+									if v3270 then
+										local v3557 = 0 - 0;
+										local v3558;
+										while true do
+											if (v3557 == (1657 - (610 + 1047))) then
+												v3558 = 0 + 0;
+												while true do
+													if (v3558 == (564 - (304 + 259))) then
+														if (v256 and v256[v3007]) then
+															local v3656 = 0 - 0;
+															local v3657;
+															while true do
+																if ((965 - (306 + 659)) == v3656) then
+																	v3657 = v256[v3007];
+																	if (v3657.cost and (v3006 == (112 + 388))) then
+																		v3006 = v3657.cost;
+																	end
+																	v3656 = 1 + 0;
+																end
+																if ((1741 - (315 + 1424)) == v3656) then
+																	v3009 = v3657.hybrid_placement == true;
+																	break;
+																end
+																if ((589 - (27 + 561)) == v3656) then
+																	if v3657.spawn_cap then
+																		v3011 = v3657.spawn_cap;
+																	end
+																	v3008 = v3657.hill_unit == true;
+																	v3656 = 1 + 1;
+																end
+															end
+														end
+														break;
+													end
+													if (v3558 == 0) then
+														v3007 = v3270.unit_id;
+														if v3270.traits then
+															for v3666, v3667 in ipairs(v3270.traits) do
+																if (v3667.trait == v7("\49\6\49\204\201\81", "\147\68\104\88\189\188\52\181")) then
+																	v3010 = true;
+																	break;
+																end
+															end
+														end
+														v3558 = 1928 - (1904 + 23);
+													end
+												end
+												break;
+											end
+										end
+									end
+									break;
+								end
+							end
+						end
+						local v3012 = (v3010 and (1 + 0)) or math.min(v24.SlotLimits[v2060] or 6, v3011);
+						local v3013 = (v3007 and v259[v3007]) or (0 + 0);
+						table.insert(v255, {[v7("\9\132\132\196", "\176\122\232\235")]=v2060,[v7("\149\96\51\75", "\142\224\21\90\47")]=v2717,[v7("\122\213\42\83", "\229\20\180\71\54\196\235")]=v3005,[v7("\60\112\200\247\220\174", "\224\73\30\161\131\149\202")]=v3007,[v7("\242\234\226\68", "\48\145\133\145")]=v3006,[v7("\89\89\167", "\76\58\44\213\142\177")]=v3013,[v7("\198\37\10", "\24\171\68\114\77")]=v3012,[v7("\236\28\94\98\139\223\7\168\194\18\66\87", "\205\143\125\48\50\231\190\100")]=(v3013 < v3012),[v7("\200\180\60\12\237\239", "\194\161\199\116\101\129\131\191")]=v3008,[v7("\229\55\224\177\245\176\229\32", "\194\140\68\168\200\151")]=v3009});
+					end
+				end
+			end
+		end
+	end
+	v82 = v255;
+	v25.EquippedUnits = v255;
+	return v255;
+end;
+local v84 = function(v262, v263)
+	local v264 = 1998 - (1852 + 146);
+	local v265;
+	local v266;
+	local v267;
+	while true do
+		if (0 == v264) then
+			v265 = v262:FindFirstChild(v7("\125\232\193\36\225\81", "\149\34\155\181\69"));
+			if not v265 then
+				return nil;
+			end
+			v264 = 1;
+		end
+		if (v264 == (5 - 3)) then
+			local v1665 = 0 - 0;
 			while true do
-				if (v1592 == (1250 - (122 + 1128))) then
-					v1593 = v44.UnitCustomSettings[v1591];
-					if (v1593 and v1593.CustomPath and (v1593.CustomPath > (1815 - (371 + 1444)))) then
-						v290[v1593.CustomPath] = true;
+				if ((1 + 0) == v1665) then
+					v264 = 189 - (18 + 168);
+					break;
+				end
+				if (v1665 == 0) then
+					v267 = v265:FindFirstChild(v7("\132\11", "\140\237\111\140\192")) and v265.id.Value;
+					for v2718, v2719 in ipairs(v263) do
+						if ((v2719.uuid == v266) and (not v267 or not v2719.unitId or (v2719.unitId == v267))) then
+							return v2719.slot, v2719.name;
+						end
+					end
+					v1665 = 1;
+				end
+			end
+		end
+		if (v264 == (1 + 0)) then
+			v266 = v265:FindFirstChild(v7("\22\232\220\254", "\154\99\157\181")) and v265.uuid.Value;
+			if not v266 then
+				return nil;
+			end
+			v264 = 2 - 0;
+		end
+		if (3 == v264) then
+			return nil, v262.Name;
+		end
+	end
+end;
+local v85 = function()
+	local v268 = 0;
+	local v269;
+	local v270;
+	while true do
+		local v802 = 0;
+		while true do
+			if (v802 == (0 - 0)) then
+				if (v268 == (3 - 2)) then
+					local v2390 = 0 - 0;
+					while true do
+						if (v2390 == 0) then
+							v270 = v9:FindFirstChild(v7("\141\215\234\27\173\229", "\63\210\164\158\122\217\150"));
+							if (v270 and v270:FindFirstChild(v7("\36\202\224\233", "\152\83\171\150\140\41"))) then
+								return v270.wave.Value;
+							end
+							v2390 = 639 - (399 + 239);
+						end
+						if (v2390 == 1) then
+							v268 = 7 - 5;
+							break;
+						end
+					end
+				end
+				if ((1408 - (779 + 629)) == v268) then
+					local v2391 = 0;
+					while true do
+						if (v2391 == (1 + 0)) then
+							v268 = 1;
+							break;
+						end
+						if (v2391 == (0 + 0)) then
+							v269 = v17.PlayerGui:FindFirstChild(v7("\49\24\107\29\21", "\120\102\121\29")) or v17.PlayerGui:FindFirstChild(v7("\187\226\175\62\147\228\172\50", "\91\204\131\217"));
+							if v269 then
+								local v3271 = 0;
+								local v3272;
+								local v3273;
+								while true do
+									if (v3271 == (1769 - (855 + 914))) then
+										local v3480 = 22 - (15 + 7);
+										while true do
+											if (v3480 == (0 + 0)) then
+												v3272 = v269:FindFirstChild(v7("\249\254\67\209\157\200\243\204\250\71", "\158\174\159\53\180\211\189"), true);
+												if (v3272 and v3272:IsA(v7("\102\248\245\201\91\180\80\248\225", "\213\50\157\141\189\23"))) then
+													local v3603 = 0;
+													local v3604;
+													while true do
+														if (v3603 == 0) then
+															v3604 = tonumber(v3272.Text:match(v7("\187\34\207", "\196\158\70\228\192\18")));
+															if v3604 then
+																return v3604;
+															end
+															break;
+														end
+													end
+												end
+												v3480 = 1703 - (646 + 1056);
+											end
+											if (v3480 == 1) then
+												v3271 = 1;
+												break;
+											end
+										end
+									end
+									if (v3271 == (1 + 0)) then
+										v3273 = v269:FindFirstChild(v7("\125\94\7\75", "\185\42\63\113\46"), true);
+										if (v3273 and v3273:IsA(v7("\224\216\57\45\55\213\223\36\53", "\123\180\189\65\89"))) then
+											local v3559 = tonumber(v3273.Text:match(v7("\135\136\187", "\233\162\236\144\132")));
+											if v3559 then
+												return v3559;
+											end
+										end
+										break;
+									end
+								end
+							end
+							v2391 = 1;
+						end
+					end
+				end
+				v802 = 1;
+			end
+			if (v802 == 1) then
+				if (v268 == (2 + 0)) then
+					return 1 - 0;
+				end
+				break;
+			end
+		end
+	end
+end;
+local v86 = function()
+	local v271 = 1866 - (1443 + 423);
+	local v272;
+	while true do
+		if (v271 == (0 + 0)) then
+			local v1666 = 0;
+			while true do
+				if (v1666 == (0 - 0)) then
+					v272 = v17:FindFirstChild(v7("\189\246\151\50\192\8", "\104\226\133\227\83\180\123"));
+					if (v272 and v272:FindFirstChild(v7("\17\14\48\95\22\25\32\85", "\48\99\107\67"))) then
+						return v272.resource.Value;
+					end
+					v1666 = 1;
+				end
+				if (v1666 == (1 + 0)) then
+					v271 = 1;
+					break;
+				end
+			end
+		end
+		if (v271 == (1 + 0)) then
+			return 0 - 0;
+		end
+	end
+end;
+local v87 = function()
+	if (((tick() - (v25.LastGridCompute or (1506 - (271 + 1235)))) < (1.5 + 1)) and (#v25.Spots > (0 - 0))) then
+		return v25.Spots;
+	end
+	if v61() then
+		v25.Spots = {};
+		v25.FailedSpots = {};
+		v25.NextSpot = nil;
+		v25.NextSlot = nil;
+		v25.NextUnitInfo = nil;
+		v25.WebhookSentForCurrentMatch = false;
+		v25.MatchStartTime = tick();
+		local v1329 = v19:FindFirstChild(v7("\225\135\87\239\5\78\252\153\75\217\62\110\223\170\90\194\36\127", "\27\190\198\29\176\77")) or v9:FindFirstChild(v7("\208\106\215\11\129\123\205\116\203\61\186\91\238\71\218\38\160\74", "\46\143\43\157\84\201"));
+		if v1329 then
+			v1329:Destroy();
+		end
+		local v1330 = v19:FindFirstChild(v7("\104\89\124\253\119\38\234\104\95\94\205\76\7\248\69\125\64\203\90\4", "\168\55\24\54\162\63\115")) or v9:FindFirstChild(v7("\40\219\10\191\250\251\53\197\7\136\221\221\3\202\50\133\196\199\18\237", "\174\119\154\64\224\178"));
+		if v1330 then
+			v1330:Destroy();
+		end
+		return;
+	end
+	v64();
+	local v273 = RaycastParams.new();
+	v273.FilterType = Enum.RaycastFilterType.Exclude;
+	local v276 = {};
+	for v803, v804 in ipairs(v8:GetPlayers()) do
+		if v804.Character then
+			table.insert(v276, v804.Character);
+		end
+	end
+	if v9:FindFirstChild(v7("\21\75\235\82\49\148", "\132\74\30\165\27\101\199\122")) then
+		table.insert(v276, v9._UNITS);
+	end
+	if v9:FindFirstChild(v7("\16\194\209\130\138\156\145\28", "\212\79\135\159\199\199\213")) then
+		table.insert(v276, v9._ENEMIES);
+	end
+	if v9:FindFirstChild(v7("\70\133\147\97\121\244\44\74", "\120\25\192\213\39\60\183")) then
+		table.insert(v276, v9._EFFECTS);
+	end
+	if v19:FindFirstChild(v7("\39\97\21\119\48\117\29\119\46\73\44\93\25\76\24\90\17\68", "\40\120\32\95")) then
+		table.insert(v276, v19._AJ_HUB_VisualGrid);
+	end
+	if v19:FindFirstChild(v7("\5\138\19\69\135\42\24\148\30\114\160\12\46\155\43\127\185\22\63\188", "\127\90\203\89\26\207")) then
+		table.insert(v276, v19._AJ_HUB_GhostPreview);
+	end
+	v273.FilterDescendantsInstances = v276;
+	local v278 = {};
+	local v279 = 1;
+	local v280 = 25;
+	local v281 = 6.05 - 4;
+	local v282 = (6.05 - 4) * 0.86602540378;
+	local v283 = {};
+	local v284 = v9:FindFirstChild(v7("\226\39\160\202\13", "\157\189\85\207\171\105"));
+	local v285 = {[v24.PathPercentage]=true};
+	local v286 = v83();
+	for v805, v806 in ipairs(v286) do
+		local v807 = 1044 - (463 + 581);
+		local v808;
+		while true do
+			if (v807 == (0 + 0)) then
+				v808 = v806.slot and v24.UnitCustomSettings and v24.UnitCustomSettings[v806.slot];
+				if (v63(v806) and (not v808 or not v808.CustomPath or (v808.CustomPath == 0))) then
+					v285[1270 - (599 + 576)] = true;
+				elseif (v62(v806) and (not v808 or not v808.CustomPath or (v808.CustomPath == (1512 - (316 + 1196))))) then
+					v285[v24.FarmPathPercentage or (1388 - (970 + 333))] = true;
+				end
+				break;
+			end
+		end
+	end
+	if v24.UnitCustomSettings then
+		for v1667 = 1 + 0, 6 do
+			local v1668 = 0 + 0;
+			local v1669;
+			while true do
+				if (v1668 == (961 - (538 + 423))) then
+					v1669 = v24.UnitCustomSettings[v1667];
+					if (v1669 and v1669.CustomPath and (v1669.CustomPath > (0 + 0))) then
+						v285[v1669.CustomPath] = true;
 					end
 					break;
 				end
 			end
 		end
 	end
-	local v292 = function(v807, v808)
-		if (not v807 or not v807.Instance) then
+	local v287 = function(v809, v810)
+		if (not v809 or not v809.Instance) then
 			return false;
 		end
-		local v809 = v807.Instance;
-		if ((v809.CanCollide == false) or (v809.Transparency and (v809.Transparency > (16.8 - (14 + 2))))) then
+		local v811 = v809.Instance;
+		if ((v811.CanCollide == false) or (v811.Transparency and (v811.Transparency > 0.8))) then
 			return false;
 		end
-		if (v807.Normal and (v807.Normal.Y < 0.8)) then
+		if (v809.Normal and (v809.Normal.Y < (0.8 - 0))) then
 			return false;
 		end
-		local v810 = v807.Position.Y - v808;
-		if (v810 < -1.8) then
+		local v812 = v809.Position.Y - v810;
+		if (v812 < -(2.8 - 1)) then
 			return false;
 		end
-		local v811 = v807.Position;
-		local v812 = v9:Raycast(v811 + Vector3.new(0, 0.2 + 0, 0 + 0), Vector3.new(0, 7.2 - 3, 0 - 0), v278);
-		if v812 then
+		local v813 = v809.Position;
+		local v814 = v9:Raycast(v813 + Vector3.new(0 + 0, 0.2, 0), Vector3.new(0, 1358.2 - (1061 + 293), 529 - (153 + 376)), v273);
+		if v814 then
 			return false;
 		end
-		local v813 = OverlapParams.new();
-		v813.FilterType = Enum.RaycastFilterType.Exclude;
-		v813.FilterDescendantsInstances = v281;
-		local v817 = v9:GetPartBoundsInRadius(v811 + Vector3.new(0 + 0, 1.6, 0 - 0), 3.05 - 2, v813);
-		if (v817 and (#v817 > 0)) then
-			for v1757, v1758 in ipairs(v817) do
-				if (v1758.CanCollide and not (v289 and v1758:IsDescendantOf(v289))) then
+		local v815 = OverlapParams.new();
+		v815.FilterType = Enum.RaycastFilterType.Exclude;
+		v815.FilterDescendantsInstances = v276;
+		local v819 = v9:GetPartBoundsInRadius(v813 + Vector3.new(0, 1.6, 0 + 0), 706.05 - (173 + 532), v815);
+		if (v819 and (#v819 > (0 - 0))) then
+			for v1814, v1815 in ipairs(v819) do
+				if (v1815.CanCollide and not (v284 and v1815:IsDescendantOf(v284))) then
 					return false;
 				end
 			end
 		end
 		return true;
 	end;
-	for v818, v819 in pairs(v55.Lanes) do
-		if (#v819 >= (2 + 0)) then
-			local v1594 = 0;
-			for v1759 = 1, #v819 - (2 - 1) do
-				v1594 = v1594 + (v819[v1759 + 1] - v819[v1759]).Magnitude;
+	for v820, v821 in pairs(v25.Lanes) do
+		if (#v821 >= (5 - 3)) then
+			local v1670 = 0 - 0;
+			for v1816 = 1 + 0, #v821 - (2 - 1) do
+				v1670 = v1670 + (v821[v1816 + 1] - v821[v1816]).Magnitude;
 			end
-			for v1760, v1761 in pairs(v290) do
-				local v1762 = 0 - 0;
-				local v1763;
-				local v1764;
-				local v1765;
-				local v1766;
-				local v1767;
+			for v1817, v1818 in pairs(v285) do
+				local v1819 = 0;
+				local v1820;
+				local v1821;
+				local v1822;
+				local v1823;
+				local v1824;
 				while true do
-					if (v1762 == (4 - 3)) then
-						local v2684 = 0 + 0;
-						while true do
-							if (v2684 == 0) then
-								v1765, v1766 = v63(v1764, v819);
-								v1767 = 0 + 0;
-								v2684 = 3 - 2;
+					if (v1819 == (0 - 0)) then
+						v1820 = 17.5;
+						v1821 = math.clamp(v1817 / (56 + 44), 0, 1537 - (561 + 975)) * v1670;
+						v1819 = 1 + 0;
+					end
+					if (v1819 == (1 + 1)) then
+						for v2877 = -v1820, v1820, v282 do
+							local v2878 = 0;
+							local v2879;
+							while true do
+								if (v2878 == (1 + 0)) then
+									for v3332 = -v1820, v1820, v281 do
+										local v3333 = v3332 + v2879;
+										if (((v3333 * v3333) + (v2877 * v2877)) <= (v1820 * v1820)) then
+											local v3481 = 0;
+											local v3482;
+											local v3483;
+											while true do
+												if (v3481 == 0) then
+													v3482 = v1822 + Vector3.new(v3333, 0 - 0, v2877);
+													v3483 = v9:Raycast(v3482 + Vector3.new(0 + 0, 25, 0 - 0), Vector3.new(0 + 0, -(108 - 58), 123 - (115 + 8)), v273);
+													v3481 = 1;
+												end
+												if (v3481 == (1557 - (1476 + 80))) then
+													if (v3483 and v287(v3483, v1822.Y)) then
+														local v3605 = v3483.Instance;
+														local v3606 = v3483.Position.Y - v1822.Y;
+														local v3607 = (v284 and v3605:IsDescendantOf(v284)) or (v3605.Name:lower():find(v7("\212\174\217\177", "\99\166\193\184\213")) ~= nil);
+														if (v24.PlaceAnywhere or not v3607) then
+															local v3637 = 0 - 0;
+															local v3638;
+															local v3639;
+															while true do
+																if (v3637 == 1) then
+																	if not v283[v3639] then
+																		v283[v3639] = true;
+																		table.insert(v278, {[v7("\201\143\191\48\216", "\85\160\225\219")]=v279,[v7("\80\4\141\204", "\43\60\101\227\169\86\188")]=v820,[v7("\96\201\197\183\106\201\171\52\117\198\197", "\87\16\168\177\223\58\172\217")]=v1817,[v7("\36\194\74\212\47\61\194\87", "\91\84\173\57\189")]=v3483.Position,[v7("\28\182\3\247\148\215\2\190\9\232", "\182\112\217\108\156\192")]=v1822,[v7("\163\27\96\230\135\166", "\235\202\104\40\143")]=v3638,[v7("\4\152\41\182\12\143", "\217\109\235\123")]=v3607,[v7("\36\140\112\66\117\194\233\180\52\157\127\88\115\213", "\221\71\233\30\54\16\176\173")]=(v3483.Position - v1822).Magnitude,[v7("\59\255\93\170\36\245\91\187", "\223\84\156\62")]=false,[v7("\195\242\235\201", "\91\182\156\130\189\215")]=nil});
+																		v279 = v279 + (843 - (648 + 194));
+																	end
+																	break;
+																end
+																if (v3637 == (255 - (111 + 144))) then
+																	local v3658 = 0 + 0;
+																	while true do
+																		if (v3658 == (1 - 0)) then
+																			v3637 = 1 - 0;
+																			break;
+																		end
+																		if (v3658 == 0) then
+																			v3638 = (v3606 > (319 - (275 + 42))) or (v3605.Name:lower():find(v7("\222\190\140\183", "\234\182\215\224\219\108")) ~= nil);
+																			v3639 = math.floor(v3483.Position.X / (184.05 - (104 + 78))) .. "_" .. math.floor(v3483.Position.Z / (6.05 - 4));
+																			v3658 = 2 - 1;
+																		end
+																	end
+																end
+															end
+														end
+													end
+													break;
+												end
+											end
+										end
+									end
+									break;
+								end
+								if (v2878 == (1936 - (813 + 1123))) then
+									v1824 = v1824 + 1;
+									v2879 = (((v1824 % (1 + 1)) == (1 + 0)) and (v281 * 0.5)) or (0 - 0);
+									v2878 = 1 + 0;
+								end
 							end
-							if (v2684 == 1) then
-								v1762 = 2;
+						end
+						break;
+					end
+					if (v1819 == 1) then
+						v1822, v1823 = v65(v1821, v821);
+						v1824 = 0;
+						v1819 = 2;
+					end
+				end
+			end
+			local v1671 = {-(576 - (125 + 426)),-20,-(97 - (51 + 31)),-10,-5,(294 - (174 + 115)),10,15,(1182 - (696 + 466)),(55 - 30)};
+			for v1825 = 5, v1670 - (7 - 2), 1357 - (165 + 1186) do
+				local v1826, v1827 = v65(v1825, v821);
+				local v1828 = math.clamp(math.floor((v1825 / v1670) * 100), 1 + 0, 475 - 376);
+				local v1829 = Vector3.new(v1827.X, 0 + 0, v1827.Z);
+				local v1830 = Vector3.new(1, 0 + 0, 0 + 0);
+				if (v1829.Magnitude > 0.01) then
+					v1830 = Vector3.new(-v1829.Z, 0 + 0, v1829.X).Unit;
+				end
+				for v2062, v2063 in ipairs(v1671) do
+					local v2064 = v1826 + (v1830 * v2063);
+					local v2065 = v9:Raycast(v2064 + Vector3.new(0 + 0, 25, 0 + 0), Vector3.new(1037 - (853 + 184), -(33 + 17), 0), v273);
+					if (v2065 and v287(v2065, v1826.Y)) then
+						local v2720 = 0;
+						local v2721;
+						local v2722;
+						local v2723;
+						while true do
+							if (v2720 == (35 - (14 + 20))) then
+								v2723 = (v284 and v2721:IsDescendantOf(v284)) or (v2721.Name:lower():find(v7("\108\124\173\81", "\53\30\19\204")) ~= nil);
+								if (v24.PlaceAnywhere or not v2723) then
+									local v3334 = 0 + 0;
+									local v3335;
+									local v3336;
+									local v3337;
+									while true do
+										if ((767 - (35 + 731)) == v3334) then
+											v3337 = nil;
+											while true do
+												if (v3335 == (1 + 0)) then
+													if not v283[v3337] then
+														local v3625 = 0 + 0;
+														while true do
+															if (v3625 == (0 + 0)) then
+																v283[v3337] = true;
+																table.insert(v278, {[v7("\216\36\225\28\191", "\199\177\74\133\121")]=v279,[v7("\180\200\178\251", "\74\216\169\220\158\87\166")]=v820,[v7("\248\34\7\36\106\237\49\16\41\84\252", "\58\136\67\115\76")]=v1828,[v7("\225\165\203\80\145\41\164\83", "\61\145\202\184\57\229\64\203")]=v2065.Position,[v7("\80\93\134\76\104\83\155\64\89\70", "\39\60\50\233")]=v1826,[v7("\19\32\139\37\142\36", "\195\122\83\195\76\226\72\210")]=v3336,[v7("\237\199\9\241\32\224", "\65\132\180\91\158")]=v2723,[v7("\6\121\223\58\0\110\245\39\22\104\208\32\6\121", "\78\101\28\177")]=math.abs(v2063),[v7("\42\183\227\68\53\189\229\85", "\49\69\212\128")]=false,[v7("\2\2\217\230", "\129\119\108\176\146")]=nil});
+																v3625 = 1 + 0;
+															end
+															if (v3625 == (1 + 0)) then
+																v279 = v279 + 1;
+																break;
+															end
+														end
+													end
+													break;
+												end
+												if (v3335 == (0 - 0)) then
+													v3336 = (v2722 > (3 - 1)) or (v2721.Name:lower():find(v7("\241\233\124\136", "\199\153\128\16\228")) ~= nil);
+													v3337 = math.floor(v2065.Position.X / (2.05 + 0)) .. "_" .. math.floor(v2065.Position.Z / (149.05 - (26 + 121)));
+													v3335 = 112 - (95 + 16);
+												end
+											end
+											break;
+										end
+										if (v3334 == 0) then
+											v3335 = 0 - 0;
+											v3336 = nil;
+											v3334 = 1 - 0;
+										end
+									end
+								end
 								break;
+							end
+							if (v2720 == 0) then
+								v2721 = v2065.Instance;
+								v2722 = v2065.Position.Y - v1826.Y;
+								v2720 = 552 - (423 + 128);
 							end
 						end
 					end
-					if (v1762 == (0 - 0)) then
-						v1763 = 166.5 - (50 + 99);
-						v1764 = math.clamp(v1760 / (539 - (123 + 316)), 0, 1 - 0) * v1594;
-						v1762 = 1583 - (1507 + 75);
-					end
-					if (v1762 == 2) then
-						for v2836 = -v1763, v1763, v287 do
-							local v2837 = 594 - (145 + 449);
-							local v2838;
+				end
+			end
+		end
+	end
+	v25.Spots = v278;
+	v25.LastGridCompute = tick();
+	return v278;
+end;
+local v88 = 1574 - (1331 + 243);
+local v89 = function(v290)
+	local v291 = 0 - 0;
+	local v292;
+	local v293;
+	local v294;
+	local v295;
+	while true do
+		if (v291 == (7 - 4)) then
+			for v1831, v1832 in ipairs(v293:GetChildren()) do
+				local v1833 = 0;
+				local v1834;
+				while true do
+					if (v1833 == 0) then
+						v1834 = v1832:FindFirstChild(v7("\254\43\23\54\213\43", "\87\161\88\99"));
+						if (v1834 and v1834:FindFirstChild(v7("\2\245\238\213\178\194", "\67\114\153\143\172\215\176")) and (v1834.player.Value == v17)) then
+							local v3014 = 1634 - (284 + 1350);
+							local v3015;
 							while true do
-								if (v2837 == (1111 - (241 + 870))) then
-									v1767 = v1767 + 1 + 0;
-									v2838 = (((v1767 % 2) == 1) and (v286 * 0.5)) or 0;
-									v2837 = 2 - 1;
-								end
-								if (v2837 == 1) then
-									for v3246 = -v1763, v1763, v286 do
-										local v3247 = v3246 + v2838;
-										if (((v3247 * v3247) + (v2836 * v2836)) <= (v1763 * v1763)) then
-											local v3385 = v1765 + Vector3.new(v3247, 0 - 0, v2836);
-											local v3386 = v9:Raycast(v3385 + Vector3.new(0, 25, 0), Vector3.new(0 - 0, -(807 - (627 + 130)), 145 - (82 + 63)), v278);
-											if (v3386 and v292(v3386, v1765.Y)) then
-												local v3458 = v3386.Instance;
-												local v3459 = v3386.Position.Y - v1765.Y;
-												local v3460 = (v289 and v3458:IsDescendantOf(v289)) or (v3458.Name:lower():find(v7("\56\113\196\127", "\132\74\30\165\27\101\199\122")) ~= nil);
-												if (v44.PlaceAnywhere or not v3460) then
-													local v3494 = (v3459 > (2 + 0)) or (v3458.Name:lower():find(v7("\39\238\243\171", "\212\79\135\159\199\199\213")) ~= nil);
-													local v3495 = math.floor(v3386.Position.X / 2.05) .. "_" .. math.floor(v3386.Position.Z / (1286.05 - (386 + 898)));
-													if not v288[v3495] then
-														v288[v3495] = true;
-														table.insert(v283, {[v7("\112\174\177\66\68", "\120\25\192\213\39\60\183")]=v284,[v7("\20\65\49\77", "\40\120\32\95")]=v818,[v7("\42\170\45\114\159\26\40\168\60\116\187", "\127\90\203\89\26\207")]=v1760,[v7("\205\58\188\194\29\244\210\59", "\157\189\85\207\171\105")]=v3386.Position,[v7("\202\174\215\190\55\199\179\223\176\23", "\99\166\193\184\213")]=v1765,[v7("\223\164\168\178\0\134", "\234\182\215\224\219\108")]=v3494,[v7("\201\146\137\58\193\133", "\85\160\225\219")]=v3460,[v7("\95\0\141\221\51\206\111\85\22\151\200\56\223\78", "\43\60\101\227\169\86\188")]=(v3386.Position - v1765).Magnitude,[v7("\127\203\210\170\74\197\188\51", "\87\16\168\177\223\58\172\217")]=false,[v7("\33\195\80\201", "\91\84\173\57\189")]=nil});
-														v284 = v284 + 1 + 0;
-													end
-												end
+								if (v3014 == (0 + 0)) then
+									v3015 = v1832.PrimaryPart or v1832:FindFirstChild(v7("\150\183\227\15\176\173\231\10\140\173\225\26\142\163\252\26", "\110\222\194\142")) or v1832:FindFirstChild(v7("\40\209\18\189\80\174\15", "\193\119\185\123\201\50"));
+									if v3015 then
+										local v3484 = 0;
+										local v3485;
+										while true do
+											if (v3484 == 0) then
+												v3485 = v3015.Position;
+												table.insert(v294, {x=v3485.X,y=v3485.Y,z=v3485.Z,[v7("\98\6\240\50", "\127\23\104\153\70\111\25")]=v1832});
+												break;
 											end
 										end
 									end
@@ -2395,47 +2530,1365 @@ local v85 = function()
 					end
 				end
 			end
-			local v1595 = {-(21 + 4),-(989 - (659 + 310)),-15,-(6 + 4),-5,(19 - 14),(34 - 24),15,(55 - 35),(70 - 45)};
-			for v1768 = 5, v1594 - (1423 - (843 + 575)), 708 - (347 + 355) do
-				local v1769, v1770 = v63(v1768, v819);
-				local v1771 = math.clamp(math.floor((v1768 / v1594) * (270 - 170)), 468 - (386 + 81), 99);
-				local v1772 = Vector3.new(v1770.X, 0, v1770.Z);
-				local v1773 = Vector3.new(1 - 0, 0 - 0, 0);
-				if (v1772.Magnitude > (0.01 + 0)) then
-					v1773 = Vector3.new(-v1772.Z, 0, v1772.X).Unit;
+			v295 = #v294;
+			v291 = 32 - (10 + 18);
+		end
+		if ((0 - 0) == v291) then
+			local v1672 = 1307 - (73 + 1234);
+			while true do
+				if (v1672 == (737 - (503 + 234))) then
+					v292 = tick();
+					if (not v290 and ((v292 - v88) < (1901.35 - (425 + 1476)))) then
+						return;
+					end
+					v1672 = 1 + 0;
 				end
-				for v2056, v2057 in ipairs(v1595) do
-					local v2058 = 0 + 0;
-					local v2059;
-					local v2060;
-					while true do
-						if (1 == v2058) then
-							if (v2060 and v292(v2060, v1769.Y)) then
-								local v3060 = v2060.Instance;
-								local v3061 = v2060.Position.Y - v1769.Y;
-								local v3062 = (v289 and v3060:IsDescendantOf(v289)) or (v3060.Name:lower():find(v7("\2\182\13\248", "\182\112\217\108\156\192")) ~= nil);
-								if (v44.PlaceAnywhere or not v3062) then
-									local v3248 = 0 - 0;
-									local v3249;
-									local v3250;
-									while true do
-										if (v3248 == (1657 - (610 + 1047))) then
-											v3249 = (v3061 > (1 + 1)) or (v3060.Name:lower():find(v7("\162\1\68\227", "\235\202\104\40\143")) ~= nil);
-											v3250 = math.floor(v2060.Position.X / (565.05 - (304 + 259))) .. "_" .. math.floor(v2060.Position.Z / (5.05 - 3));
-											v3248 = 1;
+				if (v1672 == (1 - 0)) then
+					v291 = 1057 - (856 + 200);
+					break;
+				end
+			end
+		end
+		if (v291 == (1 + 0)) then
+			v88 = v292;
+			v293 = v9:FindFirstChild(v7("\3\250\41\228\17\61", "\124\92\175\103\173\69\110"));
+			v291 = 1 + 1;
+		end
+		if (v291 == (2 + 0)) then
+			if (not v293 or (#v25.Spots == (0 + 0))) then
+				return;
+			end
+			v294 = {};
+			v291 = 1 + 2;
+		end
+		if (v291 == 4) then
+			for v1835, v1836 in ipairs(v25.Spots) do
+				local v1837 = 1611 - (734 + 877);
+				while true do
+					if ((1 + 0) == v1837) then
+						if (v295 > (1481 - (514 + 967))) then
+							local v3016 = 0 - 0;
+							local v3017;
+							local v3018;
+							local v3019;
+							while true do
+								if (v3016 == (647 - (325 + 322))) then
+									v3017, v3018, v3019 = v1836.position.X, v1836.position.Y, v1836.position.Z;
+									for v3396 = 1 - 0, v295 do
+										local v3397 = v294[v3396];
+										local v3398 = v3397.x - v3017;
+										local v3399 = v3397.z - v3019;
+										if ((((v3398 * v3398) + (v3399 * v3399)) <= (1833.42 - (1668 + 162))) and (math.abs(v3397.y - v3018) <= 3.5)) then
+											v1836.occupied = true;
+											v1836.unit = v3397.unit;
+											break;
 										end
-										if (v3248 == 1) then
-											if not v288[v3250] then
-												local v3480 = 965 - (306 + 659);
+									end
+									break;
+								end
+							end
+						end
+						break;
+					end
+					if (v1837 == (0 - 0)) then
+						v1836.occupied = false;
+						v1836.unit = nil;
+						v1837 = 1;
+					end
+				end
+			end
+			break;
+		end
+	end
+end;
+local v90 = function()
+	local v296 = v19:FindFirstChild(v7("\54\38\140\144\3\25\149\140\63\14\181\186\42\32\144\161\0\3", "\211\105\103\198\207\75\76\215")) or v9:FindFirstChild(v7("\241\134\154\208\86\57\152\137\248\174\163\250\127\0\157\164\199\163", "\214\174\199\208\143\30\108\218"));
+	if (v61() or not v24.ShowPlaceArea) then
+		if v296 then
+			v296:Destroy();
+		end
+		return;
+	end
+	if not v296 then
+		local v1331 = 232 - (43 + 189);
+		while true do
+			if (v1331 == (1 - 0)) then
+				v296.Parent = v19;
+				break;
+			end
+			if (v1331 == 0) then
+				v296 = Instance.new(v7("\55\139\7\174\160\68", "\41\113\228\107\202\197\54\184"));
+				v296.Name = v7("\69\172\18\99\82\184\26\99\76\132\43\73\123\129\31\78\115\137", "\60\26\237\88");
+				v1331 = 1659 - (694 + 964);
+			end
+		end
+	end
+	v296:ClearAllChildren();
+	local v297 = 0 - 0;
+	local v298 = 0;
+	for v822, v823 in ipairs(v25.Spots) do
+		if not v823.occupied then
+			if v823.isHill then
+				v298 = v298 + (1 - 0);
+			else
+				v297 = v297 + 1;
+			end
+		end
+	end
+	local v299 = v83();
+	local v300 = {};
+	local v301 = {[v24.PathPercentage]=true};
+	for v824, v825 in ipairs(v299) do
+		local v826 = 0 - 0;
+		local v827;
+		while true do
+			if (v826 == 0) then
+				v827 = v825.slot and v24.UnitCustomSettings and v24.UnitCustomSettings[v825.slot];
+				if (v63(v825) and (not v827 or not v827.CustomPath or (v827.CustomPath == (0 + 0)))) then
+					local v2395 = 337 - (57 + 280);
+					while true do
+						if (v2395 == (1954 - (414 + 1540))) then
+							v301[995 - (561 + 339)] = true;
+							v300[18 + 77] = v300[79 + 16] or {};
+							v2395 = 1551 - (1342 + 208);
+						end
+						if (v2395 == (1 - 0)) then
+							table.insert(v300[348 - 253], v825.name or v7("\251\100\81\168\129", "\206\184\74\20\134"));
+							break;
+						end
+					end
+				elseif (v62(v825) and (not v827 or not v827.CustomPath or (v827.CustomPath == (0 + 0)))) then
+					local v2880 = 0 - 0;
+					local v2881;
+					while true do
+						if (v2880 == 1) then
+							v300[v2881] = v300[v2881] or {};
+							table.insert(v300[v2881], v825.name);
+							break;
+						end
+						if (v2880 == (1846 - (1139 + 707))) then
+							v2881 = v24.FarmPathPercentage or (38 + 47);
+							v301[v2881] = true;
+							v2880 = 1;
+						end
+					end
+				end
+				break;
+			end
+		end
+	end
+	if v24.UnitCustomSettings then
+		for v1673 = 1 + 0, 546 - (335 + 205) do
+			local v1674 = 0 + 0;
+			local v1675;
+			while true do
+				if (v1674 == 0) then
+					v1675 = v24.UnitCustomSettings[v1673];
+					if (v1675 and v1675.CustomPath and (v1675.CustomPath > (0 - 0))) then
+						v301[v1675.CustomPath] = true;
+						if not v300[v1675.CustomPath] then
+							v300[v1675.CustomPath] = {};
+						end
+						local v2883 = v7("\11\232\225\165\179", "\172\88\132\142\209\147\42\88") .. v1673;
+						for v3022, v3023 in ipairs(v299) do
+							if (v3023.slot == v1673) then
+								v2883 = v3023.name;
+								break;
+							end
+						end
+						table.insert(v300[v1675.CustomPath], v2883);
+					end
+					break;
+				end
+			end
+		end
+	end
+	for v828, v829 in pairs(v25.Lanes) do
+		if (#v829 >= 2) then
+			local v1676 = 0 - 0;
+			local v1677;
+			while true do
+				if (v1676 == (0 + 0)) then
+					local v2397 = 0 - 0;
+					while true do
+						if (v2397 == (1063 - (622 + 440))) then
+							v1676 = 1 - 0;
+							break;
+						end
+						if (v2397 == (752 - (672 + 80))) then
+							v1677 = 1126 - (601 + 525);
+							for v3147 = 1, #v829 - 1 do
+								v1677 = v1677 + (v829[v3147 + (1819 - (1515 + 303))] - v829[v3147]).Magnitude;
+							end
+							v2397 = 1 + 0;
+						end
+					end
+				end
+				if (v1676 == (1 - 0)) then
+					for v2726, v2727 in pairs(v301) do
+						local v2728 = 0 - 0;
+						local v2729;
+						local v2730;
+						local v2731;
+						local v2727;
+						local v2732;
+						local v2733;
+						local v2734;
+						local v2735;
+						local v2736;
+						local v2737;
+						local v2738;
+						local v2739;
+						local v2740;
+						local v2741;
+						local v2742;
+						while true do
+							if (v2728 == (4 + 1)) then
+								local v3148 = 0;
+								while true do
+									if (v3148 == (962 - (144 + 818))) then
+										v2736.Parent = v2735;
+										v2737 = Instance.new(v7("\18\127\34\77", "\57\66\30\80"));
+										v3148 = 28 - (5 + 22);
+									end
+									if (v3148 == (862 - (446 + 415))) then
+										v2737.Name = v7("\29\217\167\37\133\43\224\187", "\228\73\184\192\117\228\89\148") .. v828 .. "_" .. v2726;
+										v2737.Size = Vector3.new(0.1, 213.1 - (204 + 9), 1258.1 - (479 + 779));
+										v3148 = 4 - 2;
+									end
+									if (v3148 == (117 - (61 + 54))) then
+										v2737.Position = v2731;
+										v2728 = 1811 - (1235 + 570);
+										break;
+									end
+								end
+							end
+							if (v2728 == 3) then
+								v2735.Face = Enum.NormalId.Top;
+								v2735.CanvasSize = Vector2.new(1768 - (217 + 751), 646 + 154);
+								v2735.AlwaysOnTop = false;
+								v2735.Parent = v2734;
+								v2736 = Instance.new(v7("\175\74\52\126\182\61\135\69\48\117", "\113\230\39\85\25\211"));
+								v2728 = 1 + 3;
+							end
+							if (v2728 == (112 - (94 + 16))) then
+								v2734.Anchored = true;
+								v2734.CanCollide = false;
+								v2734.Transparency = 3 - 2;
+								v2734.Parent = v296;
+								v2735 = Instance.new(v7("\115\185\164\84\65\175\179\117\85\165", "\50\32\204\214"));
+								v2728 = 3 + 0;
+							end
+							if (v2728 == (3 + 1)) then
+								v2736.Size = UDim2.new(1546 - (1188 + 357), 809 - (580 + 229), 511 - (82 + 428), 0);
+								v2736.BackgroundTransparency = 3 - 2;
+								v2736.Image = v7("\204\185\30\233\52\216\174\95\215\191\92\167\104\154\249\29\140\239\80\177\118\158\251\24\143\233\87\186", "\43\190\219\102\136\71\171\203");
+								v2736.ImageColor3 = (v2729 and Color3.fromRGB(644 - (259 + 237), 163, 184)) or Color3.fromRGB(679 - 496, 1532 - (215 + 1141), 446 - 241);
+								v2736.ImageTransparency = (v2729 and (670.75 - (405 + 265))) or 0.4;
+								v2728 = 5;
+							end
+							if (v2728 == 7) then
+								v2738.Size = (v2729 and UDim2.new(1983 - (1136 + 847), 240, 0, 1760 - (230 + 1504))) or UDim2.new(0 - 0, 140, 1882 - (913 + 969), 40 - 18);
+								v2738.StudsOffset = Vector3.new(0, 3.5 + 2, 0);
+								v2738.AlwaysOnTop = true;
+								v2738.Adornee = v2737;
+								v2738.Parent = v2737;
+								v2728 = 1401 - (1277 + 116);
+							end
+							if (v2728 == (1187 - (1178 + 9))) then
+								local v3168 = 0 + 0;
+								local v3169;
+								while true do
+									if (v3168 == (0 - 0)) then
+										v3169 = 0;
+										while true do
+											if ((1842 - (1018 + 822)) == v3169) then
+												v2733 = 0 - 0;
+												v2728 = 1;
+												break;
+											end
+											if (v3169 == 1) then
+												v2731, v2727 = v65(v2730, v829);
+												v2732 = 0;
+												v3169 = 2;
+											end
+											if (v3169 == (0 + 0)) then
+												v2729 = (v2726 == v24.PathPercentage) and not v300[v2726];
+												v2730 = math.clamp(v2726 / (9 + 91), 0, 1 + 0) * v1677;
+												v3169 = 1;
+											end
+										end
+										break;
+									end
+								end
+							end
+							if (v2728 == 11) then
+								v2742.BackgroundTransparency = 1 + 0;
+								if v2729 then
+									local v3341 = 0;
+									while true do
+										if (v3341 == (381 - (111 + 270))) then
+											v2742.Text = string.format("Lane %s  \194\183  %d%% mark  \194\183  %d ground  \194\183  %d hill", v828, v2726, v2732, v2733);
+											v2742.TextColor3 = Color3.fromRGB(1422 - (1082 + 114), 223 + 9, 712 - 472);
+											v3341 = 1;
+										end
+										if (v3341 == (496 - (257 + 238))) then
+											v2742.TextSize = 11;
+											v2742.Font = Enum.Font.GothamMedium;
+											break;
+										end
+									end
+								else
+									local v3342 = 1854 - (831 + 1023);
+									local v3343;
+									while true do
+										if (v3342 == (122 - (6 + 115))) then
+											v2742.TextColor3 = Color3.fromRGB(251, 330 - 139, 88 - 52);
+											v2742.TextSize = 43 - 32;
+											v3342 = 2 + 0;
+										end
+										if (v3342 == 0) then
+											v3343 = table.concat(v300[v2726] or {}, v7("\90\132", "\153\118\164\141\65\20"));
+											v2742.Text = v3343;
+											v3342 = 1 + 0;
+										end
+										if (v3342 == 2) then
+											v2742.Font = Enum.Font.GothamBold;
+											break;
+										end
+									end
+								end
+								v2742.Parent = v2739;
+								break;
+							end
+							if ((15 - 9) == v2728) then
+								v2737.Anchored = true;
+								v2737.CanCollide = false;
+								v2737.Transparency = 1;
+								v2737.Parent = v296;
+								v2738 = Instance.new(v7("\237\128\121\24\205\134\116\6\203\174\96\29", "\116\175\233\21"));
+								v2728 = 7;
+							end
+							if (v2728 == (22 - 13)) then
+								v2740 = Instance.new(v7("\205\148\22\189\177\198\253\175", "\168\152\221\85\210\195"));
+								v2740.CornerRadius = UDim.new(0 + 0, 1206 - (608 + 592));
+								v2740.Parent = v2739;
+								v2741 = Instance.new(v7("\158\247\198\147\185\209\254\130", "\231\203\190\149"));
+								v2741.Color = (v2729 and Color3.fromRGB(103 - 55, 36 + 12, 54)) or Color3.fromRGB(183, 2117 - (24 + 1917), 523 - 318);
+								v2728 = 1535 - (521 + 1004);
+							end
+							if (v2728 == (1 - 0)) then
+								for v3277, v3278 in ipairs(v25.Spots) do
+									if ((v3278.lane == v828) and not v3278.occupied and not v25.FailedSpots[v3278.index] and (math.abs((v3278.pathPercent or v24.PathPercentage) - v2726) <= (4 + 1))) then
+										if v3278.isHill then
+											v2733 = v2733 + 1 + 0;
+										else
+											v2732 = v2732 + (295 - (87 + 207));
+										end
+									end
+								end
+								v2734 = Instance.new(v7("\183\139\222\25", "\222\231\234\172\109\86\149"));
+								v2734.Name = v7("\223\230\206\31\210", "\120\141\143\160") .. v828 .. "_" .. v2726;
+								v2734.Size = (v2729 and Vector3.new(36, 0.08 + 0, 124 - 88)) or Vector3.new(1603.5 - (625 + 970), 0.08 + 0, 357.5 - (122 + 227));
+								v2734.CFrame = CFrame.new(v2731 + Vector3.new(0 + 0, 1115.04 - (706 + 409), 0 + 0));
+								v2728 = 4 - 2;
+							end
+							if (v2728 == 8) then
+								local v3182 = 0 + 0;
+								while true do
+									if (v3182 == (0 - 0)) then
+										v2739 = Instance.new(v7("\216\234\191\75\222", "\95\158\152\222\38\187\81"));
+										v2739.Size = UDim2.new(1, 446 - (433 + 13), 1 + 0, 981 - (824 + 157));
+										v3182 = 361 - (120 + 240);
+									end
+									if (v3182 == 2) then
+										v2739.Parent = v2738;
+										v2728 = 9;
+										break;
+									end
+									if (v3182 == (1 + 0)) then
+										v2739.BackgroundColor3 = Color3.fromRGB(13 + 7, 6 + 14, 1053 - (291 + 741));
+										v2739.BackgroundTransparency = 0.15 + 0;
+										v3182 = 2;
+									end
+								end
+							end
+							if (v2728 == (3 + 7)) then
+								local v3183 = 0 + 0;
+								while true do
+									if (v3183 == (1494 - (810 + 682))) then
+										v2742.Size = UDim2.new(1, 493 - (16 + 477), 1 - 0, 1366 - (658 + 708));
+										v2728 = 4 + 7;
+										break;
+									end
+									if (v3183 == (0 - 0)) then
+										v2741.Thickness = (v2729 and 1) or (1.2 + 0);
+										v2741.Transparency = (v2729 and 0.2) or (647.1 - (483 + 164));
+										v3183 = 2 - 1;
+									end
+									if (v3183 == (1 - 0)) then
+										v2741.Parent = v2739;
+										v2742 = Instance.new(v7("\249\56\251\229\144\244\25\200\49", "\123\173\93\131\145\220\149"));
+										v3183 = 2;
+									end
+								end
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+	end
+	local v302 = {};
+	local v303 = {};
+	for v830, v831 in ipairs(v299) do
+		local v832 = 548 - (151 + 397);
+		local v833;
+		local v834;
+		local v835;
+		local v836;
+		local v837;
+		local v838;
+		local v839;
+		local v840;
+		local v841;
+		while true do
+			if (v832 == (11 - 7)) then
+				for v2068, v2069 in ipairs(v839) do
+					if (#v840 >= v837) then
+						break;
+					end
+					local v2070 = false;
+					for v2398, v2399 in ipairs(v840) do
+						local v2400 = v2069.position.X - v2399.position.X;
+						local v2401 = v2069.position.Z - v2399.position.Z;
+						if (((v2400 * v2400) + (v2401 * v2401)) < (1227.84 - (1005 + 218))) then
+							v2070 = true;
+							break;
+						end
+					end
+					if not v2070 then
+						table.insert(v840, v2069);
+					end
+				end
+				v841 = #v840;
+				for v2071 = 656 - (294 + 361), v841 do
+					local v2072 = v840[v2071];
+					v303[v2072.index] = true;
+					v302[v2072.index] = {[v7("\253\34\137\246", "\96\142\82\230\130\151")]=v2072,[v7("\70\163\108\87\247\250\64\189", "\142\47\208\47\34\132")]=v838,[v7("\227\176\13\22\117\93\251\187", "\60\150\222\100\98\59")]=v831.name,[v7("\86\44\88\66\245\175\60", "\81\37\92\55\54\187\218")]=v2071,[v7("\20\75\185\54\141\46\65\168\51", "\225\96\36\205\87")]=v841};
+				end
+				break;
+			end
+			if (v832 == 2) then
+				if (v833 and v833.Amount and (v833.Amount > (1060 - (150 + 910)))) then
+					v837 = v833.Amount;
+				elseif (v24.SlotLimits and v24.SlotLimits[v831.slot] and (v24.SlotLimits[v831.slot] > (0 + 0))) then
+					v837 = v24.SlotLimits[v831.slot];
+				elseif v831.max then
+					v837 = v831.max;
+				end
+				v838 = (v833 and v833.CustomPath and (v833.CustomPath > (0 + 0))) or v835;
+				v839 = {};
+				v832 = 3;
+			end
+			if (v832 == 1) then
+				local v1838 = 0 + 0;
+				while true do
+					if (v1838 == (0 - 0)) then
+						v836 = nil;
+						if (v833 and v833.CustomPath and (v833.CustomPath > (0 + 0))) then
+							v836 = v833.CustomPath;
+						elseif v834 then
+							v836 = 299 - 204;
+						elseif v835 then
+							v836 = v24.FarmPathPercentage or (1 + 84);
+						else
+							v836 = v24.PathPercentage;
+						end
+						v1838 = 1 + 0;
+					end
+					if ((1801 - (756 + 1044)) == v1838) then
+						v837 = 2;
+						v832 = 832 - (738 + 92);
+						break;
+					end
+				end
+			end
+			if (v832 == (0 - 0)) then
+				v833 = v831.slot and v24.UnitCustomSettings and v24.UnitCustomSettings[v831.slot];
+				v834 = v63(v831);
+				v835 = v62(v831);
+				v832 = 1413 - (569 + 843);
+			end
+			if (v832 == (1431 - (262 + 1166))) then
+				for v2075, v2076 in ipairs(v25.Spots) do
+					if (not v2076.occupied and not v25.FailedSpots[v2076.index] and not v303[v2076.index]) then
+						local v2743 = false;
+						if v831.isHybrid then
+							v2743 = true;
+						elseif v831.isHill then
+							v2743 = v2076.isHill;
+						else
+							v2743 = not v2076.isHill;
+						end
+						if v2743 then
+							table.insert(v839, v2076);
+						end
+					end
+				end
+				table.sort(v839, function(v2077, v2078)
+					local v2079 = 0;
+					local v2080;
+					local v2081;
+					while true do
+						if (v2079 == (651 - (410 + 241))) then
+							local v2885 = 1184 - (388 + 796);
+							while true do
+								if (v2885 == (1008 - (534 + 474))) then
+									v2080 = math.abs((v2077.pathPercent or v24.PathPercentage) - v836);
+									v2081 = math.abs((v2078.pathPercent or v24.PathPercentage) - v836);
+									v2885 = 1;
+								end
+								if ((1 + 0) == v2885) then
+									v2079 = 1;
+									break;
+								end
+							end
+						end
+						if (1 == v2079) then
+							if (v2080 ~= v2081) then
+								return v2080 < v2081;
+							end
+							return v2077.centerDistance < v2078.centerDistance;
+						end
+					end
+				end);
+				v840 = {};
+				v832 = 1103 - (642 + 457);
+			end
+		end
+	end
+	if (v25.NextSpot and not v302[v25.NextSpot.index]) then
+		v302[v25.NextSpot.index] = {[v7("\250\182\77\109", "\105\137\198\34\25\28\47")]=v25.NextSpot,[v7("\24\186\98\99\211\5\166\76", "\160\113\201\33\22")]=true,[v7("\193\86\165\179\135\172\217\93", "\205\180\56\204\199\201")]=((v25.NextUnitInfo and v25.NextUnitInfo.name) or v7("\173\219\36\12", "\120\227\190\92")),[v7("\46\76\16\111\13\73\212", "\130\93\60\127\27\67\60\185")]=1,[v7("\92\61\44\79\236\109\120\77\54", "\29\40\82\88\46\128\35")]=1};
+	end
+	for v842, v843 in pairs(v302) do
+		local v844 = 0 - 0;
+		local v845;
+		local v846;
+		local v847;
+		local v848;
+		local v849;
+		local v850;
+		local v851;
+		local v852;
+		local v853;
+		local v854;
+		while true do
+			if ((1480 - (384 + 1092)) == v844) then
+				local v1839 = 1729 - (1190 + 539);
+				while true do
+					if (v1839 == 1) then
+						v852.BackgroundColor3 = ((v847 or v846) and Color3.fromRGB(998 - (91 + 662), 80 + 78, 42 - 31)) or v850;
+						v852.BackgroundTransparency = (v845.occupied and 0.94) or ((v847 or v846) and 0.05) or 0.55;
+						v1839 = 1049 - (116 + 931);
+					end
+					if (v1839 == (2 + 0)) then
+						v852.Parent = v849;
+						v844 = 2 + 3;
+						break;
+					end
+					if (v1839 == (0 + 0)) then
+						v852.Position = UDim2.new(0.5, 0, 0.5, 0 - 0);
+						v852.AnchorPoint = Vector2.new(0.5, 0.5 - 0);
+						v1839 = 178 - (18 + 159);
+					end
+				end
+			end
+			if (v844 == 5) then
+				v853 = Instance.new(v7("\214\225\27\133\103\116\177\241", "\212\131\168\88\234\21\26"));
+				v853.CornerRadius = UDim.new(0.5 - 0, 0 - 0);
+				v853.Parent = v852;
+				v854 = Instance.new(v7("\112\93\186\152\42\40\78\113", "\71\37\20\233\236\88"));
+				v854.Color = ((v847 or v846) and Color3.fromRGB(645 - 390, 373 - 118, 626 - 371)) or v851;
+				v844 = 325 - (111 + 208);
+			end
+			if (3 == v844) then
+				v849.Parent = v848;
+				v850 = (v845.isHill and Color3.fromRGB(66 + 5, 85, 697 - (364 + 228))) or Color3.fromRGB(130 - 75, 55, 62);
+				v851 = (v845.isHill and Color3.fromRGB(100, 116, 255 - 116)) or Color3.fromRGB(80, 29 + 51, 74 + 16);
+				v852 = Instance.new(v7("\148\56\248\173\243", "\150\210\74\153\192"));
+				v852.Size = UDim2.new(1 + 0, -(5 - 1), 1 + 0, -4);
+				v844 = 381 - (121 + 256);
+			end
+			if (v844 == (4 - 3)) then
+				v848.Size = (v847 and Vector3.new(1.1, 0.04 - 0, 1.1 + 0)) or Vector3.new(0.55, 0.04 + 0, 0.55);
+				v848.CFrame = CFrame.new(v845.position + Vector3.new(0, 0.04 + 0, 1758 - (549 + 1209)));
+				v848.Anchored = true;
+				v848.CanCollide = false;
+				v848.Transparency = 1;
+				v844 = 2;
+			end
+			if (6 == v844) then
+				v854.Thickness = ((v847 or v846) and (2 - 0)) or (1 + 0);
+				v854.Transparency = (v845.occupied and (1381.94 - (643 + 738))) or ((v847 or v846) and (0 + 0)) or 0.4;
+				v854.Parent = v852;
+				if (v847 and v843.spotNum) then
+					local v2403 = 0;
+					local v2404;
+					while true do
+						if (v2403 == (4 - 2)) then
+							v2404.TextSize = 82 - 48;
+							v2404.TextColor3 = Color3.fromRGB(20, 20, 26);
+							v2403 = 1 + 2;
+						end
+						if (v2403 == 1) then
+							v2404.BackgroundTransparency = 1 - 0;
+							v2404.Font = Enum.Font.GothamBold;
+							v2403 = 2 - 0;
+						end
+						if (v2403 == (1110 - (1038 + 69))) then
+							v2404.Text = tostring(v843.spotNum);
+							v2404.Parent = v852;
+							break;
+						end
+						if (v2403 == 0) then
+							v2404 = Instance.new(v7("\249\67\168\2\108\237\78\89\193", "\60\173\38\208\118\32\140\44"));
+							v2404.Size = UDim2.new(1, 336 - (157 + 179), 1131 - (204 + 926), 1957 - (184 + 1773));
+							v2403 = 720 - (111 + 608);
+						end
+					end
+				else
+					local v2405 = 0;
+					local v2406;
+					local v2407;
+					while true do
+						if (v2405 == (3 + 1)) then
+							v2407.CornerRadius = UDim.new(0.5, 0 - 0);
+							v2407.Parent = v2406;
+							break;
+						end
+						if ((1 + 0) == v2405) then
+							v2406.Position = UDim2.new(0.5 + 0, 0 + 0, 0.5 - 0, 0 - 0);
+							v2406.AnchorPoint = Vector2.new(0.5, 0.5 - 0);
+							v2405 = 2;
+						end
+						if (v2405 == (2 + 0)) then
+							v2406.BackgroundColor3 = (v846 and Color3.fromRGB(1923 - (1328 + 340), 255, 255)) or Color3.fromRGB(626 - 400, 162 + 70, 518 - 278);
+							v2406.BackgroundTransparency = (v845.occupied and 1) or (v846 and (0 + 0)) or (1014.35 - (782 + 232));
+							v2405 = 2 + 1;
+						end
+						if (v2405 == (1303 - (397 + 906))) then
+							local v3039 = 0;
+							local v3040;
+							while true do
+								if (v3039 == (600 - (360 + 240))) then
+									v3040 = 0 - 0;
+									while true do
+										if ((0 + 0) == v3040) then
+											v2406 = Instance.new(v7("\103\32\224\222\37", "\175\33\82\129\179\64"));
+											v2406.Size = UDim2.new(22.35 - (13 + 9), 0 - 0, 0.35 - 0, 0);
+											v3040 = 1575 - (272 + 1302);
+										end
+										if (v3040 == 1) then
+											v2405 = 4 - 3;
+											break;
+										end
+									end
+									break;
+								end
+							end
+						end
+						if (v2405 == (8 - 5)) then
+							v2406.Parent = v852;
+							v2407 = Instance.new(v7("\219\198\19\192\46\188\235\253", "\210\142\143\80\175\92"));
+							v2405 = 11 - 7;
+						end
+					end
+				end
+				break;
+			end
+			if (v844 == 2) then
+				local v1853 = 0 + 0;
+				while true do
+					if (v1853 == 2) then
+						v849.AlwaysOnTop = false;
+						v844 = 5 - 2;
+						break;
+					end
+					if (v1853 == (21 - (8 + 13))) then
+						v848.Parent = v296;
+						v849 = Instance.new(v7("\75\198\78\238\222\114\85\211\109\218", "\148\24\179\60\136\191\17\48"));
+						v1853 = 1 + 0;
+					end
+					if (v1853 == 1) then
+						v849.Face = Enum.NormalId.Top;
+						v849.CanvasSize = Vector2.new(64, 203 - 139);
+						v1853 = 2;
+					end
+				end
+			end
+			if (v844 == (0 + 0)) then
+				v845 = v843.spot;
+				v846 = v25.NextSpot and (v25.NextSpot.index == v845.index);
+				v847 = v843.isCustom;
+				v848 = Instance.new(v7("\11\68\198\9", "\216\91\37\180\125\97"));
+				v848.Name = v7("\22\102\19\215\104", "\55\69\22\124\163") .. v842;
+				v844 = 89 - (28 + 60);
+			end
+		end
+	end
+	getgenv().AJ_HUB_RENDER_GRID = v90;
+	getgenv().AJ_HUB_COMPUTE_GRID = v87;
+end;
+local v91 = function()
+	local v306 = v19:FindFirstChild(v7("\134\200\217\249\145\220\209\249\158\225\252\213\173\217\225\195\175\224\246\209", "\166\217\137\147")) or v9:FindFirstChild(v7("\220\130\88\153\217\115\193\156\85\174\254\85\247\147\96\163\231\79\230\180", "\38\131\195\18\198\145"));
+	if (v61() or not v24.ShowNextPlacement or not v25.NextSpot or not v25.NextUnitInfo) then
+		local v1333 = 0 + 0;
+		while true do
+			if (v1333 == 0) then
+				if v306 then
+					v306:Destroy();
+				end
+				return;
+			end
+		end
+	end
+	if not v306 then
+		local v1334 = 0;
+		local v1335;
+		while true do
+			if ((0 + 0) == v1334) then
+				v1335 = 953 - (133 + 820);
+				while true do
+					if (v1335 == (0 + 0)) then
+						v306 = Instance.new(v7("\117\217\54\239\61\70", "\52\51\182\90\139\88"));
+						v306.Name = v7("\201\152\250\216\107\195\155\239\192\75\249\170\196\215\81\243\175\217\226\84", "\35\150\217\176\135");
+						v1335 = 98 - (9 + 88);
+					end
+					if (v1335 == (251 - (98 + 152))) then
+						v306.Parent = v19;
+						break;
+					end
+				end
+				break;
+			end
+		end
+	end
+	local v307 = v25.NextSpot;
+	local v308 = v25.NextUnitInfo;
+	local v309 = v86();
+	local v310 = v309 >= v308.cost;
+	local v311 = v306:FindFirstChild(v7("\222\88\4\31\99\98\96\248\68\10\30", "\22\153\48\107\108\23\35"));
+	if not v311 then
+		local v1336 = 0 + 0;
+		local v1337;
+		local v1338;
+		local v1339;
+		local v1340;
+		local v1341;
+		local v1342;
+		local v1343;
+		while true do
+			if (v1336 == (0 - 0)) then
+				v311 = Instance.new(v7("\62\132\169\14", "\137\110\229\219\122\31\21\33"));
+				v311.Name = v7("\61\181\55\104\34\106\50\127\14\188\42", "\30\122\221\88\27\86\43\68");
+				v311.Size = Vector3.new(2.2, 5, 8.2 - 6);
+				v311.Anchored = true;
+				v311.CanCollide = false;
+				v1336 = 1 - 0;
+			end
+			if (v1336 == (2 + 2)) then
+				v1338.StudsOffset = Vector3.new(0, 3.8 - 0, 288 - (44 + 244));
+				v1338.AlwaysOnTop = true;
+				v1338.Parent = v311;
+				v1339 = Instance.new(v7("\34\154\51\121\242", "\151\100\232\82\20"));
+				v1339.Name = v7("\92\214\248\28\122\215\226\46\109\216\251\13", "\104\31\185\150");
+				v1336 = 1394 - (207 + 1182);
+			end
+			if (v1336 == (9 + 0)) then
+				v1342.TextColor3 = Color3.fromRGB(1153 - (904 + 12), 447 - 210, 237);
+				v1342.Parent = v1339;
+				v1343 = Instance.new(v7("\110\5\243\67\217\230\210\49\86", "\84\58\96\139\55\149\135\176"));
+				v1343.Name = v7("\32\43\162\20\91\220", "\94\115\95\195\96\46\175");
+				v1343.Size = UDim2.new(1 + 0, -(60 - 44), 253.5 - (241 + 12), -(2 + 0));
+				v1336 = 10;
+			end
+			if (v1336 == (16 - 8)) then
+				local v2094 = 0;
+				while true do
+					if (v2094 == (1255 - (1187 + 67))) then
+						v1342.Font = Enum.Font.GothamMedium;
+						v1342.TextSize = 284 - (56 + 216);
+						v2094 = 2;
+					end
+					if ((0 - 0) == v2094) then
+						v1342.Position = UDim2.new(1479 - (1194 + 285), 1708 - (401 + 1299), 1555 - (1522 + 33), 4 - 2);
+						v1342.BackgroundTransparency = 1 - 0;
+						v2094 = 1823 - (1108 + 714);
+					end
+					if (v2094 == 2) then
+						v1342.TextXAlignment = Enum.TextXAlignment.Left;
+						v1336 = 683 - (357 + 317);
+						break;
+					end
+				end
+			end
+			if (v1336 == (5 + 2)) then
+				v1341.Color = Color3.fromRGB(14 + 34, 515 - (73 + 394), 176 - 122);
+				v1341.Parent = v1339;
+				v1342 = Instance.new(v7("\108\59\58\79\227\26\90\59\46", "\123\56\94\66\59\175"));
+				v1342.Name = v7("\207\77\122\245\46\247\149\246\70", "\225\154\35\19\129\122\158");
+				v1342.Size = UDim2.new(1, -16, 0.5 + 0, 0 + 0);
+				v1336 = 259 - (247 + 4);
+			end
+			if (v1336 == (630 - (435 + 193))) then
+				v1337.Name = v7("\85\188\25\8\23\32\81\117\188\26\18\4\0\76", "\56\18\212\118\123\99\104");
+				v1337.Adornee = v311;
+				v1337.FillColor = (v310 and Color3.fromRGB(76, 668 - (428 + 45), 1358 - (158 + 1062))) or Color3.fromRGB(183, 1553 - (858 + 519), 205);
+				v1337.OutlineColor = (v310 and Color3.fromRGB(131 - 55, 195, 138)) or Color3.fromRGB(1640 - (711 + 746), 29 + 147, 205);
+				v1337.FillTransparency = 0.82 + 0;
+				v1336 = 680 - (229 + 448);
+			end
+			if (v1336 == (742 - (357 + 384))) then
+				v311.Material = Enum.Material.SmoothPlastic;
+				v311.Transparency = 0.7 + 0;
+				v311.Color = (v310 and Color3.fromRGB(76, 195, 1718 - (984 + 596))) or Color3.fromRGB(183, 176, 205);
+				v311.Parent = v306;
+				v1337 = Instance.new(v7("\16\33\236\142\52\33\236\142\44", "\230\88\72\139"));
+				v1336 = 2;
+			end
+			if (v1336 == (11 - 5)) then
+				v1340.CornerRadius = UDim.new(0, 927 - (465 + 456));
+				v1340.Parent = v1339;
+				v1341 = Instance.new(v7("\58\244\35\228\40\198\4\216", "\169\111\189\112\144\90"));
+				v1341.Name = v7("\254\151\55\162\180\133", "\226\173\227\69\205\223\224\105");
+				v1341.Thickness = 1 + 0;
+				v1336 = 7;
+			end
+			if (v1336 == (26 - 16)) then
+				v1343.Position = UDim2.new(0, 8, 0.5 + 0, 0 - 0);
+				v1343.BackgroundTransparency = 1 + 0;
+				v1343.Font = Enum.Font.Gotham;
+				v1343.TextSize = 40 - 29;
+				v1343.TextXAlignment = Enum.TextXAlignment.Left;
+				v1336 = 20 - 9;
+			end
+			if (5 == v1336) then
+				v1339.Size = UDim2.new(1, 0, 1 + 0, 0);
+				v1339.BackgroundColor3 = Color3.fromRGB(4 + 16, 236 - (172 + 44), 4 + 18);
+				v1339.BackgroundTransparency = 0.12 + 0;
+				v1339.Parent = v1338;
+				v1340 = Instance.new(v7("\233\144\208\248\245\194\229\210", "\160\188\217\147\151\135\172\128"));
+				v1336 = 385 - (170 + 209);
+			end
+			if (v1336 == (23 - 12)) then
+				v1343.Parent = v1339;
+				break;
+			end
+			if (v1336 == 3) then
+				v1337.OutlineTransparency = 0.4 - 0;
+				v1337.Parent = v311;
+				v1338 = Instance.new(v7("\60\224\244\223\221\209\31\251\252\244\202\215", "\190\126\137\152\179\191"));
+				v1338.Name = v7("\15\10\125\216\190\111\62\7\96\195\175\65\44", "\32\72\98\18\171\202");
+				v1338.Size = UDim2.new(0 + 0, 210, 956 - (244 + 712), 48);
+				v1336 = 4 + 0;
+			end
+		end
+	end
+	v311.Position = v307.position + Vector3.new(0 + 0, 2.5, 0 - 0);
+	v311.Color = (v310 and Color3.fromRGB(226 - 150, 50 + 145, 89 + 49)) or Color3.fromRGB(183, 685 - 509, 1451 - (769 + 477));
+	local v314 = v311:FindFirstChild(v7("\100\67\48\46\58\5\142\231\75\71\54\58\38\57", "\128\35\43\95\93\78\77\231"));
+	if v314 then
+		v314.FillColor = v311.Color;
+		v314.OutlineColor = v311.Color;
+	end
+	local v315 = v311:FindFirstChild(v7("\131\21\57\39\3\81\191\161\15\62\49\22\122", "\201\196\125\86\84\119\30"));
+	if (v315 and v315:FindFirstChild(v7("\224\225\10\171\198\224\16\153\209\239\9\186", "\223\163\142\100"))) then
+		local v1347 = 0;
+		local v1348;
+		local v1349;
+		local v1350;
+		while true do
+			if (v1347 == 0) then
+				local v2129 = 0;
+				while true do
+					if (v2129 == (1 - 0)) then
+						v1347 = 1 + 0;
+						break;
+					end
+					if (v2129 == 0) then
+						v1348 = v315.ContentFrame;
+						v1349 = v1348:FindFirstChild(v7("\183\24\202\165\140\139\2\207\180", "\216\226\118\163\209"));
+						v2129 = 2 - 1;
+					end
+				end
+			end
+			if (v1347 == (1 - 0)) then
+				if v1349 then
+					v1349.Text = string.format("Slot %d  \194\183  %s", v308.slot, v308.name);
+				end
+				v1350 = v1348:FindFirstChild(v7("\141\228\26\21\66\99", "\95\222\144\123\97\55\16"));
+				v1347 = 2;
+			end
+			if (v1347 == 2) then
+				if v1350 then
+					if v310 then
+						local v3042 = 0;
+						while true do
+							if (v3042 == (0 + 0)) then
+								v1350.Text = string.format("Ready  \194\183  $%d / $%d", v309, v308.cost);
+								v1350.TextColor3 = Color3.fromRGB(26 + 50, 195, 138);
+								break;
+							end
+						end
+					else
+						local v3043 = 0;
+						local v3044;
+						while true do
+							if ((0 - 0) == v3043) then
+								local v3346 = 0 - 0;
+								while true do
+									if (v3346 == (0 - 0)) then
+										v3044 = math.clamp(math.floor((v309 / v308.cost) * 100), 0, 97 + 2);
+										v1350.Text = string.format("Saving  \194\183  $%d / $%d (%d%%)", v309, v308.cost, v3044);
+										v3346 = 3 - 2;
+									end
+									if (v3346 == (1 - 0)) then
+										v3043 = 639 - (526 + 112);
+										break;
+									end
+								end
+							end
+							if (v3043 == (1 - 0)) then
+								v1350.TextColor3 = Color3.fromRGB(263 - 102, 819 - (318 + 340), 166);
+								break;
+							end
+						end
+					end
+				end
+				break;
+			end
+		end
+	end
+end;
+local v92 = function()
+	if (v61() or not v24.AutoPlaceEnabled) then
+		return;
+	end
+	if ((tick() - v25.LastPlacementTime) < v24.PlacementInterval) then
+		return;
+	end
+	local v316 = tick();
+	if v25.FailedSpots then
+		for v1678, v1679 in pairs(v25.FailedSpots) do
+			if (v316 > v1679) then
+				v25.FailedSpots[v1678] = nil;
+			end
+		end
+	else
+		v25.FailedSpots = {};
+	end
+	local v317 = v83();
+	if (#v317 == 0) then
+		return;
+	end
+	if (#v25.Spots == 0) then
+		v87();
+	end
+	v89();
+	local v318 = v80();
+	local v319 = {};
+	for v855, v856 in pairs(v25.Lanes) do
+		v319[v855] = 623 - (274 + 349);
+	end
+	for v858, v859 in ipairs(v25.Spots) do
+		if (v859.occupied and v319[v859.lane]) then
+			v319[v859.lane] = v319[v859.lane] + (1 - 0);
+		end
+	end
+	local v320 = nil;
+	local v321 = (v24.UseCustomPlacementOrder and v24.PlacementOrder) or {1,(1 + 1),3,(1456 - (1429 + 23)),5,(5 + 1)};
+	for v860, v861 in ipairs(v321) do
+		if ((v24.SlotPlacement[v861] ~= false) and ((v24.SlotLimits[v861] or (12 - 6)) > 0)) then
+			for v1857, v1858 in ipairs(v317) do
+				if ((v1858.slot == v861) and v1858.canPlaceMore) then
+					v320 = v1858;
+					break;
+				end
+			end
+			if v320 then
+				break;
+			end
+		end
+	end
+	v25.NextUnitInfo = v320;
+	v25.NextSlot = (v320 and v320.slot) or nil;
+	if not v320 then
+		local v1352 = 0;
+		while true do
+			if (v1352 == 0) then
+				v25.NextSpot = nil;
+				v91();
+				v1352 = 1 + 0;
+			end
+			if (v1352 == 1) then
+				return;
+			end
+		end
+	end
+	local v324 = nil;
+	local v325 = math.huge;
+	local v326 = v320.slot and v24.UnitCustomSettings and v24.UnitCustomSettings[v320.slot];
+	local v327 = v63(v320);
+	local v328 = v62(v320);
+	local v329;
+	if (v326 and v326.CustomPath and (v326.CustomPath > 0)) then
+		v329 = v326.CustomPath;
+	elseif v327 then
+		v329 = 150 - 55;
+	elseif v328 then
+		v329 = v24.FarmPathPercentage or (1591 - (1140 + 366));
+	else
+		v329 = v24.PathPercentage;
+	end
+	for v862, v863 in ipairs(v25.Spots) do
+		if (not v863.occupied and not v25.FailedSpots[v863.index]) then
+			local v1681 = false;
+			if v320.isHybrid then
+				local v2132 = 0 - 0;
+				local v2133;
+				local v2134;
+				local v2135;
+				while true do
+					if (v2132 == (0 + 0)) then
+						v2133 = v320.name or "";
+						v2134 = (v24.HybridGround == v2133) or (v24.HybridGround == v7("\56\136\182\3\203\0\134\168\74\231", "\131\121\228\218\35")) or ((type(v24.HybridGround) == v7("\205\209\32\13\124", "\123\185\176\66\97\25")) and table.find(v24.HybridGround, v2133));
+						v2132 = 1;
+					end
+					if ((1 + 0) == v2132) then
+						v2135 = (v24.HybridHill == v2133) or (v24.HybridHill == v7("\233\3\21\17\61\54\90\35\193\11", "\81\168\111\121\49\117\79\56")) or ((type(v24.HybridHill) == v7("\211\11\231\186\194", "\214\167\106\133")) and table.find(v24.HybridHill, v2133));
+						if (v2134 and not v2135) then
+							v1681 = not v863.isHill;
+						elseif (v2135 and not v2134) then
+							v1681 = v863.isHill;
+						else
+							v1681 = true;
+						end
+						break;
+					end
+				end
+			elseif v320.isHill then
+				v1681 = v863.isHill;
+			else
+				v1681 = not v863.isHill;
+			end
+			if v1681 then
+				local v2136 = v319[v863.lane] or (0 - 0);
+				local v2137 = math.abs((v863.pathPercent or v24.PathPercentage) - v329);
+				local v2138 = (v2137 * (7 + 993)) + (v2136 * (24 + 76)) + v863.centerDistance;
+				if (v2138 < v325) then
+					local v2756 = 385 - (271 + 114);
+					while true do
+						if (v2756 == 0) then
+							v325 = v2138;
+							v324 = v863;
+							break;
+						end
+					end
+				end
+			end
+		end
+	end
+	if (not v324 and v320 and v320.isHybrid) then
+		for v1682, v1683 in ipairs(v25.Spots) do
+			if (not v1683.occupied and not v25.FailedSpots[v1683.index]) then
+				local v2139 = 0;
+				local v2140;
+				local v2141;
+				local v2142;
+				while true do
+					if (v2139 == (4 - 3)) then
+						v2142 = (v2141 * (1859 - (240 + 619))) + (v2140 * 100) + v1683.centerDistance;
+						if (v2142 < v325) then
+							v325 = v2142;
+							v324 = v1683;
+						end
+						break;
+					end
+					if (v2139 == (0 + 0)) then
+						v2140 = v319[v1683.lane] or (0 + 0);
+						v2141 = math.abs((v1683.pathPercent or v24.PathPercentage) - v329);
+						v2139 = 1 - 0;
+					end
+				end
+			end
+		end
+	end
+	v25.NextSpot = v324;
+	v91();
+	if v324 then
+		local v1354 = v86();
+		if (v1354 >= v320.cost) then
+			local v1859 = 857 - (509 + 348);
+			local v1860;
+			local v1861;
+			local v1862;
+			local v1863;
+			local v1864;
+			local v1865;
+			local v1866;
+			while true do
+				if (v1859 == 1) then
+					v1861 = Vector3.new(v1860.X, 0 - 0, v1860.Z);
+					v1862 = CFrame.new(v324.position);
+					v1859 = 2;
+				end
+				if (3 == v1859) then
+					pcall(function()
+						v1863 = require(game.ReplicatedStorage.src.Loader);
+					end);
+					v1864 = (v1863 and pcall(function()
+						return v1863.load_client_service(nil, v7("\12\54\72\95\59\118\215\61\43\111\67\61\122\215\61", "\185\73\88\44\47\84\31"));
+					end) and v1863.load_client_service(nil, v7("\173\217\30\176\220\246\134\195\9\131\223\246\141\217\14", "\159\232\183\122\192\179"))) or nil;
+					v1859 = 1 + 3;
+				end
+				if (v1859 == 2) then
+					if (v1861.Magnitude > (1378.1 - (1014 + 364))) then
+						v1862 = CFrame.new(v324.position, v324.position + v1861);
+					end
+					v1863 = nil;
+					v1859 = 7 - 4;
+				end
+				if (v1859 == (5 - 1)) then
+					v1865, v1866 = pcall(function()
+						if (v1864 and v1864.invoke_server) then
+							return v1864.invoke_server(v7("\55\34\169\54\42\13\189\47\45\38", "\65\68\82\200"), v320.uuid, v1862);
+						else
+							return v18.spawn_unit:InvokeServer(v320.uuid, v1862);
+						end
+					end);
+					if (v1865 and (v1866 == true)) then
+						v324.occupied = true;
+						v320.cur = v320.cur + (2 - 1);
+						v320.canPlaceMore = v320.cur < v320.max;
+						v90();
+						v91();
+					else
+						v25.FailedSpots[v324.index] = tick() + (366 - 186);
+					end
+					break;
+				end
+				if (v1859 == 0) then
+					v25.LastPlacementTime = tick();
+					v1860 = v324.lookTarget - v324.position;
+					v1859 = 1;
+				end
+			end
+		else
+			return;
+		end
+	end
+end;
+local v93 = function(v331)
+	local v332 = 0 + 0;
+	local v333;
+	local v334;
+	local v335;
+	while true do
+		local v864 = 0 + 0;
+		while true do
+			if (v864 == (0 + 0)) then
+				if (v332 == (0 - 0)) then
+					v333 = v75();
+					v334 = v77();
+					v332 = 1725 - (1565 + 159);
+				end
+				if (v332 == 2) then
+					local v2409 = 0;
+					while true do
+						if (v2409 == 0) then
+							if v335 then
+								local v3280 = 0 + 0;
+								local v3281;
+								while true do
+									if (v3280 == (0 - 0)) then
+										v3281 = v335:FindFirstChild(v7("\229\60\24\254\58\244\41\32\239\52\227\56", "\91\144\76\127\140")) and v335.upgrade_cost.Value;
+										if (v3281 and (v3281 > 0)) then
+											return v3281, false;
+										end
+										break;
+									end
+								end
+							end
+							return 137 + 363, false;
+						end
+					end
+				end
+				v864 = 3 - 2;
+			end
+			if ((1 - 0) == v864) then
+				if (v332 == (1864 - (1445 + 418))) then
+					if (v333 and v333.get_next_upgrade_info) then
+						local v2896 = 0 - 0;
+						local v2897;
+						local v2898;
+						local v2899;
+						local v2900;
+						local v2901;
+						while true do
+							if (v2896 == (0 + 0)) then
+								v2897, v2898, v2899 = pcall(function()
+									return v333.get_next_upgrade_info(v331);
+								end);
+								if (not v2897 or v2899 or not v2898) then
+									return nil, true;
+								end
+								v2896 = 1414 - (26 + 1387);
+							end
+							if (v2896 == (1 + 0)) then
+								local v3282 = 0 + 0;
+								while true do
+									if (v3282 == (0 + 0)) then
+										v2900 = v2898.cost or (803 - (355 + 448));
+										v2901 = 1;
+										v3282 = 1;
+									end
+									if (v3282 == 1) then
+										v2896 = 263 - (246 + 15);
+										break;
+									end
+								end
+							end
+							if ((1 + 1) == v2896) then
+								if (v334 and v334.calculate_upgrade_cost_multiplier and v333.session) then
+									pcall(function()
+										v2901 = v334.calculate_upgrade_cost_multiplier(v331, v333.session) or (1 + 0);
+									end);
+								end
+								return math.floor(v2900 * v2901), false;
+							end
+						end
+					end
+					v335 = v331:FindFirstChild(v7("\26\67\102\33\219\220", "\30\69\48\18\64\175\175"));
+					v332 = 1 + 1;
+				end
+				break;
+			end
+		end
+	end
+end;
+local v94 = function()
+	if (v61() or not v24.AutoUpgradeEnabled) then
+		return;
+	end
+	if ((tick() - v25.LastUpgradeTime) < v24.UpgradeInterval) then
+		return;
+	end
+	local v336 = v86();
+	if (v336 <= 0) then
+		return;
+	end
+	local v337 = v83();
+	local v338 = v80();
+	if (#v338 == (0 + 0)) then
+		return;
+	end
+	if v24.AutoPlaceEnabled then
+		local v1355 = (v24.UseCustomPlacementOrder and v24.PlacementOrder) or {1,(1097 - (594 + 501)),3,(3 + 1),5,(14 - 8)};
+		for v1684, v1685 in ipairs(v1355) do
+			if ((v24.SlotPlacement[v1685] ~= false) and ((v24.SlotLimits[v1685] or (12 - 6)) > (0 + 0))) then
+				for v2410, v2411 in ipairs(v337) do
+					if ((v2411.slot == v1685) and v2411.canPlaceMore) then
+						return;
+					end
+				end
+			end
+		end
+	end
+	if v24.PhoenixReincarnate then
+		for v1686, v1687 in ipairs(v338) do
+			local v1688 = 1901 - (438 + 1463);
+			local v1689;
+			while true do
+				if (0 == v1688) then
+					v1689 = v1687:FindFirstChild(v7("\223\27\82\32\199\169", "\176\128\104\38\65\179\218\181"));
+					if (v1689 and v1689:FindFirstChild(v7("\197\212\197\7\209\192\199", "\117\176\164\162")) and not v25.PhoenixSold[v1687]) then
+						local v2902 = 0 + 0;
+						local v2903;
+						local v2904;
+						local v2905;
+						while true do
+							if (v2902 == 1) then
+								v2905 = v1687.Name:lower();
+								if ((v2905:find(v7("\88\62\182\11\252\237\80", "\132\40\86\217\110\146")) ~= nil) and (v2903 >= v2904)) then
+									v25.PhoenixSold[v1687] = true;
+									v25.LastUpgradeTime = tick();
+									pcall(function()
+										if v18:FindFirstChild(v7("\109\206\43\176\152\102\242\87\106\244\46\178\160\114\241\91", "\62\30\171\71\220\199\19\156")) then
+											v18.sell_unit_ingame:InvokeServer(v1687);
+										end
+									end);
+									return;
+								end
+								break;
+							end
+							if (v2902 == (0 + 0)) then
+								v2903 = v1689.upgrade.Value;
+								v2904 = (v1689:FindFirstChild(v7("\137\195\29\207\207\105\131\208\4\244\223", "\25\228\162\101\144\186")) and v1689.max_upgrade.Value) or (1632 - (900 + 717));
+								v2902 = 1;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+	end
+	local v339 = (v24.UseCustomUpgradeOrder and v24.UpgradeOrder) or {(2 - 1),(1800 - (719 + 1079)),(6 - 3),(1 + 3),(1 + 4),6};
+	local v340 = {};
+	for v865, v866 in ipairs(v339) do
+		local v867 = 0 - 0;
+		local v868;
+		while true do
+			if (v867 == 0) then
+				local v1867 = 203 - (148 + 55);
+				while true do
+					if (v1867 == (1453 - (914 + 539))) then
+						v868 = {};
+						for v2906, v2907 in ipairs(v338) do
+							local v2908 = v84(v2907, v337);
+							if (v2908 == v866) then
+								local v3185 = v2907:FindFirstChild(v7("\127\86\184\55\73\218", "\45\32\37\204\86\61\169\79"));
+								if (v3185 and v3185:FindFirstChild(v7("\64\69\2\174\180\120\80", "\28\53\53\101\220\213"))) then
+									local v3349 = 0;
+									local v3350;
+									local v3351;
+									local v3352;
+									local v3353;
+									while true do
+										if (v3349 == (1 + 0)) then
+											v3352 = v24.SlotMaxUpgrades[v2908] or v24.GlobalMaxUpgrades;
+											v3353 = math.min(v3352, v3351);
+											v3349 = 562 - (253 + 307);
+										end
+										if (v3349 == (1066 - (926 + 140))) then
+											v3350 = v3185.upgrade.Value;
+											v3351 = (v3185:FindFirstChild(v7("\0\93\16\126\79\177\87\205\12\88\13", "\191\109\60\104\33\58\193\48")) and v3185.max_upgrade.Value) or (1073 - (331 + 727));
+											v3349 = 1;
+										end
+										if (v3349 == (1384 - (1014 + 368))) then
+											if (v3350 < v3353) then
+												local v3568 = 1577 - (1035 + 542);
+												local v3569;
+												local v3570;
 												while true do
-													if (v3480 == (1 + 0)) then
-														v284 = v284 + 1 + 0;
+													if (v3568 == (78 - (44 + 34))) then
+														v3569, v3570 = v93(v2907);
+														if (not v3570 and v3569 and (v3569 > (0 - 0))) then
+															table.insert(v868, {[v7("\146\217\17\243", "\135\231\183\120")]=v2907,[v7("\229\31\94\246\48\20\189", "\201\134\106\44\132\85\122")]=v3350,[v7("\53\3\100\43", "\67\86\108\23\95\97\108\168")]=v3569,[v7("\183\52\67\30", "\48\196\88\44\106\196\68\181")]=v866});
+														end
 														break;
-													end
-													if (0 == v3480) then
-														v288[v3250] = true;
-														table.insert(v283, {[v7("\4\133\31\188\21", "\217\109\235\123")]=v284,[v7("\43\136\112\83", "\221\71\233\30\54\16\176\173")]=v818,[v7("\36\253\74\183\4\249\76\188\49\242\74", "\223\84\156\62")]=v1771,[v7("\198\243\241\212\163\50\217\242", "\91\182\156\130\189\215")]=v2060.Position,[v7("\114\124\163\94\74\114\190\82\123\103", "\53\30\19\204")]=v1769,[v7("\240\243\88\141\171\245", "\199\153\128\16\228")]=v3249,[v7("\216\57\215\22\166\213", "\199\177\74\133\121")]=v3062,[v7("\187\204\178\234\50\212\14\177\218\168\255\57\197\47", "\74\216\169\220\158\87\166")]=math.abs(v2057),[v7("\231\32\16\57\74\225\38\23", "\58\136\67\115\76")]=false,[v7("\228\164\209\77", "\61\145\202\184\57\229\64\203")]=nil});
-														v3480 = 1740 - (315 + 1424);
 													end
 												end
 											end
@@ -2444,1232 +3897,24 @@ local v85 = function()
 									end
 								end
 							end
-							break;
 						end
-						if ((588 - (27 + 561)) == v2058) then
-							v2059 = v1769 + (v1773 * v2057);
-							v2060 = v9:Raycast(v2059 + Vector3.new(0 + 0, 25, 1927 - (1904 + 23)), Vector3.new(0 + 0, -(5 + 45), 1998 - (1852 + 146)), v278);
-							v2058 = 2 - 1;
-						end
+						v1867 = 1 + 0;
 					end
-				end
-			end
-		end
-	end
-	v55.Spots = v283;
-	v55.LastGridCompute = tick();
-	return v283;
-end;
-local v86 = 0 - 0;
-local v87 = function(v295)
-	local v296 = tick();
-	if (not v295 and ((v296 - v86) < (0.35 + 0))) then
-		return;
-	end
-	v86 = v296;
-	local v297 = v9:FindFirstChild(v7("\99\103\167\110\104\97", "\39\60\50\233"));
-	if (not v297 or (#v55.Spots == (186 - (18 + 168)))) then
-		return;
-	end
-	local v298 = {};
-	for v820, v821 in ipairs(v297:GetChildren()) do
-		local v822 = 0;
-		local v823;
-		while true do
-			if (v822 == (0 + 0)) then
-				v823 = v821:FindFirstChild(v7("\37\32\183\45\150\59", "\195\122\83\195\76\226\72\210"));
-				if (v823 and v823:FindFirstChild(v7("\244\216\58\231\36\246", "\65\132\180\91\158")) and (v823.player.Value == v16)) then
-					local v2407 = 0;
-					local v2408;
-					while true do
-						if (v2407 == (0 - 0)) then
-							v2408 = v821.PrimaryPart or v821:FindFirstChild(v7("\45\105\220\47\11\115\216\42\55\115\222\58\53\125\195\58", "\78\101\28\177")) or v821:FindFirstChild(v7("\26\188\233\69\39\187\248", "\49\69\212\128"));
-							if v2408 then
-								local v3187 = v2408.Position;
-								table.insert(v298, {x=v3187.X,y=v3187.Y,z=v3187.Z,[v7("\2\2\217\230", "\129\119\108\176\146")]=v821});
-							end
-							break;
-						end
-					end
-				end
-				break;
-			end
-		end
-	end
-	local v299 = #v298;
-	for v824, v825 in ipairs(v55.Spots) do
-		local v826 = 0 - 0;
-		while true do
-			if (v826 == 1) then
-				if (v299 > (0 - 0)) then
-					local v2409, v2410, v2411 = v825.position.X, v825.position.Y, v825.position.Z;
-					for v2685 = 1 - 0, v299 do
-						local v2686 = v298[v2685];
-						local v2687 = v2686.x - v2409;
-						local v2688 = v2686.z - v2411;
-						if ((((v2687 * v2687) + (v2688 * v2688)) <= 3.42) and (math.abs(v2686.y - v2410) <= (641.5 - (399 + 239)))) then
-							v825.occupied = true;
-							v825.unit = v2686.unit;
-							break;
-						end
-					end
-				end
-				break;
-			end
-			if (v826 == (0 - 0)) then
-				v825.occupied = false;
-				v825.unit = nil;
-				v826 = 1409 - (779 + 629);
-			end
-		end
-	end
-end;
-local v88 = function()
-	local v300 = v18:FindFirstChild(v7("\3\238\45\242\13\59\62\3\249\14\222\48\15\16\27\221\14\201", "\124\92\175\103\173\69\110")) or v9:FindFirstChild(v7("\254\25\41\8\233\13\33\8\247\49\16\34\192\52\36\37\200\60", "\87\161\88\99"));
-	if (v59() or not v44.ShowPlaceArea) then
-		local v1290 = 0;
-		while true do
-			if ((0 + 0) == v1290) then
-				if v300 then
-					v300:Destroy();
-				end
-				return;
-			end
-		end
-	end
-	if not v300 then
-		local v1291 = 0 + 0;
-		while true do
-			if (0 == v1291) then
-				v300 = Instance.new(v7("\52\246\227\200\178\194", "\67\114\153\143\172\215\176"));
-				v300.Name = v7("\129\131\196\49\150\151\204\49\136\171\253\27\191\174\201\28\183\166", "\110\222\194\142");
-				v1291 = 1770 - (855 + 914);
-			end
-			if (v1291 == (23 - (15 + 7))) then
-				v300.Parent = v18;
-				break;
-			end
-		end
-	end
-	v300:ClearAllChildren();
-	local v301 = 0 + 0;
-	local v302 = 1702 - (646 + 1056);
-	for v827, v828 in ipairs(v55.Spots) do
-		if not v828.occupied then
-			if v828.isHill then
-				v302 = v302 + 1 + 0;
-			else
-				v301 = v301 + 1 + 0;
-			end
-		end
-	end
-	local v303 = v81();
-	local v304 = {};
-	local v305 = {[v44.PathPercentage]=true};
-	for v829, v830 in ipairs(v303) do
-		local v831 = 0 - 0;
-		local v832;
-		while true do
-			if (v831 == (1866 - (1443 + 423))) then
-				v832 = v830.slot and v44.UnitCustomSettings and v44.UnitCustomSettings[v830.slot];
-				if (v61(v830) and (not v832 or not v832.CustomPath or (v832.CustomPath == (0 + 0)))) then
-					v305[95] = true;
-					v304[207 - 112] = v304[84 + 11] or {};
-					table.insert(v304[95], v830.name or v7("\52\151\62\231\125", "\193\119\185\123\201\50"));
-				elseif (v60(v830) and (not v832 or not v832.CustomPath or (v832.CustomPath == (0 + 0)))) then
-					local v2839 = v44.FarmPathPercentage or (212 - 127);
-					v305[v2839] = true;
-					v304[v2839] = v304[v2839] or {};
-					table.insert(v304[v2839], v830.name);
-				end
-				break;
-			end
-		end
-	end
-	if v44.UnitCustomSettings then
-		for v1596 = 1507 - (271 + 1235), 3 + 3 do
-			local v1597 = 0;
-			local v1598;
-			while true do
-				if (v1597 == (0 - 0)) then
-					v1598 = v44.UnitCustomSettings[v1596];
-					if (v1598 and v1598.CustomPath and (v1598.CustomPath > (0 - 0))) then
-						local v2842 = 0;
-						local v2843;
-						while true do
-							if ((6 - 4) == v2842) then
-								table.insert(v304[v1598.CustomPath], v2843);
-								break;
-							end
-							if (v2842 == (1045 - (463 + 581))) then
-								v2843 = v7("\68\4\246\50\79", "\127\23\104\153\70\111\25") .. v1596;
-								for v3251, v3252 in ipairs(v303) do
-									if (v3252.slot == v1596) then
-										v2843 = v3252.name;
-										break;
-									end
-								end
-								v2842 = 2;
-							end
-							if (v2842 == 0) then
-								v305[v1598.CustomPath] = true;
-								if not v304[v1598.CustomPath] then
-									v304[v1598.CustomPath] = {};
-								end
-								v2842 = 1;
-							end
-						end
-					end
-					break;
-				end
-			end
-		end
-	end
-	for v833, v834 in pairs(v55.Lanes) do
-		if (#v834 >= 2) then
-			local v1599 = 0 + 0;
-			for v1776 = 1176 - (599 + 576), #v834 - (1513 - (316 + 1196)) do
-				v1599 = v1599 + (v834[v1776 + (1304 - (970 + 333))] - v834[v1776]).Magnitude;
-			end
-			for v1777, v1778 in pairs(v305) do
-				local v1779 = 0 + 0;
-				local v1780;
-				local v1781;
-				local v1782;
-				local v1778;
-				local v1783;
-				local v1784;
-				local v1785;
-				local v1786;
-				local v1787;
-				local v1788;
-				local v1789;
-				local v1790;
-				local v1791;
-				local v1792;
-				local v1793;
-				while true do
-					if (v1779 == (1 + 0)) then
-						local v2689 = 961 - (538 + 423);
-						while true do
-							if (v2689 == (0 + 0)) then
-								for v3189, v3190 in ipairs(v55.Spots) do
-									if ((v3190.lane == v833) and not v3190.occupied and not v55.FailedSpots[v3190.index] and (math.abs((v3190.pathPercent or v44.PathPercentage) - v1777) <= (22 - 17))) then
-										if v3190.isHill then
-											v1784 = v1784 + 1;
-										else
-											v1783 = v1783 + 1;
-										end
-									end
-								end
-								v1785 = Instance.new(v7("\57\6\180\187", "\211\105\103\198\207\75\76\215"));
-								v2689 = 2 - 1;
-							end
-							if (v2689 == 1) then
-								v1785.Name = v7("\252\174\190\232\65", "\214\174\199\208\143\30\108\218") .. v833 .. "_" .. v1777;
-								v1785.Size = (v1780 and Vector3.new(6 + 30, 0.08, 36)) or Vector3.new(8.5, 1354.08 - (1061 + 293), 537.5 - (153 + 376));
-								v2689 = 2;
-							end
-							if (v2689 == (1 + 1)) then
-								v1785.CFrame = CFrame.new(v1782 + Vector3.new(705 - (173 + 532), 0.04, 0 - 0));
-								v1779 = 5 - 3;
-								break;
-							end
-						end
-					end
-					if (v1779 == 7) then
-						v1789.Size = (v1780 and UDim2.new(0 - 0, 240, 0 + 0, 26)) or UDim2.new(0, 140, 0 - 0, 22);
-						v1789.StudsOffset = Vector3.new(0 - 0, 5.5, 0 + 0);
-						v1789.AlwaysOnTop = true;
-						v1789.Adornee = v1788;
-						v1789.Parent = v1788;
-						v1779 = 1544 - (561 + 975);
-					end
-					if ((9 + 2) == v1779) then
-						v1793.BackgroundTransparency = 1;
-						if v1780 then
-							local v2951 = 0 + 0;
-							while true do
-								if ((0 + 0) == v2951) then
-									v1793.Text = string.format("Lane %s  \194\183  %d%% mark  \194\183  %d ground  \194\183  %d hill", v833, v1777, v1783, v1784);
-									v1793.TextColor3 = Color3.fromRGB(226, 232, 240);
-									v2951 = 2 - 1;
-								end
-								if (v2951 == (1 + 0)) then
-									v1793.TextSize = 34 - 23;
-									v1793.Font = Enum.Font.GothamMedium;
-									break;
-								end
-							end
-						else
-							local v2952 = 0;
-							local v2953;
-							while true do
-								if ((1 + 0) == v2952) then
-									v1793.TextColor3 = Color3.fromRGB(545 - 294, 314 - (115 + 8), 1592 - (1476 + 80));
-									v1793.TextSize = 16 - 5;
-									v2952 = 844 - (648 + 194);
-								end
-								if (v2952 == (255 - (111 + 144))) then
-									v2953 = table.concat(v304[v1777] or {}, v7("\101\152", "\228\73\184\192\117\228\89\148"));
-									v1793.Text = v2953;
-									v2952 = 1;
-								end
-								if (2 == v2952) then
-									v1793.Font = Enum.Font.GothamBold;
-									break;
-								end
-							end
-						end
-						v1793.Parent = v1790;
-						break;
-					end
-					if (v1779 == (2 + 1)) then
-						v1786.Face = Enum.NormalId.Top;
-						v1786.CanvasSize = Vector2.new(1332 - 532, 1205 - 405);
-						v1786.AlwaysOnTop = false;
-						v1786.Parent = v1785;
-						v1787 = Instance.new(v7("\83\128\57\91\127\161\57\94\127\129", "\60\26\237\88"));
-						v1779 = 4;
-					end
-					if (v1779 == (325 - (275 + 42))) then
-						v1790 = Instance.new(v7("\102\190\183\95\69", "\50\32\204\214"));
-						v1790.Size = UDim2.new(1, 182 - (104 + 78), 3 - 2, 0);
-						v1790.BackgroundColor3 = Color3.fromRGB(51 - 31, 1956 - (813 + 1123), 21);
-						v1790.BackgroundTransparency = 0.15 + 0;
-						v1790.Parent = v1789;
-						v1779 = 3 + 6;
-					end
-					if (v1779 == (29 - 20)) then
-						v1791 = Instance.new(v7("\179\110\22\118\161\31\131\85", "\113\230\39\85\25\211"));
-						v1791.CornerRadius = UDim.new(0 + 0, 1799 - (144 + 1649));
-						v1791.Parent = v1790;
-						v1792 = Instance.new(v7("\235\146\53\252\53\196\160\78", "\43\190\219\102\136\71\171\203"));
-						v1792.Color = (v1780 and Color3.fromRGB(599 - (125 + 426), 103 - 55, 136 - (51 + 31))) or Color3.fromRGB(643 - 460, 134 + 42, 494 - (174 + 115));
-						v1779 = 10;
-					end
-					if (v1779 == (3 + 7)) then
-						local v2709 = 1698 - (941 + 757);
-						while true do
-							if (v2709 == 0) then
-								v1792.Thickness = (v1780 and 1) or (1163.2 - (696 + 466));
-								v1792.Transparency = (v1780 and (0.2 - 0)) or (0.1 - 0);
-								v2709 = 1;
-							end
-							if (v2709 == (2 - 0)) then
-								v1793.Size = UDim2.new(1352 - (165 + 1186), 0 + 0, 1, 0 - 0);
-								v1779 = 6 + 5;
-								break;
-							end
-							if (v2709 == (1 + 0)) then
-								v1792.Parent = v1790;
-								v1793 = Instance.new(v7("\22\123\40\77\14\127\50\92\46", "\57\66\30\80"));
-								v2709 = 2 + 0;
-							end
-						end
-					end
-					if (v1779 == (2 + 0)) then
-						v1785.Anchored = true;
-						v1785.CanCollide = false;
-						v1785.Transparency = 1 + 0;
-						v1785.Parent = v300;
-						v1786 = Instance.new(v7("\34\145\25\172\164\85\221\110\4\141", "\41\113\228\107\202\197\54\184"));
-						v1779 = 3 + 0;
-					end
-					if (v1779 == (1043 - (853 + 184))) then
-						v1788.Anchored = true;
-						v1788.CanCollide = false;
-						v1788.Transparency = 1 + 0;
-						v1788.Parent = v300;
-						v1789 = Instance.new(v7("\207\230\204\20\239\224\193\10\233\200\213\17", "\120\141\143\160"));
-						v1779 = 7;
-					end
-					if (v1779 == 0) then
-						v1780 = (v1777 == v44.PathPercentage) and not v304[v1777];
-						v1781 = math.clamp(v1777 / (134 - (14 + 20)), 0 + 0, 767 - (35 + 731)) * v1599;
-						v1782, v1778 = v63(v1781, v834);
-						v1783 = 0 + 0;
-						v1784 = 0;
-						v1779 = 1 + 0;
-					end
-					if (v1779 == 4) then
-						local v2718 = 0 + 0;
-						while true do
-							if (v2718 == (1 + 0)) then
-								v1787.Image = v7("\202\40\108\231\189\203\47\96\239\170\130\101\59\183\252\142\120\32\176\247\137\127\36\181\255\138\123\38", "\206\184\74\20\134");
-								v1787.ImageColor3 = (v1780 and Color3.fromRGB(124 + 24, 281 - 118, 349 - 165)) or Color3.fromRGB(141 + 42, 323 - (26 + 121), 316 - (95 + 16));
-								v2718 = 6 - 4;
-							end
-							if ((0 - 0) == v2718) then
-								v1787.Size = UDim2.new(552 - (423 + 128), 1574 - (1331 + 243), 2 - 1, 0 - 0);
-								v1787.BackgroundTransparency = 1;
-								v2718 = 1635 - (284 + 1350);
-							end
-							if (v2718 == (1 + 1)) then
-								v1787.ImageTransparency = (v1780 and (28.75 - (10 + 18))) or (0.4 - 0);
-								v1779 = 1312 - (73 + 1234);
-								break;
-							end
-						end
-					end
-					if ((742 - (503 + 234)) == v1779) then
-						v1787.Parent = v1786;
-						v1788 = Instance.new(v7("\8\229\252\165", "\172\88\132\142\209\147\42\88"));
-						v1788.Name = v7("\179\139\203\61\55\231\170\184", "\222\231\234\172\109\86\149") .. v833 .. "_" .. v1777;
-						v1788.Size = Vector3.new(0.1, 1901.1 - (425 + 1476), 0.1 + 0);
-						v1788.Position = v1782;
-						v1779 = 10 - 4;
-					end
-				end
-			end
-		end
-	end
-	local v306 = {};
-	local v307 = {};
-	for v835, v836 in ipairs(v303) do
-		local v837 = 0;
-		local v838;
-		local v839;
-		local v840;
-		local v841;
-		local v842;
-		local v843;
-		local v844;
-		local v845;
-		local v846;
-		while true do
-			if (v837 == (1059 - (856 + 200))) then
-				for v2063, v2064 in ipairs(v844) do
-					if (#v845 >= v842) then
-						break;
-					end
-					local v2065 = false;
-					for v2415, v2416 in ipairs(v845) do
-						local v2417 = v2064.position.X - v2416.position.X;
-						local v2418 = v2064.position.Z - v2416.position.Z;
-						if (((v2417 * v2417) + (v2418 * v2418)) < (1.8399999999999999 + 3)) then
-							v2065 = true;
-							break;
-						end
-					end
-					if not v2065 then
-						table.insert(v845, v2064);
-					end
-				end
-				v846 = #v845;
-				for v2066 = 1 + 0, v846 do
-					local v2067 = 0;
-					local v2068;
-					while true do
-						if (v2067 == 0) then
-							v2068 = v845[v2066];
-							v307[v2068.index] = true;
-							v2067 = 1 + 0;
-						end
-						if (v2067 == (1 + 0)) then
-							v306[v2068.index] = {[v7("\220\153\122\0", "\116\175\233\21")]=v2068,[v7("\247\235\157\83\200\37\48\243", "\95\158\152\222\38\187\81")]=v843,[v7("\237\179\60\166\141\201\245\184", "\168\152\221\85\210\195")]=v836.name,[v7("\184\206\250\147\133\203\248", "\231\203\190\149")]=v2066,[v7("\217\50\247\240\176\219\30\200\57", "\123\173\93\131\145\220\149")]=v846};
-							break;
-						end
-					end
-				end
-				break;
-			end
-			if (v837 == 2) then
-				v844 = {};
-				for v2069, v2070 in ipairs(v55.Spots) do
-					if (not v2070.occupied and not v55.FailedSpots[v2070.index] and not v307[v2070.index]) then
-						local v2723 = false;
-						if v836.isHybrid then
-							v2723 = true;
-						elseif v836.isHill then
-							v2723 = v2070.isHill;
-						else
-							v2723 = not v2070.isHill;
-						end
-						if v2723 then
-							table.insert(v844, v2070);
-						end
-					end
-				end
-				table.sort(v844, function(v2071, v2072)
-					local v2073 = math.abs((v2071.pathPercent or v44.PathPercentage) - v841);
-					local v2074 = math.abs((v2072.pathPercent or v44.PathPercentage) - v841);
-					if (v2073 ~= v2074) then
-						return v2073 < v2074;
-					end
-					return v2071.centerDistance < v2072.centerDistance;
-				end);
-				v845 = {};
-				v837 = 1 + 2;
-			end
-			if ((1612 - (734 + 877)) == v837) then
-				if (v838 and v838.CustomPath and (v838.CustomPath > 0)) then
-					v841 = v838.CustomPath;
-				elseif v839 then
-					v841 = 43 + 52;
-				elseif v840 then
-					v841 = v44.FarmPathPercentage or 85;
-				else
-					v841 = v44.PathPercentage;
-				end
-				v842 = 1483 - (514 + 967);
-				if (v838 and v838.Amount and (v838.Amount > (0 - 0))) then
-					v842 = v838.Amount;
-				elseif (v44.SlotLimits and v44.SlotLimits[v836.slot] and (v44.SlotLimits[v836.slot] > 0)) then
-					v842 = v44.SlotLimits[v836.slot];
-				elseif v836.max then
-					v842 = v836.max;
-				end
-				v843 = (v838 and v838.CustomPath and (v838.CustomPath > (647 - (325 + 322)))) or v840;
-				v837 = 2 - 0;
-			end
-			if (v837 == 0) then
-				v838 = v836.slot and v44.UnitCustomSettings and v44.UnitCustomSettings[v836.slot];
-				v839 = v61(v836);
-				v840 = v60(v836);
-				v841 = nil;
-				v837 = 1;
-			end
-		end
-	end
-	if (v55.NextSpot and not v306[v55.NextSpot.index]) then
-		v306[v55.NextSpot.index] = {[v7("\5\212\226\53", "\153\118\164\141\65\20")]=v55.NextSpot,[v7("\231\33\165\247\228\20\225\63", "\96\142\82\230\130\151")]=true,[v7("\90\190\70\86\202\239\66\181", "\142\47\208\47\34\132")]=((v55.NextUnitInfo and v55.NextUnitInfo.name) or v7("\216\187\28\22", "\60\150\222\100\98\59")),[v7("\86\44\88\66\245\175\60", "\81\37\92\55\54\187\218")]=1,[v7("\20\75\185\54\141\46\65\168\51", "\225\96\36\205\87")]=(1831 - (1668 + 162))};
-	end
-	for v847, v848 in pairs(v306) do
-		local v849 = 0 - 0;
-		local v850;
-		local v851;
-		local v852;
-		local v853;
-		local v854;
-		local v855;
-		local v856;
-		local v857;
-		local v858;
-		local v859;
-		while true do
-			if (v849 == (233 - (43 + 189))) then
-				v853.CFrame = CFrame.new(v850.position + Vector3.new(0 - 0, 1658.04 - (694 + 964), 0));
-				v853.Anchored = true;
-				v853.CanCollide = false;
-				v853.Transparency = 1;
-				v853.Parent = v300;
-				v854 = Instance.new(v7("\231\77\190\161\168\174\209\127\185\174", "\205\180\56\204\199\201"));
-				v849 = 2;
-			end
-			if (v849 == 0) then
-				v850 = v848.spot;
-				v851 = v55.NextSpot and (v55.NextSpot.index == v850.index);
-				v852 = v848.isCustom;
-				v853 = Instance.new(v7("\217\167\80\109", "\105\137\198\34\25\28\47"));
-				v853.Name = v7("\34\185\78\98\255", "\160\113\201\33\22") .. v847;
-				v853.Size = (v852 and Vector3.new(1.1, 0.04 - 0, 1.1)) or Vector3.new(0.55 - 0, 0.04 - 0, 0.55 + 0);
-				v849 = 338 - (57 + 280);
-			end
-			if (v849 == 2) then
-				v854.Face = Enum.NormalId.Top;
-				v854.CanvasSize = Vector2.new(64, 2018 - (414 + 1540));
-				v854.AlwaysOnTop = false;
-				v854.Parent = v853;
-				v855 = (v850.isHill and Color3.fromRGB(971 - (561 + 339), 85, 105)) or Color3.fromRGB(55, 55, 62);
-				v856 = (v850.isHill and Color3.fromRGB(19 + 81, 116, 116 + 23)) or Color3.fromRGB(1630 - (1342 + 208), 128 - 48, 330 - 240);
-				v849 = 3;
-			end
-			if (5 == v849) then
-				v859.Thickness = ((v852 or v851) and 2) or (1 + 0);
-				v859.Transparency = (v850.occupied and (0.94 - 0)) or ((v852 or v851) and (1846 - (1139 + 707))) or (0.4 + 0);
-				v859.Parent = v857;
-				if (v852 and v848.spotNum) then
-					local v2421 = Instance.new(v7("\15\64\204\9\45\185\57\64\216", "\216\91\37\180\125\97"));
-					v2421.Size = UDim2.new(1 + 0, 540 - (335 + 205), 1, 0 + 0);
-					v2421.BackgroundTransparency = 1 - 0;
-					v2421.Font = Enum.Font.GothamBold;
-					v2421.TextSize = 34;
-					v2421.TextColor3 = Color3.fromRGB(20, 20, 76 - 50);
-					v2421.Text = tostring(v848.spotNum);
-					v2421.Parent = v857;
-				else
-					local v2430 = 0 + 0;
-					local v2431;
-					local v2432;
-					local v2433;
-					while true do
-						if (v2430 == (0 - 0)) then
-							v2431 = 1062 - (622 + 440);
-							v2432 = nil;
-							v2430 = 1 - 0;
-						end
-						if (1 == v2430) then
-							v2433 = nil;
-							while true do
-								if (v2431 == 1) then
-									v2432.Position = UDim2.new(752.5 - (672 + 80), 1126 - (601 + 525), 0.5, 1818 - (1515 + 303));
-									v2432.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0);
-									v2431 = 5 - 3;
-								end
-								if ((4 + 0) == v2431) then
-									v2433.CornerRadius = UDim.new(0.5, 0);
-									v2433.Parent = v2432;
-									break;
-								end
-								if (v2431 == (965 - (144 + 818))) then
-									v2432.Parent = v857;
-									v2433 = Instance.new(v7("\77\250\127\231\205\127\85\230", "\148\24\179\60\136\191\17\48"));
-									v2431 = 31 - (5 + 22);
-								end
-								if (v2431 == (861 - (446 + 415))) then
-									v2432 = Instance.new(v7("\3\100\29\206\82", "\55\69\22\124\163"));
-									v2432.Size = UDim2.new(0.35, 0, 213.35 - (204 + 9), 1258 - (479 + 779));
-									v2431 = 2 - 1;
-								end
-								if (v2431 == (117 - (61 + 54))) then
-									v2432.BackgroundColor3 = (v851 and Color3.fromRGB(2060 - (1235 + 570), 1223 - (217 + 751), 255)) or Color3.fromRGB(183 + 43, 13 + 219, 350 - (94 + 16));
-									v2432.BackgroundTransparency = (v850.occupied and (3 - 2)) or (v851 and (0 + 0)) or 0.35;
-									v2431 = 3 + 0;
-								end
-							end
-							break;
-						end
-					end
-				end
-				break;
-			end
-			if (v849 == 3) then
-				v857 = Instance.new(v7("\165\204\61\21\134", "\120\227\190\92"));
-				v857.Size = UDim2.new(1546 - (1188 + 357), -(813 - (580 + 229)), 511 - (82 + 428), -4);
-				v857.Position = UDim2.new(0.5, 0 - 0, 496.5 - (259 + 237), 0);
-				v857.AnchorPoint = Vector2.new(0.5, 0.5);
-				v857.BackgroundColor3 = ((v852 or v851) and Color3.fromRGB(909 - 664, 158, 1367 - (215 + 1141))) or v855;
-				v857.BackgroundTransparency = (v850.occupied and (0.94 - 0)) or ((v852 or v851) and (670.05 - (405 + 265))) or (1983.55 - (1136 + 847));
-				v849 = 1738 - (230 + 1504);
-			end
-			if (v849 == (12 - 8)) then
-				v857.Parent = v854;
-				v858 = Instance.new(v7("\8\117\60\116\49\82\220\240", "\130\93\60\127\27\67\60\185"));
-				v858.CornerRadius = UDim.new(0.5, 1882 - (913 + 969));
-				v858.Parent = v857;
-				v859 = Instance.new(v7("\125\27\11\90\242\76\118\77", "\29\40\82\88\46\128\35"));
-				v859.Color = ((v852 or v851) and Color3.fromRGB(471 - 216, 255, 127 + 128)) or v856;
-				v849 = 5;
-			end
-		end
-	end
-	getgenv().AJ_HUB_RENDER_GRID = v88;
-	getgenv().AJ_HUB_COMPUTE_GRID = v85;
-end;
-local v89 = function()
-	local v310 = v18:FindFirstChild(v7("\141\11\211\159\222\135\8\198\135\254\189\57\237\144\228\183\60\240\165\225", "\150\210\74\153\192")) or v9:FindFirstChild(v7("\220\233\18\181\93\79\150\220\239\48\133\102\110\132\241\205\46\131\112\109", "\212\131\168\88\234\21\26"));
-	if (v59() or not v44.ShowNextPlacement or not v55.NextSpot or not v55.NextUnitInfo) then
-		local v1293 = 1393 - (1277 + 116);
-		while true do
-			if (0 == v1293) then
-				if v310 then
-					v310:Destroy();
-				end
-				return;
-			end
-		end
-	end
-	if not v310 then
-		local v1294 = 1187 - (1178 + 9);
-		while true do
-			if (v1294 == 0) then
-				v310 = Instance.new(v7("\99\123\133\136\61\53", "\71\37\20\233\236\88"));
-				v310.Name = v7("\242\103\154\41\104\217\110\99\234\78\191\5\84\220\94\89\219\79\181\1", "\60\173\38\208\118\32\140\44");
-				v1294 = 1;
-			end
-			if (v1294 == (1 + 0)) then
-				v310.Parent = v18;
-				break;
-			end
-		end
-	end
-	local v311 = v55.NextSpot;
-	local v312 = v55.NextUnitInfo;
-	local v313 = v84();
-	local v314 = v313 >= v312.cost;
-	local v315 = v310:FindFirstChild(v7("\102\58\238\192\52\238\87\51\245\210\50", "\175\33\82\129\179\64"));
-	if not v315 then
-		local v1295 = 0 - 0;
-		local v1296;
-		local v1297;
-		local v1298;
-		local v1299;
-		local v1300;
-		local v1301;
-		local v1302;
-		while true do
-			if (v1295 == (1849 - (1018 + 822))) then
-				v1302.TextXAlignment = Enum.TextXAlignment.Left;
-				v1302.Parent = v1298;
-				break;
-			end
-			if (v1295 == (2 - 1)) then
-				v315.Transparency = 0.7 + 0;
-				v315.Color = (v314 and Color3.fromRGB(7 + 69, 102 + 93, 86 + 52)) or Color3.fromRGB(564 - (111 + 270), 1372 - (1082 + 114), 197 + 8);
-				v315.Parent = v310;
-				v1296 = Instance.new(v7("\203\170\117\174\253\79\228\171\102", "\38\131\195\18\198\145"));
-				v1296.Name = v7("\116\222\53\248\44\124\90\209\50\231\49\83\91\194", "\52\51\182\90\139\88");
-				v1296.Adornee = v315;
-				v1295 = 5 - 3;
-			end
-			if (v1295 == (503 - (257 + 238))) then
-				v1302.Name = v7("\239\173\242\227\242\223", "\160\188\217\147\151\135\172\128");
-				v1302.Size = UDim2.new(1855 - (831 + 1023), -(137 - (6 + 115)), 0.5 - 0, -2);
-				v1302.Position = UDim2.new(0 - 0, 31 - 23, 0.5 + 0, 0 + 0);
-				v1302.BackgroundTransparency = 2 - 1;
-				v1302.Font = Enum.Font.Gotham;
-				v1302.TextSize = 27 - 16;
-				v1295 = 7 + 2;
-			end
-			if (2 == v1295) then
-				v1296.FillColor = (v314 and Color3.fromRGB(76, 1395 - (608 + 592), 298 - 160)) or Color3.fromRGB(136 + 47, 2117 - (24 + 1917), 523 - 318);
-				v1296.OutlineColor = (v314 and Color3.fromRGB(1601 - (521 + 1004), 317 - 122, 109 + 29)) or Color3.fromRGB(10 + 173, 176, 205);
-				v1296.FillTransparency = 294.82 - (87 + 207);
-				v1296.OutlineTransparency = 0.4;
-				v1296.Parent = v315;
-				v1297 = Instance.new(v7("\212\176\220\235\65\249\184\194\227\100\227\176", "\35\150\217\176\135"));
-				v1295 = 1 + 2;
-			end
-			if (3 == v1295) then
-				v1297.Name = v7("\222\88\4\31\99\108\96\252\66\3\9\118\71", "\22\153\48\107\108\23\35");
-				v1297.Size = UDim2.new(0 - 0, 1805 - (625 + 970), 0 + 0, 48);
-				v1297.StudsOffset = Vector3.new(349 - (122 + 227), 1.7999999999999998 + 2, 1115 - (706 + 409));
-				v1297.AlwaysOnTop = true;
-				v1297.Parent = v315;
-				v1298 = Instance.new(v7("\40\151\186\23\122", "\137\110\229\219\122\31\21\33"));
-				v1295 = 4;
-			end
-			if (0 == v1295) then
-				v315 = Instance.new(v7("\222\238\34\219", "\210\142\143\80\175\92"));
-				v315.Name = v7("\158\225\252\213\173\200\229\199\173\232\225", "\166\217\137\147");
-				v315.Size = Vector3.new(2.2, 5, 2.2);
-				v315.Anchored = true;
-				v315.CanCollide = false;
-				v315.Material = Enum.Material.SmoothPlastic;
-				v1295 = 1 + 0;
-			end
-			if (v1295 == 6) then
-				v1300.Parent = v1298;
-				v1301 = Instance.new(v7("\28\7\106\223\134\65\42\7\126", "\32\72\98\18\171\202"));
-				v1301.Name = v7("\49\134\59\96\195\13\156\62\113", "\151\100\232\82\20");
-				v1301.Size = UDim2.new(2 - 1, -16, 0.5, 0 + 0);
-				v1301.Position = UDim2.new(0, 17 - 9, 446 - (433 + 13), 2 + 0);
-				v1301.BackgroundTransparency = 1;
-				v1295 = 7;
-			end
-			if (v1295 == (986 - (824 + 157))) then
-				v1299.CornerRadius = UDim.new(0, 366 - (120 + 240));
-				v1299.Parent = v1298;
-				v1300 = Instance.new(v7("\71\157\37\15\17\7\83\119", "\56\18\212\118\123\99\104"));
-				v1300.Name = v7("\45\253\234\220\212\219", "\190\126\137\152\179\191");
-				v1300.Thickness = 1 + 0;
-				v1300.Color = Color3.fromRGB(32 + 16, 13 + 35, 1086 - (291 + 741));
-				v1295 = 2 + 4;
-			end
-			if (v1295 == (1 + 3)) then
-				v1298.Name = v7("\57\178\54\111\51\69\48\88\8\188\53\126", "\30\122\221\88\27\86\43\68");
-				v1298.Size = UDim2.new(1, 0, 1 + 0, 1492 - (810 + 682));
-				v1298.BackgroundColor3 = Color3.fromRGB(513 - (16 + 477), 25 - 5, 1388 - (658 + 708));
-				v1298.BackgroundTransparency = 0.12 + 0;
-				v1298.Parent = v1297;
-				v1299 = Instance.new(v7("\13\1\200\137\42\38\238\148", "\230\88\72\139"));
-				v1295 = 5;
-			end
-			if (v1295 == 7) then
-				v1301.Font = Enum.Font.GothamMedium;
-				v1301.TextSize = 19 - 7;
-				v1301.TextXAlignment = Enum.TextXAlignment.Left;
-				v1301.TextColor3 = Color3.fromRGB(207 + 30, 884 - (483 + 164), 237);
-				v1301.Parent = v1298;
-				v1302 = Instance.new(v7("\75\220\238\28\83\216\244\13\115", "\104\31\185\150"));
-				v1295 = 8;
-			end
-		end
-	end
-	v315.Position = v311.position + Vector3.new(0 - 0, 2.5, 0 - 0);
-	v315.Color = (v314 and Color3.fromRGB(624 - (151 + 397), 561 - 366, 1361 - (1005 + 218))) or Color3.fromRGB(183, 831 - (294 + 361), 205);
-	local v318 = v315:FindFirstChild(v7("\40\213\31\227\46\225\6\218\24\252\51\206\7\201", "\169\111\189\112\144\90"));
-	if v318 then
-		local v1303 = 1060 - (150 + 910);
-		while true do
-			if (v1303 == (0 + 0)) then
-				v318.FillColor = v315.Color;
-				v318.OutlineColor = v315.Color;
-				break;
-			end
-		end
-	end
-	local v319 = v315:FindFirstChild(v7("\234\139\42\190\171\175\31\135\223\139\32\172\187", "\226\173\227\69\205\223\224\105"));
-	if (v319 and v319:FindFirstChild(v7("\123\49\44\79\202\21\76\24\48\90\194\30", "\123\56\94\66\59\175"))) then
-		local v1304 = 0;
-		local v1305;
-		local v1306;
-		local v1307;
-		while true do
-			if (v1304 == (1 + 0)) then
-				if v1306 then
-					v1306.Text = string.format("Slot %d  \194\183  %s", v312.slot, v312.name);
-				end
-				v1307 = v1305:FindFirstChild(v7("\105\20\234\67\224\244", "\84\58\96\139\55\149\135\176"));
-				v1304 = 2;
-			end
-			if (v1304 == (0 + 0)) then
-				v1305 = v319.ContentFrame;
-				v1306 = v1305:FindFirstChild(v7("\207\77\122\245\46\247\149\246\70", "\225\154\35\19\129\122\158"));
-				v1304 = 4 - 3;
-			end
-			if (v1304 == (2 + 0)) then
-				if v1307 then
-					if v314 then
-						v1307.Text = string.format("Ready  \194\183  $%d / $%d", v313, v312.cost);
-						v1307.TextColor3 = Color3.fromRGB(239 - 163, 195, 138);
-					else
-						local v2956 = 0;
-						local v2957;
-						while true do
-							if (v2956 == 1) then
-								v1307.TextColor3 = Color3.fromRGB(161, 2 + 159, 132 + 34);
-								break;
-							end
-							if (v2956 == (1800 - (756 + 1044))) then
-								local v3272 = 830 - (738 + 92);
-								while true do
-									if (v3272 == (2 - 1)) then
-										v2956 = 1;
-										break;
-									end
-									if (v3272 == (1412 - (569 + 843))) then
-										v2957 = math.clamp(math.floor((v313 / v312.cost) * (1528 - (262 + 1166))), 0, 99);
-										v1307.Text = string.format("Saving  \194\183  $%d / $%d (%d%%)", v313, v312.cost, v2957);
-										v3272 = 652 - (410 + 241);
-									end
-								end
-							end
-						end
-					end
-				end
-				break;
-			end
-		end
-	end
-end;
-local v90 = function()
-	if (v59() or not v44.AutoPlaceEnabled) then
-		return;
-	end
-	if ((tick() - v55.LastPlacementTime) < v44.PlacementInterval) then
-		return;
-	end
-	local v320 = tick();
-	if v55.FailedSpots then
-		for v1600, v1601 in pairs(v55.FailedSpots) do
-			if (v320 > v1601) then
-				v55.FailedSpots[v1600] = nil;
-			end
-		end
-	else
-		v55.FailedSpots = {};
-	end
-	local v321 = v81();
-	if (#v321 == (1184 - (388 + 796))) then
-		return;
-	end
-	if (#v55.Spots == (1008 - (534 + 474))) then
-		v85();
-	end
-	v87();
-	local v322 = v78();
-	local v323 = {};
-	for v860, v861 in pairs(v55.Lanes) do
-		v323[v860] = 0 + 0;
-	end
-	for v863, v864 in ipairs(v55.Spots) do
-		if (v864.occupied and v323[v864.lane]) then
-			v323[v864.lane] = v323[v864.lane] + (1100 - (642 + 457));
-		end
-	end
-	local v324 = nil;
-	local v325 = (v44.UseCustomPlacementOrder and v44.PlacementOrder) or {(1477 - (384 + 1092)),2,(2 + 1),(1051 - (116 + 931)),(4 + 1),(1 + 5)};
-	for v865, v866 in ipairs(v325) do
-		if ((v44.SlotPlacement[v866] ~= false) and ((v44.SlotLimits[v866] or 6) > (0 - 0))) then
-			for v1820, v1821 in ipairs(v321) do
-				if ((v1821.slot == v866) and v1821.canPlaceMore) then
-					v324 = v1821;
-					break;
-				end
-			end
-			if v324 then
-				break;
-			end
-		end
-	end
-	v55.NextUnitInfo = v324;
-	v55.NextSlot = (v324 and v324.slot) or nil;
-	if not v324 then
-		local v1309 = 0 - 0;
-		while true do
-			if (v1309 == (178 - (18 + 159))) then
-				return;
-			end
-			if ((0 - 0) == v1309) then
-				v55.NextSpot = nil;
-				v89();
-				v1309 = 1 - 0;
-			end
-		end
-	end
-	local v328 = nil;
-	local v329 = math.huge;
-	local v330 = v324.slot and v44.UnitCustomSettings and v44.UnitCustomSettings[v324.slot];
-	local v331 = v61(v324);
-	local v332 = v60(v324);
-	local v333;
-	if (v330 and v330.CustomPath and (v330.CustomPath > (0 - 0))) then
-		v333 = v330.CustomPath;
-	elseif v331 then
-		v333 = 138 - 43;
-	elseif v332 then
-		v333 = v44.FarmPathPercentage or 85;
-	else
-		v333 = v44.PathPercentage;
-	end
-	for v867, v868 in ipairs(v55.Spots) do
-		if (not v868.occupied and not v55.FailedSpots[v868.index]) then
-			local v1603 = false;
-			if v324.isHybrid then
-				local v2136 = v324.name or "";
-				local v2137 = (v44.HybridGround == v2136) or (v44.HybridGround == v7("\50\51\175\64\102\214\60\1\54\167", "\94\115\95\195\96\46\175")) or ((type(v44.HybridGround) == v7("\87\74\61\49\43", "\128\35\43\95\93\78\77\231")) and table.find(v44.HybridGround, v2136));
-				local v2138 = (v44.HybridHill == v2136) or (v44.HybridHill == v7("\133\17\58\116\63\103\171\182\20\50", "\201\196\125\86\84\119\30")) or ((type(v44.HybridHill) == v7("\215\239\6\179\198", "\223\163\142\100")) and table.find(v44.HybridHill, v2136));
-				if (v2137 and not v2138) then
-					v1603 = not v868.isHill;
-				elseif (v2138 and not v2137) then
-					v1603 = v868.isHill;
-				else
-					v1603 = true;
-				end
-			elseif v324.isHill then
-				v1603 = v868.isHill;
-			else
-				v1603 = not v868.isHill;
-			end
-			if v1603 then
-				local v2139 = v323[v868.lane] or 0;
-				local v2140 = math.abs((v868.pathPercent or v44.PathPercentage) - v333);
-				local v2141 = (v2140 * (2455 - 1455)) + (v2139 * (419 - (111 + 208))) + v868.centerDistance;
-				if (v2141 < v329) then
-					v329 = v2141;
-					v328 = v868;
-				end
-			end
-		end
-	end
-	if (not v328 and v324 and v324.isHybrid) then
-		for v1604, v1605 in ipairs(v55.Spots) do
-			if (not v1605.occupied and not v55.FailedSpots[v1605.index]) then
-				local v2142 = 0;
-				local v2143;
-				local v2144;
-				local v2145;
-				while true do
-					if (0 == v2142) then
-						v2143 = v323[v1605.lane] or (0 + 0);
-						v2144 = math.abs((v1605.pathPercent or v44.PathPercentage) - v333);
-						v2142 = 593 - (364 + 228);
-					end
-					if (v2142 == (2 - 1)) then
-						v2145 = (v2144 * 1000) + (v2143 * 100) + v1605.centerDistance;
-						if (v2145 < v329) then
-							local v3077 = 0 - 0;
-							while true do
-								if (v3077 == (0 + 0)) then
-									v329 = v2145;
-									v328 = v1605;
-									break;
-								end
-							end
-						end
+					if (v1867 == (1 + 0)) then
+						v867 = 3 - 2;
 						break;
 					end
 				end
 			end
-		end
-	end
-	v55.NextSpot = v328;
-	v89();
-	if v328 then
-		local v1311 = v84();
-		if (v1311 >= v324.cost) then
-			local v1822 = 0;
-			local v1823;
-			local v1824;
-			local v1825;
-			local v1826;
-			local v1827;
-			local v1828;
-			local v1829;
-			while true do
-				if (v1822 == (0 + 0)) then
-					v55.LastPlacementTime = tick();
-					v1823 = v328.lookTarget - v328.position;
-					v1822 = 1 + 0;
-				end
-				if (3 == v1822) then
-					pcall(function()
-						v1826 = require(game.ReplicatedStorage.src.Loader);
-					end);
-					v1827 = (v1826 and pcall(function()
-						return v1826.load_client_service(nil, v7("\167\24\199\161\183\139\24\215\162\155\142\31\198\191\172", "\216\226\118\163\209"));
-					end) and v1826.load_client_service(nil, v7("\155\254\31\17\88\121\49\170\227\56\13\94\117\49\170", "\95\222\144\123\97\55\16"))) or nil;
-					v1822 = 5 - 1;
-				end
-				if ((1 + 0) == v1822) then
-					v1824 = Vector3.new(v1823.X, 0, v1823.Z);
-					v1825 = CFrame.new(v328.position);
-					v1822 = 2;
-				end
-				if ((379 - (121 + 256)) == v1822) then
-					if (v1824.Magnitude > (0.1 - 0)) then
-						v1825 = CFrame.new(v328.position, v328.position + v1824);
-					end
-					v1826 = nil;
-					v1822 = 7 - 4;
-				end
-				if ((1 + 3) == v1822) then
-					v1828, v1829 = pcall(function()
-						if (v1827 and v1827.invoke_server) then
-							return v1827.invoke_server(v7("\10\148\187\84\237\38\145\180\74\247", "\131\121\228\218\35"), v324.uuid, v1825);
-						else
-							return v17.spawn_unit:InvokeServer(v324.uuid, v1825);
-						end
-					end);
-					if (v1828 and (v1829 == true)) then
-						local v2959 = 0 + 0;
-						while true do
-							if (v2959 == (0 + 0)) then
-								v328.occupied = true;
-								v324.cur = v324.cur + 1;
-								v2959 = 1759 - (549 + 1209);
-							end
-							if ((2 - 0) == v2959) then
-								v89();
-								break;
-							end
-							if (v2959 == (1 + 0)) then
-								v324.canPlaceMore = v324.cur < v324.max;
-								v88();
-								v2959 = 1383 - (643 + 738);
-							end
-						end
-					else
-						v55.FailedSpots[v328.index] = tick() + 180;
-					end
-					break;
-				end
-			end
-		else
-			return;
-		end
-	end
-end;
-local v91 = function(v335)
-	local v336 = 0;
-	local v337;
-	local v338;
-	local v339;
-	while true do
-		if ((1 + 0) == v336) then
-			if (v337 and v337.get_next_upgrade_info) then
-				local v2146, v2147, v2148 = pcall(function()
-					return v337.get_next_upgrade_info(v335);
-				end);
-				if (not v2146 or v2148 or not v2147) then
-					return nil, true;
-				end
-				local v2149 = v2147.cost or (0 - 0);
-				local v2150 = 1;
-				if (v338 and v338.calculate_upgrade_cost_multiplier and v337.session) then
-					pcall(function()
-						v2150 = v338.calculate_upgrade_cost_multiplier(v335, v337.session) or (2 - 1);
-					end);
-				end
-				return math.floor(v2149 * v2150), false;
-			end
-			v339 = v335:FindFirstChild(v7("\230\195\54\0\109\8", "\123\185\176\66\97\25"));
-			v336 = 1 + 1;
-		end
-		if (v336 == 2) then
-			if v339 then
-				local v2151 = 0 - 0;
-				local v2152;
-				while true do
-					if (v2151 == (0 - 0)) then
-						v2152 = v339:FindFirstChild(v7("\221\31\30\67\20\43\93\14\203\0\10\69", "\81\168\111\121\49\117\79\56")) and v339.upgrade_cost.Value;
-						if (v2152 and (v2152 > (1107 - (1038 + 69)))) then
-							return v2152, false;
-						end
-						break;
-					end
-				end
-			end
-			return 836 - (157 + 179), false;
-		end
-		if (0 == v336) then
-			v337 = v73();
-			v338 = v75();
-			v336 = 1131 - (204 + 926);
-		end
-	end
-end;
-local v92 = function()
-	if (v59() or not v44.AutoUpgradeEnabled) then
-		return;
-	end
-	if ((tick() - v55.LastUpgradeTime) < v44.UpgradeInterval) then
-		return;
-	end
-	local v340 = v84();
-	if (v340 <= (1957 - (184 + 1773))) then
-		return;
-	end
-	local v341 = v81();
-	local v342 = v78();
-	if (#v342 == (719 - (111 + 608))) then
-		return;
-	end
-	if v44.AutoPlaceEnabled then
-		local v1312 = 0 + 0;
-		local v1313;
-		while true do
-			if (v1312 == (0 - 0)) then
-				v1313 = (v44.UseCustomPlacementOrder and v44.PlacementOrder) or {(1 + 0),(2 + 0),3,4,5,(19 - 13)};
-				for v2435, v2436 in ipairs(v1313) do
-					if ((v44.SlotPlacement[v2436] ~= false) and ((v44.SlotLimits[v2436] or (5 + 1)) > (1668 - (1328 + 340)))) then
-						for v2961, v2962 in ipairs(v341) do
-							if ((v2962.slot == v2436) and v2962.canPlaceMore) then
-								return;
-							end
-						end
-					end
-				end
-				break;
-			end
-		end
-	end
-	if v44.PhoenixReincarnate then
-		for v1606, v1607 in ipairs(v342) do
-			local v1608 = 0;
-			local v1609;
-			while true do
-				if (v1608 == (0 - 0)) then
-					v1609 = v1607:FindFirstChild(v7("\248\25\241\183\211\25", "\214\167\106\133"));
-					if (v1609 and v1609:FindFirstChild(v7("\60\40\75\93\53\123\220", "\185\73\88\44\47\84\31")) and not v55.PhoenixSold[v1607]) then
-						local v2848 = 0 + 0;
-						local v2849;
-						local v2850;
-						local v2851;
-						while true do
-							if (v2848 == 1) then
-								v2851 = v1607.Name:lower();
-								if ((v2851:find(v7("\52\58\167\36\42\59\176", "\65\68\82\200")) ~= nil) and (v2849 >= v2850)) then
-									local v3335 = 0 - 0;
-									while true do
-										if (v3335 == (1 + 0)) then
-											pcall(function()
-												if v17:FindFirstChild(v7("\54\85\126\44\240\218\112\44\68\77\41\193\200\127\40\85", "\30\69\48\18\64\175\175")) then
-													v17.sell_unit_ingame:InvokeServer(v1607);
-												end
-											end);
-											return;
-										end
-										if (v3335 == (1014 - (782 + 232))) then
-											v55.PhoenixSold[v1607] = true;
-											v55.LastUpgradeTime = tick();
-											v3335 = 1 + 0;
-										end
-									end
-								end
-								break;
-							end
-							if (v2848 == (1303 - (397 + 906))) then
-								local v3192 = 600 - (360 + 240);
-								local v3193;
-								while true do
-									if (v3192 == 0) then
-										v3193 = 0 - 0;
-										while true do
-											if ((1 + 0) == v3193) then
-												v2848 = 23 - (13 + 9);
-												break;
-											end
-											if (v3193 == 0) then
-												v2849 = v1609.upgrade.Value;
-												v2850 = (v1609:FindFirstChild(v7("\133\214\2\159\198\239\143\197\27\164\214", "\159\232\183\122\192\179")) and v1609.max_upgrade.Value) or 15;
-												v3193 = 1 - 0;
-											end
-										end
-										break;
-									end
-								end
-							end
-						end
-					end
-					break;
-				end
-			end
-		end
-	end
-	local v343 = (v44.UseCustomUpgradeOrder and v44.UpgradeOrder) or {1,(8 - 6),(7 - 4),(1 + 3),5,6};
-	local v344 = {};
-	for v869, v870 in ipairs(v343) do
-		local v871 = 21 - (8 + 13);
-		local v872;
-		while true do
-			if (v871 == (0 + 0)) then
-				v872 = {};
-				for v2153, v2154 in ipairs(v342) do
-					local v2155 = 0 - 0;
-					local v2156;
+			if (v867 == (1 - 0)) then
+				if (#v868 > (0 + 0)) then
+					local v2412 = 668 - (355 + 313);
 					while true do
-						if (v2155 == (0 + 0)) then
-							v2156 = v82(v2154, v341);
-							if (v2156 == v870) then
-								local v3078 = 0;
-								local v3079;
-								while true do
-									if (v3078 == (88 - (28 + 60))) then
-										v3079 = v2154:FindFirstChild(v7("\207\63\11\237\47\227", "\91\144\76\127\140"));
-										if (v3079 and v3079:FindFirstChild(v7("\245\24\65\51\210\190\208", "\176\128\104\38\65\179\218\181"))) then
-											local v3425 = v3079.upgrade.Value;
-											local v3426 = (v3079:FindFirstChild(v7("\221\197\218\42\197\212\197\7\209\192\199", "\117\176\164\162")) and v3079.max_upgrade.Value) or 15;
-											local v3427 = v44.SlotMaxUpgrades[v2156] or v44.GlobalMaxUpgrades;
-											local v3428 = math.min(v3427, v3426);
-											if (v3425 < v3428) then
-												local v3482, v3483 = v91(v2154);
-												if (not v3483 and v3482 and (v3482 > (0 + 0))) then
-													table.insert(v872, {[v7("\145\204\12\228", "\25\228\162\101\144\186")]=v2154,[v7("\75\35\171\28\247\234\92", "\132\40\86\217\110\146")]=v3425,[v7("\125\196\52\168", "\62\30\171\71\220\199\19\156")]=v3482,[v7("\83\73\163\34", "\45\32\37\204\86\61\169\79")]=v870});
-												end
-											end
-										end
-										break;
-									end
-								end
-							end
-							break;
-						end
-					end
-				end
-				v871 = 1 + 0;
-			end
-			if (v871 == (954 - (133 + 820))) then
-				if (#v872 > 0) then
-					local v2437 = 0;
-					while true do
-						if (v2437 == (0 + 0)) then
-							table.sort(v872, function(v3080, v3081)
-								return v3080.current > v3081.current;
+						if (v2412 == (0 + 0)) then
+							table.sort(v868, function(v3186, v3187)
+								return v3186.current > v3187.current;
 							end);
-							table.insert(v344, v872[98 - (9 + 88)]);
+							table.insert(v340, v868[2 - 1]);
 							break;
 						end
 					end
@@ -3678,272 +3923,311 @@ local v92 = function()
 			end
 		end
 	end
-	if (#v344 == 0) then
+	if (#v340 == 0) then
 		return;
 	end
-	local v345 = nil;
-	local v346 = v344[1];
-	if ((v44.SmartCostBalancing ~= false) and (#v344 >= 2)) then
-		local v1314 = 250 - (98 + 152);
-		local v1315;
+	local v341 = nil;
+	local v342 = v340[1 - 0];
+	if ((v24.SmartCostBalancing ~= false) and (#v340 >= (2 + 0))) then
+		local v1356 = 0;
+		local v1357;
 		while true do
-			if (v1314 == (0 + 0)) then
-				v1315 = v344[5 - 3];
-				if (v1315.cost < v346.cost) then
-					v345 = v1315;
+			if (v1356 == (1865 - (762 + 1103))) then
+				v1357 = v340[1 + 1];
+				if (v1357.cost < v342.cost) then
+					v341 = v1357;
 				else
-					v345 = v346;
+					v341 = v342;
 				end
 				break;
 			end
 		end
 	else
-		v345 = v346;
+		v341 = v342;
 	end
-	if (v345 and v345.unit) then
-		if (v340 >= v345.cost) then
-			v55.LastUpgradeTime = tick();
-			pcall(function()
-				v17.upgrade_unit_ingame:InvokeServer(v345.unit);
-			end);
-			return;
+	if (v341 and v341.unit) then
+		if (v336 >= v341.cost) then
+			local v1868 = 0 + 0;
+			while true do
+				if (1 == v1868) then
+					return;
+				end
+				if (v1868 == 0) then
+					v25.LastUpgradeTime = tick();
+					pcall(function()
+						v18.upgrade_unit_ingame:InvokeServer(v341.unit);
+					end);
+					v1868 = 1;
+				end
+			end
 		else
 			return;
 		end
 	end
 end;
-local v93 = function(v347)
+local v95 = function(v343)
+	local v344 = 0 + 0;
+	local v345;
+	local v346;
+	local v347;
+	while true do
+		if (v344 == (1569 - (1491 + 76))) then
+			if (v346:find(v7("\78\182\132\126\177", "\209\57\211\234\26\200")) or v347:find(v7("\22\203\168\133\73", "\178\97\174\198\225\48"))) then
+				return true;
+			end
+			if (v346:find(v7("\202\68\19\248\118", "\111\175\54\100\145\24\134")) or v346:find(v7("\64\22\45\24\66\23\36\16\81", "\117\35\121\64")) or v347:find(v7("\216\175\249\223\45", "\47\189\221\142\182\67")) or v347:find(v7("\35\176\42\198\73\167\36\44\50", "\73\64\223\71\171\40\201\64"))) then
+				return true;
+			end
+			v344 = 2 + 1;
+		end
+		if (v344 == 1) then
+			local v1690 = 0 + 0;
+			while true do
+				if (0 == v1690) then
+					v346 = (v345 and v345:FindFirstChild(v7("\208\44", "\157\185\72\103\144")) and tostring(v345.id.Value):lower()) or "";
+					v347 = v343.Name:lower();
+					v1690 = 763 - (94 + 668);
+				end
+				if (v1690 == (1410 - (36 + 1373))) then
+					v344 = 1103 - (58 + 1043);
+					break;
+				end
+			end
+		end
+		if (v344 == 3) then
+			local v1691 = 0;
+			local v1692;
+			while true do
+				if (v1691 == (0 - 0)) then
+					v1692 = 0;
+					while true do
+						if (v1692 == (0 - 0)) then
+							local v3049 = 0;
+							while true do
+								if (v3049 == 0) then
+									if (v346:find(v7("\6\136\197\95\185", "\29\106\237\164\57\192")) or v347:find(v7("\189\161\230\188\204", "\146\209\196\135\218\181\178\192"))) then
+										return true;
+									end
+									return false;
+								end
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+		if (v344 == (0 - 0)) then
+			if not v343 then
+				return false;
+			end
+			v345 = v343:FindFirstChild(v7("\189\204\200\34\148\183", "\76\226\191\188\67\224\196\194"));
+			v344 = 2 - 1;
+		end
+	end
+end;
+local v96 = function()
 	local v348 = 0;
 	local v349;
 	local v350;
 	local v351;
+	local v352;
 	while true do
-		if (v348 == (4 - 3)) then
-			v350 = (v349 and v349:FindFirstChild(v7("\4\88", "\191\109\60\104\33\58\193\48")) and tostring(v349.id.Value):lower()) or "";
-			v351 = v347.Name:lower();
-			v348 = 2;
-		end
-		if (v348 == (5 - 2)) then
-			if (v350:find(v7("\85\182\139\124\177", "\209\57\211\234\26\200")) or v351:find(v7("\13\203\167\135\73", "\178\97\174\198\225\48"))) then
-				return true;
-			end
-			return false;
-		end
-		if ((0 + 0) == v348) then
-			if not v347 then
-				return false;
-			end
-			v349 = v347:FindFirstChild(v7("\106\70\17\189\161\111", "\28\53\53\101\220\213"));
-			v348 = 1;
-		end
-		if (v348 == (2 - 0)) then
-			if (v350:find(v7("\144\210\22\227\158", "\135\231\183\120")) or v351:find(v7("\241\15\66\224\44", "\201\134\106\44\132\85\122"))) then
-				return true;
-			end
-			if (v350:find(v7("\51\30\96\54\15", "\67\86\108\23\95\97\108\168")) or v350:find(v7("\167\55\65\7\165\42\209\85\182", "\48\196\88\44\106\196\68\181")) or v351:find(v7("\135\205\203\42\142", "\76\226\191\188\67\224\196\194")) or v351:find(v7("\218\39\10\253\252\215\44\2\226", "\157\185\72\103\144"))) then
-				return true;
-			end
-			v348 = 291 - (44 + 244);
-		end
-	end
-end;
-local v94 = function()
-	if (v59() or not v44.AutoAbilitiesEnabled) then
-		return;
-	end
-	if ((tick() - v55.LastAbilityTime) < v44.AbilityInterval) then
-		return;
-	end
-	local v352 = v83();
-	local v353 = v81();
-	local v354 = v78();
-	local v355 = tick();
-	for v873, v874 in ipairs(v354) do
-		local v875 = 1389 - (207 + 1182);
-		local v876;
-		local v877;
-		while true do
-			if (v875 == (0 + 0)) then
-				v876 = (v874.Name or ""):lower();
-				v877 = (v874:GetAttribute(v7("\218\88\13\229\71\239\11", "\111\175\54\100\145\24\134")) or ""):lower();
-				v875 = 1;
-			end
-			if (v875 == (917 - (904 + 12))) then
-				if (not v93(v874) and not v876:find(v7("\78\24\40\26\81\24\39\20", "\117\35\121\64")) and not v877:find(v7("\208\188\230\217\49\78\218\188", "\47\189\221\142\182\67"))) then
-					local v2438 = v874:FindFirstChild(v7("\31\172\51\202\92\186", "\73\64\223\71\171\40\201\64"));
-					if (v2438 and v2438:FindFirstChild(v7("\11\142\208\80\182\120\53\140\208\77\161\126\1", "\29\106\237\164\57\192")) and (v2438.active_attack.Value ~= "") and (v2438.active_attack.Value ~= v7("\191\173\235", "\146\209\196\135\218\181\178\192"))) then
-						local v2852 = 0 - 0;
-						local v2853;
-						local v2854;
-						local v2855;
-						while true do
-							if (v2852 == (0 + 0)) then
-								local v3194 = 0;
-								local v3195;
-								while true do
-									if (v3194 == 0) then
-										v3195 = 0 - 0;
-										while true do
-											if (v3195 == (253 - (241 + 12))) then
-												v2853 = (v2438:FindFirstChild(v7("\44\51\151\24\70\162\18\49\151\5\81\164\38\15\128\30\95\171\41\63\148\31", "\199\77\80\227\113\48")) and v2438.active_attack_cooldown.Value) or (0 + 0);
-												v2854 = (v2438:FindFirstChild(v7("\38\62\77\217\21\62\93\217\35\41\91\242\41\62\77\217", "\173\74\95\62")) and v2438.last_active_cast.Value) or -100000000;
-												v3195 = 1 - 0;
-											end
-											if ((1255 - (1187 + 67)) == v3195) then
-												v2852 = 1;
+		if (v348 == (11 - 8)) then
+			for v1869, v1870 in ipairs(v351) do
+				local v1871 = (v1870.Name or ""):lower();
+				local v1872 = (v1870:GetAttribute(v7("\56\62\138\5\111\174\41", "\199\77\80\227\113\48")) or ""):lower();
+				if (not v95(v1870) and not v1871:find(v7("\39\62\86\194\56\62\89\204", "\173\74\95\62")) and not v1872:find(v7("\203\24\84\57\217\6\187\199", "\220\166\121\60\86\171\103"))) then
+					local v2413 = v1870:FindFirstChild(v7("\214\17\41\177\47\217", "\122\137\98\93\208\91\170"));
+					if (v2413 and v2413:FindFirstChild(v7("\134\226\8\70\195\183\150\203\147\245\29\76\222", "\170\231\129\124\47\181\210\201")) and (v2413.active_attack.Value ~= "") and (v2413.active_attack.Value ~= v7("\133\178\54", "\74\235\219\90\80\106"))) then
+						local v2909 = (v2413:FindFirstChild(v7("\77\192\79\50\44\241\69\243\88\215\90\56\49\203\121\253\67\207\95\52\45\250", "\146\44\163\59\91\90\148\26")) and v2413.active_attack_cooldown.Value) or (228 - (35 + 193));
+						local v2910 = (v2413:FindFirstChild(v7("\121\44\171\149\118\116\46\172\136\95\112\18\187\128\90\97", "\41\21\77\216\225")) and v2413.last_active_cast.Value) or -(471599209 - 371599209);
+						local v2911 = 652 - (242 + 410);
+						if (v2910 > 0) then
+							v2911 = v2909 - (v352 - v2910);
+						end
+						if (v2911 <= (1495 - (1285 + 210))) then
+							local v3188 = v84(v1870, v350);
+							local v3189 = v3188 and v24.UnitCustomSettings and v24.UnitCustomSettings[v3188];
+							local v3190 = (v3189 and (v3189.Ability ~= v7("\48\72\116\68\1\65\102", "\37\116\45\18")) and v3189.Ability) or v24.AbilityMode;
+							local v3191 = (v3189 and v3189.AbilityWave) or v24.AbilityStartWave;
+							if ((v3190 ~= v7("\235\246\69\163\169\195\250\82", "\203\175\159\54\194")) and (v3190 ~= v7("\85\203\15\62\72", "\162\27\174\121\91\58\47"))) then
+								local v3354 = false;
+								if ((v3190 == v7("\228\205\26\251\58\207\214\215\95\199\58\216\215\220", "\185\179\165\127\149\95")) or (v3190 == v7("\102\125\202\250\87\99\112\206\240\14", "\119\49\21\175\148")) or (v3190 == v7("\96\189\19\83\109\91\143\244\83\172", "\149\55\213\118\61\77\41\234"))) then
+									v3354 = true;
+								elseif ((v3190 == v7("\59\20\197\203\169\14\174\13\24", "\123\125\102\170\166\137\89\207")) or (v3190 == v7("\104\18\87\48\78\148\168\88\5", "\201\46\96\56\93\110\227"))) then
+									v3354 = v349 >= v3191;
+								elseif ((v3190 == v7("\140\11\235\247\85\227\180\16\253\185\60\210\251\45\235\248\7", "\161\219\99\142\153\117")) or (v3190 == v7("\75\185\163\125\141\126\190\181\96\141\117\162\230\125\200\125\163", "\173\28\209\198\19")) or (v3190 == v7("\87\227\164\168\53\194\178\186\103", "\219\21\140\215")) or (v3190 == v7("\106\183\213\180\24\70\189\199\181", "\56\40\216\166\199"))) then
+									local v3582 = v11:GetTagged(v7("\36\187\6\60\35\167", "\79\70\212\117"));
+									local v3583 = v1870.PrimaryPart and v1870.PrimaryPart.Position;
+									if v3583 then
+										for v3640, v3641 in ipairs(v3582) do
+											local v3642 = v3641.PrimaryPart and v3641.PrimaryPart.Position;
+											if (v3642 and ((v3642 - v3583).Magnitude <= v24.BossDetectionRange)) then
+												v3354 = true;
 												break;
 											end
 										end
-										break;
 									end
 								end
-							end
-							if (v2852 == (273 - (56 + 216))) then
-								v2855 = 0 - 0;
-								if (v2854 > (1479 - (1194 + 285))) then
-									v2855 = v2853 - (v355 - v2854);
-								end
-								v2852 = 1702 - (401 + 1299);
-							end
-							if (v2852 == (1557 - (1522 + 33))) then
-								if (v2855 <= (0 - 0)) then
-									local v3336 = v82(v874, v353);
-									local v3337 = v3336 and v44.UnitCustomSettings and v44.UnitCustomSettings[v3336];
-									local v3338 = (v3337 and (v3337.Ability ~= v7("\226\28\90\55\222\11\168", "\220\166\121\60\86\171\103")) and v3337.Ability) or v44.AbilityMode;
-									local v3339 = (v3337 and v3337.AbilityWave) or v44.AbilityStartWave;
-									if ((v3338 ~= v7("\205\11\46\177\57\198\31\237", "\122\137\98\93\208\91\170")) and (v3338 ~= v7("\169\228\10\74\199", "\170\231\129\124\47\181\210\201"))) then
-										local v3429 = 0 - 0;
-										local v3430;
-										while true do
-											if (v3429 == 1) then
-												if v3430 then
-													v55.LastAbilityTime = tick();
-													pcall(function()
-														if v17:FindFirstChild(v7("\91\19\93\2\15\128\189\71\22\93\2\15\151\189\79\3\83", "\201\46\96\56\93\110\227")) then
-															v17.use_active_attack:InvokeServer(v874);
-														end
-													end);
+								if v3354 then
+									local v3486 = 0;
+									local v3487;
+									while true do
+										if (v3486 == (1739 - (1179 + 560))) then
+											v3487 = 0;
+											while true do
+												if (v3487 == 1) then
 													return;
 												end
-												break;
-											end
-											if (v3429 == (1822 - (1108 + 714))) then
-												v3430 = false;
-												if ((v3338 == v7("\188\179\63\62\15\60\142\169\122\2\15\43\143\162", "\74\235\219\90\80\106")) or (v3338 == v7("\123\203\94\53\122\198\127\243\72\218", "\146\44\163\59\91\90\148\26")) or (v3338 == v7("\66\37\189\143\9\103\40\185\133\80", "\41\21\77\216\225"))) then
-													v3430 = true;
-												elseif ((v3338 == v7("\50\95\125\72\84\122\115\83\17", "\37\116\45\18")) or (v3338 == v7("\233\237\89\175\235\216\254\64\167", "\203\175\159\54\194"))) then
-													v3430 = v352 >= v3339;
-												elseif ((v3338 == v7("\76\198\28\53\26\109\205\104\221\89\18\73\15\236\126\207\11", "\162\27\174\121\91\58\47")) or (v3338 == v7("\228\205\26\251\127\219\220\214\12\181\54\202\147\203\26\244\45", "\185\179\165\127\149\95")) or (v3338 == v7("\115\122\220\231\87\127\112\206\230", "\119\49\21\175\148")) or (v3338 == v7("\117\186\5\78\109\71\143\244\69", "\149\55\213\118\61\77\41\234"))) then
-													local v3558 = v11:GetTagged(v7("\31\9\217\213\236\42", "\123\125\102\170\166\137\89\207"));
-													local v3559 = v874.PrimaryPart and v874.PrimaryPart.Position;
-													if v3559 then
-														for v3571, v3572 in ipairs(v3558) do
-															local v3573 = v3572.PrimaryPart and v3572.PrimaryPart.Position;
-															if (v3573 and ((v3573 - v3559).Magnitude <= v44.BossDetectionRange)) then
-																v3430 = true;
-																break;
-															end
+												if ((0 + 0) == v3487) then
+													v25.LastAbilityTime = tick();
+													pcall(function()
+														if v18:FindFirstChild(v7("\178\5\228\249\248\14\179\31\247\195\198\12\179\2\224\197\242", "\109\199\118\129\166\153")) then
+															v18.use_active_attack:InvokeServer(v1870);
 														end
-													end
+													end);
+													v3487 = 1;
 												end
-												v3429 = 1;
 											end
+											break;
 										end
 									end
 								end
-								break;
 							end
 						end
 					end
 				end
-				break;
 			end
+			break;
+		end
+		if (v348 == (6 - 4)) then
+			local v1693 = 0 - 0;
+			while true do
+				if (0 == v1693) then
+					v351 = v80();
+					v352 = tick();
+					v1693 = 1217 - (262 + 954);
+				end
+				if (v1693 == (3 - 2)) then
+					v348 = 7 - 4;
+					break;
+				end
+			end
+		end
+		if (v348 == (1 + 0)) then
+			v349 = v85();
+			v350 = v83();
+			v348 = 6 - 4;
+		end
+		if (v348 == (0 + 0)) then
+			if (v61() or not v24.AutoAbilitiesEnabled) then
+				return;
+			end
+			if ((tick() - v25.LastAbilityTime) < v24.AbilityInterval) then
+				return;
+			end
+			v348 = 1 + 0;
 		end
 	end
 end;
-local v95 = function()
-	if ((tick() - v55.LastTargetCheckTime) < (675 - (357 + 317))) then
-		return;
-	end
-	v55.LastTargetCheckTime = tick();
-	local v357 = v81();
-	local v358 = v78();
-	for v878, v879 in ipairs(v358) do
-		local v880 = 0 + 0;
-		local v881;
-		while true do
-			if (0 == v880) then
-				v881 = v879:FindFirstChild(v7("\132\16\250\248\1\210", "\161\219\99\142\153\117"));
-				if (v881 and v881:FindFirstChild(v7("\108\163\175\124\223\117\165\191", "\173\28\209\198\19"))) then
-					local v2439 = 0 + 0;
-					local v2440;
-					local v2441;
-					local v2442;
-					while true do
-						if (v2439 == 1) then
-							v2442 = (v2441 and (v2441.Target ~= v7("\81\233\177\186\96\224\163", "\219\21\140\215")) and v2441.Target) or v44.GlobalTargetPriority;
-							if (v2442 and (v2442 ~= v7("\105\173\210\168", "\56\40\216\166\199")) and (v2442 ~= v7("\2\177\19\46\51\184\1", "\79\70\212\117"))) then
-								local v3196 = v881.priority.Value;
-								if (string.lower(v3196) ~= string.lower(v2442)) then
-									pcall(function()
-										if v17:FindFirstChild(v7("\164\30\224\200\254\8\152\6\243\207\246\31\174\2\248", "\109\199\118\129\166\153")) then
-											v17.change_priority:InvokeServer(v879, string.lower(v2442));
-										end
-									end);
-								end
-							end
-							break;
-						end
-						if (v2439 == 0) then
-							local v2963 = 0;
+local v97 = function()
+	local v353 = 0 + 0;
+	local v354;
+	local v355;
+	while true do
+		if ((1842 - (1696 + 146)) == v353) then
+			if ((tick() - v25.LastTargetCheckTime) < (1907 - (1835 + 71))) then
+				return;
+			end
+			v25.LastTargetCheckTime = tick();
+			v353 = 635 - (58 + 576);
+		end
+		if (v353 == (2 + 0)) then
+			for v1873, v1874 in ipairs(v355) do
+				local v1875 = 0 - 0;
+				local v1876;
+				while true do
+					if (v1875 == 0) then
+						v1876 = v1874:FindFirstChild(v7("\14\163\99\247\37\163", "\150\81\208\23"));
+						if (v1876 and v1876:FindFirstChild(v7("\233\215\233\132\235\204\244\146", "\235\153\165\128"))) then
+							local v3050 = 0;
+							local v3051;
+							local v3052;
+							local v3053;
 							while true do
-								if (v2963 == (467 - (73 + 394))) then
-									v2440 = v82(v879, v357);
-									v2441 = v2440 and v44.UnitCustomSettings and v44.UnitCustomSettings[v2440];
-									v2963 = 1;
+								if (v3050 == (0 + 0)) then
+									v3051 = v84(v1874, v354);
+									v3052 = v3051 and v24.UnitCustomSettings and v24.UnitCustomSettings[v3051];
+									v3050 = 81 - (27 + 53);
 								end
-								if (v2963 == (3 - 2)) then
-									v2439 = 1;
+								if ((1730 - (22 + 1707)) == v3050) then
+									v3053 = (v3052 and (v3052.Target ~= v7("\159\76\164\46\83\42\190", "\158\219\41\194\79\38\70\202")) and v3052.Target) or v24.GlobalTargetPriority;
+									if (v3053 and (v3053 ~= v7("\98\48\59\13", "\232\35\69\79\98\142\182")) and (v3053 ~= v7("\93\5\25\252\108\12\11", "\157\25\96\127"))) then
+										local v3488 = v1876.priority.Value;
+										if (string.lower(v3488) ~= string.lower(v3053)) then
+											pcall(function()
+												if v18:FindFirstChild(v7("\164\139\244\11\87\52\152\147\231\12\95\35\174\151\236", "\81\199\227\149\101\48")) then
+													v18.change_priority:InvokeServer(v1874, string.lower(v3053));
+												end
+											end);
+										end
+									end
 									break;
 								end
 							end
 						end
+						break;
 					end
 				end
-				break;
 			end
+			break;
+		end
+		if (v353 == (1 - 0)) then
+			v354 = v83();
+			v355 = v80();
+			v353 = 2;
 		end
 	end
 end;
-local v96 = queue_on_teleport or (syn and syn.queue_on_teleport) or (fluxus and fluxus.queue_on_teleport);
-local v97 = false;
-local v98 = function()
-	if (not v44.AutoLoad or not v96 or v97) then
-		return;
+local v98 = queue_on_teleport or (syn and syn.queue_on_teleport) or (fluxus and fluxus.queue_on_teleport);
+local v99 = false;
+local v100 = function()
+	local v356 = 890 - (627 + 263);
+	while true do
+		if (v356 == 1) then
+			pcall(function()
+				v98("task.spawn(function() repeat task.wait(0.2) until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character if not getgenv().AJ_HUB_BOOTING and not getgenv().AJ_HUB_LOADED and readfile and isfile and isfile('123.lua') then getgenv().AJ_HUB_BOOTING = true task.wait(0.5) loadstring(readfile('123.lua'))() getgenv().AJ_HUB_BOOTING = nil end end)");
+			end);
+			break;
+		end
+		if ((0 - 0) == v356) then
+			if (not v24.AutoLoad or not v98 or v99) then
+				return;
+			end
+			v99 = true;
+			v356 = 1 - 0;
+		end
 	end
-	v97 = true;
-	pcall(function()
-		v96("task.spawn(function() repeat task.wait(0.2) until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character if not getgenv().AJ_HUB_BOOTING and not getgenv().AJ_HUB_LOADED and readfile and isfile and isfile('123.lua') then getgenv().AJ_HUB_BOOTING = true task.wait(0.5) loadstring(readfile('123.lua'))() getgenv().AJ_HUB_BOOTING = nil end end)");
-	end);
 end;
 pcall(function()
-	if v16 then
-		v16.OnTeleport:Connect(function()
-			if v44.AutoLoad then
-				v98();
+	if v17 then
+		v17.OnTeleport:Connect(function()
+			if v24.AutoLoad then
+				v100();
 			end
 		end);
 	end
 end);
-local v99 = function()
-	if v44.AntiPunishments then
-		if not v55.AntiAfkConnection then
+local v101 = function()
+	if v24.AntiPunishments then
+		if not v25.AntiAfkConnection then
 			pcall(function()
-				v55.AntiAfkConnection = v16.Idled:Connect(function()
+				v25.AntiAfkConnection = v17.Idled:Connect(function()
 					pcall(function()
-						local v2727 = 0 + 0;
+						local v2759 = 0 - 0;
 						while true do
-							if (v2727 == 0) then
+							if (v2759 == (0 - 0)) then
 								v14:CaptureController();
 								v14:ClickButton2(Vector2.new());
 								break;
@@ -3953,1011 +4237,1018 @@ local v99 = function()
 				end);
 			end);
 		end
-	elseif v55.AntiAfkConnection then
-		local v1831 = 0;
+	elseif v25.AntiAfkConnection then
+		local v1877 = 1186 - (255 + 931);
 		while true do
-			if (v1831 == 0) then
+			if (v1877 == 0) then
 				pcall(function()
-					v55.AntiAfkConnection:Disconnect();
+					v25.AntiAfkConnection:Disconnect();
 				end);
-				v55.AntiAfkConnection = nil;
+				v25.AntiAfkConnection = nil;
 				break;
 			end
 		end
 	end
 end;
-v99();
-local v100 = function()
-	v99();
-	if not v44.AntiPunishments then
-		return;
-	end
-	if ((tick() - v55.LastAntiAfkTime) < 25) then
-		return;
-	end
-	v55.LastAntiAfkTime = tick();
-	pcall(function()
-		local v882 = 0 + 0;
-		while true do
-			if (v882 == (251 - (247 + 4))) then
-				v14:CaptureController();
-				v14:ClickButton2(Vector2.new());
-				break;
-			end
-		end
-	end);
-end;
-local v101 = function()
-	if not v44.AutoWaveSkip then
-		return;
-	end
-	if ((game.PlaceId == (8304192458 - (435 + 193))) or not workspace:FindFirstChild(v7("\14\148\86\194\16", "\150\81\208\23"))) then
-		return;
-	end
-	if ((tick() - v55.LastSkipTime) < (474 - (428 + 45))) then
-		return;
-	end
-	v55.LastSkipTime = tick();
-	pcall(function()
-		if v17:FindFirstChild(v7("\239\202\244\142\198\210\225\157\252\250\243\128\240\213", "\235\153\165\128")) then
-			v17.vote_wave_skip:InvokeServer();
-		end
-	end);
-end;
+v101();
 local v102 = function()
-	if not v44.AutoStart then
-		return;
-	end
-	if (game.PlaceId == (8304193050 - (158 + 1062))) then
-		return;
-	end
-	local v361 = workspace:FindFirstChild(v7("\132\109\131\27\103", "\158\219\41\194\79\38\70\202"));
-	if not v361 then
-		return;
-	end
-	if ((tick() - (v55.LastStartVoteTime or 0)) < (1378 - (858 + 519))) then
-		return;
-	end
-	local v362 = false;
-	if (v361 and v361:FindFirstChild(v7("\100\36\34\7\221\194\137\81\49\42\6", "\232\35\69\79\98\142\182"))) then
-		v362 = v361.GameStarted.Value;
-	end
-	if not v362 then
-		local v1317 = 0;
-		local v1318;
-		while true do
-			if (0 == v1317) then
-				v1318 = 0 - 0;
-				while true do
-					if (v1318 == (1457 - (711 + 746))) then
-						v55.LastStartVoteTime = tick();
-						pcall(function()
-							local v2964 = 0;
-							local v2965;
-							while true do
-								if (v2964 == (0 + 0)) then
-									if v17:FindFirstChild(v7("\111\15\11\248\70\19\11\252\107\20", "\157\25\96\127")) then
-										v17.vote_start:InvokeServer();
-									end
-									if v17:FindFirstChild(v7("\181\134\228\16\85\34\179\188\230\17\81\35\179\188\242\4\93\52", "\81\199\227\149\101\48")) then
-										v17.request_start_game:InvokeServer();
-									end
-									v2964 = 1;
-								end
-								if (v2964 == 1) then
-									v2965 = v16.PlayerGui:FindFirstChild(v7("\75\93\239\20\197\146\61\169\105", "\219\29\50\155\113\150\230\92"));
-									if (v2965 and v2965.Enabled) then
-										local v3388 = 0;
-										local v3389;
-										while true do
-											if (v3388 == 0) then
-												v3389 = v2965:FindFirstChild(v7("\249\47\201\127\250\90", "\45\177\64\165\27\159\40")) and v2965.Holder:FindFirstChild(v7("\63\3\27\190\125\19\62\0\166\118\24\4", "\18\125\118\111\202")) and v2965.Holder.ButtonHolder:FindFirstChild(v7("\105\57\74", "\155\48\92\57\154\80\205\167"));
-												if (v3389 and firesignal) then
-													firesignal(v3389.Activated);
-												end
-												break;
-											end
-										end
-									end
-									break;
-								end
-							end
-						end);
-						break;
+	local v357 = 0;
+	local v358;
+	while true do
+		if (0 == v357) then
+			v358 = 0 - 0;
+			while true do
+				if (v358 == 1) then
+					if ((tick() - v25.LastAntiAfkTime) < 25) then
+						return;
 					end
+					v25.LastAntiAfkTime = tick();
+					v358 = 1390 - (507 + 881);
 				end
-				break;
+				if (v358 == (0 - 0)) then
+					v101();
+					if not v24.AntiPunishments then
+						return;
+					end
+					v358 = 1 - 0;
+				end
+				if (v358 == (6 - 4)) then
+					pcall(function()
+						v14:CaptureController();
+						v14:ClickButton2(Vector2.new());
+					end);
+					break;
+				end
 			end
+			break;
 		end
 	end
 end;
 local v103 = function()
-	local v363 = 0 + 0;
-	local v364;
-	local v365;
-	while true do
-		if ((679 - (229 + 448)) == v363) then
-			local v1610 = 0;
-			while true do
-				if (v1610 == 0) then
-					local v2443 = 0;
-					while true do
-						if (v2443 == (741 - (357 + 384))) then
-							if (v365 and v365.Enabled) then
-								local v3197 = 0 + 0;
-								local v3198;
-								local v3199;
-								local v3200;
-								while true do
-									if (v3197 == (1581 - (984 + 596))) then
-										v3200 = nil;
-										while true do
-											if (v3198 == (1 - 0)) then
-												if ((v3199 and v3199.Visible) or (v3200 and v3200.Visible)) then
-													return true;
-												end
-												for v3496, v3497 in ipairs(v365:GetChildren()) do
-													if (v3497:IsA(v7("\245\66\223\123\210\164\57\209\67", "\92\178\55\182\52\176\206")) and v3497.Visible) then
-														return true;
-													end
-												end
-												break;
-											end
-											if (v3198 == 0) then
-												v3199 = v365:FindFirstChild(v7("\104\235\22\64\9\83", "\33\32\132\122\36\108"));
-												v3200 = v365:FindFirstChild(v7("\159\29\124\66\111\177\17\118", "\28\217\116\18\43"));
-												v3198 = 1;
-											end
-										end
-										break;
-									end
-									if ((921 - (465 + 456)) == v3197) then
-										v3198 = 0 + 0;
-										v3199 = nil;
-										v3197 = 2 - 1;
-									end
-								end
-							end
-							return false;
-						end
-					end
-				end
-			end
-		end
-		if ((1 + 0) == v363) then
-			if (v364 and v364:FindFirstChild(v7("\46\4\18\51\105\161\248\0\22\23\51\75", "\150\105\101\127\86\47\200")) and (v364.GameFinished.Value == true)) then
-				return true;
-			end
-			v365 = v16.PlayerGui:FindFirstChild(v7("\252\247\224\160\203\212\221\199\218", "\160\174\146\147\213\167"));
-			v363 = 4 - 2;
-		end
-		if (v363 == (0 + 0)) then
-			if (game.PlaceId == 8304191830) then
-				return false;
-			end
-			v364 = workspace:FindFirstChild(v7("\134\233\154\139\217", "\37\217\173\219\223\152\203"));
-			v363 = 3 - 2;
-		end
+	if not v24.AutoWaveSkip then
+		return;
 	end
+	if ((game.PlaceId == (8304193433 - (475 + 1128))) or not workspace:FindFirstChild(v7("\66\118\218\37\215", "\219\29\50\155\113\150\230\92"))) then
+		return;
+	end
+	if ((tick() - v25.LastSkipTime) < (2 - 1)) then
+		return;
+	end
+	v25.LastSkipTime = tick();
+	pcall(function()
+		if v18:FindFirstChild(v7("\199\47\209\126\192\95\76\199\37\250\104\244\65\93", "\45\177\64\165\27\159\40")) then
+			v18.vote_wave_skip:InvokeServer();
+		end
+	end);
 end;
-local v104 = function(v366)
-	local v367 = 0;
-	local v368;
-	local v369;
-	local v370;
-	while true do
-		if (v367 == (1 - 0)) then
-			v370 = nil;
-			while true do
-				if (0 == v368) then
-					v369 = tostring(math.floor(math.abs(tonumber(v366) or (0 + 0))));
-					v370 = nil;
-					v368 = 1 + 0;
-				end
-				if (v368 == (217 - (172 + 44))) then
-					while true do
-						v369, v370 = string.gsub(v369, v7("\36\125\60\74\95\49\58\92\82\112\117\80\30\112\117\92", "\117\122\85\17"), v7("\205\190\102\1\244", "\189\232\143\74\36\198"));
-						if (v370 == 0) then
-							break;
+local v104 = function()
+	if not v24.AutoStart then
+		return;
+	end
+	if (game.PlaceId == 8304191830) then
+		return;
+	end
+	local v360 = workspace:FindFirstChild(v7("\34\50\46\158\83", "\18\125\118\111\202"));
+	if not v360 then
+		return;
+	end
+	if ((tick() - (v25.LastStartVoteTime or 0)) < (1 - 0)) then
+		return;
+	end
+	local v361 = false;
+	if (v360 and v360:FindFirstChild(v7("\119\61\84\255\3\185\198\233\68\57\93", "\155\48\92\57\154\80\205\167"))) then
+		v361 = v360.GameStarted.Value;
+	end
+	if not v361 then
+		local v1359 = 0 - 0;
+		while true do
+			if (v1359 == (0 + 0)) then
+				v25.LastStartVoteTime = tick();
+				pcall(function()
+					if v18:FindFirstChild(v7("\175\194\175\186\199\184\81\184\223\175", "\37\217\173\219\223\152\203")) then
+						v18.vote_start:InvokeServer();
+					end
+					if v18:FindFirstChild(v7("\27\0\14\35\74\187\226\54\22\11\55\93\188\201\14\4\18\51", "\150\105\101\127\86\47\200")) then
+						v18.request_start_game:InvokeServer();
+					end
+					local v2415 = v17.PlayerGui:FindFirstChild(v7("\248\253\231\176\244\212\207\224\231", "\160\174\146\147\213\167"));
+					if (v2415 and v2415.Enabled) then
+						local v2912 = 357 - (110 + 247);
+						local v2913;
+						while true do
+							if (v2912 == 0) then
+								v2913 = v2415:FindFirstChild(v7("\104\235\22\64\9\83", "\33\32\132\122\36\108")) and v2415.Holder:FindFirstChild(v7("\155\1\102\95\115\183\60\125\71\120\188\6", "\28\217\116\18\43")) and v2415.Holder.ButtonHolder:FindFirstChild(v7("\235\82\197", "\92\178\55\182\52\176\206"));
+								if (v2913 and firesignal) then
+									firesignal(v2913.Activated);
+								end
+								break;
+							end
 						end
 					end
-					return v369;
-				end
+				end);
+				break;
 			end
-			break;
-		end
-		if ((0 + 0) == v367) then
-			v368 = 0 + 0;
-			v369 = nil;
-			v367 = 380 - (170 + 209);
 		end
 	end
 end;
 local v105 = function()
-	local v371 = {};
-	local v372 = false;
-	local v373 = {};
-	local v374 = function(v883, v884)
-		local v885 = 0;
-		local v886;
-		while true do
-			if (v885 == 0) then
-				v886 = 0 - 0;
-				while true do
-					if (v886 == 2) then
-						if v884 then
-							v372 = true;
-						end
-						break;
-					end
-					if (v886 == (0 - 0)) then
-						if (not v883 or (#v883 == (0 + 0)) or v373[v883]) then
-							return;
-						end
-						if v883:find(v7("\165\243\83\23", "\106\156\202\106\46\183")) then
-							return;
-						end
-						v886 = 957 - (244 + 712);
-					end
-					if (v886 == (1 + 0)) then
-						v373[v883] = true;
-						table.insert(v371, v883);
-						v886 = 2 + 0;
-					end
-				end
-				break;
+	local v362 = 1246 - (1109 + 137);
+	local v363;
+	local v364;
+	while true do
+		if (v362 == 0) then
+			if (game.PlaceId == (8304191830 - 0)) then
+				return false;
 			end
+			v363 = workspace:FindFirstChild(v7("\37\17\80\33\59", "\117\122\85\17"));
+			v362 = 1;
 		end
-	end;
-	local v375 = nil;
-	pcall(function()
-		v375 = require(game:GetService(v7("\15\28\107\63\35\62\24\111\54\46\14\13\116\33\43\58\28", "\74\93\121\27\83")).src.Data.Items);
-	end);
-	local v376 = v67();
-	local v377 = nil;
-	pcall(function()
-		v377 = require(game:GetService(v7("\79\190\246\114\116\184\231\106\120\191\213\106\114\169\231\121\120", "\30\29\219\134")).src.Loader);
-	end);
-	local v378 = v377 and v377.load_client_service and v377.load_client_service(nil, v7("\114\146\48\201\241\77\14\7\86\162", "\110\53\199\121\154\148\63\120"));
-	local v379 = v378 and v378.results_ui;
-	local v380 = v55.LastMatchSettings or (v379 and v379.settings);
-	if (v380 and (type(v380) == v7("\21\27\253\51\92", "\156\97\122\159\95\57"))) then
-		if (v380.xp_reward and tonumber(v380.xp_reward) and (tonumber(v380.xp_reward) > (0 - 0))) then
-			v374("+" .. v104(v380.xp_reward) .. v7("\142\142\234", "\95\174\214\186\152\107\98"));
-		end
-		if (v380.resource_reward and (type(v380.resource_reward) == v7("\157\15\115\135\22", "\166\233\110\17\235\115"))) then
-			for v2159, v2160 in pairs(v380.resource_reward) do
-				local v2161 = 0 - 0;
-				local v2162;
-				while true do
-					if (v2161 == 0) then
-						v2162 = tonumber(v2160) or 0;
-						if (v2162 > (0 + 0)) then
-							local v3082 = tostring(v2159);
-							if ((v3082 == v7("\75\27\201\204\247\172\76\125\15\214\205\225", "\28\24\110\164\161\146\222")) or (v3082:lower() == v7("\72\214\91\40\94\209\105\53\94\194\68\41\72", "\69\59\163\54"))) then
-								v3082 = v7("\131\189\199\71\54\223\246\128\173\203\88\63\222", "\214\208\200\170\42\83\173");
-							elseif ((v3082 == v7("\250\32\124\164\124\220\50", "\21\185\65\18\192")) or (v3082:lower() == v7("\253\87\83\31\168\251\69", "\193\158\54\61\123"))) then
-								v3082 = v7("\22\16\46\189\60\20\51", "\217\85\113\64");
-							elseif ((v3082 == v7("\108\10\193\211", "\133\43\111\172\160\143\226")) or (v3082:lower() == v7("\204\166\93\194", "\160\171\195\48\177"))) then
-								v3082 = v7("\244\6\123\62", "\167\179\99\22\77\60\161\207");
-							elseif ((v3082 == v7("\38\112\135\92", "\44\97\31\235\56")) or (v3082:lower() == v7("\246\1\244\160", "\196\145\110\152"))) then
-								v3082 = v7("\127\33\242\246", "\146\56\78\158");
-							elseif (v3082 == v7("\10\222\66\245\118\40\220\78\229\67", "\58\77\187\47\134")) then
-								v3082 = v7("\62\48\166\6\230\55\20\57\23\56\178", "\126\114\85\193\103\133\78\52");
-							elseif (v3082 == v7("\229\203\32\113\200\248\61\113\202\200", "\24\164\187\82")) then
-								v3082 = v7("\208\202\78\163\253\177\249\83\163\255\226", "\145\145\186\60\202");
-							elseif (v3082 == v7("\206\223\63\13\226\209\42\55\242\209\33\23", "\100\134\176\83")) then
-								v3082 = v7("\251\206\78\180\183\20\202\129\113\169\178\7\192", "\117\179\161\34\221\211");
-							else
-								v3082 = v3082:gsub(v7("\5\139\251\139\30\194\236\5\139\219\139\62\194\236", "\197\45\208\154\166\100\159"), v7("\108\165\198\249\97", "\83\73\148\230\220")):gsub("_", " ");
-							end
-							v374("+" .. v104(v2162) .. " " .. v3082);
-						end
-						break;
-					end
-				end
-			end
-		end
-		if (v380.gem_reward and tonumber(v380.gem_reward) and (tonumber(v380.gem_reward) > (0 + 0))) then
-			v374("+" .. v104(v380.gem_reward) .. v7("\115\248\243\237\252", "\233\83\191\150\128\143"));
-		end
-		if (v380.gold_reward and tonumber(v380.gold_reward) and (tonumber(v380.gold_reward) > (0 - 0))) then
-			v374("+" .. v104(v380.gold_reward) .. v7("\183\161\192\126\9", "\109\151\230\175\18"));
-		end
-		if (v380.trophy_reward and tonumber(v380.trophy_reward) and (tonumber(v380.trophy_reward) > (1246 - (769 + 477)))) then
-			v374("+" .. v104(v380.trophy_reward) .. v7("\224\206\83\75\144\168\243\68\87", "\224\192\154\33\36"));
-		end
-		if (v380.first_completion_gems and tonumber(v380.first_completion_gems) and (tonumber(v380.first_completion_gems) > 0)) then
-			v374("+" .. v104(v380.first_completion_gems) .. v7("\195\115\29\143\144\20\80\164\138\70\11\150\195\119\20\135\130\70\81", "\226\227\52\120"));
-		end
-		if (v380.first_completion_trophies and tonumber(v380.first_completion_trophies) and (tonumber(v380.first_completion_trophies) > 0)) then
-			v374("+" .. v104(v380.first_completion_trophies) .. v7("\69\223\254\171\90\183\222\188\22\171\164\130\67\173\196\173\69\200\224\161\75\173\158", "\217\101\139\140\196\42\223\183"));
-		end
-		local v1319 = v380.new_items or v55.LastDroppedItems;
-		if (v1319 and (type(v1319) == v7("\14\14\173\22\65", "\36\122\111\207\122"))) then
-			for v2163, v2164 in ipairs(v1319) do
-				local v2165 = ((type(v2164) == v7("\31\28\246\177\182\51", "\84\108\104\132\216\216")) and v2164) or ((type(v2164) == v7("\216\26\196\84\229", "\34\172\123\166\56\128\196")) and (v2164.item_id or v2164.id or v2164.name));
-				local v2166 = ((type(v2164) == v7("\176\168\170\199\79", "\116\196\201\200\171\42\19\181")) and (v2164.amount or v2164.count)) or 1;
-				local v2167 = ((type(v2164) == v7("\98\135\249\81\16", "\124\22\230\155\61\117\96")) and (v2164.tier or v2164.item_tier)) or nil;
-				local v2168 = (v375 and v2165 and v375[v2165]) or nil;
-				local v2169 = (v2168 and (v2168.name or v2168.title)) or v2165 or v7("\240\165\237\229\241\250\251\133\130\242\238\243", "\149\165\203\134\139\158\141");
-				if (not v2167 and v2168 and v2168.tier) then
-					v2167 = v2168.tier;
-				end
-				local v2170 = false;
-				if ((v2168 and v2168.rarity and tostring(v2168.rarity):lower():find(v7("\32\169\67\52\54\184", "\70\83\204\32"))) or v2169:lower():find(v7("\29\132\8\146\11\149", "\224\110\225\107")) or (v2165 and tostring(v2165):lower():find(v7("\231\115\222\35\53\208", "\164\148\22\189\81\80\164")))) then
-					v2170 = true;
-				end
-				local v2171 = "+" .. tostring(v2166 or (1 - 0)) .. " ";
-				local v2172 = v2171 .. v2169;
-				if (v2167 ~= nil) then
-					local v2731 = 0;
-					local v2732;
-					local v2733;
-					while true do
-						if (v2731 == 0) then
-							v2732 = 0 + 0;
-							pcall(function()
-								local v3201 = v377 and v377.load_client_service and v377.load_client_service(nil, v7("\155\148\114\190\14\69\97\183\142\99\188\53\82\68\183\146\97\186\36\78\84\190\137\114\189\51", "\23\210\224\23\211\71\43"));
-								local v3202 = v3201 and v3201.session and v3201.session.inventory;
-								if (v3202 and v3202.item_uuid_cache) then
-									for v3390, v3391 in pairs(v3202.item_uuid_cache) do
-										if ((v3391.item_id == v2165) or (v3391._item_id == v2165)) then
-											v2732 = v2732 + (2 - 1);
-										end
-									end
-								end
-								if ((v2732 == (0 - 0)) and v3202 and v3202.normal_items and v3202.normal_items[v2165]) then
-									v2732 = v3202.normal_items[v2165];
-								end
-							end);
-							v2731 = 1 + 0;
-						end
-						if (v2731 == (1 + 0)) then
-							v2733 = ((v2732 > (0 - 0)) and string.format(v7("\233\189\80\131\90\63\221\252\243\198\85\179\21\22", "\144\201\230\112\215\53\75\188"), v2732)) or "";
-							v2172 = v2172 .. string.format("\n(Tier %s)%s", tostring(v2167), v2733);
-							break;
-						end
-					end
-				elseif (v2166 and tonumber(v2166) and (tonumber(v2166) > 1)) then
-					v2172 = v2169 .. v7("\21\221", "\197\53\165\121\138\150") .. tostring(v2166);
-				end
-				v374(v2172, v2170);
-			end
-		end
-		local v1320 = v380.new_units or v55.LastDroppedUnits;
-		if (v1320 and (type(v1320) == v7("\249\222\219\44\232", "\64\141\191\185"))) then
-			for v2173, v2174 in ipairs(v1320) do
-				local v2175 = ((type(v2174) == v7("\16\254\162\211\249\206", "\198\99\138\208\186\151\169")) and v2174) or ((type(v2174) == v7("\25\244\129\82\8", "\62\109\149\227")) and (v2174.unit_id or v2174.id));
-				local v2176 = (type(v2174) == v7("\231\137\139\216\5", "\96\147\232\233\180")) and v2174.shiny;
-				local v2177 = (v376 and v2175 and v376[v2175]) or nil;
-				local v2178 = (v2177 and v2177.name) or v2175 or v7("\29\54\19\95", "\89\72\88\122\43\237");
-				local v2179 = false;
-				if ((v2177 and v2177.rarity and tostring(v2177.rarity):lower():find(v7("\63\190\166\36\30\56", "\123\76\219\197\86"))) or v2178:lower():find(v7("\75\221\22\30\235\43", "\95\56\184\117\108\142")) or (v2175 and tostring(v2175):lower():find(v7("\227\199\37\254\245\214", "\140\144\162\70")))) then
-					v2179 = true;
-				end
-				local v2180 = v2178;
-				if v2176 then
-					v2180 = v2180 .. v7("\144\96\106\122\231\222\49\16", "\142\176\72\57\18");
-				end
-				v374(v2180 .. v7("\230\10\37\42\175\37\45", "\68\198\81\112"), v2179);
-			end
-		end
-	end
-	local v381 = v16.PlayerGui:FindFirstChild(v7("\133\10\163\1\64\9\164\58\153", "\125\215\111\208\116\44"));
-	if v381 then
-		local v1321 = v381:FindFirstChild(v7("\43\66\89\246\116\110\2\80\78\225\124\79", "\60\103\39\47\147\24"), true);
-		local v1322 = v1321 and v1321:FindFirstChild(v7("\223\9\229\143\218\255\71\226\13\209\146\215\254\75", "\46\140\106\151\224\182\147"), true);
-		if v1322 then
-			for v2181, v2182 in ipairs(v1322:GetChildren()) do
-				if (v2182:IsA(v7("\204\56\116\109\233\39\120\65\255", "\34\139\77\29")) and v2182.Visible) then
-					local v2734 = 0 - 0;
-					local v2735;
-					local v2736;
-					local v2737;
-					while true do
-						if (0 == v2734) then
-							local v3083 = 0 - 0;
-							local v3084;
-							while true do
-								if (v3083 == (0 + 0)) then
-									v3084 = 0 - 0;
-									while true do
-										if (v3084 == 0) then
-											v2735 = v2182.Name;
-											v2736 = v2182:FindFirstChild(v7("\145\253\18\65\39\164", "\73\208\144\125\52"), true);
-											v3084 = 1;
-										end
-										if (v3084 == (1 - 0)) then
-											v2734 = 1;
-											break;
-										end
-									end
-									break;
-								end
-							end
-						end
-						if (v2734 == (639 - (526 + 112))) then
-							v2737 = v2736 and v2736.Text;
-							if (v2737 and (#v2737 > (0 - 0)) and not v2737:find(v7("\115\181\211\146", "\171\74\140\234\171\167\112\51"))) then
-								if (v2735 == v7("\8\1\64\91\195\168\56\15\94\91", "\205\79\110\44\63\145")) then
-									v374(v2737 .. v7("\231\120\48\196\176", "\124\199\63\95\168\212\107\196"));
-								elseif (v2735 == v7("\33\173\94\8\161\224\136\225\2", "\147\102\200\51\90\196\151\233")) then
-									v374(v2737 .. v7("\123\215\234\192\173", "\91\91\144\143\173\222\128"));
-								elseif (v2735 == v7("\27\144\126\84\188\79\49\164", "\46\67\192\44\49\203")) then
-									v374(v2737 .. ((v2737:find(v7("\60\230", "\101\100\182\78\194\68\196")) and "") or v7("\8\112\0", "\181\40\40\80\149\237\43\24")));
-								elseif (v2735 == v7("\33\160\42\34\178\83\32\16\165\36\32\190", "\114\117\210\69\82\218\42")) then
-									v374(v2737 .. v7("\4\226\74\124\188\76\223\93\96", "\204\36\182\56\19"));
-								elseif (v2735 == v7("\219\78\207\140\104\42\17\236\121\217\148\124\42\22", "\114\137\43\188\227\29\88")) then
-									v374(v2737 .. v7("\164\46\189\29\233\24\186\80\212\24\169\2\232\14", "\112\132\125\200"));
-								elseif ((v2735 ~= v7("\200\145\223\122\73\225\209\185\234\124\79\225", "\149\157\216\147\19\58")) and (v2735 ~= v7("\234\137\22\206\192\129\13\218\200\146\17\199\199", "\168\169\230\120"))) then
-									local v3560 = 0 - 0;
-									local v3561;
-									while true do
-										if (v3560 == (658 - (318 + 340))) then
-											v3561 = v2735:gsub(v7("\180\182\133\90\230\176\205\95\199\172\201\45\193\196", "\119\156\237\228"), v7("\134\128\64\59\145", "\30\163\177\96")):gsub("_", " ");
-											v374(v2737 .. " " .. v3561);
-											break;
-										end
-									end
-								end
-							end
-							break;
-						end
-					end
-				end
-			end
-		end
-		for v1611, v1612 in ipairs(v381:GetDescendants()) do
-			if (v1612:IsA(v7("\46\37\77\157\17\42\214\31\44", "\180\122\64\53\233\93\75")) and v1612.Visible and v1612.Text and (#v1612.Text > (623 - (274 + 349)))) then
-				local v2183 = v1612.Text:lower();
-				if (v2183:find(v7("\197\18\16\47\211\3", "\93\182\119\115")) and not v2183:find(v7("\219\70\138\213", "\158\226\127\179\236\215"))) then
-					v372 = true;
-				end
-			end
-		end
-		local v1323 = v381:FindFirstChild(v7("\195\197\222\215\227\196\218", "\182\145\160\169"), true) or v381:FindFirstChild(v7("\29\50\63\6\180", "\111\89\64\80\118\199"), true) or v381:FindFirstChild(v7("\150\163\11\75\172", "\38\223\215\110"), true) or (v381:FindFirstChild(v7("\120\210\2\204\184\86\222\8", "\203\62\187\108\165")) and (v381.Finished:FindFirstChild(v7("\203\113\95\63\99\250\195", "\176\153\20\40\94\17\158"), true) or v381.Finished:FindFirstChild(v7("\140\33\180\67\214", "\165\200\83\219\51"), true) or v381.Finished:FindFirstChild(v7("\238\254\113\118\194", "\132\167\138\20\27\177\213\220"), true)));
-		if v1323 then
-			for v2184, v2185 in ipairs(v1323:GetChildren()) do
-				if (v2185:IsA(v7("\213\192\234\99\62\248\208\224\88", "\92\146\181\131\44")) and v2185.Visible) then
-					local v2738 = nil;
-					local v2739 = nil;
-					local v2740 = nil;
-					for v2857, v2858 in ipairs(v2185:GetDescendants()) do
-						if (v2858:IsA(v7("\127\251\89\146\146\65\21\216\71", "\189\43\158\33\230\222\32\119")) and v2858.Visible and (#v2858.Text > 0)) then
-							local v3085 = 0;
-							local v3086;
-							while true do
-								if (v3085 == (0 - 0)) then
-									v3086 = v2858.Text:gsub(v7("\27\211\6", "\232\62\160\45\49"), " "):match(v7("\74\150\230\230\233\58\158\188\233\178\62\151", "\193\20\179\149\204")) or v2858.Text;
-									if not v3086:find(v7("\142\88\216\155", "\162\183\97\225")) then
-										local v3431 = v3086:lower();
-										if v3431:find(v7("\58\192\231\229\25\246", "\193\73\165\132\151\124\130")) then
-											v372 = true;
-										end
-										if (v3086:match(v7("\243\249\177\99\139\243\222\136\236\95\253", "\214\173\162\201\59\214")) or v3086:match(v7("\29\60\225\4\196\106\102\125\225", "\64\67\25\202\33\183"))) then
-											v2739 = v3086;
-										elseif (v3431:find(v7("\253\231\116\174", "\35\137\142\17\220\78\178")) or v3086:match(v7("\19\122\96\18\103\11\33\74", "\97\77\46\69")) or v3086:match(v7("\225\228\41\147\231\243\35\129\242\226\75\225", "\197\191\191\96"))) then
-											v2740 = v3086;
-										elseif (not v2738 and not v3086:match(v7("\244\108\233\5\28", "\45\170\73\141\46\56\136")) and not v3431:find(v7("\149\6\200\247", "\103\225\111\173\133\207\231")) and not v3086:match(v7("\114\191\237\109\113", "\53\44\228\149")) and not v3086:match(v7("\243\158\112", "\68\173\187\91\101\171"))) then
-											v2738 = v3086;
-										end
-									end
-									break;
-								end
-							end
-						end
-					end
-					if (v2738 and not v2738:find(v7("\165\86\75\158", "\185\156\111\114\167\41\226\29"))) then
-						local v2966 = 0;
-						local v2967;
+		if (v362 == 2) then
+			local v1695 = 0 + 0;
+			while true do
+				if (v1695 == (0 + 0)) then
+					if (v364 and v364.Enabled) then
+						local v2914 = 0 - 0;
+						local v2915;
+						local v2916;
 						while true do
-							if (v2966 == (1 - 0)) then
-								if v2739 then
-									v2967 = v2967 .. " " .. v2739;
-								end
-								v374(v2967);
-								break;
-							end
-							if (v2966 == 0) then
-								v2967 = v2738;
-								if (v2740 and not v2967:lower():find(v7("\31\12\19\50", "\131\107\101\118\64\212"))) then
-									v2967 = v2967 .. v7("\129\158", "\169\161\182\76\75\39\160") .. v2740 .. ")";
-								end
-								v2966 = 1;
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	return v371, v372;
-end;
-local v106 = function(v382, v383, v384)
-	local v385 = (v382 and v382.Name) or (v383 and v383:FindFirstChild(v7("\215\83\186\142", "\200\185\50\215\235\123\66")) and v383.name.Value) or (v384 and v384.unitId) or "";
-	local v386 = (v383 and v383:FindFirstChild(v7("\231\148\208\230", "\122\146\225\185\130\234\22")) and v383.uuid.Value) or (v384 and v384.uuid);
-	local v387 = (v383 and v383:FindFirstChild(v7("\176\230", "\219\217\130\160\175\143")) and v383.id.Value) or (v384 and v384.unitId);
-	local v388 = (v387 or v385):match(v7("\0\244\121\3\100\129\9\116", "\93\94\220\34")) or v387 or v385;
-	local v389 = (v387 or v385):match(v7("\85\128\143\193\147\179", "\157\111\168\161\234\186\151"));
-	if (not v389 and v382 and v382.Name and v382.Name:find(":")) then
-		v389 = v382.Name:match(v7("\33\8\59\122\139\253", "\229\27\32\21\81\162\217\210"));
-	end
-	if (not v389 and v384 and v384.unitId and v384.unitId:find(":")) then
-		v389 = v384.unitId:match(v7("\118\132\181\113\3\104", "\42\76\172\155\90"));
-	end
-	local v390 = nil;
-	local v391 = nil;
-	local v392 = v81();
-	if v386 then
-		for v1613, v1614 in ipairs(v392) do
-			if (v1614.uuid == v386) then
-				v390 = v1614.name;
-				break;
-			end
-		end
-	end
-	if (not v390 and v388) then
-		for v1615, v1616 in ipairs(v392) do
-			if (v1616.unitId and ((v1616.unitId == v388) or (v1616.unitId:match(v7("\204\197\186\23\90\207\198\200", "\96\146\237\225\73")) == v388))) then
-				v390 = v1616.name;
-				break;
-			end
-		end
-	end
-	if (not v390 and v386) then
-		local v1324 = 0 - 0;
-		local v1325;
-		local v1326;
-		local v1327;
-		while true do
-			if (v1324 == (1 + 0)) then
-				v1327 = nil;
-				while true do
-					if (v1325 == (1 - 0)) then
-						if v1327 then
-							for v3203 = 1453 - (1429 + 23), 6 do
-								local v3204 = v1327:FindFirstChild(tostring(v3203), true);
-								if (v3204 and (v3204:GetAttribute(v7("\66\198\59\84\42\47\109\198\46\126\37\45\124\206\47\126\54\49\116\215\21\84\54\54\121", "\95\29\163\74\33\67")) == v386)) then
-									local v3341 = v3204:FindFirstChild(v7("\114\51\77\50", "\100\28\82\32\87\31\234"), true);
-									if (v3341 and v3341.Text and (#v3341.Text > (0 - 0))) then
-										v390 = v3341.Text;
+							if (v2914 == 0) then
+								local v3284 = 0 + 0;
+								while true do
+									if (v3284 == (0 + 0)) then
+										v2915 = v364:FindFirstChild(v7("\21\22\119\55\47\47", "\74\93\121\27\83"));
+										v2916 = v364:FindFirstChild(v7("\91\178\232\119\110\179\227\122", "\30\29\219\134"));
+										v3284 = 1;
+									end
+									if (v3284 == (1 + 0)) then
+										v2914 = 2 - 1;
 										break;
 									end
 								end
 							end
-						end
-						break;
-					end
-					if ((0 + 0) == v1325) then
-						v1326 = v16:FindFirstChild(v7("\216\114\9\241\76\104\133\253\119", "\194\136\30\104\136\41\26"));
-						v1327 = v1326 and v1326:FindFirstChild(v7("\207\198\2\95\26\143\188\33\213\194\16", "\79\188\182\99\40\116\208\201"));
-						v1325 = 1 + 0;
-					end
-				end
-				break;
-			end
-			if (v1324 == (0 - 0)) then
-				v1325 = 0;
-				v1326 = nil;
-				v1324 = 1;
-			end
-		end
-	end
-	local v393 = v67();
-	if (not v390 and v393) then
-		if (v387 and v393[v387] and v393[v387].name) then
-			v390 = v393[v387].name;
-		elseif (v388 and v393[v388] and v393[v388].name) then
-			v390 = v393[v388].name;
-		else
-			local v2445 = v388:gsub(v7("\14\65\245\124\246\211\250\112\123\22", "\94\81\50\128\17\155\182\136"), ""):gsub(v7("\180\52\229\53\238\187\11\130\142\50\170\115\166", "\231\235\92\132\89\130\212\124"), ""):gsub(v7("\193\183\252\45\216\86\234\185\245\44\159\15\186", "\37\158\212\148\95\177"), ""):gsub(v7("\75\11\173\137\25\113\14\234\205\73", "\109\20\124\196\231"), ""):gsub(v7("\159\174\127\172\63\110\234\249", "\64\192\221\20\197\81"), ""):gsub(v7("\144\229\234\171\169\182\184\168\230", "\199\207\150\130\194"), ""):gsub(v7("\138\79\109\231\79\163\79\127\166\9\241", "\35\213\42\27\136"), "");
-			if (v393[v2445] and v393[v2445].name) then
-				v390 = v393[v2445].name;
-			end
-		end
-	end
-	if (not v390 and v384 and v384.name) then
-		v390 = v384.name;
-	end
-	local v394 = v69();
-	if (v394 and v386) then
-		local v1329 = 0 + 0;
-		local v1330;
-		local v1331;
-		while true do
-			if (v1329 == 0) then
-				v1330, v1331 = pcall(function()
-					return v394.get_equipped_unit_by_uuid(v386);
-				end);
-				if (v1330 and v1331 and v1331.traits and (#v1331.traits > (0 - 0))) then
-					local v2741 = v1331.traits[1507 - (1140 + 366)];
-					local v2742 = ((type(v2741) == v7("\180\134\57\179\221", "\146\192\231\91\223\184")) and (v2741.trait or v2741.name)) or tostring(v2741);
-					if (v2742 and (#v2742 > (0 - 0)) and (v2742:lower() ~= v7("\84\254\248\44", "\110\58\145\150\73\177\212\103"))) then
-						v391 = v2742:sub(1, 1 + 0):upper() .. v2742:sub(1 + 1):lower();
-					end
-				end
-				break;
-			end
-		end
-	end
-	if (not v391 and v389 and (#v389 > (0 - 0))) then
-		v391 = v389:sub(1 + 0, 1 + 0):upper() .. v389:sub(387 - (271 + 114)):lower();
-	end
-	if (not v390 or (v390 == "") or v390:find(v7("\202\7\198\253\95\139", "\137\148\84\170\146\43\171"))) then
-		local v1332 = v388:gsub("_", " ");
-		v390 = v1332:gsub("(%a)([%w_']*)", function(v1617, v1618)
-			return v1617:upper() .. v1618:lower();
-		end);
-	end
-	if (v391 and (#v391 > (0 - 0)) and not v390:find(v7("\68\151", "\23\97\191\31\157") .. v391 .. v7("\195\203", "\82\230\226\103\101\189"))) then
-		return v390 .. v7("\203\98", "\116\235\74\211\209") .. v391 .. ")";
-	end
-	return v390;
-end;
-local v107 = function()
-	local v395 = {};
-	local v396 = v78();
-	for v887, v888 in ipairs(v396) do
-		local v889 = 859 - (240 + 619);
-		local v890;
-		local v891;
-		local v892;
-		local v893;
-		local v894;
-		while true do
-			if (v889 == (0 + 0)) then
-				v890 = v888:FindFirstChild(v7("\23\47\202\36\60\47", "\69\72\92\190"));
-				v891 = v106(v888, v890, nil);
-				v889 = 1;
-			end
-			if (v889 == 1) then
-				local v1833 = 0 + 0;
-				while true do
-					if (v1833 == (1 - 0)) then
-						v889 = 859 - (509 + 348);
-						break;
-					end
-					if (v1833 == (0 - 0)) then
-						v892 = (v890 and v890:FindFirstChild(v7("\61\50\232\216\184", "\215\86\91\132\180\203\200\118")) and v890.kills.Value) or (v890 and v890:FindFirstChild(v7("\56\231\138\223\12\237\137\198\61\250", "\179\83\142\230")) and v890.kill_count.Value) or (v890 and v890:FindFirstChild(v7("\206\32\233\52\53\32\252\214\214\35\238", "\191\186\79\157\85\89\127\151")) and v890.total_kills.Value) or (0 + 0);
-						v893 = (v890 and v890:FindFirstChild(v7("\227\106\163\220\133\65\243", "\37\150\26\196\174\228")) and v890.upgrade.Value) or (1378 - (1014 + 364));
-						v1833 = 2 - 1;
-					end
-				end
-			end
-			if (v889 == 3) then
-				v395[v891].count = v395[v891].count + 1;
-				v395[v891].kills = v395[v891].kills + v892;
-				v889 = 5 - 1;
-			end
-			if (v889 == (5 - 3)) then
-				v894 = (v890 and v890:FindFirstChild(v7("\196\241\170\106\34\153\206\226\179\81\50", "\233\169\144\210\53\87")) and v890.max_upgrade.Value) or 0;
-				if not v395[v891] then
-					v395[v891] = {[v7("\33\73\248\210\54", "\188\66\38\141")]=(0 - 0),[v7("\234\89\1\61\96", "\168\129\48\109\81\19\34\104")]=(0 + 0),[v7("\116\1\30\5\207\34", "\153\23\116\108\80\191\69\219")]=v893,[v7("\68\30\229\237\232\140", "\22\41\127\157\184\152\235")]=v894};
-				end
-				v889 = 2 + 1;
-			end
-			if (v889 == (4 + 0)) then
-				v395[v891].curUpg = math.max(v395[v891].curUpg, v893);
-				v395[v891].maxUpg = math.max(v395[v891].maxUpg, v894);
-				break;
-			end
-		end
-	end
-	local v397 = {};
-	for v895, v896 in pairs(v395) do
-		table.insert(v397, string.format("[ %d ] %s = %s \226\154\148\239\184\143 - [Upg %d/%d]", v896.count, v895, v104(v896.kills), v896.curUpg, v896.maxUpg));
-	end
-	if (#v397 == (0 - 0)) then
-		local v1333 = 1724 - (1565 + 159);
-		local v1334;
-		while true do
-			if (v1333 == (0 + 0)) then
-				v1334 = v81();
-				for v2447, v2448 in ipairs(v1334) do
-					local v2449 = 0 - 0;
-					local v2450;
-					while true do
-						if (v2449 == (0 + 0)) then
-							v2450 = v106(nil, nil, v2448);
-							table.insert(v397, string.format("[ %d ] %s = 0 \226\154\148\239\184\143 - [Upg 0/%d]", v2448.cur or (0 - 0), v2450, v2448.max or (0 - 0)));
-							break;
-						end
-					end
-				end
-				break;
-			end
-		end
-	end
-	if (#v397 == (1863 - (1445 + 418))) then
-		return v7("\57\200\239\207", "\170\119\167\129");
-	end
-	return table.concat(v397, "\n");
-end;
-local v108 = function(v398)
-	local v399 = v44.WebhookUrl;
-	if (not v399 or (#v399 < (32 - 22))) then
-		local v1335 = 0 + 0;
-		while true do
-			if ((1413 - (26 + 1387)) == v1335) then
-				local v2188 = 0 + 0;
-				local v2189;
-				while true do
-					if (v2188 == (0 + 0)) then
-						v2189 = 0 + 0;
-						while true do
-							if (v2189 == 0) then
-								if (v398 and v22 and v22.notifications) then
-									v22.notifications:create_notification({[v7("\212\241\177\118", "\62\186\144\220\19\227")]=v7("\128\214\172\254\148\222\172\202\225\203\233\212\169\243\227\221", "\182\193\156\140"),[v7("\200\66\16\189", "\95\161\44\118\210\134")]=v7("\214\76\22\12\105\211\165\171\232\84\22\31\58\215\165\184\231\76\26\9\58\225\224\172\238\79\28\6\58\227\215\130\167", "\206\134\32\115\109\26\182\133")});
+							if (v2914 == (1 + 0)) then
+								if ((v2915 and v2915.Visible) or (v2916 and v2916.Visible)) then
+									return true;
 								end
-								return;
-							end
-						end
-						break;
-					end
-				end
-			end
-		end
-	end
-	local v400 = request or http_request or (syn and syn.request) or (http and http.request);
-	if not v400 then
-		return;
-	end
-	local v401 = v16.PlayerGui:FindFirstChild(v7("\4\253\220\6\81\73\37\205\230", "\61\86\152\175\115\61"));
-	local v402 = false;
-	local v403 = false;
-	if v398 then
-		v402 = true;
-	elseif v401 then
-		for v2190, v2191 in ipairs(v401:GetDescendants()) do
-			local v2192 = 803 - (355 + 448);
-			local v2193;
-			while true do
-				if (v2192 == (261 - (246 + 15))) then
-					v2193 = v2191.Name:upper();
-					if (v2193:find(v7("\159\40\255\4\254\179\26", "\167\201\97\188\80\177\225\67")) or v2193:find(v7("\121\33\170", "\225\46\104\228\207\156")) or (v2193 == v7("\132\229\139\122\27\118\132\154\134", "\223\202\160\211\46\87\51\210"))) then
-						v402 = true;
-					elseif (v2193:find(v7("\242\204\60\81\44\226", "\109\182\137\122\20")) or v2193:find(v7("\117\136\63\223\207\225\207\78", "\28\50\201\114\154\128\183\138"))) then
-						v403 = true;
-					end
-					v2192 = 1 + 0;
-				end
-				if (v2192 == (1 + 0)) then
-					if (v2191:IsA(v7("\158\131\1\230\134\135\27\247\166", "\146\202\230\121")) and (#v2191.Text > 0)) then
-						local v3087 = 0;
-						local v3088;
-						while true do
-							if (v3087 == 0) then
-								v3088 = v2191.Text:upper();
-								if (v3088:find(v7("\216\198\205\42\232\128\153", "\94\142\143\142\126\167\210\192")) or v3088:find(v7("\51\241\60\198\226\64\230\49\196\230\50", "\167\96\165\125\129")) or v3088:find(v7("\43\243\32\99\110\102\104\167\42\230\58\99\118\3", "\232\103\182\118\38\34\70\43")) or v3088:find(v7("\22\123\10\194\2\84\17", "\17\85\55\79\131\80"))) then
-									v402 = true;
-								elseif (v3088:find(v7("\236\160\159\137\30\252", "\95\168\229\217\204")) or v3088:find(v7("\173\26\171\172\202\20\176\172\184", "\233\234\91\230")) or v3088:find(v7("\119\96\171\95\130\117", "\199\49\33\226\19"))) then
-									v403 = true;
+								for v3355, v3356 in ipairs(v364:GetChildren()) do
+									if (v3356:IsA(v7("\114\178\16\213\246\85\29\13\65", "\110\53\199\121\154\148\63\120")) and v3356.Visible) then
+										return true;
+									end
 								end
 								break;
 							end
 						end
+					end
+					return false;
+				end
+			end
+		end
+		if (v362 == (1 + 0)) then
+			if (v363 and v363:FindFirstChild(v7("\175\238\39\65\128\212\134\230\57\76\163\217", "\189\232\143\74\36\198")) and (v363.GameFinished.Value == true)) then
+				return true;
+			end
+			v364 = v17.PlayerGui:FindFirstChild(v7("\206\175\25\91\219\30\239\159\35", "\106\156\202\106\46\183"));
+			v362 = 2 + 0;
+		end
+	end
+end;
+local v106 = function(v365)
+	local v366 = tostring(math.floor(math.abs(tonumber(v365) or (0 + 0))));
+	local v367;
+	while true do
+		v366, v367 = string.gsub(v366, v7("\63\82\178\96\28\248\74\83\183\122\93\185\5\95\251\118", "\156\97\122\159\95\57"), v7("\139\231\150\189\89", "\95\174\214\186\152\107\98"));
+		if (v367 == 0) then
+			break;
+		end
+	end
+	return v366;
+end;
+local v107 = function()
+	local v368 = {};
+	local v369 = false;
+	local v370 = {};
+	local v371 = function(v869, v870)
+		local v871 = 0 - 0;
+		while true do
+			if (v871 == 2) then
+				if v870 then
+					v369 = true;
+				end
+				break;
+			end
+			if (v871 == (1 + 0)) then
+				v370[v869] = true;
+				table.insert(v368, v869);
+				v871 = 2;
+			end
+			if (v871 == (0 + 0)) then
+				if (not v869 or (#v869 == (0 - 0)) or v370[v869]) then
+					return;
+				end
+				if v869:find(v7("\208\87\40\210", "\166\233\110\17\235\115")) then
+					return;
+				end
+				v871 = 206 - (192 + 13);
+			end
+		end
+	end;
+	local v372 = nil;
+	pcall(function()
+		v372 = require(game:GetService(v7("\74\11\212\205\251\189\125\108\11\192\242\230\177\110\121\9\193", "\28\24\110\164\161\146\222")).src.Data.Items);
+	end);
+	local v373 = v69();
+	local v374 = nil;
+	pcall(function()
+		v374 = require(game:GetService(v7("\105\198\70\41\82\192\87\49\94\199\101\49\84\209\87\34\94", "\69\59\163\54")).src.Loader);
+	end);
+	local v375 = v374 and v374.load_client_service and v374.load_client_service(nil, v7("\151\157\227\121\54\223\160\185\171\207", "\214\208\200\170\42\83\173"));
+	local v376 = v375 and v375.results_ui;
+	local v377 = v25.LastMatchSettings or (v376 and v376.settings);
+	if (v377 and (type(v377) == v7("\205\32\112\172\112", "\21\185\65\18\192"))) then
+		if (v377.xp_reward and tonumber(v377.xp_reward) and (tonumber(v377.xp_reward) > 0)) then
+			v371("+" .. v106(v377.xp_reward) .. v7("\190\110\109", "\193\158\54\61\123"));
+		end
+		if (v377.resource_reward and (type(v377.resource_reward) == v7("\33\16\34\181\48", "\217\85\113\64"))) then
+			for v2146, v2147 in pairs(v377.resource_reward) do
+				local v2148 = tonumber(v2147) or 0;
+				if (v2148 > (757 - (585 + 172))) then
+					local v2761 = 0 - 0;
+					local v2762;
+					while true do
+						if (v2761 == (796 - (76 + 720))) then
+							v2762 = tostring(v2146);
+							if ((v2762 == v7("\120\26\193\205\234\144\213\78\14\222\204\252", "\133\43\111\172\160\143\226")) or (v2762:lower() == v7("\216\182\93\220\197\217\156\64\212\193\217\175\67", "\160\171\195\48\177"))) then
+								v2762 = v7("\224\22\123\32\89\211\239\247\214\2\100\33\79", "\167\179\99\22\77\60\161\207");
+							elseif ((v2762 == v7("\34\126\133\92\69\4\108", "\44\97\31\235\56")) or (v2762:lower() == v7("\242\15\246\160\248\11\235", "\196\145\110\152"))) then
+								v2762 = v7("\123\47\240\246\81\43\237", "\146\56\78\158");
+							elseif ((v2762 == v7("\10\222\66\245", "\58\77\187\47\134")) or (v2762:lower() == v7("\21\48\172\20", "\126\114\85\193\103\133\78\52"))) then
+								v2762 = v7("\227\222\63\107", "\24\164\187\82");
+							elseif ((v2762 == v7("\214\213\80\174", "\145\145\186\60\202")) or (v2762:lower() == v7("\225\223\63\0", "\100\134\176\83"))) then
+								v2762 = v7("\244\206\78\185", "\117\179\161\34\221\211");
+							elseif (v2762 == v7("\106\181\247\213\40\250\162\76\179\227", "\197\45\208\154\166\100\159")) then
+								v2762 = v7("\5\241\129\189\48\48\180\161\185\62\58", "\83\73\148\230\220");
+							elseif (v2762 == v7("\18\207\228\233\227\170\60\214\248\243", "\233\83\191\150\128\143")) then
+								v2762 = v7("\214\150\221\123\1\183\165\192\123\3\228", "\109\151\230\175\18");
+							elseif (v2762 == v7("\136\245\77\77\132\161\227\114\80\129\178\233", "\224\192\154\33\36")) then
+								v2762 = v7("\171\91\20\139\135\85\1\194\176\64\25\144\144", "\226\227\52\120");
+							else
+								v2762 = v2762:gsub(v7("\77\208\237\233\80\130\158\241\62\202\161\158\119\246", "\217\101\139\140\196\42\223\183"), v7("\95\94\239\95\22", "\36\122\111\207\122")):gsub("_", " ");
+							end
+							v2761 = 2 - 1;
+						end
+						if (v2761 == (133 - (45 + 87))) then
+							v371("+" .. v106(v2148) .. " " .. v2762);
+							break;
+						end
+					end
+				end
+			end
+		end
+		if (v377.gem_reward and tonumber(v377.gem_reward) and (tonumber(v377.gem_reward) > (0 - 0))) then
+			v371("+" .. v106(v377.gem_reward) .. v7("\76\47\225\181\171", "\84\108\104\132\216\216"));
+		end
+		if (v377.gold_reward and tonumber(v377.gold_reward) and (tonumber(v377.gold_reward) > (0 - 0))) then
+			v371("+" .. v106(v377.gold_reward) .. v7("\140\60\201\84\228", "\34\172\123\166\56\128\196"));
+		end
+		if (v377.trophy_reward and tonumber(v377.trophy_reward) and (tonumber(v377.trophy_reward) > (0 + 0))) then
+			v371("+" .. v106(v377.trophy_reward) .. v7("\228\157\186\196\90\123\220\17\183", "\116\196\201\200\171\42\19\181"));
+		end
+		if (v377.first_completion_gems and tonumber(v377.first_completion_gems) and (tonumber(v377.first_completion_gems) > 0)) then
+			v371("+" .. v106(v377.first_completion_gems) .. v7("\54\161\254\80\6\64\84\80\143\233\78\1\64\63\122\131\250\79\92", "\124\22\230\155\61\117\96"));
+		end
+		if (v377.first_completion_trophies and tonumber(v377.first_completion_trophies) and (tonumber(v377.first_completion_trophies) > (0 - 0))) then
+			v371("+" .. v106(v377.first_completion_trophies) .. v7("\133\159\244\228\238\229\252\192\184\166\163\216\228\231\214\191\166\200\242\232\244\215\226", "\149\165\203\134\139\158\141"));
+		end
+		local v1360 = v377.new_items or v25.LastDroppedItems;
+		if (v1360 and (type(v1360) == v7("\39\173\66\42\54", "\70\83\204\32"))) then
+			for v2149, v2150 in ipairs(v1360) do
+				local v2151 = ((type(v2150) == v7("\29\149\25\137\0\134", "\224\110\225\107")) and v2150) or ((type(v2150) == v7("\224\119\223\61\53", "\164\148\22\189\81\80\164")) and (v2150.item_id or v2150.id or v2150.name));
+				local v2152 = ((type(v2150) == v7("\166\129\117\191\34", "\23\210\224\23\211\71\43")) and (v2150.amount or v2150.count)) or 1;
+				local v2153 = ((type(v2150) == v7("\189\135\18\187\80", "\144\201\230\112\215\53\75\188")) and (v2150.tier or v2150.item_tier)) or nil;
+				local v2154 = (v372 and v2151 and v372[v2151]) or nil;
+				local v2155 = (v2154 and (v2154.name or v2154.title)) or v2151 or v7("\96\203\18\228\249\178\91\133\48\254\243\168", "\197\53\165\121\138\150");
+				if (not v2153 and v2154 and v2154.tier) then
+					v2153 = v2154.tier;
+				end
+				local v2156 = false;
+				if ((v2154 and v2154.rarity and tostring(v2154.rarity):lower():find(v7("\254\218\218\50\232\203", "\64\141\191\185"))) or v2155:lower():find(v7("\16\239\179\200\242\221", "\198\99\138\208\186\151\169")) or (v2151 and tostring(v2151):lower():find(v7("\30\240\128\76\8\225", "\62\109\149\227")))) then
+					v2156 = true;
+				end
+				local v2157 = "+" .. tostring(v2152 or (1 + 0)) .. " ";
+				local v2158 = v2157 .. v2155;
+				if (v2153 ~= nil) then
+					local v2764 = 0;
+					local v2765;
+					local v2766;
+					while true do
+						if ((1 + 0) == v2764) then
+							v2766 = ((v2765 > 0) and string.format(v7("\104\3\90\127\130\45\41\52\64\11\200\61\104\5", "\89\72\88\122\43\237"), v2765)) or "";
+							v2158 = v2158 .. string.format("\n(Tier %s)%s", tostring(v2153), v2766);
+							break;
+						end
+						if (v2764 == (1283 - (61 + 1222))) then
+							local v3192 = 0;
+							while true do
+								if (v3192 == (1504 - (628 + 875))) then
+									v2764 = 1 + 0;
+									break;
+								end
+								if (v3192 == (0 - 0)) then
+									v2765 = 0 - 0;
+									pcall(function()
+										local v3489 = 0;
+										local v3490;
+										local v3491;
+										while true do
+											if (v3489 == (1923 - (590 + 1332))) then
+												if (v3491 and v3491.item_uuid_cache) then
+													for v3627, v3628 in pairs(v3491.item_uuid_cache) do
+														if ((v3628.item_id == v2151) or (v3628._item_id == v2151)) then
+															v2765 = v2765 + (1 - 0);
+														end
+													end
+												end
+												if ((v2765 == 0) and v3491 and v3491.normal_items and v3491.normal_items[v2151]) then
+													v2765 = v3491.normal_items[v2151];
+												end
+												break;
+											end
+											if ((0 - 0) == v3489) then
+												v3490 = v374 and v374.load_client_service and v374.load_client_service(nil, v7("\218\156\140\217\41\253\158\140\218\20\252\154\144\231\5\225\158\128\215\5\208\132\128\209\14\231", "\96\147\232\233\180"));
+												v3491 = v3490 and v3490.session and v3490.session.inventory;
+												v3489 = 2 - 1;
+											end
+										end
+									end);
+									v3192 = 1627 - (173 + 1453);
+								end
+							end
+						end
+					end
+				elseif (v2152 and tonumber(v2152) and (tonumber(v2152) > 1)) then
+					v2158 = v2155 .. v7("\108\163", "\123\76\219\197\86") .. tostring(v2152);
+				end
+				v371(v2158, v2156);
+			end
+		end
+		local v1361 = v377.new_units or v25.LastDroppedUnits;
+		if (v1361 and (type(v1361) == v7("\76\217\23\0\235", "\95\56\184\117\108\142"))) then
+			for v2159, v2160 in ipairs(v1361) do
+				local v2161 = 848 - (237 + 611);
+				local v2162;
+				local v2163;
+				local v2164;
+				local v2165;
+				local v2166;
+				local v2167;
+				while true do
+					if ((0 + 0) == v2161) then
+						v2162 = ((type(v2160) == v7("\227\214\52\229\254\197", "\140\144\162\70")) and v2160) or ((type(v2160) == v7("\196\41\91\126\235", "\142\176\72\57\18")) and (v2160.unit_id or v2160.id));
+						v2163 = (type(v2160) == v7("\178\48\18\40\163", "\68\198\81\112")) and v2160.shiny;
+						v2161 = 1;
+					end
+					if (v2161 == 3) then
+						v2167 = v2165;
+						if v2163 then
+							v2167 = v2167 .. v7("\240\184\46\92\32\190\233\84", "\73\208\144\125\52");
+						end
+						v2161 = 2 + 2;
+					end
+					if (v2161 == (3 - 2)) then
+						v2164 = (v373 and v2162 and v373[v2162]) or nil;
+						v2165 = (v2164 and v2164.name) or v2162 or v7("\130\1\185\0", "\125\215\111\208\116\44");
+						v2161 = 2;
+					end
+					if (v2161 == 2) then
+						local v2917 = 0 + 0;
+						while true do
+							if (v2917 == (0 - 0)) then
+								v2166 = false;
+								if ((v2164 and v2164.rarity and tostring(v2164.rarity):lower():find(v7("\20\66\76\225\125\72", "\60\103\39\47\147\24"))) or v2165:lower():find(v7("\255\15\244\146\211\231", "\46\140\106\151\224\182\147")) or (v2162 and tostring(v2162):lower():find(v7("\248\40\126\80\238\57", "\34\139\77\29")))) then
+									v2166 = true;
+								end
+								v2917 = 1;
+							end
+							if (v2917 == (2 - 1)) then
+								v2161 = 378 - (129 + 246);
+								break;
+							end
+						end
+					end
+					if (v2161 == (9 - 5)) then
+						v371(v2167 .. v7("\106\215\191\197\206\4\110", "\171\74\140\234\171\167\112\51"), v2166);
+						break;
+					end
+				end
+			end
+		end
+	end
+	local v378 = v17.PlayerGui:FindFirstChild(v7("\29\11\95\74\253\185\60\59\101", "\205\79\110\44\63\145"));
+	if v378 then
+		local v1362 = v378:FindFirstChild(v7("\139\90\41\205\184\57\161\11\166\77\59\219", "\124\199\63\95\168\212\107\196"), true);
+		local v1363 = v1362 and v1362:FindFirstChild(v7("\53\171\65\53\168\251\128\253\1\142\65\59\169\242", "\147\102\200\51\90\196\151\233"), true);
+		if v1363 then
+			for v2168, v2169 in ipairs(v1363:GetChildren()) do
+				if (v2169:IsA(v7("\28\229\230\226\188\234\62\56\228", "\91\91\144\143\173\222\128")) and v2169.Visible) then
+					local v2767 = 1092 - (83 + 1009);
+					local v2768;
+					local v2769;
+					local v2770;
+					while true do
+						if (v2767 == (874 - (506 + 367))) then
+							v2770 = v2769 and v2769.Text;
+							if (v2770 and (#v2770 > 0) and not v2770:find(v7("\93\143\119\251", "\101\100\182\78\194\68\196"))) then
+								if (v2768 == v7("\111\71\60\241\191\78\111\212\90\76", "\181\40\40\80\149\237\43\24")) then
+									v371(v2770 .. v7("\85\149\42\62\190", "\114\117\210\69\82\218\42"));
+								elseif (v2768 == v7("\99\211\85\65\169\83\215\74\119", "\204\36\182\56\19")) then
+									v371(v2770 .. v7("\169\108\217\142\110", "\114\137\43\188\227\29\88"));
+								elseif (v2768 == v7("\220\45\154\21\243\28\186\20", "\112\132\125\200")) then
+									v371(v2770 .. ((v2770:find(v7("\197\136", "\149\157\216\147\19\58")) and "") or v7("\137\190\40", "\168\169\230\120")));
+								elseif (v2768 == v7("\200\159\139\7\244\148\182\18\235\140\150\19", "\119\156\237\228")) then
+									v371(v2770 .. v7("\131\229\18\113\211\217\9\123\208", "\30\163\177\96"));
+								elseif (v2768 == v7("\40\37\70\134\40\57\215\31\18\80\158\60\57\208", "\180\122\64\53\233\93\75")) then
+									v371(v2770 .. v7("\150\36\6\48\219\18\1\125\230\18\18\47\218\4", "\93\182\119\115"));
+								elseif ((v2768 ~= v7("\183\54\255\133\164\234\174\30\202\131\162\234", "\158\226\127\179\236\215")) and (v2768 ~= v7("\210\207\199\208\248\199\220\196\240\212\192\217\255", "\182\145\160\169"))) then
+									local v3659 = 0 - 0;
+									local v3660;
+									while true do
+										if (v3659 == (0 + 0)) then
+											v3660 = v2768:gsub(v7("\113\27\49\91\189\50\112\104\11\55\234\53\4\105", "\111\89\64\80\118\199"), v7("\250\230\78\3\237", "\38\223\215\110")):gsub("_", " ");
+											v371(v2770 .. " " .. v3660);
+											break;
+										end
+									end
+								end
+							end
+							break;
+						end
+						if (v2767 == (358 - (72 + 286))) then
+							v2768 = v2169.Name;
+							v2769 = v2169:FindFirstChild(v7("\2\173\67\68\165\90", "\46\67\192\44\49\203"), true);
+							v2767 = 1 + 0;
+						end
+					end
+				end
+			end
+		end
+		for v1696, v1697 in ipairs(v378:GetDescendants()) do
+			if (v1697:IsA(v7("\106\222\20\209\135\95\217\9\201", "\203\62\187\108\165")) and v1697.Visible and v1697.Text and (#v1697.Text > (134 - (107 + 27)))) then
+				local v2170 = v1697.Text:lower();
+				if (v2170:find(v7("\234\113\75\44\116\234", "\176\153\20\40\94\17\158")) and not v2170:find(v7("\241\106\226\10", "\165\200\83\219\51"))) then
+					v369 = true;
+				end
+			end
+		end
+		local v1364 = v378:FindFirstChild(v7("\245\239\99\122\195\177\175", "\132\167\138\20\27\177\213\220"), true) or v378:FindFirstChild(v7("\214\199\236\92\47", "\92\146\181\131\44"), true) or v378:FindFirstChild(v7("\98\234\68\139\173", "\189\43\158\33\230\222\32\119"), true) or (v378:FindFirstChild(v7("\120\201\67\88\155\86\197\73", "\232\62\160\45\49")) and (v378.Finished:FindFirstChild(v7("\70\214\226\173\179\112\192", "\193\20\179\149\204"), true) or v378.Finished:FindFirstChild(v7("\243\19\142\210\196", "\162\183\97\225"), true) or v378.Finished:FindFirstChild(v7("\0\209\225\250\15", "\193\73\165\132\151\124\130"), true)));
+		if v1364 then
+			for v2171, v2172 in ipairs(v1364:GetChildren()) do
+				if (v2172:IsA(v7("\234\215\160\116\180\188\200\193\189", "\214\173\162\201\59\214")) and v2172.Visible) then
+					local v2771 = 0 + 0;
+					local v2772;
+					local v2773;
+					local v2774;
+					while true do
+						if (v2771 == (3 - 1)) then
+							if (v2772 and not v2772:find(v7("\103\229\27\100", "\93\94\220\34"))) then
+								local v3357 = v2772;
+								if (v2774 and not v3357:lower():find(v7("\27\193\196\152", "\157\111\168\161\234\186\151"))) then
+									v3357 = v3357 .. v7("\59\8", "\229\27\32\21\81\162\217\210") .. v2774 .. ")";
+								end
+								if v2773 then
+									v3357 = v3357 .. " " .. v2773;
+								end
+								v371(v3357);
+							end
+							break;
+						end
+						if (v2771 == (0 - 0)) then
+							local v3194 = 0 + 0;
+							while true do
+								if (v3194 == 0) then
+									v2772 = nil;
+									v2773 = nil;
+									v3194 = 1;
+								end
+								if (v3194 == (1 - 0)) then
+									v2771 = 1;
+									break;
+								end
+							end
+						end
+						if (v2771 == 1) then
+							v2774 = nil;
+							for v3285, v3286 in ipairs(v2172:GetDescendants()) do
+								if (v3286:IsA(v7("\23\124\178\85\251\33\33\124\166", "\64\67\25\202\33\183")) and v3286.Visible and (#v3286.Text > (0 - 0))) then
+									local v3415 = 395 - (304 + 91);
+									local v3416;
+									while true do
+										if (v3415 == (0 + 0)) then
+											v3416 = v3286.Text:gsub(v7("\172\253\58", "\35\137\142\17\220\78\178"), " "):match(v7("\19\11\54\75\101\0\104\72\104\93\111\69", "\97\77\46\69")) or v3286.Text;
+											if not v3416:find(v7("\134\134\89\252", "\197\191\191\96")) then
+												local v3584 = v3416:lower();
+												if v3584:find(v7("\217\44\238\92\93\252", "\45\170\73\141\46\56\136")) then
+													v369 = true;
+												end
+												if (v3416:match(v7("\191\52\213\221\146\194\20\203\74\201\174", "\103\225\111\173\133\207\231")) or v3416:match(v7("\114\193\190\16\95\206\176\81\7", "\53\44\228\149"))) then
+													v2773 = v3416;
+												elseif (v3584:find(v7("\217\210\62\23", "\68\173\187\91\101\171")) or v3416:match(v7("\194\59\87\212\3\199\121\146", "\185\156\111\114\167\41\226\29")) or v3416:match(v7("\53\62\63\22\140\207\40\33\59\29\255\167", "\131\107\101\118\64\212"))) then
+													v2774 = v3416;
+												elseif (not v2772 and not v3416:match(v7("\255\147\40\96\3", "\169\161\182\76\75\39\160")) and not v3584:find(v7("\205\91\178\153", "\200\185\50\215\235\123\66")) and not v3416:match(v7("\204\186\193\218\183", "\122\146\225\185\130\234\22")) and not v3416:match(v7("\135\167\139", "\219\217\130\160\175\143"))) then
+													v2772 = v3416;
+												end
+											end
+											break;
+										end
+									end
+								end
+							end
+							v2771 = 7 - 5;
+						end
+					end
+				end
+			end
+		end
+	end
+	return v368, v369;
+end;
+local v108 = function(v379, v380, v381)
+	local v382 = (v379 and v379.Name) or (v380 and v380:FindFirstChild(v7("\34\205\246\63", "\42\76\172\155\90")) and v380.name.Value) or (v381 and v381.unitId) or "";
+	local v383 = (v380 and v380:FindFirstChild(v7("\231\152\136\45", "\96\146\237\225\73")) and v380.uuid.Value) or (v381 and v381.uuid);
+	local v384 = (v380 and v380:FindFirstChild(v7("\225\122", "\194\136\30\104\136\41\26")) and v380.id.Value) or (v381 and v381.unitId);
+	local v385 = (v384 or v382):match(v7("\226\158\56\118\78\141\226\102", "\79\188\182\99\40\116\208\201")) or v384 or v382;
+	local v386 = (v384 or v382):match(v7("\39\139\100\10\106\123", "\95\29\163\74\33\67"));
+	if (not v386 and v379 and v379.Name and v379.Name:find(":")) then
+		v386 = v379.Name:match(v7("\38\122\14\124\54\206", "\100\28\82\32\87\31\234"));
+	end
+	if (not v386 and v381 and v381.unitId and v381.unitId:find(":")) then
+		v386 = v381.unitId:match(v7("\107\26\174\58\178\146", "\94\81\50\128\17\155\182\136"));
+	end
+	local v387 = nil;
+	local v388 = nil;
+	local v389 = v83();
+	if v383 then
+		for v1698, v1699 in ipairs(v389) do
+			if (v1699.uuid == v383) then
+				v387 = v1699.name;
+				break;
+			end
+		end
+	end
+	if (not v387 and v385) then
+		for v1700, v1701 in ipairs(v389) do
+			if (v1701.unitId and ((v1701.unitId == v385) or (v1701.unitId:match(v7("\181\116\223\7\184\137\87\206", "\231\235\92\132\89\130\212\124")) == v385))) then
+				v387 = v1701.name;
+				break;
+			end
+		end
+	end
+	if (not v387 and v383) then
+		local v1365 = 0 + 0;
+		local v1366;
+		local v1367;
+		while true do
+			if (v1365 == (1 - 0)) then
+				if v1367 then
+					for v2918 = 1, 1566 - (648 + 912) do
+						local v2919 = v1367:FindFirstChild(tostring(v2918), true);
+						if (v2919 and (v2919:GetAttribute(v7("\159\184\101\176\56\48\176\184\112\154\55\50\161\176\113\154\36\46\169\169\75\176\36\41\164", "\64\192\221\20\197\81")) == v383)) then
+							local v3195 = v2919:FindFirstChild(v7("\161\247\239\167", "\199\207\150\130\194"), true);
+							if (v3195 and v3195.Text and (#v3195.Text > (0 - 0))) then
+								v387 = v3195.Text;
+								break;
+							end
+						end
+					end
+				end
+				break;
+			end
+			if (0 == v1365) then
+				local v2175 = 0;
+				while true do
+					if (v2175 == (0 - 0)) then
+						v1366 = v17:FindFirstChild(v7("\206\184\245\38\212\87\217\161\253", "\37\158\212\148\95\177"));
+						v1367 = v1366 and v1366:FindFirstChild(v7("\103\12\165\144\3\75\9\170\142\25\103", "\109\20\124\196\231"));
+						v2175 = 446 - (206 + 239);
+					end
+					if (v2175 == (1421 - (956 + 464))) then
+						v1365 = 1;
+						break;
+					end
+				end
+			end
+		end
+	end
+	local v390 = v69();
+	if (not v387 and v390) then
+		if (v384 and v390[v384] and v390[v384].name) then
+			v387 = v390[v384].name;
+		elseif (v385 and v390[v385] and v390[v385].name) then
+			v387 = v390[v385].name;
+		else
+			local v2417 = 268 - (159 + 109);
+			local v2418;
+			while true do
+				if ((0 + 0) == v2417) then
+					v2418 = v385:gsub(v7("\138\89\110\229\78\176\88\53\162\7", "\35\213\42\27\136"), ""):gsub(v7("\159\143\58\179\212\253\183\130\62\177\150\184\228", "\146\192\231\91\223\184"), ""):gsub(v7("\101\242\254\59\216\167\19\3\91\226\184\99\149", "\110\58\145\150\73\177\212\103"), ""):gsub(v7("\203\35\195\252\95\206\251\186\126\142", "\137\148\84\170\146\43\171"), ""):gsub(v7("\62\204\116\244\121\79\149\59", "\23\97\191\31\157"), ""):gsub(v7("\185\145\15\12\211\43\200\200\67", "\82\230\226\103\101\189"), ""):gsub(v7("\180\47\165\190\24\157\47\183\255\94\207", "\116\235\74\211\209"), "");
+					if (v390[v2418] and v390[v2418].name) then
+						v387 = v390[v2418].name;
 					end
 					break;
 				end
 			end
 		end
-		if (v401:FindFirstChild(v7("\116\82\77\22\212\90\94\71", "\167\50\59\35\127")) and v401.Finished:FindFirstChild(v7("\102\22\74\248\132\77\5\87\224", "\200\40\115\50\140"))) then
-			v402 = true;
-		end
-		if (v403 and not v402) then
-			v402 = false;
-		elseif (not v403 and not v402) then
-			local v2860 = 0 + 0;
-			local v2861;
+	end
+	if (not v387 and v381 and v381.name) then
+		v387 = v381.name;
+	end
+	local v391 = v71();
+	if (v391 and v383) then
+		local v1369, v1370 = pcall(function()
+			return v391.get_equipped_unit_by_uuid(v383);
+		end);
+		if (v1369 and v1370 and v1370.traits and (#v1370.traits > (679 - (239 + 440)))) then
+			local v1880 = 0;
+			local v1881;
+			local v1882;
 			while true do
-				if (v2860 == (0 + 0)) then
-					v2861 = v83();
-					if ((v2861 >= (12 + 38)) or ((v2861 >= 6) and v401:FindFirstChild(v7("\213\36\121\22\224\37\114\27", "\127\147\77\23")) and v401.Finished:FindFirstChild(v7("\165\227\237\96\92\142\240\240\120", "\16\235\134\149\20")))) then
-						v402 = true;
+				if (v1880 == (0 - 0)) then
+					v1881 = v1370.traits[1 + 0];
+					v1882 = ((type(v1881) == v7("\60\61\220\41\45", "\69\72\92\190")) and (v1881.trait or v1881.name)) or tostring(v1881);
+					v1880 = 1;
+				end
+				if (v1880 == (1729 - (1664 + 64))) then
+					if (v1882 and (#v1882 > 0) and (v1882:lower() ~= v7("\56\52\234\209", "\215\86\91\132\180\203\200\118"))) then
+						v388 = v1882:sub(1, 1):upper() .. v1882:sub(2 + 0):lower();
+					end
+					break;
+				end
+			end
+		end
+	end
+	if (not v388 and v386 and (#v386 > (0 + 0))) then
+		v388 = v386:sub(2 - 1, 1 + 0):upper() .. v386:sub(1 + 1):lower();
+	end
+	if (not v387 or (v387 == "") or v387:find(v7("\13\221\138\220\39\174", "\179\83\142\230"))) then
+		local v1371 = 1514 - (1421 + 93);
+		local v1372;
+		while true do
+			if ((0 - 0) == v1371) then
+				v1372 = v385:gsub("_", " ");
+				v387 = v1372:gsub("(%a)([%w_']*)", function(v2419, v2420)
+					return v2419:upper() .. v2420:lower();
+				end);
+				break;
+			end
+		end
+	end
+	if (v388 and (#v388 > (1148 - (1049 + 99))) and not v387:find(v7("\159\103", "\191\186\79\157\85\89\127\151") .. v388 .. v7("\179\51", "\37\150\26\196\174\228"))) then
+		return v387 .. v7("\137\184", "\233\169\144\210\53\87") .. v388 .. ")";
+	end
+	return v387;
+end;
+local v109 = function()
+	local v392 = {};
+	local v393 = v80();
+	for v872, v873 in ipairs(v393) do
+		local v874 = 0 + 0;
+		local v875;
+		local v876;
+		local v877;
+		local v878;
+		local v879;
+		while true do
+			if (v874 == 0) then
+				v875 = v873:FindFirstChild(v7("\29\85\249\221\54\85", "\188\66\38\141"));
+				v876 = v108(v873, v875, nil);
+				v874 = 1 + 0;
+			end
+			if (v874 == 4) then
+				v392[v876].curUpg = math.max(v392[v876].curUpg, v878);
+				v392[v876].maxUpg = math.max(v392[v876].maxUpg, v879);
+				break;
+			end
+			if (2 == v874) then
+				v879 = (v875 and v875:FindFirstChild(v7("\215\241\164\76\150\78\221\226\189\119\134", "\62\186\144\220\19\227")) and v875.max_upgrade.Value) or (0 + 0);
+				if not v392[v876] then
+					v392[v876] = {[v7("\162\243\249\216\181", "\182\193\156\140")]=0,[v7("\202\69\26\190\245", "\95\161\44\118\210\134")]=(1248 - (871 + 377)),[v7("\229\85\1\56\106\209", "\206\134\32\115\109\26\182\133")]=v878,[v7("\59\249\215\38\77\90", "\61\86\152\175\115\61")]=v879};
+				end
+				v874 = 3;
+			end
+			if (v874 == (1 + 0)) then
+				v877 = (v875 and v875:FindFirstChild(v7("\234\89\1\61\96", "\168\129\48\109\81\19\34\104")) and v875.kills.Value) or (v875 and v875:FindFirstChild(v7("\124\29\0\60\224\38\180\236\121\0", "\153\23\116\108\80\191\69\219")) and v875.kill_count.Value) or (v875 and v875:FindFirstChild(v7("\93\16\233\217\244\180\125\64\19\241\203", "\22\41\127\157\184\152\235")) and v875.total_kills.Value) or 0;
+				v878 = (v875 and v875:FindFirstChild(v7("\2\215\230\216\22\195\228", "\170\119\167\129")) and v875.upgrade.Value) or 0;
+				v874 = 1779 - (1238 + 539);
+			end
+			if (v874 == (575 - (206 + 366))) then
+				v392[v876].count = v392[v876].count + (527 - (489 + 37));
+				v392[v876].kills = v392[v876].kills + v877;
+				v874 = 8 - 4;
+			end
+		end
+	end
+	local v394 = {};
+	for v880, v881 in pairs(v392) do
+		table.insert(v394, string.format("[ %d ] %s = %s \226\154\148\239\184\143 - [Upg %d/%d]", v881.count, v880, v106(v881.kills), v881.curUpg, v881.maxUpg));
+	end
+	if (#v394 == 0) then
+		local v1373 = v83();
+		for v1702, v1703 in ipairs(v1373) do
+			local v1704 = v108(nil, nil, v1703);
+			table.insert(v394, string.format("[ %d ] %s = 0 \226\154\148\239\184\143 - [Upg 0/%d]", v1703.cur or (0 + 0), v1704, v1703.max or 0));
+		end
+	end
+	if (#v394 == (0 - 0)) then
+		return v7("\135\14\210\53", "\167\201\97\188\80\177\225\67");
+	end
+	return table.concat(v394, "\n");
+end;
+local v110 = function(v395)
+	local v396 = v24.WebhookUrl;
+	if (not v396 or (#v396 < (5 + 5))) then
+		local v1374 = 0;
+		while true do
+			if (v1374 == (0 + 0)) then
+				if (v395 and v23 and v23.notifications) then
+					v23.notifications:create_notification({[v7("\64\9\137\170", "\225\46\104\228\207\156")]=v7("\139\234\243\102\2\113\242\163\234\247\182\76\63\92\189\180", "\223\202\160\211\46\87\51\210"),[v7("\223\231\28\123", "\109\182\137\122\20")]=v7("\98\165\23\251\243\210\170\121\92\189\23\232\160\214\170\106\83\165\27\254\160\224\239\126\90\166\29\241\160\226\216\80\19", "\28\50\201\114\154\128\183\138")});
+				end
+				return;
+			end
+		end
+	end
+	local v397 = request or http_request or (syn and syn.request) or (http and http.request);
+	if not v397 then
+		return;
+	end
+	local v398 = v17.PlayerGui:FindFirstChild(v7("\152\131\10\231\166\146\10\199\131", "\146\202\230\121"));
+	local v399 = false;
+	local v400 = false;
+	if v395 then
+		v399 = true;
+	elseif v398 then
+		for v2176, v2177 in ipairs(v398:GetDescendants()) do
+			local v2178 = v2177.Name:upper();
+			if (v2178:find(v7("\216\198\205\42\232\128\153", "\94\142\143\142\126\167\210\192")) or v2178:find(v7("\55\236\51", "\167\96\165\125\129")) or (v2178 == v7("\41\243\46\114\110\3\125\173\43", "\232\103\182\118\38\34\70\43"))) then
+				v399 = true;
+			elseif (v2178:find(v7("\17\114\9\198\17\69", "\17\85\55\79\131\80")) or v2178:find(v7("\239\164\148\137\16\254\160\139", "\95\168\229\217\204"))) then
+				v400 = true;
+			end
+			if (v2177:IsA(v7("\190\62\158\157\166\58\132\140\134", "\233\234\91\230")) and (#v2177.Text > 0)) then
+				local v2776 = 0 - 0;
+				local v2777;
+				while true do
+					if (v2776 == 0) then
+						v2777 = v2177.Text:upper();
+						if (v2777:find(v7("\103\104\161\71\136\99\120", "\199\49\33\226\19")) or v2777:find(v7("\97\111\98\56\226\18\120\111\58\230\96", "\167\50\59\35\127")) or v2777:find(v7("\100\54\100\201\132\8\48\125\193\152\100\54\102\201", "\200\40\115\50\140")) or v2777:find(v7("\208\1\82\62\193\8\83", "\127\147\77\23"))) then
+							v399 = true;
+						elseif (v2777:find(v7("\175\195\211\81\81\191", "\16\235\134\149\20")) or v2777:find(v7("\253\106\99\131\76\168\58\255\121", "\108\186\43\46\198\108\231")) or v2777:find(v7("\20\158\220\45\89\22", "\28\82\223\149\97"))) then
+							v400 = true;
+						end
+						break;
+					end
+				end
+			end
+		end
+		if (v398:FindFirstChild(v7("\139\60\67\87\190\61\72\90", "\62\205\85\45")) and v398.Finished:FindFirstChild(v7("\91\9\185\189\46\140\31\112\0", "\105\21\108\193\201\98\233"))) then
+			v399 = true;
+		end
+		if (v400 and not v399) then
+			v399 = false;
+		elseif (not v400 and not v399) then
+			local v2920 = 0 - 0;
+			local v2921;
+			while true do
+				if (v2920 == 0) then
+					v2921 = v85();
+					if ((v2921 >= (10 + 40)) or ((v2921 >= (1 + 5)) and v398:FindFirstChild(v7("\102\140\21\247\208\54\223\68", "\186\32\229\123\158\163\94")) and v398.Finished:FindFirstChild(v7("\42\38\105\222\53\160\33\1\47", "\87\100\67\17\170\121\197")))) then
+						v399 = true;
 					end
 					break;
 				end
 			end
 		end
 	else
-		local v1838 = 1119 - (391 + 728);
-		local v1839;
+		local v1887 = 0 - 0;
+		local v1888;
 		while true do
-			if (v1838 == 0) then
-				v1839 = v83();
-				if (v1839 >= 50) then
-					v402 = true;
+			if (0 == v1887) then
+				v1888 = v85();
+				if (v1888 >= (4 + 46)) then
+					v399 = true;
 				end
 				break;
 			end
 		end
 	end
-	local v404 = (v402 and (3068088 - (594 + 501))) or (11302206 + 3856126);
-	local v405 = (v402 and "\240\159\143\134 Victory") or "\240\159\146\128 Defeat";
-	local v406, v407, v408, v409, v410, v411 = 1137 - (730 + 407), 0 + 0, 0 - 0, 0 - 0, 0, 0 - 0;
-	local v412 = v16:FindFirstChild(v7("\229\88\90\167\24\148", "\108\186\43\46\198\108\231"));
-	local v413 = nil;
+	local v401 = (v399 and (3068280 - (254 + 1033))) or (12965802 + 2192530);
+	local v402 = (v399 and "\240\159\143\134 Victory") or "\240\159\146\128 Defeat";
+	local v403, v404, v405, v406, v407, v408 = 1762 - (1099 + 663), 807 - (504 + 303), 0 + 0, 0 - 0, 0, 0 - 0;
+	local v409 = v17:FindFirstChild(v7("\209\152\174\129\67\166", "\213\142\235\218\224\55"));
+	local v410 = nil;
 	pcall(function()
-		v413 = require(game:GetService(v7("\0\186\229\13\117\49\190\225\4\120\1\171\250\19\125\53\186", "\28\82\223\149\97")).src.Loader);
+		v410 = require(game:GetService(v7("\58\167\233\201\1\161\248\209\13\166\202\209\7\176\248\194\13", "\165\104\194\153")).src.Loader);
 	end);
-	local v414 = v413 and v413.load_client_service and v413.load_client_service(nil, v7("\132\33\72\83\132\59\91\91\163\33\66\76\180\6\72\76\187\60\78\91\142\57\68\91\163\33", "\62\205\85\45"));
-	local v415 = v414 and v414.session and v414.session.profile_data;
-	v408 = (v412 and v412:FindFirstChild(v7("\114\9\172\150\3\132\6\96\2\181", "\105\21\108\193\201\98\233")) and v412.gem_amount.Value) or (v415 and v415.gem_amount) or (v412 and v412:FindFirstChild(v7("\71\128\22", "\186\32\229\123\158\163\94")) and v412.gem.Value) or (v412 and v412:FindFirstChild(v7("\3\38\124\217", "\87\100\67\17\170\121\197")) and v412.gems.Value) or (0 + 0);
-	v409 = (v412 and v412:FindFirstChild(v7("\233\132\182\132\104\180\227\132\175\142\67", "\213\142\235\218\224\55")) and v412.gold_amount.Value) or (v415 and v415.gold_amount) or (v412 and v412:FindFirstChild(v7("\15\173\245\193", "\165\104\194\153")) and v412.gold.Value) or 0;
-	v410 = (v412 and v412:FindFirstChild(v7("\184\34\220\184\246\72\159\132\53\234\190\244\80\136\149\0\220\170\235\81\158", "\237\231\80\185\203\153\61")) and v412._resourceSummerPearls.Value) or (v415 and v415.resources and (v415.resources.SummerPearls or v415.resources.summer_pearls)) or (v412 and v412:FindFirstChild(v7("\182\37\141\127\64\183\15\144\119\68\183\60\147", "\37\197\80\224\18")) and v412.summer_pearls.Value) or (1901 - (438 + 1463));
-	v411 = (v415 and v415.trait_reroll_tokens) or (v412 and v412:FindFirstChild(v7("\11\71\94\73\184\21\125\88\73\191\28\76\95", "\212\121\34\44\38")) and v412.reroll_tokens.Value) or (0 + 0);
-	v407 = (v412 and v412:FindFirstChild(v7("\170\182\43\28\123\191\205\70\170", "\62\218\218\74\101\30\205\146")) and v412.player_xp.Value) or (v415 and v415.player_xp) or (v412 and v412:FindFirstChild(v7("\90\185", "\79\34\201\25\145\189\94\36")) and v412.xp.Value) or (v412 and v412:FindFirstChild(v7("\101\52\250", "\52\32\76\138\106\32")) and v412.Exp.Value) or 0;
-	local v416 = v16:FindFirstChild(v7("\136\246\49\223\127\170\221\37\207", "\26\216\154\80\166"));
-	local v417 = v416 and v416:FindFirstChild(v7("\223\217\236\84\115\19\217\199\228\87\110", "\76\172\169\141\35\29")) and v416.spawn_units:FindFirstChild(v7("\240\208\238\6\207", "\99\188\185\152")) and v416.spawn_units.Lives:FindFirstChild(v7("\255\21\191\0", "\195\178\116\214\110")) and v416.spawn_units.Lives.Main:FindFirstChild(v7("\33\242\149\118", "\134\101\151\230\21\161")) and v416.spawn_units.Lives.Main.Desc:FindFirstChild(v7("\133\143\44\81\47", "\128\201\234\90\52\67\82"));
-	if (v417 and v417.Text) then
-		v406 = tonumber(v417.Text:match(v7("\136\72\40\113\198\225\94\116\60\143\160\6\119", "\170\196\45\94\20"))) or v406;
+	local v411 = v410 and v410.load_client_service and v410.load_client_service(nil, v7("\174\36\220\166\208\83\155\130\62\205\164\235\68\190\130\34\207\162\250\88\174\139\57\220\165\237", "\237\231\80\185\203\153\61"));
+	local v412 = v411 and v411.session and v411.session.profile_data;
+	v405 = (v409 and v409:FindFirstChild(v7("\162\53\141\77\68\168\63\149\124\81", "\37\197\80\224\18")) and v409.gem_amount.Value) or (v412 and v412.gem_amount) or (v409 and v409:FindFirstChild(v7("\30\71\65", "\212\121\34\44\38")) and v409.gem.Value) or (v409 and v409:FindFirstChild(v7("\189\191\39\22", "\62\218\218\74\101\30\205\146")) and v409.gems.Value) or (0 - 0);
+	v406 = (v409 and v409:FindFirstChild(v7("\69\166\117\245\226\63\73\32\87\167\109", "\79\34\201\25\145\189\94\36")) and v409.gold_amount.Value) or (v412 and v412.gold_amount) or (v409 and v409:FindFirstChild(v7("\71\35\230\14", "\52\32\76\138\106\32")) and v409.gold.Value) or (239 - (155 + 84));
+	v407 = (v409 and v409:FindFirstChild(v7("\135\232\53\213\117\173\232\51\195\73\173\247\61\195\104\136\255\49\212\118\171", "\26\216\154\80\166")) and v409._resourceSummerPearls.Value) or (v412 and v412.resources and (v412.resources.SummerPearls or v412.resources.summer_pearls)) or (v409 and v409:FindFirstChild(v7("\223\220\224\78\120\62\243\217\232\66\111\32\223", "\76\172\169\141\35\29")) and v409.summer_pearls.Value) or (0 - 0);
+	v408 = (v412 and v412.trait_reroll_tokens) or (v409 and v409:FindFirstChild(v7("\206\220\234\12\208\213\199\23\211\210\253\13\207", "\99\188\185\152")) and v409.reroll_tokens.Value) or 0;
+	v404 = (v409 and v409:FindFirstChild(v7("\194\24\183\23\166\192\43\174\30", "\195\178\116\214\110")) and v409.player_xp.Value) or (v412 and v412.player_xp) or (v409 and v409:FindFirstChild(v7("\29\231", "\134\101\151\230\21\161")) and v409.xp.Value) or (v409 and v409:FindFirstChild(v7("\140\146\42", "\128\201\234\90\52\67\82")) and v409.Exp.Value) or 0;
+	local v413 = v17:FindFirstChild(v7("\148\65\63\109\207\182\106\43\125", "\170\196\45\94\20"));
+	local v414 = v413 and v413:FindFirstChild(v7("\109\84\4\35\207\31\37\112\77\17\39", "\80\30\36\101\84\161\64")) and v413.spawn_units:FindFirstChild(v7("\138\88\15\71\203", "\91\198\49\121\34\184")) and v413.spawn_units.Lives:FindFirstChild(v7("\25\199\126\183", "\233\84\166\23\217")) and v413.spawn_units.Lives.Main:FindFirstChild(v7("\92\125\235\229", "\65\24\24\152\134\86")) and v413.spawn_units.Lives.Main.Desc:FindFirstChild(v7("\144\50\254\76\176", "\41\220\87\136"));
+	if (v414 and v414.Text) then
+		v403 = tonumber(v414.Text:match(v7("\9\51\245\245\194\238\54\124\171\181\202\224\108", "\203\69\86\131\144\174"))) or v403;
 	end
-	if ((v406 == (0 + 0)) and v416 and v416:FindFirstChild(v7("\78\69\23\32\216\21\25", "\80\30\36\101\84\161\64"))) then
-		for v1619, v1620 in ipairs(v416.PartyUI:GetDescendants()) do
-			if (v1620:IsA(v7("\146\84\1\86\244\58\164\84\21", "\91\198\49\121\34\184")) and (v1620.Name == v7("\24\195\97\188\133", "\233\84\166\23\217")) and tonumber(v1620.Text)) then
-				v406 = tonumber(v1620.Text);
+	if ((v403 == (0 - 0)) and v413 and v413:FindFirstChild(v7("\137\31\65\77\209\101\206", "\113\217\126\51\57\168\48\135"))) then
+		for v1705, v1706 in ipairs(v413.PartyUI:GetDescendants()) do
+			if (v1706:IsA(v7("\43\16\46\92\100\126\116\203\19", "\174\127\117\86\40\40\31\22")) and (v1706.Name == v7("\240\62\90\222\208", "\187\188\91\44")) and tonumber(v1706.Text)) then
+				v403 = tonumber(v1706.Text);
 				break;
 			end
 		end
 	end
-	if ((v406 == (1617 - (900 + 717))) and v412 and v412:FindFirstChild(v7("\84\125\238\227\58", "\65\24\24\152\134\86"))) then
-		v406 = v412.Level.Value;
+	if ((v403 == 0) and v409 and v409:FindFirstChild(v7("\51\242\104\32\238", "\109\127\151\30\69\130"))) then
+		v403 = v409.Level.Value;
 	end
-	if ((v406 == 0) and v413 and v413.load_core_service) then
+	if ((v403 == (0 + 0)) and v410 and v410.load_core_service) then
 		pcall(function()
-			local v1621 = 1136 - (820 + 316);
-			local v1622;
+			local v1707 = 0;
+			local v1708;
 			while true do
-				if (v1621 == (0 - 0)) then
-					v1622 = v413.load_core_service(nil, v7("\144\50\254\76\176\4\237\91\170\62\235\76\159\56\250\76", "\41\220\87\136"));
-					if (v1622 and v1622.calculate_level and (v407 > 0)) then
-						v406 = v1622.calculate_level(nil, v407) or v406;
+				if (v1707 == (1425 - (557 + 868))) then
+					v1708 = v410.load_core_service(nil, v7("\254\128\97\29\201\227\183\4\196\140\116\29\230\223\160\19", "\118\178\229\23\120\165\176\210"));
+					if (v1708 and v1708.calculate_level and (v404 > (607 - (33 + 574)))) then
+						v403 = v1708.calculate_level(nil, v404) or v403;
 					end
 					break;
 				end
 			end
 		end);
 	end
-	if (v406 == 0) then
-		v406 = 2176 - (719 + 1079);
+	if (v403 == (1565 - (839 + 726))) then
+		v403 = 699 - 321;
 	end
-	local v418 = math.max(0 - 0, math.floor(tick() - (v55.MatchStartTime or tick())));
-	local v419 = string.format(v7("\96\102\177\244\148\238\117\100\231\170\139\251\119\50", "\203\69\86\131\144\174"), math.floor(v418 / (5262 - 1662)), math.floor((v418 % (892 + 2708)) / 60), v418 % (4 + 56));
-	local v420 = v83();
-	local v421 = v7("\150\10\91\92\218\71\232\3\181\26\74\25\248\92\230\31\188\94\96\76\197\93\226\3\249\54\70\87\220\16\170\81\145\31\65\93", "\113\217\126\51\57\168\48\135");
-	local v422 = v9:FindFirstChild(v7("\32\56\23\120\119\92\89\224\57\60\17", "\174\127\117\86\40\40\31\22"));
-	if (v422 and v422:FindFirstChild(v7("\241\58\92\245\221\54\73", "\187\188\91\44"))) then
-		local v1337 = 0;
-		local v1338;
+	local v415 = math.max(0, math.floor(tick() - (v25.MatchStartTime or tick())));
+	local v416 = string.format(v7("\64\140\30\13\86\234\113\239\1\134\9\89\94\171", "\221\101\188\44\105\108\207\65"), math.floor(v415 / (12041 - 8441)), math.floor((v415 % 3600) / (391 - (124 + 207))), v415 % (106 - 46));
+	local v417 = v85();
+	local v418 = v7("\121\36\31\167\192\65\63\5\174\214\79\112\39\174\211\88\53\87\145\199\91\61\18\176\146\126\37\25\182\146\27\112\63\163\192\82", "\178\54\80\119\194");
+	local v419 = v9:FindFirstChild(v7("\11\34\96\242\208\218\150\236\18\38\102", "\162\84\111\33\162\143\153\217"));
+	if (v419 and v419:FindFirstChild(v7("\10\218\13\164\38\214\24", "\234\71\187\125"))) then
+		local v1376 = 0 - 0;
+		local v1377;
 		while true do
-			if (0 == v1337) then
-				v1338 = (v422:FindFirstChild(v7("\59\254\120\35\235\14\10\251\106\60", "\109\127\151\30\69\130")) and (v7("\146\200\55", "\118\178\229\23\120\165\176\210") .. v422.Difficulty.Value)) or "";
-				v421 = v422.MapName.Value .. v1338;
+			if (v1376 == (0 - 0)) then
+				v1377 = (v419:FindFirstChild(v7("\53\53\87\93\247\18\41\93\79\231", "\158\113\92\49\59")) and (v7("\172\61\1", "\103\140\16\33\16\158\102\186") .. v419.Difficulty.Value)) or "";
+				v418 = v419.MapName.Value .. v1377;
 				break;
 			end
 		end
-	elseif v55.CurrentMatchLevel then
-		v421 = tostring(v55.CurrentMatchLevel);
+	elseif v25.CurrentMatchLevel then
+		v418 = tostring(v25.CurrentMatchLevel);
 	end
-	local v423 = "";
+	local v420 = "";
 	pcall(function()
-		local v897 = 0 - 0;
-		local v898 = 500;
-		local v899 = v413 and v413.load_client_service and v413.load_client_service(nil, v7("\48\210\69\29\37\161\55\184\11\200\67\27\21\156\36\175\19\213\79\12\47\163\40\184\11\200", "\221\101\188\44\105\108\207\65"));
-		local v900 = v899 and v899.session;
-		if (v900 and v900.collection) then
-			for v1840 in pairs(v900.collection) do
-				v897 = v897 + 1;
+		local v882 = 0;
+		local v883 = 1740 - 1240;
+		local v884 = v410 and v410.load_client_service and v410.load_client_service(nil, v7("\242\131\180\97\42\50\209\136\179\97\12\46\222\190\184\103\21\53\196\136\158\121\10\57\201\153", "\92\167\237\221\21\99"));
+		local v885 = v884 and v884.session;
+		if (v885 and v885.collection) then
+			for v1889 in pairs(v885.collection) do
+				v882 = v882 + 1;
 			end
 		end
-		if (v900 and v900.collection_profile_data and v900.collection_profile_data.capacity) then
-			v898 = v900.collection_profile_data.capacity;
+		if (v885 and v885.collection_profile_data and v885.collection_profile_data.capacity) then
+			v883 = v885.collection_profile_data.capacity;
 		end
-		if (v897 > 0) then
-			v423 = string.format(v7("\22\11\82\166\157\19\52\42", "\178\54\80\119\194"), v897, v898);
+		if (v882 > (0 - 0)) then
+			v420 = string.format(v7("\191\27\104\34\176\101\41\27", "\70\159\64\77"), v882, v883);
 		end
 	end);
-	local v424, v425 = v105();
-	if v398 then
-		v408 = 1598 - (148 + 55);
-		v409 = 69462 - (914 + 539);
-		v411 = 19 + 12;
-		v410 = 171085 - (253 + 307);
-		v406 = 1172 - (926 + 140);
-		v423 = v7("\116\52\21\149\183\182\236\146\100\50", "\162\84\111\33\162\143\153\217");
-		v424 = {"+1 Explosion Mage's Portal\n(Tier 0) [ Total: 1 ]",v7("\108\138\78\221\119\131\93\185\50\214\16\143\53\155\45\143\38\201\17\153", "\234\71\187\125")};
-		v421 = v7("\63\61\71\66\190\51\61\72\27\179\81\15\68\86\243\20\46\17\96\214\16\46\85\102", "\158\113\92\49\59");
-		v420 = 1627 - (1035 + 542);
-		v419 = v7("\188\32\27\34\175\92\136\94", "\103\140\16\33\16\158\102\186");
-		v402 = true;
+	local v421, v422 = v107();
+	if v395 then
+		local v1378 = 0;
+		local v1379;
+		while true do
+			if (v1378 == (0 + 0)) then
+				v1379 = 0;
+				while true do
+					if (v1379 == (1 + 0)) then
+						v407 = 129823 + 40702;
+						v403 = 106;
+						v420 = v7("\151\116\6\168\66\152\26\2\175\39", "\122\183\47\50\159");
+						v1379 = 2 + 0;
+					end
+					if (v1379 == 3) then
+						v416 = v7("\9\253\82\38\8\247\90\45", "\20\57\205\104");
+						v399 = true;
+						break;
+					end
+					if (v1379 == 0) then
+						local v2922 = 0 - 0;
+						local v2923;
+						while true do
+							if (v2922 == (0 + 0)) then
+								v2923 = 0 + 0;
+								while true do
+									if (v2923 == (0 - 0)) then
+										v405 = 3466 - 2071;
+										v406 = 2673 + 65336;
+										v2923 = 1 - 0;
+									end
+									if (v2923 == (1 + 0)) then
+										v408 = 9 + 22;
+										v1379 = 1;
+										break;
+									end
+								end
+								break;
+							end
+						end
+					end
+					if (v1379 == (4 - 2)) then
+						local v2924 = 0 - 0;
+						while true do
+							if (v2924 == (1011 - (15 + 995))) then
+								v417 = 50;
+								v1379 = 6 - 3;
+								break;
+							end
+							if (v2924 == (0 + 0)) then
+								v421 = {"+1 Explosion Mage's Portal\n(Tier 0) [ Total: 1 ]",v7("\137\96\244\24\208\154\113\148\90\141\207\52\181\15\176\199\48\181\67\147", "\224\162\81\199\47")};
+								v418 = v7("\198\68\37\36\195\202\68\42\125\206\168\118\38\48\142\237\87\115\6\171\233\87\55\0", "\227\136\37\83\93");
+								v2924 = 1 + 0;
+							end
+						end
+					end
+				end
+				break;
+			end
+		end
 	end
-	local v426 = ((#v424 > (78 - (44 + 34))) and table.concat(v424, "\n")) or v7("\233\130\179\112", "\92\167\237\221\21\99");
-	local v427 = (v402 and (11016813 - 5253094)) or 15548997;
-	local v428 = v425 and v44.WebhookPingSecret;
-	local v429 = {[v7("\252\47\35\50\250\46\57", "\70\159\64\77")]=((v428 and v7("\247\74\68\250\8\206\64\92\250", "\122\183\47\50\159")) or nil),[v7("\199\60\165\74\132\209", "\224\162\81\199\47")]={{[v7("\252\76\39\49\134", "\227\136\37\83\93")]=v7("\120\163\1\121\92\237\41\112\79\168\6\96\76\191\13\103", "\20\57\205\104"),[v7("\43\164\20\182\8", "\83\72\203\120\217\122\58")]=v427,[v7("\184\236\168\160\189\180\175\168\224\180\173", "\223\220\137\219\195\207\221")]=string.format("User : ||%s||\nLevel : %s", v16.Name, tostring(v406)),[v7("\7\64\74\239\46\29\73\86\238", "\76\115\40\63\130")]={[v7("\146\8\33", "\177\231\122\77\205\214")]=v7("\76\7\85\80\186\6\11\92\66\68\167\18\64\26\82\67\166\78\64\18\81\80\231\95\75\30\14\65\189\72\69\16\73\77\172\82\80\0\14\17\252\12\29\74\18\20\253\4\17\65\25\24\240\13\21\67\16\17\230\13\17\69\25\19\249\10\22\64\17\22\253\11\20\69\23\22\250\8\11\26\76\65\174\89\10\3\79\71\246\89\92\78\23\65\175\15\16\18\71\70\239\85\87\78\23\65\175\13\66\74\22\70\239\84\73\78\24\22\248\12\19\23\67\68\249\95\23\67\71\20\172\9\19\21\21\19\241\14\70\23\69\66\251\10\20\68\16\16\253\14\20\65\24\65\241\10\69\69\67\25\240\8\23\18\18\69\253\15\64\70\23\65\252\95\21\66\22\21\172\8\2", "\60\36\115\33\32\201")},[v7("\177\127\82\74\72\77", "\193\215\22\55\38\44\62\93")]={{[v7("\33\19\3\202", "\155\79\114\110\175\181")]=v7("\104\88\216\253\180\158\149\107\64\216\240\162", "\181\56\52\185\132\209\236"),[v7("\36\77\222\189\64", "\154\82\44\178\200\37\201")]=string.format("\240\159\146\142 %s\n\240\159\170\153 %s\n\240\159\142\159 %s%s\n\240\159\140\184 %s", v104(v408), v104(v409), v104(v411), v423, v104(v410)),[v7("\124\229\14\4\176\77", "\21\21\139\98\109\222\40")]=false},{[v7("\10\237\161\137", "\90\100\140\204\236")]=v7("\158\17\41\205\165\28\191", "\120\204\116\94\172\215"),[v7("\21\188\180\29\238", "\31\99\221\216\104\139\194\16")]=v426,[v7("\60\174\230\5\7\230", "\131\85\192\138\108\105")]=false},{[v7("\56\165\114\6", "\99\86\196\31")]=v7("\125\53\91\254\87\231\61\85\39\90\241\75", "\111\48\84\47\157\63\199"),[v7("\12\7\140\178\43", "\78\122\102\224\199")]=string.format("%s - Wave %d\n%s", v419, v420, v421),[v7("\245\22\120\10\58\0", "\159\156\120\20\99\84\101\206")]=false},{[v7("\114\16\129\122", "\71\28\113\236\31\168\33\23")]=((v402 and "\226\128\162 VICTORY") or "\226\128\162 DEFEAT"),[v7("\91\255\47\237\220", "\199\45\158\67\152\185\185\91")]="\226\128\139",[v7("\83\119\177\167\222\19", "\176\58\25\221\206\176\118\183")]=false}},[v7("\52\30\214\18\235\170", "\216\82\113\185\102\142")]={[v7("\86\94\56\204", "\29\34\59\64\184")]=(v7("\26\10\92\218\38\7\93\81\76\195\38\94\29\12\76\132\50\90\93\28\93\203\59\90\26\11\74\138\125", "\61\114\126\40\170\85") .. os.date(v7("\137\0\45\124\238\41\137\27", "\19\172\72\23\89\163")) .. ")")}}}};
+	local v423 = ((#v421 > 0) and table.concat(v421, "\n")) or v7("\6\164\22\188", "\83\72\203\120\217\122\58");
+	local v424 = (v399 and 5763719) or (15549034 - (34 + 3));
+	local v425 = v422 and v24.WebhookPingSecret;
+	local v426 = {[v7("\191\230\181\183\170\179\171", "\223\220\137\219\195\207\221")]=((v425 and v7("\51\77\73\231\62\10\71\81\231", "\76\115\40\63\130")) or nil),[v7("\130\23\47\168\178\194", "\177\231\122\77\205\214")]={{[v7("\80\26\85\76\172", "\60\36\115\33\32\201")]=v7("\150\120\94\75\73\30\28\165\161\115\89\82\89\76\56\178", "\193\215\22\55\38\44\62\93"),[v7("\44\29\2\192\199", "\155\79\114\110\175\181")]=v424,[v7("\92\81\202\231\163\133\197\76\93\214\234", "\181\56\52\185\132\209\236")]=string.format("User : ||%s||\nLevel : %s", v17.Name, tostring(v403)),[v7("\38\68\199\165\71\167\251\59\64", "\154\82\44\178\200\37\201")]={[v7("\96\249\14", "\21\21\139\98\109\222\40")]=v7("\12\248\184\156\41\94\163\227\143\62\10\162\168\133\41\7\227\190\136\59\20\252\226\143\53\9\163\173\152\46\5\239\164\129\63\10\248\191\195\107\81\188\245\213\105\80\184\244\217\104\92\180\245\221\107\84\189\253\195\107\81\186\244\223\106\82\190\255\220\108\80\187\252\218\108\82\191\248\195\51\9\237\171\137\116\20\226\171\211\63\28\177\250\141\60\87\184\173\138\60\66\229\191\209\108\5\234\253\138\99\83\234\234\132\55\89\181\250\221\106\83\232\174\136\106\7\191\252\138\110\1\185\251\138\110\87\180\254\142\62\0\238\254\218\106\83\189\252\216\104\84\190\245\141\98\82\237\250\142\99\93\184\255\141\105\1\184\255\136\111\82\237\249\143\107\85\187\249\137\110\66", "\90\100\140\204\236")},[v7("\170\29\59\192\179\11", "\120\204\116\94\172\215")]={{[v7("\13\188\181\13", "\31\99\221\216\104\139\194\16")]=v7("\5\172\235\21\12\241\117\147\254\13\29\240", "\131\85\192\138\108\105"),[v7("\32\165\115\22\51", "\99\86\196\31")]=string.format("\240\159\146\142 %s\n\240\159\170\153 %s\n\240\159\142\159 %s%s\n\240\159\140\184 %s", v106(v405), v106(v406), v106(v408), v420, v106(v407)),[v7("\89\58\67\244\81\162", "\111\48\84\47\157\63\199")]=false},{[v7("\20\7\141\162", "\78\122\102\224\199")]=v7("\206\29\99\2\38\1\189", "\159\156\120\20\99\84\101\206"),[v7("\106\16\128\106\205", "\71\28\113\236\31\168\33\23")]=v423,[v7("\68\240\47\241\215\220", "\199\45\158\67\152\185\185\91")]=false},{[v7("\84\120\176\171", "\176\58\25\221\206\176\118\183")]=v7("\31\16\205\5\230\248\0\20\202\19\226\172", "\216\82\113\185\102\142"),[v7("\84\90\44\205\120", "\29\34\59\64\184")]=string.format("%s - Wave %d\n%s", v416, v417, v418),[v7("\27\16\68\195\59\88", "\61\114\126\40\170\85")]=false},{[v7("\194\41\122\60", "\19\172\72\23\89\163")]=((v399 and "\226\128\162 VICTORY") or "\226\128\162 DEFEAT"),[v7("\33\93\195\240\48", "\197\87\60\175\133\85\50")]="\226\128\139",[v7("\29\112\216\218\26\123", "\179\116\30\180")]=false}},[v7("\237\201\226\149\238\212", "\225\139\166\141")]={[v7("\89\142\236\52", "\64\45\235\148")]=(v7("\126\69\46\242\79\143\57\30\62\235\79\214\121\67\62\172\91\210\57\91\46\240\8\236\87\72\110\197\5\149\62", "\181\22\49\90\130\60") .. os.date(v7("\74\249\226\76\34\139\253\58", "\105\111\177\216")) .. ")")}}}};
 	pcall(function()
-		v400({[v7("\2\78\195", "\197\87\60\175\133\85\50")]=v399,[v7("\57\123\192\219\27\122", "\179\116\30\180")]=v7("\219\233\222\181", "\225\139\166\141"),[v7("\101\142\245\36\72\153\231", "\64\45\235\148")]={[v7("\85\94\52\246\89\219\98\28\14\251\76\208", "\181\22\49\90\130\60")]=v7("\14\193\168\5\6\210\185\29\6\222\182\70\5\194\183\7", "\105\111\177\216")},[v7("\150\21\204\11", "\179\212\122\168\114\112")]=game:GetService(v7("\81\110\144\221\74\127\150\219\112\121\129", "\173\25\26\228")):JSONEncode(v429)});
+		v397({[v7("\129\8\196", "\179\212\122\168\114\112")]=v396,[v7("\84\127\144\197\118\126", "\173\25\26\228")]=v7("\38\89\250\142", "\120\118\22\169\218"),[v7("\239\37\183\226\194\50\165", "\134\167\64\214")]={[v7("\39\134\240\156\204\198\16\196\202\145\217\205", "\168\100\233\158\232\169")]=v7("\115\68\9\240\123\87\24\232\123\91\23\179\120\71\22\242", "\156\18\52\121")},[v7("\97\31\223\211", "\191\35\112\187\170\228\213\101")]=game:GetService(v7("\144\187\104\69\13\25\109\174\166\127\80", "\31\216\207\28\53\94\124")):JSONEncode(v426)});
 	end);
-	if (v398 and v22 and v22.notifications) then
-		v22.notifications:create_notification({[v7("\24\119\196\191", "\120\118\22\169\218")]=v7("\230\10\246\206\242\2\246\250\135\23\179\228\207\47\185\237", "\134\167\64\214"),[v7("\13\135\248\135", "\168\100\233\158\232\169")]=v7("\70\81\10\232\50\67\28\254\122\91\22\247\50\71\28\242\102\20\10\233\113\87\28\239\97\82\12\240\126\77\88", "\156\18\52\121")});
+	if (v395 and v23 and v23.notifications) then
+		v23.notifications:create_notification({[v7("\47\38\166\10", "\59\65\71\203\111")]=v7("\54\138\60\92\190\46\116\11\224\75\113\137\4\59\24\171", "\84\119\192\28\20\235\108"),[v7("\133\240\34\249", "\33\236\158\68\150\122\92\201")]=v7("\212\221\234\13\9\230\60\226\208\246\22\66\177\42\229\214\237\89\90\228\58\227\221\234\10\79\228\53\236\193\184", "\89\128\184\153\121\41\145")});
 	end
 end;
-getgenv().AJ_HUB_SEND_WEBHOOK = v108;
-local v110 = function()
-	v58();
-	if not v103() then
-		local v1339 = 668 - (355 + 313);
+getgenv().AJ_HUB_SEND_WEBHOOK = v110;
+local v112 = function()
+	v60();
+	if not v105() then
+		local v1380 = 621 - (477 + 144);
 		while true do
-			local v1624 = 0 + 0;
-			while true do
-				if (v1624 == 0) then
-					if (v1339 == 0) then
-						v55.WebhookSentForCurrentMatch = false;
-						v55.WebhookInProgress = false;
-						v1339 = 2 - 1;
-					end
-					if (v1339 == (1 - 0)) then
-						return;
-					end
-					break;
-				end
+			if (v1380 == (970 - (797 + 173))) then
+				v25.WebhookSentForCurrentMatch = false;
+				v25.WebhookInProgress = false;
+				v1380 = 1;
+			end
+			if (v1380 == (1262 - (161 + 1100))) then
+				return;
 			end
 		end
 	end
-	local v430 = v16.PlayerGui:FindFirstChild(v7("\113\21\200\223\136\161\22\234\106", "\191\35\112\187\170\228\213\101"));
-	if (v44.WebhookEnabled and v44.WebhookUrl and (#v44.WebhookUrl > (10 + 0)) and not v55.WebhookSentForCurrentMatch and not v55.WebhookInProgress) then
-		local v1340 = 0;
-		local v1341;
+	local v427 = v17.PlayerGui:FindFirstChild(v7("\222\48\183\148\46\147\19\14\197", "\91\140\85\196\225\66\231\96"));
+	if (v24.WebhookEnabled and v24.WebhookUrl and (#v24.WebhookUrl > (1346 - (1150 + 186))) and not v25.WebhookSentForCurrentMatch and not v25.WebhookInProgress) then
+		local v1381 = 0 + 0;
+		local v1382;
 		while true do
-			if (v1340 == (1865 - (762 + 1103))) then
-				v1341 = 0;
+			if (v1381 == 0) then
+				v1382 = 0 + 0;
 				while true do
-					if (v1341 == (0 + 0)) then
-						v55.WebhookInProgress = true;
+					if ((29 - (12 + 17)) == v1382) then
+						v25.WebhookInProgress = true;
 						task.spawn(function()
-							local v2968 = 0;
-							local v2969;
-							while true do
-								if (v2968 == (1 + 0)) then
-									task.wait(1.5 + 0);
-									v108(false);
-									v2968 = 2;
-								end
-								if (v2968 == 0) then
-									v2969 = tick();
-									while (tick() - v2969) < (1575 - (1491 + 76)) do
-										v430 = v16.PlayerGui:FindFirstChild(v7("\138\170\111\64\50\8\108\141\134", "\31\216\207\28\53\94\124"));
-										if (v430 and v430.Enabled) then
-											break;
-										end
-										task.wait(0.2 + 0);
-									end
-									v2968 = 1;
-								end
-								if (2 == v2968) then
-									v55.WebhookSentForCurrentMatch = true;
-									task.wait(0.5 + 0);
-									v2968 = 765 - (94 + 668);
-								end
-								if (v2968 == (1412 - (36 + 1373))) then
-									if (v430 and v430:FindFirstChild(v7("\9\40\167\11\94\51", "\59\65\71\203\111")) and v430.Holder.Visible) then
-										local v3392 = 0;
-										local v3393;
-										while true do
-											if (v3392 == (1101 - (58 + 1043))) then
-												v3393 = v430.Holder:FindFirstChild(v7("\53\181\104\96\132\2\39", "\84\119\192\28\20\235\108")) and v430.Holder.Buttons:FindFirstChild(v7("\162\251\60\226", "\33\236\158\68\150\122\92\201"));
-												if (v3393 and firesignal) then
-													firesignal(v3393.Activated);
-												end
-												break;
-											end
-										end
-									end
-									v55.WebhookInProgress = false;
+							local v3054 = tick();
+							while (tick() - v3054) < 8 do
+								v427 = v17.PlayerGui:FindFirstChild(v7("\1\189\164\164\71\39\171\130\152", "\43\83\216\215\209"));
+								if (v427 and v427.Enabled) then
 									break;
 								end
+								task.wait(0.2);
 							end
+							task.wait(1.5 - 0);
+							v110(false);
+							v25.WebhookSentForCurrentMatch = true;
+							task.wait(0.5);
+							if (v427 and v427:FindFirstChild(v7("\99\168\188\15\43\89", "\78\43\199\208\107")) and v427.Holder.Visible) then
+								local v3288 = 0;
+								local v3289;
+								while true do
+									if (v3288 == 0) then
+										v3289 = v427.Holder:FindFirstChild(v7("\80\157\20\10\180\52\214", "\182\18\232\96\126\219\90\165")) and v427.Holder.Buttons:FindFirstChild(v7("\19\91\63\188", "\200\93\62\71"));
+										if (v3289 and firesignal) then
+											firesignal(v3289.Activated);
+										end
+										break;
+									end
+								end
+							end
+							v25.WebhookInProgress = false;
 						end);
 						break;
 					end
@@ -4966,393 +5257,47 @@ local v110 = function()
 			end
 		end
 	end
-	if v55.WebhookInProgress then
+	if v25.WebhookInProgress then
 		return;
 	end
-	if ((tick() - (v55.LastMatchActionTime or (0 - 0))) < (1.5 - 0)) then
+	if ((tick() - (v25.LastMatchActionTime or (0 + 0))) < (282.5 - (68 + 213))) then
 		return;
 	end
-	v55.LastMatchActionTime = tick();
+	v25.LastMatchActionTime = tick();
 	pcall(function()
-		local v901 = 0 - 0;
+		local v886 = 0 - 0;
 		while true do
-			if (v901 == (0 - 0)) then
-				if (v430 and v430:FindFirstChild(v7("\200\215\245\29\76\227", "\89\128\184\153\121\41\145")) and v430.Holder.Visible) then
-					local v2451 = 0;
-					local v2452;
-					while true do
-						if (v2451 == 0) then
-							v2452 = v430.Holder:FindFirstChild(v7("\206\32\176\149\45\137\19", "\91\140\85\196\225\66\231\96")) and v430.Holder.Buttons:FindFirstChild(v7("\29\189\175\165", "\43\83\216\215\209"));
-							if (v2452 and firesignal) then
-								firesignal(v2452.Activated);
-							end
-							break;
-						end
+			if (v886 == 2) then
+				if v24.AutoNextPortal then
+					if v18:FindFirstChild(v7("\38\117\235\50\50\113\242\8\10\118\246\3\60\99\247\8\49\79\233\2\33\117", "\109\85\16\159")) then
+						v18.set_game_finished_vote:InvokeServer(v7("\53\246\189\87\26\65", "\208\71\147\205\59\123\56"));
 					end
-				end
-				if v44.AutoLeave then
-					if v17:FindFirstChild(v7("\95\162\188\14\62\68\181\164\52\44\74\164\187\52\58\68\152\188\4\44\73\190", "\78\43\199\208\107")) then
-						v17.teleport_back_to_lobby:InvokeServer();
+					if (v427 and v427:FindFirstChild(v7("\113\41\138\177\68\40\129\188", "\216\55\64\228")) and v427.Finished:FindFirstChild(v7("\145\141\38\214\139\240\255\173\145", "\139\223\232\94\162\217\149")) and firesignal) then
+						firesignal(v427.Finished.NextRetry.Activated);
 					end
 					return;
 				end
-				v901 = 1;
-			end
-			if (v901 == 2) then
-				if v44.AutoNextPortal then
-					if v17:FindFirstChild(v7("\213\93\83\70\92\199\85\66\70\93\207\86\78\106\83\195\92\120\111\84\210\93", "\59\166\56\39\25")) then
-						v17.set_game_finished_vote:InvokeServer(v7("\160\221\214\196\66\171", "\35\210\184\166\168"));
-					end
-					if (v430 and v430:FindFirstChild(v7("\127\80\115\75\55\127\92\93", "\23\57\57\29\34\68")) and v430.Finished:FindFirstChild(v7("\126\52\7\56\98\52\11\62\73", "\76\48\81\127")) and firesignal) then
-						firesignal(v430.Finished.NextRetry.Activated);
-					end
-					return;
-				end
-				if v44.AutoReplay then
-					local v2453 = 0 - 0;
-					local v2454;
+				if v24.AutoReplay then
+					local v2422 = 0 + 0;
+					local v2423;
 					while true do
-						if (v2453 == (228 - (35 + 193))) then
-							v2454 = 0 - 0;
+						if (v2422 == (0 + 0)) then
+							v2423 = 0;
 							while true do
-								if ((653 - (242 + 410)) == v2454) then
-									return;
-								end
-								if (v2454 == (1495 - (1285 + 210))) then
-									if v17:FindFirstChild(v7("\29\160\69\136\13\117\208\85\49\163\88\185\3\103\213\85\10\154\71\184\30\113", "\48\110\197\49\215\106\20\189")) then
-										v17.set_game_finished_vote:InvokeServer(v7("\15\23\88\160\193\50", "\108\125\114\40\204\160\75\38"));
-									end
-									if (v430 and v430:FindFirstChild(v7("\19\121\241\4\38\120\250\9", "\109\85\16\159")) and v430.Finished:FindFirstChild(v7("\9\246\181\79\41\93\164\53\234", "\208\71\147\205\59\123\56")) and firesignal) then
-										firesignal(v430.Finished.NextRetry.Activated);
-									end
-									v2454 = 1;
-								end
-							end
-							break;
-						end
-					end
-				end
-				break;
-			end
-			if (v901 == 1) then
-				if v44.AutoNextStory then
-					local v2455 = 1739 - (1179 + 560);
-					while true do
-						local v2743 = 0 + 0;
-						while true do
-							if (v2743 == (0 - 0)) then
-								if (v2455 == (1 - 0)) then
-									return;
-								end
-								if (v2455 == (1216 - (262 + 954))) then
-									if v17:FindFirstChild(v7("\97\141\20\33\188\59\200\211\77\142\9\16\178\41\205\211\118\183\22\17\175\63", "\182\18\232\96\126\219\90\165")) then
-										v17.set_game_finished_vote:InvokeServer(v7("\51\91\63\188\2\77\51\167\47\71", "\200\93\62\71"));
-									end
-									if (v430 and v430:FindFirstChild(v7("\96\68\64\211\215\186\11\66", "\110\38\45\46\186\164\210")) and v430.Finished:FindFirstChild(v7("\86\187\176\2\18\125\168\173\26", "\94\24\222\200\118")) and firesignal) then
-										firesignal(v430.Finished.NextLevel.Activated);
-									end
-									v2455 = 3 - 2;
-								end
-								break;
-							end
-						end
-					end
-				end
-				if v44.AutoNextRoom then
-					if v17:FindFirstChild(v7("\15\197\55\12\24\211\50\38\14\212\39\11\9\255\47\23\27\201\40\16\9\197\25\13\18\215\35\11\34\198\52\22\16\255\33\24\16\197", "\121\125\160\70")) then
-						v17.request_start_infinite_tower_from_game:InvokeServer();
-					end
-					if v17:FindFirstChild(v7("\224\239\47\141\244\235\54\183\204\236\50\188\250\249\51\183\247\213\45\189\231\239", "\210\147\138\91")) then
-						v17.set_game_finished_vote:InvokeServer(v7("\39\248\216\71\49\10", "\115\85\157\168\43\80"));
-					end
-					if (v430 and v430:FindFirstChild(v7("\217\83\137\94\159\193\67\205", "\169\159\58\231\55\236\169\38")) and v430.Finished:FindFirstChild(v7("\63\196\167\4\246\17\104\3\216", "\28\113\161\223\112\164\116")) and firesignal) then
-						firesignal(v430.Finished.NextRetry.Activated);
-					end
-					return;
-				end
-				v901 = 2;
-			end
-		end
-	end);
-end;
-local v111 = {[v7("\103\44\133\182\82\52\196\159\69\37\129\182\94\37", "\216\55\64\228")]=v7("\177\137\51\199\178", "\139\223\232\94\162\217\149"),[v7("\226\130\47\253\190\81\138\246\138\55\232", "\170\181\227\67\145\219\53")]=v7("\88\138\10", "\210\57\229\126"),[v7("\139\61\229\177\43\133\183\183\36\228", "\227\216\83\138\198\82\165")]=v7("\47\176\187\119\252\56\185\183\97\247\57", "\146\75\213\214\24"),[v7("\110\123\204\75\116\5\102\70\127\216\65\104", "\53\42\30\161\36\26\37")]=v7("\249\252\250\239\243\234\251\225\228\252\229", "\128\157\153\151"),[v7("\69\116\130\45\85\69\127\121\128\40\18\118", "\19\22\21\236\73\117")]=v7("\121\196\176\188\227\178", "\150\23\165\194\201\151\221\77"),[v7("\86\50\236\30\123\53\168\41\127\53\236\90\72\50\228\22\127\60\237", "\122\30\91\136")]=v7("\177\165\247\165\153\176", "\237\223\196\133\208"),[v7("\242\9\213\167\30\216\221\17", "\154\188\104\163\222\62")]=v7("\56\236\63\242\30\74\196\58\255\41", "\162\85\141\77\155\112\47"),[v7("\52\32\163\64\22\105\133\71\6\48", "\46\114\73\198")]=v7("\177\113\125\246\33\77\173\113\99\227", "\42\197\30\22\143\78"),[v7("\84\77\80\42\127\5\124\54\103\92", "\95\19\37\63")]=v7("\101\35\172\229\126\0\121\35\178\240", "\103\17\76\199\156\17"),[v7("\128\58\140\250\85\4\249\205\188\56\137\236", "\154\211\74\229\136\60\112\217")]=v7("\167\9\239\206\10", "\39\207\124\138\173\101"),[v7("\230\14\79\204\173\217\65\116\207\176\194\5", "\194\174\97\35\160")]=v7("\247\53\56\1\240", "\98\159\64\93"),[v7("\47\191\57\95\58\15\85\35\10\190\32", "\68\110\209\77\127\113\102\59")]=v7("\166\252\175\78\13\215", "\206\206\132\199\47\99\163"),[v7("\219\195\208\123\82\182\246\216\101\95", "\49\150\162\183\18")]=v7("\68\43\188\47\21\236\17\72", "\120\41\74\219\65\122\128"),[v7("\114\7\73\20\241\162\209\26\39\95\27\225\162\216\67", "\181\58\102\60\122\133\199")]=v7("\89\232\215", "\26\51\130\188\121"),[v7("\203\151\62\10\76\26\183\120\235\131\40\28\68\7", "\57\136\226\76\121\41\126\151")]=v7("\40\221\2", "\29\66\183\105\51\68\131"),[v7("\104\36\78\199\70\101\97\199\73\41\90", "\174\37\69\41")]=v7("\130\186\65\24\21\147", "\112\225\214\46\110"),[v7("\45\52\34\88\225\253\207\27\42\55\94\246", "\140\126\68\67\59\132\221")]=v7("\136\126\13\68", "\230\226\17\103\43\45\127"),[v7("\243\77\212\78\199\243\77\202\74\145\213\94\197\71", "\231\176\44\164\43")]=v7("\171\201\46\166", "\236\193\166\68\201\206"),[v7("\37\55\193\116\10\123\251\97\5\56\205\98\12\50\216", "\17\100\91\168")]=v7("\85\182\129", "\27\58\198\236\140\211\67"),[v7("\7\204\206\70\140\239\97\230\197\68\142\239\46\192", "\139\65\173\172\42\233")]=v7("\208\82\98", "\40\231\54\17\184\164\23\128"),[v7("\182\220\118\246\128\238\196\234\118\236\156", "\138\228\169\31\152\229")]=v7("\193\4\67", "\163\172\108\34\85\128"),[v7("\15\20\229\136\155\103\129\64\62", "\52\71\113\151\231\187\36\232")]=v7("\123\133\121", "\205\22\237\24"),[v7("\142\109\99\216\60\170\56\90\219\53\191\118\119", "\89\222\24\19\168")]=v7("\241\75\86\164\2\231\86\64\182", "\113\149\57\51\215"),[v7("\79\121\217\162\247\193\117\48\239\163\236\199\124\127\197", "\160\25\16\171\214\130")]=v7("\98\217\56", "\235\17\184\87\29\29\178"),[v7("\156\160\107\236\229\171\165\57\202\245\171\165\112\236\233", "\144\202\201\25\152")]=v7("\42\218\11", "\96\89\187\100\30\155\42\135"),[v7("\30\195\12\93\99\61\6\196\13\77\126\114\32", "\29\77\173\99\42\26")]=v7("\134\231\21\105\94\253\252", "\109\228\130\103\26\59\143\151"),[v7("\166\123\162\208\46\89\42", "\228\227\24\206\185\94\42\79")]=v7("\204\39\37\187\177\9\59", "\80\174\66\87\200\212\123"),[v7("\239\108\48\207\242\28\197\57\10\192\229\28\197\124", "\115\171\25\94\168\151")]=v7("\3\164\225\51\251\3\160\224", "\151\108\210\132\65"),[v7("\245\91\28\70\210\64\206\90\152\96\12\69\214\77\194", "\52\184\52\105\40\166\33\167")]=v7("\84\15\217\173", "\172\50\110\173\200\90\180"),[v7("\221\175\237\89\240\179\180\111\242\174\237", "\44\155\218\148")]=v7("\235\250\56\62", "\209\141\155\76\91\180\71"),[v7("\193\124\214\69\90\197\116\211\71\27\244\120", "\122\147\29\191\43")]=v7("\189\221\91\14\219\244\153\108\185", "\30\220\176\62\105\186\159\236"),[v7("\187\213\140\178\35\204\182\253\172\212\150\164\36\220\180\169", "\221\232\189\229\208\86\181\215")]=v7("\31\188\253\222\59\21\181", "\78\108\212\148\188"),[v7("\22\25\0\35\231\9\179\59\41\17\84\1\229\20\162", "\90\91\112\116\66\140\96\219")]=v7("\200\86\14\3\235\169", "\100\165\55\106\108\128\200")};
-local v112 = {[v7("\232\202\54\186\198\139\25\186\201\199\34\243\141\238\61\181\133\226\63\165\196\216\56\188\203\130", "\211\165\171\81")]=v7("\7\121\221\220\210\206\59\121\215\205\210\210\0", "\188\100\21\178\170\183"),[v7("\77\7\89\161\187\217\62\62\94\165\179\222\119\24\94", "\173\30\119\48\211\210")]=v7("\89\213\60\59\88\209\6\54\94\222\60\52\95", "\90\59\185\89"),[v7("\115\224\91\76\62\61\99\245\84\91\62\111", "\29\32\144\58\47\91")]=v7("\25\58\123\178\126\173\22\50\116\179\69", "\193\115\85\17\221\33"),[v7("\203\122\12\18\170\216\173\80\7\16\168\216\226\118\78\86\136\217\227\126\28\31\163\207\164", "\188\141\27\110\126\207")]=v7("\218\50\77\72\232\237\14\136\56\90", "\105\237\86\62\23\132\136"),[v7("\139\92\53\67\38\25\249\106\53\89\58\93\241\100\53\73\45\20\190\65\40\4", "\125\217\41\92\45\67")]=v7("\84\188\7\96\143\94\94\177\8\91", "\59\57\212\102\63\227"),[v7("\75\225\109\19\104\233\115\71\89\253\113\0\120\231\113\71\53\202\112\20\110\237\108\78", "\103\29\136\31")]=v7("\13\47\213\21\74\27\41\223\36\66", "\38\126\78\186\74"),[v7("\229\85\36\141\66\139\207\0\30\130\85\139\207\69", "\228\161\32\74\234\39")]=v7("\49\146\15\167\252\142\38\132\1\136\15\178\245\143\48", "\224\94\228\106\213\144\225\84"),[v7("\130\233\78\206\65\134\225\75\204\0\183\237", "\97\208\136\39\160")]=v7("\247\36\198\129\88\25\46\228\44\252\138\92\21\62\248\45", "\91\150\73\163\230\57\114")};
-local v113 = {[v7("\109\184\160\68\245\5\170\31\124\172\187\82", "\63\46\205\210\54\144\107\222")]=v7("\243\57\230\85\217\254\56\203\85\221\249\40", "\188\144\76\148\39"),[v7("\171\66\114\172\88\1\35\71\128\11\65\182\77\5\44", "\53\229\43\21\196\44\108\66")]=v7("\55\48\26\170\61\38\27\164\42\48\5\154\33\52\30\161\12\100", "\197\83\85\119"),[v7("\120\251\18\59\74\254\94\20\70\238\7", "\87\47\154\126")]=v7("\42\119\216\228\192\213\34\124\243\138", "\180\75\24\172\187\178"),[v7("\240\216\235\7\60\18\240\28\207\216\226\6", "\112\163\185\133\99\28\68\153")]=v7("\165\85\238\222\191\91\195\217\170\93\248\244\250", "\171\203\52\156"),[v7("\156\223\105\164\56\132\253\131\179\222\100", "\192\218\170\29\209\74\225\221")]=v7("\148\217\72\20\240\78\32\233\154\227\73\1\198\73", "\157\227\188\59\96\175\45\73"),["Future City (Tyrant's Invasion)"]=v7("\168\207\196\2\14\188\195\195\15\14\185\216\222\19\43\190", "\81\223\170\183\118"),[v7("\5\84\190\168\252\54\81\0\68\191\175\240\36\16\42", "\113\70\33\204\219\153\82")]=v7("\244\140\43\57\236\164\240\139\49\49\251\190\229\189\59\53\237\164\227\139\60\40", "\208\145\226\95\92\158"),[v7("\141\224\222\94\234\241\239\40\178\224\211\73\251", "\120\222\129\189\44\143\149\207")]=v7("\143\16\20\142\218\71\120\182\129\5", "\216\228\113\125\209\170\43\25"),[v7("\202\238\74\68\124\121\252\186\108\74\101\112", "\30\153\154\56\37\18")]=v7("\16\182\229\5\52\21", "\91\125\217\151\108"),[v7("\202\7\169\98\211\185\59\175\116\219\246\6\178", "\190\153\115\198\16")]=v7("\47\120\162\142\50\122", "\231\90\27\202"),[v7("\160\138\76\226\117\136\138\95\166\81\140\196\16\143\87\133\138\81\165\86\149\205", "\62\225\228\56\194")]=v7("\30\161\177\18\114\80\31\173\184\35", "\53\118\217\217\77\20"),[v7("\155\10\237\208\42\173\95\199\215\59\176\95\172\234\39\172\95\201\219\33\168\28\225\151", "\79\201\127\132\190")]=v7("\37\28\232\246\59\0\232\192\38", "\169\72\116\137")};
-local v114 = setmetatable({}, {[v7("\70\69\192\168\125\127\209", "\198\25\26\169")]=function(v432, v433)
-	return v111[v433] or v112[v433] or v113[v433];
-end});
-local function v115()
-	local v434 = getgenv().XT_AnimeAdventures;
-	local v435 = v434 and v434.Lobby;
-	if not v435 then
-		return;
-	end
-	pcall(function()
-		local v902 = 0;
-		while true do
-			if (v902 == (13 - 8)) then
-				v435.AutoDaily = v44.AutoJoinDailyChallenge;
-				break;
-			end
-			if (v902 == (3 + 0)) then
-				v435.AutoMansion = v44.AutoJoinMansion;
-				v435.MansionRoom = tonumber(v44.MansionRoom) or 1;
-				v435.MansionDifficulty = v44.MansionDifficulty;
-				v435.MansionLast = v44.JoinLastMansionRoom;
-				v902 = 4;
-			end
-			if (v902 == (13 - 9)) then
-				v435.AutoSummer = v44.AutoJoinSummer;
-				if (type(v44.SummerSkipMaps) == v7("\94\94\212\241\79", "\157\42\63\182")) then
-					v435.SummerSkipMaps = v44.SummerSkipMaps;
-				end
-				if (type(v44.SummerSkipWeather) == v7("\207\63\43\240\202", "\175\187\94\73\156")) then
-					v435.SummerSkipWeather = v44.SummerSkipWeather;
-				end
-				v435.AutoChallenge = v44.AutoJoinChallenge;
-				v902 = 4 + 1;
-			end
-			if (v902 == 2) then
-				v435.LegendAct = tonumber(string.match(v44.LegendAct, v7("\29\128\12", "\71\56\228\39\225\37"))) or (1 + 0);
-				v435.AutoRaid = v44.AutoJoinRaid;
-				v435.RaidWorld = v44.RaidWorld;
-				v435.RaidAct = tonumber(string.match(v44.RaidAct, v7("\245\229\175", "\66\208\129\132\73\154\141"))) or 1;
-				v902 = 1 + 2;
-			end
-			if (v902 == (1843 - (1696 + 146))) then
-				v435.FriendsOnly = v44.StoryFriendsOnly;
-				v435.LastAct = v44.JoinLastAct;
-				v435.AutoLegend = v44.AutoJoinLegend;
-				v435.LegendWorld = v114[v44.LegendStage] or v7("\117\58\200\5\32\100\9\203\22\34\115\56\195", "\69\22\86\167\115");
-				v902 = 1908 - (1835 + 71);
-			end
-			if (v902 == (634 - (58 + 576))) then
-				v435.AutoJoin = v44.AutoJoinStory;
-				v435.World = v114[v44.StoryWorld] or v44.StoryWorld:lower();
-				v435.Act = tonumber(string.match(v44.StoryAct, v7("\12\119\150", "\31\41\19\189\70\231\49\27"))) or ((v44.StoryAct == v7("\158\221\87\239\185\218\69\227", "\134\215\179\49")) and v7("\232\250\80\239\91\26\245\241", "\115\129\148\54\134\53")) or 1;
-				v435.Difficulty = ((v44.StoryAct == v7("\192\137\86\66\214\1\7\236", "\115\137\231\48\43\184\104")) and v7("\241\232\8\231", "\95\185\137\122\131\201\192")) or v44.StoryDifficulty;
-				v902 = 1;
-			end
-		end
-	end);
-end
-local v116 = function()
-	pcall(function()
-		local v903 = 0 + 0;
-		local v904;
-		local v905;
-		local v906;
-		while true do
-			if (v903 == (0 - 0)) then
-				v904 = game:GetService(v7("\22\51\78\57\30\49\211", "\160\70\95\47\64\123\67")).LocalPlayer;
-				for v2194, v2195 in ipairs({workspace:FindFirstChild(v7("\225\106\91\3\234\123\88\2", "\81\190\58\20")),workspace:FindFirstChild(v7("\115\97\153\85\161\0\122\0", "\83\44\45\214\23\227\73\63")),workspace:FindFirstChild(v7("\202\153\110\159\12\217\159\104\153\5\198", "\64\149\218\38\222")),workspace:FindFirstChild(v7("\37\149\235\249\62", "\176\122\199\170")),workspace:FindFirstChild(v7("\45\46\134\245\31\31\45\40\152\241\29\7\55\37\151\245\2", "\75\114\107\208\176\81")),workspace:FindFirstChild(v7("\198\24\28\88\212\14\27", "\21\153\75\73")),workspace:FindFirstChild(v7("\54\54\123\215\156\114\54\50\127\215\147", "\38\105\115\45\146\210"))}) do
-					if v2195 then
-						for v2865, v2866 in ipairs(v2195:GetDescendants()) do
-							if (v2866:FindFirstChild(v7("\45\1\2\115\33", "\83\98\118\108\22")) and (v2866.Owner.Value == v904)) then
-								if v17:FindFirstChild(v7("\91\238\104\56\160\151\55\118\231\124\44\179\129\28\69\228\123\47\188", "\67\41\139\25\77\197\228")) then
-									v17.request_leave_lobby:InvokeServer(v2866.Name);
-								end
-							end
-						end
-					end
-				end
-				v903 = 1 - 0;
-			end
-			if (v903 == (2 - 1)) then
-				v905 = require(game:GetService(v7("\218\171\222\38\95\235\233\186\203\46\101\252\231\188\207\45\83", "\136\136\206\174\74\54")).src.Loader);
-				v906 = v905.load_client_service(script, v7("\8\252\132\135\74\151\190\54\229\143\134\86\135\183\45\246\136\145", "\219\68\147\230\229\51\196"));
-				v903 = 2 - 0;
-			end
-			if (v903 == (1188 - (255 + 931))) then
-				if (v906 and v906.cancel_selections) then
-					v906.cancel_selections();
-				end
-				break;
-			end
-		end
-	end);
-end;
-local function v117(v436)
-	local v437 = 0 - 0;
-	while true do
-		if (v437 == 0) then
-			if (not v436 or not v436.Parent) then
-				return;
-			end
-			task.spawn(function()
-				local v1873 = v436:WaitForChild(v7("\95\79\230\244\5\79\26", "\123\28\46\150\128\102\39"), 1391 - (507 + 881));
-				local v1874 = v436:WaitForChild(v7("\49\80\13\82\57\134\35", "\21\101\41\125\55\123\233\91"), 3);
-				local v1875 = v436:WaitForChild(v7("\160\254\186\231\3\60\170\228\162\247\9\32", "\82\226\139\206\147\108"), 3);
-				local v1876 = v1875 and v1875:WaitForChild(v7("\200\3\94", "\172\145\102\45\209"), 3 - 0);
-				if not (v1873 and v1874 and v1876) then
-					return;
-				end
-				local v1877 = "";
-				for v2196 = 1 - 0, 40 do
-					v1877 = tostring(v1873.Text):gsub(v7("\177\30\71", "\30\148\109\108\32\235"), "");
-					if (#v1877 > (0 - 0)) then
-						break;
-					end
-					task.wait(0.03);
-				end
-				if (#v1877 == 0) then
-					return;
-				end
-				v1874.Text = v1877;
-				task.wait(1603.04 - (475 + 1128));
-				if (typeof(getconnections) == v7("\18\82\31\92\0\78\30\81", "\63\116\39\113")) then
-					local v2460 = 0;
-					while true do
-						if (v2460 == (0 - 0)) then
-							for v3089, v3090 in ipairs(getconnections(v1876.Activated)) do
-								pcall(function()
-									v3090:Fire();
-								end);
-							end
-							for v3091, v3092 in ipairs(getconnections(v1876.MouseButton1Click)) do
-								pcall(function()
-									v3092:Fire();
-								end);
-							end
-							break;
-						end
-					end
-				end
-				if (typeof(firesignal) == v7("\62\69\201\239\4\33\167\54", "\200\88\48\167\140\112\72")) then
-					pcall(function()
-						firesignal(v1876.Activated);
-					end);
-					pcall(function()
-						firesignal(v1876.MouseButton1Click);
-					end);
-				end
-			end);
-			break;
-		end
-	end
-end
-local function v118()
-	task.spawn(function()
-		pcall(function()
-			local v1342 = 0 - 0;
-			local v1343;
-			local v1344;
-			while true do
-				if ((3 - 2) == v1342) then
-					if v1344 then
-						v1344._last_matchmaking_captcha_success = tick() + 999999;
-						if not v1344._original_show_captcha then
-							v1344._original_show_captcha = v1344._show_matchmaking_captcha;
-							v1344._show_matchmaking_captcha = function(v3093, v3094)
-								v3093.HAS_MATCHMAKING_PROMPT = false;
-								v3093._last_matchmaking_captcha_success = tick() + 999999;
-								if v3094 then
-									task.spawn(v3094);
-								end
-							end;
-						end
-					end
-					break;
-				end
-				if (v1342 == (0 + 0)) then
-					v1343 = require(game:GetService(v7("\240\91\56\167\235\193\95\60\174\230\241\74\39\185\227\197\91", "\130\162\62\72\203")).src.Loader);
-					v1344 = v1343.load_client_service(nil, v7("\132\130\148\67\130\146\249\244\160\178", "\157\195\215\221\16\231\224\143")).notification_windows_ui;
-					v1342 = 358 - (110 + 247);
-				end
-			end
-		end);
-	end);
-	task.spawn(function()
-		local v907 = 0;
-		local v908;
-		local v909;
-		local v910;
-		local v911;
-		while true do
-			if (v907 == (1246 - (1109 + 137))) then
-				local v1879 = 0 - 0;
-				while true do
-					if (0 == v1879) then
-						v908 = v16:WaitForChild(v7("\79\213\10\149\230\109\254\30\133", "\131\31\185\107\236"), 6 + 4);
-						if not v908 then
-							return;
-						end
-						v1879 = 1 + 0;
-					end
-					if (v1879 == 1) then
-						v907 = 2 - 1;
-						break;
-					end
-				end
-			end
-			if (v907 == 3) then
-				function v911(v2198)
-					local v2199 = 0 + 0;
-					while true do
-						if (v2199 == 0) then
-							if (not v2198 or not v2198.Parent) then
-								return;
-							end
-							if (v2198.Name == v7("\144\248\175\144\176\241\190\179\186\247\187\139\164", "\228\211\153\223")) then
-								v117(v2198);
-							elseif (v2198.Name == v7("\121\238\76\62\50\11\85\228\81\51\61\54\70\224\85\45\46", "\102\52\143\56\93\90")) then
-								local v3278 = 0;
-								local v3279;
+								local v3196 = 0 - 0;
 								while true do
-									if (v3278 == (0 + 0)) then
-										v3279 = v44.AutoFindMatchStory or v44.AutoFindMatchLegend or v44.AutoFindMatchRaid or v44.AutoFindMatchMansion or v44.AutoFindMatchChallenge or v44.AutoFindMatchDailyChallenge or v44.AutoFindMatchSummer or (v44.AutoJoinArtifact and (v44.ArtifactJoinMode == v7("\96\30\174\44\165\107\22\180\43\237", "\133\38\119\192\72")));
-										if v3279 then
-											task.spawn(function()
-												local v3498 = 0 + 0;
-												while true do
-													if ((0 - 0) == v3498) then
-														task.wait(0.04 + 0);
-														pcall(function()
-															local v3548 = 0 + 0;
-															local v3549;
-															local v3550;
-															while true do
-																if (v3548 == 1) then
-																	if v3550 then
-																		local v3574 = 0 + 0;
-																		while true do
-																			if (v3574 == 0) then
-																				if (typeof(getconnections) == v7("\189\88\183\89\233\178\66\183", "\157\219\45\217\58")) then
-																					for v3587, v3588 in ipairs(getconnections(v3550.Activated)) do
-																						pcall(function()
-																							v3588:Fire();
-																						end);
-																					end
-																				end
-																				if (typeof(firesignal) == v7("\182\168\56\214\234\185\178\56", "\158\208\221\86\181")) then
-																					local v3586 = 0;
-																					while true do
-																						if (v3586 == (0 + 0)) then
-																							firesignal(v3550.Activated);
-																							pcall(function()
-																								firesignal(v3550.MouseButton1Click);
-																							end);
-																							break;
-																						end
-																					end
-																				end
-																				break;
-																			end
-																		end
-																	end
-																	break;
-																end
-																if ((0 - 0) == v3548) then
-																	v3549 = v2198:FindFirstChild(v7("\218\160\125\245", "\155\151\193\20")) and v2198.Main:FindFirstChild(v7("\12\177\20\90\116\32\183", "\27\78\196\96\46"));
-																	v3550 = v3549 and v3549:FindFirstChild(v7("\199\250\166\187\114\73\77\225\242\188\191", "\44\138\155\210\216\26\36"));
-																	v3548 = 1 + 0;
-																end
-															end
-														end);
-														break;
-													end
-												end
-											end);
+									if (v3196 == (0 + 0)) then
+										if (v2423 == 0) then
+											if v18:FindFirstChild(v7("\198\134\55\206\188\84\199\208\188\37\248\181\92\217\221\134\39\206\173\90\222\208", "\170\181\227\67\145\219\53")) then
+												v18.set_game_finished_vote:InvokeServer(v7("\75\128\14\190\88\156", "\210\57\229\126"));
+											end
+											if (v427 and v427:FindFirstChild(v7("\158\58\228\175\33\205\134\188", "\227\216\83\138\198\82\165")) and v427.Finished:FindFirstChild(v7("\5\176\174\108\192\46\161\164\97", "\146\75\213\214\24")) and firesignal) then
+												firesignal(v427.Finished.NextRetry.Activated);
+											end
+											v2423 = 1;
+										end
+										if (v2423 == (1383 - (349 + 1033))) then
+											return;
 										end
 										break;
 									end
@@ -5362,88 +5307,483 @@ local function v118()
 						end
 					end
 				end
-				v910.ChildAdded:Connect(v911);
-				v907 = 4 + 0;
-			end
-			if (1 == v907) then
-				v909 = v908:WaitForChild(v7("\133\164\94\45\173\162\73\37\191\162\69\42\156\162\68\32\164\188\89", "\68\203\203\42"), 10);
-				v910 = v909 and v909:WaitForChild(v7("\115\88\101\204\83\68", "\185\35\55\21"), 39 - 29);
-				v907 = 2;
-			end
-			if (v907 == 4) then
-				for v2200, v2201 in ipairs(v910:GetChildren()) do
-					v911(v2201);
-				end
 				break;
 			end
-			if (v907 == (207 - (192 + 13))) then
-				if not v910 then
+			if (v886 == 0) then
+				if (v427 and v427:FindFirstChild(v7("\110\66\66\222\193\160", "\110\38\45\46\186\164\210")) and v427.Holder.Visible) then
+					local v2424 = 0;
+					local v2425;
+					while true do
+						if (v2424 == 0) then
+							v2425 = v427.Holder:FindFirstChild(v7("\90\171\188\2\49\118\173", "\94\24\222\200\118")) and v427.Holder.Buttons:FindFirstChild(v7("\51\197\62\13", "\121\125\160\70"));
+							if (v2425 and firesignal) then
+								firesignal(v2425.Activated);
+							end
+							break;
+						end
+					end
+				end
+				if v24.AutoLeave then
+					if v18:FindFirstChild(v7("\231\239\55\183\227\229\41\166\204\232\58\177\248\213\47\189\204\230\52\176\241\243", "\210\147\138\91")) then
+						v18.teleport_back_to_lobby:InvokeServer();
+					end
 					return;
 				end
-				v911 = nil;
-				v907 = 3;
+				v886 = 355 - (68 + 286);
+			end
+			if (v886 == (1 + 0)) then
+				if v24.AutoNextStory then
+					if v18:FindFirstChild(v7("\38\248\220\116\55\18\56\248\247\77\57\29\60\238\192\78\52\44\35\242\220\78", "\115\85\157\168\43\80")) then
+						v18.set_game_finished_vote:InvokeServer(v7("\241\95\159\67\179\218\82\198\237\67", "\169\159\58\231\55\236\169\38"));
+					end
+					if (v427 and v427:FindFirstChild(v7("\55\200\177\25\215\28\121\21", "\28\113\161\223\112\164\116")) and v427.Finished:FindFirstChild(v7("\232\93\95\109\119\195\78\66\117", "\59\166\56\39\25")) and firesignal) then
+						firesignal(v427.Finished.NextLevel.Activated);
+					end
+					return;
+				end
+				if v24.AutoNextRoom then
+					local v2426 = 0 - 0;
+					while true do
+						if (v2426 == (0 - 0)) then
+							if v18:FindFirstChild(v7("\160\221\215\221\70\161\204\249\219\87\179\202\210\247\74\188\222\207\198\74\166\221\249\220\76\165\221\212\247\69\160\215\203\247\68\179\213\195", "\35\210\184\166\168")) then
+								v18.request_start_infinite_tower_from_game:InvokeServer();
+							end
+							if v18:FindFirstChild(v7("\74\92\105\125\35\118\84\92\66\68\45\121\80\74\117\71\32\72\79\86\105\71", "\23\57\57\29\34\68")) then
+								v18.set_game_finished_vote:InvokeServer(v7("\66\52\15\32\81\40", "\76\48\81\127"));
+							end
+							v2426 = 1 + 0;
+						end
+						if (v2426 == (3 - 2)) then
+							if (v427 and v427:FindFirstChild(v7("\40\172\95\190\25\124\216\84", "\48\110\197\49\215\106\20\189")) and v427.Finished:FindFirstChild(v7("\51\23\80\184\242\46\82\30\4", "\108\125\114\40\204\160\75\38")) and firesignal) then
+								firesignal(v427.Finished.NextRetry.Activated);
+							end
+							return;
+						end
+					end
+				end
+				v886 = 5 - 3;
 			end
 		end
 	end);
-end
-v118();
-local v119 = function()
-	local v438 = 757 - (585 + 172);
-	local v439;
-	local v440;
-	local v441;
-	while true do
-		if (v438 == (0 - 0)) then
-			v439 = v16:FindFirstChild(v7("\208\77\235\18\37\173\31\245\72", "\88\128\33\138\107\64\223"));
-			v440 = v439 and v439:FindFirstChild(v7("\236\243\97\118\165\118\239\202\251\123\114\152\82", "\142\161\146\21\21\205\27"));
-			v438 = 797 - (76 + 720);
+end;
+local v113 = {[v7("\122\114\192\74\127\81\21\109\108\196\65\116\76\80", "\53\42\30\161\36\26\37")]=v7("\243\248\250\229\246", "\128\157\153\151"),[v7("\65\116\128\37\16\119\54\86\133\61\12", "\19\22\21\236\73\117")]=v7("\118\202\182", "\150\23\165\194\201\151\221\77"),[v7("\77\53\231\13\103\123\220\21\105\53", "\122\30\91\136")]=v7("\187\161\232\191\131\172\168\228\169\136\173", "\237\223\196\133\208"),[v7("\248\13\206\177\80\186\239\4\194\167\91\232", "\154\188\104\163\222\62")]=v7("\49\232\32\244\30\92\206\52\244\40\233", "\162\85\141\77\155\112\47"),[v7("\33\40\168\74\82\31\175\66\30\40\161\75", "\46\114\73\198")]=v7("\171\127\100\250\58\69", "\42\197\30\22\143\78"),[v7("\91\76\91\59\118\75\31\12\114\75\91\127\69\76\83\51\114\66\90", "\95\19\37\63")]=v7("\127\45\181\233\101\8", "\103\17\76\199\156\17"),[v7("\157\43\147\241\28\50\184\227", "\154\211\74\229\136\60\112\217")]=v7("\162\29\248\196\11\66\169\19\248\201", "\39\207\124\138\173\101"),[v7("\232\8\70\206\166\142\34\74\212\187", "\194\174\97\35\160")]=v7("\235\47\54\27\240\39\53\13\234\44", "\98\159\64\93"),[v7("\41\185\34\10\29\70\120\45\26\168", "\68\110\209\77\127\113\102\59")]=v7("\186\235\172\86\12\196\166\161\241\171", "\206\206\132\199\47\99\163"),[v7("\197\210\222\96\88\226\130\224\125\67\250\198", "\49\150\162\183\18")]=v7("\65\63\190\34\21", "\120\41\74\219\65\122\128"),[v7("\114\9\80\22\234\176\149\109\9\78\22\225", "\181\58\102\60\122\133\199")]=v7("\91\247\217\26\117", "\26\51\130\188\121"),[v7("\201\140\56\89\98\23\249\94\236\141\33", "\57\136\226\76\121\41\126\151")]=v7("\42\207\1\82\42\247", "\29\66\183\105\51\68\131"),[v7("\104\36\78\199\70\101\125\193\82\43", "\174\37\69\41")]=v7("\140\183\73\0\31\141\191\79", "\112\225\214\46\110"),[v7("\54\37\54\85\240\184\232\94\5\32\90\224\184\225\7", "\140\126\68\67\59\132\221")]=v7("\136\123\12", "\230\226\17\103\43\45\127"),[v7("\243\89\214\88\130\212\12\229\72\134\212\73\201\82", "\231\176\44\164\43")]=v7("\171\204\47", "\236\193\166\68\201\206"),[v7("\41\58\207\120\7\123\224\120\8\55\219", "\17\100\91\168")]=v7("\89\170\131\250\182\49", "\27\58\198\236\140\211\67"),[v7("\18\221\205\73\140\171\2\200\194\94\140\249", "\139\65\173\172\42\233")]=v7("\141\89\123\215", "\40\231\54\17\184\164\23\128"),[v7("\167\200\111\253\197\201\133\199\126\238\128\248\133\197", "\138\228\169\31\152\229")]=v7("\198\3\72\58", "\163\172\108\34\85\128"),[v7("\6\29\254\130\213\4\187\68\38\18\242\148\211\77\152", "\52\71\113\151\231\187\36\232")]=v7("\121\157\117", "\205\22\237\24"),[v7("\152\121\113\196\60\186\56\88\193\55\185\124\124\197", "\89\222\24\19\168")]=v7("\162\93\64", "\113\149\57\51\215"),[v7("\75\101\194\184\231\196\57\83\194\162\251", "\160\25\16\171\214\130")]=v7("\124\208\54", "\235\17\184\87\29\29\178"),[v7("\130\172\107\247\176\137\160\109\225", "\144\202\201\25\152")]=v7("\52\211\5", "\96\89\187\100\30\155\42\135"),[v7("\29\216\19\90\127\105\109\228\16\70\123\115\41", "\29\77\173\99\42\26")]=v7("\128\240\2\105\72\253\248\30\133", "\109\228\130\103\26\59\143\151"),[v7("\181\113\188\205\43\75\35\196\167\109\160\222\59\69\33", "\228\227\24\206\185\94\42\79")]=v7("\221\35\56", "\80\174\66\87\200\212\123"),[v7("\253\112\44\220\226\18\199\57\12\205\246\31\194\109\39", "\115\171\25\94\168\151")]=v7("\31\179\235", "\151\108\210\132\65"),[v7("\235\90\6\95\223\1\236\93\214\83\13\71\203", "\52\184\52\105\40\166\33\167")]=v7("\80\11\223\187\63\198\199", "\172\50\110\173\200\90\180"),[v7("\222\185\248\69\235\169\241", "\44\155\218\148")]=v7("\239\254\62\40\209\53\186", "\209\141\155\76\91\180\71"),[v7("\215\104\209\76\31\252\115\159\127\18\225\114\209\78", "\122\147\29\191\43")]=v7("\179\198\91\27\214\240\158\122", "\30\220\176\62\105\186\159\236"),[v7("\165\210\144\190\34\212\190\179\200\233\128\189\38\217\178", "\221\232\189\229\208\86\181\215")]=v7("\10\181\224\217", "\78\108\212\148\188"),[v7("\29\5\13\55\231\9\251\25\50\4\13", "\90\91\112\116\66\140\96\219")]=v7("\195\86\30\9", "\100\165\55\106\108\128\200"),[v7("\247\202\56\189\133\253\56\191\201\202\54\182", "\211\165\171\81")]=v7("\5\120\215\205\214\215\17\103\215", "\188\100\21\178\170\183"),[v7("\77\31\89\177\167\212\127\87\116\186\161\217\108\30\83\167", "\173\30\119\48\211\210")]=v7("\72\209\48\56\78\192\56", "\90\59\185\89"),[v7("\109\249\78\78\48\116\72\241\72\78\123\94\73\228\67", "\29\32\144\58\47\91")]=v7("\30\52\117\178\74\160", "\193\115\85\17\221\33")};
+local v114 = {[v7("\192\122\9\23\172\156\197\114\2\18\188\156\165\94\2\24\239\245\227\109\15\13\166\211\227\50", "\188\141\27\110\126\207")]=v7("\142\58\81\97\225\250\54\129\51\89\114\234\236", "\105\237\86\62\23\132\136"),[v7("\138\89\53\95\42\9\249\96\50\91\34\14\176\70\50", "\125\217\41\92\45\67")]=v7("\91\184\3\94\128\83\102\184\3\88\134\85\93", "\59\57\212\102\63\227"),[v7("\78\248\126\4\120\168\92\2\115\252\122\21", "\103\29\136\31")]=v7("\20\33\208\37\121\18\43\221\47\72\26", "\38\126\78\186\74"),[v7("\231\65\40\134\66\128\129\107\35\132\64\128\206\77\106\194\96\129\207\69\56\139\75\151\136", "\228\161\32\74\234\39")]=v7("\105\128\25\138\252\132\51\133\48\128", "\224\94\228\106\213\144\225\84"),[v7("\130\253\78\206\4\180\168\100\201\21\169\168\15\237\8\180\230\78\199\9\164\161", "\97\208\136\39\160")]=v7("\251\33\194\185\85\23\60\243\39\199", "\91\150\73\163\230\57\114"),[v7("\120\164\160\66\229\10\178\31\106\184\188\81\245\4\176\31\6\143\189\69\227\14\173\22", "\63\46\205\210\54\144\107\222")]=v7("\227\45\251\120\208\245\43\241\73\216", "\188\144\76\148\39"),[v7("\161\94\123\163\73\3\44\21\177\67\103\171\66\9", "\53\229\43\21\196\44\108\66")]=v7("\60\35\18\183\63\58\5\161\12\57\18\162\54\59\19", "\197\83\85\119"),[v7("\125\251\23\57\15\204\23\59\67\251\25\50", "\87\47\154\126")]=v7("\42\117\201\220\211\223\62\106\201\228\222\209\44\125\194\223", "\180\75\24\172\187\178")};
+local v115 = {[v7("\224\204\247\17\121\42\237\80\241\216\236\7", "\112\163\185\133\99\28\68\153")]=v7("\168\65\238\217\174\90\232\244\185\85\245\207", "\171\203\52\156"),[v7("\148\195\122\185\62\140\188\178\191\138\73\163\43\136\179", "\192\218\170\29\209\74\225\221")]=v7("\135\217\86\15\193\94\37\252\154\217\73\63\221\76\32\249\188\141", "\157\227\188\59\96\175\45\73"),[v7("\136\203\219\26\52\187\138\244\31\37\166", "\81\223\170\183\118")]=v7("\39\78\184\132\235\51\24\34\126\253", "\113\70\33\204\219\153\82"),[v7("\194\131\49\56\190\134\248\142\51\61\249\181", "\208\145\226\95\92\158")]=v7("\176\224\207\89\251\250\144\10\191\232\217\115\190", "\120\222\129\189\44\143\149\207"),[v7("\162\4\9\164\216\78\57\155\141\5\4", "\216\228\113\125\209\170\43\25")]=v7("\238\255\75\81\77\125\240\238\65\122\96\127\240\254", "\30\153\154\56\37\18"),["Future City (Tyrant's Invasion)"]=v7("\10\188\228\24\4\30\176\227\21\4\27\171\254\9\33\28", "\91\125\217\151\108"),[v7("\218\6\180\99\219\253\83\128\117\205\237\26\176\113\210", "\190\153\115\198\16")]=v7("\63\117\190\130\40\111\171\142\52\118\175\137\46\68\174\142\41\111\184\142\57\111", "\231\90\27\202"),[v7("\178\133\91\176\91\133\196\104\174\95\143\129\76", "\62\225\228\56\194")]=v7("\29\184\176\18\100\89\23\183\188\57", "\53\118\217\217\77\20"),[v7("\154\11\246\223\33\174\26\164\234\32\190\17", "\79\201\127\132\190")]=v7("\37\27\251\192\39\28", "\169\72\116\137"),[v7("\74\110\198\180\116\58\225\175\125\127\198\179\109", "\198\25\26\169")]=v7("\92\112\213\47\143\80", "\31\41\19\189\70\231\49\27"),[v7("\150\221\69\166\156\218\95\225\179\220\92\166\255\254\88\226\185\218\86\238\163\154", "\134\215\179\49")]=v7("\233\236\94\217\83\22\232\224\87\232", "\115\129\148\54\134\53"),[v7("\219\146\89\69\221\12\83\202\142\68\82\152\64\39\225\130\16\102\221\6\18\234\130\25", "\115\137\231\48\43\184\104")]=v7("\212\225\27\220\186\180\62\208\231", "\95\185\137\122\131\201\192")};
+local v116 = setmetatable({}, {[v7("\73\9\206\29\33\115\46", "\69\22\86\167\115")]=function(v429, v430)
+	return v113[v430] or v114[v430] or v115[v430];
+end});
+function v26()
+	local v431 = getgenv().XT_AnimeAdventures;
+	local v432 = v431 and v431.Lobby;
+	if not v432 then
+		return;
+	end
+	pcall(function()
+		v432.AutoJoin = v24.AutoJoinStory;
+		v432.World = v116[v24.StoryWorld] or v24.StoryWorld:lower();
+		v432.Act = tonumber(string.match(v24.StoryAct, v7("\29\128\12", "\71\56\228\39\225\37"))) or ((v24.StoryAct == v7("\153\239\226\32\244\228\54\181", "\66\208\129\132\73\154\141")) and v7("\67\81\208\244\68\86\194\248", "\157\42\63\182")) or 1;
+		v432.Difficulty = ((v24.StoryAct == v7("\242\48\47\245\193\210\42\44", "\175\187\94\73\156")) and v7("\14\62\93\36", "\160\70\95\47\64\123\67")) or v24.StoryDifficulty;
+		v432.FriendsOnly = v24.StoryFriendsOnly;
+		v432.LastAct = v24.JoinLastAct;
+		v432.AutoLegend = v24.AutoJoinLegend;
+		v432.LegendWorld = v116[v24.LegendStage] or v7("\221\86\123\39\219\72\75\61\219\93\113\63\218", "\81\190\58\20");
+		v432.LegendAct = tonumber(string.match(v24.LegendAct, v7("\9\73\253", "\83\44\45\214\23\227\73\63"))) or (1 - 0);
+		v432.AutoRaid = v24.AutoJoinRaid;
+		v432.RaidWorld = v24.RaidWorld;
+		v432.RaidAct = tonumber(string.match(v24.RaidAct, v7("\176\190\13", "\64\149\218\38\222"))) or (2 - 1);
+		v432.AutoMansion = v24.AutoJoinMansion;
+		v432.MansionRoom = tonumber(v24.MansionRoom) or 1;
+		v432.MansionDifficulty = v24.MansionDifficulty;
+		v432.MansionLast = v24.JoinLastMansionRoom;
+		v432.AutoSummer = v24.AutoJoinSummer;
+		if (type(v24.SummerSkipMaps) == v7("\14\166\200\220\31", "\176\122\199\170")) then
+			v432.SummerSkipMaps = v24.SummerSkipMaps;
 		end
-		if (v438 == (5 - 3)) then
-			if (v55.MatchFoundTime and ((tick() - v55.MatchFoundTime) > (167 - (45 + 87)))) then
-				local v2202 = 0 - 0;
-				while true do
-					if (v2202 == 0) then
-						v55.MatchFound = false;
-						v55.MatchFoundTime = nil;
-						break;
+		if (type(v24.SummerSkipWeather) == v7("\6\10\178\220\52", "\75\114\107\208\176\81")) then
+			v432.SummerSkipWeather = v24.SummerSkipWeather;
+		end
+		v432.AutoChallenge = v24.AutoJoinChallenge;
+		v432.AutoDaily = v24.AutoJoinDailyChallenge;
+	end);
+end
+local v117 = function()
+	pcall(function()
+		local v918 = 0;
+		local v919;
+		local v920;
+		local v921;
+		local v922;
+		while true do
+			if (v918 == (0 + 0)) then
+				v919 = game:GetService(v7("\201\39\40\108\252\57\58", "\21\153\75\73")).LocalPlayer;
+				v920 = v73();
+				v918 = 1198 - (1064 + 133);
+			end
+			if (v918 == 1) then
+				for v2181, v2182 in ipairs({workspace:FindFirstChild(v7("\54\35\98\192\134\103\37\32", "\38\105\115\45\146\210")),workspace:FindFirstChild(v7("\61\58\35\84\17\43\51\63", "\83\98\118\108\22")),workspace:FindFirstChild(v7("\118\200\81\12\137\168\6\103\204\92\30", "\67\41\139\25\77\197\228")),workspace:FindFirstChild(v7("\215\156\239\3\114", "\136\136\206\174\74\54")),workspace:FindFirstChild(v7("\27\214\176\160\125\144\132\7\219\167\169\127\129\149\3\214\181", "\219\68\147\230\229\51\196")),workspace:FindFirstChild(v7("\67\125\195\205\43\98\41", "\123\28\46\150\128\102\39")),workspace:FindFirstChild(v7("\58\108\43\114\53\189\4\84\55\108\60", "\21\101\41\125\55\123\233\91"))}) do
+					if v2182 then
+						for v2926, v2927 in ipairs(v2182:GetDescendants()) do
+							if (v2927:FindFirstChild(v7("\173\252\160\246\30", "\82\226\139\206\147\108")) and (v2927.Owner.Value == v919)) then
+								if (v920 and v920.invoke_server) then
+									pcall(function()
+										v920.invoke_server(v7("\227\3\92\164\201\226\18\114\189\201\240\16\72\142\192\254\4\79\168", "\172\145\102\45\209"), v2927.Name);
+									end);
+								elseif v18:FindFirstChild(v7("\230\8\29\85\142\109\224\50\0\69\138\104\241\50\0\79\137\124\237", "\30\148\109\108\32\235")) then
+									v18.request_leave_lobby:InvokeServer(v2927.Name);
+								end
+							end
+						end
 					end
 				end
+				v921 = require(game:GetService(v7("\38\66\1\83\29\68\16\75\17\67\34\75\27\85\16\88\17", "\63\116\39\113")).src.Loader);
+				v918 = 5 - 3;
 			end
-			return v441 or (v55.MatchmakingActive == true);
+			if (v918 == (1635 - (670 + 963))) then
+				v922 = v921.load_client_service(nil, v7("\20\95\197\238\9\27\173\42\70\206\239\21\11\164\49\85\201\248", "\200\88\48\167\140\112\72"));
+				if (v922 and v922.cancel_selections) then
+					v922.cancel_selections();
+				end
+				break;
+			end
 		end
-		if (v438 == (1 - 0)) then
-			v441 = (v440 and v440.Enabled and v440:FindFirstChild(v7("\54\232\125\14\31", "\172\112\154\28\99\122\153")) and v440.Frame.Visible) == true;
-			if (v55.MatchmakingActive and ((tick() - (v55.LastMatchmakingAttempt or 0)) > 30)) then
-				v55.MatchmakingActive = false;
+	end);
+end;
+local function v118(v433)
+	local v434 = 0;
+	while true do
+		if (v434 == (0 + 0)) then
+			if (not v433 or not v433.Parent) then
+				return;
 			end
-			v438 = 2;
+			task.spawn(function()
+				local v1891 = v433:WaitForChild(v7("\225\95\56\191\225\202\95", "\130\162\62\72\203"), 1102 - (1034 + 65));
+				local v1892 = v433:WaitForChild(v7("\151\174\173\117\165\143\247", "\157\195\215\221\16\231\224\143"), 52 - (5 + 44));
+				local v1893 = v433:WaitForChild(v7("\93\204\31\152\236\113\241\4\128\231\122\203", "\131\31\185\107\236"), 1 + 2);
+				local v1894 = v1893 and v1893:WaitForChild(v7("\146\174\89", "\68\203\203\42"), 48 - (25 + 20));
+				if not (v1891 and v1892 and v1894) then
+					return;
+				end
+				local v1895 = "";
+				for v2183 = 1, 40 do
+					v1895 = tostring(v1891.Text):gsub(v7("\6\68\62", "\185\35\55\21"), "");
+					if (#v1895 > (0 - 0)) then
+						break;
+					end
+					task.wait(1975.03 - (1535 + 440));
+				end
+				if (#v1895 == (0 - 0)) then
+					return;
+				end
+				v1892.Text = v1895;
+				task.wait(619.04 - (477 + 142));
+				if (typeof(getconnections) == v7("\181\236\177\135\167\240\176\138", "\228\211\153\223")) then
+					local v2427 = 1344 - (1324 + 20);
+					while true do
+						if (v2427 == (0 + 0)) then
+							for v3197, v3198 in ipairs(getconnections(v1894.Activated)) do
+								pcall(function()
+									v3198:Fire();
+								end);
+							end
+							for v3199, v3200 in ipairs(getconnections(v1894.MouseButton1Click)) do
+								pcall(function()
+									v3200:Fire();
+								end);
+							end
+							break;
+						end
+					end
+				end
+				if (typeof(firesignal) == v7("\82\250\86\62\46\15\91\225", "\102\52\143\56\93\90")) then
+					local v2428 = 0 - 0;
+					while true do
+						if (v2428 == (0 + 0)) then
+							pcall(function()
+								firesignal(v1894.Activated);
+							end);
+							pcall(function()
+								firesignal(v1894.MouseButton1Click);
+							end);
+							break;
+						end
+					end
+				end
+			end);
+			break;
 		end
 	end
+end
+local function v119()
+	task.spawn(function()
+		pcall(function()
+			local v1383 = 0 - 0;
+			local v1384;
+			local v1385;
+			local v1386;
+			while true do
+				if (v1383 == 0) then
+					v1384 = 0;
+					v1385 = nil;
+					v1383 = 1619 - (818 + 800);
+				end
+				if (v1383 == (230 - (163 + 66))) then
+					v1386 = nil;
+					while true do
+						if (v1384 == 1) then
+							if v1386 then
+								v1386._last_matchmaking_captcha_success = tick() + (4872815 - 3872816);
+								if not v1386._original_show_captcha then
+									local v3359 = 0;
+									local v3360;
+									while true do
+										if (v3359 == (87 - (40 + 47))) then
+											v3360 = 0;
+											while true do
+												if (v3360 == (635 - (146 + 489))) then
+													v1386._original_show_captcha = v1386._show_matchmaking_captcha;
+													v1386._show_matchmaking_captcha = function(v3609, v3610)
+														local v3611 = 0 + 0;
+														while true do
+															if (v3611 == 0) then
+																v3609.HAS_MATCHMAKING_PROMPT = false;
+																v3609._last_matchmaking_captcha_success = tick() + 999999;
+																v3611 = 1;
+															end
+															if (v3611 == 1) then
+																if v3610 then
+																	task.spawn(v3610);
+																end
+																break;
+															end
+														end
+													end;
+													break;
+												end
+											end
+											break;
+										end
+									end
+								end
+							end
+							break;
+						end
+						if (v1384 == (1387 - (499 + 888))) then
+							local v2928 = 0 + 0;
+							while true do
+								if (v2928 == (1 - 0)) then
+									v1384 = 1 - 0;
+									break;
+								end
+								if (v2928 == (0 - 0)) then
+									v1385 = require(game:GetService(v7("\116\18\176\36\236\69\22\180\45\225\117\3\175\58\228\65\18", "\133\38\119\192\72")).src.Loader);
+									v1386 = v1385.load_client_service(nil, v7("\208\148\93\200\242\179\98\242\244\164", "\155\151\193\20")).notification_windows_ui;
+									v2928 = 1 - 0;
+								end
+							end
+						end
+					end
+					break;
+				end
+			end
+		end);
+	end);
+	task.spawn(function()
+		local v923 = v17:WaitForChild(v7("\30\168\1\87\126\60\131\21\71", "\27\78\196\96\46"), 10);
+		if not v923 then
+			return;
+		end
+		local v924 = v923:WaitForChild(v7("\196\244\166\177\124\77\79\235\239\187\183\116\115\69\228\255\189\175\105", "\44\138\155\210\216\26\36"), 754 - (522 + 222));
+		local v925 = v924 and v924:WaitForChild(v7("\139\66\169\79\237\168", "\157\219\45\217\58"), 6 + 4);
+		if not v925 then
+			return;
+		end
+		local function v926(v1387)
+			if (not v1387 or not v1387.Parent) then
+				return;
+			end
+			if (v1387.Name == v7("\147\188\38\193\253\184\188\1\220\240\180\178\33", "\158\208\221\86\181")) then
+				v118(v1387);
+			elseif (v1387.Name == v7("\205\64\254\8\40\178\57\235\72\228\12\16\173\55\237\81\254", "\88\128\33\138\107\64\223")) then
+				local v2429 = v24.AutoFindMatchStory or v24.AutoFindMatchLegend or v24.AutoFindMatchRaid or v24.AutoFindMatchMansion or v24.AutoFindMatchChallenge or v24.AutoFindMatchDailyChallenge or v24.AutoFindMatchSummer or (v24.AutoJoinArtifact and (v24.ArtifactJoinMode == v7("\231\251\123\113\237\86\239\213\241\125", "\142\161\146\21\21\205\27")));
+				if v2429 then
+					task.spawn(function()
+						task.wait(1485.04 - (72 + 1413));
+						pcall(function()
+							local v3202 = 0;
+							local v3203;
+							local v3204;
+							while true do
+								if (v3202 == (1203 - (216 + 987))) then
+									v3203 = v1387:FindFirstChild(v7("\61\251\117\13", "\172\112\154\28\99\122\153")) and v1387.Main:FindFirstChild(v7("\233\226\180\10\196\249\179", "\126\171\151\192"));
+									v3204 = v3203 and v3203:FindFirstChild(v7("\19\31\237\31\15\247\88\53\23\247\27", "\57\94\126\153\124\103\154"));
+									v3202 = 1;
+								end
+								if (v3202 == 1) then
+									if v3204 then
+										local v3526 = 0;
+										while true do
+											if (v3526 == (0 + 0)) then
+												if (typeof(getconnections) == v7("\17\210\71\26\194\72\24\201", "\33\119\167\41\121\182")) then
+													local v3629 = 0 - 0;
+													while true do
+														if (v3629 == 0) then
+															for v3661, v3662 in ipairs(getconnections(v3204.Activated)) do
+																pcall(function()
+																	v3662:Fire();
+																end);
+															end
+															for v3663, v3664 in ipairs(getconnections(v3204.MouseButton1Click)) do
+																pcall(function()
+																	v3664:Fire();
+																end);
+															end
+															break;
+														end
+													end
+												end
+												if (typeof(firesignal) == v7("\65\161\53\85\191\90\19\54", "\88\39\212\91\54\203\51\124")) then
+													local v3630 = 1411 - (1300 + 111);
+													while true do
+														if (v3630 == 0) then
+															firesignal(v3204.Activated);
+															pcall(function()
+																firesignal(v3204.MouseButton1Click);
+															end);
+															break;
+														end
+													end
+												end
+												break;
+											end
+										end
+									end
+									break;
+								end
+							end
+						end);
+					end);
+				elseif v24.AutoJoinSummer then
+					task.spawn(function()
+						local v3291 = 1081 - (1055 + 26);
+						while true do
+							if (v3291 == (643 - (475 + 168))) then
+								task.wait(0.04);
+								pcall(function()
+									local v3527 = 1367 - (302 + 1065);
+									local v3528;
+									local v3529;
+									while true do
+										if (v3527 == 0) then
+											v3528 = v1387:FindFirstChild(v7("\1\173\189\132", "\168\76\204\212\234\27\174")) and v1387.Main:FindFirstChild(v7("\174\17\39\80\6\232\93", "\46\236\100\83\36\105\134"));
+											v3529 = v3528 and v3528:FindFirstChild(v7("\9\246\134\153\178\0\53\245", "\111\89\154\231\224\225"));
+											v3527 = 1;
+										end
+										if (v3527 == (1 + 0)) then
+											if v3529 then
+												if (typeof(getconnections) == v7("\251\207\8\166\56\240\211\223", "\177\157\186\102\197\76\153\188")) then
+													local v3649 = 0 + 0;
+													local v3650;
+													while true do
+														if ((0 + 0) == v3649) then
+															v3650 = 0;
+															while true do
+																if ((1318 - (917 + 401)) == v3650) then
+																	for v3673, v3674 in ipairs(getconnections(v3529.Activated)) do
+																		pcall(function()
+																			v3674:Fire();
+																		end);
+																	end
+																	for v3675, v3676 in ipairs(getconnections(v3529.MouseButton1Click)) do
+																		pcall(function()
+																			v3676:Fire();
+																		end);
+																	end
+																	break;
+																end
+															end
+															break;
+														end
+													end
+												end
+												if (typeof(firesignal) == v7("\164\171\46\172\182\183\47\161", "\207\194\222\64")) then
+													local v3651 = 1270 - (631 + 639);
+													while true do
+														if (0 == v3651) then
+															firesignal(v3529.Activated);
+															pcall(function()
+																firesignal(v3529.MouseButton1Click);
+															end);
+															break;
+														end
+													end
+												end
+											end
+											break;
+										end
+									end
+								end);
+								break;
+							end
+						end
+					end);
+				end
+			end
+		end
+		v925.ChildAdded:Connect(v926);
+		for v1388, v1389 in ipairs(v925:GetChildren()) do
+			v926(v1389);
+		end
+	end);
+end
+v119();
+local v120 = function()
+	local v435 = v17:FindFirstChild(v7("\43\121\214\89\141\193\60\96\222", "\179\123\21\183\32\232"));
+	local v436 = v435 and v435:FindFirstChild(v7("\235\34\216\62\187\15\199\40\197\51\180\55\239", "\98\166\67\172\93\211"));
+	local v437 = (v436 and v436.Enabled and v436:FindFirstChild(v7("\193\241\214\216\7", "\130\135\131\183\181\98\42")) and v436.Frame.Visible) == true;
+	if (v25.MatchmakingActive and ((tick() - (v25.LastMatchmakingAttempt or (1700 - (654 + 1046)))) > (18 + 12))) then
+		v25.MatchmakingActive = false;
+	end
+	if (v25.MatchFoundTime and ((tick() - v25.MatchFoundTime) > (1634 - (1007 + 592)))) then
+		v25.MatchFound = false;
+		v25.MatchFoundTime = nil;
+	end
+	return v437 or (v25.MatchmakingActive == true);
 end;
 task.spawn(function()
 	pcall(function()
-		local v912 = 0;
-		local v913;
-		local v914;
-		local v915;
-		local v916;
+		local v927 = 0 - 0;
+		local v928;
+		local v929;
+		local v930;
+		local v931;
 		while true do
-			if (v912 == (2 + 0)) then
-				v915 = v913:WaitForChild(v7("\129\5\39\71\1\235\79\135\13\61\67\54\227\64\136\1\55", "\46\236\100\83\36\105\134"), 10);
-				if v915 then
-					v915.OnClientEvent:Connect(function(v2745)
-						local v2746 = 0 - 0;
+			if (3 == v927) then
+				v931 = v928:WaitForChild(v7("\146\38\99\26\149\38\123\32\145\44\101\49\190\47\120\38\128\55\126\42\143", "\69\225\67\23"), 10);
+				if v931 then
+					v931.OnClientEvent:Connect(function()
+						v25.MatchFound = true;
+						v25.MatchFoundTime = tick();
+					end);
+				end
+				break;
+			end
+			if (v927 == (3 - 1)) then
+				v930 = v928:WaitForChild(v7("\163\210\1\42\8\163\210\30\32\14\169\236\16\39\4\171\215", "\96\206\179\117\73"), 10);
+				if v930 then
+					v930.OnClientEvent:Connect(function(v2780)
+						local v2781 = 0 + 0;
+						local v2782;
 						while true do
-							if (v2746 == (0 + 0)) then
-								v55.MatchmakingActive = false;
-								if v2745 then
-									local v3280 = 0 + 0;
-									while true do
-										if (v3280 == (1283 - (61 + 1222))) then
-											v55.MatchFound = true;
-											v55.MatchFoundTime = tick();
-											break;
+							if (v2781 == (0 - 0)) then
+								v2782 = 0 - 0;
+								while true do
+									if (v2782 == 0) then
+										v25.MatchmakingActive = false;
+										if v2780 then
+											v25.MatchFound = true;
+											v25.MatchFoundTime = tick();
 										end
+										break;
 									end
 								end
 								break;
@@ -5451,420 +5791,1041 @@ task.spawn(function()
 						end
 					end);
 				end
-				v912 = 1506 - (628 + 875);
+				v927 = 11 - 8;
 			end
-			if (v912 == (3 + 0)) then
-				v916 = v913:WaitForChild(v7("\42\255\147\191\149\10\53\255\151\143\147\27\6\246\136\131\128\27\48\245\137", "\111\89\154\231\224\225"), 19 - 9);
-				if v916 then
-					v916.OnClientEvent:Connect(function()
-						v55.MatchFound = true;
-						v55.MatchFoundTime = tick();
+			if (v927 == 1) then
+				v929 = v928:WaitForChild(v7("\166\15\8\90\163\3\29\82\162\0\27\102\184\26\29\75\191\11\24", "\57\203\110\124"), 332 - (26 + 296));
+				if v929 then
+					v929.OnClientEvent:Connect(function(v2783)
+						local v2784 = 0 + 0;
+						local v2785;
+						while true do
+							if (v2784 == (0 - 0)) then
+								v2785 = 0 + 0;
+								while true do
+									if ((817 - (418 + 399)) == v2785) then
+										v25.MatchmakingActive = true;
+										v25.MatchFound = false;
+										v2785 = 2 - 1;
+									end
+									if (v2785 == (1 + 0)) then
+										v25.MatchFoundTime = nil;
+										v25.CurrentMatchLevel = v2783;
+										break;
+									end
+								end
+								break;
+							end
+						end
 					end);
 				end
-				break;
+				v927 = 2;
 			end
-			if ((2 - 1) == v912) then
-				v914 = v913:WaitForChild(v7("\33\173\160\137\115\195\201\39\165\186\141\68\221\220\45\190\160\143\127", "\168\76\204\212\234\27\174"), 1932 - (590 + 1332));
-				if v914 then
-					v914.OnClientEvent:Connect(function(v2749)
-						v55.MatchmakingActive = true;
-						v55.MatchFound = false;
-						v55.MatchFoundTime = nil;
-						v55.CurrentMatchLevel = v2749;
-					end);
+			if (v927 == (707 - (314 + 393))) then
+				local v1897 = 0;
+				while true do
+					if (v1897 == (3 - 2)) then
+						v927 = 1;
+						break;
+					end
+					if (v1897 == 0) then
+						v928 = game:GetService(v7("\241\179\43\239\41\192\183\47\230\36\240\162\52\241\33\196\179", "\64\163\214\91\131")):WaitForChild(v7("\20\33\28\38\48\24\33\12\37", "\95\113\79\120\86"), 180 - (82 + 88)) and game:GetService(v7("\153\241\48\188\143\14\62\221\174\240\19\164\137\31\62\206\174", "\169\203\148\64\208\230\109\95")).endpoints:WaitForChild(v7("\219\18\20\164\47\9\3\242\199\40\5\190\35\30\50\242", "\134\168\119\102\210\74\123\92"), 10 + 0);
+						if not v928 then
+							return;
+						end
+						v1897 = 1;
+					end
 				end
-				v912 = 2;
-			end
-			if (v912 == (0 - 0)) then
-				v913 = game:GetService(v7("\249\242\176\18\194\244\161\10\206\243\147\10\196\229\161\25\206", "\126\171\151\192")):WaitForChild(v7("\59\16\253\12\8\243\87\42\13", "\57\94\126\153\124\103\154"), 33 - 23) and game:GetService(v7("\37\194\89\21\223\66\22\211\76\29\229\85\24\213\72\30\211", "\33\119\167\41\121\182")).endpoints:WaitForChild(v7("\84\177\41\64\174\65\35\44\72\139\56\90\162\86\18\44", "\88\39\212\91\54\203\51\124"), 24 - 14);
-				if not v913 then
-					return;
-				end
-				v912 = 1;
 			end
 		end
 	end);
 end);
-local v120 = function()
-	local v442 = 0;
-	while true do
-		if (v442 == 1) then
+local v121 = function()
+	if (v25.MatchFound or (v25.MatchFoundTime and ((tick() - v25.MatchFoundTime) < (182 - (95 + 52))))) then
+		return;
+	end
+	v25.MatchmakingActive = false;
+	pcall(function()
+		local v932 = v73();
+		if (v932 and v932.invoke_server) then
 			pcall(function()
-				local v1880 = 1626 - (173 + 1453);
-				local v1881;
-				local v1882;
+				v932.invoke_server(v7("\200\132\50\163\217\188\212\122\208\130\59\184\221\136\208\117\195", "\27\164\225\83\213\188\227\185"));
+			end);
+		end
+		if v18:FindFirstChild(v7("\132\10\131\232\194\183\2\131\234\196\128\2\131\245\206\134\8", "\167\232\111\226\158")) then
+			v18.leave_matchmaking:InvokeServer();
+		end
+		local v933 = require(game:GetService(v7("\118\33\63\20\18\94\241\165\65\32\28\12\20\79\241\182\65", "\209\36\68\79\120\123\61\144")).src.Loader);
+		local v934 = v933.load_client_service(nil, v7("\107\212\122\8\5\94\247\90\56\5", "\96\44\129\51\91"));
+		if (v934 and v934.matchmaking_ui) then
+			v934.matchmaking_ui:hide();
+		end
+	end);
+end;
+local v122 = function()
+	local v439 = 0;
+	local v440;
+	while true do
+		if (0 == v439) then
+			v440 = v24.AutoFindMatchStory or v24.AutoFindMatchLegend or v24.AutoFindMatchRaid or v24.AutoFindMatchMansion or v24.AutoFindMatchChallenge or v24.AutoFindMatchDailyChallenge or v24.AutoFindMatchSummer or (v24.AutoJoinArtifact and (v24.ArtifactJoinMode == v7("\51\6\2\162\179\197\242\1\12\4", "\147\117\111\108\198\147\136")));
+			if (not v440 and v120()) then
+				v121();
+			end
+			break;
+		end
+	end
+end;
+local v123 = function(v441)
+	if (not v441 or v25.LobbyJoining) then
+		return;
+	end
+	if (v120() or v25.MatchFound) then
+		return;
+	end
+	if (v25.MatchFoundTime and ((tick() - v25.MatchFoundTime) < (7 + 28))) then
+		return;
+	end
+	if ((tick() - (v25.LastMatchmakingAttempt or (0 + 0))) < 6) then
+		return;
+	end
+	v25.LastMatchmakingAttempt = tick();
+	v25.MatchmakingActive = true;
+	v25.MatchFound = false;
+	v25.CurrentMatchLevel = v441;
+	pcall(function()
+		v117();
+		task.wait(0.15 - 0);
+		local v935 = require(game:GetService(v7("\56\179\210\88\3\181\195\64\15\178\241\64\5\164\195\83\15", "\52\106\214\162")).src.Loader);
+		local v936 = v935.load_client_service(nil, v7("\34\58\247\151\244\23\25\215\167\244", "\145\101\111\190\196")).notification_windows_ui;
+		local v937 = v935.load_client_service(nil, v7("\119\248\168\223\74\66\219\136\239\74", "\47\48\173\225\140"));
+		if v936 then
+			local v1714 = 0;
+			while true do
+				if (v1714 == (833 - (8 + 825))) then
+					v936.HAS_MATCHMAKING_PROMPT = false;
+					v936._last_matchmaking_captcha_success = tick() + 591856 + 408143;
+					break;
+				end
+			end
+		end
+		local v938 = v73();
+		if (v938 and v938.invoke_server) then
+			pcall(function()
+				v938.invoke_server(v7("\81\200\144\205\46\191\87\242\140\217\63\175\75\192\128\211\34\162\68", "\204\35\173\225\184\75"), v441);
+			end);
+		end
+		if v18:FindFirstChild(v7("\252\65\242\152\227\181\26\209\73\226\153\229\174\3\239\79\234\131\225", "\110\142\36\131\237\134\198")) then
+			pcall(function()
+				v18.request_matchmaking:InvokeServer(v441);
+			end);
+		end
+		if (v937 and v937.matchmaking_ui) then
+			v937.matchmaking_ui:show(v441);
+		end
+	end);
+end;
+local v124 = function()
+	if (not v61() or v25.LobbyJoining) then
+		return;
+	end
+	if (v120() or v25.MatchFound) then
+		return;
+	end
+	if (v25.MatchFoundTime and ((tick() - v25.MatchFoundTime) < (1675 - (471 + 1169)))) then
+		return;
+	end
+	local v446 = game:GetService(v7("\75\76\178\233\61\105\83", "\88\27\32\211\144")).LocalPlayer;
+	if (v446 and v446:FindFirstChild(v7("\185\174\178\57\219\162\73\100\132\165\185\16\196\174\80", "\16\237\203\222\92\171\205\59")) and (v446.TeleportingLock.Value > (0 + 0))) then
+		return;
+	end
+	if ((tick() - (v25.LastLobbyCheck or 0)) < (1 + 0)) then
+		return;
+	end
+	v25.LastLobbyCheck = tick();
+	v26();
+	local v448 = v17.Character;
+	local v449 = v448 and v448:FindFirstChild(v7("\201\164\176\137\17\188\232\181\143\135\16\167\209\176\175\156", "\211\129\209\221\232\127"));
+	if not v449 then
+		return;
+	end
+	local function v450(v939)
+		local v940 = 0 - 0;
+		while true do
+			if (v940 == (2 - 1)) then
+				return nil;
+			end
+			if (v940 == (0 + 0)) then
+				if not v939 then
+					return nil;
+				end
+				for v2184, v2185 in ipairs(v939:GetChildren()) do
+					local v2186 = 0;
+					local v2187;
+					local v2188;
+					local v2189;
+					local v2190;
+					local v2191;
+					local v2192;
+					local v2193;
+					local v2194;
+					local v2195;
+					local v2196;
+					while true do
+						if (v2186 == (1 + 1)) then
+							v2195 = not v2190 or (v2190.Value == false);
+							v2196 = false;
+							if v2191 then
+								for v3292, v3293 in ipairs(v2191:GetChildren()) do
+									if (v3293.Name ~= v17.Name) then
+										v2196 = true;
+										break;
+									end
+								end
+							end
+							if (v2192 and v2193 and v2194 and v2195 and not v2196) then
+								return v2185;
+							end
+							break;
+						end
+						if (v2186 == (0 + 0)) then
+							v2187 = v2185:FindFirstChild(v7("\38\88\72\33\238", "\38\105\47\38\68\156\125\208"));
+							v2188 = v2185:FindFirstChild(v7("\173\131\177\77\234\45", "\72\236\224\197\36\156"));
+							v2189 = v2185:FindFirstChild(v7("\232\164\71\129\193\175", "\234\164\203\36"));
+							v2190 = v2185:FindFirstChild(v7("\63\232\140\39\156\81\99\102\2\227\135", "\18\107\141\224\66\236\62\17"));
+							v2186 = 1 + 0;
+						end
+						if (v2186 == (444 - (365 + 78))) then
+							local v2929 = 0;
+							while true do
+								if (v2929 == (223 - (200 + 23))) then
+									v2191 = v2185:FindFirstChild(v7("\155\163\29\238\174\189\15", "\151\203\207\124"));
+									v2192 = not v2187 or (v2187.Value == nil) or (v2187.Value == v17);
+									v2929 = 1;
+								end
+								if (v2929 == (1 + 0)) then
+									v2193 = not v2188 or (v2188.Value == false);
+									v2194 = not v2189 or (v2189.Value == false) or (v2187 and (v2187.Value == v17));
+									v2929 = 1 + 1;
+								end
+								if (v2929 == (2 + 0)) then
+									v2186 = 381 - (373 + 6);
+									break;
+								end
+							end
+						end
+					end
+				end
+				v940 = 1;
+			end
+		end
+	end
+	if (v24.AutoClaimArtifactRewards and v18:FindFirstChild(v7("\215\22\240\11\237\182\24\205\198\9\229\61\227\133\27\197\198\37\227\7\247\136\12\192\199", "\164\180\122\145\98\128\233\126"))) then
+		pcall(function()
+			v18.claim_first_clear_rewards:InvokeServer(v7("\186\22\15\196\189\5\24\217", "\173\219\100\123"));
+		end);
+	end
+	if ((v24.AutoJoinSummer or v24.AutoFindMatchSummer) and not v25.LobbyJoining) then
+		local v1393 = false;
+		pcall(function()
+			local v1715 = 0 - 0;
+			local v1716;
+			while true do
+				if (v1715 == (0 - 0)) then
+					v1716 = getgenv().XT_AnimeAdventures;
+					if (v1716 and v1716.Lobby and v1716.Lobby.SummerNow) then
+						local v2930 = 0;
+						local v2931;
+						while true do
+							if (v2930 == (922 - (519 + 403))) then
+								v2931 = v1716.Lobby.SummerNow();
+								if (v2931 and (typeof(v2931) == v7("\160\41\78\7\22", "\115\212\72\44\107"))) then
+									local v3422 = 0;
+									local v3423;
+									local v3424;
+									while true do
+										if (v3422 == (1521 - (1435 + 86))) then
+											local v3560 = 177 - (97 + 80);
+											while true do
+												if (v3560 == 0) then
+													v3423 = v2931.Map or v2931.map;
+													v3424 = v2931.Weather or v2931.weather;
+													v3560 = 1 - 0;
+												end
+												if (v3560 == (703 - (366 + 336))) then
+													v3422 = 1;
+													break;
+												end
+											end
+										end
+										if (v3422 == (606 - (4 + 601))) then
+											if (v3423 and v24.SummerSkipMaps and (v24.SummerSkipMaps[v3423] or table.find(v24.SummerSkipMaps, v3423))) then
+												v1393 = true;
+											end
+											if (v3424 and v24.SummerSkipWeather and (v24.SummerSkipWeather[v3424] or table.find(v24.SummerSkipWeather, v3424))) then
+												v1393 = true;
+											end
+											break;
+										end
+									end
+								end
+								break;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end);
+		if v1393 then
+			if v120() then
+				v121();
+			end
+		else
+			if v24.AutoFindMatchSummer then
+				local v2433 = 0;
+				local v2434;
 				while true do
-					if (v1880 == (849 - (237 + 611))) then
-						v1882 = v1881.load_client_service(nil, v7("\60\64\254\115\141\193\13\124\212\69", "\179\123\21\183\32\232"));
-						if (v1882 and v1882.matchmaking_ui) then
-							v1882.matchmaking_ui:hide();
+					if (v2433 == (0 + 0)) then
+						v2434 = 668 - (128 + 540);
+						while true do
+							if (v2434 == 0) then
+								v123(v7("\159\250\89\127\248\60\252\123\137\249\81\124\233", "\36\236\143\52\18\157\78\206"));
+								return;
+							end
 						end
 						break;
 					end
-					if ((0 + 0) == v1880) then
-						if v17:FindFirstChild(v7("\241\223\7\179\41\198\209\208\233\217\14\168\45\242\213\223\250", "\177\157\186\102\197\76\153\188")) then
-							v17.leave_matchmaking:InvokeServer();
-						end
-						v1881 = require(game:GetService(v7("\144\187\48\163\171\189\33\187\167\186\19\187\173\172\33\168\167", "\207\194\222\64")).src.Loader);
-						v1880 = 1;
-					end
-				end
-			end);
-			break;
-		end
-		if (v442 == (0 + 0)) then
-			if (v55.MatchFound or (v55.MatchFoundTime and ((tick() - v55.MatchFoundTime) < (134 - 99)))) then
-				return;
-			end
-			v55.MatchmakingActive = false;
-			v442 = 1 + 0;
-		end
-	end
-end;
-local v121 = function()
-	local v443 = 0;
-	local v444;
-	while true do
-		if (v443 == (0 - 0)) then
-			v444 = v44.AutoFindMatchStory or v44.AutoFindMatchLegend or v44.AutoFindMatchRaid or v44.AutoFindMatchMansion or v44.AutoFindMatchChallenge or v44.AutoFindMatchDailyChallenge or v44.AutoFindMatchSummer or (v44.AutoJoinArtifact and (v44.ArtifactJoinMode == v7("\224\42\194\57\243\47\199\55\207\53", "\98\166\67\172\93\211")));
-			if (not v444 and v119()) then
-				v120();
-			end
-			break;
-		end
-	end
-end;
-local v122 = function(v445)
-	local v446 = 0 - 0;
-	local v447;
-	while true do
-		if ((375 - (129 + 246)) == v446) then
-			v447 = 0 - 0;
-			while true do
-				if (v447 == (1092 - (83 + 1009))) then
-					if (not v445 or v55.LobbyJoining) then
-						return;
-					end
-					if (v119() or v55.MatchFound) then
-						return;
-					end
-					v447 = 874 - (506 + 367);
-				end
-				if (1 == v447) then
-					if (v55.MatchFoundTime and ((tick() - v55.MatchFoundTime) < (167 - 132))) then
-						return;
-					end
-					if ((tick() - (v55.LastMatchmakingAttempt or (0 + 0))) < 15) then
-						return;
-					end
-					v447 = 360 - (72 + 286);
-				end
-				if (v447 == 2) then
-					v55.LastMatchmakingAttempt = tick();
-					v55.MatchmakingActive = true;
-					v447 = 3;
-				end
-				if (v447 == (3 + 0)) then
-					v55.MatchFound = false;
-					pcall(function()
-						v116();
-						task.wait(134.15 - (107 + 27));
-						local v2754 = require(game:GetService(v7("\213\230\199\217\11\73\227\243\230\211\230\22\69\240\230\228\210", "\130\135\131\183\181\98\42")).src.Loader);
-						local v2755 = v2754.load_client_service(nil, v7("\228\131\18\208\37\209\160\50\224\37", "\64\163\214\91\131")).notification_windows_ui;
-						local v2756 = v2754.load_client_service(nil, v7("\54\26\49\5\58\3\57\17\53\58", "\95\113\79\120\86"));
-						if v2755 then
-							v2755.HAS_MATCHMAKING_PROMPT = false;
-							v2755._last_matchmaking_captcha_success = tick() + 612 + 999387;
-						end
-						if v17:FindFirstChild(v7("\185\241\49\165\131\30\43\246\166\245\52\179\142\0\62\194\162\250\39", "\169\203\148\64\208\230\109\95")) then
-							v17.request_matchmaking:InvokeServer(v445);
-						end
-						if (v2756 and v2756.matchmaking_ui) then
-							v2756.matchmaking_ui:show(v445);
-						end
-					end);
-					break;
 				end
 			end
-			break;
-		end
-	end
-end;
-local v123 = function()
-	if (not v59() or v55.LobbyJoining) then
-		return;
-	end
-	if (v119() or v55.MatchFound) then
-		return;
-	end
-	if (v55.MatchFoundTime and ((tick() - v55.MatchFoundTime) < (63 - 28))) then
-		return;
-	end
-	local v448 = game:GetService(v7("\248\27\7\171\47\9\47", "\134\168\119\102\210\74\123\92")).LocalPlayer;
-	if (v448 and v448:FindFirstChild(v7("\159\11\16\92\187\1\14\77\162\0\27\117\164\13\23", "\57\203\110\124")) and (v448.TeleportingLock.Value > (0 - 0))) then
-		return;
-	end
-	if ((tick() - (v55.LastLobbyCheck or (0 + 0))) < 1) then
-		return;
-	end
-	v55.LastLobbyCheck = tick();
-	v115();
-	local v450 = v16.Character;
-	local v451 = v450 and v450:FindFirstChild(v7("\134\198\24\40\14\161\218\17\27\15\161\199\37\40\18\186", "\96\206\179\117\73"));
-	if not v451 then
-		return;
-	end
-	local function v452(v917)
-		local v918 = 0 - 0;
-		while true do
-			if (v918 == (0 - 0)) then
-				if not v917 then
-					return nil;
+			if v24.AutoJoinSummer then
+				if v120() then
+					v121();
 				end
-				for v2204, v2205 in ipairs(v917:GetChildren()) do
-					local v2206 = v2205:FindFirstChild(v7("\174\52\121\32\147", "\69\225\67\23"));
-					local v2207 = v2205:FindFirstChild(v7("\229\130\39\188\202\134", "\27\164\225\83\213\188\227\185"));
-					local v2208 = v2205:FindFirstChild(v7("\164\0\129\245\194\140", "\167\232\111\226\158"));
-					local v2209 = v2205:FindFirstChild(v7("\112\33\35\29\11\82\226\165\77\42\40", "\209\36\68\79\120\123\61\144"));
-					local v2210 = v2205:FindFirstChild(v7("\124\237\82\34\5\94\242", "\96\44\129\51\91"));
-					local v2211 = not v2206 or (v2206.Value == nil) or (v2206.Value == v16);
-					local v2212 = not v2207 or (v2207.Value == false);
-					local v2213 = not v2208 or (v2208.Value == false) or (v2206 and (v2206.Value == v16));
-					local v2214 = not v2209 or (v2209.Value == false);
-					local v2215 = false;
-					if v2210 then
-						for v2869, v2870 in ipairs(v2210:GetChildren()) do
-							if (v2870.Name ~= v16.Name) then
-								v2215 = true;
-								break;
-							end
-						end
-					end
-					if (v2211 and v2212 and v2213 and v2214 and not v2215) then
-						return v2205;
-					end
-				end
-				v918 = 1;
-			end
-			if (v918 == (396 - (304 + 91))) then
-				return nil;
-			end
-		end
-	end
-	if (v44.AutoClaimArtifactRewards and v17:FindFirstChild(v7("\22\3\13\175\254\215\245\28\29\31\178\204\235\255\16\14\30\153\225\237\228\20\29\8\181", "\147\117\111\108\198\147\136"))) then
-		pcall(function()
-			v17.claim_first_clear_rewards:InvokeServer(v7("\11\164\214\93\12\183\193\64", "\52\106\214\162"));
-		end);
-	end
-	if (v44.AutoJoinStory or v44.AutoFindMatchStory or v44.JoinLastAct) then
-		local v1345 = v111[v44.StoryWorld] or v7("\11\14\211\161\250", "\145\101\111\190\196");
-		local v1346 = v44.StoryDifficulty or v7("\126\194\147\225\78\92", "\47\48\173\225\140");
-		local v1347 = v44.StoryFriendsOnly == true;
-		local v1348;
-		if (v44.StoryAct == v7("\106\195\135\209\37\165\87\200", "\204\35\173\225\184\75")) then
-			local v1883 = 0 + 0;
-			local v1884;
-			while true do
-				if (v1883 == (0 - 0)) then
-					v1884 = 0;
+				local function v2435(v2786)
+					local v2787 = 0;
 					while true do
-						if (v1884 == (0 + 0)) then
-							v1348 = v1345 .. v7("\209\77\237\139\239\168\7\250\65", "\110\142\36\131\237\134\198");
-							v1346 = v7("\83\65\161\244", "\88\27\32\211\144");
-							break;
-						end
-					end
-					break;
-				end
-			end
-		elseif v44.JoinLastAct then
-			local v2464 = 0 - 0;
-			while true do
-				if (v2464 == (1560 - (648 + 912))) then
-					v1348 = v1345 .. v7("\178\167\187\42\206\161\100\38", "\16\237\203\222\92\171\205\59");
-					v1346 = v44.StoryDifficulty or v7("\207\190\175\133\30\191", "\211\129\209\221\232\127");
-					break;
-				end
-			end
-		else
-			local v2465 = tonumber(string.match(v44.StoryAct or "1", v7("\76\75\13", "\38\105\47\38\68\156\125\208"))) or (2 - 1);
-			v1348 = v1345 .. v7("\179\140\160\82\249\36\179", "\72\236\224\197\36\156") .. tostring(v2465);
-		end
-		if v44.AutoFindMatchStory then
-			local v1885 = 0 - 0;
-			while true do
-				if (v1885 == (445 - (206 + 239))) then
-					v122(v1348);
-					return;
-				end
-			end
-		end
-		local v1349 = v9:FindFirstChild(v7("\251\135\107\168\230\130\97\185", "\234\164\203\36"));
-		local v1350 = v1349 and v1349:FindFirstChild(v7("\56\249\143\48\149", "\18\107\141\224\66\236\62\17"));
-		local v1351 = v452(v1350);
-		if (v1351 and v1351:FindFirstChild(v7("\187\189\21\250\170\189\5", "\151\203\207\124"))) then
-			v55.LobbyJoining = true;
-			task.spawn(function()
-				if ((v451.Position - v1351.primary.Position).Magnitude > 12) then
-					v451.CFrame = v1351.primary.CFrame + Vector3.new(0, 1423 - (956 + 464), 0);
-					task.wait(268.35 - (159 + 109));
-				end
-				pcall(function()
-					if v17:FindFirstChild(v7("\198\31\224\23\229\154\10\251\222\21\248\12\223\133\17\198\214\3", "\164\180\122\145\98\128\233\126")) then
-						v17.request_join_lobby:InvokeServer(v1351.Name);
-					end
-					task.wait(0.25 + 0);
-					local v2466 = false;
-					if v17:FindFirstChild(v7("\169\1\10\216\190\23\15\242\183\11\24\198\132\8\30\219\190\8", "\173\219\100\123")) then
-						local v2871 = 679 - (239 + 440);
-						local v2872;
-						while true do
-							if (v2871 == (2 - 1)) then
-								if (not v2466 and v1351 and v1351:FindFirstChild(v7("\124\68\46\74\243", "\159\48\33\88\47")) and (v1351.Level.Value == v1348)) then
-									v2466 = true;
-								end
-								break;
+						if (v2787 == (569 - (341 + 228))) then
+							if not v2786 then
+								return nil;
 							end
-							if (v2871 == 0) then
-								v2872 = v17.request_lock_level:InvokeServer(v1351.Name, v1348, v1347, v1346);
-								if ((v2872 == true) or (v2872 == v7("\167\61\79\8\22\167\59", "\115\212\72\44\107"))) then
-									v2466 = true;
-								elseif (type(v2872) == v7("\152\238\86\126\248", "\36\236\143\52\18\157\78\206")) then
-									if ((v2872.lock == true) or (v2872.success == true)) then
-										v2466 = true;
-									elseif ((v2872.lock ~= false) and not v2872.messages and not v2872.error) then
-										v2466 = true;
-									end
-								end
-								v2871 = 1 + 0;
-							end
+							return v2786.PrimaryPart or v2786:FindFirstChild(v7("\64\83\49\66\254\66\88", "\159\48\33\88\47")) or v2786:FindFirstChild(v7("\59\77\22\224", "\87\127\34\121\146\211\129\87")) or v2786:FindFirstChild(v7("\132\244\145", "\20\203\129\229\140\69\94\175")) or v2786:FindFirstChild(v7("\156\206\93\56\246\210\160\212\64\55\227\210\174\212\64", "\130\207\166\52\86\143")) or v2786:FindFirstChild(v7("\100\95\28\227\154\119\32\94\92\28\255\167", "\65\42\58\115\141\202\27")) or v2786:FindFirstChildWhichIsA(v7("\105\5\70\196\31\74\22\65", "\79\43\100\53\161"));
 						end
 					end
-					if v2466 then
-						local v2873 = 1728 - (1664 + 64);
-						local v2874;
-						while true do
-							if (v2873 == 0) then
-								v2874 = 0 + 0;
-								while true do
-									if (v2874 == 1) then
-										if v17:FindFirstChild(v7("\189\195\69\35\234\241\187\249\71\34\238\240\187\249\83\55\226\231", "\130\207\166\52\86\143")) then
-											v17.request_start_game:InvokeServer(v1351.Name);
-										end
-										break;
-									end
-									if (v2874 == 0) then
-										if (v44.WorldSkip and (v44.StoryAct ~= v7("\54\76\31\251\189\232\35\50", "\87\127\34\121\146\211\129\87")) and v17:FindFirstChild(v7("\167\238\135\238\60\1\216\123\185\237\129\211\54\53\198\100", "\20\203\129\229\140\69\94\175"))) then
-											task.wait(0.2 + 0);
-											v17.lobby_world_skip:InvokeServer(v1351.Name);
-										end
-										task.wait(0.35 - 0);
-										v2874 = 1 + 0;
-									end
-								end
-								break;
-							end
+				end
+				local function v2436()
+					local v2788 = {};
+					local v2789 = v9:FindFirstChild(v7("\207\225\249\106\122\120\9\103\216\229\227\99\113\98\17\97\195", "\36\144\164\175\47\52\44\86"));
+					if v2789 then
+						local v3057 = v2789:FindFirstChild(v7("\28\0\249\166\118\53\28", "\31\80\111\155\196"));
+						if v3057 then
+							table.insert(v2788, v3057);
 						end
-					elseif v17:FindFirstChild(v7("\88\95\2\248\175\104\53\117\86\22\236\188\126\30\70\85\17\239\179", "\65\42\58\115\141\202\27")) then
-						v17.request_leave_lobby:InvokeServer(v1351.Name);
+						table.insert(v2788, v2789);
 					end
-				end);
-				task.wait(1 + 1);
-				v55.LobbyJoining = false;
-			end);
-			return;
-		end
-	end
-	if (v44.AutoJoinDailyChallenge or v44.AutoFindMatchDailyChallenge) then
-		local v1352 = 1514 - (1421 + 93);
-		local v1353;
-		local v1354;
-		local v1355;
-		while true do
-			if (v1352 == (7 - 5)) then
-				if (v1355 and v1355:FindFirstChild(v7("\67\75\232\217\46\65\64", "\79\51\57\129\180"))) then
-					v55.LobbyJoining = true;
-					task.spawn(function()
-						if ((v451.Position - v1355.primary.Position).Magnitude > 12) then
-							v451.CFrame = v1355.primary.CFrame + Vector3.new(0, 3, 0);
-							task.wait(1148.4 - (1049 + 99));
-						end
-						pcall(function()
-							local v2974 = 0 + 0;
+					local v2790 = v9:FindFirstChild(v7("\108\117\206\246\13\122\124\210", "\79\51\57\129\180"));
+					if v2790 then
+						for v3205, v3206 in ipairs({v7("\18\164\53\86\205", "\185\87\210\80\56"),v7("\245\5\163\85\120\235", "\53\166\112\206\56\29\153"),v7("\65\6\91\7\240\61\90\6\88\30", "\79\18\115\54\106\149"),v7("\121\71\67\83\32\111\223", "\198\42\50\46\62\69\29\237")}) do
+							local v3207 = 0;
+							local v3208;
 							while true do
-								if (v2974 == (0 + 0)) then
-									if v17:FindFirstChild(v7("\37\183\33\77\220\36\166\15\82\214\62\188\15\84\214\53\176\41", "\185\87\210\80\56")) then
-										v17.request_join_lobby:InvokeServer(v1355.Name);
-									end
-									task.wait(0.3);
-									v2974 = 1 + 0;
-								end
-								if (v2974 == (1249 - (871 + 377))) then
-									if v17:FindFirstChild(v7("\212\21\191\77\120\234\65\249\3\186\89\111\237\106\193\17\163\93", "\53\166\112\206\56\29\153")) then
-										v17.request_start_game:InvokeServer(v1355.Name);
+								if (v3207 == (0 + 0)) then
+									v3208 = v2790:FindFirstChild(v3206);
+									if v3208 then
+										table.insert(v2788, v3208);
 									end
 									break;
 								end
 							end
+						end
+					end
+					local v2791 = v9:FindFirstChild(v7("\253\159\32\28\6\148\49\122\240\159\55", "\59\162\218\118\89\72\192\110"));
+					if v2791 then
+						local v3058 = v2791:FindFirstChild(v7("\169\241\178\93\65\4\97", "\97\229\158\208\63\40\97\18"));
+						if v3058 then
+							table.insert(v2788, v3058);
+						end
+						table.insert(v2788, v2791);
+					end
+					local v2792 = v9:FindFirstChild(v7("\18\253\71\107\161\8\252", "\236\77\174\18\38"));
+					if v2792 then
+						local v3059 = 0;
+						local v3060;
+						while true do
+							if (v3059 == (1352 - (1329 + 22))) then
+								table.insert(v2788, v2792);
+								break;
+							end
+							if (v3059 == (703 - (27 + 676))) then
+								v3060 = v2792:FindFirstChild(v7("\172\82\205\23\137\88\220", "\117\224\61\175"));
+								if v3060 then
+									table.insert(v2788, v3060);
+								end
+								v3059 = 3 - 2;
+							end
+						end
+					end
+					for v2932, v2933 in ipairs(v2788) do
+						for v3061, v3062 in ipairs(v2933:GetChildren()) do
+							if v3062:IsA(v7("\198\72\194\141\231", "\232\139\39\166")) then
+								local v3294 = v2435(v3062);
+								if v3294 then
+									local v3425 = v3062:FindFirstChild(v7("\207\84\69\64\123", "\162\131\49\51\37\23"));
+									local v3426 = v3062.Name:lower():find(v7("\90\111\251\36\96", "\20\63\25\158\74")) or v3062.Name:lower():find(v7("\105\207\81\160\122\194", "\217\26\186\60\205\31\176\72")) or (v3425 and tostring(v3425.Value):lower():find(v7("\200\100\11\225\222\99", "\140\187\17\102")));
+									if v3426 then
+										local v3532 = v3062:FindFirstChild(v7("\3\156\170\68\62", "\33\76\235\196"));
+										local v3533 = v3062:FindFirstChild(v7("\41\233\230\86\186\53", "\229\104\138\146\63\204\80\229"));
+										local v3534 = v3062:FindFirstChild(v7("\140\114\29\194\165\121", "\169\192\29\126"));
+										local v3535 = v3062:FindFirstChild(v7("\5\192\9\142\33\202\23\159\56\203\2", "\235\81\165\101"));
+										local v3536 = v3062:FindFirstChild(v7("\72\136\94\0\128\22\223", "\172\24\228\63\121\229\100"));
+										local v3537 = not v3532 or (v3532.Value == nil) or (v3532.Value == v17);
+										local v3538 = not v3533 or (v3533.Value == false);
+										local v3539 = not v3534 or (v3534.Value == false) or (v3532 and (v3532.Value == v17));
+										local v3540 = not v3535 or (v3535.Value == false);
+										local v3541 = false;
+										if v3536 then
+											for v3587, v3588 in ipairs(v3536:GetChildren()) do
+												if (v3588.Name ~= v17.Name) then
+													v3541 = true;
+													break;
+												end
+											end
+										end
+										if (v3537 and v3538 and v3539 and v3540 and not v3541) then
+											local v3571 = "";
+											local v3572 = "";
+											pcall(function()
+												local v3589 = 0 - 0;
+												local v3590;
+												local v3591;
+												local v3592;
+												while true do
+													if (v3589 == 1) then
+														v3591 = v3062:FindFirstChild(v7("\10\232\70\214\228\238\47", "\139\93\141\39\162\140"));
+														if (v3591 and v3591:IsA(v7("\31\183\27\222\16\43\149\8\219\11\41", "\126\76\195\105\183"))) then
+															v3572 = v3591.Value;
+														end
+														v3589 = 2;
+													end
+													if (v3589 == (1693 - (219 + 1472))) then
+														v3592 = v3062:FindFirstChild(v7("\123\65\162\119\80\183\74\68\176\104", "\212\63\40\196\17\57"), true);
+														if (v3592 and v3592:IsA(v7("\157\206\232\238\133\202\242\255\165", "\154\201\171\144")) and (v3572 == "")) then
+															v3572 = v3592.Text;
+														end
+														break;
+													end
+													if (v3589 == 0) then
+														local v3643 = 0;
+														while true do
+															if (v3643 == (0 + 0)) then
+																v3590 = v3062:FindFirstChild(v7("\167\79\197\227\139\67\208", "\173\234\46\181"), true);
+																if (v3590 and v3590:IsA(v7("\235\55\243\43\15\222\48\238\51", "\67\191\82\139\95"))) then
+																	v3571 = v3590.Text;
+																end
+																v3643 = 1 + 0;
+															end
+															if (v3643 == (389 - (162 + 226))) then
+																v3589 = 1 - 0;
+																break;
+															end
+														end
+													end
+												end
+											end);
+											local v3573 = false;
+											if ((type(v24.SummerSkipMaps) == v7("\150\239\170\193\179", "\221\226\142\200\173\214\111\223")) and (#v24.SummerSkipMaps > (0 + 0)) and (v3571 ~= "")) then
+												for v3631, v3632 in ipairs(v24.SummerSkipMaps) do
+													if (v3571:lower():find(v3632:lower()) or v3632:lower():find(v3571:lower())) then
+														v3573 = true;
+														break;
+													end
+												end
+											end
+											local v3574 = false;
+											if ((type(v24.SummerSkipWeather) == v7("\26\79\189\61\173", "\200\110\46\223\81")) and (#v24.SummerSkipWeather > (0 - 0)) and (v3572 ~= "")) then
+												local v3612 = {[v7("\3\73\56\49\48\197\67\2\66\46", "\34\118\39\92\84\66\178")]=v7("\77\132\62\13\42\172\203", "\19\43\232\81\98\78\201\175"),[v7("\77\223\247\169\192\232\142", "\234\43\179\152\198\164\141")]=v7("\163\86\115\209\131\182\201", "\231\197\58\28\190\231\211\173"),[v7("\81\222\55\54\205\141\65\214", "\236\51\178\94\76\183")]=v7("\232\193\219\89\240\204\192\71", "\35\138\173\178"),[v7("\194\15\77\221\64", "\29\161\99\40\188\50")]=v7("\122\38\165\230\28", "\140\25\74\192\135\110\90\106"),[v7("\43\95\66\247\184\172\45", "\194\66\49\36\146\202")]=v7("\130\63\203\7\215\133\62", "\165\235\81\173\98"),[v7("\38\132\174\63\186\229\39", "\132\75\229\201\86\217")]=v7("\143\115\162\172\129\115\169", "\197\226\18\197")};
+												local v3613 = v3612[v3572:lower()] or v3572:lower();
+												for v3633, v3634 in ipairs(v24.SummerSkipWeather) do
+													local v3635 = v3612[v3634:lower()] or v3634:lower();
+													if (v3613:find(v3635) or v3635:find(v3613)) then
+														v3574 = true;
+														break;
+													end
+												end
+											end
+											if (not v3573 and not v3574) then
+												return v3062, v3294;
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+					return nil, nil;
+				end
+				local v2437, v2438 = v2436();
+				if (v2437 and v2438) then
+					local v2934 = 890 - (224 + 666);
+					while true do
+						local v3063 = 0;
+						while true do
+							if (v3063 == 0) then
+								if (v2934 == 0) then
+									v25.LobbyJoining = true;
+									task.spawn(function()
+										local v3542 = 1680 - (345 + 1335);
+										while true do
+											if (v3542 == 1) then
+												task.wait(2.5 + 0);
+												v25.LobbyJoining = false;
+												break;
+											end
+											if (v3542 == (0 - 0)) then
+												if ((v449.Position - v2438.Position).Magnitude > 12) then
+													v449.CFrame = v2438.CFrame + Vector3.new(0 - 0, 3 + 0, 365 - (18 + 347));
+													task.wait(0.35);
+												end
+												pcall(function()
+													local v3614 = 972 - (556 + 416);
+													local v3615;
+													while true do
+														if (v3614 == (1699 - (797 + 902))) then
+															local v3652 = 0;
+															while true do
+																if (v3652 == (0 + 0)) then
+																	v3615 = v73();
+																	if (v3615 and v3615.invoke_server) then
+																		v3615.invoke_server(v7("\14\212\16\68\25\194\21\110\22\222\8\95\35\221\14\83\30\200", "\49\124\177\97"), v2437.Name);
+																	elseif v18:FindFirstChild(v7("\146\56\209\171\133\46\212\129\138\50\201\176\191\49\207\188\130\36", "\222\224\93\160")) then
+																		v18.request_join_lobby:InvokeServer(v2437.Name);
+																	end
+																	v3652 = 4 - 3;
+																end
+																if (v3652 == (3 - 2)) then
+																	v3614 = 1073 - (632 + 440);
+																	break;
+																end
+															end
+														end
+														if (1 == v3614) then
+															task.wait(0.3 - 0);
+															if (v3615 and v3615.invoke_server) then
+																v3615.invoke_server(v7("\249\248\99\52\61\248\233\77\50\44\234\239\102\30\63\234\240\119", "\88\139\157\18\65"), v2437.Name);
+															elseif v18:FindFirstChild(v7("\88\31\3\4\206\89\14\45\2\223\75\8\6\46\204\75\23\23", "\171\42\122\114\113")) then
+																v18.request_start_game:InvokeServer(v2437.Name);
+															end
+															break;
+														end
+													end
+												end);
+												v3542 = 1210 - (705 + 504);
+											end
+										end
+									end);
+									v2934 = 1;
+								end
+								if (v2934 == 1) then
+									return;
+								end
+								break;
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	if (v24.AutoJoinStory or v24.AutoFindMatchStory or v24.JoinLastAct) then
+		local v1394 = v113[v24.StoryWorld] or v7("\131\169\193\231\134", "\130\237\200\172");
+		local v1395 = v24.StoryDifficulty or v7("\8\223\188\3\39\220", "\110\70\176\206");
+		local v1396 = v24.StoryFriendsOnly == true;
+		local v1397;
+		if (v24.StoryAct == v7("\92\30\59\226\52\124\4\56", "\90\21\112\93\139")) then
+			v1397 = v1394 .. v7("\62\210\122\176\169\15\210\96\179", "\192\97\187\20\214");
+			v1395 = v7("\34\90\33\204", "\224\106\59\83\168");
+		elseif v24.JoinLastAct then
+			v1397 = v1394 .. v7("\152\233\7\237\75\132\118\241", "\41\199\133\98\155\46\232");
+			v1395 = v24.StoryDifficulty or v7("\50\169\243\75\188\3", "\134\124\198\129\38\221\111");
+		else
+			local v2439 = 0 - 0;
+			local v2440;
+			while true do
+				if (v2439 == 0) then
+					v2440 = tonumber(string.match(v24.StoryAct or "1", v7("\189\235\250", "\64\152\143\209"))) or (2 - 1);
+					v1397 = v1394 .. v7("\8\69\192\26\79\33\67", "\103\87\41\165\108\42\77\28") .. tostring(v2440);
+					break;
+				end
+			end
+		end
+		if v24.AutoFindMatchStory then
+			v123(v1397);
+			return;
+		end
+		local v1398 = v9:FindFirstChild(v7("\157\255\59\213\84\201\135\224", "\128\194\179\116\151\22"));
+		local v1399 = v1398 and v1398:FindFirstChild(v7("\52\38\12\181\197", "\230\103\82\99\199\188\84"));
+		local v1400 = v450(v1399);
+		if (v1400 and v1400:FindFirstChild(v7("\172\148\170\165\88\56\165", "\74\220\230\195\200\57"))) then
+			v25.LobbyJoining = true;
+			task.spawn(function()
+				if ((v449.Position - v1400.primary.Position).Magnitude > (1929 - (1300 + 617))) then
+					local v2793 = 0 - 0;
+					local v2794;
+					while true do
+						if (v2793 == (1922 - (36 + 1886))) then
+							v2794 = 0;
+							while true do
+								if ((0 - 0) == v2794) then
+									v449.CFrame = v1400.primary.CFrame + Vector3.new(616 - (305 + 311), 2 + 1, 1455 - (1093 + 362));
+									task.wait(1098.35 - (734 + 364));
+									break;
+								end
+							end
+							break;
+						end
+					end
+				end
+				pcall(function()
+					local v2441 = 1008 - (374 + 634);
+					local v2442;
+					while true do
+						if (v2441 == (1 + 0)) then
+							local v3064 = 1117 - (331 + 786);
+							while true do
+								if (v3064 == (1096 - (759 + 337))) then
+									v2442 = false;
+									if v18:FindFirstChild(v7("\97\207\215\93\143\103\75\76\198\201\75\129\75\83\118\220\195\68", "\63\19\170\166\40\234\20")) then
+										local v3493 = 0 - 0;
+										local v3494;
+										while true do
+											if (v3493 == 1) then
+												if (not v2442 and v1400 and v1400:FindFirstChild(v7("\13\33\171\29\45", "\120\65\68\221")) and (v1400.Level.Value == v1397)) then
+													v2442 = true;
+												end
+												break;
+											end
+											if (v3493 == (564 - (255 + 309))) then
+												local v3575 = 493 - (484 + 9);
+												while true do
+													if (v3575 == 0) then
+														v3494 = v18.request_lock_level:InvokeServer(v1400.Name, v1397, v1396, v1395);
+														if ((v3494 == true) or (v3494 == v7("\37\29\14\43\37\62\211", "\160\86\104\109\72\64\77"))) then
+															v2442 = true;
+														elseif (type(v3494) == v7("\237\114\236\6\27", "\234\153\19\142\106\126")) then
+															if ((v3494.lock == true) or (v3494.success == true)) then
+																v2442 = true;
+															elseif ((v3494.lock ~= false) and not v3494.messages and not v3494.error) then
+																v2442 = true;
+															end
+														end
+														v3575 = 1;
+													end
+													if (v3575 == (1 + 0)) then
+														v3493 = 1 - 0;
+														break;
+													end
+												end
+											end
+										end
+									end
+									v3064 = 1 + 0;
+								end
+								if (v3064 == 1) then
+									v2441 = 2 - 0;
+									break;
+								end
+							end
+						end
+						if ((1450 - (341 + 1109)) == v2441) then
+							if v18:FindFirstChild(v7("\183\143\193\10\14\194\177\181\218\16\2\223\154\134\223\29\9\200", "\177\197\234\176\127\107")) then
+								v18.request_join_lobby:InvokeServer(v1400.Name);
+							end
+							task.wait(0.25);
+							v2441 = 1 + 0;
+						end
+						if (v2441 == (1 + 1)) then
+							if v2442 then
+								if (v24.WorldSkip and (v24.StoryAct ~= v7("\49\187\227\181\22\188\241\185", "\220\120\213\133")) and v18:FindFirstChild(v7("\84\33\197\82\51\103\57\200\66\38\92\17\212\91\35\72", "\74\56\78\167\48"))) then
+									local v3428 = 0;
+									while true do
+										if (v3428 == (659 - (483 + 176))) then
+											task.wait(0.2 + 0);
+											v18.lobby_world_skip:InvokeServer(v1400.Name);
+											break;
+										end
+									end
+								end
+								task.wait(0.35 + 0);
+								if v18:FindFirstChild(v7("\246\25\58\213\15\25\44\219\15\63\193\24\30\7\227\29\38\197", "\88\132\124\75\160\106\106")) then
+									v18.request_start_game:InvokeServer(v1400.Name);
+								end
+							elseif v18:FindFirstChild(v7("\6\51\156\82\30\185\36\63\24\51\140\81\30\149\60\15\22\52\148", "\96\116\86\237\39\123\202\80")) then
+								v18.request_leave_lobby:InvokeServer(v1400.Name);
+							end
+							break;
+						end
+					end
+				end);
+				task.wait(1282 - (47 + 1233));
+				v25.LobbyJoining = false;
+			end);
+			return;
+		end
+	end
+	if (v24.AutoJoinDailyChallenge or v24.AutoFindMatchDailyChallenge) then
+		local v1401 = 0;
+		local v1402;
+		local v1403;
+		local v1404;
+		while true do
+			if (v1401 == (1 + 0)) then
+				v1403 = v1402 and v1402:FindFirstChild(v7("\129\168\138\129\188\138\139\140\169\165\134\131\162\172", "\237\197\201\227"));
+				v1404 = v450(v1403);
+				v1401 = 616 - (421 + 193);
+			end
+			if (v1401 == (7 - 5)) then
+				if (v1404 and v1404:FindFirstChild(v7("\171\49\22\115\164\33\99", "\26\219\67\127\30\197\83"))) then
+					local v2795 = 0;
+					while true do
+						local v2935 = 0;
+						while true do
+							if ((0 - 0) == v2935) then
+								if (v2795 == (1 + 0)) then
+									return;
+								end
+								if ((0 - 0) == v2795) then
+									v25.LobbyJoining = true;
+									task.spawn(function()
+										if ((v449.Position - v1404.primary.Position).Magnitude > (5 + 7)) then
+											v449.CFrame = v1404.primary.CFrame + Vector3.new(0 + 0, 3, 0);
+											task.wait(0.4);
+										end
+										pcall(function()
+											local v3543 = 0 + 0;
+											while true do
+												if (v3543 == (1 + 0)) then
+													if v18:FindFirstChild(v7("\30\16\219\181\47\227\234\40\31\1\203\178\62\207\249\22\1\16", "\119\108\117\170\192\74\144\158")) then
+														v18.request_start_game:InvokeServer(v1404.Name);
+													end
+													break;
+												end
+												if (v3543 == (0 - 0)) then
+													if v18:FindFirstChild(v7("\231\29\207\111\21\234\225\39\212\117\25\247\202\20\209\120\18\224", "\153\149\120\190\26\112")) then
+														v18.request_join_lobby:InvokeServer(v1404.Name);
+													end
+													task.wait(1844.3 - (463 + 1381));
+													v3543 = 1 + 0;
+												end
+											end
+										end);
+										task.wait(1.5 + 1);
+										v25.LobbyJoining = false;
+									end);
+									v2795 = 1;
+								end
+								break;
+							end
+						end
+					end
+				end
+				break;
+			end
+			if (v1401 == 0) then
+				if v24.AutoFindMatchDailyChallenge then
+					local v2796 = 0;
+					while true do
+						if ((0 + 0) == v2796) then
+							v123(v7("\30\43\149\92\171\128\150\30\55\153\92\174\128\138\15\51\148", "\207\65\116\209\29\226\204"));
+							return;
+						end
+					end
+				end
+				v1402 = v9:FindFirstChild(v7("\143\115\163\47\156\124\174\32\151\117\184", "\110\208\48\235"));
+				v1401 = 1;
+			end
+		end
+	end
+	if (v24.AutoJoinChallenge or v24.AutoFindMatchChallenge) then
+		local v1405 = 0;
+		local v1406;
+		local v1407;
+		local v1408;
+		while true do
+			if (v1405 == (0 - 0)) then
+				if v24.AutoFindMatchChallenge then
+					v123(v7("\216\22\175\14\213\4\160\13\216\10\169\0\203\5\164\15\192\12", "\65\135\73\225"));
+					return;
+				end
+				v1406 = v9:FindFirstChild(v7("\32\112\121\129\56\51\118\127\135\49\44", "\116\127\51\49\192"));
+				v1405 = 1 - 0;
+			end
+			if (v1405 == (1163 - (696 + 465))) then
+				if (v1408 and v1408:FindFirstChild(v7("\221\236\175\195\39\223\231", "\70\173\158\198\174"))) then
+					v25.LobbyJoining = true;
+					task.spawn(function()
+						if ((v449.Position - v1408.primary.Position).Magnitude > (572 - (14 + 546))) then
+							v449.CFrame = v1408.primary.CFrame + Vector3.new(0 + 0, 1443 - (413 + 1027), 1816 - (1382 + 434));
+							task.wait(0.4);
+						end
+						pcall(function()
+							local v3065 = 0;
+							while true do
+								if (v3065 == 1) then
+									if v18:FindFirstChild(v7("\5\40\65\27\18\62\68\49\4\57\81\28\3\18\87\15\26\40", "\110\119\77\48")) then
+										v18.request_start_game:InvokeServer(v1408.Name);
+									end
+									break;
+								end
+								if (v3065 == 0) then
+									if v18:FindFirstChild(v7("\226\58\94\251\245\44\91\209\250\48\70\224\207\51\64\236\242\38", "\142\144\95\47")) then
+										v18.request_join_lobby:InvokeServer(v1408.Name);
+									end
+									task.wait(0.3);
+									v3065 = 2 - 1;
+								end
+							end
 						end);
-						task.wait(2.5);
-						v55.LobbyJoining = false;
+						task.wait(1526.5 - (86 + 1438));
+						v25.LobbyJoining = false;
 					end);
 					return;
 				end
 				break;
 			end
-			if (v1352 == 1) then
-				v1354 = v1353 and v1353:FindFirstChild(v7("\20\14\242\168\102\19\7\250\168\115\53\1\252\161", "\31\80\111\155\196"));
-				v1355 = v452(v1354);
-				v1352 = 2 + 0;
-			end
-			if (v1352 == (1777 - (1238 + 539))) then
-				if v44.AutoFindMatchDailyChallenge then
-					v122(v7("\116\59\113\224\6\103\61\106\226\7\106\40\121\228\1\108\33", "\79\43\100\53\161"));
-					return;
-				end
-				v1353 = v9:FindFirstChild(v7("\207\231\231\110\120\96\19\106\215\225\252", "\36\144\164\175\47\52\44\86"));
-				v1352 = 573 - (206 + 366);
+			if (v1405 == (722 - (692 + 29))) then
+				v1407 = v1406 and v1406:FindFirstChild(v7("\56\8\82\241\226\27\12\28\5\64", "\98\123\96\51\157\142\126"));
+				v1408 = v450(v1407);
+				v1405 = 1 + 1;
 			end
 		end
 	end
-	if (v44.AutoJoinChallenge or v44.AutoFindMatchChallenge) then
-		local v1356 = 0;
-		local v1357;
-		local v1358;
-		local v1359;
-		while true do
-			if (v1356 == (526 - (489 + 37))) then
-				if v44.AutoFindMatchChallenge then
-					local v2759 = 0 - 0;
+	if (v24.AutoJoinRaid or v24.AutoFindMatchRaid) then
+		local v1409 = v116[v24.RaidWorld] or v7("\232\42\54\71\225\229\43\27\71\229\226\59", "\132\139\95\68\53");
+		if (v1409 == v7("\255\61\239\39\249\38\233\10\238\41\244\49", "\85\156\72\157")) then
+			pcall(function()
+				local v2198 = 0;
+				local v2199;
+				while true do
+					if (v2198 == (0 - 0)) then
+						v2199 = v9:FindFirstChild(v7("\68\0\92\8\254", "\234\27\82\29\65\186\72")) and v9._RAID:FindFirstChild(v7("\207\235\200\138\34", "\99\144\175\137\222")) and v9._RAID._DATA:FindFirstChild(v7("\83\97\158\19\60\75\165\111\102\141\8\61", "\209\48\20\236\97\89\37"));
+						if (v2199 and (v2199.Value ~= "")) then
+							v1409 = v2199.Value;
+						else
+							v1409 = v7("\248\68\83\38\76\239\77\95\48\71\238\126\76\40\75\248\126\15", "\34\156\33\62\73");
+						end
+						break;
+					end
+				end
+			end);
+		end
+		local v1410 = tonumber(string.match(v24.RaidAct, v7("\77\118\165", "\49\104\18\142"))) or (1 + 0);
+		local v1411 = {[v7("\230\224\111\31\206\230\117\31\232\218\122\25\248\224\102\10", "\107\145\133\28")]=true,[v7("\199\80\167\187\208\74\178\183\204\83\182\176\214\97\183\183\209\74\161\183\193\74", "\222\162\62\211")]=true,[v7("\168\112\7\36\33\143\203\173\116\26", "\170\195\17\110\123\81\227")]=true,[v7("\185\59\242\201\242\188", "\157\212\84\128\160")]=true,[v7("\156\112\232\76\46\137", "\163\233\19\128\37\70\232\142")]=true};
+		local v1412 = v1409;
+		if v1411[v1409] then
+			v1412 = v1409 .. v7("\220\89\57\15\230\89\3", "\121\131\53\92") .. tostring(v1410);
+		end
+		if v24.AutoFindMatchRaid then
+			local v1899 = 0 + 0;
+			local v1900;
+			while true do
+				if (v1899 == (0 + 0)) then
+					v1900 = 0 + 0;
 					while true do
-						if (v2759 == 0) then
-							v122(v7("\77\44\120\37\199\2\83\63\105\41\221\14\94\63\115\36\210\10", "\79\18\115\54\106\149"));
+						if ((0 - 0) == v1900) then
+							v123(v1412);
 							return;
 						end
 					end
+					break;
 				end
-				v1357 = v9:FindFirstChild(v7("\117\113\102\127\9\81\168\136\109\119\125", "\198\42\50\46\62\69\29\237"));
-				v1356 = 1;
 			end
-			if (v1356 == (1 + 1)) then
-				if (v1359 and v1359:FindFirstChild(v7("\149\236\185\82\73\19\107", "\97\229\158\208\63\40\97\18"))) then
-					v55.LobbyJoining = true;
-					task.spawn(function()
-						local v2876 = 0;
-						while true do
-							if ((0 - 0) == v2876) then
-								if ((v451.Position - v1359.primary.Position).Magnitude > (5 + 7)) then
-									local v3342 = 0;
-									local v3343;
+		end
+		local v1413 = v9:FindFirstChild(v7("\65\254\106\169\90", "\224\30\172\43")) and v9._RAID:FindFirstChild(v7("\55\166\118\218", "\141\101\199\31\190"));
+		local v1414 = v450(v1413);
+		if (v1414 and v1414:FindFirstChild(v7("\75\85\10\202\219\171\182", "\207\59\39\99\167\186\217"))) then
+			v25.LobbyJoining = true;
+			task.spawn(function()
+				local v2200 = 0;
+				while true do
+					if (v2200 == (2 - 1)) then
+						task.wait(2.5);
+						v25.LobbyJoining = false;
+						break;
+					end
+					if (v2200 == 0) then
+						if ((v449.Position - v1414.primary.Position).Magnitude > 12) then
+							local v3211 = 58 - (11 + 47);
+							while true do
+								if ((0 - 0) == v3211) then
+									v449.CFrame = v1414.primary.CFrame + Vector3.new(0 + 0, 3, 449 - (287 + 162));
+									task.wait(0.4 + 0);
+									break;
+								end
+							end
+						end
+						pcall(function()
+							if v18:FindFirstChild(v7("\21\67\170\71\77\238\180\212\13\73\178\92\119\241\175\233\5\95", "\139\103\38\219\50\40\157\192")) then
+								v18.request_join_lobby:InvokeServer(v1414.Name);
+							end
+							task.wait(1629.3 - (10 + 1619));
+							local v3066 = false;
+							if v18:FindFirstChild(v7("\244\189\39\215\227\171\34\253\234\183\53\201\217\180\51\212\227\180", "\162\134\216\86")) then
+								local v3295 = v18.request_lock_level:InvokeServer(v1414.Name, v1412, false, v7("\16\224\69\84\49\78", "\207\94\143\55\57\80\34\145"));
+								v3066 = (v3295 == true) or (v3295 == v7("\49\196\32\121\181\72\4", "\217\66\177\67\26\208\59\119")) or (v1414 and v1414:FindFirstChild(v7("\15\219\220\175\92", "\152\67\190\170\202\48\138")) and (v1414.Level.Value == storyLevelId));
+							end
+							if v3066 then
+								local v3296 = 0 + 0;
+								while true do
+									if (v3296 == (0 + 0)) then
+										task.wait(0.25 + 0);
+										if v18:FindFirstChild(v7("\201\44\68\229\222\58\65\207\200\61\84\226\207\22\82\241\214\44", "\144\187\73\53")) then
+											v18.request_start_game:InvokeServer(v1414.Name);
+										end
+										break;
+									end
+								end
+							elseif v18:FindFirstChild(v7("\4\190\43\194\167\160\2\132\54\210\163\165\19\132\54\216\160\177\15", "\211\118\219\90\183\194")) then
+								v18.request_leave_lobby:InvokeServer(v1414.Name);
+							end
+						end);
+						v2200 = 1271 - (403 + 867);
+					end
+				end
+			end);
+			return;
+		end
+	end
+	if (v24.AutoJoinMansion or v24.AutoFindMatchMansion) then
+		local v1415 = 352 - (310 + 42);
+		local v1416;
+		local v1417;
+		while true do
+			if (v1415 == (2 + 0)) then
+				if v18:FindFirstChild(v7("\65\81\243\26\71\64\64\221\28\86\82\70\246\48\75\93\82\235\1\75\71\81\221\27\77\68\81\240", "\34\51\52\130\111")) then
+					pcall(function()
+						v18.request_start_infinite_tower:InvokeServer(v1416, v1417);
+					end);
+					return;
+				end
+				break;
+			end
+			if (v1415 == (1 + 0)) then
+				local v2201 = 1445 - (1170 + 275);
+				while true do
+					if (v2201 == 1) then
+						v1415 = 2 + 0;
+						break;
+					end
+					if (v2201 == (0 - 0)) then
+						v1417 = v24.MansionDifficulty or v7("\208\172\154\239", "\145\152\205\232\139\58");
+						if v24.AutoFindMatchMansion then
+							local v3212 = 683 - (424 + 259);
+							local v3213;
+							while true do
+								if (v3212 == (0 - 0)) then
+									v3213 = 0;
 									while true do
-										if (v3342 == (0 + 0)) then
-											v3343 = 0 - 0;
+										if (v3213 == (1064 - (289 + 775))) then
+											v123(v7("\140\205\151\145\125\129\32\154\198\155\128\111\135\57\150\192\228", "\110\211\146\222\223\59\200") .. tostring(v1416) .. ":" .. tostring(v1417));
+											return;
+										end
+									end
+									break;
+								end
+							end
+						end
+						v2201 = 2 - 1;
+					end
+				end
+			end
+			if (v1415 == 0) then
+				v1416 = (v24.JoinLastMansionRoom and 100) or tonumber(v24.MansionRoom) or (2 - 1);
+				v1416 = math.clamp(v1416, 3 - 2, 233 - 133);
+				v1415 = 3 - 2;
+			end
+		end
+	end
+	if (v24.AutoJoinArtifact and (v24.ArtifactJoinMode == v7("\232\60\54\199\66\17\86\218\54\48", "\55\174\85\88\163\98\92"))) then
+		local v1418 = 0 - 0;
+		local v1419;
+		while true do
+			if (v1418 == 0) then
+				v1419 = v7("\204\90\18\140\48\204\75\18\186\35\222\71\22\149\9\217\91", "\86\173\40\102\229");
+				pcall(function()
+					local v2443 = 1890 - (946 + 944);
+					local v2444;
+					local v2445;
+					local v2446;
+					while true do
+						if (v2443 == (0 - 0)) then
+							v2444 = 0 - 0;
+							v2445 = nil;
+							v2443 = 1 + 0;
+						end
+						if (v2443 == (1 - 0)) then
+							v2446 = nil;
+							while true do
+								if (v2444 == 0) then
+									v2445 = require(game:GetService(v7("\54\161\95\129\13\167\78\153\1\160\124\153\11\182\78\138\1", "\237\100\196\47")).src.Loader);
+									v2446 = v2445.load_data(script, v7("\96\73\157\175\59\155", "\116\44\44\235\202\87\232"));
+									v2444 = 1444 - (949 + 494);
+								end
+								if (v2444 == (1231 - (505 + 725))) then
+									if (v2446 and v2446[v7("\2\197\66\44\4\179\241\23\232\66\32\12\181\247\13\232\4", "\146\99\183\54\69\98\210")] and (v2446[v7("\230\237\161\172\58\182\228\235\138\177\57\185\224\250\187\154\110", "\215\135\159\213\197\92")]._MATCHMAKING or v2446[v7("\178\183\252\229\181\164\235\248\140\177\237\226\180\160\230\211\225", "\140\211\197\136")].Matchmaking)) then
+										v1419 = v7("\49\222\40\125\202\49\207\40\75\216\53\194\59\113\194\15\158", "\172\80\172\92\20");
+									end
+									break;
+								end
+							end
+							break;
+						end
+					end
+				end);
+				v1418 = 1;
+			end
+			if (v1418 == 1) then
+				v123(v1419);
+				return;
+			end
+		end
+	end
+	if (v24.AutoJoinLegend or v24.AutoFindMatchLegend) then
+		local v1420 = v114[v24.LegendStage] or v7("\29\118\222\14\117\219\252\132\27\125\212\22\116", "\232\126\26\177\120\16\169\163");
+		local v1421 = tonumber(string.match(v24.LegendAct or "1", v7("\169\226\250", "\214\140\134\209\19\34\175"))) or (2 - 1);
+		local v1422 = v1420 .. "_" .. tostring(v1421);
+		if v24.AutoFindMatchLegend then
+			v123(v1422);
+			return;
+		end
+		local v1423 = v9:FindFirstChild(v7("\107\11\135\136\118\14\141\153", "\202\52\71\200"));
+		local v1424 = v1423 and v1423:FindFirstChild(v7("\221\92\122\149\247", "\231\142\40\21"));
+		local v1425 = v450(v1424);
+		if (v1425 and v1425:FindFirstChild(v7("\96\32\204\7\83\17\205", "\180\16\82\165\106\50\99"))) then
+			local v1902 = 0;
+			while true do
+				if (v1902 == (1 + 0)) then
+					return;
+				end
+				if (v1902 == 0) then
+					v25.LobbyJoining = true;
+					task.spawn(function()
+						local v2938 = 0 - 0;
+						while true do
+							if (v2938 == 1) then
+								task.wait(6 - 4);
+								v25.LobbyJoining = false;
+								break;
+							end
+							if (v2938 == 0) then
+								if ((v449.Position - v1425.primary.Position).Magnitude > (1963 - (1928 + 23))) then
+									local v3431 = 0;
+									local v3432;
+									while true do
+										if (v3431 == (0 + 0)) then
+											v3432 = 0;
 											while true do
-												if (v3343 == (0 - 0)) then
-													v451.CFrame = v1359.primary.CFrame + Vector3.new(0 + 0, 1 + 2, 0 - 0);
-													task.wait(0.4);
+												if (v3432 == (0 - 0)) then
+													v449.CFrame = v1425.primary.CFrame + Vector3.new(0 - 0, 4 - 1, 0 - 0);
+													task.wait(0.35 + 0);
 													break;
 												end
 											end
@@ -5873,1959 +6834,1553 @@ local v123 = function()
 									end
 								end
 								pcall(function()
-									local v3281 = 0 + 0;
+									local v3361 = 236 - (40 + 196);
+									local v3362;
 									while true do
-										if (v3281 == 1) then
-											if v17:FindFirstChild(v7("\146\88\222\0\133\78\219\42\147\73\206\7\148\98\200\20\141\88", "\117\224\61\175")) then
-												v17.request_start_game:InvokeServer(v1359.Name);
+										if (v3361 == 1) then
+											v3362 = false;
+											if v18:FindFirstChild(v7("\224\47\97\68\247\57\100\110\254\37\115\90\205\38\117\71\247\38", "\49\146\74\16")) then
+												local v3576 = v18.request_lock_level:InvokeServer(v1425.Name, v1422, false, v7("\202\94\152\87\131\232", "\226\132\49\234\58"));
+												v3362 = (v3576 == true) or (v3576 == v7("\201\109\179\231\31\234\1", "\56\186\24\208\132\122\153\114"));
+											end
+											v3361 = 1019 - (845 + 172);
+										end
+										if (v3361 == (1281 - (423 + 858))) then
+											if v18:FindFirstChild(v7("\45\80\110\235\6\44\65\64\244\12\54\91\64\242\12\61\87\102", "\99\95\53\31\158")) then
+												v18.request_join_lobby:InvokeServer(v1425.Name);
+											end
+											task.wait(0.25);
+											v3361 = 1703 - (1520 + 182);
+										end
+										if (2 == v3361) then
+											if v3362 then
+												task.wait(1466.25 - (196 + 1270));
+												if v18:FindFirstChild(v7("\209\19\49\68\135\208\2\31\66\150\194\4\52\110\133\194\27\37", "\226\163\118\64\49")) then
+													v18.request_start_game:InvokeServer(v1425.Name);
+												end
+											elseif v18:FindFirstChild(v7("\235\201\46\171\24\234\216\0\178\24\248\218\58\129\17\246\206\61\167", "\125\153\172\95\222")) then
+												v18.request_leave_lobby:InvokeServer(v1425.Name);
 											end
 											break;
-										end
-										if (0 == v3281) then
-											if v17:FindFirstChild(v7("\63\203\99\83\137\62\218\77\76\131\36\192\77\74\131\47\204\107", "\236\77\174\18\38")) then
-												v17.request_join_lobby:InvokeServer(v1359.Name);
-											end
-											task.wait(1287.3 - (254 + 1033));
-											v3281 = 1;
 										end
 									end
 								end);
-								v2876 = 1 + 0;
-							end
-							if (v2876 == (1763 - (1099 + 663))) then
-								task.wait(2.5);
-								v55.LobbyJoining = false;
-								break;
+								v2938 = 1;
 							end
 						end
 					end);
-					return;
-				end
-				break;
-			end
-			if (v1356 == 1) then
-				local v2217 = 807 - (504 + 303);
-				while true do
-					if (v2217 == 0) then
-						v1358 = v1357 and v1357:FindFirstChild(v7("\225\178\23\53\36\165\0\92\199\169", "\59\162\218\118\89\72\192\110"));
-						v1359 = v452(v1358);
-						v2217 = 1 + 0;
-					end
-					if (v2217 == (4 - 3)) then
-						v1356 = 2;
-						break;
-					end
+					v1902 = 1;
 				end
 			end
 		end
-	end
-	if (v44.AutoJoinRaid or v44.AutoFindMatchRaid) then
-		local v1360 = v114[v44.RaidWorld] or v7("\232\82\212\154\238\73\210\183\249\70\207\140", "\232\139\39\166");
-		if (v1360 == v7("\224\68\65\87\114\204\247\110\65\68\126\198", "\162\131\49\51\37\23")) then
-			pcall(function()
-				local v2218 = 0 - 0;
-				local v2219;
-				while true do
-					if (v2218 == 0) then
-						v2219 = v9:FindFirstChild(v7("\96\75\223\3\80", "\20\63\25\158\74")) and v9._RAID:FindFirstChild(v7("\69\254\125\153\94", "\217\26\186\60\205\31\176\72")) and v9._RAID._DATA:FindFirstChild(v7("\216\100\20\254\222\127\18\211\201\112\15\232", "\140\187\17\102"));
-						if (v2219 and (v2219.Value ~= "")) then
-							v1360 = v2219.Value;
-						else
-							v1360 = v7("\40\142\169\78\34\152\168\64\53\142\182\126\62\138\173\69\19\218", "\33\76\235\196");
-						end
-						break;
-					end
-				end
-			end);
-		end
-		local v1361 = tonumber(string.match(v44.RaidAct, v7("\77\238\185", "\229\104\138\146\63\204\80\229"))) or (2 - 1);
-		local v1362 = {[v7("\183\120\13\221\159\126\23\221\185\66\24\219\169\120\4\200", "\169\192\29\126")]=true,[v7("\52\203\17\142\35\209\4\130\63\200\0\133\37\250\1\130\34\209\23\130\50\209", "\235\81\165\101")]=true,[v7("\115\133\86\38\149\8\205\118\129\75", "\172\24\228\63\121\229\100")]=true,[v7("\135\65\199\196\133\70", "\173\234\46\181")]=true,[v7("\202\49\227\54\43\222", "\67\191\82\139\95")]=true};
-		local v1363 = v1360;
-		if v1362[v1360] then
-			v1363 = v1360 .. v7("\2\225\66\212\233\231\2", "\139\93\141\39\162\140") .. tostring(v1361);
-		end
-		if v44.AutoFindMatchRaid then
-			v122(v1363);
-			return;
-		end
-		local v1364 = v9:FindFirstChild(v7("\19\145\40\254\58", "\126\76\195\105\183")) and v9._RAID:FindFirstChild(v7("\109\73\173\117", "\212\63\40\196\17\57"));
-		local v1365 = v452(v1364);
-		if (v1365 and v1365:FindFirstChild(v7("\185\217\249\247\168\217\233", "\154\201\171\144"))) then
-			v55.LobbyJoining = true;
-			task.spawn(function()
-				local v2220 = 239 - (155 + 84);
-				while true do
-					if (v2220 == (0 - 0)) then
-						if ((v451.Position - v1365.primary.Position).Magnitude > (39 - 27)) then
-							local v3100 = 0 + 0;
-							while true do
-								if (v3100 == 0) then
-									v451.CFrame = v1365.primary.CFrame + Vector3.new(1425 - (557 + 868), 610 - (33 + 574), 1565 - (839 + 726));
-									task.wait(0.4 - 0);
-									break;
-								end
-							end
-						end
-						pcall(function()
-							local v2975 = 0 - 0;
-							local v2976;
-							while true do
-								if (v2975 == 1) then
-									v2976 = false;
-									if v17:FindFirstChild(v7("\28\75\174\36\173\29\90\128\61\167\13\69\128\61\173\24\75\179", "\200\110\46\223\81")) then
-										local v3394 = 331 - (124 + 207);
-										local v3395;
-										while true do
-											if ((0 - 0) == v3394) then
-												v3395 = v17.request_lock_level:InvokeServer(v1365.Name, v1363, false, v7("\56\72\46\57\35\222", "\34\118\39\92\84\66\178"));
-												v2976 = (v3395 == true) or (v3395 == v7("\88\157\50\1\43\186\220", "\19\43\232\81\98\78\201\175")) or (v1365 and v1365:FindFirstChild(v7("\103\214\238\163\200", "\234\43\179\152\198\164\141")) and (v1365.Level.Value == storyLevelId));
-												break;
-											end
-										end
-									end
-									v2975 = 7 - 5;
-								end
-								if ((0 - 0) == v2975) then
-									if v17:FindFirstChild(v7("\144\235\185\216\179\28\171\130\136\225\161\195\137\3\176\191\128\247", "\221\226\142\200\173\214\111\223")) then
-										v17.request_join_lobby:InvokeServer(v1365.Name);
-									end
-									task.wait(0.3);
-									v2975 = 1;
-								end
-								if (v2975 == (6 - 4)) then
-									if v2976 then
-										local v3396 = 0;
-										local v3397;
-										while true do
-											if (v3396 == (0 - 0)) then
-												v3397 = 0 + 0;
-												while true do
-													if (v3397 == (0 + 0)) then
-														task.wait(0.25 + 0);
-														if v17:FindFirstChild(v7("\183\95\109\203\130\160\217\184\182\78\125\204\147\140\202\134\168\95", "\231\197\58\28\190\231\211\173")) then
-															v17.request_start_game:InvokeServer(v1365.Name);
-														end
-														break;
-													end
-												end
-												break;
-											end
-										end
-									elseif v17:FindFirstChild(v7("\65\215\47\57\210\159\71\237\50\41\214\154\86\237\50\35\213\142\74", "\236\51\178\94\76\183")) then
-										v17.request_leave_lobby:InvokeServer(v1365.Name);
-									end
-									break;
-								end
-							end
-						end);
-						v2220 = 1 + 0;
-					end
-					if (v2220 == 1) then
-						task.wait(2.5);
-						v55.LobbyJoining = false;
-						break;
-					end
-				end
-			end);
-			return;
-		end
-	end
-	if (v44.AutoJoinMansion or v44.AutoFindMatchMansion) then
-		local v1366 = 0 - 0;
-		local v1367;
-		local v1368;
-		while true do
-			if (v1366 == (1 + 0)) then
-				v1368 = v44.MansionDifficulty or v7("\194\204\192\71", "\35\138\173\178");
-				if v44.AutoFindMatchMansion then
-					v122(v7("\254\60\97\242\116\84\239\42\124\249\109\73\238\52\109\238\8", "\29\161\99\40\188\50") .. tostring(v1367) .. ":" .. tostring(v1368));
-					return;
-				end
-				v1366 = 2;
-			end
-			if (v1366 == (0 + 0)) then
-				v1367 = (v44.JoinLastMansionRoom and (293 - 193)) or tonumber(v44.MansionRoom) or (2 - 1);
-				v1367 = math.clamp(v1367, 1, 100);
-				v1366 = 1 + 0;
-			end
-			if (v1366 == (2 - 0)) then
-				if v17:FindFirstChild(v7("\107\47\177\242\11\41\30\211\106\62\161\245\26\5\3\226\127\35\174\238\26\63\53\248\118\61\165\245", "\140\25\74\192\135\110\90\106")) then
-					pcall(function()
-						v17.request_start_infinite_tower:InvokeServer(v1367, v1368);
-					end);
-					return;
-				end
-				break;
-			end
-		end
-	end
-	if (v44.AutoJoinArtifact and (v44.ArtifactJoinMode == v7("\4\88\74\246\234\143\35\69\71\250", "\194\66\49\36\146\202"))) then
-		local v1369 = 0;
-		local v1370;
-		while true do
-			local v1626 = 0 + 0;
-			while true do
-				if (v1626 == 0) then
-					if (v1369 == (1 + 0)) then
-						v122(v1370);
-						return;
-					end
-					if (v1369 == (0 - 0)) then
-						v1370 = v7("\138\35\217\11\195\138\50\217\61\208\152\62\221\18\250\159\34", "\165\235\81\173\98");
-						pcall(function()
-							local v2977 = 0 - 0;
-							local v2978;
-							local v2979;
-							while true do
-								if (v2977 == (1010 - (15 + 995))) then
-									v2978 = require(game:GetService(v7("\25\128\185\58\176\231\42\145\172\50\138\240\36\151\168\49\188", "\132\75\229\201\86\217")).src.Loader);
-									v2979 = v2978.load_data(script, v7("\174\119\179\160\142\97", "\197\226\18\197"));
-									v2977 = 1;
-								end
-								if (v2977 == 1) then
-									if (v2979 and v2979[v7("\29\195\21\88\26\208\2\69\35\197\4\95\27\212\15\110\78", "\49\124\177\97")] and (v2979[v7("\129\47\212\183\134\60\195\170\191\41\197\176\135\56\206\129\210", "\222\224\93\160")]._MATCHMAKING or v2979[v7("\234\239\102\40\62\234\254\102\30\44\238\243\117\36\54\212\175", "\88\139\157\18\65")].Matchmaking)) then
-										v1370 = v7("\75\8\6\24\205\75\25\6\46\223\79\20\21\20\197\117\72", "\171\42\122\114\113");
-									end
-									break;
-								end
-							end
-						end);
-						v1369 = 1;
-					end
-					break;
-				end
-			end
-		end
-	end
-	if (v44.AutoJoinLegend or v44.AutoFindMatchLegend) then
-		local v1371 = v112[v44.LegendStage] or v7("\142\164\195\244\136\186\243\238\136\175\201\236\137", "\130\237\200\172");
-		local v1372 = tonumber(string.match(v44.LegendAct or "1", v7("\99\212\229", "\110\70\176\206"))) or (1 - 0);
-		local v1373 = v1371 .. "_" .. tostring(v1372);
-		if v44.AutoFindMatchLegend then
-			local v1888 = 0 + 0;
-			while true do
-				if (v1888 == (0 + 0)) then
-					local v2761 = 0 + 0;
-					while true do
-						if (v2761 == (37 - (34 + 3))) then
-							v122(v1373);
-							return;
-						end
-					end
-				end
-			end
-		end
-		local v1374 = v9:FindFirstChild(v7("\74\60\18\201\24\92\53\14", "\90\21\112\93\139"));
-		local v1375 = v1374 and v1374:FindFirstChild(v7("\50\207\123\164\185", "\192\97\187\20\214"));
-		local v1376 = v452(v1375);
-		if (v1376 and v1376:FindFirstChild(v7("\26\73\58\197\129\24\66", "\224\106\59\83\168"))) then
-			local v1889 = 0 - 0;
-			while true do
-				if (v1889 == (1 + 0)) then
-					return;
-				end
-				if (v1889 == (0 - 0)) then
-					v55.LobbyJoining = true;
-					task.spawn(function()
-						local v2878 = 0;
-						local v2879;
-						while true do
-							if (v2878 == 0) then
-								v2879 = 621 - (477 + 144);
-								while true do
-									if (v2879 == 0) then
-										if ((v451.Position - v1376.primary.Position).Magnitude > (982 - (797 + 173))) then
-											v451.CFrame = v1376.primary.CFrame + Vector3.new(1261 - (161 + 1100), 1339 - (1150 + 186), 0);
-											task.wait(0.35);
-										end
-										pcall(function()
-											if v17:FindFirstChild(v7("\181\224\19\238\75\155\93\152\239\13\242\64\183\69\168\231\0\226", "\41\199\133\98\155\46\232")) then
-												v17.request_join_lobby:InvokeServer(v1376.Name);
-											end
-											task.wait(0.25 + 0);
-											local v3435 = false;
-											if v17:FindFirstChild(v7("\14\163\240\83\184\28\242\35\170\238\69\182\48\234\25\176\228\74", "\134\124\198\129\38\221\111")) then
-												local v3484 = 0 + 0;
-												local v3485;
-												while true do
-													if (v3484 == (29 - (12 + 17))) then
-														v3485 = v17.request_lock_level:InvokeServer(v1376.Name, v1373, false, v7("\214\224\163\45\249\227", "\64\152\143\209"));
-														v3435 = (v3485 == true) or (v3485 == v7("\36\92\198\15\79\62\111", "\103\87\41\165\108\42\77\28"));
-														break;
-													end
-												end
-											end
-											if v3435 then
-												task.wait(0.25 - 0);
-												if v17:FindFirstChild(v7("\176\214\5\226\115\243\182\236\7\227\119\242\182\236\19\246\123\229", "\128\194\179\116\151\22")) then
-													v17.request_start_game:InvokeServer(v1376.Name);
-												end
-											elseif v17:FindFirstChild(v7("\21\55\18\178\217\39\146\56\62\6\166\202\49\185\11\61\1\165\197", "\230\103\82\99\199\188\84")) then
-												v17.request_leave_lobby:InvokeServer(v1376.Name);
-											end
-										end);
-										v2879 = 1 + 0;
-									end
-									if (v2879 == 1) then
-										task.wait(283 - (68 + 213));
-										v55.LobbyJoining = false;
-										break;
-									end
-								end
-								break;
-							end
-						end
-					end);
-					v1889 = 1;
-				end
-			end
-		end
-	end
-	if ((v44.AutoJoinSummer or v44.AutoFindMatchSummer) and not v55.LobbyJoining) then
-		local v1377 = 0 - 0;
-		local v1378;
-		while true do
-			if (v1377 == 1) then
-				if v1378 then
-					if v119() then
-						v120();
-					end
-				else
-					if v44.AutoFindMatchSummer then
-						local v2980 = 0 + 0;
-						local v2981;
-						while true do
-							if (v2980 == (0 + 0)) then
-								v2981 = 0;
-								while true do
-									if (v2981 == (0 - 0)) then
-										local v3436 = 0;
-										while true do
-											if (v3436 == 0) then
-												v122(v7("\182\159\221\18\14\195\247\181\213\9\14\223\177", "\177\197\234\176\127\107"));
-												return;
-											end
-										end
-									end
-								end
-								break;
-							end
-						end
-					end
-					if v44.AutoJoinSummer then
-						if v119() then
-							v120();
-						end
-						local function v2982()
-							local v3101 = {};
-							local v3102 = v9:FindFirstChild(v7("\76\239\240\109\164\64\96\80\226\231\100\166\81\113\84\239\245", "\63\19\170\166\40\234\20"));
-							if v3102 then
-								local v3282 = v3102:FindFirstChild(v7("\26\7\15\42\41\40\211", "\160\86\104\109\72\64\77"));
-								if v3282 then
-									table.insert(v3101, v3282);
-								end
-								table.insert(v3101, v3102);
-							end
-							local v3103 = v9:FindFirstChild(v7("\198\95\193\40\60\163\220\64", "\234\153\19\142\106\126"));
-							if v3103 then
-								for v3345, v3346 in ipairs({v7("\4\50\184\22\53", "\120\65\68\221"),v7("\43\160\232\177\29\167", "\220\120\213\133"),v7("\107\59\202\93\47\74\6\210\94\62", "\74\56\78\167\48"),v7("\215\9\38\205\15\24\106", "\88\132\124\75\160\106\106")}) do
-									local v3347 = 354 - (68 + 286);
-									local v3348;
-									while true do
-										if (v3347 == (0 + 0)) then
-											v3348 = v3103:FindFirstChild(v3346);
-											if v3348 then
-												table.insert(v3101, v3348);
-											end
-											break;
-										end
-									end
-								end
-							end
-							local v3104 = v9:FindFirstChild(v7("\43\19\187\98\53\158\15\33\38\19\172", "\96\116\86\237\39\123\202\80"));
-							if v3104 then
-								local v3283 = v3104:FindFirstChild(v7("\13\27\179\127\139\169\188", "\207\65\116\209\29\226\204"));
-								if v3283 then
-									table.insert(v3101, v3283);
-								end
-								table.insert(v3101, v3104);
-							end
-							for v3206, v3207 in ipairs(v3101) do
-								for v3284, v3285 in ipairs(v3207:GetChildren()) do
-									if (v3285:IsA(v7("\157\95\143\11\188", "\110\208\48\235")) and v3285:FindFirstChild(v7("\181\187\138\128\164\187\154", "\237\197\201\227"))) then
-										local v3399 = 0;
-										local v3400;
-										local v3401;
-										while true do
-											if (v3399 == (0 - 0)) then
-												v3400 = v3285:FindFirstChild(v7("\151\38\9\123\169", "\26\219\67\127\30\197\83"));
-												v3401 = v3285.Name:find(v7("\240\14\219\116\4", "\153\149\120\190\26\112")) or v3285.Name:find(v7("\31\0\199\173\47\226", "\119\108\117\170\192\74\144\158")) or (v3400 and tostring(v3400.Value):find(v7("\244\60\140\44\226\59", "\65\135\73\225")));
-												v3399 = 2 - 1;
-											end
-											if (v3399 == (1 + 0)) then
-												if v3401 then
-													local v3518 = v3285:FindFirstChild(v7("\48\68\95\165\6", "\116\127\51\49\192"));
-													local v3519 = v3285:FindFirstChild(v7("\58\3\71\244\248\27", "\98\123\96\51\157\142\126"));
-													local v3520 = v3285:FindFirstChild(v7("\225\241\165\197\35\201", "\70\173\158\198\174"));
-													local v3521 = v3285:FindFirstChild(v7("\196\58\67\235\224\48\93\250\249\49\72", "\142\144\95\47"));
-													local v3522 = v3285:FindFirstChild(v7("\39\33\81\23\18\63\67", "\110\119\77\48"));
-													local v3523 = not v3518 or (v3518.Value == nil) or (v3518.Value == v16);
-													local v3524 = not v3519 or (v3519.Value == false);
-													local v3525 = not v3520 or (v3520.Value == false) or (v3518 and (v3518.Value == v16));
-													local v3526 = not v3521 or (v3521.Value == false);
-													local v3527 = false;
-													if v3522 then
-														for v3551, v3552 in ipairs(v3522:GetChildren()) do
-															if (v3552.Name ~= v16.Name) then
-																v3527 = true;
-																break;
-															end
-														end
-													end
-													if (v3523 and v3524 and v3525 and v3526 and not v3527) then
-														local v3536 = 0 - 0;
-														local v3537;
-														local v3538;
-														local v3539;
-														local v3540;
-														while true do
-															if (v3536 == (7 - 4)) then
-																if ((type(v44.SummerSkipWeather) == v7("\229\228\126\7\244", "\107\145\133\28")) and (#v44.SummerSkipWeather > (0 - 0)) and (v3538 ~= "")) then
-																	local v3569 = {[v7("\215\80\183\187\208\73\178\170\199\76", "\222\162\62\211")]=v7("\165\125\1\20\53\134\206", "\170\195\17\110\123\81\227"),[v7("\178\56\239\207\249\177\48", "\157\212\84\128\160")]=v7("\143\127\239\74\34\141\234", "\163\233\19\128\37\70\232\142"),[v7("\225\89\53\3\249\84\46\29", "\121\131\53\92")]=v7("\124\192\66\154\100\205\89\132", "\224\30\172\43"),[v7("\6\171\122\223\255", "\141\101\199\31\190")]=v7("\88\75\6\198\200", "\207\59\39\99\167\186\217"),[v7("\14\72\189\87\90\243\175", "\139\103\38\219\50\40\157\192")]=v7("\239\182\48\199\244\182\57", "\162\134\216\86"),[v7("\51\238\80\80\51\67\253", "\207\94\143\55\57\80\34\145")]=v7("\47\208\36\115\179\90\27", "\217\66\177\67\26\208\59\119")};
-																	local v3570 = v3569[v3538:lower()] or v3538:lower();
-																	for v3575, v3576 in ipairs(v44.SummerSkipWeather) do
-																		local v3577 = v3569[v3576:lower()] or v3576:lower();
-																		if (v3570:find(v3577) or v3577:find(v3570)) then
-																			v3540 = true;
-																			break;
-																		end
-																	end
-																end
-																if (not v3539 and not v3540) then
-																	return v3285;
-																end
-																break;
-															end
-															if (v3536 == 1) then
-																pcall(function()
-																	local v3564 = v3285:FindFirstChild(v7("\198\62\52\123\229\230\58", "\132\139\95\68\53"), true);
-																	if (v3564 and v3564:IsA(v7("\200\45\229\33\208\41\255\48\240", "\85\156\72\157"))) then
-																		v3537 = v3564.Text;
-																	end
-																	local v3565 = v3285:FindFirstChild(v7("\76\55\124\53\210\45\152", "\234\27\82\29\65\186\72"));
-																	if (v3565 and v3565:IsA(v7("\195\219\251\183\13\247\249\232\178\22\245", "\99\144\175\137\222"))) then
-																		v3538 = v3565.Value;
-																	end
-																	local v3566 = v3285:FindFirstChild(v7("\116\125\138\7\48\70\164\92\96\149", "\209\48\20\236\97\89\37"), true);
-																	if (v3566 and v3566:IsA(v7("\200\68\70\61\110\253\67\91\37", "\34\156\33\62\73")) and (v3538 == "")) then
-																		v3538 = v3566.Text;
-																	end
-																end);
-																v3539 = false;
-																v3536 = 5 - 3;
-															end
-															if (v3536 == 2) then
-																if ((type(v44.SummerSkipMaps) == v7("\28\115\236\93\13", "\49\104\18\142")) and (#v44.SummerSkipMaps > (0 + 0)) and (v3537 ~= "")) then
-																	for v3581, v3582 in ipairs(v44.SummerSkipMaps) do
-																		if (v3537:lower():find(v3582:lower()) or v3582:lower():find(v3537:lower())) then
-																			v3539 = true;
-																			break;
-																		end
-																	end
-																end
-																v3540 = false;
-																v3536 = 1200 - (1064 + 133);
-															end
-															if (v3536 == (0 - 0)) then
-																v3537 = "";
-																v3538 = "";
-																v3536 = 2 - 1;
-															end
-														end
-													end
-												end
-												break;
-											end
-										end
-									end
-								end
-							end
-							return nil;
-						end
-						local v2983 = v2982();
-						if (v2983 and v2983:FindFirstChild(v7("\51\204\195\167\81\248\225", "\152\67\190\170\202\48\138"))) then
-							local v3208 = 0;
-							while true do
-								if ((1 + 0) == v3208) then
-									return;
-								end
-								if (v3208 == (0 + 0)) then
-									v55.LobbyJoining = true;
-									task.spawn(function()
-										if ((v451.Position - v2983.primary.Position).Magnitude > (7 + 5)) then
-											local v3486 = 0 - 0;
-											while true do
-												if ((1633 - (670 + 963)) == v3486) then
-													v451.CFrame = v2983.primary.CFrame + Vector3.new(0 + 0, 1102 - (1034 + 65), 0);
-													task.wait(49.35 - (5 + 44));
-													break;
-												end
-											end
-										end
-										pcall(function()
-											if v17:FindFirstChild(v7("\201\44\68\229\222\58\65\207\209\38\92\254\228\37\90\242\217\48", "\144\187\73\53")) then
-												v17.request_join_lobby:InvokeServer(v2983.Name);
-											end
-											task.wait(0.25);
-											if v17:FindFirstChild(v7("\4\190\43\194\167\160\2\132\54\216\161\184\41\183\63\193\167\191", "\211\118\219\90\183\194")) then
-												v17.request_lock_level:InvokeServer(v2983.Name, v7("\235\184\133\230\95\227\170\146\141\253\95\255\236", "\145\152\205\232\139\58"), false, v7("\155\243\172\187", "\110\211\146\222\223\59\200"));
-											end
-											task.wait(0.35 + 0);
-											if v17:FindFirstChild(v7("\65\81\243\26\71\64\64\221\28\86\82\70\246\48\69\82\89\231", "\34\51\52\130\111")) then
-												v17.request_start_game:InvokeServer(v2983.Name);
-											end
-										end);
-										task.wait(47.5 - (25 + 20));
-										v55.LobbyJoining = false;
-									end);
-									v3208 = 1 - 0;
-								end
-							end
-						end
-					end
-				end
-				break;
-			end
-			if ((1975 - (1535 + 440)) == v1377) then
-				v1378 = false;
-				pcall(function()
-					local v2467 = getgenv().XT_AnimeAdventures;
-					if (v2467 and v2467.Lobby and v2467.Lobby.SummerNow) then
-						local v2880 = v2467.Lobby.SummerNow();
-						if (v2880 and (typeof(v2880) == v7("\168\135\161\164\92", "\74\220\230\195\200\57"))) then
-							local v3105 = 0;
-							local v3106;
-							local v3107;
-							while true do
-								if (v3105 == (1 - 0)) then
-									if (v3106 and v44.SummerSkipMaps and (v44.SummerSkipMaps[v3106] or table.find(v44.SummerSkipMaps, v3106))) then
-										v1378 = true;
-									end
-									if (v3107 and v44.SummerSkipWeather and (v44.SummerSkipWeather[v3107] or table.find(v44.SummerSkipWeather, v3107))) then
-										v1378 = true;
-									end
-									break;
-								end
-								if (v3105 == (619 - (477 + 142))) then
-									v3106 = v2880.Map or v2880.map;
-									v3107 = v2880.Weather or v2880.weather;
-									v3105 = 1345 - (1324 + 20);
-								end
-							end
-						end
-					end
-				end);
-				v1377 = 1 + 0;
-			end
-		end
-	end
-end;
-local v124 = function()
-	if not v59() then
-		return;
-	end
-	local v453 = tick();
-	if (v44.AutoClaimMapBoard and ((v453 - (v55.LastMapBoardCheck or (0 - 0))) > (4 + 0))) then
-		v55.LastMapBoardCheck = v453;
-		pcall(function()
-			local v1627 = 0 - 0;
-			local v1628;
-			while true do
-				if (v1627 == (1618 - (818 + 800))) then
-					if v17:FindFirstChild(v7("\205\57\57\202\15\3\68\219\56\53\198\16\110\104\195\52\40\252\0\51\86\220\49\7\207\11\50\82\221", "\55\174\85\88\163\98\92")) then
-						v17.claim_summer2_map_board_lines:InvokeServer();
-					end
-					v1628 = v16:FindFirstChild(v7("\253\68\7\156\51\223\111\19\140", "\86\173\40\102\229"));
-					v1627 = 230 - (163 + 66);
-				end
-				if (v1627 == 1) then
-					if (v1628 and v1628:FindFirstChild(v7("\55\177\66\128\1\182\103\152\10\176\98\140\20\183", "\237\100\196\47")) and v1628.SummerHuntMaps.Main:FindFirstChild(v7("\111\64\138\163\58", "\116\44\44\235\202\87\232"))) then
-						if v1628.SummerHuntMaps.Main.Claim.Visible then
-							firesignal(v1628.SummerHuntMaps.Main.Claim.Activated);
-							pcall(function()
-								firesignal(v1628.SummerHuntMaps.Main.Claim.MouseButton1Click);
-							end);
-						end
-					end
-					break;
-				end
-			end
-		end);
-	end
-	if (v44.AutoEventQuests and ((v453 - (v55.LastEventQuestCheck or (0 - 0))) > 4)) then
-		local v1380 = 87 - (40 + 47);
-		while true do
-			if (v1380 == 0) then
-				v55.LastEventQuestCheck = v453;
-				pcall(function()
-					if v17:FindFirstChild(v7("\2\212\85\32\18\166\205\13\199\85\26\19\167\247\16\195", "\146\99\183\54\69\98\210")) then
-						v17.accept_npc_quest:InvokeServer(v7("\240\250\180\177\52\178\245\192\178\172\46\187", "\215\135\159\213\197\92"));
-						v17.accept_npc_quest:InvokeServer(v7("\164\164\252\233\161\154\239\227\183\161\237\255\160", "\140\211\197\136"));
-						v17.accept_npc_quest:InvokeServer(v7("\35\217\49\121\201\34\243\57\98\201\62\216", "\172\80\172\92\20"));
-					end
-					if v17:FindFirstChild(v7("\12\127\213\29\117\196\252\153\11\127\194\12", "\232\126\26\177\120\16\169\163")) then
-						v17.redeem_quest:InvokeServer(v7("\255\243\188\126\71\221\137\233\240\180\125\86\240\231", "\214\140\134\209\19\34\175"));
-						v17.redeem_quest:InvokeServer(v7("\71\50\165\167\81\53\151\175\66\34\166\190\107\117", "\202\52\71\200"));
-					end
-					if v17:FindFirstChild(v7("\237\68\116\142\227\119\119\134\250\92\121\130\254\73\102\148\209\90\112\144\239\90\113\148", "\231\142\40\21")) then
-						v17.claim_battlepass_rewards:InvokeServer();
-					end
-				end);
-				break;
-			end
-		end
-	end
-	if (v44.AutoBuyMerchant and ((v453 - (v55.LastMerchantCheck or (635 - (146 + 489)))) > (2 + 3))) then
-		v55.LastMerchantCheck = v453;
-		pcall(function()
-			local v1629 = nil;
-			if v17:FindFirstChild(v7("\98\55\212\31\87\16\192\79\49\208\24\64\6\218\100\13\199\25\86\60\199\120\61\213", "\180\16\82\165\106\50\99")) then
-				v1629 = v17.request_current_bsd_shop:InvokeServer();
-			end
-			if (v1629 and (typeof(v1629) == v7("\43\84\125\242\6", "\99\95\53\31\158"))) then
-				local v2222 = 999999;
-				local v2223 = 1001386 - (499 + 888);
-				pcall(function()
-					local v2468 = v16:FindFirstChild(v7("\194\38\113\72\247\56\87\68\251", "\49\146\74\16"));
-					if (v2468 and v2468:FindFirstChild(v7("\198\98\174\105\138\235\65", "\226\132\49\234\58"))) then
-						local v2881 = v2468.BSDShop.Window:FindFirstChild(v7("\246\125\163\247\31\235\53\74\219\113\188\247", "\56\186\24\208\132\122\153\114")) or v2468.BSDShop.Window:FindFirstChild(v7("\226\27\47\68\140\215", "\226\163\118\64\49"));
-						if (v2881 and v2881.Text) then
-							v2222 = tonumber(v2881.Text:match(v7("\188\200\116", "\125\153\172\95\222"))) or v2222;
-						end
-					end
-				end);
-				for v2469, v2470 in pairs(v1629) do
-					local v2471 = v2470.Name or v2470.item_id or tostring(v2469);
-					local v2472 = v2470.Cost or v2470.price or (0 + 0);
-					local v2473 = v2470.Currency or v7("\75\195\226\223\225\201", "\131\27\166\131\173\141\186");
-					local v2474 = false;
-					if ((v44.MerchantItem == v7("\210\127\75", "\71\147\19\39")) or (v44.MerchantItems and table.find(v44.MerchantItems, v7("\36\54\234", "\66\101\90\134\205\211\138\154")))) then
-						v2474 = true;
-					elseif ((v44.MerchantItem == v2471) or (v44.MerchantItems and table.find(v44.MerchantItems, v2471))) then
-						v2474 = true;
-					end
-					if v2474 then
-						if ((v2473 == v7("\59\73\116\191", "\71\124\44\25\204\229")) and ((v2223 - v2472) >= (v44.KeepGems or (0 - 0)))) then
-							if v17:FindFirstChild(v7("\16\239\48\123\214\171\19\236\44\72\206\176\28\253\22\73\199\171\17\242\40\74\214\134\27\238\44\73", "\217\114\154\73\36\162")) then
-								v17.buy_travelling_merchant_item:InvokeServer(v2469);
-							elseif v17:FindFirstChild(v7("\62\176\163\146\3\155\4\3\182\178\162\17\183\9\40\160\183", "\96\92\197\218\205\97\232")) then
-								v17.buy_bsd_shop_item:InvokeServer(v2469);
-							end
-						elseif ((v2473 ~= v7("\25\15\177\158", "\159\94\106\220\237")) and ((v2222 - v2472) >= (v44.KeepSummerPearls or 0))) then
-							if v17:FindFirstChild(v7("\175\15\29\124\185\8\5\85\168\22\8\74\163\29\59\78\168\8\7\75\172\20\16\124\164\14\1\78", "\35\205\122\100")) then
-								v17.buy_travelling_merchant_item:InvokeServer(v2469);
-							elseif v17:FindFirstChild(v7("\160\76\30\120\160\74\3\120\177\81\8\87\157\80\19\66\175", "\39\194\57\103")) then
-								v17.buy_bsd_shop_item:InvokeServer(v2469);
-							end
-						end
-					end
-				end
-			end
-		end);
 	end
 end;
 local v125 = function()
-	local v454 = 0;
-	local v455;
-	local v456;
-	local v457;
-	while true do
-		if (v454 == 2) then
-			if (v457 and (v457.Enabled == true)) then
-				return true;
+	if not v61() then
+		return;
+	end
+	local v451 = tick();
+	if (v24.AutoClaimMapBoard and ((v451 - (v25.LastMapBoardCheck or (1806 - (763 + 1043)))) > (17 - 13))) then
+		v25.LastMapBoardCheck = v451;
+		pcall(function()
+			if v18:FindFirstChild(v7("\120\202\226\196\224\229\240\110\203\238\200\255\136\220\118\199\243\242\239\213\226\105\194\220\193\228\212\230\104", "\131\27\166\131\173\141\186")) then
+				v18.claim_summer2_map_board_lines:InvokeServer();
 			end
-			return false;
-		end
-		if (v454 == (0 - 0)) then
-			v455 = v9:FindFirstChild(v7("\157\223\29\101\39", "\174\194\155\92\49\102\204")) and v9._DATA:FindFirstChild(v7("\246\135\94\98\130\198\231\207\141", "\142\164\232\57\23\231\170"));
-			if (v455 and v455:FindFirstChild(v7("\128\171\213\233\27\185\173\250\242\0\133\165\219\232\23\187\163\215\248\49\191\165\213\254\23", "\114\215\202\188\157")) and (v455.WaitingForRoguelikeChoice.Value == true)) then
-				return true;
+			local v1717 = v17:FindFirstChild(v7("\195\127\70\62\246\97\96\50\250", "\71\147\19\39"));
+			if (v1717 and v1717:FindFirstChild(v7("\54\47\235\160\182\248\210\55\11\46\203\172\163\249", "\66\101\90\134\205\211\138\154")) and v1717.SummerHuntMaps.Main:FindFirstChild(v7("\63\64\120\165\136", "\71\124\44\25\204\229"))) then
+				if v1717.SummerHuntMaps.Main.Claim.Visible then
+					local v2799 = 1275 - (1144 + 131);
+					while true do
+						if ((0 - 0) == v2799) then
+							firesignal(v1717.SummerHuntMaps.Main.Claim.Activated);
+							pcall(function()
+								firesignal(v1717.SummerHuntMaps.Main.Claim.MouseButton1Click);
+							end);
+							break;
+						end
+					end
+				end
 			end
-			v454 = 1;
+		end);
+	end
+	if (v24.AutoEventQuests and ((v451 - (v25.LastEventQuestCheck or (529 - (458 + 71)))) > (11 - 7))) then
+		local v1427 = 0 - 0;
+		while true do
+			if (v1427 == 0) then
+				v25.LastEventQuestCheck = v451;
+				pcall(function()
+					local v2447 = 0 + 0;
+					while true do
+						if (v2447 == 0) then
+							if v18:FindFirstChild(v7("\19\249\42\65\210\173\45\244\57\71\253\168\7\255\58\80", "\217\114\154\73\36\162")) then
+								local v3298 = 0 + 0;
+								while true do
+									if (v3298 == (1773 - (775 + 998))) then
+										v18.accept_npc_quest:InvokeServer(v7("\43\160\187\185\9\141\18\3\162\179\191\13", "\96\92\197\218\205\97\232"));
+										v18.accept_npc_quest:InvokeServer(v7("\41\11\168\136\237\1\13\179\137\251\59\25\175", "\159\94\106\220\237"));
+										v3298 = 145 - (78 + 66);
+									end
+									if (v3298 == (1 + 0)) then
+										v18.accept_npc_quest:InvokeServer(v7("\190\15\9\78\168\8\59\70\187\31\10\87", "\35\205\122\100"));
+										break;
+									end
+								end
+							end
+							if v18:FindFirstChild(v7("\176\92\3\66\167\84\56\86\183\92\20\83", "\39\194\57\103")) then
+								local v3299 = 0 - 0;
+								while true do
+									if (v3299 == (1044 - (437 + 607))) then
+										v18.redeem_quest:InvokeServer(v7("\177\238\49\92\3\190\241\167\237\57\95\18\147\159", "\174\194\155\92\49\102\204"));
+										v18.redeem_quest:InvokeServer(v7("\215\157\84\122\130\216\209\193\158\92\121\147\245\188", "\142\164\232\57\23\231\170"));
+										break;
+									end
+								end
+							end
+							v2447 = 1;
+						end
+						if (1 == v2447) then
+							if v18:FindFirstChild(v7("\180\166\221\244\31\136\168\221\233\6\187\175\204\252\1\164\149\206\248\5\182\184\216\238", "\114\215\202\188\157")) then
+								v18.claim_battlepass_rewards:InvokeServer();
+							end
+							break;
+						end
+					end
+				end);
+				break;
+			end
 		end
-		if (v454 == 1) then
-			v456 = v16:FindFirstChild(v7("\1\169\243\73\183\145\204\144\56", "\229\81\197\146\48\210\227\139"));
-			v457 = v456 and v456:FindFirstChild(v7("\161\83\73\126\224\254\81\83\129\70\105\117\212\238\88\90\139\89\94", "\54\226\50\59\26\179\155\61"));
-			v454 = 7 - 5;
-		end
+	end
+	if (v24.AutoBuyMerchant and ((v451 - (v25.LastMerchantCheck or (0 - 0))) > (36 - (30 + 1)))) then
+		v25.LastMerchantCheck = v451;
+		pcall(function()
+			local v1718 = nil;
+			if v18:FindFirstChild(v7("\35\160\227\69\183\144\255\186\50\176\224\66\183\141\255\186\51\182\246\111\161\139\228\149", "\229\81\197\146\48\210\227\139")) then
+				v1718 = v18.request_current_bsd_shop:InvokeServer();
+			end
+			if (v1718 and (typeof(v1718) == v7("\150\83\89\118\214", "\54\226\50\59\26\179\155\61"))) then
+				local v2203 = 1000810 - (786 + 25);
+				local v2204 = 3836970 - 2836971;
+				pcall(function()
+					local v2448 = 0;
+					local v2449;
+					while true do
+						if (v2448 == (0 + 0)) then
+							v2449 = v17:FindFirstChild(v7("\250\50\57\65\26\216\25\45\81", "\127\170\94\88\56"));
+							if (v2449 and v2449:FindFirstChild(v7("\194\244\144\241\176\50\233", "\198\128\167\212\162\216\93\153"))) then
+								local v3300 = 0;
+								local v3301;
+								while true do
+									if ((0 + 0) == v3300) then
+										v3301 = v2449.BSDShop.Window:FindFirstChild(v7("\134\63\247\205\175\40\195\204\171\51\232\205", "\190\202\90\132")) or v2449.BSDShop.Window:FindFirstChild(v7("\166\212\124\194\172\50", "\70\231\185\19\183\194"));
+										if (v3301 and v3301.Text) then
+											v2203 = tonumber(v3301.Text:match(v7("\158\196\175", "\211\187\160\132\196"))) or v2203;
+										end
+										break;
+									end
+								end
+							end
+							break;
+						end
+					end
+				end);
+				for v2450, v2451 in pairs(v1718) do
+					local v2452 = 0 - 0;
+					local v2453;
+					local v2454;
+					local v2455;
+					local v2456;
+					while true do
+						if (v2452 == (1 + 1)) then
+							if ((v24.MerchantItem == v7("\122\115\186", "\158\59\31\214\18\198\89")) or (v24.MerchantItems and table.find(v24.MerchantItems, v7("\124\5\75", "\106\61\105\39")))) then
+								v2456 = true;
+							elseif ((v24.MerchantItem == v2453) or (v24.MerchantItems and table.find(v24.MerchantItems, v2453))) then
+								v2456 = true;
+							end
+							if v2456 then
+								if ((v2455 == v7("\194\187\54\252", "\18\133\222\91\143\99\162")) and ((v2204 - v2454) >= (v24.KeepGems or 0))) then
+									if v18:FindFirstChild(v7("\117\42\181\97\205\46\66\196\114\51\160\87\215\59\124\223\114\45\175\86\216\50\87\237\126\43\169\83", "\178\23\95\204\62\185\92\35")) then
+										v18.buy_travelling_merchant_item:InvokeServer(v2450);
+									elseif v18:FindFirstChild(v7("\35\227\198\201\95\50\242\224\229\85\46\230\224\255\73\36\251", "\61\65\150\191\150")) then
+										v18.buy_bsd_shop_item:InvokeServer(v2450);
+									end
+								elseif ((v2455 ~= v7("\109\208\132\170", "\170\42\181\233\217\183\97")) and ((v2203 - v2454) >= (v24.KeepSummerPearls or 0))) then
+									if v18:FindFirstChild(v7("\206\110\246\234\102\89\205\109\234\217\126\66\194\124\208\216\119\89\207\115\238\219\102\116\197\111\234\216", "\43\172\27\143\181\18")) then
+										v18.buy_travelling_merchant_item:InvokeServer(v2450);
+									elseif v18:FindFirstChild(v7("\209\60\190\134\127\192\45\152\170\117\220\57\152\176\105\214\36", "\29\179\73\199\217")) then
+										v18.buy_bsd_shop_item:InvokeServer(v2450);
+									end
+								end
+							end
+							break;
+						end
+						if (v2452 == 1) then
+							v2455 = v2451.Currency or v7("\28\133\238\239\68\175", "\146\76\224\143\157\40\220");
+							v2456 = false;
+							v2452 = 1 + 1;
+						end
+						if (v2452 == (64 - (9 + 55))) then
+							v2453 = v2451.Name or v2451.item_id or tostring(v2450);
+							v2454 = v2451.Cost or v2451.price or (765 - (256 + 509));
+							v2452 = 1;
+						end
+					end
+				end
+			end
+		end);
 	end
 end;
 local v126 = function()
-	if (not v44.AutoPickCards and not v44.BestForEventCurrency) then
-		return;
-	end
-	if not v125() then
-		return;
-	end
-	local v458 = tick();
-	if (v55.LastVotedRoundChoice and ((v458 - (v55.LastVotedRoundTime or 0)) < (5.5 - 2))) then
-		return;
-	end
-	local v459 = v16:FindFirstChild(v7("\250\50\57\65\26\216\25\45\81", "\127\170\94\88\56"));
-	local v460 = v459 and v459:FindFirstChild(v7("\195\198\166\198\139\56\245\163\227\211\134\205\191\40\252\170\233\204\177", "\198\128\167\212\162\216\93\153"));
-	local v461 = v460 and v460:FindFirstChild(v7("\167\59\237\208", "\190\202\90\132")) and v460.main:FindFirstChild(v7("\151\208\112\220", "\70\231\185\19\183\194")) and v460.main.pick:FindFirstChild(v7("\210\206\234\161\161", "\211\187\160\132\196")) and v460.main.pick.inner:FindFirstChild(v7("\28\129\232\248\125\149", "\146\76\224\143\157\40\220"));
-	if not v461 then
-		return;
-	end
-	local v462 = {};
-	local v463 = false;
-	for v919, v920 in ipairs(v461:GetChildren()) do
-		if (v920:IsA(v7("\124\106\191\93\164\51\251\88\107", "\158\59\31\214\18\198\89")) and (v920.Name ~= v7("\104\32\107\3\78\29\107\11\68\6\82\30", "\106\61\105\39")) and (v920.Name ~= v7("\198\177\53\233\10\197\103\247\191\47\230\12\204", "\18\133\222\91\143\99\162"))) then
-			local v1630 = "";
-			for v1890, v1891 in ipairs(v920:GetDescendants()) do
-				if (v1891:IsA(v7("\67\58\180\74\245\61\65\215\123", "\178\23\95\204\62\185\92\35")) and v1891.Text and (#v1891.Text > (744 - (522 + 222)))) then
-					v1630 = v1630 .. " " .. v1891.Text;
-				end
-			end
-			local v1631 = v1630:lower();
-			local v1632 = 0 + 0;
-			local v1633 = v1630:match(v7("\100\189\151\179\89\106\191\154\179\24\50\188\236\227\80\44\243\205", "\61\65\150\191\150")) or v1630:match(v7("\2\144\141\242\158\68\143\15\198\195\138\194\12\199\79\199", "\170\42\181\233\217\183\97")) or v1630:match(v7("\132\62\235\158\59\14\137\62\252\159\66\78\205\105\227\198", "\43\172\27\143\181\18")) or v1630:match(v7("\150\98\239\252\121\152\96\226\252\56\192\99\149\188\106\210\59\163", "\29\179\73\199\217"));
-			if v1633 then
-				v1632 = tonumber(v1633) or (1485 - (72 + 1413));
-			end
-			local v1634 = string.find(v1631, v7("\105\169\100\222\112\162\124\193\57\179\120\222\112\178\105", "\173\25\193\29")) ~= nil;
-			local v1635 = string.find(v1631, v7("\87\113\80\22\174\74\196\125\73\121\68\11", "\24\58\16\55\127\205\106\182")) ~= nil;
-			local v1636 = v1634 or v1635;
-			if not v1636 then
-				v463 = true;
-			end
-			local v1637 = 1203 - (216 + 987);
-			local v1638 = {};
-			local v1639 = {[v7("\166\19\195\88\35\172", "\64\199\103\183\57")]=v7("\37\91\71\88\240\47", "\147\68\47\51\57"),[v7("\136\91\8\61\133\75\201\75\29\49\135\71\140", "\32\233\47\124\92\230")]=v7("\138\85\150\186\191\197", "\153\235\33\226\219\220\174"),[v7("\147\92\85\21\132", "\114\225\61\59")]=v7("\206\114\42\138\217", "\237\188\19\68"),[v7("\254\231\225\20\228\242\255\224", "\128\157\136\142\120")]=v7("\177\10\138\82\170\198\69\243", "\157\210\101\229\62\206\169\50"),[v7("\78\52\70\166\89\171\17\204\67\37\74", "\173\45\70\47\210\121\200\121")]=v7("\50\173\140\69", "\49\81\223\229"),[v7("\34\142\160\230\114\133\171\252\38\198\186\253\51\136\186\240", "\149\82\230\217")]=v7("\40\90\99\185\120\81\104\163\44", "\202\88\50\26"),[v7("\56\120\225\222\134\23\54\107\239\195\197\84\61\120\232\212\128", "\55\85\25\134\183\229")]=v7("\118\53\18\166\229\104\120\38\28\187", "\72\27\84\117\207\134"),[v7("\191\206\77\46\77\83\132\50\174\193\81", "\95\207\166\52\93\109\55\229")]=v7("\205\203\63\145\168\50\172\208\194\33\135", "\205\189\163\70\226\136\86"),[v7("\79\208\130\228\19\171\70\208\136\236\23\238", "\139\34\177\229\141\112")]=v7("\46\236\127\189\211\99\233\121\185\209\36\232", "\176\67\141\24\212"),[v7("\209\214\87\249\111\80\236\222\216\67\239", "\141\179\185\36\138\79\52")]=v7("\249\52\76\176\187\63\94\174\250\60\90", "\195\155\91\63"),[v7("\210\66\194\253\202\214\25\192\80\143\250\193\202\80\216\68", "\57\182\35\175\156\173\179")]=v7("\219\174\160\214\1\3", "\216\189\194\217\191\111\100"),[v7("\190\91\76\121\53\88\237\94\68\117\34\70\190", "\42\205\46\33\20\80")]=v7("\65\13\40\165\93", "\215\49\104\73"),["money (\194\165)"]="\194\165",[v7("\219\27\8\13\207", "\104\182\116\102")]="\194\165",[v7("\53\237\255\243\187\44\254\34\250\243\241\254\42\191\50\237", "\222\70\136\156\129\222\88")]=v7("\209\129\135\171\199\144", "\217\162\228\228"),[v7("\189\216\204\202\171\201\143\220\188\210\223", "\184\206\189\175")]=v7("\79\75\250\165\201\77", "\188\60\46\153\215\172\57"),[v7("\7\229\60\64\121\35\27\253\56\95\121\39\28\240\51\81\60", "\68\116\145\93\50\89")]=v7("\168\87\166\166\251", "\51\207\56\202\195\150"),[v7("\191\68\254\80\146\143\240\164\174", "\195\221\40\155\35\225\230\158")]=v7("\196\113\195\74\235\11\200\122", "\98\166\29\166\57\152")};
-			local v1640 = v44.TakeCardsPriority or {};
-			v55.TakenCardsCount = v55.TakenCardsCount or {};
-			for v1892, v1893 in ipairs(v1640) do
-				local v1894 = 0;
-				local v1895;
-				local v1896;
-				local v1897;
-				while true do
-					if (v1894 == (0 + 0)) then
-						local v2763 = 0 - 0;
-						while true do
-							if (v2763 == (1411 - (1300 + 111))) then
-								v1895 = ((type(v1893) == v7("\189\19\131\198\56", "\93\201\114\225\170")) and v1893.name) or tostring(v1893);
-								v1896 = ((type(v1893) == v7("\248\225\249\228\112", "\142\140\128\155\136\21\215\165")) and (tonumber(v1893.limit) or (1081 - (1055 + 26)))) or (643 - (475 + 168));
-								v2763 = 1368 - (302 + 1065);
-							end
-							if ((1 + 0) == v2763) then
-								v1894 = 1 + 0;
-								break;
-							end
-						end
-					end
-					if (v1894 == 1) then
-						v1897 = v1639[v1895:lower()] or v1895:lower();
-						if string.find(v1631, v1897) then
-							local v2984 = 0;
-							local v2985;
-							while true do
-								if (v2984 == (1 + 0)) then
-									if ((v1896 > 0) and (v2985 >= v1896)) then
-										v1637 = math.max(v1637, 10);
-									else
-										local v3403 = 1318 - (917 + 401);
-										local v3404;
-										while true do
-											if (v3403 == (1270 - (631 + 639))) then
-												v3404 = (2700 - (654 + 1046)) - (v1892 * (29 + 21));
-												if (v3404 > v1637) then
-													v1637 = v3404;
-												end
-												break;
-											end
-										end
-									end
-									break;
-								end
-								if (0 == v2984) then
-									table.insert(v1638, v1895);
-									v2985 = v55.TakenCardsCount[v1895] or (1599 - (1007 + 592));
-									v2984 = 4 - 3;
-								end
-							end
-						end
-						break;
-					end
-				end
-			end
-			local v1642 = 0 - 0;
-			local v1643 = {};
-			local v1644 = {[v7("\81\165\31\77\233\40\249\182\1\191\3\77\233\56\236", "\218\33\205\102\62\128\75\152")]=v7("\228\115\71\215\255\247\122\82\132\228\241\104\87\215\226", "\150\148\27\62\164"),[v7("\47\232\237\201\33\169\248\197\49\224\249\212", "\160\66\137\138")]=v7("\13\194\37\182\60\170\88\117\19\202\49\171", "\16\96\163\66\223\95\138\42"),[v7("\133\218\212\3\195\73\136\209\208\2\206\1", "\105\224\180\177\110\186")]=v7("\169\15\163\78\52\84", "\199\193\106\194\34\64\60\91"),[v7("\58\184\9\171\38\246\31\182\58\179\8", "\198\95\214\108")]=v7("\31\51\175\141\240\76\233\37\31\56\174", "\85\122\93\202\224\137\108\154"),[v7("\129\94\87\166\218\236\150\85\85\174\205", "\204\228\48\50\203\163")]=v7("\204\178\78\162\1", "\88\190\215\41\199\111\47\181"),[v7("\81\57\73\68\105\129\205\92\62\73\69\116", "\190\52\87\44\41\16\161")]=v7("\80\30\14\177\23\37", "\124\35\118\103\212\123\65"),[v7("\57\243\188\179\113\79\53\253\169\255\122\89\61\255\164\172", "\60\92\139\204\223\30")]=v7("\35\5\255\129\202\53\20\249\136", "\165\70\125\143\237"),[v7("\182\46\231\87\68\244\62\251\65\93\173\123\230\84\85\177\63", "\48\212\91\149\36")]=v7("\70\11\40\23\80", "\100\36\126\90"),[v7("\31\193\192\29\6\16\38\58\2", "\82\113\164\183\61\118\113\82")]=v7("\245\71\230\247\180\206\254\243", "\138\155\34\145\215\196\175"),[v7("\164\245\15\193\12\54\88\206\160\182\27\210\14\41\92\196\177\185\13\205\26\47", "\160\212\153\110\162\105\91\61")]=v7("\163\55\185\203", "\191\192\88\202"),[v7("\116\195\236\19\17\140\119\193\240\23\6\203\49\206\225\31\6\207\116", "\172\17\173\137\126\104")]=v7("\219\112\52\62\216\228\88\222\116\44\57\213\230", "\120\189\28\77\87\182\131"),[v7("\202\33\8\245\0\235\151\223\34\16\226\27\246\208", "\183\172\77\113\144\114\152")]=v7("\238\119\57\251\75\203\10", "\109\157\24\88\137\34\165"),[v7("\173\79\185\77\171\125\151\169\82\175\73\164\56\148", "\231\200\33\220\32\210\93")]=v7("\76\89\85\254\62\74\93", "\87\60\56\38\141"),[v7("\204\172\13\50\212\171\3\52\199\229\25\46\210\172\1\63\211", "\90\160\197\106")]=v7("\239\188\45\126\86\237\188\36\113", "\34\131\213\74\22"),[v7("\51\172\4\35\53\170", "\80\80\217\118")]=v7("\6\93\25\110\0", "\29\101\40\107")};
-			local v1645 = v44.AvoidCardsPriority or {};
-			v55.AvoidedCardsCount = v55.AvoidedCardsCount or {};
-			for v1898, v1899 in ipairs(v1645) do
-				local v1900 = ((type(v1899) == v7("\209\244\210\191\24", "\125\165\149\176\211")) and v1899.name) or tostring(v1899);
-				local v1901 = ((type(v1899) == v7("\93\2\40\237\128", "\229\41\99\74\129")) and (tonumber(v1899.limit) or (0 + 0))) or (0 - 0);
-				local v1902 = v1644[v1900:lower()] or v1900:lower();
-				if string.find(v1631, v1902) then
-					local v2475 = 0;
-					local v2476;
-					while true do
-						if (1 == v2475) then
-							if ((v1901 == 0) or (v2476 < v1901)) then
-								v1642 = v1642 + ((14599 - 9599) - (v1898 * 100));
-							end
-							break;
-						end
-						if (v2475 == (0 - 0)) then
-							table.insert(v1643, v1900);
-							v2476 = v55.AvoidedCardsCount[v1900] or 0;
-							v2475 = 323 - (26 + 296);
-						end
-					end
-				end
-			end
-			table.insert(v462, {[v7("\53\23\224\38\54", "\75\83\101\129")]=v920,[v7("\249\78\88", "\176\146\43\33")]=v920.Name,[v7("\161\211\245\20\182", "\27\200\189\145\113\206")]=v919,[v7("\176\142\83\185\67\130\132\92\190\92", "\47\192\235\50\203")]=v1632,[v7("\40\198\9\227\233\207\189\154\52", "\233\64\167\122\177\140\188\212")]=v1636,[v7("\91\117\253\69\216\191\255\93\113", "\144\47\20\150\32\139\220")]=v1637,[v7("\49\52\178\240\222\176\225\62\35\177\237\195", "\132\80\66\221\153\186\224")]=v1642,[v7("\78\174\55\54\173\73\166\32\35\169\71\166\48", "\219\38\207\68\119")]=(v1642 > 0),[v7("\3\19\30\2\22\131\31\19", "\236\109\118\106\81\117")]=(v1637 - v1642),[v7("\224\50\210\44\166\232\55\242\46\165\232\32", "\206\141\83\166\79")]=v1638,[v7("\224\168\201\201\246\232\173\252\220\241\228\173\206", "\158\141\201\189\170")]=v1643});
-		end
-	end
-	if (#v462 == (0 + 0)) then
-		return;
-	end
-	local v464 = false;
-	for v921, v922 in ipairs(v462) do
-		if (not v922.hasResist and not v922.hasAvoidTrait) then
-			v464 = true;
-			break;
-		end
-	end
-	local v465 = nil;
-	if v44.BestForEventCurrency then
-		table.sort(v462, function(v1647, v1648)
-			if v464 then
-				local v2224 = 0 - 0;
-				local v2225;
-				local v2226;
-				local v2227;
-				while true do
-					if (v2224 == 0) then
-						v2225 = 0;
-						v2226 = nil;
-						v2224 = 1;
-					end
-					if (v2224 == (1 + 0)) then
-						v2227 = nil;
-						while true do
-							if (v2225 == (818 - (418 + 399))) then
-								if (v2226 and not v2227) then
-									return false;
-								end
-								if (not v2226 and v2227) then
-									return true;
-								end
-								break;
-							end
-							if (v2225 == (0 - 0)) then
-								v2226 = v1647.hasResist or v1647.hasAvoidTrait;
-								v2227 = v1648.hasResist or v1648.hasAvoidTrait;
-								v2225 = 1;
-							end
-						end
-						break;
-					end
-				end
-			elseif v463 then
-				local v2764 = 0;
-				local v2765;
-				while true do
-					if (v2764 == 0) then
-						v2765 = 0;
-						while true do
-							if (v2765 == (0 + 0)) then
-								if (v1647.hasResist and not v1648.hasResist) then
-									return false;
-								end
-								if (not v1647.hasResist and v1648.hasResist) then
-									return true;
-								end
-								break;
-							end
-						end
-						break;
-					end
-				end
-			end
-			if (v1647.pearlBonus ~= v1648.pearlBonus) then
-				return v1647.pearlBonus > v1648.pearlBonus;
-			end
-			return v1647.netScore > v1648.netScore;
-		end);
-		v465 = v462[708 - (314 + 393)];
-	else
-		local v1383 = 0 - 0;
-		while true do
-			if (v1383 == 0) then
-				table.sort(v462, function(v2477, v2478)
-					if v464 then
-						local v2882 = 170 - (82 + 88);
-						local v2883;
-						local v2884;
-						while true do
-							if (v2882 == 1) then
-								if (v2883 and not v2884) then
-									return false;
-								end
-								if (not v2883 and v2884) then
-									return true;
-								end
-								break;
-							end
-							if (v2882 == 0) then
-								v2883 = v2477.hasResist or v2477.hasAvoidTrait;
-								v2884 = v2478.hasResist or v2478.hasAvoidTrait;
-								v2882 = 1 + 0;
-							end
-						end
-					end
-					return v2477.netScore > v2478.netScore;
-				end);
-				v465 = v462[148 - (95 + 52)];
-				break;
-			end
-		end
-	end
-	if (v465 and v465.frame) then
-		local v1384 = v465.frame;
-		local v1385 = tostring(v465.key or v465.index or "1");
-		v55.LastVotedRoundChoice = v1385;
-		v55.LastVotedRoundTime = tick();
-		if v465.matchedTakes then
-			for v2229, v2230 in ipairs(v465.matchedTakes) do
-				v55.TakenCardsCount[v2230] = (v55.TakenCardsCount[v2230] or 0) + 1 + 0;
-			end
-		end
-		if v465.matchedAvoids then
-			for v2232, v2233 in ipairs(v465.matchedAvoids) do
-				v55.AvoidedCardsCount[v2233] = (v55.AvoidedCardsCount[v2233] or 0) + 1 + 0;
-			end
-		end
-		pcall(function()
-			local v1649 = require(game.ReplicatedStorage.src.Loader);
-			local v1650 = v1649.load_client_service(nil, v7("\48\133\208\136\72\5\166\240\184\72", "\45\119\208\153\219"));
-			if (v1650 and v1650.roguelike_select_ui) then
-				v1650.roguelike_select_ui:_vote(v1385);
-			end
-		end);
-		pcall(function()
-			local v1651 = 0;
-			local v1652;
-			local v1653;
-			while true do
-				if (v1651 == 0) then
-					v1652 = require(game.ReplicatedStorage.src.Loader);
-					v1653 = v1652.load_client_service(nil, v7("\241\87\160\5\28\221\87\176\6\48\216\80\161\27\7", "\115\180\57\196\117"));
-					v1651 = 2 - 1;
-				end
-				if (v1651 == (834 - (8 + 825))) then
-					if (v1653 and v1653.invoke_server) then
-						v1653.invoke_server(v7("\33\121\92\241\83\208\21\210\61\123\69\241\92\205\33\197\13\115\64\224\89\203\36", "\160\82\28\48\148\48\164\74"), v1385);
-					end
-					break;
-				end
-			end
-		end);
-		pcall(function()
-			if (v17 and v17:FindFirstChild(v7("\208\213\177\35\57\25\252\194\178\33\47\8\207\217\182\35\5\2\211\196\180\41\52", "\109\163\176\221\70\90"))) then
-				v17.select_roguelike_option:InvokeServer(v1385);
-			end
-		end);
-		pcall(function()
-			if (v17 and v17:FindFirstChild(v7("\193\68\59\81\112\38\237\83\56\83\102\55\222\72\60\81\76\61\194\85\62\91\125", "\82\178\33\87\52\19")) and tonumber(v1385)) then
-				v17.select_roguelike_option:InvokeServer(tonumber(v1385));
-			end
-		end);
-		local v1388 = (v1384:IsA(v7("\107\183\225\88\105\88\182\231\116", "\28\44\194\136\26")) and v1384) or v1384:FindFirstChildWhichIsA(v7("\91\108\78\36\99\158\79\193\114", "\174\28\25\39\102\22\234\59"), true);
-		if v1388 then
-			pcall(function()
-				firesignal(v1388.Activated);
-			end);
-			pcall(function()
-				firesignal(v1388.MouseButton1Click);
-			end);
-		end
-		local v1389 = v460.main:FindFirstChild(v7("\235\70\4\204\193\139", "\230\169\41\112\184\174")) and v460.main.Bottom:FindFirstChild(v7("\249\193\121\187\17\0", "\47\170\164\21\222\114\116\179"));
-		if v1389 then
-			pcall(function()
-				firesignal(v1389.Activated);
-			end);
-			pcall(function()
-				firesignal(v1389.MouseButton1Click);
-			end);
-		end
-		pcall(function()
-			local v1654 = 0 + 0;
-			local v1655;
-			local v1656;
-			while true do
-				if (v1654 == 0) then
-					v460.Enabled = false;
-					v1655 = require(game.ReplicatedStorage.src.Loader);
-					v1654 = 1641 - (471 + 1169);
-				end
-				if (v1654 == 1) then
-					v1656 = v1655.load_client_service(nil, v7("\218\178\164\229\248\149\155\223\254\130", "\182\157\231\237"));
-					if (v1656 and v1656.roguelike_select_ui) then
-						v1656.roguelike_select_ui:hide();
-					end
-					break;
-				end
-			end
-		end);
-	end
-end;
-local v127 = function()
-	local v466 = 0;
-	local v467;
+	local v452 = 1960 - (1497 + 463);
+	local v453;
+	local v454;
+	local v455;
 	while true do
-		if (v466 == 3) then
-			if (v44.AutoClaimMapBoard and ((v467 - (v55.LastMapBoardCheck or 0)) > (5 + 0))) then
-				local v2235 = 0;
-				while true do
-					if (v2235 == (0 + 0)) then
-						v55.LastMapBoardCheck = v467;
-						pcall(function()
-							if v17:FindFirstChild(v7("\119\182\42\187\121\133\56\167\121\183\46\160\38\133\38\179\100\133\41\189\117\168\47\141\120\179\37\183\103", "\210\20\218\75")) then
-								v17.claim_summer2_map_board_lines:InvokeServer();
-							end
-						end);
-						break;
-					end
-				end
-			end
-			break;
+		if (v452 == (957 - (567 + 389))) then
+			v454 = v17:FindFirstChild(v7("\20\67\82\64\246\54\104\70\80", "\147\68\47\51\57"));
+			v455 = v454 and v454:FindFirstChild(v7("\170\78\14\56\181\69\133\74\31\40\180\79\142\90\25\48\143\75\140", "\32\233\47\124\92\230"));
+			v452 = 2;
 		end
-		if ((9 - 7) == v466) then
-			if (v44.SummerLeaveFewPlayers and ((v467 - v55.MatchStartTime) > (59 - 39)) and ((v467 - (v55.LastFewPlayersCheck or (0 + 0))) > (1 + 2))) then
-				local v2236 = 0;
-				local v2237;
-				while true do
-					if (v2236 == (1 + 0)) then
-						if (v2237 < (v44.SummerLeaveUnder or (1 + 4))) then
-							pcall(function()
-								TeleportService:Teleport(8304192273 - (365 + 78));
-							end);
-							return;
-						end
-						break;
-					end
-					if (v2236 == 0) then
-						v55.LastFewPlayersCheck = v467;
-						v2237 = #v8:GetPlayers();
-						v2236 = 1;
-					end
-				end
-			end
-			if ((v44.AutoPickCards or v44.BestForEventCurrency) and ((v467 - (v55.LastCardCheck or (223 - (200 + 23)))) > (0.3 + 0))) then
-				local v2238 = 0 + 0;
-				while true do
-					if ((0 + 0) == v2238) then
-						v55.LastCardCheck = v467;
-						if v125() then
-							pcall(v126);
-						else
-							v55.LastVotedRoundChoice = nil;
-						end
-						break;
-					end
-				end
-			end
-			v466 = 382 - (373 + 6);
-		end
-		if (v466 == (3 - 2)) then
-			v467 = tick();
-			if (v44.SummerLeaveLowLevel and ((v467 - (v55.LastLowLevelCheck or (0 - 0))) > 3)) then
-				v55.LastLowLevelCheck = v467;
-				local v2240 = 0;
-				local v2241 = v44.SummerLowLevelUnder or (932 - (519 + 403));
-				for v2480, v2481 in ipairs(v8:GetPlayers()) do
-					if (v2481 ~= v16) then
-						local v2888 = 999;
-						pcall(function()
-							if (v2481:FindFirstChild(v7("\249\255\13\164\240\232\31\180\244\238\31", "\192\149\154\108")) and v2481.leaderstats:FindFirstChild(v7("\213\252\241\37\49", "\97\153\153\135\64\93\86"))) then
-								v2888 = v2481.leaderstats.Level.Value;
-							elseif v2481:FindFirstChild(v7("\57\82\215\62\252\37", "\185\102\62\178\72\153\73\235")) then
-								v2888 = v2481._level.Value;
-							end
-						end);
-						if (v2888 < v2241) then
-							v2240 = v2240 + (1522 - (1435 + 86));
-						end
-					end
-				end
-				if (v2240 >= (v44.SummerLeaveWhenFound or 1)) then
-					local v2766 = 177 - (97 + 80);
-					while true do
-						if (v2766 == 0) then
-							pcall(function()
-								TeleportService:Teleport(8304191830 - 0);
-							end);
-							return;
-						end
-					end
-				end
-			end
-			v466 = 2;
-		end
-		if (v466 == (702 - (366 + 336))) then
-			if v59() then
-				v55.MatchStartTime = nil;
-				v55.TakenCardsCount = nil;
-				v55.AvoidedCardsCount = nil;
-				return;
-			end
-			if not v55.MatchStartTime then
-				v55.MatchStartTime = tick();
-				v55.TakenCardsCount = {};
-				v55.AvoidedCardsCount = {};
-			end
-			v466 = 606 - (4 + 601);
-		end
-	end
-end;
-local v128 = {};
-local v129 = {};
-local v130 = true;
-getgenv().AJ_HUB_BUFF_STOP = function()
-	v130 = false;
-end;
-local function v132()
-	local v468 = 0 + 0;
-	local v469;
-	local v470;
-	local v471;
-	local v472;
-	while true do
-		if (v468 == 0) then
-			local v1657 = 0;
-			while true do
-				if (v1657 == (668 - (128 + 540))) then
-					v469 = v16:FindFirstChild(v7("\184\241\6\106\89\11\19\157\244", "\84\232\157\103\19\60\121"));
-					if not v469 then
-						return 0;
-					end
-					v1657 = 570 - (341 + 228);
-				end
-				if (v1657 == (1789 - (231 + 1557))) then
-					v468 = 1 - 0;
-					break;
-				end
-			end
-		end
-		if ((13 - 10) == v468) then
-			if v472 then
-				for v2482, v2483 in ipairs(v472:GetDescendants()) do
-					if v2483:IsA(v7("\6\202\214\50\223\51\205\203\42", "\147\82\175\174\70")) then
-						v471(v2483.Text);
-					end
-				end
-			end
-			if (v470 == (0 + 0)) then
-				local v2248 = 1351 - (1329 + 22);
-				local v2249;
-				while true do
-					if (0 == v2248) then
-						v2249 = {v469:FindFirstChild(v7("\48\131\0\57\109\18\148\8\48", "\33\119\226\109\92")),v469:FindFirstChild(v7("\150\131\108\252\247\147\136\124\246", "\155\218\230\26\153")),v469:FindFirstChild(v7("\5\2\26\212\24\45\14\205\31\6\8", "\163\118\114\123"))};
-						for v2986, v2987 in ipairs(v2249) do
-							if v2987 then
-								for v3286, v3287 in ipairs(v2987:GetDescendants()) do
-									if v3287:IsA(v7("\214\227\232\164\153\227\228\245\188", "\213\130\134\144\208")) then
-										v471(v3287.Text);
-									end
-								end
-								if (v470 > 0) then
-									break;
-								end
-							end
-						end
-						break;
-					end
-				end
-			end
-			v468 = 4;
-		end
-		if (v468 == (3 - 2)) then
-			v470 = 1691 - (219 + 1472);
-			v471 = nil;
-			v468 = 1 + 1;
-		end
-		if (v468 == (2 + 0)) then
-			function v471(v1903)
-				if (not v1903 or (v1903 == "")) then
-					return;
-				end
-				local v1904 = string.match(v1903, v7("\84\72\55\8\89\62\79\28\89\119\57\6\82\44\55\71\86\58\55\6\89\96\56\120\63\112\79\120\51\124\79\120\51\124\79\120\48\127\79\120\56\119\79\120\51\124\79\120\43\100\79\120\50\125\79", "\35\124\19\18"));
-				if v1904 then
-					local v2484 = 388 - (162 + 226);
-					local v2485;
-					while true do
-						if (v2484 == (0 - 0)) then
-							v2485 = tonumber(v1904);
-							if (v2485 and (v2485 > v470)) then
-								v470 = v2485;
-							end
-							break;
-						end
-					end
-				end
-				local v1905 = string.match(v1903, v7("\223\112\23\251\108\203\92\41\253\120\235\110\47\234\91\217\104\48\194\106\223\124\27\251\108\211\68\41\253\121\234\110\47\131\68\161\68\41\140\13\161\64\94\142\108\161\24\81\139\106\187\22\16\141\18\170\12\81\194\29\173\22\81", "\55\132\51\116\166"));
-				if v1905 then
-					local v2486 = 0 + 0;
-					local v2487;
-					while true do
-						if (v2486 == (0 - 0)) then
-							v2487 = tonumber(v1905);
-							if (v2487 and (v2487 > v470)) then
-								v470 = v2487;
-							end
-							break;
-						end
-					end
-				end
-				local v1906 = string.match(v1903, v7("\243\31\190\73\63\17\242\245\7\146\123\57\5\209\196\1\134\80\0\3\198\231\51\128\79\51\41\192\243\18\179\73\63\123\238\141\43\128\62\65\45\182\128\7\248\63\65\115\192\151\121\185\63\65\112\162\141\56\247\61\65\123", "\157\168\92\221\20\100\94"));
-				if v1906 then
-					local v2488 = 890 - (224 + 666);
-					local v2489;
-					while true do
-						if (v2488 == 0) then
-							v2489 = tonumber(v1906);
-							if (v2489 and (v2489 > v470)) then
-								v470 = v2489;
-							end
-							break;
-						end
-					end
-				end
-				local v1907 = string.match(v1903, v7("\128\234\176\84\95\148\75\151\148\241\84\95\151\41\141\213\191\86\95\156\51\219\155\206\60\25\228\77\236\213\200", "\22\168\177\149\127\122\185"));
-				if v1907 then
-					local v2490 = tonumber(v1907);
-					if (v2490 and (v2490 > v470)) then
-						v470 = v2490;
-					end
-				end
-			end
-			v472 = v469:FindFirstChild(v7("\144\166\55\79\211\178\177\63\70\214\185\161\53", "\159\215\199\90\42"));
-			v468 = 1683 - (345 + 1335);
-		end
-		if (4 == v468) then
-			return v470;
-		end
-	end
-end
-local function v133(v473)
-	local v474 = 0 + 0;
-	local v475;
-	local v476;
-	local v477;
-	local v478;
-	while true do
-		if (v474 == (7 - 4)) then
-			if v477 then
-				local v2250 = v477:FindFirstChild(v7("\76\160\172\36\45\78", "\72\60\204\205\93"));
-				if (v2250 and v2250.Value) then
-					local v2767 = 0 - 0;
-					while true do
-						if (v2767 == (1 + 0)) then
-							if ((typeof(v2250.Value) == v7("\36\177\174\170\57\162", "\195\87\197\220")) and (v2250.Value == v475.Name)) then
-								return true;
-							end
-							break;
-						end
-						if (v2767 == (365 - (18 + 347))) then
-							if (v2250.Value == v475) then
-								return true;
-							end
-							if ((typeof(v2250.Value) == v7("\141\202\209\160\73\32\167\193", "\78\196\164\162\212\40")) and v2250.Value:IsA(v7("\107\193\200\71\247\219", "\199\59\173\169\62\146\169\192")) and (v2250.Value.Name == v475.Name)) then
-								return true;
-							end
-							v2767 = 1;
-						end
-					end
-				end
-			end
-			v478 = v473:GetAttribute(v7("\190\230\175\182\199", "\84\209\145\193\211\181\28\156")) or v473:GetAttribute(v7("\193\239\47\145\194\195", "\167\177\131\78\232")) or v473:GetAttribute(v7("\167\26\133\66\22\119\7\193", "\165\200\109\235\39\100\40\110"));
-			v474 = 976 - (556 + 416);
-		end
-		if (v474 == (1701 - (797 + 902))) then
-			if v11:HasTag(v473, v476) then
+		if (v452 == (60 - (14 + 46))) then
+			v453 = v9:FindFirstChild(v7("\70\133\92\249\88", "\173\25\193\29")) and v9._DATA:FindFirstChild(v7("\104\127\80\10\168\6\223\115\95", "\24\58\16\55\127\205\106\182"));
+			if (v453 and v453:FindFirstChild(v7("\144\6\222\77\41\169\0\241\86\50\149\8\208\76\37\171\14\220\92\3\175\8\222\90\37", "\64\199\103\183\57")) and (v453.WaitingForRoguelikeChoice.Value == true)) then
 				return true;
 			end
-			v477 = v473:FindFirstChild(v7("\126\209\249\210\90\82", "\46\33\162\141\179"));
-			v474 = 1 + 2;
+			v452 = 1 - 0;
 		end
-		if (1 == v474) then
-			if not v475 then
-				return false;
-			end
-			v476 = v7("\235\48\28\45\64\107\98\60\245\53\9\39\31", "\73\155\92\125\84\37\25\61") .. tostring(v475.UserId);
-			v474 = 2;
-		end
-		if (v474 == (16 - 12)) then
-			if (v478 and ((v478 == v475.UserId) or (v478 == v475.Name))) then
-				return true;
-			end
-			return false;
-		end
-		if (v474 == (0 - 0)) then
-			if (not v473 or not v473.Parent) then
-				return false;
-			end
-			v475 = v16;
-			v474 = 1073 - (632 + 440);
-		end
-	end
-end
-local function v134(v479)
-	local v480 = 0;
-	local v481;
-	local v482;
-	while true do
-		local v923 = 0;
-		while true do
-			if (v923 == (0 - 0)) then
-				if (v480 == 0) then
-					local v2491 = 1209 - (705 + 504);
-					while true do
-						if (v2491 == 0) then
-							v481 = {};
-							v482 = v9:FindFirstChild(v7("\182\79\207\1\39\186", "\115\233\26\129\72"));
-							v2491 = 1;
-						end
-						if (v2491 == 1) then
-							v480 = 1 - 0;
-							break;
-						end
-					end
-				end
-				if (v480 == (4 - 2)) then
-					table.sort(v481, function(v2768, v2769)
-						local v2770 = 0;
-						local v2771;
-						local v2772;
-						local v2773;
-						while true do
-							if (v2770 == (1918 - (1300 + 617))) then
-								v2773 = nil;
-								while true do
-									if (v2771 == (4 - 3)) then
-										if (v2772 ~= v2773) then
-											return v2772 < v2773;
-										end
-										return tostring(v2768) < tostring(v2769);
-									end
-									if (v2771 == (1922 - (36 + 1886))) then
-										v2772 = v2768:GetAttribute(v7("\12\253\185\24\191\150\151\252\29\231\189\6\189\141\129\237", "\169\83\174\233\89\232\216\200")) or (0 - 0);
-										v2773 = v2769:GetAttribute(v7("\99\33\107\28\143\229\214\35\114\59\111\2\141\254\192\50", "\118\60\114\59\93\216\171\137")) or (616 - (305 + 311));
-										v2771 = 1 + 0;
-									end
-								end
-								break;
-							end
-							if (v2770 == (1455 - (1093 + 362))) then
-								v2771 = 0;
-								v2772 = nil;
-								v2770 = 1;
-							end
-						end
-					end);
-					return v481;
-				end
-				v923 = 1099 - (734 + 364);
-			end
-			if (v923 == 1) then
-				if (v480 == 1) then
-					if not v482 then
-						return v481;
-					end
-					for v2774, v2775 in ipairs(v482:GetChildren()) do
-						local v2776 = v2775:FindFirstChild(v7("\71\29\195\134\240\107", "\132\24\110\183\231"));
-						if (v2776 and v2776:FindFirstChild(v7("\167\117", "\35\206\17\96\211\58\212\22")) and string.find(string.lower(v2776.id.Value), string.lower(v479))) then
-							if v133(v2775) then
-								table.insert(v481, v2775);
-							end
-						end
-					end
-					v480 = 1010 - (374 + 634);
-				end
-				break;
-			end
-		end
-	end
-end
-local function v135(v483)
-	if (not v483 or not v483.Parent or not v483:FindFirstChild(v7("\109\218\80\229\168\65", "\220\50\169\36\132"))) then
-		return 27.619999999999997 + 36;
-	end
-	local v484 = v483._stats;
-	local v485 = (v484:FindFirstChild(v7("\240\132\24\184\231\130\51\176\229\147\13\178\250\184\15\190\254\139\8\190\230\137", "\209\145\231\108")) and v484.active_attack_cooldown.Value) or (1180.62 - (331 + 786));
-	local v486 = v132();
-	local v487 = (1097 - (759 + 337)) + (math.max(v486, 0 - 0) / (664 - (255 + 309)));
-	return math.max(v485, v485 * v487);
-end
-local function v136(v488)
-	if (not v488 or not v488.Parent or not v488:FindFirstChild(v7("\102\50\28\12\204\214", "\66\57\65\104\109\184\165"))) then
-		return 10492 - (484 + 9), false, 60.62 + 3;
-	end
-	local v489 = v488._stats;
-	local v490 = v135(v488);
-	local v491 = tick();
-	local v492 = v128[v488] or 0;
-	local v493 = 0 - 0;
-	if (v492 > (0 + 0)) then
-		v493 = v490 - (v491 - v492);
-	end
-	local v494 = (v489:FindFirstChild(v7("\177\10\233\74\218\188\8\238\87\243\184\52\249\95\246\169", "\133\221\107\154\62")) and v489.last_active_cast.Value) or -(174012606 - 74012606);
-	local v495 = 0;
-	if (v494 > (1450 - (341 + 1109))) then
-		v495 = v490 - (v491 - v494);
-	end
-	local v496 = math.max(v493, v495);
-	local v497 = v496 <= (0.05 + 0);
-	return math.max(v496, 0 + 0), v497, v490;
-end
-local function v137(v498)
-	local v499 = 659 - (483 + 176);
-	local v500;
-	local v501;
-	local v502;
-	local v503;
-	local v504;
-	local v505;
-	local v506;
-	while true do
-		if (v499 == 1) then
-			v501 = (v500:FindFirstChild(v7("\111\210\250\54\183\105\200\230\44\134\127\216", "\232\26\188\147\66")) and v500.unit_stunned.Value) or (0 + 0);
-			if (v501 > (0 + 0)) then
-				return false, v7("\6\245\243\21\125\16\229", "\19\117\129\134\123");
-			end
-			v502 = (v500:FindFirstChild(v7("\37\17\198\12\49\45", "\67\67\99\169\118\84")) and v500.frozen.Value) or false;
-			v499 = 1282 - (47 + 1233);
-		end
-		if (v499 == (2 + 0)) then
-			if v502 then
-				return false, v7("\4\56\234\85\86\184", "\214\98\74\133\47\51\214\153");
-			end
-			v503 = (v500:FindFirstChild(v7("\11\77\100\125\101\82\53\95\101\113\102\82\14\113\127\102\76\66\25\71\126\115", "\55\106\46\16\20\19")) and v500.active_queued_or_using.Value) or false;
-			if v503 then
-				return false, v7("\92\168\187\62\49", "\115\41\219\210\80\86\94");
-			end
-			v499 = 617 - (421 + 193);
-		end
-		if (v499 == 3) then
-			local v1658 = 0 - 0;
+		if (v452 == (2 - 0)) then
+			local v1719 = 0;
 			while true do
-				if (v1658 == (0 - 0)) then
-					v504, v505 = v136(v498);
-					if (not v505 and (v504 > 0.1)) then
-						return false, v7("\163\70\230\22\214\52\183\71", "\91\192\41\137\122\178");
-					end
-					v1658 = 1;
-				end
-				if (v1658 == 1) then
-					v506 = v129[v498] or 0;
-					v499 = 4 + 0;
-					break;
-				end
-			end
-		end
-		if ((0 - 0) == v499) then
-			if (not v498 or not v498.Parent) then
-				return false, v7("\213\17\138\244\73\203\37", "\81\187\126\213\129\39\162");
-			end
-			v500 = v498:FindFirstChild(v7("\186\162\57\245\176\150", "\196\229\209\77\148"));
-			if not v500 then
-				return false, v7("\73\218\78\15\73\243\217\84", "\173\39\181\17\124\61\146");
-			end
-			v499 = 1;
-		end
-		if (v499 == (2 + 2)) then
-			local v1659 = 0 + 0;
-			while true do
-				if (v1659 == (0 + 0)) then
-					if ((tick() - v506) < (0.6 + 0)) then
-						return false, v7("\67\45\216\231\67\49\198\237\83", "\136\55\69\170");
-					end
-					return true, v7("\241\248\17\62\207", "\173\131\157\112\90\182\147\77");
-				end
-			end
-		end
-	end
-end
-local function v138(v507)
-	local v508 = 0 - 0;
-	local v509;
-	local v510;
-	while true do
-		if (v508 == 3) then
-			if v509 then
-				v128[v507] = tick();
-			end
-			return v509;
-		end
-		if (v508 == (1844 - (463 + 1381))) then
-			if (not v507 or not v507.Parent or not v507:FindFirstChild(v7("\37\5\52\6\14\5", "\103\122\118\64"))) then
-				return false;
-			end
-			v129[v507] = tick();
-			v508 = 1 + 0;
-		end
-		if (v508 == (1 + 1)) then
-			if (v510 and v510.invoke_server) then
-				local v2252 = 0;
-				local v2253;
-				local v2254;
-				while true do
-					if (v2252 == (0 + 0)) then
-						v2253, v2254 = pcall(function()
-							return v510.invoke_server(v7("\229\251\21\251\241\190\228\225\6\193\207\188\228\252\17\199\251", "\221\144\136\112\164\144"), v507);
-						end);
-						if (v2253 and ((v2254 == true) or ((v2254 ~= false) and (v2254 ~= nil) and (type(v2254) ~= v7("\74\41\107\173\87\58", "\196\57\93\25"))))) then
-							v509 = true;
-						end
-						break;
-					end
-				end
-			end
-			if not v509 then
-				if v17:FindFirstChild(v7("\223\95\181\186\78\201\88\185\147\74\245\77\164\145\78\201\71", "\47\170\44\208\229")) then
-					local v2777, v2778 = pcall(function()
-						return v17.use_active_attack:InvokeServer(v507);
-					end);
-					if (v2777 and ((v2778 == true) or ((v2778 ~= false) and (v2778 ~= nil) and (type(v2778) ~= v7("\91\86\172\19\21\224", "\87\40\34\222\122\123\135"))))) then
-						v509 = true;
-					end
-				end
-			end
-			v508 = 6 - 3;
-		end
-		if (v508 == (1 - 0)) then
-			v509 = false;
-			v510 = v71();
-			v508 = 2;
-		end
-	end
-end
-local function v139(v511)
-	local v512 = 1161 - (696 + 465);
-	local v513;
-	local v514;
-	local v515;
-	local v516;
-	local v517;
-	local v518;
-	local v519;
-	while true do
-		local v924 = 560 - (14 + 546);
-		while true do
-			if (v924 == 2) then
-				if (v512 == 1) then
-					local v2492 = 0;
-					while true do
-						if (v2492 == (0 + 0)) then
-							v515 = v132();
-							v516 = (v513 and v513:FindFirstChild(v7("\163\13\153\213\122\169\38\142\219\118\174\29\130\195\119", "\25\194\121\237\180")) and v513.attack_cooldown.Value) or (1455 - (413 + 1027));
-							v2492 = 1817 - (1382 + 434);
-						end
-						if (v2492 == 1) then
-							v512 = 5 - 3;
-							break;
-						end
-					end
-				end
-				break;
-			end
-			if ((1525 - (86 + 1438)) == v924) then
-				if (v512 == (723 - (692 + 29))) then
-					v517 = v516 * (1 + 0 + (math.max(v515, 0) / (306 - 206)));
-					v518 = math.floor(v517 % (3 + 7));
-					v512 = 3;
-				end
-				if (v512 == 3) then
-					local v2493 = 0 + 0;
-					while true do
-						if (v2493 == (0 + 0)) then
-							v519 = ((v518 >= 3) and (v518 <= (7 + 1)) and v518) or (13 - 9);
-							if ((v514 > (172 - 112)) and (((v514 - (118 - (11 + 47))) + 1) > v519)) then
-								v519 = (v514 - (117 - 57)) + 1 + 0;
-							end
-							v2493 = 450 - (287 + 162);
-						end
-						if (v2493 == (1 + 0)) then
-							v512 = 4;
-							break;
-						end
-					end
-				end
-				v924 = 1631 - (10 + 1619);
-			end
-			if (v924 == 0) then
-				if (v512 == (0 + 0)) then
-					v513 = v511 and v511:FindFirstChild(v7("\126\46\149\52\213\195", "\176\33\93\225\85\161"));
-					v514 = v135(v511);
-					v512 = 1;
-				end
-				if (v512 == (2 + 2)) then
-					return v519;
-				end
-				v924 = 1;
-			end
-		end
-	end
-end
-local function v140(v520, v521)
-	local v522 = 0 + 0;
-	local v523;
-	while true do
-		if ((1270 - (403 + 867)) == v522) then
-			v523 = tick() + (v521 or 120);
-			while v130 and (tick() < v523) do
-				local v1908 = 0;
-				local v1909;
-				local v1910;
-				local v1911;
-				while true do
-					if (v1908 == (352 - (310 + 42))) then
-						if v59() then
-							return false;
-						end
-						if (not v520 or not v520.Parent) then
-							return false;
-						end
-						v1908 = 1;
-					end
-					if ((2 + 0) == v1908) then
-						v1911 = v136(v520);
-						task.wait(math.clamp(v1911, 0.2, 0.6 + 0));
-						break;
-					end
-					if ((1446 - (1170 + 275)) == v1908) then
-						v1909, v1910 = v137(v520);
-						if v1909 then
-							return true;
-						end
-						v1908 = 2;
-					end
-				end
-			end
-			v522 = 1 + 0;
-		end
-		if (v522 == (3 - 2)) then
-			return false;
-		end
-	end
-end
-local function v141(v524, v525)
-	local v526 = 683 - (424 + 259);
-	local v527;
-	while true do
-		if (v526 == (0 - 0)) then
-			if not v140(v524, v525) then
-				return false;
-			end
-			v527 = tick() + 4;
-			v526 = 1065 - (289 + 775);
-		end
-		if (v526 == 1) then
-			local v1661 = 0;
-			while true do
-				if (v1661 == (0 - 0)) then
-					while v130 and (tick() < v527) do
-						if v59() then
-							return false;
-						end
-						if (not v524 or not v524.Parent) then
-							return false;
-						end
-						local v2779 = v137(v524);
-						if v2779 then
-							if v138(v524) then
-								return true;
-							end
-						end
-						task.wait(0.6 - 0);
+				if (v1719 == (0 - 0)) then
+					if (v455 and (v455.Enabled == true)) then
+						return true;
 					end
 					return false;
 				end
 			end
 		end
 	end
-end
-local v142 = function(v528, v529)
-	task.spawn(function()
-		local v925;
-		local function v926()
-			if v925 then
-				local v1912 = 0 - 0;
+end;
+local v127 = function()
+	if (not v24.AutoPickCards and not v24.BestForEventCurrency) then
+		return;
+	end
+	if not v126() then
+		return;
+	end
+	local v456 = tick();
+	if (v25.LastVotedRoundChoice and ((v456 - (v25.LastVotedRoundTime or 0)) < (819.5 - (301 + 515)))) then
+		return;
+	end
+	local v457 = v17:FindFirstChild(v7("\187\77\131\162\185\220\222\158\72", "\153\235\33\226\219\220\174"));
+	local v458 = v457 and v457:FindFirstChild(v7("\162\92\73\22\178\88\87\23\130\73\105\29\134\72\94\30\136\86\94", "\114\225\61\59"));
+	local v459 = v458 and v458:FindFirstChild(v7("\209\114\45\131", "\237\188\19\68")) and v458.main:FindFirstChild(v7("\237\225\237\19", "\128\157\136\142\120")) and v458.main.pick:FindFirstChild(v7("\187\11\139\91\188", "\157\210\101\229\62\206\169\50")) and v458.main.pick.inner:FindFirstChild(v7("\125\39\72\183\44\129", "\173\45\70\47\210\121\200\121"));
+	if not v459 then
+		return;
+	end
+	local v460 = {};
+	local v461 = false;
+	for v941, v942 in ipairs(v459:GetChildren()) do
+		if (v942:IsA(v7("\22\170\140\126\51\181\128\82\37", "\49\81\223\229")) and (v942.Name ~= v7("\7\175\149\252\33\146\149\244\43\137\172\225", "\149\82\230\217")) and (v942.Name ~= v7("\27\93\116\172\49\85\111\184\57\70\115\165\54", "\202\88\50\26"))) then
+			local v1720 = "";
+			for v1903, v1904 in ipairs(v942:GetDescendants()) do
+				if (v1904:IsA(v7("\1\124\254\195\169\86\55\124\234", "\55\85\25\134\183\229")) and v1904.Text and (#v1904.Text > (537 - (45 + 492)))) then
+					v1720 = v1720 .. " " .. v1904.Text;
+				end
+			end
+			local v1721 = v1720:lower();
+			local v1722 = 0 + 0;
+			local v1723 = v1720:match(v7("\62\127\93\234\226\99\50\113\80\234\245\98\72\33\24\162\227\58", "\72\27\84\117\207\134")) or v1720:match(v7("\231\131\80\118\68\18\192\122\188\140\103\40\0\90\128\45", "\95\207\166\52\93\109\55\229")) or v1720:match(v7("\149\134\34\201\161\115\232\152\208\108\178\237\55\191\209\208", "\205\189\163\70\226\136\86")) or v1720:match(v7("\7\154\205\168\20\160\11\148\192\168\3\161\112\212\146\236\2\239", "\139\34\177\229\141\112"));
+			if v1723 then
+				v1722 = tonumber(v1723) or (0 - 0);
+			end
+			local v1724 = string.find(v1721, v7("\51\229\97\167\217\32\236\116\244\194\38\254\113\167\196", "\176\67\141\24\212")) ~= nil;
+			local v1725 = string.find(v1721, v7("\222\216\67\227\44\20\255\214\202\77\249\59", "\141\179\185\36\138\79\52")) ~= nil;
+			local v1726 = v1724 or v1725;
+			if not v1726 then
+				v461 = true;
+			end
+			local v1727 = 0;
+			local v1728 = {};
+			local v1729 = {[v7("\250\47\75\162\248\48", "\195\155\91\63")]=v7("\215\87\219\253\206\216", "\57\182\35\175\156\173\179"),[v7("\220\182\173\222\12\15\248\217\163\180\222\8\1", "\216\189\194\217\191\111\100")]=v7("\172\90\85\117\51\65", "\42\205\46\33\20\80"),[v7("\67\9\39\176\84", "\215\49\104\73")]=v7("\196\21\8\15\211", "\104\182\116\102"),[v7("\37\231\243\237\186\55\169\40", "\222\70\136\156\129\222\88")]=v7("\193\139\139\181\198\139\147\183", "\217\162\228\228"),[v7("\173\207\198\204\238\222\199\217\160\222\202", "\184\206\189\175")]=v7("\95\92\240\163", "\188\60\46\153\215\172\57"),[v7("\4\249\36\65\121\39\6\248\41\18\58\44\21\255\62\87", "\68\116\145\93\50\89")]=v7("\191\80\179\176\182\80\189\81\190", "\51\207\56\202\195\150"),[v7("\176\73\252\74\130\198\253\177\180\92\187\64\137\135\240\160\184", "\195\221\40\155\35\225\230\158")]=v7("\203\124\193\80\251\66\197\111\207\77", "\98\166\29\166\57\152"),[v7("\185\26\152\217\125\173\19\140\203\58\172", "\93\201\114\225\170")]=v7("\252\232\226\251\53\179\196\227\237\231\254", "\142\140\128\155\136\21\215\165"),[v7("\76\172\1\87\227\107\252\187\76\172\1\91", "\218\33\205\102\62\128\75\152")]=v7("\249\122\89\205\245\180\127\95\201\247\243\126", "\150\148\27\62\164"),[v7("\32\230\249\211\98\237\235\205\35\238\239", "\160\66\137\138")]=v7("\2\204\49\172\127\238\75\125\1\196\39", "\16\96\163\66\223\95\138\42"),[v7("\132\213\220\15\221\12\192\194\194\78\220\5\153\221\223\9", "\105\224\180\177\110\186")]=v7("\167\6\187\75\46\91", "\199\193\106\194\34\64\60\91"),[v7("\44\163\1\171\58\164\76\182\58\183\30\170\44", "\198\95\214\108")]=v7("\10\56\171\146\229", "\85\122\93\202\224\137\108\154"),["money (\194\165)"]="\194\165",[v7("\137\95\92\174\218", "\204\228\48\50\203\163")]="\194\165",[v7("\205\178\74\181\10\91\149\60\204\184\89\231\29\78\193\61", "\88\190\215\41\199\111\47\181")]=v7("\71\50\79\91\117\213", "\190\52\87\44\41\16\161"),[v7("\80\19\4\166\30\53\92\71\4\8\164", "\124\35\118\103\212\123\65")]=v7("\47\238\175\173\123\72", "\60\92\139\204\223\30"),[v7("\53\9\238\159\133\33\18\227\136\200\102\30\231\140\203\37\24", "\165\70\125\143\237")]=v7("\179\52\249\65\93", "\48\212\91\149\36"),[v7("\70\18\63\23\87\23\52\3\87", "\100\36\126\90")]=v7("\19\200\210\78\5\24\60\53", "\82\113\164\183\61\118\113\82")};
+			local v1730 = v24.TakeCardsPriority or {};
+			v25.TakenCardsCount = v25.TakenCardsCount or {};
+			for v1905, v1906 in ipairs(v1730) do
+				local v1907 = 0 + 0;
+				local v1908;
+				local v1909;
+				local v1910;
 				while true do
-					if ((0 - 0) == v1912) then
-						pcall(task.cancel, v925);
-						v925 = nil;
+					if (v1907 == (0 + 0)) then
+						v1908 = ((type(v1906) == v7("\239\67\243\187\161", "\138\155\34\145\215\196\175")) and v1906.name) or tostring(v1906);
+						v1909 = ((type(v1906) == v7("\160\248\12\206\12", "\160\212\153\110\162\105\91\61")) and (tonumber(v1906.limit) or (0 + 0))) or 0;
+						v1907 = 1;
+					end
+					if (v1907 == (1 - 0)) then
+						v1910 = v1729[v1908:lower()] or v1908:lower();
+						if string.find(v1721, v1910) then
+							table.insert(v1728, v1908);
+							local v3067 = v25.TakenCardsCount[v1908] or (643 - (228 + 415));
+							if ((v1909 > 0) and (v3067 >= v1909)) then
+								v1727 = math.max(v1727, 5 + 5);
+							else
+								local v3302 = 0 + 0;
+								local v3303;
+								while true do
+									if (v3302 == 0) then
+										v3303 = (2397 - 1397) - (v1905 * (304 - (147 + 107)));
+										if (v3303 > v1727) then
+											v1727 = v3303;
+										end
+										break;
+									end
+								end
+							end
+						end
+						break;
+					end
+				end
+			end
+			local v1732 = 0 + 0;
+			local v1733 = {};
+			local v1734 = {[v7("\176\48\179\204\169\59\171\211\224\42\175\204\169\43\190", "\191\192\88\202")]=v7("\97\197\240\13\1\207\112\193\169\12\13\223\120\222\253", "\172\17\173\137\126\104"),[v7("\208\125\42\62\213\163\10\216\111\36\36\194", "\120\189\28\77\87\182\131")]=v7("\193\44\22\249\17\184\197\201\62\24\227\6", "\183\172\77\113\144\114\152"),[v7("\248\118\61\228\91\133\5\248\121\52\253\74", "\109\157\24\88\137\34\165")]=v7("\160\68\189\76\166\53", "\231\200\33\220\32\210\93"),[v7("\89\86\67\224\46\28\75\86\232\50\88", "\87\60\56\38\141")]=v7("\197\171\15\55\217\229\25\42\197\160\14", "\90\160\197\106"),[v7("\230\187\47\123\91\163\167\47\113\71\237", "\34\131\213\74\22")]=v7("\34\188\17\53\62", "\80\80\217\118"),[v7("\0\70\14\112\28\8\24\117\12\77\7\121", "\29\101\40\107")]=v7("\214\253\217\182\17\193", "\125\165\149\176\211"),[v7("\76\27\58\237\138\90\10\60\228\197\77\6\43\245\141\90", "\229\41\99\74\129")]=v7("\54\29\241\39\60\22\232\61\54", "\75\83\101\129"),[v7("\240\94\83\195\230\11\68\222\247\70\88\144\225\91\68\213\246", "\176\146\43\33")]=v7("\170\200\227\2\186", "\27\200\189\145\113\206"),[v7("\174\142\69\235\95\161\159\90\184", "\47\192\235\50\203")]=v7("\46\194\13\145\252\221\160\129", "\233\64\167\122\177\140\188\212"),[v7("\95\120\247\67\238\177\245\65\96\185\85\251\187\226\78\112\243\0\232\179\227\91", "\144\47\20\150\32\139\220")]=v7("\51\45\174\237", "\132\80\66\221\153\186\224"),[v7("\67\161\33\26\162\6\169\40\14\178\72\168\100\20\179\71\161\39\18", "\219\38\207\68\119")]=v7("\11\26\19\56\27\139\77\21\2\48\27\143\8", "\236\109\118\106\81\117"),[v7("\235\63\223\42\188\254\115\213\32\175\255\58\200\40", "\206\141\83\166\79")]=v7("\254\166\220\216\247\227\174", "\158\141\201\189\170"),[v7("\18\190\252\182\84\87\160\248\168\94\30\166\252\168", "\45\119\208\153\219")]=v7("\196\88\183\6\26\194\92", "\115\180\57\196\117"),[v7("\62\117\87\252\68\202\35\206\53\60\67\224\66\205\33\197\33", "\160\82\28\48\148\48\164\74")]=v7("\207\217\186\46\46\3\202\222\186", "\109\163\176\221\70\90"),[v7("\209\84\37\71\118\33", "\82\178\33\87\52\19")]=v7("\79\183\250\105\121", "\28\44\194\136\26")};
+			local v1735 = v24.AvoidCardsPriority or {};
+			v25.AvoidedCardsCount = v25.AvoidedCardsCount or {};
+			for v1911, v1912 in ipairs(v1735) do
+				local v1913 = 1032 - (925 + 107);
+				local v1914;
+				local v1915;
+				local v1916;
+				while true do
+					if (v1913 == 0) then
+						v1914 = ((type(v1912) == v7("\104\120\69\10\115", "\174\28\25\39\102\22\234\59")) and v1912.name) or tostring(v1912);
+						v1915 = ((type(v1912) == v7("\221\72\18\212\203", "\230\169\41\112\184\174")) and (tonumber(v1912.limit) or 0)) or (472 - (375 + 97));
+						v1913 = 3 - 2;
+					end
+					if (v1913 == (1 + 0)) then
+						v1916 = v1734[v1914:lower()] or v1914:lower();
+						if string.find(v1721, v1916) then
+							local v3068 = 0 - 0;
+							local v3069;
+							while true do
+								if (v3068 == (1575 - (298 + 1276))) then
+									if ((v1915 == (1780 - (1225 + 555))) or (v3069 < v1915)) then
+										v1732 = v1732 + (5000 - (v1911 * (24 + 76)));
+									end
+									break;
+								end
+								if ((0 - 0) == v3068) then
+									table.insert(v1733, v1914);
+									v3069 = v25.AvoidedCardsCount[v1914] or (289 - (75 + 214));
+									v3068 = 2 - 1;
+								end
+							end
+						end
+						break;
+					end
+				end
+			end
+			table.insert(v460, {[v7("\204\214\116\179\23", "\47\170\164\21\222\114\116\179")]=v942,[v7("\246\130\148", "\182\157\231\237")]=v942.Name,[v7("\252\244\8\165\237", "\192\149\154\108")]=v941,[v7("\233\252\230\50\49\20\14\247\236\244", "\97\153\153\135\64\93\86")]=v1722,[v7("\14\95\193\26\252\58\130\202\18", "\185\102\62\178\72\153\73\235")]=v1726,[v7("\96\187\32\183\71\185\36\160\113", "\210\20\218\75")]=v1727,[v7("\137\235\8\122\88\41\49\134\252\11\103\69", "\84\232\157\103\19\60\121")]=v1732,[v7("\20\114\97\98\10\124\123\71\40\97\115\74\8", "\35\124\19\18")]=(v1732 > (451 - (366 + 85))),[v7("\234\86\0\245\84\235\65\17", "\55\132\51\116\166")]=(v1727 - v1732),[v7("\197\61\169\119\12\59\249\252\61\182\113\23", "\157\168\92\221\20\100\94")]=v1728,[v7("\197\208\225\28\18\220\114\233\199\250\22\30\202", "\22\168\177\149\127\122\185")]=v1733});
+		end
+	end
+	if (#v460 == (853 - (380 + 473))) then
+		return;
+	end
+	local v462 = false;
+	for v943, v944 in ipairs(v460) do
+		if (not v944.hasResist and not v944.hasAvoidTrait) then
+			v462 = true;
+			break;
+		end
+	end
+	local v463 = nil;
+	if v24.BestForEventCurrency then
+		table.sort(v460, function(v1737, v1738)
+			if v462 then
+				local v2205 = 0 + 0;
+				local v2206;
+				local v2207;
+				while true do
+					if (v2205 == 0) then
+						v2206 = v1737.hasResist or v1737.hasAvoidTrait;
+						v2207 = v1738.hasResist or v1738.hasAvoidTrait;
+						v2205 = 1 - 0;
+					end
+					if (v2205 == 1) then
+						if (v2206 and not v2207) then
+							return false;
+						end
+						if (not v2206 and v2207) then
+							return true;
+						end
+						break;
+					end
+				end
+			elseif v461 then
+				local v2800 = 0;
+				local v2801;
+				while true do
+					if (v2800 == (1569 - (934 + 635))) then
+						v2801 = 680 - (266 + 414);
+						while true do
+							if (v2801 == (0 + 0)) then
+								if (v1737.hasResist and not v1738.hasResist) then
+									return false;
+								end
+								if (not v1737.hasResist and v1738.hasResist) then
+									return true;
+								end
+								break;
+							end
+						end
+						break;
+					end
+				end
+			end
+			if (v1737.pearlBonus ~= v1738.pearlBonus) then
+				return v1737.pearlBonus > v1738.pearlBonus;
+			end
+			return v1737.netScore > v1738.netScore;
+		end);
+		v463 = v460[1];
+	else
+		local v1430 = 0 + 0;
+		while true do
+			if (v1430 == (545 - (62 + 483))) then
+				table.sort(v460, function(v2457, v2458)
+					local v2459 = 0;
+					while true do
+						if (v2459 == (1634 - (904 + 730))) then
+							if v462 then
+								local v3304 = 0 - 0;
+								local v3305;
+								local v3306;
+								while true do
+									if (v3304 == (0 + 0)) then
+										v3305 = v2457.hasResist or v2457.hasAvoidTrait;
+										v3306 = v2458.hasResist or v2458.hasAvoidTrait;
+										v3304 = 1227 - (371 + 855);
+									end
+									if (v3304 == 1) then
+										if (v3305 and not v3306) then
+											return false;
+										end
+										if (not v3305 and v3306) then
+											return true;
+										end
+										break;
+									end
+								end
+							end
+							return v2457.netScore > v2458.netScore;
+						end
+					end
+				end);
+				v463 = v460[2 - 1];
+				break;
+			end
+		end
+	end
+	if (v463 and v463.frame) then
+		local v1431 = 0;
+		local v1432;
+		local v1433;
+		local v1434;
+		local v1435;
+		while true do
+			if (v1431 == (1216 - (749 + 463))) then
+				v1435 = v458.main:FindFirstChild(v7("\99\205\249\199\65\76", "\46\33\162\141\179")) and v458.main.Bottom:FindFirstChild(v7("\111\169\161\56\43\72", "\72\60\204\205\93"));
+				if v1435 then
+					local v2802 = 0 - 0;
+					while true do
+						if (v2802 == 0) then
+							pcall(function()
+								firesignal(v1435.Activated);
+							end);
+							pcall(function()
+								firesignal(v1435.MouseButton1Click);
+							end);
+							break;
+						end
+					end
+				end
+				pcall(function()
+					local v2460 = 0;
+					local v2461;
+					local v2462;
+					while true do
+						if (v2460 == (0 + 0)) then
+							v458.Enabled = false;
+							v2461 = require(game.ReplicatedStorage.src.Loader);
+							v2460 = 1;
+						end
+						if (v2460 == (1 - 0)) then
+							v2462 = v2461.load_client_service(nil, v7("\131\241\235\135\77\60\178\205\193\177", "\78\196\164\162\212\40"));
+							if (v2462 and v2462.roguelike_select_ui) then
+								v2462.roguelike_select_ui:hide();
+							end
+							break;
+						end
+					end
+				end);
+				break;
+			end
+			if (v1431 == (7 - 4)) then
+				pcall(function()
+					if (v18 and v18:FindFirstChild(v7("\5\23\23\198\21\6\36\209\25\21\14\198\26\27\16\198\41\29\11\215\31\29\21", "\163\118\114\123")) and tonumber(v1433)) then
+						v18.select_roguelike_option:InvokeServer(tonumber(v1433));
+					end
+				end);
+				v1434 = (v1432:IsA(v7("\197\243\249\146\160\246\242\255\190", "\213\130\134\144\208")) and v1432) or v1432:FindFirstChildWhichIsA(v7("\220\41\20\22\80\109\73\38\245", "\73\155\92\125\84\37\25\61"), true);
+				if v1434 then
+					pcall(function()
+						firesignal(v1434.Activated);
+					end);
+					pcall(function()
+						firesignal(v1434.MouseButton1Click);
+					end);
+				end
+				v1431 = 5 - 1;
+			end
+			if (1 == v1431) then
+				v25.LastVotedRoundTime = tick();
+				if v463.matchedTakes then
+					for v2939, v2940 in ipairs(v463.matchedTakes) do
+						v25.TakenCardsCount[v2940] = (v25.TakenCardsCount[v2940] or (0 - 0)) + 1;
+					end
+				end
+				if v463.matchedAvoids then
+					for v2942, v2943 in ipairs(v463.matchedAvoids) do
+						v25.AvoidedCardsCount[v2943] = (v25.AvoidedCardsCount[v2943] or 0) + 1 + 0;
+					end
+				end
+				v1431 = 2;
+			end
+			if (0 == v1431) then
+				local v2210 = 0;
+				while true do
+					if ((3 - 2) == v2210) then
+						v25.LastVotedRoundChoice = v1433;
+						v1431 = 1;
+						break;
+					end
+					if (v2210 == 0) then
+						v1432 = v463.frame;
+						v1433 = tostring(v463.key or v463.index or "1");
+						v2210 = 1 + 0;
+					end
+				end
+			end
+			if (v1431 == 2) then
+				pcall(function()
+					local v2463 = 0 - 0;
+					local v2464;
+					local v2465;
+					while true do
+						if ((0 + 0) == v2463) then
+							v2464 = require(game.ReplicatedStorage.src.Loader);
+							v2465 = v2464.load_client_service(nil, v7("\144\146\19\121\250\165\177\51\73\250", "\159\215\199\90\42"));
+							v2463 = 3 - 2;
+						end
+						if (v2463 == (1 + 0)) then
+							if (v2465 and v2465.roguelike_select_ui) then
+								v2465.roguelike_select_ui:_vote(v1433);
+							end
+							break;
+						end
+					end
+				end);
+				pcall(function()
+					local v2466 = 0 - 0;
+					local v2467;
+					local v2468;
+					local v2469;
+					while true do
+						if (v2466 == (1 + 0)) then
+							v2469 = nil;
+							while true do
+								if (v2467 == 1) then
+									if (v2469 and v2469.invoke_server) then
+										v2469.invoke_server(v7("\4\135\1\57\66\3\189\31\51\70\2\135\1\53\74\18\189\2\44\85\30\141\3", "\33\119\226\109\92"), v1433);
+									end
+									break;
+								end
+								if (v2467 == (0 - 0)) then
+									v2468 = require(game.ReplicatedStorage.src.Loader);
+									v2469 = v2468.load_client_service(nil, v7("\23\193\202\54\252\59\193\218\53\208\62\198\203\40\231", "\147\82\175\174\70"));
+									v2467 = 45 - (5 + 39);
+								end
+							end
+							break;
+						end
+						if (v2466 == (1276 - (20 + 1256))) then
+							v2467 = 0 + 0;
+							v2468 = nil;
+							v2466 = 657 - (616 + 40);
+						end
+					end
+				end);
+				pcall(function()
+					if (v18 and v18:FindFirstChild(v7("\169\131\118\252\248\174\185\104\246\252\175\131\118\240\240\191\185\117\233\239\179\137\116", "\155\218\230\26\153"))) then
+						v18.select_roguelike_option:InvokeServer(v1433);
+					end
+				end);
+				v1431 = 8 - 5;
+			end
+		end
+	end
+end;
+local v128 = function()
+	if v61() then
+		local v1436 = 0;
+		local v1437;
+		while true do
+			if (v1436 == (0 + 0)) then
+				v1437 = 0;
+				while true do
+					if (v1437 == (1 - 0)) then
+						v25.AvoidedCardsCount = nil;
+						return;
+					end
+					if (v1437 == (0 - 0)) then
+						v25.MatchStartTime = nil;
+						v25.TakenCardsCount = nil;
+						v1437 = 655 - (82 + 572);
+					end
+				end
+				break;
+			end
+		end
+	end
+	if not v25.MatchStartTime then
+		local v1438 = 0 + 0;
+		while true do
+			if (v1438 == 1) then
+				v25.AvoidedCardsCount = {};
+				break;
+			end
+			if (v1438 == (0 - 0)) then
+				v25.MatchStartTime = tick();
+				v25.TakenCardsCount = {};
+				v1438 = 711 - (349 + 361);
+			end
+		end
+	end
+	local v464 = tick();
+	if (v24.SummerLeaveLowLevel and ((v464 - (v25.LastLowLevelCheck or 0)) > (705 - (552 + 150)))) then
+		v25.LastLowLevelCheck = v464;
+		local v1440 = 802 - (521 + 281);
+		local v1441 = v24.SummerLowLevelUnder or (128 - (15 + 103));
+		for v1739, v1740 in ipairs(v8:GetPlayers()) do
+			if (v1740 ~= v17) then
+				local v2214 = 999;
+				pcall(function()
+					if (v1740:FindFirstChild(v7("\87\200\200\90\247\219\179\179\90\217\218", "\199\59\173\169\62\146\169\192")) and v1740.leaderstats:FindFirstChild(v7("\27\160\170\166\59", "\195\87\197\220"))) then
+						v2214 = v1740.leaderstats.Level.Value;
+					elseif v1740:FindFirstChild(v7("\142\253\164\165\208\112", "\84\209\145\193\211\181\28\156")) then
+						v2214 = v1740._level.Value;
+					end
+				end);
+				if (v2214 < v1441) then
+					v1440 = v1440 + 1;
+				end
+			end
+		end
+		if (v1440 >= (v24.SummerLeaveWhenFound or 1)) then
+			local v1917 = 1409 - (974 + 435);
+			local v1918;
+			while true do
+				if ((0 - 0) == v1917) then
+					v1918 = 0 - 0;
+					while true do
+						if (v1918 == (0 + 0)) then
+							local v3215 = 0 + 0;
+							while true do
+								if ((0 + 0) == v3215) then
+									pcall(function()
+										TeleportService:Teleport(8304191830);
+									end);
+									return;
+								end
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+	end
+	if (v24.SummerLeaveFewPlayers and ((v464 - v25.MatchStartTime) > 20) and ((v464 - (v25.LastFewPlayersCheck or 0)) > (1105 - (925 + 177)))) then
+		local v1442 = 0 - 0;
+		local v1443;
+		while true do
+			if (1 == v1442) then
+				if (v1443 < (v24.SummerLeaveUnder or 5)) then
+					local v2803 = 19 - (12 + 7);
+					local v2804;
+					while true do
+						if (v2803 == 0) then
+							v2804 = 0 + 0;
+							while true do
+								if (v2804 == (0 - 0)) then
+									pcall(function()
+										TeleportService:Teleport(8181637085 - -122554745);
+									end);
+									return;
+								end
+							end
+							break;
+						end
+					end
+				end
+				break;
+			end
+			if (v1442 == 0) then
+				v25.LastFewPlayersCheck = v464;
+				v1443 = #v8:GetPlayers();
+				v1442 = 1 + 0;
+			end
+		end
+	end
+	if ((v24.AutoPickCards or v24.BestForEventCurrency) and ((v464 - (v25.LastCardCheck or 0)) > 0.3)) then
+		local v1444 = 0 - 0;
+		while true do
+			if (v1444 == 0) then
+				v25.LastCardCheck = v464;
+				if v126() then
+					pcall(v127);
+				else
+					v25.LastVotedRoundChoice = nil;
+				end
+				break;
+			end
+		end
+	end
+	if (v24.AutoClaimMapBoard and ((v464 - (v25.LastMapBoardCheck or (0 - 0))) > 5)) then
+		v25.LastMapBoardCheck = v464;
+		pcall(function()
+			if v18:FindFirstChild(v7("\210\239\47\129\202\238\240\59\133\202\212\241\124\183\202\208\243\17\138\200\208\241\42\183\203\216\237\43\155", "\167\177\131\78\232")) then
+				v18.claim_summer2_map_board_lines:InvokeServer();
+			end
+		end);
+	end
+end;
+local v129 = {};
+local v130 = {};
+local v131 = true;
+getgenv().AJ_HUB_BUFF_STOP = function()
+	v131 = false;
+end;
+local function v133()
+	local v465 = 0 - 0;
+	local v466;
+	local v467;
+	local v468;
+	local v469;
+	while true do
+		if (v465 == (1 + 1)) then
+			function v468(v1919)
+				local v1920 = 366 - (198 + 168);
+				local v1921;
+				local v1922;
+				local v1923;
+				local v1924;
+				while true do
+					if (v1920 == (4 + 0)) then
+						if v1924 then
+							local v3071 = 0 - 0;
+							local v3072;
+							while true do
+								if ((0 - 0) == v3071) then
+									v3072 = tonumber(v1924);
+									if (v3072 and (v3072 > v467)) then
+										v467 = v3072;
+									end
+									break;
+								end
+							end
+						end
+						break;
+					end
+					if (v1920 == 1) then
+						if v1921 then
+							local v3073 = tonumber(v1921);
+							if (v3073 and (v3073 > v467)) then
+								v467 = v3073;
+							end
+						end
+						v1922 = string.match(v1919, v7("\67\45\212\186\223\87\1\234\188\203\119\51\236\171\232\69\53\243\131\217\67\33\216\186\223\79\25\234\188\202\118\51\236\194\247\61\25\234\205\190\61\29\157\207\223\61\69\146\202\217\39\75\211\204\161\54\81\146\131\174\49\75\146", "\132\24\110\183\231"));
+						v1920 = 2;
+					end
+					if (v1920 == (3 - 0)) then
+						if v1923 then
+							local v3074 = 0 - 0;
+							local v3075;
+							while true do
+								if ((0 - 0) == v3074) then
+									v3075 = tonumber(v1923);
+									if (v3075 and (v3075 > v467)) then
+										v467 = v3075;
+									end
+									break;
+								end
+							end
+						end
+						v1924 = string.match(v1919, v7("\123\245\204\114\205\245\149\150\118\202\194\124\198\231\237\205\121\135\204\124\205\171\226\242\16\205\180\2\172\188\149", "\169\83\174\233\89\232\216\200"));
+						v1920 = 64 - (4 + 56);
+					end
+					if ((0 - 0) == v1920) then
+						if (not v1919 or (v1919 == "")) then
+							return;
+						end
+						v1921 = string.match(v1919, v7("\193\65\164\99\86\196\71\190\109\23\194\63\175\119\86\141\48\168\109\86\204\105\171\19\48\138\71\218\7\28\180\65\206\39\46\178\86\237\21\40\173\126\220\19\60\134\71\218\31\4\180\65\207\38\46", "\115\233\26\129\72"));
+						v1920 = 3 - 2;
+					end
+					if (v1920 == (2 + 0)) then
+						if v1922 then
+							local v3076 = 0 + 0;
+							local v3077;
+							while true do
+								if (v3076 == (0 - 0)) then
+									v3077 = tonumber(v1922);
+									if (v3077 and (v3077 > v467)) then
+										v467 = v3077;
+									end
+									break;
+								end
+							end
+						end
+						v1923 = string.match(v1919, v7("\149\82\3\142\97\155\121\126\149\94\15\142\97\152\122\126\149\85\4\142\97\155\121\126\149\70\23\142\97\154\120\126\149\52\19\246\77\137\60\6\189\58\72\136\31\255\51\14\147\46\69\183\17\241\56\28\235\117\74\250\31\241", "\35\206\17\96\211\58\212\22"));
+						v1920 = 1901 - (1270 + 628);
+					end
+				end
+			end
+			v469 = v466:FindFirstChild(v7("\123\19\86\56\148\206\255\19\80\59\85\59\183", "\118\60\114\59\93\216\171\137"));
+			v465 = 3;
+		end
+		if (v465 == (1323 - (570 + 752))) then
+			local v1741 = 1461 - (958 + 503);
+			while true do
+				if ((1 - 0) == v1741) then
+					v465 = 2 + 0;
+					break;
+				end
+				if (v1741 == (0 - 0)) then
+					v467 = 0 - 0;
+					v468 = nil;
+					v1741 = 1 + 0;
+				end
+			end
+		end
+		if (v465 == (1 + 2)) then
+			if v469 then
+				for v2470, v2471 in ipairs(v469:GetDescendants()) do
+					if v2471:IsA(v7("\102\204\92\240\144\83\203\65\232", "\220\50\169\36\132")) then
+						v468(v2471.Text);
+					end
+				end
+			end
+			if (v467 == 0) then
+				local v2217 = {v466:FindFirstChild(v7("\214\134\1\180\221\130\26\180\253", "\209\145\231\108")),v466:FindFirstChild(v7("\117\36\30\8\212\236\44\95\46", "\66\57\65\104\109\184\165")),v466:FindFirstChild(v7("\174\27\251\73\235\130\30\244\87\241\174", "\133\221\107\154\62"))};
+				for v2472, v2473 in ipairs(v2217) do
+					if v2473 then
+						for v3078, v3079 in ipairs(v2473:GetDescendants()) do
+							if v3079:IsA(v7("\239\27\173\245\107\195\51\222\18", "\81\187\126\213\129\39\162")) then
+								v468(v3079.Text);
+							end
+						end
+						if (v467 > (0 + 0)) then
+							break;
+						end
+					end
+				end
+			end
+			v465 = 4;
+		end
+		if (v465 == 4) then
+			return v467;
+		end
+		if ((0 + 0) == v465) then
+			v466 = v17:FindFirstChild(v7("\152\1\138\94\1\90\41\208\161", "\165\200\109\235\39\100\40\110"));
+			if not v466 then
+				return 0 - 0;
+			end
+			v465 = 1;
+		end
+	end
+end
+local function v134(v470)
+	if (not v470 or not v470.Parent) then
+		return false;
+	end
+	local v471 = v17;
+	if not v471 then
+		return false;
+	end
+	local v472 = v7("\149\189\44\237\161\151\142\56\250\173\145\162\119", "\196\229\209\77\148") .. tostring(v471.UserId);
+	if v11:HasTag(v470, v472) then
+		return true;
+	end
+	local v473 = v470:FindFirstChild(v7("\120\198\101\29\73\225", "\173\39\181\17\124\61\146"));
+	if v473 then
+		local v1446 = v473:FindFirstChild(v7("\106\208\242\59\141\104", "\232\26\188\147\66"));
+		if (v1446 and v1446.Value) then
+			local v1925 = 0 + 0;
+			while true do
+				if (v1925 == (0 - 0)) then
+					if (v1446.Value == v471) then
+						return true;
+					end
+					if ((typeof(v1446.Value) == v7("\60\239\245\15\114\27\226\227", "\19\117\129\134\123")) and v1446.Value:IsA(v7("\19\15\200\15\49\49", "\67\67\99\169\118\84")) and (v1446.Value.Name == v471.Name)) then
+						return true;
+					end
+					v1925 = 1437 - (772 + 664);
+				end
+				if (1 == v1925) then
+					if ((typeof(v1446.Value) == v7("\17\62\247\70\93\177", "\214\98\74\133\47\51\214\153")) and (v1446.Value == v471.Name)) then
+						return true;
+					end
+					break;
+				end
+			end
+		end
+	end
+	local v474 = v470:GetAttribute(v7("\5\89\126\113\97", "\55\106\46\16\20\19")) or v470:GetAttribute(v7("\89\183\179\41\51\44", "\115\41\219\210\80\86\94")) or v470:GetAttribute(v7("\175\94\231\31\192\4\169\77", "\91\192\41\137\122\178"));
+	if (v474 and ((v474 == v471.UserId) or (v474 == v471.Name))) then
+		return true;
+	end
+	return false;
+end
+local function v135(v475)
+	local v476 = {};
+	local v477 = v9:FindFirstChild(v7("\104\16\228\193\99\22", "\136\55\69\170"));
+	if not v477 then
+		return v476;
+	end
+	for v945, v946 in ipairs(v477:GetChildren()) do
+		local v947 = 0 + 0;
+		local v948;
+		while true do
+			if (v947 == (0 + 0)) then
+				v948 = v946:FindFirstChild(v7("\220\238\4\59\194\224", "\173\131\157\112\90\182\147\77"));
+				if (v948 and v948:FindFirstChild(v7("\19\18", "\103\122\118\64")) and string.find(string.lower(v948.id.Value), string.lower(v475))) then
+					if v134(v946) then
+						table.insert(v476, v946);
+					end
+				end
+				break;
+			end
+		end
+	end
+	table.sort(v476, function(v949, v950)
+		local v951 = v949:GetAttribute(v7("\207\219\32\229\199\147\207\221\62\237\196\130\197\221\57\224", "\221\144\136\112\164\144")) or (1073 - (46 + 1027));
+		local v952 = v950:GetAttribute(v7("\102\14\73\133\110\19\70\145\119\20\77\155\108\8\80\128", "\196\57\93\25")) or (1353 - (467 + 886));
+		if (v951 ~= v952) then
+			return v951 < v952;
+		end
+		return tostring(v949) < tostring(v950);
+	end);
+	return v476;
+end
+local function v136(v478)
+	if (not v478 or not v478.Parent or not v478:FindFirstChild(v7("\245\95\164\132\91\217", "\47\170\44\208\229"))) then
+		return 84.62 - 21;
+	end
+	local v479 = v478._stats;
+	local v480 = (v479:FindFirstChild(v7("\73\65\170\19\13\226\8\73\86\170\27\24\236\8\75\77\177\22\31\232\32\70", "\87\40\34\222\122\123\135")) and v479.active_attack_cooldown.Value) or (119.62 - 56);
+	local v481 = v133();
+	local v482 = (684 - (582 + 101)) + (math.max(v481, 745 - (574 + 171)) / (92 + 8));
+	return math.max(v480, v480 * v482);
+end
+local function v137(v483)
+	if (not v483 or not v483.Parent or not v483:FindFirstChild(v7("\126\46\149\52\213\195", "\176\33\93\225\85\161"))) then
+		return 10366 - (66 + 301), false, 544.62 - (423 + 58);
+	end
+	local v484 = v483._stats;
+	local v485 = v136(v483);
+	local v486 = tick();
+	local v487 = v129[v483] or (0 + 0);
+	local v488 = 1080 - (141 + 939);
+	if (v487 > 0) then
+		v488 = v485 - (v486 - v487);
+	end
+	local v489 = (v484:FindFirstChild(v7("\174\24\158\192\70\163\26\153\221\111\167\38\142\213\106\182", "\25\194\121\237\180")) and v484.last_active_cast.Value) or -(100000681 - (532 + 149));
+	local v490 = 0 + 0;
+	if (v489 > (918 - (592 + 326))) then
+		v490 = v485 - (v486 - v489);
+	end
+	local v491 = math.max(v488, v490);
+	local v492 = v491 <= (0.05 - 0);
+	return math.max(v491, 0 - 0), v492, v485;
+end
+local function v138(v493)
+	local v494 = 0;
+	local v495;
+	local v496;
+	local v497;
+	local v498;
+	local v499;
+	local v500;
+	local v501;
+	while true do
+		if (v494 == (1 + 1)) then
+			if v498 then
+				return false, v7("\100\13\8\46\227", "\128\17\126\97\64\132\223\211");
+			end
+			v499, v500 = v137(v493);
+			if (not v500 and (v499 > (825.1 - (467 + 358)))) then
+				return false, v7("\185\137\50\4\190\137\42\6", "\104\218\230\93");
+			end
+			v501 = v130[v493] or (0 - 0);
+			v494 = 3 - 0;
+		end
+		if (v494 == (1 + 0)) then
+			if (v496 > (0 - 0)) then
+				return false, v7("\51\78\72\44\87\241\180", "\208\64\58\61\66\57\148");
+			end
+			v497 = (v495:FindFirstChild(v7("\239\172\169\94\236\176", "\36\137\222\198")) and v495.frozen.Value) or false;
+			if v497 then
+				return false, v7("\231\230\237\56\205\172", "\41\129\148\130\66\168\194\98");
+			end
+			v498 = (v495:FindFirstChild(v7("\16\41\149\25\85\45\79\189\4\47\148\21\71\23\127\190\46\63\146\25\77\47", "\204\113\74\225\112\35\72\16")) and v495.active_queued_or_using.Value) or false;
+			v494 = 4 - 2;
+		end
+		if (v494 == 3) then
+			local v1742 = 1826 - (233 + 1593);
+			while true do
+				if (v1742 == 0) then
+					if ((tick() - v501) < (0.6 - 0)) then
+						return false, v7("\103\52\192\121\103\40\222\115\119", "\22\19\92\178");
+					end
+					return true, v7("\204\14\66\42\164", "\209\190\107\35\78\221");
+				end
+			end
+		end
+		if (v494 == (762 - (28 + 734))) then
+			if (not v493 or not v493.Parent) then
+				return false, v7("\186\184\6\58\8\67\160", "\42\212\215\89\79\102");
+			end
+			v495 = v493:FindFirstChild(v7("\136\66\48\17\219\93", "\151\215\49\68\112\175\46\39"));
+			if not v495 then
+				return false, v7("\72\114\137\95\153\71\105\165", "\237\38\29\214\44");
+			end
+			v496 = (v495:FindFirstChild(v7("\3\40\126\18\76\85\161\148\24\40\114\2", "\225\118\70\23\102\19\38\213")) and v495.unit_stunned.Value) or (0 - 0);
+			v494 = 1132 - (337 + 794);
+		end
+	end
+end
+local function v139(v502)
+	if (not v502 or not v502.Parent or not v502:FindFirstChild(v7("\191\61\194\224\194\147", "\182\224\78\182\129"))) then
+		return false;
+	end
+	v130[v502] = tick();
+	local v504 = false;
+	local v505 = v73();
+	if (v505 and v505.invoke_server) then
+		local v1447 = 0;
+		local v1448;
+		local v1449;
+		local v1450;
+		while true do
+			if (v1447 == (0 + 0)) then
+				v1448 = 0;
+				v1449 = nil;
+				v1447 = 1;
+			end
+			if ((1 + 0) == v1447) then
+				v1450 = nil;
+				while true do
+					if (v1448 == (0 + 0)) then
+						v1449, v1450 = pcall(function()
+							return v505.invoke_server(v7("\248\30\160\49\215\51\107\77\251\8\154\15\194\36\126\71\230", "\36\141\109\197\110\182\80\31"), v502);
+						end);
+						if (v1449 and ((v1450 == true) or ((v1450 ~= false) and (v1450 ~= nil) and (type(v1450) ~= v7("\240\30\4\142\16\59", "\92\131\106\118\231\126"))))) then
+							v504 = true;
+						end
+						break;
+					end
+				end
+				break;
+			end
+		end
+	end
+	if not v504 then
+		if v18:FindFirstChild(v7("\168\80\59\154\34\190\87\55\179\38\130\66\42\177\34\190\72", "\67\221\35\94\197")) then
+			local v1926 = 0 + 0;
+			local v1927;
+			local v1928;
+			local v1929;
+			while true do
+				if (v1926 == 0) then
+					v1927 = 0 - 0;
+					v1928 = nil;
+					v1926 = 1;
+				end
+				if (v1926 == (703 - (342 + 360))) then
+					v1929 = nil;
+					while true do
+						if (v1927 == (0 + 0)) then
+							v1928, v1929 = pcall(function()
+								return v18.use_active_attack:InvokeServer(v502);
+							end);
+							if (v1928 and ((v1929 == true) or ((v1929 ~= false) and (v1929 ~= nil) and (type(v1929) ~= v7("\86\168\50\83\75\187", "\58\37\220\64"))))) then
+								v504 = true;
+							end
+							break;
+						end
+					end
+					break;
+				end
+			end
+		end
+	end
+	if v504 then
+		v129[v502] = tick();
+	end
+	return v504;
+end
+local function v140(v506)
+	local v507 = 999 - (440 + 559);
+	local v508;
+	local v509;
+	local v510;
+	local v511;
+	local v512;
+	local v513;
+	local v514;
+	while true do
+		if (v507 == (581 - (150 + 428))) then
+			v514 = ((v513 >= (1 + 2)) and (v513 <= 8) and v513) or (161 - (15 + 142));
+			if ((v509 > 60) and (((v509 - (11 + 49)) + (1 - 0)) > v514)) then
+				v514 = (v509 - (51 + 9)) + 1;
+			end
+			v507 = 1680 - (757 + 919);
+		end
+		if (2 == v507) then
+			v512 = v511 * (1 + 0 + (math.max(v510, 0 - 0) / 100));
+			v513 = math.floor(v512 % (8 + 2));
+			v507 = 7 - 4;
+		end
+		if (v507 == (1 - 0)) then
+			v510 = v133();
+			v511 = (v508 and v508:FindFirstChild(v7("\223\200\75\242\247\25\62\177\209\211\83\247\251\5\15", "\210\190\188\63\147\148\114\97")) and v508.attack_cooldown.Value) or (66 - (8 + 43));
+			v507 = 5 - 3;
+		end
+		if (v507 == 4) then
+			return v514;
+		end
+		if (v507 == 0) then
+			v508 = v506 and v506:FindFirstChild(v7("\227\159\224\13\160\191", "\204\188\236\148\108\212"));
+			v509 = v136(v506);
+			v507 = 1 + 0;
+		end
+	end
+end
+local function v141(v515, v516)
+	local v517 = 296 - (236 + 60);
+	local v518;
+	while true do
+		if (v517 == (1 + 0)) then
+			return false;
+		end
+		if (0 == v517) then
+			local v1743 = 0;
+			while true do
+				if (v1743 == 0) then
+					v518 = tick() + (v516 or (83 + 37));
+					while v131 and (tick() < v518) do
+						local v2806 = 0 + 0;
+						local v2807;
+						local v2808;
+						local v2809;
+						while true do
+							if (1 == v2806) then
+								v2807, v2808 = v138(v515);
+								if v2807 then
+									return true;
+								end
+								v2806 = 5 - 3;
+							end
+							if (v2806 == (0 - 0)) then
+								if v61() then
+									return false;
+								end
+								if (not v515 or not v515.Parent) then
+									return false;
+								end
+								v2806 = 1;
+							end
+							if (v2806 == (1 + 1)) then
+								v2809 = v137(v515);
+								task.wait(math.clamp(v2809, 0.2 - 0, 0.6 + 0));
+								break;
+							end
+						end
+					end
+					v1743 = 1;
+				end
+				if (v1743 == 1) then
+					v517 = 269 - (35 + 233);
+					break;
+				end
+			end
+		end
+	end
+end
+local function v142(v519, v520)
+	if not v141(v519, v520) then
+		return false;
+	end
+	local v521 = tick() + (1901 - (547 + 1350));
+	while v131 and (tick() < v521) do
+		if v61() then
+			return false;
+		end
+		if (not v519 or not v519.Parent) then
+			return false;
+		end
+		local v953 = v138(v519);
+		if v953 then
+			if v139(v519) then
+				return true;
+			end
+		end
+		task.wait(0.6 - 0);
+	end
+	return false;
+end
+local v143 = function(v522, v523)
+	task.spawn(function()
+		local v954;
+		local function v955()
+			if v954 then
+				local v1930 = 0;
+				while true do
+					if (v1930 == 0) then
+						pcall(task.cancel, v954);
+						v954 = nil;
 						break;
 					end
 				end
 			end
 		end
-		while v130 do
-			if (v59() or not v529()) then
-				local v1913 = 0;
+		while v131 do
+			if (v61() or not v523()) then
+				local v1931 = 0 - 0;
 				while true do
-					if (v1913 == (0 - 0)) then
-						v926();
-						task.wait(4 - 3);
+					if (v1931 == 0) then
+						v955();
+						task.wait(603 - (593 + 9));
 						break;
 					end
 				end
 			else
-				local v1914 = v134(v528);
-				if (#v1914 < (1894 - (946 + 944))) then
-					v926();
-					task.wait(2 - 1);
-				elseif (not v925 or (coroutine.status(v925) == v7("\176\178\56\43", "\42\212\215\89\79\102"))) then
-					v925 = task.spawn(function()
-						while v130 do
-							if (v59() or not v529()) then
+				local v1932 = v135(v522);
+				if (#v1932 < 4) then
+					local v2474 = 1395 - (298 + 1097);
+					while true do
+						if (0 == v2474) then
+							v955();
+							task.wait(2 - 1);
+							break;
+						end
+					end
+				elseif (not v954 or (coroutine.status(v954) == v7("\177\195\164\128", "\113\213\166\197\228"))) then
+					v954 = task.spawn(function()
+						while v131 do
+							if (v61() or not v523()) then
 								return;
 							end
-							local v3109 = v134(v528);
-							if (#v3109 < (16 - 12)) then
+							local v3216 = v135(v522);
+							if (#v3216 < 4) then
 								return;
 							end
-							local v3110, v3111, v3112, v3113 = v3109[1 + 0], v3109[2 - 0], v3109[1446 - (949 + 494)], v3109[1234 - (505 + 725)];
-							local v3114, v3115 = v136(v3110);
-							local v3114, v3116 = v136(v3111);
-							local v3114, v3117 = v136(v3112);
-							local v3114, v3118 = v136(v3113);
-							if (v3115 and v3116 and v3117 and v3118) then
+							local v3217, v3218, v3219, v3220 = v3216[4 - 3], v3216[4 - 2], v3216[837 - (479 + 355)], v3216[4];
+							local v3221, v3222 = v137(v3217);
+							local v3221, v3223 = v137(v3218);
+							local v3221, v3224 = v137(v3219);
+							local v3221, v3225 = v137(v3220);
+							if (v3222 and v3223 and v3224 and v3225) then
 								break;
 							end
-							task.wait(0.5);
+							task.wait(396.5 - (175 + 221));
 						end
-						while v130 do
-							if (v59() or not v529()) then
+						while v131 do
+							if (v61() or not v523()) then
 								return;
 							end
-							local v3119 = v134(v528);
-							if (#v3119 < (11 - 7)) then
+							local v3226 = v135(v522);
+							if (#v3226 < 4) then
 								return;
 							end
-							local v3120, v3121, v3122, v3123 = v3119[1 + 0], v3119[3 - 1], v3119[3], v3119[12 - 8];
-							local v3124 = v139(v3120);
-							v141(v3120, 2041 - (1928 + 23));
-							local v3125 = tick();
-							local v3126 = math.max((v3125 + v3124) - tick(), 0);
-							if (v3126 > (0 + 0)) then
-								task.wait(v3126);
+							local v3227, v3228, v3229, v3230 = v3226[2 - 1], v3226[1 + 1], v3226[6 - 3], v3226[2 + 2];
+							local v3231 = v140(v3227);
+							v142(v3227, 18 + 72);
+							local v3232 = tick();
+							local v3233 = math.max((v3232 + v3231) - tick(), 0 - 0);
+							if (v3233 > 0) then
+								task.wait(v3233);
 							end
-							if (not v130 or v59() or not v529()) then
+							if (not v131 or v61() or not v523()) then
 								return;
 							end
-							v141(v3121, 88 - 68);
-							local v3127 = tick();
-							local v3128 = math.max((v3125 + (38 - 8)) - tick(), 0 - 0);
-							if (v3128 > (0 - 0)) then
-								task.wait(v3128);
+							v142(v3228, 20);
+							local v3234 = tick();
+							local v3235 = math.max((v3232 + 30) - tick(), 1325 - (471 + 854));
+							if (v3235 > (807 - (55 + 752))) then
+								task.wait(v3235);
 							end
-							if (not v130 or v59() or not v529()) then
+							if (not v131 or v61() or not v523()) then
 								return;
 							end
-							v141(v3122, 20);
-							local v3129 = tick();
-							local v3130 = math.max((v3127 + 30) - tick(), 0);
-							if (v3130 > (0 + 0)) then
-								task.wait(v3130);
+							v142(v3229, 405 - (97 + 288));
+							local v3236 = tick();
+							local v3237 = math.max((v3234 + (1465 - (317 + 1118))) - tick(), 1889 - (198 + 1691));
+							if (v3237 > (0 + 0)) then
+								task.wait(v3237);
 							end
-							if (not v130 or v59() or not v529()) then
+							if (not v131 or v61() or not v523()) then
 								return;
 							end
-							v141(v3123, 256 - (40 + 196));
-							local v3131 = tick();
-							local v3132 = math.max((v3129 + (1047 - (845 + 172))) - tick(), 1281 - (423 + 858));
-							if (v3132 > (1702 - (1520 + 182))) then
-								task.wait(v3132);
+							v142(v3230, 620 - (263 + 337));
+							local v3238 = tick();
+							local v3239 = math.max((v3236 + (1040 - (577 + 433))) - tick(), 0);
+							if (v3239 > (0 + 0)) then
+								task.wait(v3239);
 							end
 						end
 					end);
 				else
-					local v2889 = 1466 - (196 + 1270);
-					local v2890;
+					local v2951 = 986 - (185 + 801);
+					local v2952;
 					while true do
-						if (v2889 == (1807 - (763 + 1043))) then
-							task.wait(0.5);
+						if (v2951 == (515 - (270 + 244))) then
+							task.wait(0.5 - 0);
 							break;
 						end
-						if (v2889 == 0) then
-							v2890 = v134(v528);
-							if (#v2890 < 4) then
-								v926();
+						if (v2951 == (0 + 0)) then
+							v2952 = v135(v522);
+							if (#v2952 < (4 + 0)) then
+								v955();
 							end
-							v2889 = 4 - 3;
+							v2951 = 1;
 						end
 					end
 				end
 			end
 		end
-		v926();
+		v955();
 	end);
 end;
-v142(v7("\160\84\42\20\214", "\151\215\49\68\112\175\46\39"), function()
-	return v44.AutoBuffWendy;
+v143(v7("\218\59\204\87\83", "\129\173\94\162\51\42\229\99"), function()
+	return v24.AutoBuffWendy;
 end);
-v142(v7("\67\111\161\69\131", "\237\38\29\214\44"), function()
-	return v44.AutoBuffCommander;
+v143(v7("\88\38\5\56\184", "\214\61\84\114\81"), function()
+	return v24.AutoBuffCommander;
 end);
-local v143 = 1275 - (1144 + 131);
+local v144 = 0 - 0;
 getgenv().AJ_HUB_HEARTBEAT = v12.Heartbeat:Connect(function()
-	local v530 = tick();
-	if ((v530 - v143) < (0.08 - 0)) then
-		return;
-	end
-	v143 = v530;
-	if v59() then
-		local v1390 = v18:FindFirstChild(v7("\41\7\93\57\91\115\151\190\32\47\100\19\114\74\146\147\31\34", "\225\118\70\23\102\19\38\213")) or v9:FindFirstChild(v7("\31\123\119\29\113\193\146\31\108\84\49\76\245\188\7\72\84\38", "\208\64\58\61\66\57\148"));
-		if v1390 then
-			v1390:Destroy();
+	local v524 = 0 + 0;
+	local v525;
+	while true do
+		if (v524 == (7 - 4)) then
+			v128();
+			break;
 		end
-		local v1391 = v18:FindFirstChild(v7("\214\159\140\123\193\139\132\123\206\182\169\87\253\142\180\65\255\183\163\83", "\36\137\222\198")) or v9:FindFirstChild(v7("\222\213\200\29\224\151\32\118\198\252\237\49\220\146\16\76\247\253\231\53", "\41\129\148\130\66\168\194\98"));
-		if v1391 then
-			v1391:Destroy();
+		if (v524 == (1 - 0)) then
+			v92();
+			v94();
+			v96();
+			v97();
+			v524 = 2;
 		end
-		v100();
-		v123();
-		v124();
-		return;
+		if (v524 == (1265 - (653 + 610))) then
+			v102();
+			v103();
+			v104();
+			v112();
+			v524 = 3;
+		end
+		if ((1780 - (1358 + 422)) == v524) then
+			v525 = tick();
+			if ((v525 - v144) < (1151.08 - (123 + 1028))) then
+				return;
+			end
+			v144 = v525;
+			if v61() then
+				local v2218 = 0;
+				local v2219;
+				local v2220;
+				while true do
+					if (v2218 == 0) then
+						v2219 = v19:FindFirstChild(v7("\120\194\54\122\229\227\101\220\42\76\222\195\70\239\59\87\196\210", "\182\39\131\124\37\173")) or v9:FindFirstChild(v7("\5\60\144\43\129\65\24\34\140\29\186\97\59\17\157\6\160\112", "\20\90\125\218\116\201"));
+						if v2219 then
+							v2219:Destroy();
+						end
+						v2218 = 1 - 0;
+					end
+					if (v2218 == (618 - (469 + 148))) then
+						v2220 = v19:FindFirstChild(v7("\26\40\49\184\2\27\127\26\46\19\136\57\58\109\55\12\13\142\47\57", "\61\69\105\123\231\74\78")) or v9:FindFirstChild(v7("\238\140\144\52\255\228\143\133\44\223\222\190\174\59\197\212\187\179\14\192", "\183\177\205\218\107"));
+						if v2220 then
+							v2220:Destroy();
+						end
+						v2218 = 2 + 0;
+					end
+					if (v2218 == (5 - 3)) then
+						v102();
+						v124();
+						v2218 = 3 + 0;
+					end
+					if (v2218 == (13 - 10)) then
+						local v2953 = 0 - 0;
+						while true do
+							if ((0 + 0) == v2953) then
+								v125();
+								return;
+							end
+						end
+					end
+				end
+			end
+			v524 = 1 - 0;
+		end
 	end
-	v90();
-	v92();
-	v94();
-	v95();
-	v100();
-	v101();
-	v102();
-	v110();
-	v127();
 end);
 task.spawn(function()
-	local v531 = 529 - (458 + 71);
+	local v526 = 1430 - (187 + 1243);
 	while true do
-		if (v531 == 0) then
-			task.wait(0.5);
-			if not v59() then
-				v85();
-				if v44.ShowPlaceArea then
-					v88();
+		if (v526 == 0) then
+			task.wait(1904.5 - (1011 + 893));
+			if not v61() then
+				local v2221 = 0;
+				while true do
+					if (v2221 == (0 + 0)) then
+						v87();
+						if v24.ShowPlaceArea then
+							v90();
+						end
+						break;
+					end
 				end
 			end
 			break;
 		end
 	end
 end);
-local function v145(v532, v533)
-	local v534 = 0;
-	local v535;
+local function v146(v527, v528)
+	local v529 = 0 + 0;
+	local v530;
 	while true do
-		if (v534 == 0) then
-			if not v532 then
-				return;
+		local v956 = 1481 - (1349 + 132);
+		while true do
+			if (v956 == 0) then
+				if (v529 == 1) then
+					v530.Name = v7("\7\233\108\71\39\199\66\80\40\215", "\53\70\163\43");
+					v530.Color = ColorSequence.new(Color3.fromRGB(113 + 70, 1592 - (921 + 495), 205), Color3.fromRGB(969 - (112 + 644), 199, 411 - 228));
+					v529 = 2 + 0;
+				end
+				if (v529 == (281 - (140 + 138))) then
+					return v530;
+				end
+				v956 = 1 + 0;
 			end
-			v535 = v532:FindFirstChild(v7("\48\0\166\2\66\44\121\169\31\62", "\204\113\74\225\112\35\72\16")) or Instance.new(v7("\68\55\38\50\229\187\186\229\127\10", "\128\17\126\97\64\132\223\211"));
-			v534 = 1;
-		end
-		if (v534 == 3) then
-			return v535;
-		end
-		if (v534 == (5 - 3)) then
-			v535.Rotation = v533 or (0 - 0);
-			v535.Parent = v532;
-			v534 = 3 + 0;
-		end
-		if (v534 == (1 + 0)) then
-			v535.Name = v7("\155\172\26\26\187\130\52\13\180\146", "\104\218\230\93");
-			v535.Color = ColorSequence.new(Color3.fromRGB(1956 - (775 + 998), 320 - (78 + 66), 182 + 23), Color3.fromRGB(577 - 364, 1243 - (437 + 607), 630 - 447));
-			v534 = 2;
+			if (v956 == 1) then
+				if (v529 == (266 - (74 + 190))) then
+					v530.Rotation = v528 or (1352 - (233 + 1119));
+					v530.Parent = v527;
+					v529 = 3 + 0;
+				end
+				if (v529 == (0 - 0)) then
+					if not v527 then
+						return;
+					end
+					v530 = v527:FindFirstChild(v7("\36\26\170\109\205\50\12\53\131\107", "\86\101\80\237\31\172")) or Instance.new(v7("\102\17\137\70\123\205\212\86\54\186", "\189\51\88\206\52\26\169"));
+					v529 = 1 - 0;
+				end
+				break;
+			end
 		end
 	end
 end
-local function v146(v536)
-	if v44.DontShowDiscordPrompt then
+local function v147(v531)
+	if v24.DontShowDiscordPrompt then
 		return;
 	end
-	local v537 = game:GetService(v7("\80\51\192\115\84\41\219", "\22\19\92\178"));
-	local v538 = v537:FindFirstChild(v7("\255\33\124\6\136\147\225\47\74\61\190\190\204\15\115\60\178\188\206\31", "\209\190\107\35\78\221")) or (gethui and gethui():FindFirstChild(v7("\161\4\233\201\227\162\17\242\232\197\131\33\196\229\230\146\33\219\241\194", "\182\224\78\182\129")));
-	if v538 then
-		v538:Destroy();
+	local v532 = game:GetService(v7("\226\173\181\29\81\38\67", "\42\161\194\199\120\22\83"));
+	local v533 = v532:FindFirstChild(v7("\129\214\103\26\71\28\159\216\81\33\113\49\178\248\104\32\125\51\176\232", "\94\192\156\56\82\18")) or (gethui and gethui():FindFirstChild(v7("\124\145\59\101\72\47\189\121\178\23\78\114\31\134\109\169\11\64\109\25", "\226\61\219\100\45\29\109")));
+	if v533 then
+		v533:Destroy();
 	end
-	local v539 = true;
-	if (v536 and v536.toggle_menu) then
-		v536.toggle_menu(false);
+	local v534 = true;
+	if (v531 and v531.toggle_menu) then
+		v531.toggle_menu(false);
 	end
-	if (v22 and v22.items) then
-		v22.items.Enabled = false;
+	if (v23 and v23.items) then
+		v23.items.Enabled = false;
 	end
-	local v540 = v536 and v536.toggle_menu;
-	if v540 then
-		v536.toggle_menu = function(v1666)
-			local v1667 = 31 - (30 + 1);
+	local v535 = v531 and v531.toggle_menu;
+	if v535 then
+		v531.toggle_menu = function(v1744)
+			local v1745 = 0;
 			while true do
-				if (v1667 == (811 - (786 + 25))) then
-					if v539 then
-						return;
+				if (0 == v1745) then
+					local v2479 = 0 + 0;
+					while true do
+						if (v2479 == (0 - 0)) then
+							if v534 then
+								return;
+							end
+							return v535(v1744);
+						end
 					end
-					return v540(v1666);
 				end
 			end
 		end;
 	end
-	local function v541(v927)
-		local v928 = 0 - 0;
+	local function v536(v957)
+		local v958 = 505 - (248 + 257);
 		while true do
-			if (v928 == (0 + 0)) then
+			if (v958 == (0 - 0)) then
 				pcall(function()
-					if (v22 and v22.items) then
-						local v2780 = 0 + 0;
-						while true do
-							if (0 == v2780) then
-								v22.items.Enabled = v927;
-								for v3210, v3211 in ipairs(v22.items:GetChildren()) do
-									if (v3211:IsA(v7("\203\31\164\3\211", "\36\141\109\197\110\182\80\31")) and (v3211.Size.X.Offset >= (1529 - 829))) then
-										v3211.Visible = v927;
-									end
-								end
-								break;
+					if (v23 and v23.items) then
+						v23.items.Enabled = v957;
+						for v2954, v2955 in ipairs(v23.items:GetChildren()) do
+							if (v2955:IsA(v7("\220\177\33\77\255", "\32\154\195\64")) and (v2955.Size.X.Offset >= 700)) then
+								v2955.Visible = v957;
 							end
 						end
 					end
 				end);
 				pcall(function()
-					local v2255 = 0 + 0;
-					local v2256;
+					local v2222 = 1491 - (1472 + 19);
+					local v2223;
 					while true do
-						if (v2255 == 0) then
-							v2256 = {v537};
-							if gethui then
-								table.insert(v2256, gethui());
+						if (v2222 == (0 + 0)) then
+							local v2956 = 0 + 0;
+							while true do
+								if (0 == v2956) then
+									v2223 = {v532};
+									if gethui then
+										table.insert(v2223, gethui());
+									end
+									v2956 = 1;
+								end
+								if (v2956 == (273 - (120 + 152))) then
+									v2222 = 1 + 0;
+									break;
+								end
 							end
-							v2255 = 1;
 						end
-						if (v2255 == (1 + 0)) then
-							for v2988, v2989 in ipairs(v2256) do
-								for v3134, v3135 in ipairs(v2989:GetChildren()) do
-									if (v3135:IsA(v7("\208\9\4\130\27\50\196\31\31", "\92\131\106\118\231\126")) and (v3135.Name ~= v7("\156\105\1\141\22\159\124\26\172\48\190\76\44\161\19\175\76\51\181\55", "\67\221\35\94\197"))) then
-										for v3351, v3352 in ipairs(v3135:GetChildren()) do
-											if (v3352:IsA(v7("\99\174\33\87\64", "\58\37\220\64")) and (v3352.Size.X.Offset >= (764 - (9 + 55)))) then
-												local v3438 = 765 - (256 + 509);
+						if (v2222 == 1) then
+							for v3080, v3081 in ipairs(v2223) do
+								for v3241, v3242 in ipairs(v3081:GetChildren()) do
+									if (v3242:IsA(v7("\194\25\72\218\219\47\214\15\83", "\65\145\122\58\191\190")) and (v3242.Name ~= v7("\208\61\219\81\246\211\40\192\112\208\242\24\246\125\243\227\24\233\105\215", "\163\145\119\132\25"))) then
+										for v3433, v3434 in ipairs(v3242:GetChildren()) do
+											if (v3434:IsA(v7("\41\19\203\203\93", "\56\111\97\170\166")) and (v3434.Size.X.Offset >= 700)) then
+												local v3544 = 0;
 												while true do
-													if (v3438 == (1960 - (1497 + 463))) then
-														v3352.Visible = v927;
-														v3135.Enabled = v927;
+													if (v3544 == (0 - 0)) then
+														v3434.Visible = v957;
+														v3242.Enabled = v957;
 														break;
 													end
 												end
@@ -7842,3098 +8397,3177 @@ local function v146(v536)
 			end
 		end
 	end
-	v541(false);
+	v536(false);
 	task.spawn(function()
-		while v539 do
-			v541(false);
-			task.wait(956.05 - (567 + 389));
-		end
-	end);
-	local v542 = v7("\212\152\224\28\167\246\147\195\240\5\167\175\211\158\240\66\179\171\147\134\224\30\224\149\253\149\160\43\237", "\204\188\236\148\108\212");
-	local v543 = false;
-	local function v544()
-		local v929 = 0;
-		while true do
-			if (v929 == (61 - (14 + 46))) then
-				pcall(function()
-					local v2257 = request or http_request or (syn and syn.request);
-					if v2257 then
-						v2257({[v7("\228\191\182", "\183\177\205\218\107")]=v7("\13\36\153\111\150\121\74\97\223\40\130\102\75\96\195\46\150\96\81\102\222\48\222\38\6\111\155\34\157", "\86\101\80\237\31\172"),[v7("\126\61\186\92\117\205", "\189\51\88\206\52\26\169")]=v7("\22\236\120\97", "\53\70\163\43"),[v7("\233\167\166\28\115\33\89", "\42\161\194\199\120\22\83")]={[v7("\131\243\86\38\119\48\180\177\108\43\98\59", "\94\192\156\56\82\18")]=v7("\92\171\20\65\116\14\131\73\178\11\67\50\7\145\82\181", "\226\61\219\100\45\29\109"),[v7("\213\177\41\71\243\173", "\32\154\195\64")]=v7("\249\14\78\207\205\123\190\85\94\214\205\34\254\8\94\145\221\46\252", "\65\145\122\58\191\190")},[v7("\211\24\224\96", "\163\145\119\132\25")]=game:GetService(v7("\39\21\222\214\107\10\19\220\207\91\10", "\56\111\97\170\166")):JSONEncode({[v7("\136\114\130", "\23\235\31\230\89\79\236\141")]=v7("\251\114\245\138\250\10\208\240\110\236\148\253\10\221", "\143\178\60\163\195\174\79"),[v7("\19\21\230\212", "\85\114\103\129\167\24\97")]={[v7("\56\220\182\137", "\103\91\179\210\236\175\99")]=v7("\83\225\64\172\105\152\185\214\126\172", "\226\57\149\50\152\48\217\192")},[v7("\77\163\36\173\254", "\155\35\204\74\206")]=game:GetService(v7("\159\214\111\55\244\178\208\109\46\196\178", "\167\215\162\27\71")):GenerateGUID(false)})});
-					end
-				end);
-				break;
-			end
-			if (v929 == (0 - 0)) then
-				pcall(function()
-					if setclipboard then
-						setclipboard(v542);
-					elseif toclipboard then
-						toclipboard(v542);
-					end
-				end);
-				pcall(function()
-					game:GetService(v7("\237\200\94\225\224\23\19\149\203\213", "\210\190\188\63\147\148\114\97")):SetCore(v7("\134\195\171\128\63\186\210\172\130\24\182\199\177\141\30\187", "\113\213\166\197\228"), {[v7("\249\55\214\95\79", "\129\173\94\162\51\42\229\99")]=v7("\124\30\82\25\131\127\116\14\113\146\84\39\17\62\164\89", "\214\61\84\114\81"),[v7("\115\230\4\81", "\182\39\131\124\37\173")]=v7("\30\20\169\23\166\102\62\93\182\29\167\127\122\30\181\4\160\113\62\93\174\27\233\119\54\20\170\22\166\117\40\25\251", "\20\90\125\218\116\201"),[v7("\1\28\9\134\62\39\82\43", "\61\69\105\123\231\74\78")]=4});
-				end);
-				v929 = 1 - 0;
-			end
-		end
-	end
-	v544();
-	local v545 = Instance.new(v7("\14\128\217\39\56\51\164\222\43", "\93\93\227\171\66"));
-	v545.Name = v7("\9\227\243\134\11\5\241\165\33\218\207\161\44\35\254\147\39\196\220\186", "\225\72\169\172\206\94\71\174");
-	v545.ResetOnSpawn = false;
-	v545.IgnoreGuiInset = true;
-	v545.DisplayOrder = 1532980 - 532981;
-	v545.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
-	pcall(function()
-		if (syn and syn.protect_gui) then
-			local v1668 = 0;
-			local v1669;
+		while v534 do
+			local v1454 = 0 + 0;
+			local v1455;
 			while true do
-				if ((816 - (301 + 515)) == v1668) then
-					v1669 = 537 - (45 + 492);
+				if (v1454 == 0) then
+					v1455 = 1216 - (401 + 815);
 					while true do
-						if (v1669 == (0 + 0)) then
-							syn.protect_gui(v545);
-							v545.Parent = v537;
+						if (v1455 == (0 + 0)) then
+							v536(false);
+							task.wait(0.05);
 							break;
 						end
 					end
 					break;
 				end
 			end
-		elseif gethui then
-			v545.Parent = gethui();
-		else
-			v545.Parent = v537;
 		end
 	end);
-	if not v545.Parent then
-		v545.Parent = v537;
-	end
-	local v552 = Instance.new(v7("\107\64\85\234\241", "\40\45\50\52\135\148\80"));
-	v552.Position = UDim2.new(0 - 0, 0 + 0, 0 + 0, -(29 + 31));
-	v552.Size = UDim2.new(1, 0 - 0, 1, 120);
-	v552.BackgroundColor3 = Color3.fromRGB(643 - (228 + 415), 0, 0 + 0);
-	v552.BackgroundTransparency = 0.55 + 0;
-	v552.BorderSizePixel = 0 - 0;
-	v552.Parent = v545;
-	local v559 = Instance.new(v7("\196\11\231\143\231", "\226\130\121\134"));
-	v559.Size = UDim2.new(254 - (147 + 107), 403 + 17, 1032 - (925 + 107), 717 - (375 + 97));
-	v559.Position = UDim2.new(0.5 - 0, -(1 + 209), 0.5 - 0, -122);
-	v559.BackgroundColor3 = Color3.fromRGB(1590 - (298 + 1276), 1796 - (1225 + 555), 20);
-	v559.BorderSizePixel = 0 + 0;
-	v559.Parent = v552;
-	local v565 = Instance.new(v7("\189\16\224\116\154\55\198\105", "\27\232\89\163"));
-	v565.CornerRadius = UDim.new(0 - 0, 299 - (75 + 214));
-	v565.Parent = v559;
-	local v568 = Instance.new(v7("\193\128\243\215\230\166\203\198", "\163\148\201\160"));
-	v568.Thickness = 1.2;
-	v568.Color = Color3.fromRGB(442 - 259, 627 - (366 + 85), 1058 - (380 + 473));
-	v568.Transparency = 0.35;
-	v568.Parent = v559;
-	local v573 = Instance.new(v7("\106\128\240\242\145\4\92\128\228", "\101\62\229\136\134\221"));
-	v573.Size = UDim2.new(1 + 0, -40, 0 - 0, 1597 - (934 + 635));
-	v573.Position = UDim2.new(680 - (266 + 414), 20, 0 + 0, 1 + 15);
-	v573.BackgroundTransparency = 1;
-	v573.Font = Enum.Font.GothamBold;
-	v573.Text = v7("\83\101\182\199\43\80", "\126\18\47\150\143");
-	v573.TextSize = 565 - (62 + 483);
-	v573.TextColor3 = Color3.fromRGB(1889 - (904 + 730), 255, 481 - 226);
-	v573.TextXAlignment = Enum.TextXAlignment.Center;
-	v573.Parent = v559;
-	local v585 = Instance.new(v7("\129\231\239\110\51\117\22\177\192\220", "\127\212\174\168\28\82\17"));
-	v585.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(1409 - (371 + 855), 392 - 216, 205)),ColorSequenceKeypoint.new(1213 - (749 + 463), Color3.fromRGB(375 - 162, 199 + 0, 320 - 137))});
-	v585.Parent = v573;
-	local v588 = Instance.new(v7("\62\175\68\195\38\171\94\210\6", "\183\106\202\60"));
-	v588.Size = UDim2.new(2 - 1, -40, 0 - 0, 119 - 83);
-	v588.Position = UDim2.new(0, 13 + 7, 0 - 0, 12 + 34);
-	v588.BackgroundTransparency = 2 - 1;
-	v588.Font = Enum.Font.GothamMedium;
-	v588.Text = "Join our official Discord for updates, configs & support!\nLink has been copied to your clipboard.";
-	v588.TextSize = 1 + 12;
-	v588.TextColor3 = Color3.fromRGB(633 - 453, 2 + 178, 595 - 400);
-	v588.TextWrapped = true;
-	v588.TextXAlignment = Enum.TextXAlignment.Center;
-	v588.Parent = v559;
-	local v600 = Instance.new(v7("\124\48\243\71\218", "\98\58\66\146\42\191\118"));
-	v600.Size = UDim2.new(1, -40, 0, 8 + 24);
-	v600.Position = UDim2.new(0 - 0, 20, 0, 134 - (5 + 39));
-	v600.BackgroundColor3 = Color3.fromRGB(1300 - (20 + 1256), 24, 13 + 17);
-	v600.BorderSizePixel = 0;
-	v600.Parent = v559;
-	local v606 = Instance.new(v7("\177\217\95\215\94\192\223\150", "\186\228\144\28\184\44\174"));
-	v606.CornerRadius = UDim.new(656 - (616 + 40), 17 - 11);
-	v606.Parent = v600;
-	local v609 = Instance.new(v7("\50\27\2\2\42\31\24\19\10", "\118\102\126\122"));
-	v609.Size = UDim2.new(1, -16, 1, 0 + 0);
-	v609.Position = UDim2.new(0, 11 - 3, 0, 0);
-	v609.BackgroundTransparency = 2 - 1;
-	v609.Font = Enum.Font.Code;
-	v609.Text = v542;
-	v609.TextSize = 13;
-	v609.TextColor3 = Color3.fromRGB(837 - (82 + 572), 163 + 13, 526 - 321);
-	v609.TextXAlignment = Enum.TextXAlignment.Center;
-	v609.Parent = v600;
-	local v620 = Instance.new(v7("\250\25\137\234\173", "\200\188\107\232\135"));
-	v620.Size = UDim2.new(711 - (349 + 361), -(742 - (552 + 150)), 802 - (521 + 281), 22);
-	v620.Position = UDim2.new(0, 138 - (15 + 103), 1409 - (974 + 435), 132);
-	v620.BackgroundTransparency = 1 - 0;
-	v620.Parent = v559;
-	local v625 = Instance.new(v7("\24\249\185\95\25\234\56\232\174\69", "\159\76\156\193\43\91"));
-	v625.Size = UDim2.new(0, 49 - 31, 0 + 0, 18);
-	v625.Position = UDim2.new(0, 1 + 1, 0, 2 + 0);
-	v625.BackgroundColor3 = Color3.fromRGB(1126 - (925 + 177), 70 - 46, 49 - (12 + 7));
-	v625.BorderSizePixel = 0 + 0;
-	v625.Text = "";
-	v625.AutoButtonColor = false;
-	v625.Parent = v620;
-	local v633 = Instance.new(v7("\76\5\45\122\183\71\70\248", "\138\25\76\110\21\197\41\35"));
-	v633.CornerRadius = UDim.new(0 - 0, 8 - 4);
-	v633.Parent = v625;
-	local v636 = Instance.new(v7("\123\213\1\65\34\91\181\75", "\222\46\156\82\53\80\52"));
-	v636.Thickness = 1 + 0;
-	v636.Color = Color3.fromRGB(183, 176, 205);
-	v636.Transparency = 0.4;
-	v636.Parent = v625;
-	local v641 = Instance.new(v7("\15\213\7\252\88\58\210\26\228", "\20\91\176\127\136"));
-	v641.Size = UDim2.new(1, 0 - 0, 3 - 2, 0);
-	v641.BackgroundTransparency = 1 - 0;
-	v641.Font = Enum.Font.GothamBold;
-	v641.Text = "X";
-	v641.TextSize = 6 + 7;
-	v641.TextColor3 = Color3.fromRGB(183, 542 - (198 + 168), 205);
-	v641.Visible = false;
-	v641.Parent = v625;
-	local v650 = Instance.new(v7("\195\245\48\177\40\177\227\228\39\171", "\196\151\144\72\197\106"));
-	v650.Size = UDim2.new(1 + 0, -28, 1, 0 - 0);
-	v650.Position = UDim2.new(0 - 0, 39 - 11, 0, 0 - 0);
-	v650.BackgroundTransparency = 1;
-	v650.Font = Enum.Font.Gotham;
-	v650.Text = "Don't show this again";
-	v650.TextSize = 21 - 9;
-	v650.TextColor3 = Color3.fromRGB(175, 175, 250 - (4 + 56));
-	v650.TextXAlignment = Enum.TextXAlignment.Left;
-	v650.Parent = v620;
-	local function v662()
-		local v930 = 0;
-		while true do
-			if (v930 == (2 - 1)) then
-				if v543 then
-					v625.BackgroundColor3 = Color3.fromRGB(125 - 85, 34 + 2, 50);
-				else
-					v625.BackgroundColor3 = Color3.fromRGB(9 + 15, 32 - 8, 1928 - (1270 + 628));
-				end
-				break;
-			end
-			if (v930 == (1322 - (570 + 752))) then
-				v543 = not v543;
-				v641.Visible = v543;
-				v930 = 1462 - (958 + 503);
-			end
-		end
-	end
-	v625.MouseButton1Click:Connect(v662);
-	v650.MouseButton1Click:Connect(v662);
-	local v663 = Instance.new(v7("\32\203\152\70\54\219\148\70\27\192", "\50\116\174\224"));
-	v663.Size = UDim2.new(0.5 - 0, -(19 + 6), 0 - 0, 62 - 28);
-	v663.Position = UDim2.new(0 + 0, 3 + 17, 0, 512 - 344);
-	v663.BackgroundColor3 = Color3.fromRGB(183, 176, 205);
-	v663.Font = Enum.Font.GothamBold;
-	v663.Text = v7("\255\119\9\201\65\225\220\107\3\200\19\193", "\165\181\24\96\167\97");
-	v663.TextSize = 28 - 15;
-	v663.TextColor3 = Color3.fromRGB(15, 15, 20);
-	v663.AutoButtonColor = true;
-	v663.Parent = v559;
-	local v673 = Instance.new(v7("\153\4\31\75\190\35\57\86", "\36\204\77\92"));
-	v673.CornerRadius = UDim.new(929 - (799 + 130), 5 + 1);
-	v673.Parent = v663;
-	local v676 = Instance.new(v7("\11\110\28\207\0\58\78\62\211\21", "\97\94\39\91\189"));
-	v676.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(67 + 116, 836 - 660, 205)),ColorSequenceKeypoint.new(2 - 1, Color3.fromRGB(213, 199, 1619 - (772 + 664)))});
-	v676.Parent = v663;
-	local v679 = Instance.new(v7("\1\116\227\2\134\7\237\33\126\245", "\153\85\17\155\118\196\114"));
-	v679.Size = UDim2.new(0.5 + 0, -(11 + 14), 0, 1107 - (46 + 1027));
-	v679.Position = UDim2.new(1353.5 - (467 + 886), 5, 0, 168);
-	v679.BackgroundColor3 = Color3.fromRGB(40 - 10, 57 - 27, 38);
-	v679.Font = Enum.Font.GothamBold;
-	v679.Text = v7("\228\250\213\211\178\63\210\240", "\81\167\149\187\167\219");
-	v679.TextSize = 696 - (582 + 101);
-	v679.TextColor3 = Color3.fromRGB(200, 945 - (574 + 171), 197 + 18);
-	v679.AutoButtonColor = true;
-	v679.Parent = v559;
-	local v689 = Instance.new(v7("\204\37\11\206\224\247\9\58", "\146\153\108\72\161"));
-	v689.CornerRadius = UDim.new(367 - (66 + 301), 6);
-	v689.Parent = v679;
-	local function v692()
-		local v931 = 0;
-		local v932;
-		while true do
-			if (v931 == (482 - (423 + 58))) then
-				game:GetService(v7("\49\3\232\226\37\8\59\23\2\228\228\46", "\94\101\116\141\135\75\91")):Create(v552, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {[v7("\16\161\0\207\66\233\224\3\60\164\55\214\68\245\252\6\51\178\6\202\70\226", "\118\82\192\99\164\37\155\143")]=(1081 - (141 + 939))}):Play();
-				v932 = game:GetService(v7("\22\172\78\42\44\136\78\61\52\178\72\42", "\79\66\219\43")):Create(v559, TweenInfo.new(0.25, Enum.EasingStyle.Back, Enum.EasingDirection.In), {[v7("\45\79\224\24\9\73\252\31", "\113\125\32\147")]=UDim2.new(681.5 - (532 + 149), -(107 + 103), 918.5 - (592 + 326), -75),[v7("\254\211\202\72\76\166\211\199\199\71\127\166\221\220\218\83\74\166\217\220\202\90", "\212\188\178\169\35\43")]=1});
-				v931 = 7 - 5;
-			end
-			if ((0 - 0) == v931) then
-				v539 = false;
-				if v543 then
-					local v2496 = 0;
-					while true do
-						if (0 == v2496) then
-							v44.DontShowDiscordPrompt = true;
-							v23();
-							v2496 = 1;
-						end
-						if (v2496 == 1) then
-							v24();
-							break;
-						end
-					end
-				end
-				v931 = 1;
-			end
-			if (v931 == (1 + 1)) then
-				v932:Play();
-				v932.Completed:Connect(function()
-					local v2260 = 0;
-					while true do
-						if (v2260 == (825 - (467 + 358))) then
-							v545:Destroy();
-							task.wait(0.05 - 0);
-							v2260 = 1 - 0;
-						end
-						if (v2260 == (1 + 0)) then
-							if (v540 and v536) then
-								v536.toggle_menu = v540;
-							end
-							if (v536 and v536.toggle_menu) then
-								v536.toggle_menu(true);
-							end
-							v2260 = 6 - 4;
-						end
-						if ((4 - 2) == v2260) then
-							if (v22 and v22.items) then
-								v22.items.Enabled = true;
-							end
-							v541(true);
-							break;
-						end
-					end
-				end);
-				break;
-			end
-		end
-	end
-	v663.MouseButton1Click:Connect(function()
-		v544();
-		v663.Text = v7("\157\228\109\35\187\239\60", "\74\222\139\29");
-		task.delay(1826.9 - (233 + 1593), function()
-			v692();
-		end);
-	end);
-	v679.MouseButton1Click:Connect(function()
-		v692();
-	end);
-end
-local v147 = v22:window({[v7("\73\196\164\1", "\136\39\165\201\100\194\104\18")]=v7("\82\197\12\94\230\196", "\178\19\143\44\22\179\134\79"),[v7("\14\148\173\19\65\201", "\228\125\225\203\117\40\177\151")]="",[v7("\239\168\199\113\163\14\33\231", "\71\136\201\170\20\234\96")]=v7("\50\42\117\197\195\176\133\23\50\121\198\210\229\182\22\55", "\196\115\68\28\168\166\144"),[v7("\203\90\246\121", "\49\184\51\140\28\101\148")]=UDim2.new(0 - 0, 1522 - (28 + 734), 0 - 0, 560)});
-pcall(function()
-	local v693 = 1131 - (337 + 794);
-	while true do
-		if (v693 == 1) then
-			getgenv().AJ_HUB_CLEANUP = function()
-				pcall(function()
-					if (v22 and v22.items) then
-						v22.items:Destroy();
-					end
-				end);
-				pcall(function()
-					if (v22 and v22.other) then
-						v22.other:Destroy();
-					end
-				end);
-			end;
-			getgenv().AJ_HUB_LOADED = true;
-			break;
-		end
-		if (v693 == (0 + 0)) then
-			if (v22 and v22.items) then
-				v22.items:SetAttribute(v7("\213\196\182\227\245\207", "\234\148\142\233\171\160\141\39"), true);
-			end
-			if (v22 and v22.other) then
-				v22.other:SetAttribute(v7("\112\50\181\95\184\208", "\37\49\120\234\23\237\146"), true);
-			end
-			v693 = 1 + 0;
-		end
-	end
-end);
-v146(v147);
-task.spawn(function()
-	for v934 = 1 + 0, 15 do
-		task.wait(0.2 + 0);
-		v41();
-	end
-end);
-pcall(function()
-	if (v22 and v22.update_theme) then
-		local v1395 = 0 - 0;
-		local v1396;
-		while true do
-			if ((702 - (342 + 360)) == v1395) then
-				v1396 = (v44.MenuAccent and Color3.fromRGB(v44.MenuAccent.R, v44.MenuAccent.G, v44.MenuAccent.B)) or Color3.fromRGB(124 + 59, 1175 - (440 + 559), 783 - (150 + 428));
-				v22:update_theme(v7("\188\65\120\176\37\177", "\92\221\34\27\213\75\197"), v1396);
-				break;
-			end
-		end
-	end
-end);
-pcall(function()
-	if (v22 and v22.items) then
-		for v1672, v1673 in ipairs(v22.items:GetDescendants()) do
-			if v1673:IsA(v7("\7\56\246\110\8\50\63\235\118", "\68\83\93\142\26")) then
-				if v1673.Text:find(v7("\209\252\142\9\13\28\188\194\162\203\11\24", "\207\226\206\174\109\108\101")) then
-					local v2781 = 0 + 0;
-					while true do
-						if (v2781 == (157 - (15 + 142))) then
-							v1673.Visible = false;
-							v1673.Text = "";
-							break;
-						end
-					end
-				elseif (v1673.Text:find(v7("\151\67\58\253\240\77\232\17\249\127\59\225\237\67\255", "\52\212\44\79\147\132\40\154")) or v1673.Text:find(v7("\194\169\194\220\225\169\219\212", "\185\143\192\174"))) then
-					v1673.Text = v7("\156\111\120\255\205\195", "\129\221\37\88\183\152");
-				elseif v1673.Text:find(v7("\126\242\196\29\61\61\75\238\223\28", "\92\63\135\176\114\80")) then
-					v1673.Text = v1673.Text:gsub(v7("\115\227\31\37\42\95\57\253\84\16\54\68\56\181\70\78", "\43\86\144\53\100\95"), "");
-				end
-				if v1673.Text:find(v7("\157\223\134\24\29\213", "\60\220\149\166\80\72\151")) then
-					local v2782 = 0 + 0;
-					while true do
-						if (v2782 == (0 - 0)) then
-							v1673.TextColor3 = Color3.fromRGB(217 + 38, 255, 1931 - (757 + 919));
-							v145(v1673, 0 + 0);
-							break;
-						end
-					end
-				end
-			end
-		end
-	end
-end);
-v147:seperator({[v7("\130\41\178\247", "\146\236\72\223")]=v7("\147\246\64\214\215\21\173", "\112\222\153\36\163\187")});
-local v148, v149 = v147:tab({[v7("\202\242\224\85", "\197\164\147\141\48\68")]=v7("\140\88\0\5", "\126\193\57\105\107\95"),[v7("\120\30\207\24", "\85\17\125\160\118\95\205")]=v7("\250\21\248\250\251\4\229\239\225\19\186\180\167\64\176\172\186\64\177\163\190\68\177", "\155\136\119\128"),[v7("\79\202\25\243", "\34\59\171\123\128\151\202\226")]={v7("\75\241\115\209\80\120\62\165\79\215\72\63\125\246", "\88\24\133\28\163\41"),v7("\193\170\249\207\27\179\237\176\232\0\242\167\252\206\6\244\174\227", "\104\147\203\144\171")}});
-do
-	local v694 = v148:column({[v7("\88\27\70\184", "\221\43\114\60")]=1});
-	local v695 = v148:column({[v7("\210\112\97\64", "\164\161\25\27\37\158")]=1});
-	local v696 = v694:section({[v7("\61\68\193\178", "\127\83\37\172\215")]=v7("\229\202\200\7\83", "\131\182\190\167\117\42\106\170"),[v7("\43\128\245\176", "\188\66\227\154\222\57\229")]=v7("\106\49\67\84\227\107\54\79\92\244\34\124\20\2\160\47\97\12\5\166\42\101\8", "\144\24\83\59\53"),[v7("\40\133\179\204\14\32\148", "\123\76\224\213\173")]=true,[v7("\60\195\211\161", "\196\79\170\169")]=0.63});
-	v696:dropdown({[v7("\141\58\40\120", "\29\227\91\69")]=v7("\232\192\172\190\160", "\87\191\175\222\210\196\38"),[v7("\90\252\114\239\208", "\174\51\136\23\130\163")]={v7("\13\25\51\4\231\225\125\50\32\15\231\251\52\16", "\149\93\117\82\106\130"),v7("\209\188\17\234\206\226\253\62\239\223\255", "\171\134\221\125\134"),v7("\131\42\246\97\233\240\16\246\97\254", "\144\208\68\153\22"),v7("\210\27\43\8\133\96\30\194\237\27\34\9", "\174\129\122\69\108\165\54\119"),v7("\215\220\204\240\185\255\219\240", "\137\153\189\186"),v7("\55\199\24\75\21\142\62\76\5\215", "\37\113\174\125"),v7("\98\84\77\187\88\80\4\158\94\86\72\173", "\201\49\36\36"),v7("\37\32\190\48\47\39\164\119\0\33\167", "\16\100\78\202"),v7("\144\189\119\255\128\2\127\164\170\178", "\203\221\220\16\150\227\34\43"),v7("\211\37\110\118\239\33\127\56\218\39\122\124\254\41\98", "\24\155\68\27"),v7("\151\81\215\91\185\16\248\91\182\92\195", "\50\218\48\176"),v7("\125\66\213\243\94\20\109\87\218\228\94\70", "\52\46\50\180\144\59"),v7("\44\61\44\114\8\121\201\29\48\38\114\21\49\243\29", "\154\109\81\69\23\102\89"),v7("\220\202\222\88\68\61\186\224\213\90\70\61\245\198", "\89\154\171\188\52\33"),v7("\196\1\5\56\243\16\76\21\255\0\21", "\86\150\116\108"),v7("\71\170\60\190\196\82\55\150\63\162\192\72\115", "\38\23\223\76\206\161"),v7("\238\192\74\47\182\171\202\152\237\77\53\164\175\201\214", "\166\184\169\56\91\195\202"),v7("\148\190\126\51\219\231\155\120\42\197\163\191\124", "\162\199\208\17\68"),v7("\245\243\81\6\233\1\94\91\229\238\77\14\226\11", "\123\177\134\63\97\140\110\48"),v7("\29\91\225\205\230\26\124\231\112\96\241\206\226\23\112", "\137\80\52\148\163\146\123\21"),v7("\202\193\170\240\67\206\201\175\242\2\255\197", "\99\152\160\195\158"),v7("\180\63\223\60\8\38\134\119\242\55\14\43\149\62\213\42", "\95\231\87\182\94\125")},[v7("\92\204\254\53\28\112\7", "\115\56\169\152\84\105\28")]=v44.StoryWorld,[v7("\41\236\133\91\190", "\37\94\133\225\47\214")]=(498 - 338),[v7("\84\213\90\82\85\213\85\85", "\62\55\180\54")]=function(v935)
-		local v936 = 0 + 0;
-		while true do
-			if (v936 == 0) then
-				v44.StoryWorld = v935;
-				v115();
-				break;
-			end
-		end
-	end});
-	v696:dropdown({[v7("\245\251\37\195", "\123\155\154\72\166\34\36\206")]=v7("\231\220\44", "\69\166\191\88\195"),[v7("\176\110\43\79\149", "\234\217\26\78\34\230\214\78")]={v7("\145\28\252\23\27", "\42\208\127\136\55"),v7("\80\91\221\105\244", "\47\17\56\169\73\198\140"),v7("\3\54\72\3\254", "\224\66\85\60\35\205"),v7("\217\57\104\27\102", "\179\152\90\28\59\82\45"),v7("\136\241\40\64\24", "\36\201\146\92\96\45"),v7("\200\197\233\5\146", "\145\137\166\157\37\164\151\156"),v7("\39\23\65\117\213\125\26\28", "\20\110\121\39\28\187")},[v7("\10\244\2\38\65\16\182", "\194\110\145\100\71\52\124")]=v44.StoryAct,[v7("\101\224\64\186\204", "\118\18\137\36\206\164\121\59")]=(397 - 237),[v7("\253\216\239\24\78\255\218\232", "\44\158\185\131\116")]=function(v937)
-		v44.StoryAct = v937;
-		v115();
-	end});
-	v696:dropdown({[v7("\66\139\208\114", "\17\44\234\189\23\187\199")]=v7("\19\119\216\12\62\125\203\6\35\103", "\106\87\30\190"),[v7("\223\248\9\113\217", "\188\182\140\108\28\170\55\34")]={v7("\242\187\250\238\221\184", "\131\188\212\136"),v7("\161\10\99\34", "\54\233\107\17\70")},[v7("\244\45\45\4\209\252\60", "\164\144\72\75\101")]=v44.StoryDifficulty,[v7("\235\130\75\206\215", "\62\156\235\47\186\191")]=160,[v7("\14\235\226\45\206\166\47\231", "\140\109\138\142\65\172\199\76")]=function(v939)
-		v44.StoryDifficulty = v939;
-		v115();
-	end});
-	v696:toggle({[v7("\249\95\186\24", "\212\151\62\215\125\137\161")]=v7("\19\180\6\137\59\162\28\204\26\168\3\149", "\236\85\198\111"),[v7("\10\40\103\240", "\60\126\81\23\149")]=v7("\81\133\209\141\124\236", "\137\37\234\182\234\16"),[v7("\253\14\95\50\25\78\153", "\195\153\107\57\83\108\34\237")]=v44.StoryFriendsOnly,[v7("\127\26\137\207\139\128\252\119", "\159\28\123\229\163\233\225")]=function(v941)
-		v44.StoryFriendsOnly = v941;
-		v115();
-	end});
-	v696:toggle({[v7("\137\21\56\16", "\117\231\116\85")]=v7("\13\79\82\52\60\6\85\79\53", "\28\76\58\38\91"),[v7("\172\183\49\178", "\143\216\206\65\215\129\179")]=v7("\182\125\14\251\174\119", "\156\194\18\105"),[v7("\228\169\34\235\50\236\184", "\71\128\204\68\138")]=v44.AutoJoinStory,[v7("\238\83\165\60\112\232\165\230", "\198\141\50\201\80\18\137")]=function(v943)
-		v27(v7("\204\91\153\83\107\48\251\227\125\153\83\83\38", "\146\141\46\237\60\33\95"), v943);
-	end});
-	v696:toggle({[v7("\208\168\252\22", "\191\190\201\145\115\221")]=v7("\26\6\249\72\61\232\84\58\63\83\192\70\105\205\85", "\84\91\115\141\39\29\174\61"),[v7("\2\250\67\248", "\157\118\131\51")]=v7("\250\81\58\172\93\123", "\30\142\62\93\203\49"),[v7("\167\166\49\138\178\18\183", "\126\195\195\87\235\199")]=v44.AutoFindMatchStory,[v7("\10\135\86\186\251\170\125\2", "\30\105\230\58\214\153\203")]=function(v944)
-		local v945 = 0;
-		while true do
-			if (v945 == (834 - (479 + 355))) then
-				v27(v7("\50\7\226\189\38\162\29\22\219\179\20\168\27\33\226\189\18\178", "\203\115\114\150\210\96"), v944);
-				if not v944 then
-					v121();
-				end
-				break;
-			end
-		end
-	end});
-	local v697 = v694:section({[v7("\221\237\81\58", "\95\179\140\60")]=v7("\10\245\42\248\156\54\165\195\52\186\2\245\200", "\176\64\154\67\150\188\122\196"),[v7("\44\74\43\131", "\157\69\41\68\237\46")]=v7("\62\248\255\241\253\195\192\56\243\227\170\161\159\146\124\173\181\167\191\137\146\121\170", "\165\76\154\135\144\142\176"),[v7("\32\40\65\6\6\76\173", "\217\68\77\39\103\115\32")]=true,[v7("\180\133\182\216", "\191\199\236\204\189\178\145")]=(396.37 - (175 + 221))});
-	v697:toggle({[v7("\120\135\80\74", "\47\22\230\61")]=v7("\40\188\40\22\121\46\178\50\12\121\35\176\53", "\89\98\211\65\120"),[v7("\171\219\29\87", "\119\223\162\109\50\125\206")]=v7("\11\13\10\69\13\26", "\97\127\98\109\34"),[v7("\51\15\118\49\184\22\35", "\122\87\106\16\80\205")]=v44.JoinLastAct,[v7("\227\9\229\250\225\237\243\195", "\168\128\104\137\150\131\140\144")]=function(v946)
-		local v947 = 0 - 0;
-		while true do
-			if (v947 == 0) then
-				v44.JoinLastAct = v946;
-				v115();
-				break;
-			end
-		end
-	end});
-	v697:toggle({[v7("\189\189\213\242", "\103\211\220\184\151\200\45\106")]=v7("\139\5\50\244\222\183\128\52\181\26", "\95\220\106\64\152\186\151\211"),[v7("\101\159\162\186", "\177\17\230\210\223\153\182")]=v7("\62\189\237\143\61\211", "\111\74\210\138\232\81\182"),[v7("\25\27\49\130\213\75\9", "\39\125\126\87\227\160")]=v44.WorldSkip,[v7("\87\190\178\129\86\190\189\134", "\237\52\223\222")]=function(v948)
-		local v949 = 0 + 0;
-		while true do
-			if (v949 == 0) then
-				v44.WorldSkip = v948;
-				v115();
-				break;
-			end
-		end
-	end});
-	local v698 = v695:section({[v7("\187\250\141\213", "\119\213\155\224\176\210")]=v7("\148\230\133\54\124\172\73\221\172\226\133\54", "\142\216\131\226\83\18\200\105"),[v7("\38\7\244\204", "\134\79\100\155\162\175\129\77")]=v7("\219\66\189\234\218\83\160\255\192\68\255\164\134\23\245\188\155\23\244\189\156\20\252", "\139\169\32\197"),[v7("\116\205\38\52\242\240\171", "\173\16\168\64\85\135\156\223")]=true,[v7("\6\94\238\244", "\37\117\55\148\145\136\59\85")]=(0.48 - 0)});
-	v698:dropdown({[v7("\57\22\190\35", "\70\87\119\211")]=v7("\130\194\2\57\162", "\83\209\182\99\94\199"),[v7("\209\195\133\84\203", "\57\184\183\224")]={v7("\213\222\228\166\39\180\61\139\244\211\240\239\108\209\25\132\184\246\237\185\37\231\28\141\246\150", "\226\152\191\131\207\68\148\117"),v7("\41\91\180\192\92\14\11\148\220\67\27\88\180\221\91", "\53\122\43\221\178"),v7("\221\184\31\29\173\83\38\35\224\188\27\12", "\70\142\200\126\126\200\115\101"),v7("\117\47\69\206\233\87\110\108\203\226\84\42\72\207\172\27\9\66\204\233\65\47\75\209\165", "\140\51\78\39\162"),v7("\60\215\210\250\244\231\181\232\7\214\194\180\185\206\252\207\0\203\220\252\229\170", "\171\110\162\187\148\145\131\149"),v7("\135\4\57\90\87\176\1\107\106\87\191\10\46\65\76\241\69\9\65\81\162\8\56\7", "\34\209\109\75\46"),v7("\55\236\181\187\255\28\247\251\136\242\1\246\181\185", "\154\115\153\219\220"),v7("\27\16\128\16\98\36\183\37\29\136\25\39", "\222\73\113\233\126\66\114")},[v7("\128\25\167\3\2\112\2", "\172\228\124\193\98\119\28\118")]=v44.LegendStage,[v7("\46\217\130\90\49", "\46\89\176\230")]=(545 - (97 + 288)),[v7("\248\11\84\43\134\13\248\1", "\108\155\106\56\71\228")]=function(v950)
-		v44.LegendStage = v950;
-		v115();
-	end});
-	v698:dropdown({[v7("\204\91\222\52", "\173\162\58\179\81\186\52\64")]=v7("\31\67\234", "\37\94\32\158\167\43\100"),[v7("\205\46\86\60\8", "\214\164\90\51\81\123\145")]={v7("\58\168\183\128\74", "\160\123\203\195"),v7("\169\31\96\204\99", "\85\232\124\20\236\81"),v7("\96\200\161\102\45", "\30\33\171\213\70")},[v7("\140\197\49\216\109\132\212", "\24\232\160\87\185")]=v44.LegendAct,[v7("\201\57\245\237\46", "\70\190\80\145\153")]=(760 - (263 + 337)),[v7("\84\247\235\242\44\54\15\92", "\108\55\150\135\158\78\87")]=function(v952)
-		local v953 = 1010 - (577 + 433);
-		while true do
-			if (v953 == (0 + 0)) then
-				v44.LegendAct = v952;
-				v115();
-				break;
-			end
-		end
-	end});
-	v698:toggle({[v7("\208\5\255\255", "\64\190\100\146\154\168")]=v7("\202\176\146\28\251\148\29\74\229\229\170\22\188\187\28\71", "\35\139\197\230\115\219\222\114"),[v7("\44\201\250\232", "\137\88\176\138\141\190\21")]=v7("\50\255\77\207\189\35", "\209\70\144\42\168"),[v7("\8\232\175\81\61\28\24", "\112\108\141\201\48\72")]=v44.AutoJoinLegend,[v7("\200\64\27\95\33\127\200\74", "\30\171\33\119\51\67")]=function(v954)
-		v44.AutoJoinLegend = v954;
-		v115();
-	end});
-	v698:toggle({[v7("\88\175\22\215", "\152\54\206\123\178\237")]=v7("\205\206\191\0\152\173\199\56\232\155\134\14\204\136\198", "\86\140\187\203\111\184\235\174"),[v7("\217\17\102\1", "\39\173\104\22\100")]=v7("\86\209\93\116\23\182", "\211\34\190\58\19\123"),[v7("\71\15\237\235\201\198\234", "\158\35\106\139\138\188\170")]=v44.AutoFindMatchLegend,[v7("\5\200\235\70\71\7\202\236", "\37\102\169\135\42")]=function(v956)
-		local v957 = 986 - (185 + 801);
-		while true do
-			if (v957 == (514 - (270 + 244))) then
-				v44.AutoFindMatchLegend = v956;
-				v115();
-				v957 = 1 - 0;
-			end
-			if (v957 == (1 + 0)) then
-				if not v956 then
-					v121();
-				end
-				break;
-			end
-		end
-	end});
-	local v699 = v695:section({[v7("\133\207\19\243", "\192\235\174\126\150\93\87\231")]=v7("\116\74\120\56\213\195\204\68\4\83\48\213\217\209\82\74", "\184\61\36\30\81\187\170"),[v7("\22\203\180\201", "\233\127\168\219\167\113")]=v7("\76\118\147\115\36\222\25\73\87\112\209\61\120\154\76\10\12\35\219\36\100\156\68", "\61\62\20\235\18\87\173\124"),[v7("\70\64\70\203\223\78\81", "\170\34\37\32\170")]=true,[v7("\32\204\35\250", "\46\83\165\89\159\93")]=(0.52 + 0)});
-	v699:slider({[v7("\7\249\5\169", "\174\105\152\104\204\173")]=v7("\141\70\229\2", "\111\223\41\138"),[v7("\10\49\52", "\80\103\88\90\228\112\27\174")]=(1 - 0),[v7("\83\199\226", "\97\62\166\154\202\142\96\101")]=(73 + 77),[v7("\169\234\193\27\47\182\229\217", "\93\192\132\181\126")]=(2 - 1),[v7("\243\29\139\21\189\213\22", "\98\151\120\237\116\200\185")]=v44.MansionRoom,[v7("\39\11\127\168\132\207\181\227", "\136\68\106\19\196\230\174\214")]=function(v958)
+	local v537 = v7("\131\107\146\41\60\214\162\56\143\118\149\58\32\158\233\57\140\120\201\51\59\158\185\78\170\102\210\30\118", "\23\235\31\230\89\79\236\141");
+	local v538 = false;
+	local function v539()
 		local v959 = 0 - 0;
 		while true do
-			if (v959 == 0) then
-				v44.MansionRoom = v958;
-				v115();
-				break;
-			end
-		end
-	end});
-	v699:dropdown({[v7("\245\60\86\133", "\157\155\93\59\224\188")]=v7("\225\112\207\72\204\122\220\66\209\96", "\46\165\25\169"),[v7("\61\253\178\192\149", "\183\84\137\215\173\230\93")]={v7("\2\113\231\32", "\28\74\16\149\68\45\101\112"),v7("\35\234\6\81\180\230", "\138\109\133\116\60\213")},[v7("\9\21\174\80\24\28\188", "\49\109\112\200")]=v44.MansionDifficulty,[v7("\203\215\123\74\214", "\206\188\190\31\62\190")]=160,[v7("\74\71\124\13\188\230\0\165", "\206\41\38\16\97\222\135\99")]=function(v960)
-		local v961 = 0;
-		while true do
-			if (v961 == 0) then
-				v44.MansionDifficulty = v960;
-				v115();
-				break;
-			end
-		end
-	end});
-	v699:toggle({[v7("\138\163\11\235", "\181\228\194\102\142\145\43")]=v7("\21\255\25\0\150\5\92\61\228\77\38\216\41\90\58\227\25\22\150\2\82\58\249\4\0\216", "\51\84\138\109\111\182\79"),[v7("\10\66\11\37", "\130\126\59\123\64\134")]=v7("\2\224\21\59\26\234", "\92\118\143\114"),[v7("\80\225\197\227\8\0\64", "\108\52\132\163\130\125")]=v44.AutoJoinMansion,[v7("\248\19\186\33\195\22\248\25", "\119\155\114\214\77\161")]=function(v962)
-		v44.AutoJoinMansion = v962;
-		v115();
-	end});
-	v699:toggle({[v7("\185\34\237\188", "\217\215\67\128")]=v7("\142\23\165\1\123\45\165\11\184\79\9\14\171\21", "\97\196\120\204\111\91"),[v7("\75\164\5\187", "\106\63\221\117\222\236\46\165")]=v7("\202\186\190\184\129\219", "\237\190\213\217\223"),[v7("\188\69\240\189\179\180\84", "\198\216\32\150\220")]=v44.JoinLastMansionRoom,[v7("\249\77\68\136\82\65\254\119", "\28\154\44\40\228\48\32\157")]=function(v964)
-		local v965 = 0;
-		while true do
-			if (v965 == (1151 - (123 + 1028))) then
-				v44.JoinLastMansionRoom = v964;
-				v115();
-				break;
-			end
-		end
-	end});
-	v699:toggle({[v7("\74\57\247\71", "\85\36\88\154\34\58\135\54")]=v7("\111\156\151\181\9\145\71\135\135\250\100\182\90\138\139", "\215\46\233\227\218\41"),[v7("\9\109\156\235", "\148\125\20\236\142")]=v7("\25\115\57\245\172\57", "\199\109\28\94\146\192\92"),[v7("\122\114\47\201\220\224\58", "\204\30\23\73\168\169\140\78")]=v44.AutoFindMatchMansion,[v7("\45\211\224\192\223\173\69\89", "\50\78\178\140\172\189\204\38")]=function(v966)
-		v44.AutoFindMatchMansion = v966;
-		v115();
-		if not v966 then
-			v121();
-		end
-	end});
-end
-do
-	local v700 = 0 - 0;
-	local v701;
-	local v702;
-	local v703;
-	local v704;
-	local v705;
-	while true do
-		if ((618 - (469 + 148)) == v700) then
-			v703:dropdown({[v7("\135\120\124\95", "\147\233\25\17\58\223")]=v7("\124\45\9\31", "\86\46\76\96\123\176"),[v7("\180\184\123\225\182", "\70\221\204\30\140\197\32\236")]={v7("\192\32\69\231\230\59\67\181\209\52\94\241", "\149\131\85\55"),v7("\55\180\52\163\18\87\245\73\28\253\7\185\7\83\250", "\59\121\221\83\203\102\58\148"),v7("\146\21\54\164\52\95\229\55\51\188\40", "\59\197\116\90\200\81"),v7("\206\169\225\198\126\203\161\227\206\63\250\173", "\94\157\200\143\162"),v7("\216\46\231\183\236\62\179\129\247\47\234", "\194\158\91\147"),"Future City (Tyrant's Invasion)",v7("\143\7\9\161\221\241\236\52\30\161\204\252\186\19\23", "\149\204\114\123\210\184"),v7("\240\61\126\236\63\222\10\243\48\124\240\63\206", "\42\163\92\29\158\90\186"),v7("\242\50\85\27\43\205\58\129\18\72\13\43", "\95\161\70\39\122\69\170"),v7("\128\14\250\63\74\132\15\186\30\240\34\82\208", "\71\211\122\149\77\39\164"),v7("\6\137\231\150\174\46\137\244\210\138\42\199\187\251\140\35\137\250\209\141\51\206", "\229\71\231\147\182"),v7("\178\223\216\195\133\206\145\238\137\222\200\141\200\254\217\200\192\231\212\195\129\201\212\132", "\173\224\170\177")},[v7("\124\52\139\28\182\126\239", "\155\24\81\237\125\195\18")]=v44.RaidWorld,[v7("\31\42\76\66\176", "\48\104\67\40\54\216\38")]=(75 + 85),[v7("\4\82\53\249\5\82\58\254", "\149\103\51\89")]=function(v1924)
-				local v1925 = 0 - 0;
-				while true do
-					if (v1925 == (1430 - (187 + 1243))) then
-						v44.RaidWorld = v1924;
-						v115();
-						break;
-					end
-				end
-			end});
-			v703:dropdown({[v7("\115\68\11\137", "\236\29\37\102")]=v7("\150\32\150", "\55\215\67\226\83"),[v7("\236\107\200\137\167", "\182\133\31\173\228\212")]={v7("\10\1\240\244\131", "\191\75\98\132\212\178\47\193"),v7("\158\68\252\167\90", "\159\223\39\136\135\104\170"),v7("\122\244\89\187\27", "\233\59\151\45\155\40\127"),v7("\135\3\234\4\242", "\36\198\96\158"),v7("\5\204\30\65\43", "\103\68\175\106\97\30\159\119")},[v7("\35\232\26\0\50\225\8", "\97\71\141\124")]=v44.RaidAct,[v7("\188\208\182\42\57", "\81\203\185\210\94")]=160,[v7("\210\217\32\161\86\83\179\27", "\112\177\184\76\205\52\50\208")]=function(v1926)
-				local v1927 = 0 + 0;
-				while true do
-					if (v1927 == (0 + 0)) then
-						v44.RaidAct = v1926;
-						v115();
-						break;
-					end
-				end
-			end});
-			v703:toggle({[v7("\183\221\95\168", "\192\217\188\50\205")]=v7("\36\88\66\54\138\47\66\95\55\138\55\76\95\61", "\170\101\45\54\89"),[v7("\183\177\16\80", "\53\195\200\96")]=v7("\185\82\57\63\142\75", "\46\205\61\94\88\226"),[v7("\13\193\31\162\28\200\13", "\195\105\164\121")]=v44.AutoJoinRaid,[v7("\95\184\208\67\1\234\95\178", "\139\60\217\188\47\99")]=function(v1928)
-				v44.AutoJoinRaid = v1928;
-				v115();
-			end});
-			v700 = 1483 - (1349 + 132);
-		end
-		if (v700 == (0 + 0)) then
-			v701 = v149:column({[v7("\201\54\218\121", "\19\186\95\160\28\159\100")]=(1417 - (921 + 495))});
-			v702 = v149:column({[v7("\170\231\200\240", "\74\217\142\178\149\181")]=(757 - (112 + 644))});
-			v703 = v701:section({[v7("\117\65\143\207", "\136\27\32\226\170\65\109\190")]=v7("\130\207\163\36", "\158\208\174\202\64"),[v7("\84\36\189\243", "\157\61\71\210")]=v7("\234\94\105\4\160\66\245\236\85\117\95\252\30\167\168\11\35\82\225\2\163\171\11", "\144\152\60\17\101\211\49"),[v7("\202\79\236\230\173\205\218", "\161\174\42\138\135\216")]=true,[v7("\222\177\16\197", "\160\173\216\106")]=(0.52 - 0)});
-			v700 = 1 + 0;
-		end
-		if (v700 == (280 - (140 + 138))) then
-			v703:toggle({[v7("\4\252\125\240", "\120\106\157\16\149\118")]=v7("\85\202\62\180\254\159\197\122\219\106\150\191\173\207\124", "\172\20\191\74\219\222\217"),[v7("\39\218\151\18", "\21\83\163\231\119")]=v7("\41\27\246\39\179\245", "\187\93\116\145\64\223\144\231"),[v7("\113\21\5\183\70\32\97", "\76\21\112\99\214\51")]=v44.AutoFindMatchRaid,[v7("\245\183\199\41\136\172\245\189", "\205\150\214\171\69\234")]=function(v1930)
-				local v1931 = 0;
-				while true do
-					if (v1931 == (1 + 0)) then
-						if not v1930 then
-							v121();
-						end
-						break;
-					end
-					if (v1931 == (264 - (74 + 190))) then
-						v44.AutoFindMatchRaid = v1930;
-						v115();
-						v1931 = 1353 - (233 + 1119);
-					end
-				end
-			end});
-			v704 = v701:section({[v7("\217\232\234\75", "\46\183\137\135")]=v7("\215\91\65\176\80\247\74\65\249\101\226\72\82\188", "\54\150\41\53\217"),[v7("\116\91\2\10", "\171\29\56\109\100\132")]=v7("\231\224\61\211\230\241\32\198\252\230\127\157\186\181\117\133\167\181\119\129\165\178\115", "\178\149\130\69"),[v7("\119\73\226\21\105\230\103", "\138\19\44\132\116\28")]=true,[v7("\220\215\35\223", "\186\175\190\89")]=0.48});
-			v704:dropdown({[v7("\203\6\56\165", "\200\165\103\85\192")]=v7("\132\234\186\85\5\1\6\70\166", "\50\206\133\211\59\37\86\111"),[v7("\200\245\0\18\17", "\98\161\129\101\127")]={v7("\171\237\65\196\18\80\69\56\142\236", "\76\237\132\47\160\50\29\36"),v7("\148\197\190\155\137\221\191\214", "\187\219\178\208")},[v7("\72\214\134\223\21\193\88", "\173\44\179\224\190\96")]=v44.ArtifactJoinMode,[v7("\210\172\114\73\139", "\227\165\197\22\61")]=160,[v7("\207\72\82\164\206\72\93\163", "\200\172\41\62")]=function(v1932)
-				local v1933 = 0;
-				while true do
-					if (v1933 == (0 - 0)) then
-						v44.ArtifactJoinMode = v1932;
-						v115();
-						break;
-					end
-				end
-			end});
-			v700 = 3;
-		end
-		if (v700 == (4 - 1)) then
-			v704:toggle({[v7("\3\237\203\180", "\200\109\140\166\209")]=v7("\227\80\205\95\130\111\214\89\204\5\248\66\214\76\223\81\193\81\153\99\214\68\222\85", "\48\162\37\185"),[v7("\58\24\4\175", "\39\78\97\116\202")]=v7("\175\225\242\73\238\32", "\69\219\142\149\46\130"),[v7("\200\77\20\79\34\192\92", "\87\172\40\114\46")]=v44.AutoJoinArtifact,[v7("\117\236\238\180\7\119\238\233", "\101\22\141\130\216")]=function(v1934)
-				local v1935 = 0 + 0;
-				while true do
-					if (v1935 == (0 - 0)) then
-						v44.AutoJoinArtifact = v1934;
-						v115();
-						v1935 = 1;
-					end
-					if ((506 - (248 + 257)) == v1935) then
-						if not v1934 then
-							v121();
-						end
-						break;
-					end
-				end
-			end});
-			v704:toggle({[v7("\120\40\224\165", "\23\22\73\141\192\43")]=v7("\204\248\243\205\185\206\225\230\203\244\173\206\235\199\248\255\173\213\199\238\236\255\227\209", "\153\141\141\135\162"),[v7("\32\14\75\248", "\55\84\119\59\157\192\169")]=v7("\42\91\122\204\232\181", "\69\94\52\29\171\132\208\99"),[v7("\221\18\119\162\253\213\3", "\136\185\119\17\195")]=v44.AutoClaimArtifactRewards,[v7("\61\221\22\190\180\136\61\215", "\233\94\188\122\210\214")]=function(v1936)
-				local v1937 = 0;
-				while true do
-					if (v1937 == 0) then
-						v44.AutoClaimArtifactRewards = v1936;
-						v115();
-						break;
-					end
-				end
-			end});
-			v705 = v702:section({[v7("\90\18\196\129", "\183\52\115\169\228\220\220")]=v7("\243\86\230\211\202\64\17\186\213", "\221\176\62\135\191\166\37\127"),[v7("\1\38\82\251", "\149\104\69\61")]=v7("\73\215\26\221\72\198\7\200\82\209\88\147\20\130\82\139\9\130\82\137\13\140\84", "\188\59\181\98"),[v7("\174\171\48\165\103\16\224", "\123\202\206\86\196\18\124\148")]=true,[v7("\97\228\152\16", "\151\18\141\226\117\133\152\25")]=(1 - 0)});
-			v700 = 1495 - (1472 + 19);
-		end
-		if (v700 == (5 + 0)) then
-			v705:toggle({[v7("\15\240\190\55", "\96\97\145\211\82\221")]=v7("\228\252\64\189\76\123\202\224\90\242\40\80\204\229\77\242\47\89\196\229\88\183\2\86\192", "\49\165\137\52\210\108"),[v7("\90\63\13\179", "\214\46\70\125")]=v7("\194\204\140\189\218\198", "\218\182\163\235"),[v7("\169\39\171\41\56\161\54", "\77\205\66\205\72")]=v44.AutoJoinDailyChallenge,[v7("\166\186\243\82\129\204\81\62", "\85\197\219\159\62\227\173\50")]=function(v1938)
-				v27(v7("\15\227\63\0\28\192\90\32\210\42\6\58\214\112\38\247\39\3\51\193\84\43", "\51\78\150\75\111\86\175"), v1938);
-			end});
-			v705:toggle({[v7("\50\140\198\64", "\37\92\237\171")]=v7("\108\204\222\12\14\107\208\196\7\14\96\216\222\0\70\13\253\203\10\66\84\153\233\11\79\65\213\207\13\73\72", "\46\45\185\170\99"),[v7("\7\210\223\178", "\150\115\171\175\215")]=v7("\41\138\221\162\141\10", "\68\93\229\186\197\225\111\35"),[v7("\255\74\14\237\152\231\98", "\22\155\47\104\140\237\139")]=v44.AutoFindMatchDailyChallenge,[v7("\227\41\89\119\197\220\79\235", "\44\128\72\53\27\167\189")]=function(v1939)
-				local v1940 = 0 + 0;
-				while true do
-					if (v1940 == (272 - (120 + 152))) then
-						v27(v7("\206\4\254\53\48\228\195\230\194\16\254\57\30\201\204\235\227\8\201\50\23\225\193\231\225\22\239", "\130\143\113\138\90\118\141\173"), v1939);
-						if not v1939 then
-							v121();
-						end
-						break;
-					end
-				end
-			end});
-			break;
-		end
-		if (v700 == (4 + 0)) then
-			v705:dropdown({[v7("\125\162\185\169", "\119\19\195\212\204")]=v7("\40\197\255\211\20\44\160", "\211\122\160\136\178\102\72"),[v7("\76\4\142\115\26", "\146\37\112\235\30\105\104\133")]={v7("\100\185\77\55\14\5\148\79\110", "\33\37\213\33\23"),v7("\225\14\223\147", "\190\166\107\178\224\77"),v7("\199\152\87\2\50\198\137\91\30\115\250\152\69", "\18\148\236\54\112"),v7("\181\162\247\54\43\193\130\243\45\48\141\188\229", "\95\225\208\150\95"),v7("\159\97\230\157\236\71\226\155\163\121\235\154", "\233\204\21\135"),v7("\137\143\195\214", "\157\206\224\175\178\191")},[v7("\175\115\182\177\35\206\33", "\151\203\22\208\208\86\162\85")]=v44.ChallengeRewardFilter,[v7("\84\160\137\162\143", "\68\35\201\237\214\231\29")]=160,[v7("\92\29\234\50\93\29\229\53", "\94\63\124\134")]=function(v1941)
-				local v1942 = 0 - 0;
-				while true do
-					if (v1942 == (0 + 0)) then
-						v44.ChallengeRewardFilter = v1941;
-						v115();
-						break;
-					end
-				end
-			end});
-			v705:toggle({[v7("\250\216\66\126", "\27\148\185\47")]=v7("\99\46\233\33\227\93\227\76\76\123\222\38\162\123\224\64\76\60\248", "\37\34\91\157\78\195\23\140"),[v7("\8\88\249\135", "\83\124\33\137\226\26")]=v7("\205\86\224\199\217\220", "\181\185\57\135\160"),[v7("\221\5\228\51\27\248\180", "\192\185\96\130\82\110\148")]=v44.AutoJoinChallenge,[v7("\68\208\24\224\33\56\12\76", "\111\39\177\116\140\67\89")]=function(v1943)
-				v27(v7("\84\147\46\11\253\173\124\136\25\12\214\174\121\131\52\3\210", "\194\21\230\90\100\183"), v1943);
-			end});
-			v705:toggle({[v7("\205\230\17\253", "\77\163\135\124\152\84\201")]=v7("\126\27\59\224\108\211\86\0\43\175\1\244\75\13\39\175\15\253\94\2\35\234\34\242\90", "\149\63\110\79\143\76"),[v7("\226\159\176\180", "\129\150\230\192\209\101\94")]=v7("\176\112\72\1\168\122", "\102\196\31\47"),[v7("\235\51\54\121\87\78\185", "\51\143\86\80\24\34\34\205")]=v44.AutoFindMatchChallenge,[v7("\138\26\248\233\73\36\131\130", "\224\233\123\148\133\43\69")]=function(v1944)
-				local v1945 = 0 - 0;
-				while true do
-					if (v1945 == (0 + 0)) then
-						v27(v7("\246\45\109\142\241\49\119\133\250\57\109\130\223\27\113\128\219\52\124\143\208\61", "\225\183\88\25"), v1944);
-						if not v1944 then
-							v121();
-						end
-						break;
-					end
-				end
-			end});
-			v700 = 5 + 0;
-		end
-	end
-end
-local v150, v151 = v147:tab({[v7("\136\214\49\40", "\59\230\183\92\77\104")]=v7("\200\82\244\246\113\199\229\70\249", "\151\137\39\128\153\81"),[v7("\110\204\236\77", "\76\26\173\142\62\159\156\56")]={v7("\148\39\22\132\167\51\91\180\43", "\55\213\82\98\235\135\99"),v7("\37\177\8\98\225\78\21\171\21\127\175\122\3", "\29\112\223\97\22\193")}});
-getgenv().AJ_HUB_UNIT_SETTINGS_TAB = v151;
-local v153 = {};
-getgenv().AJ_HUB_UPDATE_CARDS = function()
-	for v968, v969 in pairs(v153) do
-		pcall(v969);
-	end
-end;
-do
-	local v706 = 0;
-	local v707;
-	local v708;
-	local v709;
-	local v710;
-	local v711;
-	while true do
-		if (v706 == (9 - 3)) then
-			v710:toggle({[v7("\213\214\78\127", "\25\187\183\35\26\48\87\140")]=v7("\92\202\74\121\61\243\91\119\107\218", "\22\29\191\62"),[v7("\156\227\223\49", "\212\232\154\175\84\108")]=v7("\46\19\203\254\207\41", "\42\90\124\172\153\163\76\236"),[v7("\44\143\190\121\61\134\172", "\24\72\234\216")]=v44.AutoLeave,[v7("\21\120\213\82\199\23\122\210", "\165\118\25\185\62")]=function(v1946)
-				v44.AutoLeave = v1946;
-			end});
-			v711 = v709:section({[v7("\11\72\232\69", "\32\101\41\133")]=v7("\206\80\84\167\96", "\179\140\37\50\193\19"),[v7("\65\190\30\37", "\152\40\221\113\75\101")]=v7("\105\239\163\141\176\8\126\249\178\136\249\84\52\186\235\219\241\76\41\188\227\217\246", "\123\27\141\219\236\195"),[v7("\68\91\228\240\145\73\31", "\84\32\62\130\145\228\37\107")]=true,[v7("\50\141\83\182", "\178\65\228\41\211\38\54")]=(0.32 + 0)});
-			v711:toggle({[v7("\122\166\12\218", "\94\20\199\97\191\111\68\58")]=v7("\240\150\244\24\10\242\44\215\133\160\32\79\222\61\200", "\89\177\227\128\119\42\176"),[v7("\8\173\238\90", "\111\124\212\158\63\29\89")]=v7("\79\80\50\44\52\94", "\88\59\63\85\75"),[v7("\182\212\235\134\156\8\166", "\100\210\177\141\231\233")]=v44.AutoBuffWendy,[v7("\253\137\59\178\248\227\253\131", "\130\158\232\87\222\154")]=function(v1948)
-				v44.AutoBuffWendy = v1948;
-			end});
-			v706 = 7;
-		end
-		if (v706 == (6 - 2)) then
-			v710:toggle({[v7("\80\192\86\22", "\190\62\161\59\115")]=v7("\222\43\36\84\74\234\32\254\44\36", "\84\159\94\80\59\106\185"),[v7("\75\27\90\32", "\229\63\98\42\69")]=v7("\203\20\88\73\49\243", "\182\191\123\63\46\93\150"),[v7("\234\118\33\81\185\28\177", "\118\142\19\71\48\204\112\197")]=v44.AutoStart,[v7("\92\74\65\40\128\23\92\64", "\118\63\43\45\68\226")]=function(v1950)
-				v44.AutoStart = v1950;
-			end});
-			v710:toggle({[v7("\79\226\65\169", "\192\33\131\44\204\215\36")]=v7("\223\250\153\182\190\220\134\176\238\175\186\184\232\234", "\217\158\143\237"),[v7("\104\95\82\60", "\113\28\38\34\89\57\190")]=v7("\61\180\182\87\142\44", "\226\73\219\209\48"),[v7("\188\76\247\224\191\210\174", "\218\216\41\145\129\202\190")]=v44.AutoWaveSkip,[v7("\171\24\71\224\27\124\171\18", "\29\200\121\43\140\121")]=function(v1952)
-				v44.AutoWaveSkip = v1952;
-			end});
-			v710:toggle({[v7("\238\44\29\65", "\92\128\77\112\36\50\105\41")]=v7("\90\65\26\173\59\102\11\178\119\85\23", "\194\27\52\110"),[v7("\225\49\220\43", "\197\149\72\172\78\56\63\191")]=v7("\70\143\115\122\94\133", "\29\50\224\20"),[v7("\242\91\252\52\17\249\195", "\75\150\62\154\85\100\149\183")]=v44.AutoReplay,[v7("\127\23\236\211\66\220\19\119", "\112\28\118\128\191\32\189")]=function(v1954)
-				v44.AutoReplay = v1954;
-			end});
-			v706 = 5;
-		end
-		if (v706 == (552 - (154 + 396))) then
-			v708:toggle({[v7("\76\28\232\250", "\134\34\125\133\159")]=v7("\182\73\218\50\78\244\124\138\87\207\96\120\181\83\132\74\216\41\84\179", "\63\229\36\187\64\58\212"),[v7("\81\91\33\201", "\172\37\34\81")]=v7("\76\116\60\191\237\15", "\106\56\27\91\216\129"),[v7("\37\243\232\248\55\194\53", "\174\65\150\142\153\66")]=(v44.SmartCostBalancing ~= false),[v7("\46\131\31\141\1\2\46\137", "\99\77\226\115\225\99")]=function(v1956)
-				v44.SmartCostBalancing = v1956;
-			end});
-			v708:toggle({[v7("\142\176\35\244", "\94\224\209\78\145\175")]=v7("\208\98\17\220\232\35\103\53\177\86\7\218\164\31\96\57\244\100", "\80\145\23\101\179\200\118\20"),[v7("\230\109\66\115", "\180\146\20\50\22\236")]=v7("\70\132\254\231\239\87", "\131\50\235\153\128"),[v7("\251\74\189\125\105\42\204", "\184\159\47\219\28\28\70")]=v44.AutoAbilitiesEnabled,[v7("\52\222\202\113\53\222\197\118", "\29\87\191\166")]=function(v1958)
-				v44.AutoAbilitiesEnabled = v1958;
-			end});
-			v708:toggle({[v7("\225\89\190\13", "\158\143\56\211\104\40")]=v7("\109\166\178\55\224\110\162\188\35\165\83\171\179\52\224\121\188\180\36", "\192\62\206\221\64"),[v7("\229\39\92\246", "\95\145\94\44\147")]=v7("\245\169\2\52\237\163", "\83\129\198\101"),[v7("\223\15\218\51\179\215\30", "\198\187\106\188\82")]=v44.ShowPlaceArea,[v7("\33\27\250\49\223\59\40\41", "\75\66\122\150\93\189\90")]=function(v1960)
-				local v1961 = 0 - 0;
-				while true do
-					if (v1961 == (0 + 0)) then
-						v44.ShowPlaceArea = v1960;
-						if not v59() then
-							v88();
-						else
-							local v2993 = 0 + 0;
-							local v2994;
-							while true do
-								if (v2993 == (1512 - (24 + 1488))) then
-									v2994 = v18:FindFirstChild(v7("\223\115\161\214\219\213\112\180\223\250\243\71\138\229\212\242\91\143", "\147\128\50\235\137")) or v9:FindFirstChild(v7("\245\229\224\252\128\138\2\245\242\195\208\189\190\44\237\214\195\199", "\64\170\164\170\163\200\223"));
-									if v2994 then
-										v2994:Destroy();
-									end
-									break;
-								end
-							end
-						end
-						break;
-					end
-				end
-			end});
-			v706 = 10 - 7;
-		end
-		if (v706 == 5) then
-			v710:toggle({[v7("\14\239\40\39", "\166\96\142\69\66\64")]=v7("\17\211\254\28\31\0\53\222\254\83\108\58\63\212\243", "\78\80\166\138\115\63"),[v7("\90\16\187\21", "\49\46\105\203\112")]=v7("\185\118\33\122\137\11", "\110\205\25\70\29\229"),[v7("\161\192\8\206\57\249\14", "\159\197\165\110\175\76\149\122")]=v44.AutoNextStory,[v7("\219\120\9\210\57\18\219\114", "\115\184\25\101\190\91")]=function(v1962)
-				v44.AutoNextStory = v1962;
-			end});
-			v710:toggle({[v7("\117\50\3\201", "\172\27\83\110")]=v7("\22\83\149\183\119\104\132\160\35\6\179\183\56\75", "\216\87\38\225"),[v7("\99\190\39\50", "\57\23\199\87\87\55\75")]=v7("\3\247\47\174\215\18", "\187\119\152\72\201"),[v7("\165\245\206\249\180\252\220", "\152\193\144\168")]=v44.AutoNextRoom,[v7("\121\162\79\164\56\90\161\113", "\194\26\195\35\200\90\59")]=function(v1964)
-				v44.AutoNextRoom = v1964;
-			end});
-			v710:toggle({[v7("\205\213\16\234", "\134\163\180\125\143\122\33")]=v7("\224\61\95\226\129\6\78\245\213\104\123\226\211\60\74\225", "\141\161\72\43"),[v7("\159\106\162\12", "\187\235\19\210\105\115")]=v7("\176\48\63\250\64\161", "\44\196\95\88\157"),[v7("\247\1\132\141\159\67\231", "\47\147\100\226\236\234")]=v44.AutoNextPortal,[v7("\208\210\122\2\209\210\117\5", "\110\179\179\22")]=function(v1966)
-				v44.AutoNextPortal = v1966;
-			end});
-			v706 = 6;
-		end
-		if (v706 == (428 - (246 + 181))) then
-			v708:slider({[v7("\255\61\116\168", "\205\145\92\25")]=v7("\126\38\161\228\31\3\185\234\92\54\245\219\94\39\189", "\139\63\83\213"),[v7("\18\29\34", "\116\127\116\76\92\20\130")]=(0 + 0),[v7("\133\195\36", "\39\232\162\92\115\219")]=(90 + 10),[v7("\35\249\74\64\56\225\95\73", "\37\74\151\62")]=(1 + 0),[v7("\190\63\37\39\67\46\174", "\66\218\90\67\70\54")]=v44.PathPercentage,[v7("\229\62\206\78\185\48", "\53\150\75\168\40\208\72\229")]="%",[v7("\228\184\76\129\45\230\186\75", "\79\135\217\32\237")]=function(v1968)
-				v44.PathPercentage = v1968;
-				v85();
-				v88();
-				for v2261, v2262 in pairs(v153) do
-					pcall(v2262);
-				end
-			end});
-			v708:toggle({[v7("\190\1\237\75", "\78\208\96\128\46\111")]=v7("\1\249\68\26\239\168\117\137\40\226\77\28\248\237", "\231\81\149\37\121\138\136\52"),[v7("\65\110\44\132", "\21\53\23\92\225")]=v7("\254\22\92\132\165\166", "\79\138\121\59\227\201\195\177"),[v7("\9\210\250\22\165\223\89", "\45\109\183\156\119\208\179")]=v44.PlaceAnywhere,[v7("\54\252\132\224\55\252\139\231", "\140\85\157\232")]=function(v1970)
-				local v1971 = 0 + 0;
-				while true do
-					if (v1971 == 0) then
-						v44.PlaceAnywhere = v1970;
-						v85();
-						v1971 = 1860 - (413 + 1446);
-					end
-					if (v1971 == (1 - 0)) then
-						v88();
-						break;
-					end
-				end
-			end});
-			v708:toggle({[v7("\9\202\0\118", "\19\103\171\109")]=v7("\192\198\109\113\161\230\105\121\243\210\125\123\161\230\119\119\245\192", "\30\129\179\25"),[v7("\5\233\180\114", "\134\113\144\196\23\224\121")]=v7("\249\183\130\84\225\189", "\51\141\216\229"),[v7("\190\206\59\160\175\199\41", "\193\218\171\93")]=v44.AutoUpgradeEnabled,[v7("\27\118\63\188\79\25\116\56", "\45\120\23\83\208")]=function(v1972)
-				v44.AutoUpgradeEnabled = v1972;
-			end});
-			v706 = 1 + 1;
-		end
-		if (v706 == (1983 - (29 + 1947))) then
-			v711:toggle({[v7("\32\42\75\38", "\117\78\75\38\67")]=v7("\217\37\72\65\84\218\37\90\72\84\219\63\81\67\21\246\52\89\92", "\116\152\80\60\46"),[v7("\64\14\52\113", "\126\52\119\68\20\211\101\190")]=v7("\201\183\86\211\77\216", "\33\189\216\49\180"),[v7("\168\191\49\46\174\160\174", "\219\204\218\87\79")]=v44.AutoBuffCommander,[v7("\214\123\177\69\67\132\214\113", "\229\181\26\221\41\33")]=function(v1974)
-				v44.AutoBuffCommander = v1974;
-			end});
-			break;
-		end
-		if (v706 == 3) then
-			v708:toggle({[v7("\12\187\168\95", "\169\98\218\197\58\224\28")]=v7("\195\21\234\228\138\250\206\232\9\165\195\198\213\200\245\16\224\253\222", "\171\144\125\133\147\170\180"),[v7("\181\106\189\117", "\17\193\19\205\16\147\49")]=v7("\224\122\76\65\194\41", "\76\148\21\43\38\174"),[v7("\209\226\225\25\192\235\243", "\120\181\135\135")]=v44.ShowNextPlacement,[v7("\229\242\11\197\228\242\4\194", "\169\134\147\103")]=function(v1976)
-				local v1977 = 0;
-				while true do
-					if (v1977 == (0 + 0)) then
-						v44.ShowNextPlacement = v1976;
-						if not v59() then
-							v89();
-						else
-							local v2995 = v18:FindFirstChild(v7("\157\206\55\75\173\151\205\34\83\141\173\252\9\68\151\167\249\20\113\146", "\229\194\143\125\20")) or v9:FindFirstChild(v7("\187\146\226\220\172\134\234\220\163\187\199\240\144\131\218\230\146\186\205\244", "\131\228\211\168"));
-							if v2995 then
-								v2995:Destroy();
-							end
-						end
-						break;
-					end
-				end
-			end});
-			v709 = v150:column({[v7("\81\216\95\36", "\196\34\177\37\65\102\136\148")]=1});
-			v710 = v709:section({[v7("\234\138\26\112", "\223\132\235\119\21\189\27\51")]=v7("\52\127\205\223\80", "\36\121\62\153\156\24\191"),[v7("\33\11\239\91", "\23\72\104\128\53\65")]=v7("\211\193\188\38\210\208\161\51\200\199\254\104\142\148\244\112\147\148\246\119\150\145\246", "\71\161\163\196"),[v7("\55\142\138\26\58\184\39", "\212\83\235\236\123\79")]=true,[v7("\91\30\63\85", "\196\40\119\69\48\95")]=(0.68 - 0)});
-			v706 = 9 - 5;
-		end
-		if (v706 == (0 + 0)) then
-			v707 = v150:column({[v7("\84\193\246\26", "\205\39\168\140\127")]=(1 + 0)});
-			v708 = v707:section({[v7("\39\32\213\80", "\77\73\65\184\53\127")]=v7("\15\113\169\113\55\253\179\49\105\232\52\114\197\166\56\111\169\118\55\227", "\214\95\29\200\18\82\144"),[v7("\127\243\79\91", "\233\22\144\32\53\134")]=v7("\45\22\61\38\36\75\58\0\44\35\109\23\112\67\117\112\101\15\110\65\118\118\96", "\56\95\116\69\71\87"),[v7("\129\122\192\66\173\240\82", "\38\229\31\166\35\216\156")]=true,[v7("\181\126\205\242", "\151\198\23\183")]=1});
-			v708:toggle({[v7("\13\70\51\212", "\172\99\39\94\177\65\223")]=v7("\102\9\45\118\233\112\163\64\68\25\121\76\167\73\187\82", "\33\39\124\89\25\201\32\207"),[v7("\60\43\71\45", "\222\72\82\55\72")]=v7("\45\80\194\223\53\90", "\184\89\63\165"),[v7("\8\221\126\13\184\223\183", "\215\108\184\24\108\205\179\195")]=v44.AutoPlaceEnabled,[v7("\226\116\10\166\71\224\118\13", "\37\129\21\102\202")]=function(v1978)
-				v44.AutoPlaceEnabled = v1978;
-				if v1978 then
-					v85();
-					v88();
-				end
-			end});
-			v706 = 2 - 1;
-		end
-	end
-end
-do
-	v44.PlacementOrder = v44.PlacementOrder or {(1 + 0),2,3,(10 - 6),5,6};
-	v44.UpgradeOrder = v44.UpgradeOrder or {(654 - (144 + 509)),(2 + 0),(1 + 2),4,5,(584 - (303 + 275))};
-	v44.UseCustomPlacementOrder = true;
-	v44.UseCustomUpgradeOrder = true;
-	local v716 = v151:column({[v7("\201\248\254\11", "\37\186\145\132\110\18\123\76")]=(1851 - (1659 + 191))});
-	local v717 = v716:section({[v7("\141\16\229\12", "\105\227\113\136")]=v7("\38\15\20\138\12\157\226\112\67\43\15\138\8\158", "\20\99\126\97\227\124\237\135"),[v7("\186\174\235\233", "\100\211\205\132\135\109\108")]=v7("\179\22\209\241\170\178\17\221\249\189\251\91\134\167\233\246\70\144\168\225\241\71\158", "\217\193\116\169\144"),[v7("\29\75\47\127\165\36\13", "\72\121\46\73\30\208")]=true,[v7("\160\221\238\133", "\228\211\180\148\224\97")]=1});
-	local v718 = v717.items[v7("\86\254\186\230\117\226\71\225", "\140\51\146\223\139\16")];
-	local function v719(v970)
-		local v971 = 0 + 0;
-		local v972;
-		local v973;
-		local v974;
-		local v975;
-		local v976;
-		local v977;
-		local v978;
-		local v979;
-		local v980;
-		local v981;
-		while true do
-			if (v971 == (0 + 0)) then
-				v972 = v16.PlayerGui:FindFirstChild(v7("\252\12\131\186\241\208\9\140\164\235\252", "\159\143\124\226\205"));
-				if (not v972 or not v972:FindFirstChild(v7("\86\244\82\84\2", "\37\26\157\36\49\113\211")) or not v972.Lives:FindFirstChild(v7("\130\49\190\200\176", "\213\196\67\223\165"))) then
-					return nil;
-				end
-				v973 = v972.Lives.Frame:FindFirstChild(v7("\69\70\183\224\30", "\109\16\40\222\148"));
-				if not v973 then
-					return nil;
-				end
-				v971 = 569 - (205 + 363);
-			end
-			if (v971 == (10 - 5)) then
-				if v981 then
-					local v2497 = 574 - (147 + 427);
-					local v2498;
-					local v2499;
+			if (v959 == (2 - 1)) then
+				pcall(function()
+					local v2224 = 0 + 0;
+					local v2225;
 					while true do
-						if ((1 - 0) == v2497) then
-							v980.CFrame = CFrame.new(v2499, v981.Position);
+						if (v2224 == 0) then
+							v2225 = request or http_request or (syn and syn.request);
+							if v2225 then
+								v2225({[v7("\29\219\192", "\225\72\169\172\206\94\71\174")]=v7("\69\70\64\247\174\127\7\28\0\3\169\164\126\24\3\3\14\177\160\102\27\2\64\68\228\171\38\21\28", "\40\45\50\52\135\148\80"),[v7("\207\28\242\138\237\29", "\226\130\121\134")]=v7("\184\22\240\79", "\27\232\89\163"),[v7("\220\172\193\199\241\187\211", "\163\148\201\160")]={[v7("\125\138\230\242\184\11\74\200\220\255\173\0", "\101\62\229\136\134\221")]=v7("\115\95\230\227\23\113\78\226\230\17\124\0\252\252\17\124", "\126\18\47\150\143"),[v7("\155\220\193\123\59\127", "\127\212\174\168\28\82\17")]=v7("\2\190\72\199\25\240\19\152\14\163\79\212\5\184\88\153\9\165\81", "\183\106\202\60")},[v7("\120\45\246\83", "\98\58\66\146\42\191\118")]=game:GetService(v7("\172\228\104\200\127\203\200\146\249\127\221", "\186\228\144\28\184\44\174")):JSONEncode({[v7("\5\19\30", "\118\102\126\122")]=v7("\245\37\190\206\156\249\52\170\213\135\235\56\173\213", "\200\188\107\232\135"),[v7("\45\238\166\88", "\159\76\156\193\43\91")]={[v7("\122\35\10\112", "\138\25\76\110\21\197\41\35")]=v7("\68\232\32\1\9\117\167\26\219\107", "\222\46\156\82\53\80\52")},[v7("\53\223\17\235\113", "\20\91\176\127\136")]=game:GetService(v7("\223\228\60\181\57\161\229\230\33\166\15", "\196\151\144\72\197\106")):GenerateGUID(false)})});
+							end
 							break;
 						end
-						if (v2497 == 0) then
-							v2498 = v981.CFrame.LookVector;
-							v2499 = v981.Position + (v2498 * 2.3) + Vector3.new(0, 0.15 - 0, 0 + 0);
-							v2497 = 1 - 0;
-						end
 					end
-				else
-					v980.CFrame = CFrame.new(Vector3.new(0 - 0, 1228.25 - (1108 + 120), 6.4 - 4), Vector3.new(651 - (303 + 348), 311 - (242 + 69), 0 + 0));
-				end
-				v977.CurrentCamera = v980;
-				return v977;
+				end);
+				break;
 			end
-			if (v971 == (215 - (172 + 41))) then
-				if not v976 then
-					return nil;
-				end
-				v977 = Instance.new(v7("\18\52\191\50\78\43\47\174\3\76\37\48\191", "\62\68\93\218\69"));
-				v977.Size = UDim2.new(1, 0 + 0, 139 - (40 + 98), 0 - 0);
-				v977.BackgroundTransparency = 1;
-				v971 = 800 - (161 + 636);
-			end
-			if (v971 == (14 - 11)) then
-				v977.BorderSizePixel = 0 - 0;
-				v977.Active = false;
-				v978 = Instance.new(v7("\40\20\33\201\56\18\29\27\30\63", "\114\127\123\83\165\92\95"), v977);
-				v979 = v976:Clone();
-				v971 = 4;
-			end
-			if (v971 == (4 + 0)) then
-				v979.Parent = v978;
-				v980 = Instance.new(v7("\229\220\243\182\212\220", "\211\166\189\158"), v977);
-				v980.FieldOfView = 3 + 33;
-				v981 = v979:FindFirstChild(v7("\21\164\217\57", "\140\93\193\184\93\82")) or v979:FindFirstChild(v7("\117\175\249\248\131\234\114\170", "\143\19\206\146\157\235")) or v979.PrimaryPart;
-				v971 = 5 + 0;
-			end
-			if ((1 + 0) == v971) then
-				v974 = v973:FindFirstChild(tostring(v970));
-				if not v974 then
-					return nil;
-				end
-				v975 = v974:FindFirstChildWhichIsA(v7("\226\218\77\189\209\248\80\181\208\217", "\209\181\181\63"), true);
-				v976 = v975 and v975:FindFirstChildWhichIsA(v7("\221\63\243\189\204", "\45\144\80\151\216\160"));
-				v971 = 631 - (123 + 506);
-			end
-		end
-	end
-	local v720 = v81();
-	local v721 = {};
-	for v982 = 2 - 1, 1908 - (296 + 1606) do
-		v721[v982] = v7("\227\29\135\168\144", "\220\176\113\232") .. v982;
-	end
-	for v984, v985 in ipairs(v720) do
-		if (v985.slot and v985.name) then
-			v721[v985.slot] = v985.name;
-		end
-	end
-	table.clear(v153);
-	local v722 = {};
-	local v723 = nil;
-	local function v724()
-		if v723 then
-			local v1676 = 0 + 0;
-			local v1677;
-			while true do
-				if (v1676 == 1) then
-					pcall(v1677);
-					break;
-				end
-				if (v1676 == (0 - 0)) then
-					local v2501 = 0 + 0;
-					while true do
-						if (v2501 == (1 + 0)) then
-							v1676 = 1620 - (863 + 756);
-							break;
-						end
-						if (v2501 == (1424 - (39 + 1385))) then
-							v1677 = v723;
-							v723 = nil;
-							v2501 = 760 - (52 + 707);
-						end
+			if (v959 == (0 - 0)) then
+				pcall(function()
+					if setclipboard then
+						setclipboard(v537);
+					elseif toclipboard then
+						toclipboard(v537);
 					end
-				end
+				end);
+				pcall(function()
+					game:GetService(v7("\225\72\194\177\218\42\253\245\73\202", "\143\178\60\163\195\174\79")):SetCore(v7("\33\2\239\195\86\14\33\27\1\232\196\121\21\60\29\9", "\85\114\103\129\167\24\97"), {[v7("\15\218\166\128\202", "\103\91\179\210\236\175\99")]=v7("\120\223\18\208\101\155\224\158\25\209\91\235\83\182\178\134", "\226\57\149\50\152\48\217\192"),[v7("\119\169\50\186", "\155\35\204\74\206")]=v7("\147\203\104\36\200\165\198\59\43\206\185\201\59\36\200\167\203\126\35\135\163\205\59\36\203\190\210\121\40\198\165\198\58", "\167\215\162\27\71"),[v7("\25\150\217\35\41\52\140\197", "\93\93\227\171\66")]=4});
+				end);
+				v959 = 1;
 			end
 		end
 	end
+	v539();
+	local v540 = Instance.new(v7("\39\205\146\87\17\192\167\71\29", "\50\116\174\224"));
+	v540.Name = v7("\244\82\63\239\52\231\234\92\9\212\2\202\199\124\48\213\14\200\197\108", "\165\181\24\96\167\97");
+	v540.ResetOnSpawn = false;
+	v540.IgnoreGuiInset = true;
+	v540.DisplayOrder = 999999;
+	v540.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 	pcall(function()
-		if (v718 and v718:IsA(v7("\37\24\87\225\226\212\31\21\66\200\252\217\27\30", "\184\118\123\37\142\142"))) then
-			v718:GetPropertyChangedSignal(v7("\142\227\41\30\172\241\23\7\190\235\51\1\162\236", "\104\205\130\71")):Connect(v724);
+		if (syn and syn.protect_gui) then
+			syn.protect_gui(v540);
+			v540.Parent = v532;
+		elseif gethui then
+			v540.Parent = gethui();
+		else
+			v540.Parent = v532;
 		end
 	end);
-	local function v725(v986, v987)
-		local v988 = 0 + 0;
-		local v989;
-		local v990;
+	if not v540.Parent then
+		v540.Parent = v532;
+	end
+	local v547 = Instance.new(v7("\138\63\61\73\169", "\36\204\77\92"));
+	v547.Position = UDim2.new(0 + 0, 0 + 0, 760 - (51 + 709), -(169 - (33 + 76)));
+	v547.Size = UDim2.new(1 - 0, 0 + 0, 1 - 0, 670 - (154 + 396));
+	v547.BackgroundColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0 + 0);
+	v547.BackgroundTransparency = 1512.55 - (24 + 1488);
+	v547.BorderSizePixel = 0 - 0;
+	v547.Parent = v540;
+	local v554 = Instance.new(v7("\24\85\58\208\4", "\97\94\39\91\189"));
+	v554.Size = UDim2.new(427 - (246 + 181), 409 + 11, 0 + 0, 245);
+	v554.Position = UDim2.new(0.5 + 0, -(151 + 59), 1859.5 - (413 + 1446), -(194 - 72));
+	v554.BackgroundColor3 = Color3.fromRGB(5 + 11, 16, 1996 - (29 + 1947));
+	v554.BorderSizePixel = 0 + 0;
+	v554.Parent = v547;
+	local v560 = Instance.new(v7("\0\88\216\25\182\28\252\39", "\153\85\17\155\118\196\114"));
+	v560.CornerRadius = UDim.new(0 - 0, 24 - 14);
+	v560.Parent = v554;
+	local v563 = Instance.new(v7("\242\220\232\211\169\62\204\240", "\81\167\149\187\167\219"));
+	v563.Thickness = 1.2;
+	v563.Color = Color3.fromRGB(97 + 86, 83 + 93, 532 - 327);
+	v563.Transparency = 0.35 + 0;
+	v563.Parent = v554;
+	local v568 = Instance.new(v7("\205\9\48\213\222\248\14\45\205", "\146\153\108\72\161"));
+	v568.Size = UDim2.new(2 - 1, -(110 - 70), 0 - 0, 28);
+	v568.Position = UDim2.new(0, 422 - (74 + 328), 653 - (144 + 509), 16);
+	v568.BackgroundTransparency = 1;
+	v568.Font = Enum.Font.GothamBold;
+	v568.Text = v7("\36\62\173\207\30\25", "\94\101\116\141\135\75\91");
+	v568.TextSize = 20;
+	v568.TextColor3 = Color3.fromRGB(219 + 36, 255, 141 + 114);
+	v568.TextXAlignment = Enum.TextXAlignment.Center;
+	v568.Parent = v554;
+	local v580 = Instance.new(v7("\7\137\36\214\68\255\230\19\60\180", "\118\82\192\99\164\37\155\143"));
+	v580.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(97 + 86, 176, 205)),ColorSequenceKeypoint.new(1 + 0, Color3.fromRGB(1576 - (319 + 1044), 199, 726 - 543))});
+	v580.Parent = v568;
+	local v583 = Instance.new(v7("\22\190\83\59\14\186\73\42\46", "\79\66\219\43"));
+	v583.Size = UDim2.new(631 - (14 + 616), -40, 578 - (303 + 275), 36);
+	v583.Position = UDim2.new(1850 - (1659 + 191), 8 + 12, 0, 9 + 37);
+	v583.BackgroundTransparency = 569 - (205 + 363);
+	v583.Font = Enum.Font.GothamMedium;
+	v583.Text = "Join our official Discord for updates, configs & support!\nLink has been copied to your clipboard.";
+	v583.TextSize = 26 - 13;
+	v583.TextColor3 = Color3.fromRGB(754 - (147 + 427), 260 - 80, 195);
+	v583.TextWrapped = true;
+	v583.TextXAlignment = Enum.TextXAlignment.Center;
+	v583.Parent = v554;
+	local v595 = Instance.new(v7("\59\82\242\28\24", "\113\125\32\147"));
+	v595.Size = UDim2.new(1, -(154 - 114), 0 + 0, 52 - 20);
+	v595.Position = UDim2.new(0 - 0, 1248 - (1108 + 120), 0 - 0, 90);
+	v595.BackgroundColor3 = Color3.fromRGB(675 - (303 + 348), 335 - (242 + 69), 30);
+	v595.BorderSizePixel = 0 + 0;
+	v595.Parent = v554;
+	local v601 = Instance.new(v7("\233\251\234\76\89\186\217\192", "\212\188\178\169\35\43"));
+	v601.CornerRadius = UDim.new(0, 6);
+	v601.Parent = v595;
+	local v604 = Instance.new(v7("\138\238\101\62\146\234\127\47\178", "\74\222\139\29"));
+	v604.Size = UDim2.new(1, -16, 214 - (172 + 41), 0 + 0);
+	v604.Position = UDim2.new(138 - (40 + 98), 23 - 15, 797 - (161 + 636), 0);
+	v604.BackgroundTransparency = 1;
+	v604.Font = Enum.Font.Code;
+	v604.Text = v537;
+	v604.TextSize = 13;
+	v604.TextColor3 = Color3.fromRGB(894 - 711, 278 - 102, 191 + 14);
+	v604.TextXAlignment = Enum.TextXAlignment.Center;
+	v604.Parent = v595;
+	local v615 = Instance.new(v7("\97\215\168\9\167", "\136\39\165\201\100\194\104\18"));
+	v615.Size = UDim2.new(1, -(3 + 37), 0 + 0, 22);
+	v615.Position = UDim2.new(0, 14 + 6, 0, 132);
+	v615.BackgroundTransparency = 630 - (123 + 506);
+	v615.Parent = v554;
+	local v620 = Instance.new(v7("\71\234\84\98\241\243\59\198\124\225", "\178\19\143\44\22\179\134\79"));
+	v620.Size = UDim2.new(0 - 0, 18, 1902 - (296 + 1606), 18);
+	v620.Position = UDim2.new(0 + 0, 2, 0 - 0, 2);
+	v620.BackgroundColor3 = Color3.fromRGB(22 + 2, 20 + 4, 30);
+	v620.BorderSizePixel = 1619 - (863 + 756);
+	v620.Text = "";
+	v620.AutoButtonColor = false;
+	v620.Parent = v615;
+	local v628 = Instance.new(v7("\40\168\136\26\90\223\242\150", "\228\125\225\203\117\40\177\151"));
+	v628.CornerRadius = UDim.new(0, 1428 - (39 + 1385));
+	v628.Parent = v620;
+	local v631 = Instance.new(v7("\221\128\249\96\152\15\44\237", "\71\136\201\170\20\234\96"));
+	v631.Thickness = 1;
+	v631.Color = Color3.fromRGB(942 - (52 + 707), 176, 98 + 107);
+	v631.Transparency = 445.4 - (358 + 87);
+	v631.Parent = v620;
+	local v636 = Instance.new(v7("\39\33\100\220\234\241\166\22\40", "\196\115\68\28\168\166\144"));
+	v636.Size = UDim2.new(1 + 0, 0 - 0, 1335 - (27 + 1307), 0 - 0);
+	v636.BackgroundTransparency = 1 + 0;
+	v636.Font = Enum.Font.GothamBold;
+	v636.Text = "X";
+	v636.TextSize = 29 - 16;
+	v636.TextColor3 = Color3.fromRGB(183, 176, 197 + 8);
+	v636.Visible = false;
+	v636.Parent = v620;
+	local v645 = Instance.new(v7("\236\86\244\104\39\225\69\204\92\226", "\49\184\51\140\28\101\148"));
+	v645.Size = UDim2.new(1, -(7 + 21), 1, 0 - 0);
+	v645.Position = UDim2.new(263 - (152 + 111), 22 + 6, 0 - 0, 0 + 0);
+	v645.BackgroundTransparency = 3 - 2;
+	v645.Font = Enum.Font.Gotham;
+	v645.Text = "Don't show this again";
+	v645.TextSize = 34 - 22;
+	v645.TextColor3 = Color3.fromRGB(65 + 110, 456 - (32 + 249), 190);
+	v645.TextXAlignment = Enum.TextXAlignment.Left;
+	v645.Parent = v615;
+	local function v657()
+		local v960 = 1054 - (793 + 261);
 		while true do
-			if (v988 == (445 - (358 + 87))) then
-				v989 = table.find(v44.PlacementOrder, v986) or v986;
-				if (v989 == v987) then
-					return;
-				end
-				v988 = 1;
+			if (v960 == 0) then
+				v538 = not v538;
+				v636.Visible = v538;
+				v960 = 2 - 1;
 			end
-			if (2 == v988) then
-				v44.PlacementOrder[v989] = v990;
-				v44.UseCustomPlacementOrder = true;
-				v988 = 3;
-			end
-			if ((1 + 2) == v988) then
-				for v2263, v2264 in pairs(v153) do
-					v2264();
+			if (v960 == 1) then
+				if v538 then
+					v620.BackgroundColor3 = Color3.fromRGB(36 + 4, 73 - 37, 50);
+				else
+					v620.BackgroundColor3 = Color3.fromRGB(251 - (109 + 118), 4 + 20, 625 - (115 + 480));
 				end
-				v24();
 				break;
 			end
-			if (v988 == (3 - 2)) then
-				local v1989 = 0;
-				while true do
-					if (v1989 == 0) then
-						v990 = v44.PlacementOrder[v987];
-						v44.PlacementOrder[v987] = v986;
-						v1989 = 1335 - (27 + 1307);
+		end
+	end
+	v620.MouseButton1Click:Connect(v657);
+	v645.MouseButton1Click:Connect(v657);
+	local v658 = Instance.new(v7("\192\235\145\223\226\248\83\158\251\224", "\234\148\142\233\171\160\141\39"));
+	v658.Size = UDim2.new(0.5 + 0, -25, 0 + 0, 32 + 2);
+	v658.Position = UDim2.new(1413 - (547 + 866), 282 - (259 + 3), 0 + 0, 168);
+	v658.BackgroundColor3 = Color3.fromRGB(183, 401 - 225, 1624 - (891 + 528));
+	v658.Font = Enum.Font.GothamBold;
+	v658.Text = v7("\123\23\131\121\205\214\76\66\27\133\101\137", "\37\49\120\234\23\237\146");
+	v658.TextSize = 22 - 9;
+	v658.TextColor3 = Color3.fromRGB(8 + 7, 62 - 47, 20);
+	v658.AutoButtonColor = true;
+	v658.Parent = v554;
+	local v668 = Instance.new(v7("\136\107\88\186\57\171\57\175", "\92\221\34\27\213\75\197"));
+	v668.CornerRadius = UDim.new(0, 22 - 16);
+	v668.Parent = v658;
+	local v671 = Instance.new(v7("\6\20\201\104\37\55\52\235\116\48", "\68\83\93\142\26"));
+	v671.Color = ColorSequence.new({ColorSequenceKeypoint.new(0 - 0, Color3.fromRGB(9 + 174, 5 + 171, 205)),ColorSequenceKeypoint.new(2 - 1, Color3.fromRGB(2164 - (1144 + 807), 199, 183))});
+	v671.Parent = v658;
+	local v674 = Instance.new(v7("\182\171\214\25\46\16\187\150\161\192", "\207\226\206\174\109\108\101"));
+	v674.Size = UDim2.new(0.5, -25, 0, 15 + 19);
+	v674.Position = UDim2.new(0.5 - 0, 4 + 1, 0 - 0, 168);
+	v674.BackgroundColor3 = Color3.fromRGB(30, 1142 - (930 + 182), 1872 - (1429 + 405));
+	v674.Font = Enum.Font.GothamBold;
+	v674.Text = v7("\151\67\33\231\237\70\239\81", "\52\212\44\79\147\132\40\154");
+	v674.TextSize = 13;
+	v674.TextColor3 = Color3.fromRGB(977 - (641 + 136), 541 - 341, 135 + 80);
+	v674.AutoButtonColor = true;
+	v674.Parent = v554;
+	local v684 = Instance.new(v7("\218\137\237\214\253\174\203\203", "\185\143\192\174"));
+	v684.CornerRadius = UDim.new(0 - 0, 1 + 5);
+	v684.Parent = v674;
+	local function v687()
+		local v961 = 713 - (87 + 626);
+		local v962;
+		while true do
+			if (v961 == (3 - 1)) then
+				v962:Play();
+				v962.Completed:Connect(function()
+					local v2228 = 1285 - (1261 + 24);
+					local v2229;
+					while true do
+						if (v2228 == (0 + 0)) then
+							v2229 = 0 - 0;
+							while true do
+								if (v2229 == 0) then
+									v540:Destroy();
+									task.wait(0.05 + 0);
+									v2229 = 1 + 0;
+								end
+								if (v2229 == (1 + 0)) then
+									if (v535 and v531) then
+										v531.toggle_menu = v535;
+									end
+									if (v531 and v531.toggle_menu) then
+										v531.toggle_menu(true);
+									end
+									v2229 = 2;
+								end
+								if (v2229 == (7 - 5)) then
+									if (v23 and v23.items) then
+										v23.items.Enabled = true;
+									end
+									v536(true);
+									break;
+								end
+							end
+							break;
+						end
 					end
-					if (v1989 == 1) then
-						v988 = 3 - 1;
-						break;
+				end);
+				break;
+			end
+			if (v961 == 1) then
+				game:GetService(v7("\137\82\61\210\246\210\184\87\46\222\251\228", "\129\221\37\88\183\152")):Create(v547, TweenInfo.new(0.25 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {[v7("\125\230\211\25\55\46\80\242\222\22\4\46\94\233\195\2\49\46\90\233\211\11", "\92\63\135\176\114\80")]=(858 - (822 + 35))}):Play();
+				v962 = game:GetService(v7("\2\231\80\1\49\120\51\226\67\13\60\78", "\43\86\144\53\100\95")):Create(v554, TweenInfo.new(1785.25 - (360 + 1425), Enum.EasingStyle.Back, Enum.EasingDirection.In), {[v7("\140\250\213\57\60\254\83\178", "\60\220\149\166\80\72\151")]=UDim2.new(0.5, -(541 - 331), 0.5, -(210 - 135)),[v7("\174\41\188\249\139\58\176\231\130\44\139\224\141\38\172\226\141\58\186\252\143\49", "\146\236\72\223")]=1});
+				v961 = 2 + 0;
+			end
+			if (v961 == (296 - (283 + 13))) then
+				v534 = false;
+				if v538 then
+					local v2482 = 0;
+					while true do
+						if (v2482 == (1 - 0)) then
+							v29();
+							break;
+						end
+						if (v2482 == (0 + 0)) then
+							v24.DontShowDiscordPrompt = true;
+							v27();
+							v2482 = 1 + 0;
+						end
 					end
 				end
+				v961 = 1;
 			end
 		end
 	end
-	getgenv().AJ_HUB_SET_PLACE_PRIORITY = v725;
-	local function v727(v991, v992)
-		local v993 = table.find(v44.UpgradeOrder, v991) or v991;
-		if (v993 == v992) then
-			return;
+	v658.MouseButton1Click:Connect(function()
+		local v963 = 0;
+		while true do
+			if (v963 == (1 - 0)) then
+				task.delay(1030.9 - (810 + 220), function()
+					v687();
+				end);
+				break;
+			end
+			if (v963 == 0) then
+				v539();
+				v658.Text = v7("\157\246\84\202\222\20\255", "\112\222\153\36\163\187");
+				v963 = 1 - 0;
+			end
 		end
-		local v994 = v44.UpgradeOrder[v992];
-		v44.UpgradeOrder[v992] = v991;
-		v44.UpgradeOrder[v993] = v994;
-		v44.UseCustomUpgradeOrder = true;
-		for v1397, v1398 in pairs(v153) do
-			v1398();
-		end
-		v24();
+	end);
+	v674.MouseButton1Click:Connect(function()
+		v687();
+	end);
+end
+local v148 = v23:window({[v7("\202\242\224\85", "\197\164\147\141\48\68")]=v7("\128\115\73\35\10\60", "\126\193\57\105\107\95"),[v7("\98\8\198\16\54\181", "\85\17\125\160\118\95\205")]="",[v7("\239\22\237\254\193\25\230\244", "\155\136\119\128")]=v7("\122\197\18\237\242\234\163\70\77\206\21\244\226\184\135\81", "\34\59\171\123\128\151\202\226"),[v7("\107\236\102\198", "\88\24\133\28\163\41")]=UDim2.new(0 + 0, 971 - (195 + 16), 0 - 0, 2492 - 1932)});
+pcall(function()
+	if (v23 and v23.items) then
+		v23.items.Name = v7("\210\129\207\227\61\209\148\195\232\58\214\142\222\244\47\198\130", "\104\147\203\144\171");
+		v23.items:SetAttribute(v7("\106\56\99\149\126\48", "\221\43\114\60"), true);
 	end
-	getgenv().AJ_HUB_SET_UPG_PRIORITY = v727;
-	for v998 = 1, 5 + 1 do
-		local v999 = v44.UnitCustomSettings[v998] or {};
-		local v1000 = v721[v998] or (v7("\181\30\75\145\75", "\129\230\114\36\229\107\121\16") .. v998);
-		local v1001 = Instance.new(v7("\102\29\255\187\198", "\196\32\111\158\214\163\167"));
-		v1001.Name = v7("\24\28\197\4\14\19\222\20\18", "\112\77\114\172") .. v998;
-		v1001.Size = UDim2.new(2 - 1, 0 + 0, 0 + 0, 149 - 97);
-		v1001.BackgroundColor3 = Color3.fromRGB(287 - (152 + 111), 24, 22 + 6);
-		v1001.ClipsDescendants = true;
-		Instance.new(v7("\184\105\11\45\166\131\69\58", "\212\237\32\72\66"), v1001).CornerRadius = UDim.new(0 - 0, 7);
-		local v1007 = Instance.new(v7("\130\198\79\56\165\224\119\41", "\76\215\143\28"), v1001);
-		v1007.Color = Color3.fromRGB(42, 39 + 3, 183 - 133);
-		v1007.Thickness = 2 - 1;
-		v1001.LayoutOrder = table.find(v44.PlacementOrder, v998) or v998;
-		v1001.Parent = v718;
-		local v1012 = Instance.new(v7("\117\192\241\84\166\32\145\85\202\231", "\229\33\165\137\32\228\85"));
-		v1012.Name = v7("\159\135\4\120\17\215", "\232\215\226\101\28\116\165\216");
-		v1012.Size = UDim2.new(1, 0, 0 + 0, 333 - (32 + 249));
-		v1012.BackgroundTransparency = 1055 - (793 + 261);
-		v1012.Text = "";
-		v1012.ZIndex = 72 - 47;
-		v1012.Active = true;
-		v1012.Parent = v1001;
-		local v1020 = Instance.new(v7("\42\55\162\86\37", "\64\108\69\195\59"));
-		v1020.Size = UDim2.new(0, 36 + 4, 0 - 0, 40);
-		v1020.Position = UDim2.new(0, 235 - (109 + 118), 0.5, -(4 + 16));
-		v1020.BackgroundColor3 = Color3.fromRGB(611 - (115 + 480), 3 + 13, 12 + 8);
-		v1020.Active = false;
-		Instance.new(v7("\39\90\239\87\80\28\118\222", "\34\114\19\172\56"), v1020).CornerRadius = UDim.new(0 + 0, 7);
-		local v1026 = Instance.new(v7("\251\12\64\214\195\193\46\118", "\177\174\69\19\162"), v1020);
-		v1026.Color = Color3.fromRGB(1463 - (547 + 866), 50, 324 - (259 + 3));
-		v1020.Parent = v1012;
-		local v1029 = Instance.new(v7("\184\75\80\14\170\27\166\137\66", "\196\236\46\40\122\230\122"));
-		v1029.Size = UDim2.new(1 + 0, 0, 2 - 1, 0);
-		v1029.BackgroundTransparency = 1420 - (891 + 528);
-		v1029.Font = Enum.Font.GothamBold;
-		v1029.TextSize = 13;
-		v1029.TextColor3 = Color3.fromRGB(315 - 132, 87 + 89, 205);
-		v1029.Text = tostring(v998);
-		v1029.Active = false;
-		v1029.Parent = v1020;
+	if (v23 and v23.other) then
+		v23.other.Name = v7("\224\83\68\109\203\230\254\86\79\109\219\246\254\94\78\108", "\164\161\25\27\37\158");
+		v23.other:SetAttribute(v7("\18\111\243\159\42\17", "\127\83\37\172\215"), true);
+	end
+	getgenv().AJ_HUB_LIBRARY = v23;
+	getgenv().AJ_HUB_CLEANUP = function()
 		pcall(function()
-			local v1399 = 0 - 0;
-			local v1400;
-			while true do
-				if (v1399 == (0 - 0)) then
-					v1400 = v719(v998);
-					if v1400 then
-						v1400.Active = false;
-						v1029.Visible = false;
-						v1400.Parent = v1020;
-					end
-					break;
-				end
-			end
-		end);
-		local v1039 = Instance.new(v7("\139\242\108\181\199\49\0\186\251", "\98\223\151\20\193\139\80"));
-		v1039.Size = UDim2.new(0 - 0, 882 - 662, 0 + 0, 1 + 17);
-		v1039.Position = UDim2.new(0, 126 - 70, 1951 - (1144 + 807), 4 + 4);
-		v1039.BackgroundTransparency = 1;
-		v1039.Font = Enum.Font.GothamBold;
-		v1039.TextSize = 13;
-		v1039.TextColor3 = Color3.fromRGB(554 - 299, 255, 255);
-		v1039.TextXAlignment = Enum.TextXAlignment.Left;
-		v1039.TextTruncate = Enum.TextTruncate.AtEnd;
-		v1039.Text = v1000;
-		v1039.Active = false;
-		v1039.Parent = v1012;
-		local v1053 = Instance.new(v7("\116\183\133\215\175", "\167\50\197\228\186\202\146\38"));
-		v1053.Size = UDim2.new(1 + 0, -(151 - 61), 0, 1130 - (930 + 182));
-		v1053.Position = UDim2.new(0, 56, 1834 - (1429 + 405), 805 - (641 + 136));
-		v1053.BackgroundTransparency = 2 - 1;
-		v1053.Active = false;
-		local v1058 = Instance.new(v7("\121\225\10\46\95\220\10\38\85\199\51\51", "\71\44\168\70"), v1053);
-		v1058.FillDirection = Enum.FillDirection.Horizontal;
-		v1058.Padding = UDim.new(0 + 0, 5);
-		v1053.Parent = v1012;
-		local function v1063(v1401, v1402, v1403, v1404)
-			local v1405 = 0;
-			local v1406;
-			local v1407;
-			local v1408;
-			while true do
-				local v1678 = 0 - 0;
+			if (v23 and v23.unload_menu) then
+				v23:unload_menu();
+			else
+				local v1935 = 0 + 0;
+				local v1936;
 				while true do
-					if (3 == v1678) then
-						if (v1405 == (0 + 0)) then
-							local v2891 = 713 - (87 + 626);
-							while true do
-								if (v2891 == (1 - 0)) then
-									v1406.Size = UDim2.new(0, 1285 - (1261 + 24), 1 + 0, 0 - 0);
-									v1405 = 1 + 0;
-									break;
-								end
-								if (v2891 == 0) then
-									v1406 = Instance.new(v7("\36\21\218\193\7", "\172\98\103\187"));
-									v1406.BackgroundColor3 = v1402 or Color3.fromRGB(36, 33 + 3, 44);
-									v2891 = 1 + 0;
-								end
-							end
-						end
-						break;
-					end
-					if (v1678 == (3 - 2)) then
-						if (v1405 == 5) then
-							v1408.TextColor3 = v1403 or Color3.fromRGB(984 - 764, 1077 - (822 + 35), 2015 - (360 + 1425));
-							v1408.Text = v1401;
-							v1408.Active = false;
-							v1405 = 6;
-						end
-						if (v1405 == (10 - 6)) then
-							local v2895 = 0;
-							while true do
-								if (v2895 == (0 - 0)) then
-									v1408.BackgroundTransparency = 1;
-									v1408.Font = Enum.Font.GothamBold;
-									v2895 = 1 + 0;
-								end
-								if (v2895 == (297 - (283 + 13))) then
-									v1408.TextSize = 20 - 10;
-									v1405 = 5;
-									break;
-								end
-							end
-						end
-						v1678 = 2 + 0;
-					end
-					if (v1678 == (0 + 0)) then
-						if ((2 - 0) == v1405) then
-							if v1404 then
-								local v3141 = 1030 - (810 + 220);
-								local v3142;
-								while true do
-									if (v3141 == (0 - 0)) then
-										local v3353 = 0 + 0;
-										while true do
-											if (v3353 == (211 - (195 + 16))) then
-												v3142 = Instance.new(v7("\184\144\200\189\159\182\240\172", "\201\237\217\155"), v1406);
-												v3142.Color = v1404;
-												v3353 = 1;
-											end
-											if (v3353 == (2 - 1)) then
-												v3141 = 4 - 3;
-												break;
-											end
-										end
-									end
-									if (v3141 == 1) then
-										v3142.Thickness = 1 + 0;
-										break;
-									end
-								end
-							end
-							v1407 = Instance.new(v7("\66\106\107\205\190\140\0\165\112", "\203\23\35\59\172\218\232\105"), v1406);
-							v1407.PaddingLeft = UDim.new(0 - 0, 1 + 5);
-							v1405 = 2 + 1;
-						end
-						if (v1405 == 6) then
-							local v2897 = 585 - (92 + 493);
-							while true do
-								if (0 == v2897) then
-									v1406.Parent = v1053;
-									return v1408, v1406;
-								end
-							end
-						end
-						v1678 = 1;
-					end
-					if (v1678 == (1 + 1)) then
-						if (v1405 == 1) then
-							local v2898 = 0 + 0;
-							while true do
-								if (v2898 == (1158 - (75 + 1083))) then
-									v1406.AutomaticSize = Enum.AutomaticSize.X;
-									v1406.Active = false;
-									v2898 = 3 - 2;
-								end
-								if (v2898 == 1) then
-									Instance.new(v7("\18\110\163\35\42\24\170\171", "\217\71\39\224\76\88\118\207"), v1406).CornerRadius = UDim.new(0 - 0, 4);
-									v1405 = 2;
-									break;
-								end
-							end
-						end
-						if ((14 - 11) == v1405) then
-							local v2899 = 0 + 0;
-							while true do
-								if (v2899 == 1) then
-									v1408.Size = UDim2.new(1 + 0, 0, 1, 0);
-									v1405 = 18 - 14;
-									break;
-								end
-								if ((0 + 0) == v2899) then
-									v1407.PaddingRight = UDim.new(1375 - (159 + 1216), 6);
-									v1408 = Instance.new(v7("\22\172\184\111\14\168\162\126\46", "\27\66\201\192"), v1406);
-									v2899 = 3 - 2;
-								end
-							end
-						end
-						v1678 = 3;
-					end
-				end
-			end
-		end
-		local v1064 = table.find(v44.PlacementOrder, v998) or v998;
-		local v1065 = table.find(v44.UpgradeOrder, v998) or v998;
-		local v1066 = v44.SlotLimits[v998] or 6;
-		local v1067 = v44.SlotMaxUpgrades[v998] or (16 - 6);
-		local v1068, v1069 = v1063(v7("\18\41\250\118\207\26\97", "\58\66\69\155\21\170") .. v1064, Color3.fromRGB(151 + 32, 176, 205), Color3.fromRGB(18, 18, 71 - 47));
-		v145(v1069, 1660 - (418 + 1197));
-		local v1070, v1071 = v1063(v7("\218\79\238\187\191", "\156\143\63\137\155") .. v1065, Color3.fromRGB(36, 1000 - (632 + 332), 1642 - (964 + 634)), Color3.fromRGB(460 - 247, 199, 54 + 129), Color3.fromRGB(147 + 36, 176, 195 + 10));
-		local v1072 = v1063(((v1066 == (0 - 0)) and v7("\33\32\116\44", "\232\114\75\29\92")) or ((v1066 > 5) and v7("\36\80\225", "\170\105\49\153\54\169")) or (v1066 .. v7("\95\115\122\214", "\212\127\62\27\174\113\134\232")), Color3.fromRGB(59 - 25, 79 - 45, 1693 - (1559 + 92)), ((v1066 == 0) and Color3.fromRGB(225 + 14, 42 + 26, 66 + 2)) or Color3.fromRGB(220, 257 - (9 + 28), 139 + 91));
-		local v1073 = v1063(((v1067 > 12) and v7("\222\0\171", "\219\147\97\211\222\150\62")) or (v7("\245\80\241\159\132\181\197\0", "\209\160\32\150\237\229") .. v1067), Color3.fromRGB(102 - 68, 1986 - (922 + 1030), 425 - (345 + 38)), Color3.fromRGB(59 + 161, 209 + 11, 230));
-		local v1074 = Instance.new(v7("\135\63\93\86\84\246\142\182\54", "\236\211\90\37\34\24\151"));
-		v1074.Size = UDim2.new(0, 16, 0 - 0, 576 - (546 + 14));
-		v1074.Position = UDim2.new(1068 - (7 + 1060), -(20 + 2), 0.5 - 0, -8);
-		v1074.BackgroundTransparency = 1;
-		v1074.Font = Enum.Font.SourceSansBold;
-		v1074.TextSize = 414 - (256 + 144);
-		v1074.TextColor3 = Color3.fromRGB(292 - (7 + 115), 704 - (21 + 513), 159 + 26);
-		v1074.Text = "\226\150\188";
-		v1074.Active = false;
-		v1074.Parent = v1012;
-		local v1085 = Instance.new(v7("\114\182\178\141\81", "\224\52\196\211"));
-		v1085.Name = v7("\61\72\65\32", "\131\127\39\37\89\83");
-		v1085.Size = UDim2.new(1278 - (59 + 1218), 0, 0 - 0, 471 - 241);
-		v1085.Position = UDim2.new(0 - 0, 186 - (155 + 31), 0 - 0, 9 + 43);
-		v1085.BackgroundTransparency = 1;
-		v1085.Parent = v1001;
-		local v1091 = Instance.new(v7("\239\5\238\78\95", "\165\169\119\143\35\58"));
-		v1091.Size = UDim2.new(1, -(15 + 1), 1991 - (1417 + 574), 1);
-		v1091.Position = UDim2.new(152 - (112 + 40), 16 - 8, 0, 0 + 0);
-		v1091.BackgroundColor3 = Color3.fromRGB(722 - (326 + 358), 38, 878 - (4 + 828));
-		v1091.BorderSizePixel = 0 - 0;
-		v1091.Parent = v1085;
-		local v1097 = Instance.new(v7("\214\209\4\188\251\5\250\226\225\39\160\252", "\182\131\152\72\213\136\113"), v1085);
-		v1097.Padding = UDim.new(0, 6);
-		v1097.FillDirection = Enum.FillDirection.Vertical;
-		local v1101 = Instance.new(v7("\115\57\133\169\66\20\188\166\65", "\200\38\112\213"), v1085);
-		v1101.PaddingTop = UDim.new(1717 - (85 + 1632), 7 + 1);
-		v1101.PaddingLeft = UDim.new(0, 1147 - (1096 + 43));
-		v1101.PaddingRight = UDim.new(418 - (176 + 242), 920 - (313 + 599));
-		local function v1105(v1409, v1410, v1411, v1412)
-			local v1413 = 639 - (402 + 237);
-			local v1414;
-			local v1415;
-			local v1416;
-			local v1417;
-			local v1418;
-			local v1419;
-			local v1420;
-			local v1421;
-			local v1422;
-			while true do
-				if (v1413 == 1) then
-					v1415.Size = UDim2.new(0 + 0, 130, 1057 - (551 + 505), 0);
-					v1415.BackgroundTransparency = 1;
-					v1415.Font = Enum.Font.GothamBold;
-					v1415.TextSize = 36 - 25;
-					v1415.TextColor3 = Color3.fromRGB(640 - 400, 673 - (268 + 165), 33 + 212);
-					v1413 = 4 - 2;
-				end
-				if (v1413 == 4) then
-					v1417.Thickness = 1 + 0;
-					v1416.Parent = v1414;
-					v1418 = Instance.new(v7("\52\12\205\16\170\232\0\20\6\219", "\116\96\105\181\100\232\157"));
-					v1418.Size = UDim2.new(0, 58 - 34, 1, 1772 - (238 + 1534));
-					v1418.Position = UDim2.new(0, 0 - 0, 918 - (302 + 616), 0 + 0);
-					v1413 = 5;
-				end
-				if (v1413 == (1831 - (1054 + 774))) then
-					v1416.Position = UDim2.new(0 + 0, 135, 1325 - (240 + 1085), 1227 - (1220 + 7));
-					v1416.BackgroundColor3 = Color3.fromRGB(19 + 9, 1997 - (1819 + 150), 20 + 16);
-					Instance.new(v7("\137\19\169\26\168\178\63\152", "\218\220\90\234\117"), v1416).CornerRadius = UDim.new(0 + 0, 4 + 1);
-					v1417 = Instance.new(v7("\247\56\247\52\67\37\122\199", "\17\162\113\164\64\49\74"), v1416);
-					v1417.Color = Color3.fromRGB(15 + 29, 44, 15 + 41);
-					v1413 = 4;
-				end
-				if (v1413 == (7 + 0)) then
-					local v2279 = 0 - 0;
-					while true do
-						if (v2279 == (1364 - (229 + 1135))) then
-							v1419.TextSize = 11;
-							v1419.Text = "\226\150\186";
-							v2279 = 2 - 1;
-						end
-						if (v2279 == (2 - 1)) then
-							v1419.Parent = v1416;
-							v1420 = Instance.new(v7("\188\66\186\79\49\157\83\182\84\29", "\115\232\39\194\59"));
-							v2279 = 1 + 1;
-						end
-						if (v2279 == (1 + 1)) then
-							v1420.Size = UDim2.new(1, -(830 - (289 + 493)), 1, 0 + 0);
-							v1413 = 8;
-							break;
-						end
-					end
-				end
-				if (v1413 == 5) then
-					v1418.BackgroundTransparency = 3 - 2;
-					v1418.Font = Enum.Font.GothamBold;
-					v1418.TextSize = 2 + 9;
-					v1418.Text = "\226\151\132";
-					v1418.Parent = v1416;
-					v1413 = 13 - 7;
-				end
-				if (v1413 == (7 + 1)) then
-					v1420.Position = UDim2.new(0 + 0, 1312 - (1170 + 118), 0, 1809 - (817 + 992));
-					v1420.BackgroundTransparency = 2 - 1;
-					v1420.Font = Enum.Font.GothamBold;
-					v1420.TextSize = 50 - 39;
-					v1420.TextColor3 = Color3.fromRGB(1355 - (852 + 320), 102 + 74, 1006 - (731 + 70));
-					v1413 = 13 - 4;
-				end
-				if (0 == v1413) then
-					v1414 = Instance.new(v7("\194\29\206\71\212", "\84\132\111\175\42\177\191"));
-					v1414.Size = UDim2.new(1, 598 - (17 + 581), 1323 - (470 + 853), 24);
-					v1414.BackgroundTransparency = 65 - (30 + 34);
-					v1414.Parent = v1085;
-					v1415 = Instance.new(v7("\220\140\53\221\35\68\49\7\228", "\98\136\233\77\169\111\37\83"));
-					v1413 = 1 - 0;
-				end
-				if (v1413 == 6) then
-					v1419 = Instance.new(v7("\125\62\192\24\25\27\100\79\70\53", "\59\41\91\184\108\91\110\16"));
-					v1419.Size = UDim2.new(220 - (180 + 40), 65 - 41, 179 - (11 + 167), 1639 - (127 + 1512));
-					v1419.Position = UDim2.new(1, -24, 0, 0 - 0);
-					v1419.BackgroundTransparency = 3 - 2;
-					v1419.Font = Enum.Font.GothamBold;
-					v1413 = 7;
-				end
-				if ((5 + 5) == v1413) then
-					local v2300 = 0 - 0;
-					while true do
-						if (v2300 == 0) then
-							v1418.MouseButton1Click:Connect(function()
-								if (v1421 > (2 - 1)) then
-									v1412(v1421 - (1 + 0));
-								end
-							end);
-							v1419.MouseButton1Click:Connect(function()
-								if (v1421 < 6) then
-									v1412(v1421 + (2 - 1));
-								end
-							end);
-							v2300 = 889 - (304 + 584);
-						end
-						if (v2300 == (2 - 1)) then
-							v1420.MouseButton1Click:Connect(function()
-								local v2998 = 0;
-								local v2999;
-								local v3000;
-								local v3001;
-								local v3002;
-								local v3003;
-								local v3004;
-								local v3005;
-								local v3006;
-								local v3007;
-								while true do
-									if (v2998 == (11 - 6)) then
-										v3001.Parent = v2999;
-										v3005 = Instance.new(v7("\28\174\216\136\58\147\216\128\48\136\225\149", "\225\73\231\148"), v3001);
-										v3005.Padding = UDim.new(0, 2 - 0);
-										v3006 = Instance.new(v7("\36\31\126\87\194\21\63\64\81", "\166\113\86\46\54"), v3001);
-										v2998 = 6 + 0;
-									end
-									if (v2998 == 6) then
-										v3006.PaddingTop = UDim.new(0, 14 - 11);
-										v3006.PaddingBottom = UDim.new(1661 - (997 + 664), 2 + 1);
-										v3006.PaddingLeft = UDim.new(0 + 0, 3 + 0);
-										v3006.PaddingRight = UDim.new(984 - (231 + 753), 3);
-										v2998 = 10 - 3;
-									end
-									if ((1586 - (615 + 963)) == v2998) then
-										for v3355 = 1 + 0, 6 + 0 do
-											local v3356 = Instance.new(v7("\251\208\111\201\195\211\147\19\192\219", "\103\175\181\23\189\129\166\231"));
-											v3356.Size = UDim2.new(1 - 0, 0, 1804 - (863 + 941), 860 - (461 + 377));
-											v3356.ZIndex = 428 + 73;
-											local v3359 = v3355 == v1421;
-											v3356.BackgroundColor3 = (v3359 and Color3.fromRGB(10 + 28, 38, 1320 - (455 + 817))) or Color3.fromRGB(15 + 7, 22, 28);
-											v3356.Font = Enum.Font.GothamMedium;
-											v3356.TextSize = 11;
-											v3356.TextColor3 = (v3359 and Color3.fromRGB(183, 176, 1037 - (123 + 709))) or Color3.fromRGB(68 + 142, 1904 - (618 + 1076), 220);
-											v3356.TextXAlignment = Enum.TextXAlignment.Left;
-											v3356.Text = ((v3359 and "  \226\151\143  ") or v7("\241\88\21\20\157\77", "\109\209\120\53\52\189")) .. tostring(v3355);
-											Instance.new(v7("\118\33\222\29\201\188\70\26", "\210\35\104\157\114\187"), v3356).CornerRadius = UDim.new(0, 7 - 3);
-											v3356.Parent = v3001;
-											v3356.MouseEnter:Connect(function()
-												v3356.BackgroundColor3 = Color3.fromRGB(189 - 145, 44, 47 + 9);
-											end);
-											v3356.MouseLeave:Connect(function()
-												v3356.BackgroundColor3 = ((v3355 == v1421) and Color3.fromRGB(982 - (657 + 287), 144 - 106, 1899 - (1256 + 595))) or Color3.fromRGB(17 + 5, 22, 102 - (59 + 15));
-											end);
-											v3356.MouseButton1Click:Connect(function()
-												local v3407 = 0 + 0;
-												while true do
-													if (v3407 == (0 + 0)) then
-														v3007();
-														v1412(v3355);
-														break;
-													end
-												end
-											end);
-										end
-										break;
-									end
-									if (0 == v2998) then
-										v2999 = v22 and v22.items;
-										if not v2999 then
-											return;
-										end
-										v724();
-										v3000 = Instance.new(v7("\47\206\255\34\128\14\223\243\57\172", "\194\123\171\135\86"));
-										v2998 = 1;
-									end
-									if (v2998 == (1 + 0)) then
-										v3000.Size = UDim2.new(753 - (406 + 346), 0, 1, 0 - 0);
-										v3000.BackgroundTransparency = 3 - 2;
-										v3000.Text = "";
-										v3000.ZIndex = 268 + 231;
-										v2998 = 2;
-									end
-									if (v2998 == (198 - (127 + 64))) then
-										v3007 = nil;
-										function v3007()
-											if (v3001 and v3001.Parent) then
-												v3001:Destroy();
-											end
-											if (v3000 and v3000.Parent) then
-												v3000:Destroy();
-											end
-											if (v723 == v3007) then
-												v723 = nil;
-											end
-										end
-										v723 = v3007;
-										v3000.MouseButton1Click:Connect(v3007);
-										v2998 = 953 - (70 + 875);
-									end
-									if (v2998 == (6 - 2)) then
-										Instance.new(v7("\219\225\156\222\51\240\31\252", "\122\142\168\223\177\65\158"), v3001).CornerRadius = UDim.new(0 - 0, 3 + 2);
-										v3004 = Instance.new(v7("\246\10\34\17\200\89\35\198", "\72\163\67\113\101\186\54"), v3001);
-										v3004.Color = Color3.fromRGB(159 + 24, 176, 1794 - (1039 + 550));
-										v3004.Thickness = 203 - (35 + 167);
-										v2998 = 1218 - (103 + 1110);
-									end
-									if (v2998 == (1117 - (540 + 574))) then
-										v3001.Position = UDim2.fromOffset(v3002.X, v3002.Y + v3003.Y + (9 - 6));
-										v3001.Size = UDim2.fromOffset(v3003.X, (6 * 24) + 6);
-										v3001.BackgroundColor3 = Color3.fromRGB(1416 - (1283 + 111), 374 - (204 + 148), 43 - 15);
-										v3001.ZIndex = 418 + 82;
-										v2998 = 2 + 2;
-									end
-									if (v2998 == (552 - (58 + 492))) then
-										v3000.Parent = v2999;
-										v3001 = Instance.new(v7("\121\144\120\201\49", "\21\63\226\25\164\84\159\124"));
-										v3002 = v1416.AbsolutePosition;
-										v3003 = v1416.AbsoluteSize;
-										v2998 = 3;
-									end
-								end
-							end);
-							return v1422;
-						end
-					end
-				end
-				if (v1413 == (38 - 29)) then
-					v1420.Parent = v1416;
-					v1421 = v1410;
-					v1422 = nil;
-					function v1422(v2502)
-						local v2503 = 0;
+					if (v1935 == (0 - 0)) then
+						v1936 = 0 + 0;
 						while true do
-							if (v2503 == (0 - 0)) then
-								v1421 = math.clamp(v2502, 1, 6);
-								v1420.Text = tostring(v1421);
-								v2503 = 4 - 3;
-							end
-							if (v2503 == (1 + 0)) then
-								v1418.TextColor3 = ((v1421 > (1 + 0)) and Color3.fromRGB(183, 959 - (531 + 252), 157 + 48)) or Color3.fromRGB(75, 219 - 144, 85);
-								v1419.TextColor3 = ((v1421 < (1792 - (928 + 858))) and Color3.fromRGB(324 - 141, 176, 977 - (108 + 664))) or Color3.fromRGB(75, 125 - 50, 186 - 101);
+							if (v1936 == (0 + 0)) then
+								if (v23 and v23.items) then
+									v23.items:Destroy();
+								end
+								if (v23 and v23.other) then
+									v23.other:Destroy();
+								end
 								break;
 							end
-						end
-					end
-					v1422(v1410);
-					v1413 = 7 + 3;
-				end
-				if (v1413 == (837 - (732 + 103))) then
-					v1415.TextXAlignment = Enum.TextXAlignment.Left;
-					v1415.Text = v1409;
-					v1415.Parent = v1414;
-					v1416 = Instance.new(v7("\87\167\60\163\236", "\185\17\213\93\206\137"));
-					v1416.Size = UDim2.new(0, 180, 1, 628 - (351 + 277));
-					v1413 = 3;
-				end
-			end
-		end
-		local function v1106(v1423, v1424, v1425, v1426, v1427, v1428, v1429)
-			local v1430 = 680 - (538 + 142);
-			local v1431;
-			local v1432;
-			local v1433;
-			local v1434;
-			local v1435;
-			local v1436;
-			local v1437;
-			local v1438;
-			local v1439;
-			while true do
-				if (v1430 == (17 - 13)) then
-					v1435.Size = UDim2.new(1827 - (189 + 1638), 52 - 28, 1224 - (348 + 875), 1216 - (1202 + 14));
-					v1435.Position = UDim2.new(0, 635 - (619 + 16), 0, 0);
-					v1435.BackgroundTransparency = 1;
-					v1435.Font = Enum.Font.GothamBold;
-					v1435.TextSize = 692 - (445 + 234);
-					v1435.TextColor3 = Color3.fromRGB(534 - 351, 677 - (295 + 206), 205);
-					v1430 = 5;
-				end
-				if (v1430 == (2 + 0)) then
-					v1432.Text = v1423;
-					v1432.Parent = v1431;
-					v1433 = Instance.new(v7("\135\201\211\77\218", "\173\193\187\178\32\191\194\112"));
-					v1433.Size = UDim2.new(0 - 0, 179 + 1, 1 + 0, 0);
-					v1433.Position = UDim2.new(0 + 0, 76 + 59, 0, 147 - (84 + 63));
-					v1433.BackgroundColor3 = Color3.fromRGB(28, 1400 - (913 + 459), 36);
-					v1430 = 785 - (700 + 82);
-				end
-				if (v1430 == (1 + 0)) then
-					v1432.Size = UDim2.new(0 + 0, 573 - (362 + 81), 1, 179 - (133 + 46));
-					v1432.BackgroundTransparency = 1 - 0;
-					v1432.Font = Enum.Font.GothamBold;
-					v1432.TextSize = 1536 - (1219 + 306);
-					v1432.TextColor3 = Color3.fromRGB(2197 - (1012 + 945), 240, 1002 - (481 + 276));
-					v1432.TextXAlignment = Enum.TextXAlignment.Left;
-					v1430 = 4 - 2;
-				end
-				if (v1430 == 8) then
-					v1437.Text = "+";
-					v1437.Parent = v1433;
-					v1438 = v1424;
-					v1439 = nil;
-					function v1439(v2504)
-						local v2505 = 0 - 0;
-						while true do
-							if (v2505 == (123 - (49 + 74))) then
-								v1438 = math.clamp(v2504, v1425, v1426);
-								v1436.Text = (v1428 and v1428(v1438)) or tostring(v1438);
-								v2505 = 1;
-							end
-							if (v2505 == 1) then
-								v1427(v1438);
-								v24();
-								break;
-							end
-						end
-					end
-					v1435.MouseButton1Click:Connect(function()
-						v1439(v1438 - v1429);
-					end);
-					v1430 = 3 + 6;
-				end
-				if (v1430 == (15 - 9)) then
-					v1436.Font = Enum.Font.GothamBold;
-					v1436.TextSize = 42 - 31;
-					v1436.TextColor3 = Color3.fromRGB(481 - 298, 111 + 65, 205);
-					v1436.Text = (v1428 and v1428(v1424)) or tostring(v1424);
-					v1436.Parent = v1433;
-					v1437 = Instance.new(v7("\132\16\182\249\205\91\61\164\26\160", "\73\208\117\206\141\143\46"));
-					v1430 = 7;
-				end
-				if (v1430 == (0 - 0)) then
-					v1429 = v1429 or (4 - 3);
-					v1431 = Instance.new(v7("\92\215\180\54\164", "\176\26\165\213\91\193\45\97"));
-					v1431.Size = UDim2.new(2 - 1, 0, 0 - 0, 4 + 20);
-					v1431.BackgroundTransparency = 1;
-					v1431.Parent = v1085;
-					v1432 = Instance.new(v7("\3\35\146\244\215\18\232\50\42", "\138\87\70\234\128\155\115"));
-					v1430 = 2 - 1;
-				end
-				if (v1430 == (5 + 0)) then
-					v1435.Text = "-";
-					v1435.Parent = v1433;
-					v1436 = Instance.new(v7("\18\248\1\170\210\113\80\186\42", "\223\70\157\121\222\158\16\50"));
-					v1436.Size = UDim2.new(2 - 1, -(126 - 78), 1 + 0, 0 + 0);
-					v1436.Position = UDim2.new(0 - 0, 35 - 11, 1728 - (17 + 1711), 0 - 0);
-					v1436.BackgroundTransparency = 114 - (14 + 99);
-					v1430 = 4 + 2;
-				end
-				if (v1430 == (13 - 6)) then
-					v1437.Size = UDim2.new(310 - (287 + 23), 55 - 31, 2 - 1, 434 - (54 + 380));
-					v1437.Position = UDim2.new(2 - 1, -(1660 - (486 + 1150)), 816 - (356 + 460), 0 + 0);
-					v1437.BackgroundTransparency = 1 - 0;
-					v1437.Font = Enum.Font.GothamBold;
-					v1437.TextSize = 13;
-					v1437.TextColor3 = Color3.fromRGB(387 - 204, 85 + 91, 205);
-					v1430 = 1461 - (1281 + 172);
-				end
-				if (v1430 == (594 - (158 + 427))) then
-					local v2350 = 0;
-					while true do
-						if ((0 + 0) == v2350) then
-							v1437.MouseButton1Click:Connect(function()
-								v1439(v1438 + v1429);
-							end);
-							return {[v7("\189\255\87\97\170\233\89", "\19\207\154\49")]=function()
-								v1436.Text = (v1428 and v1428(v1438)) or tostring(v1438);
-							end,[v7("\60\55\22\202\30\242\46\55", "\158\91\82\98\156\127")]=function()
-								return v1438;
-							end,[v7("\162\129\246\240\51\57\152\180", "\237\209\228\130\166\82\85")]=function(v3013)
-								v1439(v3013);
-							end};
-						end
-					end
-				end
-				if (v1430 == (11 - 8)) then
-					Instance.new(v7("\217\11\240\232\7\42\233\48", "\68\140\66\179\135\117"), v1433).CornerRadius = UDim.new(0, 5);
-					v1434 = Instance.new(v7("\65\163\123\238\41\90\163\113", "\200\20\234\40\154\91\53"), v1433);
-					v1434.Color = Color3.fromRGB(44, 42 + 2, 932 - (103 + 773));
-					v1434.Thickness = 1 + 0;
-					v1433.Parent = v1431;
-					v1435 = Instance.new(v7("\116\190\179\175\89\85\175\191\180\117", "\27\32\219\203\219"));
-					v1430 = 1498 - (739 + 755);
-				end
-			end
-		end
-		local function v1107(v1440, v1441, v1442, v1443)
-			local v1444 = Instance.new(v7("\209\183\248\200\7", "\73\151\197\153\165\98"));
-			v1444.Size = UDim2.new(344 - (39 + 304), 505 - (129 + 376), 0, 1564 - (282 + 1258));
-			v1444.BackgroundTransparency = 1288 - (204 + 1083);
-			v1444.Parent = v1085;
-			local v1448 = Instance.new(v7("\97\31\237\222\151\115\39\80\22", "\69\53\122\149\170\219\18"));
-			v1448.Size = UDim2.new(0, 836 - (471 + 235), 1, 0 - 0);
-			v1448.BackgroundTransparency = 1088 - (38 + 1049);
-			v1448.Font = Enum.Font.GothamBold;
-			v1448.TextSize = 1636 - (1437 + 188);
-			v1448.TextColor3 = Color3.fromRGB(240, 62 + 178, 86 + 159);
-			v1448.TextXAlignment = Enum.TextXAlignment.Left;
-			v1448.Text = v1440;
-			v1448.Parent = v1444;
-			local v1459 = Instance.new(v7("\23\237\21\251\55", "\234\81\159\116\150\82\54\140"));
-			v1459.Size = UDim2.new(0, 180, 1 + 0, 0 + 0);
-			v1459.Position = UDim2.new(0 - 0, 178 - (11 + 32), 255 - (81 + 174), 0 - 0);
-			v1459.BackgroundColor3 = Color3.fromRGB(123 - 95, 28, 800 - (513 + 251));
-			Instance.new(v7("\47\233\38\16\8\206\0\13", "\127\122\160\101"), v1459).CornerRadius = UDim.new(0 - 0, 1 + 4);
-			local v1464 = Instance.new(v7("\98\2\26\253\179\5\113\132", "\225\55\75\73\137\193\106\26"), v1459);
-			v1464.Color = Color3.fromRGB(13 + 31, 1168 - (1075 + 49), 56);
-			v1464.Thickness = 767 - (373 + 393);
-			v1459.Parent = v1444;
-			local v1468 = Instance.new(v7("\125\190\94\14\107\174\82\14\70\181", "\122\41\219\38"));
-			v1468.Size = UDim2.new(3 - 2, 0, 889 - (875 + 13), 0 + 0);
-			v1468.BackgroundTransparency = 1;
-			v1468.AutoButtonColor = false;
-			v1468.Text = "";
-			v1468.Parent = v1459;
-			local v1474 = Instance.new(v7("\67\166\193\161\91\162\219\176\123", "\213\23\195\185"));
-			v1474.Size = UDim2.new(1 + 0, -(9 + 17), 1, 0 - 0);
-			v1474.Position = UDim2.new(0, 21 - 13, 0 + 0, 0);
-			v1474.BackgroundTransparency = 1;
-			v1474.Font = Enum.Font.GothamBold;
-			v1474.TextSize = 11;
-			v1474.TextColor3 = Color3.fromRGB(577 - 394, 176, 205 + 0);
-			v1474.TextXAlignment = Enum.TextXAlignment.Left;
-			v1474.TextTruncate = Enum.TextTruncate.AtEnd;
-			v1474.Text = v1442;
-			v1474.Parent = v1468;
-			local v1486 = Instance.new(v7("\188\37\110\184\225\49\64\130\132", "\231\232\64\22\204\173\80\34"));
-			v1486.Size = UDim2.new(0 - 0, 18, 334 - (273 + 60), 0 - 0);
-			v1486.Position = UDim2.new(2 - 1, -(78 - 58), 0 - 0, 0);
-			v1486.BackgroundTransparency = 556 - (361 + 194);
-			v1486.Font = Enum.Font.GothamBold;
-			v1486.TextSize = 9 + 1;
-			v1486.TextColor3 = Color3.fromRGB(183, 716 - 540, 205);
-			v1486.Text = "\226\150\188";
-			v1486.Parent = v1468;
-			local v1495 = v1442;
-			v1468.MouseButton1Click:Connect(function()
-				local v1679 = v22 and v22.items;
-				if not v1679 then
-					return;
-				end
-				v724();
-				local v1680 = Instance.new(v7("\126\94\215\176\104\78\219\176\69\85", "\196\42\59\175"));
-				v1680.Size = UDim2.new(1 + 0, 0 - 0, 1 + 0, 0 - 0);
-				v1680.BackgroundTransparency = 1;
-				v1680.Text = "";
-				v1680.ZIndex = 1346 - (257 + 590);
-				v1680.Parent = v1679;
-				local v1686 = Instance.new(v7("\4\32\56\29\61", "\88\66\82\89\112"));
-				local v1687 = v1459.AbsolutePosition;
-				local v1688 = v1459.AbsoluteSize;
-				v1686.Position = UDim2.fromOffset(v1687.X, v1687.Y + v1688.Y + (10 - 7));
-				v1686.Size = UDim2.fromOffset(v1688.X, (#v1441 * 24) + (1961 - (856 + 1099)));
-				v1686.BackgroundColor3 = Color3.fromRGB(1948 - (1556 + 370), 74 - 52, 50 - 22);
-				v1686.ZIndex = 672 - (24 + 148);
-				Instance.new(v7("\43\169\12\90\76\16\133\61", "\62\126\224\79\53"), v1686).CornerRadius = UDim.new(0 + 0, 5 + 0);
-				local v1694 = Instance.new(v7("\105\80\247\156\219\83\114\193", "\169\60\25\164\232"), v1686);
-				v1694.Color = Color3.fromRGB(326 - 143, 147 + 29, 205);
-				v1694.Thickness = 1;
-				v1686.Parent = v1679;
-				local v1698 = Instance.new(v7("\246\37\172\217\66\25\227\194\21\143\197\69", "\175\163\108\224\176\49\109"), v1686);
-				v1698.Padding = UDim.new(0, 5 - 3);
-				local v1700 = Instance.new(v7("\250\23\20\180\43\44\198\48\35", "\72\175\94\68\213\79"), v1686);
-				v1700.PaddingTop = UDim.new(0, 9 - 6);
-				v1700.PaddingBottom = UDim.new(0 - 0, 3);
-				v1700.PaddingLeft = UDim.new(0 - 0, 8 - 5);
-				v1700.PaddingRight = UDim.new(0 + 0, 3);
-				local function v1705()
-					if (v1686 and v1686.Parent) then
-						v1686:Destroy();
-					end
-					if (v1680 and v1680.Parent) then
-						v1680:Destroy();
-					end
-					if (v723 == v1705) then
-						v723 = nil;
-					end
-				end
-				v723 = v1705;
-				v1680.MouseButton1Click:Connect(v1705);
-				for v1990, v1991 in ipairs(v1441) do
-					local v1992 = 0 + 0;
-					local v1993;
-					local v1994;
-					while true do
-						if (v1992 == (1 + 0)) then
-							v1993.BackgroundColor3 = (v1994 and Color3.fromRGB(38, 171 - 133, 8 + 40)) or Color3.fromRGB(8 + 14, 56 - 34, 79 - 51);
-							v1993.Font = Enum.Font.GothamMedium;
-							v1993.TextSize = 1 + 10;
-							v1993.TextColor3 = (v1994 and Color3.fromRGB(692 - 509, 176, 518 - 313)) or Color3.fromRGB(300 - 90, 175 + 35, 373 - 153);
-							v1992 = 1 + 1;
-						end
-						if (v1992 == (0 - 0)) then
-							v1993 = Instance.new(v7("\239\188\235\223\205\206\173\231\196\225", "\143\187\217\147\171"));
-							v1993.Size = UDim2.new(1 + 0, 0 + 0, 1719 - (976 + 743), 45 - 23);
-							v1993.ZIndex = 2015 - (1273 + 241);
-							v1994 = v1991 == v1495;
-							v1992 = 1;
-						end
-						if (v1992 == 2) then
-							v1993.TextXAlignment = Enum.TextXAlignment.Left;
-							v1993.Text = ((v1994 and "  \226\151\143  ") or v7("\157\88\55\255\71\157", "\103\189\120\23\223")) .. v1991;
-							Instance.new(v7("\70\109\90\11\187\0\28\243", "\129\19\36\25\100\201\110\121"), v1993).CornerRadius = UDim.new(0 - 0, 11 - 7);
-							v1993.Parent = v1686;
-							v1992 = 3;
-						end
-						if (v1992 == (268 - (135 + 130))) then
-							v1993.MouseEnter:Connect(function()
-								v1993.BackgroundColor3 = Color3.fromRGB(75 - 31, 36 + 8, 56);
-							end);
-							v1993.MouseLeave:Connect(function()
-								v1993.BackgroundColor3 = ((v1991 == v1495) and Color3.fromRGB(37 + 1, 111 - 73, 48)) or Color3.fromRGB(22, 22, 94 - 66);
-							end);
-							v1993.MouseButton1Click:Connect(function()
-								v1495 = v1991;
-								v1474.Text = v1991;
-								v1705();
-								v1443(v1991);
-								v24();
-							end);
-							break;
-						end
-					end
-				end
-			end);
-		end
-		local v1108 = v1105(v7("\54\19\80\191\3\95\126\174\2\26\67", "\220\102\127\49"), v1064, true, function(v1496)
-			v725(v998, v1496);
-		end);
-		local v1109 = v1105(v7("\125\13\72\222\9\176\186\243\103\15\75\201\26", "\211\40\125\47\172\104\212\223"), v1065, false, function(v1497)
-			v727(v998, v1497);
-		end);
-		v1106(v7("\126\77\45\13\75\1\0\7\67\72\56", "\110\46\33\76"), v44.SlotLimits[v998] or (3 + 3), 1741 - (1289 + 452), 6, function(v1498)
-			v44.SlotLimits[v998] = ((v1498 > (1 + 4)) and (335 - (90 + 239))) or v1498;
-			v44.SlotPlacement[v998] = v1498 > (929 - (117 + 812));
-			if v44.UnitCustomSettings[v998] then
-				v44.UnitCustomSettings[v998].Amount = ((v1498 > (1004 - (146 + 853))) and (1971 - (986 + 979))) or v1498;
-			end
-			v1072.Text = ((v1498 == (658 - (555 + 103))) and v7("\135\138\177\207", "\87\212\225\216\191")) or ((v1498 > 5) and v7("\203\82\221", "\217\134\51\165\232")) or (v1498 .. v7("\227\17\193\29", "\118\195\92\160\101"));
-			v1072.TextColor3 = ((v1498 == (0 - 0)) and Color3.fromRGB(239, 805 - (329 + 408), 10 + 58)) or Color3.fromRGB(1930 - (838 + 872), 220, 138 + 92);
-			v88();
-		end, function(v1503)
-			local v1504 = 523 - (400 + 123);
-			while true do
-				if (v1504 == 1) then
-					return tostring(v1503);
-				end
-				if (v1504 == (0 + 0)) then
-					if (v1503 == 0) then
-						return v7("\147\23\38\63", "\114\192\124\79\79\89");
-					end
-					if (v1503 > 5) then
-						return v7("\165\241\175", "\134\232\144\215\164");
-					end
-					v1504 = 1957 - (547 + 1409);
-				end
-			end
-		end);
-		local v1110 = v44.SlotMaxUpgrades[v998] or (90 - (73 + 7));
-		local v1111 = ((v1110 >= (1 + 14)) and 13) or math.min(v1110, 13);
-		v1106(v7("\192\71\74\21\188\11\201\33\236\66\87", "\83\141\38\50\53\233\123\174"), v1111, 0 + 0, 39 - 26, function(v1505)
-			local v1506 = 0;
-			local v1507;
-			while true do
-				if (v1506 == (0 - 0)) then
-					v1507 = ((v1505 >= 13) and (12 + 3)) or v1505;
-					v44.SlotMaxUpgrades[v998] = v1507;
-					v1506 = 1 + 0;
-				end
-				if (v1506 == 1) then
-					if v44.UnitCustomSettings[v998] then
-						v44.UnitCustomSettings[v998].MaxUpgrade = v1507;
-					end
-					v1073.Text = ((v1505 >= (8 + 5)) and v7("\16\131\189", "\16\93\226\197\53\84\223\33")) or (v7("\76\195\251\8\169\19\124\147", "\119\25\179\156\122\200") .. v1505);
-					break;
-				end
-			end
-		end, function(v1508)
-			local v1509 = 0;
-			while true do
-				if (v1509 == (0 - 0)) then
-					if (v1508 >= 13) then
-						return v7("\213\238\48", "\148\152\143\72");
-					end
-					return tostring(v1508);
-				end
-			end
-		end);
-		local function v1112()
-			local v1510 = 0;
-			local v1511;
-			local v1512;
-			while true do
-				local v1706 = 0;
-				while true do
-					if (v1706 == 0) then
-						if (v1510 == (1991 - (98 + 1891))) then
-							return false;
-						end
-						if (v1510 == (40 - (16 + 23))) then
-							local v2907 = 0;
-							while true do
-								if (v2907 == 1) then
-									v1510 = 1734 - (1184 + 548);
-									break;
-								end
-								if (v2907 == (1530 - (270 + 1260))) then
-									v1512 = v721 and v721[v998];
-									if (v1512 and v61({[v7("\242\28\214\193", "\89\156\125\187\164")]=v1512,[v7("\201\83", "\96\160\55\165\216\168\144\191")]=v1512})) then
-										return true;
-									end
-									v2907 = 1 + 0;
-								end
-							end
-						end
-						v1706 = 736 - (60 + 675);
-					end
-					if (v1706 == (1 + 0)) then
-						if ((1202 - (984 + 218)) == v1510) then
-							v1511 = v81();
-							for v3014, v3015 in ipairs(v1511) do
-								if ((v3015.slot == v998) and v61(v3015)) then
-									return true;
-								end
-							end
-							v1510 = 1;
 						end
 						break;
 					end
 				end
 			end
-		end
-		local function v1113()
-			local v1513 = 382 - (45 + 337);
-			local v1514;
-			local v1515;
-			while true do
-				if (v1513 == (328 - (74 + 254))) then
-					v1514 = v81();
-					for v2506, v2507 in ipairs(v1514) do
-						if ((v2507.slot == v998) and v60(v2507)) then
-							return true;
-						end
-					end
-					v1513 = 1 + 0;
-				end
-				if ((1 + 0) == v1513) then
-					local v2357 = 0;
-					while true do
-						if (v2357 == (1349 - (1190 + 159))) then
-							v1515 = v721 and v721[v998];
-							if (v1515 and v60({[v7("\22\85\120\63", "\90\120\52\21")]=v1515,[v7("\130\20", "\214\235\112\155\53\164")]=v1515})) then
-								return true;
-							end
-							v2357 = 1;
-						end
-						if (v2357 == (1 + 0)) then
-							v1513 = 1 + 1;
-							break;
-						end
-					end
-				end
-				if (v1513 == 2) then
-					return false;
-				end
-			end
-		end
-		local v1114 = v1106(v7("\121\239\21\36\9\222\14\63\64\250\8\35\71", "\76\41\142\97"), v999.CustomPath or 0, 0, 87 + 13, function(v1516)
-			local v1517 = 0;
-			local v1518;
-			while true do
-				if (v1517 == 0) then
-					v1518 = 0 - 0;
-					while true do
-						if (v1518 == (1 + 0)) then
-							v88();
-							break;
-						end
-						if (v1518 == (1418 - (192 + 1226))) then
-							if v44.UnitCustomSettings[v998] then
-								v44.UnitCustomSettings[v998].CustomPath = v1516;
-							end
-							v85();
-							v1518 = 737 - (511 + 225);
-						end
-					end
-					break;
-				end
-			end
-		end, function(v1519)
-			if (v1519 == 0) then
-				if v1112() then
-					return v7("\200\209\218\26\58\86\64\67\172\132\237\91\95\80\54\95", "\118\137\164\174\117\26\126\121");
-				elseif v1113() then
-					return v7("\43\181\90\117\60\70", "\110\106\192\46\26\28") .. (v44.FarmPathPercentage or (68 + 17)) .. v7("\137\12\53\232\211\1\128", "\169\172\44\115\137\161\108");
-				else
-					return v7("\142\224\153\219\28\231", "\60\207\149\237\180") .. v44.PathPercentage .. v7("\178\125", "\134\151\84\235");
-				end
-			end
-			return v1519 .. "%";
-		end, 5);
-		local v1115 = v999.Target or v7("\106\26\166\2", "\23\43\111\210\109");
-		if (v1115 == v7("\81\29\246\252\9\70\253", "\137\21\120\144\157\124\42")) then
-			v1115 = v7("\208\30\5\180", "\105\145\107\113\219\96\195");
-		end
-		v1107(v7("\213\242\0\62\228\231\82\9\243\250\29\43\232\231\11", "\89\129\147\114"), {v7("\58\160\181\19", "\178\123\213\193\124\49"),v7("\203\32\181\223\201", "\20\141\73\199\172\189\237\155"),v7("\192\2\9\17", "\184\140\99\122\101\91\128\43"),v7("\200\24\170\9\245\11\189\21\239", "\102\155\108\216")}, v1115, function(v1520)
-			if v44.UnitCustomSettings[v998] then
-				v44.UnitCustomSettings[v998].Target = v1520;
-			end
 		end);
-		local v1116 = v999.Ability or v7("\25\129\80\171\237\230\190\60\201\103\160\233\244\162", "\219\78\233\53\197\136\144");
-		if ((v1116 == v7("\31\52\245\171\34\253\69", "\49\91\81\147\202\87\145")) or (v1116 == v7("\51\82\89\234\155", "\46\97\55\56\142\226\64"))) then
-			v1116 = v7("\48\128\223\245\64\245\15\91\71\186\223\250\65\250", "\41\103\232\186\155\37\131\106");
-		end
-		v1107(v7("\29\252\197\212\124\200\211\210\48\224\197\194", "\187\92\137\177"), {v7("\117\10\140\5\114\79\93\80\66\187\14\118\93\65", "\56\34\98\233\107\23\57"),v7("\110\239\20\38\106\6\17\74\244\81\1\57\100\48\92\230\3", "\126\57\135\113\72\74\68"),v7("\160\111\124\113\77\217\32\144\120", "\65\230\29\19\28\109\142"),v7("\95\172\166\24\125\132\125\86", "\50\27\197\213\121\31\232\24")}, v1116, function(v1521)
-			if v44.UnitCustomSettings[v998] then
-				v44.UnitCustomSettings[v998].Ability = v1521;
-			end
-		end);
-		v153[v998] = function()
-			local v1522 = 1033 - (510 + 523);
-			local v1523;
-			local v1524;
-			while true do
-				if (1 == v1522) then
-					v1001.LayoutOrder = v1523;
-					v1068.Text = v7("\104\73\165\231\93\5\231", "\132\56\37\196") .. v1523;
-					v1522 = 1 + 1;
+	end;
+	getgenv().AJ_HUB_LOADED = true;
+end);
+v147(v148);
+task.spawn(function()
+	for v964 = 586 - (92 + 493), 7 + 8 do
+		local v965 = 0 + 0;
+		local v966;
+		while true do
+			if (v965 == (1158 - (75 + 1083))) then
+				v966 = 0 - 0;
+				while true do
+					if (v966 == 0) then
+						task.wait(0.2 - 0);
+						v46();
+						break;
+					end
 				end
-				if (v1522 == (18 - 14)) then
-					pcall(function()
-						local v2508 = 0;
-						local v2509;
-						local v2510;
-						local v2511;
-						local v2512;
-						local v2513;
+				break;
+			end
+		end
+	end
+end);
+pcall(function()
+	if (v23 and v23.update_theme) then
+		local v1459 = 0 - 0;
+		local v1460;
+		while true do
+			if (v1459 == (0 + 0)) then
+				v1460 = (v24.MenuAccent and Color3.fromRGB(v24.MenuAccent.R, v24.MenuAccent.G, v24.MenuAccent.B)) or Color3.fromRGB(110 + 73, 794 - 618, 205);
+				v23:update_theme(v7("\215\221\196\16\68\30", "\131\182\190\167\117\42\106\170"), v1460);
+				break;
+			end
+		end
+	end
+end);
+pcall(function()
+	if (v23 and v23.items) then
+		for v1747, v1748 in ipairs(v23.items:GetDescendants()) do
+			if v1748:IsA(v7("\22\134\226\170\117\132\222\39\143", "\188\66\227\154\222\57\229")) then
+				local v2230 = 0 + 0;
+				local v2231;
+				while true do
+					if (v2230 == (1375 - (159 + 1216))) then
+						v2231 = 0 - 0;
 						while true do
-							if (1 == v2508) then
-								for v3144, v3145 in ipairs(v2509) do
-									if (v3145.slot == v998) then
-										v2510 = v3145;
-										break;
-									end
-								end
-								v2511 = (v2510 and v2510.name) or (v7("\142\36\69\28\67\235\97\102\4\85\191\105", "\58\203\73\53\104") .. v998 .. ")");
-								v2508 = 1 + 1;
-							end
-							if (v2508 == (7 - 4)) then
-								v2513 = v1020 and v1020:FindFirstChildWhichIsA(v7("\54\41\52\33\31\168\18\52\23\36\14\170\5", "\199\96\64\81\86\111"));
-								if ((v722[v998] ~= v2512) or not v2513) then
-									local v3226 = 0;
+							if ((0 - 0) == v2231) then
+								if v1748.Text:find(v7("\43\97\27\81\241\97\32\27\89\245\126\39", "\144\24\83\59\53")) then
+									local v3437 = 0 + 0;
+									local v3438;
 									while true do
-										if ((1471 - (996 + 475)) == v3226) then
-											v722[v998] = v2512;
-											if v1020 then
-												local v3466 = 0;
-												local v3467;
-												while true do
-													if (v3466 == (1 + 0)) then
-														if v3467 then
-															local v3541 = 0 - 0;
-															local v3542;
-															while true do
-																if ((0 + 0) == v3541) then
-																	v3542 = 0 + 0;
-																	while true do
-																		if (v3542 == (1943 - (1132 + 810))) then
-																			v3467.Parent = v1020;
-																			break;
-																		end
-																		if (v3542 == (0 - 0)) then
-																			v3467.Active = false;
-																			v1029.Visible = false;
-																			v3542 = 3 - 2;
-																		end
-																	end
-																	break;
-																end
-															end
-														else
-															v1029.Visible = true;
-															v1029.Text = tostring(v998);
-														end
-														break;
-													end
-													if (v3466 == (0 + 0)) then
-														for v3534, v3535 in ipairs(v1020:GetChildren()) do
-															if v3535:IsA(v7("\57\219\68\88\15\0\192\85\105\13\14\223\68", "\127\111\178\33\47")) then
-																v3535:Destroy();
-															end
-														end
-														v3467 = v719(v998);
-														v3466 = 1962 - (941 + 1020);
-													end
+										if (v3437 == (0 - 0)) then
+											v3438 = 1615 - (418 + 1197);
+											while true do
+												if (v3438 == 0) then
+													v1748.Visible = false;
+													v1748.Text = "";
+													break;
 												end
 											end
+											break;
+										end
+									end
+								elseif (v1748.Text:find(v7("\15\143\160\195\15\41\146\240\128\40\56\146\188\198\30", "\123\76\224\213\173")) or v1748.Text:find(v7("\2\195\197\161\33\195\220\169", "\196\79\170\169"))) then
+									v1748.Text = v7("\162\17\101\85\182\25", "\29\227\91\69");
+								elseif v1748.Text:find(v7("\254\218\170\189\169\71\35\214\192\176", "\87\191\175\222\210\196\38")) then
+									v1748.Text = v1748.Text:gsub(v7("\22\251\61\195\214\218\92\229\118\246\202\193\93\173\100\168", "\174\51\136\23\130\163"), "");
+								end
+								if v1748.Text:find(v7("\28\63\114\34\215\215", "\149\93\117\82\106\130")) then
+									local v3439 = 0;
+									while true do
+										if (v3439 == (964 - (632 + 332))) then
+											v1748.TextColor3 = Color3.fromRGB(1853 - (964 + 634), 551 - 296, 75 + 180);
+											v146(v1748, 0 + 0);
 											break;
 										end
 									end
 								end
 								break;
 							end
-							if (v2508 == 2) then
-								if (v1039 and (v1039.Text ~= v2511)) then
-									v1039.Text = v2511;
+						end
+						break;
+					end
+				end
+			end
+		end
+	end
+end);
+v148:seperator({[v7("\232\188\16\227", "\171\134\221\125\134")]=v7("\157\43\253\99\252\181\55", "\144\208\68\153\22")});
+local v149, v150 = v148:tab({[v7("\239\27\40\9", "\174\129\122\69\108\165\54\119")]=v7("\212\220\211\231", "\137\153\189\186"),[v7("\24\205\18\75", "\37\113\174\125")]=v7("\67\70\92\168\66\87\65\189\88\64\30\230\30\19\20\254\3\19\21\241\7\23\21", "\201\49\36\36"),[v7("\16\47\168\99", "\16\100\78\202")]={v7("\142\168\127\228\154\2\13\235\142\168\113\241\134\81", "\203\221\220\16\150\227\34\43"),v7("\201\37\114\124\232\100\61\56\216\44\122\116\247\33\117\127\254\55", "\24\155\68\27")}});
+do
+	local v691 = v149:column({[v7("\169\89\202\87", "\50\218\48\176")]=1});
+	local v692 = v149:column({[v7("\93\91\206\245", "\52\46\50\180\144\59")]=1});
+	local v693 = v691:section({[v7("\3\48\40\114", "\154\109\81\69\23\102\89")]=v7("\201\223\211\70\88", "\89\154\171\188\52\33"),[v7("\255\23\3\56", "\86\150\116\108")]=v7("\101\189\52\175\210\85\114\171\37\170\155\9\56\232\124\249\147\17\39\233\126\248\146", "\38\23\223\76\206\161"),[v7("\220\204\94\58\182\166\210", "\166\184\169\56\91\195\202")]=true,[v7("\180\185\107\33", "\162\199\208\17\68")]=(0.63 - 0)});
+	v693:dropdown({[v7("\223\231\82\4", "\123\177\134\63\97\140\110\48")]=v7("\7\91\230\207\246", "\137\80\52\148\163\146\123\21"),[v7("\241\212\166\243\16", "\99\152\160\195\158")]={v7("\183\59\215\48\24\43\199\16\196\59\24\49\142\50", "\95\231\87\182\94\125"),v7("\111\200\244\56\12\120\83\123\192\236\45", "\115\56\169\152\84\105\28"),v7("\13\235\142\88\175\5\10\234\150\65", "\37\94\133\225\47\214"),v7("\100\213\88\90\23\226\95\82\91\213\81\91", "\62\55\180\54"),v7("\213\251\62\223\2\102\175\2", "\123\155\154\72\166\34\36\206"),v7("\224\214\61\173\33\134\252\49\183\60", "\69\166\191\88\195"),v7("\138\106\39\80\143\162\110\189\182\104\34\70", "\234\217\26\78\34\230\214\78"),v7("\145\17\252\23\97\185\17\239\83\69\189", "\42\208\127\136\55"),v7("\92\89\206\32\165\172\123\126\79\199", "\47\17\56\169\73\198\140"),v7("\10\52\73\77\185\133\38\117\125\64\172\132\39\56\69", "\224\66\85\60\35\205"),v7("\213\59\123\82\49\13\251\241\54\112\72", "\179\152\90\28\59\82\45"),v7("\154\226\61\3\72\4\138\247\50\20\72\86", "\36\201\146\92\96\45"),v7("\200\202\244\64\202\183\207\225\232\197\248\86\204\254\236", "\145\137\166\157\37\164\151\156"),v7("\40\24\69\112\222\112\78\50\78\114\220\112\1\20", "\20\110\121\39\28\187"),v7("\60\228\13\41\81\24\226\45\248\16\62", "\194\110\145\100\71\52\124"),v7("\66\252\84\190\193\13\27\63\97\229\69\160\192", "\118\18\137\36\206\164\121\59"),v7("\200\208\241\0\89\255\213\163\48\89\240\222\230\27\66", "\44\158\185\131\116"),v7("\127\132\210\96\194\231\90\69\132\218\115\212\170", "\17\44\234\189\23\187\199"),v7("\19\107\208\13\50\113\208\74\3\118\204\5\57\123", "\106\87\30\190"),v7("\251\227\25\114\222\86\75\210\150\216\9\113\218\91\71", "\188\182\140\108\28\170\55\34"),v7("\238\181\225\237\156\130\225\239\208\181\239\230", "\131\188\212\136"),v7("\186\3\120\36\67\144\10\49\2\95\154\31\99\47\85\157", "\54\233\107\17\70")},[v7("\244\45\45\4\209\252\60", "\164\144\72\75\101")]=v24.StoryWorld,[v7("\235\130\75\206\215", "\62\156\235\47\186\191")]=(1227 - (7 + 1060)),[v7("\14\235\226\45\206\166\47\231", "\140\109\138\142\65\172\199\76")]=function(v967)
+		local v968 = 0 + 0;
+		while true do
+			if (v968 == (0 - 0)) then
+				v24.StoryWorld = v967;
+				v26();
+				break;
+			end
+		end
+	end});
+	v693:dropdown({[v7("\249\95\186\24", "\212\151\62\215\125\137\161")]=v7("\20\165\27", "\236\85\198\111"),[v7("\23\37\114\248\79", "\60\126\81\23\149")]={v7("\100\137\194\202\33", "\137\37\234\182\234\16"),v7("\216\8\77\115\94", "\195\153\107\57\83\108\34\237"),v7("\93\24\145\131\218", "\159\28\123\229\163\233\225"),v7("\166\23\33\85\211", "\117\231\116\85"),v7("\13\89\82\123\41", "\28\76\58\38\91"),v7("\153\173\53\247\183", "\143\216\206\65\215\129\179"),v7("\139\124\15\245\172\123\29\249", "\156\194\18\105")},[v7("\228\169\34\235\50\236\184", "\71\128\204\68\138")]=v24.StoryAct,[v7("\250\91\173\36\122", "\198\141\50\201\80\18\137")]=(310 - 150),[v7("\238\79\129\80\67\62\241\230", "\146\141\46\237\60\33\95")]=function(v969)
+		local v970 = 0 - 0;
+		while true do
+			if (v970 == (0 - 0)) then
+				v24.StoryAct = v969;
+				v26();
+				break;
+			end
+		end
+	end});
+	v693:dropdown({[v7("\208\168\252\22", "\191\190\201\145\115\221")]=v7("\31\26\235\65\116\205\72\56\47\10", "\84\91\115\141\39\29\174\61"),[v7("\31\247\86\240\5", "\157\118\131\51")]={v7("\192\81\47\166\80\114", "\30\142\62\93\203\49"),v7("\139\162\37\143", "\126\195\195\87\235\199")},[v7("\13\131\92\183\236\167\106", "\30\105\230\58\214\153\203")]=v24.StoryDifficulty,[v7("\4\27\242\166\8", "\203\115\114\150\210\96")]=160,[v7("\208\237\80\51\209\237\95\52", "\95\179\140\60")]=function(v971)
+		local v972 = 0 - 0;
+		while true do
+			if (0 == v972) then
+				v24.StoryDifficulty = v971;
+				v26();
+				break;
+			end
+		end
+	end});
+	v693:toggle({[v7("\46\251\46\243", "\176\64\154\67\150\188\122\196")]=v7("\3\91\45\136\64\249\54\9\11\131\66\228", "\157\69\41\68\237\46"),[v7("\56\227\247\245", "\165\76\154\135\144\142\176")]=v7("\48\34\64\0\31\69", "\217\68\77\39\103\115\32"),[v7("\163\137\170\220\199\253\203", "\191\199\236\204\189\178\145")]=v24.StoryFriendsOnly,[v7("\117\135\81\67\116\135\94\68", "\47\22\230\61")]=function(v973)
+		local v974 = 0 + 0;
+		while true do
+			if (v974 == (0 + 0)) then
+				v24.StoryFriendsOnly = v973;
+				v26();
+				break;
+			end
+		end
+	end});
+	v693:toggle({[v7("\12\178\44\29", "\89\98\211\65\120")]=v7("\158\215\25\93\93\132\24\182\204", "\119\223\162\109\50\125\206"),[v7("\11\27\29\71", "\97\127\98\109\34")]=v7("\35\5\119\55\161\31", "\122\87\106\16\80\205"),[v7("\228\13\239\247\246\224\228", "\168\128\104\137\150\131\140\144")]=v24.AutoJoinStory,[v7("\176\189\212\251\170\76\9\12", "\103\211\220\184\151\200\45\106")]=function(v975)
+		v32(v7("\157\31\52\247\240\248\186\49\143\30\47\234\195", "\95\220\106\64\152\186\151\211"), v975);
+	end});
+	v693:toggle({[v7("\127\135\191\186", "\177\17\230\210\223\153\182")]=v7("\11\167\254\135\113\240\6\36\182\170\165\48\194\12\34", "\111\74\210\138\232\81\182"),[v7("\9\7\39\134", "\39\125\126\87\227\160")]=v7("\64\176\185\138\88\186", "\237\52\223\222"),[v7("\177\254\134\209\167\27\161", "\119\213\155\224\176\210")]=v24.AutoFindMatchStory,[v7("\187\226\142\63\112\169\10\229", "\142\216\131\226\83\18\200\105")]=function(v976)
+		v32(v7("\14\17\239\205\233\232\35\226\2\5\239\193\199\210\57\233\61\29", "\134\79\100\155\162\175\129\77"), v976);
+		if not v976 then
+			v122();
+		end
+	end});
+	local v694 = v691:section({[v7("\199\65\168\238", "\139\169\32\197")]=v7("\90\199\41\59\167\208\190\222\100\136\1\54\243", "\173\16\168\64\85\135\156\223"),[v7("\28\84\251\255", "\37\117\55\148\145\136\59\85")]=v7("\37\21\171\39\36\4\182\50\62\19\233\105\120\64\227\113\101\64\226\127\96\66\227", "\70\87\119\211"),[v7("\181\211\5\63\178\63\165", "\83\209\182\99\94\199")]=true,[v7("\203\222\154\92", "\57\184\183\224")]=(1991.37 - (1417 + 574))});
+	v694:toggle({[v7("\246\222\238\170", "\226\152\191\131\207\68\148\117")]=v7("\48\68\180\220\21\54\74\174\198\21\59\72\169", "\53\122\43\221\178"),[v7("\250\177\14\27", "\70\142\200\126\126\200\115\101")]=v7("\71\33\64\197\224\86", "\140\51\78\39\162"),[v7("\10\199\221\245\228\239\225", "\171\110\162\187\148\145\131\149")]=v24.JoinLastAct,[v7("\178\12\39\66\64\176\14\32", "\34\209\109\75\46")]=function(v977)
+		v32(v7("\57\246\178\178\214\18\234\175\157\249\7", "\154\115\153\219\220"), v977);
+	end});
+	v694:toggle({[v7("\39\16\132\27", "\222\73\113\233\126\66\114")]=v7("\179\19\179\14\19\60\37\199\141\12", "\172\228\124\193\98\119\28\118"),[v7("\45\201\150\75", "\46\89\176\230")]=v7("\239\5\95\32\136\9", "\108\155\106\56\71\228"),[v7("\198\95\213\48\207\88\52", "\173\162\58\179\81\186\52\64")]=v24.WorldSkip,[v7("\61\65\242\203\73\5\70\53", "\37\94\32\158\167\43\100")]=function(v978)
+		v24.WorldSkip = v978;
+		v26();
+	end});
+	local v695 = v692:section({[v7("\202\59\94\52", "\214\164\90\51\81\123\145")]=v7("\55\174\164\197\21\175\227\243\15\170\164\197", "\160\123\203\195"),[v7("\129\31\123\130", "\85\232\124\20\236\81")]=v7("\83\201\173\39\109\82\206\161\47\122\27\132\250\113\46\22\153\226\119\40\20\159\236", "\30\33\171\213\70"),[v7("\140\197\49\216\109\132\212", "\24\232\160\87\185")]=true,[v7("\205\57\235\252", "\70\190\80\145\153")]=(152.48 - (112 + 40))});
+	v695:dropdown({[v7("\89\247\234\251", "\108\55\150\135\158\78\87")]=v7("\237\16\243\253\205", "\64\190\100\146\154\168"),[v7("\226\177\131\30\168", "\35\139\197\230\115\219\222\114")]={v7("\21\209\237\228\221\53\193\49\220\230\254\158\61\204\52\214\170\196\208\99\232\43\217\229\227\151", "\137\88\176\138\141\190\21"),v7("\21\224\67\218\184\50\176\99\198\167\39\227\67\199\191", "\209\70\144\42\168"),v7("\63\253\168\83\45\80\47\232\167\68\45\2", "\112\108\141\201\48\72"),v7("\237\64\21\95\38\122\139\106\30\93\36\122\196\76\87\27\4\123\197\68\5\82\47\109\130", "\30\171\33\119\51\67"),v7("\100\187\18\220\136\252\22\141\18\198\148\184\30\131\18\214\131\241\81\166\15\155", "\152\54\206\123\178\237"),v7("\218\210\185\27\205\138\194\118\200\206\165\8\221\132\192\118\164\249\164\28\203\142\221\127", "\86\140\187\203\111\184\235\174"),v7("\233\29\120\3\66\194\6\54\48\79\223\7\120\1", "\39\173\104\22\100"),v7("\112\223\83\125\91\133\75\210\86\114\28\182", "\211\34\190\58\19\123")},[v7("\71\15\237\235\201\198\234", "\158\35\106\139\138\188\170")]=v24.LegendStage,[v7("\17\192\227\94\77", "\37\102\169\135\42")]=160,[v7("\136\207\18\250\63\54\132\171", "\192\235\174\126\150\93\87\231")]=function(v980)
+		local v981 = 0;
+		while true do
+			if (v981 == (0 - 0)) then
+				v24.LegendStage = v980;
+				v26();
+				break;
+			end
+		end
+	end});
+	v695:dropdown({[v7("\83\69\115\52", "\184\61\36\30\81\187\170")]=v7("\62\203\175", "\233\127\168\219\167\113"),[v7("\87\96\142\127\36", "\61\62\20\235\18\87\173\124")]={v7("\99\70\84\138\155", "\170\34\37\32\170"),v7("\18\198\45\191\111", "\46\83\165\89\159\93"),v7("\40\251\28\236\158", "\174\105\152\104\204\173")},[v7("\187\76\236\14\170\69\254", "\111\223\41\138")]=v24.LegendAct,[v7("\16\49\62\144\24", "\80\103\88\90\228\112\27\174")]=(578 - (176 + 242)),[v7("\93\199\246\166\236\1\6\10", "\97\62\166\154\202\142\96\101")]=function(v982)
+		local v983 = 0;
+		while true do
+			if (v983 == (912 - (313 + 599))) then
+				v24.LegendAct = v982;
+				v26();
+				break;
+			end
+		end
+	end});
+	v695:toggle({[v7("\174\229\216\27", "\93\192\132\181\126")]=v7("\214\13\153\27\232\243\13\254\22\205\56\173\222\7\249\28", "\98\151\120\237\116\200\185"),[v7("\48\19\99\161", "\136\68\106\19\196\230\174\214")]=v7("\239\50\92\135\208\248", "\157\155\93\59\224\188"),[v7("\193\124\207\79\208\117\221", "\46\165\25\169")]=v24.AutoJoinLegend,[v7("\55\232\187\193\132\60\212\63", "\183\84\137\215\173\230\93")]=function(v984)
+		local v985 = 639 - (402 + 237);
+		while true do
+			if (v985 == (0 + 0)) then
+				v24.AutoJoinLegend = v984;
+				v26();
+				break;
+			end
+		end
+	end});
+	v695:toggle({[v7("\36\113\248\33", "\28\74\16\149\68\45\101\112")]=v7("\44\240\0\83\245\204\4\235\16\28\152\235\25\230\28", "\138\109\133\116\60\213"),[v7("\25\9\184\84", "\49\109\112\200")]=v7("\200\209\120\89\210\171", "\206\188\190\31\62\190"),[v7("\77\67\118\0\171\235\23", "\206\41\38\16\97\222\135\99")]=v24.AutoFindMatchLegend,[v7("\135\163\10\226\243\74\214\143", "\181\228\194\102\142\145\43")]=function(v986)
+		v24.AutoFindMatchLegend = v986;
+		v26();
+		if not v986 then
+			v122();
+		end
+	end});
+	local v696 = v692:section({[v7("\58\235\0\10", "\51\84\138\109\111\182\79")]=v7("\55\85\29\41\232\235\10\66\91\13\231\236\13\82\20\46", "\130\126\59\123\64\134"),[v7("\31\236\29\50", "\92\118\143\114")]=v7("\70\230\219\227\14\31\81\240\202\230\71\67\27\179\147\181\79\91\4\178\144\179\69", "\108\52\132\163\130\125"),[v7("\255\23\176\44\212\27\239", "\119\155\114\214\77\161")]=true,[v7("\164\42\250\188", "\217\215\67\128")]=0.52});
+	v696:slider({[v7("\170\25\161\10", "\97\196\120\204\111\91")]=v7("\109\178\26\179", "\106\63\221\117\222\236\46\165"),[v7("\211\188\183", "\237\190\213\217\223")]=(1057 - (551 + 505)),[v7("\181\65\238", "\198\216\32\150\220")]=150,[v7("\243\66\92\129\66\86\252\112", "\28\154\44\40\228\48\32\157")]=(3 - 2),[v7("\64\61\252\67\79\235\66", "\85\36\88\154\34\58\135\54")]=v24.MansionRoom,[v7("\77\136\143\182\75\182\77\130", "\215\46\233\227\218\41")]=function(v988)
+		local v989 = 0;
+		while true do
+			if (v989 == 0) then
+				v24.MansionRoom = v988;
+				v26();
+				break;
+			end
+		end
+	end});
+	v696:dropdown({[v7("\19\117\129\235", "\148\125\20\236\142")]=v7("\41\117\56\244\169\63\178\1\104\39", "\199\109\28\94\146\192\92"),[v7("\119\99\44\197\218", "\204\30\23\73\168\169\140\78")]={v7("\6\211\254\200", "\50\78\178\140\172\189\204\38"),v7("\244\48\210\113\254\8", "\19\186\95\160\28\159\100")},[v7("\189\235\212\244\192\38\173", "\74\217\142\178\149\181")]=v24.MansionDifficulty,[v7("\108\73\134\222\41", "\136\27\32\226\170\65\109\190")]=160,[v7("\179\207\166\44\252\177\205\161", "\158\208\174\202\64")]=function(v990)
+		local v991 = 0 + 0;
+		while true do
+			if ((0 - 0) == v991) then
+				v24.MansionDifficulty = v990;
+				v26();
+				break;
+			end
+		end
+	end});
+	v696:toggle({[v7("\83\38\191\248", "\157\61\71\210")]=v7("\217\73\101\10\243\123\255\241\82\49\44\189\87\249\246\85\101\28\243\124\241\246\79\120\10\189", "\144\152\60\17\101\211\49"),[v7("\218\83\250\226", "\161\174\42\138\135\216")]=v7("\217\183\13\199\193\189", "\160\173\216\106"),[v7("\141\124\119\91\170\255\157", "\147\233\25\17\58\223")]=v24.AutoJoinMansion,[v7("\77\45\12\23\210\55\77\39", "\86\46\76\96\123\176")]=function(v992)
+		v24.AutoJoinMansion = v992;
+		v26();
+	end});
+	v696:toggle({[v7("\179\173\115\233", "\70\221\204\30\140\197\32\236")]=v7("\201\58\94\251\163\25\86\230\247\117\101\250\236\56", "\149\131\85\55"),[v7("\13\164\35\174", "\59\121\221\83\203\102\58\148")]=v7("\177\27\61\175\61\94", "\59\197\116\90\200\81"),[v7("\249\173\233\195\43\241\188", "\94\157\200\143\162")]=v24.JoinLastMansionRoom,[v7("\253\58\255\174\252\58\240\169", "\194\158\91\147")]=function(v994)
+		local v995 = 0 + 0;
+		while true do
+			if (0 == v995) then
+				v24.JoinLastMansionRoom = v994;
+				v26();
+				break;
+			end
+		end
+	end});
+	v696:toggle({[v7("\162\19\22\183", "\149\204\114\123\210\184")]=v7("\226\41\105\241\122\252\67\205\56\61\211\59\206\73\203", "\42\163\92\29\158\90\186"),[v7("\213\63\87\31", "\95\161\70\39\122\69\170")]=v7("\167\21\242\42\75\193", "\71\211\122\149\77\39\164"),[v7("\35\130\245\215\144\43\147", "\229\71\231\147\182")]=v24.AutoFindMatchMansion,[v7("\131\203\221\193\130\203\210\198", "\173\224\170\177")]=function(v996)
+		local v997 = 0;
+		while true do
+			if (v997 == 1) then
+				if not v996 then
+					v122();
+				end
+				break;
+			end
+			if (v997 == (0 - 0)) then
+				v24.AutoFindMatchMansion = v996;
+				v26();
+				v997 = 1773 - (238 + 1534);
+			end
+		end
+	end});
+end
+do
+	local v697 = 0;
+	local v698;
+	local v699;
+	local v700;
+	local v701;
+	local v702;
+	while true do
+		if (v697 == 3) then
+			v701:toggle({[v7("\200\10\223\133", "\190\166\107\178\224\77")]=v7("\213\153\66\31\50\222\131\95\30\50\213\158\66\25\116\245\143\66\80\65\224\141\81\21", "\18\148\236\54\112"),[v7("\149\169\230\58", "\95\225\208\150\95")]=v7("\184\122\224\142\160\112", "\233\204\21\135"),[v7("\170\133\201\211\202\241\186", "\157\206\224\175\178\191")]=v24.AutoJoinArtifact,[v7("\168\119\188\188\52\195\54\252", "\151\203\22\208\208\86\162\85")]=function(v1948)
+				v24.AutoJoinArtifact = v1948;
+				v26();
+				if not v1948 then
+					v122();
+				end
+			end});
+			v701:toggle({[v7("\77\168\128\179", "\68\35\201\237\214\231\29")]=v7("\126\9\242\49\31\63\234\63\86\17\166\29\83\25\231\44\31\46\227\41\94\14\226\45", "\94\63\124\134"),[v7("\224\192\95\126", "\27\148\185\47")]=v7("\86\52\250\41\175\114", "\37\34\91\157\78\195\23\140"),[v7("\24\68\239\131\111\63\8", "\83\124\33\137\226\26")]=v24.AutoClaimArtifactRewards,[v7("\218\88\235\204\215\216\90\236", "\181\185\57\135\160")]=function(v1950)
+				local v1951 = 0 - 0;
+				while true do
+					if (v1951 == 0) then
+						v24.AutoClaimArtifactRewards = v1950;
+						v26();
+						break;
+					end
+				end
+			end});
+			v702 = v699:section({[v7("\215\1\239\55", "\192\185\96\130\82\110\148")]=v7("\100\217\21\224\47\60\1\64\212", "\111\39\177\116\140\67\89"),[v7("\124\133\53\10", "\194\21\230\90\100\183")]=v7("\209\229\4\249\39\186\40\215\238\24\162\123\230\122\147\176\78\175\100\252\123\154\177", "\77\163\135\124\152\84\201"),[v7("\91\11\41\238\57\249\75", "\149\63\110\79\143\76")]=true,[v7("\229\143\186\180", "\129\150\230\192\209\101\94")]=(919 - (302 + 616))});
+			v697 = 4;
+		end
+		if (v697 == 2) then
+			v700:toggle({[v7("\32\0\25\175", "\39\78\97\116\202")]=v7("\154\251\225\65\162\3\178\224\241\14\207\36\175\237\253", "\69\219\142\149\46\130"),[v7("\216\81\2\75", "\87\172\40\114\46")]=v7("\98\226\229\191\9\115", "\101\22\141\130\216"),[v7("\114\44\235\161\94\123\98", "\23\22\73\141\192\43")]=v24.AutoFindMatchRaid,[v7("\238\236\235\206\251\236\238\236", "\153\141\141\135\162")]=function(v1952)
+				local v1953 = 0 + 0;
+				while true do
+					if (v1953 == 1) then
+						if not v1952 then
+							v122();
+						end
+						break;
+					end
+					if (v1953 == 0) then
+						v24.AutoFindMatchRaid = v1952;
+						v26();
+						v1953 = 1829 - (1054 + 774);
+					end
+				end
+			end});
+			v701 = v698:section({[v7("\58\22\86\248", "\55\84\119\59\157\192\169")]=v7("\31\70\105\194\226\177\0\49\126\103\105\202\227\181", "\69\94\52\29\171\132\208\99"),[v7("\208\20\126\173", "\136\185\119\17\195")]=v7("\44\222\2\179\165\154\59\200\19\182\236\198\113\139\74\229\228\222\108\143\74\226\224", "\233\94\188\122\210\214"),[v7("\80\22\207\133\169\176\195", "\183\52\115\169\228\220\220")]=true,[v7("\195\87\253\218", "\221\176\62\135\191\166\37\127")]=(0.48 + 0)});
+			v701:dropdown({[v7("\6\36\80\240", "\149\104\69\61")]=v7("\113\218\11\210\27\226\11\200\83", "\188\59\181\98"),[v7("\163\186\51\169\97", "\123\202\206\86\196\18\124\148")]={v7("\84\228\140\17\165\213\120\227\113\229", "\151\18\141\226\117\133\152\25"),v7("\92\180\186\236\37\124\172\185", "\119\19\195\212\204")},[v7("\30\197\238\211\19\36\167", "\211\122\160\136\178\102\72")]=v24.ArtifactJoinMode,[v7("\82\25\143\106\1", "\146\37\112\235\30\105\104\133")]=(1387 - (1220 + 7)),[v7("\70\180\77\123\67\68\182\74", "\33\37\213\33\23")]=function(v1954)
+				v24.ArtifactJoinMode = v1954;
+				v26();
+			end});
+			v697 = 3 + 0;
+		end
+		if (v697 == (1974 - (1819 + 150))) then
+			v702:toggle({[v7("\120\241\77\80", "\233\22\144\32\53\134")]=v7("\30\1\49\40\119\114\48\29\43\103\19\89\54\24\60\103\20\80\62\24\41\34\57\95\58", "\56\95\116\69\71\87"),[v7("\145\102\214\70", "\38\229\31\166\35\216\156")]=v7("\178\120\208\240\170\114", "\151\198\23\183"),[v7("\7\66\56\208\52\179\216", "\172\99\39\94\177\65\223")]=v24.AutoJoinDailyChallenge,[v7("\68\29\53\117\171\65\172\74", "\33\39\124\89\25\201\32\207")]=function(v1956)
+				v32(v7("\9\39\67\39\148\39\59\89\12\191\33\62\78\11\182\41\62\91\45\176\47\55", "\222\72\82\55\72"), v1956);
+			end});
+			v702:toggle({[v7("\55\94\200\221", "\184\89\63\165")]=v7("\45\205\108\3\237\245\170\185\8\152\85\13\185\208\171\247\40\217\113\0\180\147\128\191\13\212\116\9\163\212\166", "\215\108\184\24\108\205\179\195"),[v7("\245\108\22\175", "\37\129\21\102\202")]=v7("\229\51\126\170\253\57", "\205\145\92\25"),[v7("\91\54\179\234\74\63\161", "\139\63\83\213")]=v24.AutoFindMatchDailyChallenge,[v7("\28\21\32\48\118\227\23\20", "\116\127\116\76\92\20\130")]=function(v1957)
+				v32(v7("\169\215\40\28\157\78\134\198\17\18\175\68\128\230\61\26\183\94\171\202\61\31\183\66\134\197\57", "\39\232\162\92\115\219"), v1957);
+				if not v1957 then
+					v122();
+				end
+			end});
+			break;
+		end
+		if (v697 == 0) then
+			local v1749 = 0;
+			while true do
+				if (v1749 == (0 + 0)) then
+					v698 = v150:column({[v7("\107\56\151\24", "\155\24\81\237\125\195\18")]=1});
+					v699 = v150:column({[v7("\27\42\82\83", "\48\104\67\40\54\216\38")]=(1 + 0)});
+					v1749 = 1 + 0;
+				end
+				if (v1749 == (1 + 0)) then
+					v700 = v698:section({[v7("\9\82\52\240", "\149\103\51\89")]=v7("\79\68\15\136", "\236\29\37\102"),[v7("\190\32\141\61", "\55\215\67\226\83")]=v7("\247\125\213\133\167\197\224\107\196\128\238\153\170\40\157\211\230\129\183\44\158\215\227", "\182\133\31\173\228\212"),[v7("\47\7\226\181\199\67\181", "\191\75\98\132\212\178\47\193")]=true,[v7("\172\78\242\226", "\159\223\39\136\135\104\170")]=(0.52 + 0)});
+					v697 = 1 + 0;
+					break;
+				end
+			end
+		end
+		if ((5 - 1) == v697) then
+			v702:dropdown({[v7("\170\126\66\3", "\102\196\31\47")]=v7("\221\51\39\121\80\70\190", "\51\143\86\80\24\34\34\205"),[v7("\128\15\241\232\88", "\224\233\123\148\133\43\69")]={v7("\246\52\117\193\152\120\88\143\206", "\225\183\88\25"),v7("\38\244\190\33", "\96\97\145\211\82\221"),v7("\246\253\85\160\76\99\192\228\90\179\2\69\214", "\49\165\137\52\210\108"),v7("\122\52\28\191\90\102\47\179\92\41\17\186\93", "\214\46\70\125"),v7("\229\215\138\174\150\241\142\168\217\207\135\169", "\218\182\163\235"),v7("\138\45\161\44", "\77\205\66\205\72")},[v7("\161\190\249\95\150\193\70", "\85\197\219\159\62\227\173\50")]=v24.ChallengeRewardFilter,[v7("\57\255\47\27\62", "\51\78\150\75\111\86\175")]=(942 - (289 + 493)),[v7("\63\140\199\73\62\140\200\78", "\37\92\237\171")]=function(v1958)
+				local v1959 = 0 + 0;
+				while true do
+					if (v1959 == (0 - 0)) then
+						v24.ChallengeRewardFilter = v1958;
+						v26();
+						break;
+					end
+				end
+			end});
+			v702:toggle({[v7("\67\216\199\6", "\46\45\185\170\99")]=v7("\50\222\219\184\182\57\196\198\185\182\48\195\206\187\250\22\197\200\178", "\150\115\171\175\215"),[v7("\41\156\202\160", "\68\93\229\186\197\225\111\35")]=v7("\239\64\15\235\129\238", "\22\155\47\104\140\237\139"),[v7("\228\45\83\122\210\209\88", "\44\128\72\53\27\167\189")]=v24.AutoJoinChallenge,[v7("\236\16\230\54\20\236\206\233", "\130\143\113\138\90\118\141\173")]=function(v1960)
+				v32(v7("\167\194\40\34\34\84\143\217\31\37\9\87\138\210\50\42\13", "\59\230\183\92\77\104"), v1960);
+			end});
+			v702:toggle({[v7("\231\70\237\252", "\151\137\39\128\153\81")]=v7("\91\216\250\81\191\218\81\34\126\141\195\95\235\255\80\108\89\197\239\82\243\249\86\43\127", "\76\26\173\142\62\159\156\56"),[v7("\161\43\18\142", "\55\213\82\98\235\135\99")]=v7("\4\176\6\113\173\120", "\29\112\223\97\22\193"),[v7("\67\205\234\30\184\75\220", "\205\39\168\140\127")]=v24.AutoFindMatchChallenge,[v7("\42\32\212\89\29\44\42\42", "\77\73\65\184\53\127")]=function(v1961)
+				v32(v7("\30\104\188\125\20\249\184\59\80\169\102\49\248\149\55\124\164\126\55\254\177\58", "\214\95\29\200\18\82\144"), v1961);
+				if not v1961 then
+					v122();
+				end
+			end});
+			v697 = 5;
+		end
+		if (v697 == 1) then
+			v700:dropdown({[v7("\85\246\64\254", "\233\59\151\45\155\40\127")]=v7("\148\1\247\64", "\36\198\96\158"),[v7("\45\219\15\12\109", "\103\68\175\106\97\30\159\119")]={v7("\4\248\14\19\34\227\8\65\21\236\21\5", "\97\71\141\124"),v7("\133\208\181\54\37\166\216\160\59\113\159\203\179\55\63", "\81\203\185\210\94"),v7("\230\217\32\161\81\86\240\51\216\204\53", "\112\177\184\76\205\52\50\208"),v7("\138\221\92\169\224\143\213\94\161\161\190\217", "\192\217\188\50\205"),v7("\35\88\66\44\216\0\13\117\48\222\28", "\170\101\45\54\89"),"Future City (Tyrant's Invasion)",v7("\128\189\18\70\166\172\64\115\166\187\20\92\181\169\12", "\53\195\200\96"),v7("\158\92\61\42\135\74\237\109\50\57\140\75\185", "\46\205\61\94\88\226"),v7("\58\208\11\162\7\195\28\227\61\203\14\173", "\195\105\164\121"),v7("\111\173\211\93\14\171\116\176\216\74\12\254\72", "\139\60\217\188\47\99"),v7("\43\243\100\181\61\17\4\250\116\250\27\88\66\208\121\241\24\17\13\245\100\188", "\120\106\157\16\149\118"),v7("\70\202\35\181\187\189\140\87\214\62\162\254\241\248\124\218\106\150\187\183\205\119\218\99", "\172\20\191\74\219\222\217")},[v7("\55\198\129\22\96\63\215", "\21\83\163\231\119")]=v24.RaidWorld,[v7("\42\29\245\52\183", "\187\93\116\145\64\223\144\231")]=160,[v7("\118\17\15\186\81\45\118\27", "\76\21\112\99\214\51")]=function(v1962)
+				local v1963 = 0 + 0;
+				while true do
+					if (v1963 == (801 - (731 + 70))) then
+						v24.RaidWorld = v1962;
+						v26();
+						break;
+					end
+				end
+			end});
+			v700:dropdown({[v7("\248\183\198\32", "\205\150\214\171\69\234")]=v7("\246\234\243", "\46\183\137\135"),[v7("\255\93\80\180\69", "\54\150\41\53\217")]={v7("\92\91\25\68\181", "\171\29\56\109\100\132"),v7("\212\225\49\146\167", "\178\149\130\69"),v7("\82\79\240\84\47", "\138\19\44\132\116\28"),v7("\238\221\45\154\155", "\186\175\190\89"),v7("\228\4\33\224\253", "\200\165\103\85\192")},[v7("\170\224\181\90\80\58\27", "\50\206\133\211\59\37\86\111")]=v24.RaidAct,[v7("\214\232\1\11\10", "\98\161\129\101\127")]=(380 - (180 + 40)),[v7("\142\229\67\204\80\124\71\39", "\76\237\132\47\160\50\29\36")]=function(v1964)
+				v24.RaidAct = v1964;
+				v26();
+			end});
+			v700:toggle({[v7("\181\211\189\222", "\187\219\178\208")]=v7("\109\198\148\209\64\231\67\218\142\158\50\204\69\215", "\173\44\179\224\190\96"),[v7("\209\188\102\88", "\227\165\197\22\61")]=v7("\216\70\89\175\192\76", "\200\172\41\62"),[v7("\9\233\192\176\189\1\248", "\200\109\140\166\209")]=v24.AutoJoinRaid,[v7("\193\68\213\92\192\68\218\91", "\48\162\37\185")]=function(v1966)
+				local v1967 = 0;
+				while true do
+					if (v1967 == (0 - 0)) then
+						v24.AutoJoinRaid = v1966;
+						v26();
+						break;
+					end
+				end
+			end});
+			v697 = 180 - (11 + 167);
+		end
+	end
+end
+local v151, v152 = v148:tab({[v7("\36\246\83\64", "\37\74\151\62")]=v7("\155\47\55\41\22\18\182\59\58", "\66\218\90\67\70\54"),[v7("\226\42\202\91", "\53\150\75\168\40\208\72\229")]={v7("\198\172\84\130\111\215\181\65\148", "\79\135\217\32\237"),v7("\133\14\233\90\79\29\181\20\244\71\1\41\163", "\78\208\96\128\46\111")}});
+getgenv().AJ_HUB_UNIT_SETTINGS_TAB = v152;
+local v154 = {};
+getgenv().AJ_HUB_UPDATE_CARDS = function()
+	for v998, v999 in pairs(v154) do
+		pcall(v999);
+	end
+end;
+do
+	local v703 = 0 - 0;
+	local v704;
+	local v705;
+	local v706;
+	local v707;
+	local v708;
+	while true do
+		if (v703 == (17 - 12)) then
+			v708:toggle({[v7("\170\34\178\192", "\213\196\67\223\165")]=v7("\81\93\170\251\77\82\93\184\242\77\71\77\176\240\20", "\109\16\40\222\148"),[v7("\193\204\79\180", "\209\181\181\63")]=v7("\228\63\240\191\204\72", "\45\144\80\151\216\160"),[v7("\32\56\188\36\75\40\41", "\62\68\93\218\69")]=v24.AutoBuffWendy,[v7("\28\26\63\201\62\62\17\20", "\114\127\123\83\165\92\95")]=function(v1968)
+				v24.AutoBuffWendy = v1968;
+			end});
+			v708:toggle({[v7("\200\220\243\182", "\211\166\189\158")]=v7("\28\180\204\50\114\206\40\167\222\125\17\227\48\172\217\51\54\233\47", "\140\93\193\184\93\82"),[v7("\103\183\226\248", "\143\19\206\146\157\235")]=v7("\196\30\143\187\220\20", "\220\176\113\232"),[v7("\18\30\67\239\251\212\2", "\184\118\123\37\142\142")]=v24.AutoBuffCommander,[v7("\174\227\43\4\175\227\36\3", "\104\205\130\71")]=function(v1970)
+				v24.AutoBuffCommander = v1970;
+			end});
+			break;
+		end
+		if (v703 == (2 + 2)) then
+			v707:toggle({[v7("\78\95\239\244", "\84\32\62\130\145\228\37\107")]=v7("\0\145\93\188\6\120\215\57\144\9\129\73\89\223", "\178\65\228\41\211\38\54"),[v7("\96\190\17\218", "\94\20\199\97\191\111\68\58")]=v7("\197\140\231\16\70\213", "\89\177\227\128\119\42\176"),[v7("\24\177\248\94\104\53\27", "\111\124\212\158\63\29\89")]=v24.AutoNextRoom,[v7("\88\94\57\39\58\90\92\62", "\88\59\63\85\75")]=function(v1972)
+				v24.AutoNextRoom = v1972;
+			end});
+			v707:toggle({[v7("\188\208\224\130", "\100\210\177\141\231\233")]=v7("\223\157\35\177\186\204\251\144\35\254\202\237\236\156\54\178", "\130\158\232\87\222\154"),[v7("\58\50\86\38", "\117\78\75\38\67")]=v7("\236\63\91\73\24\253", "\116\152\80\60\46"),[v7("\80\18\34\117\166\9\202", "\126\52\119\68\20\211\101\190")]=v24.AutoNextPortal,[v7("\222\185\93\216\67\220\187\90", "\33\189\216\49\180")]=function(v1974)
+				v24.AutoNextPortal = v1974;
+			end});
+			v707:toggle({[v7("\162\187\58\42", "\219\204\218\87\79")]=v7("\244\111\169\70\1\169\208\123\171\76", "\229\181\26\221\41\33"),[v7("\206\232\244\11", "\37\186\145\132\110\18\123\76")]=v7("\151\30\239\14\143\20", "\105\227\113\136"),[v7("\7\27\7\130\9\129\243", "\20\99\126\97\227\124\237\135")]=v24.AutoLeave,[v7("\176\172\232\235\15\13\7\184", "\100\211\205\132\135\109\108")]=function(v1976)
+				v24.AutoLeave = v1976;
+			end});
+			v708 = v706:section({[v7("\175\21\196\245", "\217\193\116\169\144")]=v7("\59\91\47\120\163", "\72\121\46\73\30\208"),[v7("\186\215\251\142", "\228\211\180\148\224\97")]=v7("\65\240\167\234\99\255\86\230\182\239\42\163\28\165\239\188\34\187\1\163\231\190\37", "\140\51\146\223\139\16"),[v7("\235\25\132\172\234\227\8", "\159\143\124\226\205")]=true,[v7("\105\244\94\84", "\37\26\157\36\49\113\211")]=(0.32 - 0)});
+			v703 = 12 - 7;
+		end
+		if (v703 == (1 + 1)) then
+			v705:toggle({[v7("\70\22\40\85", "\196\40\119\69\48\95")]=v7("\109\201\84\4\158\110\205\90\16\219\83\196\85\7\158\121\211\82\23", "\190\62\161\59\115"),[v7("\235\39\32\94", "\84\159\94\80\59\106\185")]=v7("\75\13\77\34\137\90", "\229\63\98\42\69"),[v7("\219\30\89\79\40\250\194", "\182\191\123\63\46\93\150")]=v24.ShowPlaceArea,[v7("\237\114\43\92\174\17\166\29", "\118\142\19\71\48\204\112\197")]=function(v1978)
+				local v1979 = 0 - 0;
+				while true do
+					if (v1979 == (888 - (304 + 584))) then
+						v24.ShowPlaceArea = v1978;
+						if not v61() then
+							v90();
+						else
+							local v3083 = 0;
+							local v3084;
+							while true do
+								if (v3083 == (0 - 0)) then
+									v3084 = v19:FindFirstChild(v7("\96\106\103\27\170\35\125\116\123\45\145\3\94\71\106\54\139\18", "\118\63\43\45\68\226")) or v9:FindFirstChild(v7("\126\194\102\147\159\113\130\126\213\69\191\162\69\172\102\241\69\168", "\192\33\131\44\204\215\36"));
+									if v3084 then
+										v3084:Destroy();
+									end
+									break;
 								end
-								v2512 = (v2510 and (v2510.uuid or v2510.name)) or (v7("\30\195\251\205\251\59", "\100\123\174\139\185\130") .. v998);
-								v2508 = 530 - (313 + 214);
 							end
-							if (v2508 == (544 - (363 + 181))) then
-								v2509 = cachedEq or v81(false);
-								v2510 = nil;
-								v2508 = 1 + 0;
+						end
+						break;
+					end
+				end
+			end});
+			v705:toggle({[v7("\240\238\128\188", "\217\158\143\237")]=v7("\79\78\77\46\25\240\20\100\82\2\9\85\223\18\121\75\71\55\77", "\113\28\38\34\89\57\190"),[v7("\61\162\161\85", "\226\73\219\209\48")]=v7("\172\70\246\230\166\219", "\218\216\41\145\129\202\190"),[v7("\172\28\77\237\12\113\188", "\29\200\121\43\140\121")]=v24.ShowNextPlacement,[v7("\227\44\28\72\80\8\74\55", "\92\128\77\112\36\50\105\41")]=function(v1980)
+				local v1981 = 0;
+				while true do
+					if ((0 - 0) == v1981) then
+						v24.ShowNextPlacement = v1980;
+						if not v61() then
+							v91();
+						else
+							local v3085 = v19:FindFirstChild(v7("\68\117\36\157\83\97\44\157\92\92\1\177\111\100\28\167\109\93\11\181", "\194\27\52\110")) or v9:FindFirstChild(v7("\202\9\230\17\112\106\253\154\210\32\195\61\76\111\205\160\227\33\201\57", "\197\149\72\172\78\56\63\191"));
+							if v3085 then
+								v3085:Destroy();
+							end
+						end
+						break;
+					end
+				end
+			end});
+			v706 = v151:column({[v7("\65\137\110\120", "\29\50\224\20")]=(1 - 0)});
+			v707 = v706:section({[v7("\248\95\247\48", "\75\150\62\154\85\100\149\183")]=v7("\81\55\212\252\104", "\112\28\118\128\191\32\189"),[v7("\9\237\42\44", "\166\96\142\69\66\64")]=v7("\34\196\242\18\76\61\53\210\227\23\5\97\127\145\186\68\13\121\98\150\189\65\13", "\78\80\166\138\115\63"),[v7("\74\12\173\17\68\66\29", "\49\46\105\203\112")]=true,[v7("\190\112\60\120", "\110\205\25\70\29\229")]=(0.68 + 0)});
+			v703 = 3;
+		end
+		if (v703 == (0 - 0)) then
+			v704 = v151:column({[v7("\34\252\95\28", "\231\81\149\37\121\138\136\52")]=(1662 - (997 + 664))});
+			v705 = v704:section({[v7("\91\118\49\132", "\21\53\23\92\225")]=v7("\218\21\90\128\172\174\212\33\254\89\29\195\156\179\214\61\235\29\94\144", "\79\138\121\59\227\201\195\177"),[v7("\4\212\243\25", "\45\109\183\156\119\208\179")]=v7("\39\255\144\237\38\238\141\248\60\249\210\163\122\170\216\187\103\170\217\185\102\172\223", "\140\85\157\232"),[v7("\3\206\11\114\18\199\25", "\19\103\171\109")]=true,[v7("\242\218\99\123", "\30\129\179\25")]=(1 + 0)});
+			v705:toggle({[v7("\31\241\169\114", "\134\113\144\196\23\224\121")]=v7("\204\173\145\92\173\136\137\82\238\189\197\102\227\177\145\64", "\51\141\216\229"),[v7("\174\210\45\164", "\193\218\171\93")]=v7("\12\120\52\183\65\29", "\45\120\23\83\208"),[v7("\70\24\227\254\243\78\9", "\134\34\125\133\159")]=v24.AutoPlaceEnabled,[v7("\134\69\215\44\88\181\92\142", "\63\229\36\187\64\58\212")]=function(v1982)
+				local v1983 = 0 + 0;
+				while true do
+					if (v1983 == (0 + 0)) then
+						v24.AutoPlaceEnabled = v1982;
+						if v1982 then
+							local v3086 = 984 - (231 + 753);
+							local v3087;
+							while true do
+								if (v3086 == (0 - 0)) then
+									v3087 = 1578 - (615 + 963);
+									while true do
+										if (v3087 == (0 + 0)) then
+											v87();
+											v90();
+											break;
+										end
+									end
+									break;
+								end
+							end
+						end
+						break;
+					end
+				end
+			end});
+			v705:slider({[v7("\75\67\60\201", "\172\37\34\81")]=v7("\121\110\47\183\161\58\84\122\56\189\161\58\89\111\51", "\106\56\27\91\216\129"),[v7("\44\255\224", "\174\65\150\142\153\66")]=(0 + 0),[v7("\32\131\11", "\99\77\226\115\225\99")]=(174 - 74),[v7("\137\191\58\244\221\40\129\189", "\94\224\209\78\145\175")]=(1805 - (863 + 941)),[v7("\245\114\3\210\189\26\96", "\80\145\23\101\179\200\118\20")]=v24.PathPercentage,[v7("\225\97\84\112\133\204", "\180\146\20\50\22\236")]="%",[v7("\81\138\245\236\225\83\136\242", "\131\50\235\153\128")]=function(v1984)
+				local v1985 = 0;
+				local v1986;
+				while true do
+					if (v1985 == (838 - (461 + 377))) then
+						v1986 = 0 + 0;
+						while true do
+							if (v1986 == (0 + 0)) then
+								v24.PathPercentage = v1984;
+								v87();
+								v1986 = 1273 - (455 + 817);
+							end
+							if (v1986 == (1 + 0)) then
+								v90();
+								for v3307, v3308 in pairs(v154) do
+									pcall(v3308);
+								end
+								break;
+							end
+						end
+						break;
+					end
+				end
+			end});
+			v703 = 1;
+		end
+		if (v703 == (833 - (123 + 709))) then
+			v705:toggle({[v7("\241\78\182\121", "\184\159\47\219\28\28\70")]=v7("\7\211\199\126\50\159\231\115\46\200\206\120\37\218", "\29\87\191\166"),[v7("\251\65\163\13", "\158\143\56\211\104\40")]=v7("\74\161\186\39\172\91", "\192\62\206\221\64"),[v7("\245\59\74\242\42\253\42", "\95\145\94\44\147")]=v24.PlaceAnywhere,[v7("\226\167\9\63\227\167\6\56", "\83\129\198\101")]=function(v1987)
+				local v1988 = 0 + 0;
+				while true do
+					if (v1988 == (1694 - (618 + 1076))) then
+						v24.PlaceAnywhere = v1987;
+						v87();
+						v1988 = 1 - 0;
+					end
+					if (v1988 == (4 - 3)) then
+						v90();
+						break;
+					end
+				end
+			end});
+			v705:toggle({[v7("\213\11\209\55", "\198\187\106\188\82")]=v7("\3\15\226\50\157\15\59\37\8\247\57\216\122\30\44\19\226\46", "\75\66\122\150\93\189\90"),[v7("\244\75\155\236", "\147\128\50\235\137")]=v7("\222\203\205\196\164\186", "\64\170\164\170\163\200\223"),[v7("\6\191\163\91\149\112\221", "\169\98\218\197\58\224\28")]=v24.AutoUpgradeEnabled,[v7("\243\28\233\255\200\213\200\251", "\171\144\125\133\147\170\180")]=function(v1989)
+				v24.AutoUpgradeEnabled = v1989;
+			end});
+			v705:toggle({[v7("\175\114\160\117", "\17\193\19\205\16\147\49")]=v7("\199\120\74\84\218\108\215\122\88\82\142\14\245\121\74\72\205\37\250\114", "\76\148\21\43\38\174"),[v7("\193\254\247\29", "\120\181\135\135")]=v7("\242\252\0\206\234\246", "\169\134\147\103"),[v7("\166\234\27\117\144\174\251", "\229\194\143\125\20")]=(v24.SmartCostBalancing ~= false),[v7("\135\178\196\239\134\178\203\232", "\131\228\211\168")]=function(v1991)
+				v24.SmartCostBalancing = v1991;
+			end});
+			v705:toggle({[v7("\76\208\72\36", "\196\34\177\37\65\102\136\148")]=v7("\197\158\3\122\157\78\64\186\164\170\21\124\209\114\71\182\225\152", "\223\132\235\119\21\189\27\51"),[v7("\13\71\233\249", "\36\121\62\153\156\24\191")]=v7("\60\7\231\82\45\114", "\23\72\104\128\53\65"),[v7("\197\198\162\38\212\207\176", "\71\161\163\196")]=v24.AutoAbilitiesEnabled,[v7("\48\138\128\23\45\181\48\128", "\212\83\235\236\123\79")]=function(v1993)
+				v24.AutoAbilitiesEnabled = v1993;
+			end});
+			v703 = 2 + 0;
+		end
+		if (v703 == (947 - (657 + 287))) then
+			v707:toggle({[v7("\171\196\3\202", "\159\197\165\110\175\76\149\122")]=v7("\249\108\17\209\123\32\204\120\23\202", "\115\184\25\101\190\91"),[v7("\111\42\30\201", "\172\27\83\110")]=v7("\35\73\134\191\59\67", "\216\87\38\225"),[v7("\115\162\49\54\66\39\77", "\57\23\199\87\87\55\75")]=v24.AutoStart,[v7("\20\249\36\165\217\22\251\35", "\187\119\152\72\201")]=function(v1995)
+				v24.AutoStart = v1995;
+			end});
+			v707:toggle({[v7("\175\241\197\253", "\152\193\144\168")]=v7("\91\182\87\167\122\104\169\115\179\3\159\59\77\167", "\194\26\195\35\200\90\59"),[v7("\215\205\13\234", "\134\163\180\125\143\122\33")]=v7("\213\39\76\234\205\45", "\141\161\72\43"),[v7("\143\118\180\8\6\215\159", "\187\235\19\210\105\115")]=v24.AutoWaveSkip,[v7("\167\62\52\241\78\165\60\51", "\44\196\95\88\157")]=function(v1997)
+				v24.AutoWaveSkip = v1997;
+			end});
+			v707:toggle({[v7("\253\5\143\137", "\47\147\100\226\236\234")]=v7("\242\198\98\1\147\225\115\30\223\210\111", "\110\179\179\22"),[v7("\207\206\83\127", "\25\187\183\35\26\48\87\140")]=v7("\105\208\89\113\113\218", "\22\29\191\62"),[v7("\140\255\201\53\25\184\156", "\212\232\154\175\84\108")]=v24.AutoReplay,[v7("\57\29\192\245\193\45\143\65", "\42\90\124\172\153\163\76\236")]=function(v1999)
+				v24.AutoReplay = v1999;
+			end});
+			v707:toggle({[v7("\38\139\181\125", "\24\72\234\216")]=v7("\55\108\205\81\133\56\124\193\74\133\37\109\214\76\220", "\165\118\25\185\62"),[v7("\17\80\245\69", "\32\101\41\133")]=v7("\248\74\85\166\127\214", "\179\140\37\50\193\19"),[v7("\76\184\23\42\16\244\92", "\152\40\221\113\75\101")]=v24.AutoNextStory,[v7("\120\236\183\128\161\26\120\230", "\123\27\141\219\236\195")]=function(v2001)
+				v24.AutoNextStory = v2001;
+			end});
+			v703 = 4;
+		end
+	end
+end
+do
+	v24.PlacementOrder = v24.PlacementOrder or {(1852 - (1256 + 595)),(76 - (59 + 15)),3,(2 + 2),(12 - 7),(22 - 16)};
+	v24.UpgradeOrder = v24.UpgradeOrder or {1,(193 - (127 + 64)),(4 - 1),(3 + 1),(1594 - (1039 + 550)),(1219 - (103 + 1110))};
+	v24.UseCustomPlacementOrder = true;
+	v24.UseCustomUpgradeOrder = true;
+	local v713 = v152:column({[v7("\149\27\94\128", "\129\230\114\36\229\107\121\16")]=(1115 - (540 + 574))});
+	local v714 = v713:section({[v7("\78\14\243\179", "\196\32\111\158\214\163\167")]=v7("\8\3\217\25\61\2\201\20\109\39\194\25\57\1", "\112\77\114\172"),[v7("\132\67\39\44", "\212\237\32\72\66")]=v7("\165\237\100\45\164\252\121\56\190\235\38\99\248\184\44\123\229\182\36\116\231\188\43", "\76\215\143\28"),[v7("\69\192\239\65\145\57\145", "\229\33\165\137\32\228\85")]=true,[v7("\164\139\31\121", "\232\215\226\101\28\116\165\216")]=(3 - 2)});
+	local v715 = v714.items[v7("\9\41\166\86\37\2\49\176", "\64\108\69\195\59")];
+	local function v716(v1000)
+		local v1001 = 0;
+		local v1002;
+		local v1003;
+		local v1004;
+		local v1005;
+		local v1006;
+		local v1007;
+		local v1008;
+		local v1009;
+		local v1010;
+		local v1011;
+		while true do
+			if (v1001 == (1397 - (1283 + 111))) then
+				v1007 = Instance.new(v7("\52\14\222\219\18\8\201\216\36\21\218\193\7", "\172\98\103\187"));
+				v1007.Size = UDim2.new(1, 352 - (204 + 148), 1 - 0, 0);
+				v1007.BackgroundTransparency = 1 + 0;
+				v1001 = 2 + 2;
+			end
+			if (v1001 == 5) then
+				v1009 = v1006:Clone();
+				v1009.Parent = v1008;
+				v1010 = Instance.new(v7("\174\184\246\172\159\184", "\201\237\217\155"), v1007);
+				v1001 = 556 - (58 + 492);
+			end
+			if (v1001 == 0) then
+				v1002 = v17.PlayerGui:FindFirstChild(v7("\1\99\205\79\76\45\102\194\81\86\1", "\34\114\19\172\56"));
+				if (not v1002 or not v1002:FindFirstChild(v7("\226\44\101\199\194", "\177\174\69\19\162")) or not v1002.Lives:FindFirstChild(v7("\170\92\73\23\131", "\196\236\46\40\122\230\122"))) then
+					return nil;
+				end
+				v1003 = v1002.Lives.Frame:FindFirstChild(v7("\138\249\125\181\248", "\98\223\151\20\193\139\80"));
+				v1001 = 1;
+			end
+			if (v1001 == (4 - 3)) then
+				if not v1003 then
+					return nil;
+				end
+				v1004 = v1003:FindFirstChild(tostring(v1000));
+				if not v1004 then
+					return nil;
+				end
+				v1001 = 2;
+			end
+			if (v1001 == 2) then
+				v1005 = v1004:FindFirstChildWhichIsA(v7("\101\170\150\214\174\223\73\195\87\169", "\167\50\197\228\186\202\146\38"), true);
+				v1006 = v1005 and v1005:FindFirstChildWhichIsA(v7("\97\199\34\34\64", "\71\44\168\70"));
+				if not v1006 then
+					return nil;
+				end
+				v1001 = 5 - 2;
+			end
+			if (v1001 == (18 - 14)) then
+				v1007.BorderSizePixel = 0;
+				v1007.Active = false;
+				v1008 = Instance.new(v7("\16\72\146\32\60\59\160\189\34\75", "\217\71\39\224\76\88\118\207"), v1007);
+				v1001 = 5;
+			end
+			if (v1001 == (5 + 1)) then
+				v1010.FieldOfView = 36;
+				v1011 = v1009:FindFirstChild(v7("\95\70\90\200", "\203\23\35\59\172\218\232\105")) or v1009:FindFirstChild(v7("\36\168\171\126\42\172\161\127", "\27\66\201\192")) or v1009.PrimaryPart;
+				if v1011 then
+					local v2483 = 0;
+					local v2484;
+					local v2485;
+					while true do
+						if (v2483 == 1) then
+							v1010.CFrame = CFrame.new(v2485, v1011.Position);
+							break;
+						end
+						if (v2483 == (0 + 0)) then
+							v2484 = v1011.CFrame.LookVector;
+							v2485 = v1011.Position + (v2484 * (785.3 - (531 + 252))) + Vector3.new(0 + 0, 0.15 - 0, 0);
+							v2483 = 1;
+						end
+					end
+				else
+					v1010.CFrame = CFrame.new(Vector3.new(1786 - (928 + 858), 0.25, 3.4 - 1), Vector3.new(772 - (108 + 664), 0 - 0, 0 - 0));
+				end
+				v1001 = 7;
+			end
+			if (v1001 == (5 + 2)) then
+				v1007.CurrentCamera = v1010;
+				return v1007;
+			end
+		end
+	end
+	local v717 = v83();
+	local v718 = {};
+	for v1012 = 1, 6 do
+		v718[v1012] = v7("\17\41\244\97\138", "\58\66\69\155\21\170") .. v1012;
+	end
+	for v1014, v1015 in ipairs(v717) do
+		if (v1015.slot and v1015.name) then
+			v718[v1015.slot] = v1015.name;
+		end
+	end
+	table.clear(v154);
+	local v719 = {};
+	local v720 = nil;
+	local function v721()
+		if v720 then
+			local v1752 = 835 - (732 + 103);
+			local v1753;
+			while true do
+				if ((629 - (351 + 277)) == v1752) then
+					pcall(v1753);
+					break;
+				end
+				if ((680 - (538 + 142)) == v1752) then
+					local v2487 = 0 - 0;
+					while true do
+						if (v2487 == (1827 - (189 + 1638))) then
+							v1753 = v720;
+							v720 = nil;
+							v2487 = 2 - 1;
+						end
+						if (v2487 == (1224 - (348 + 875))) then
+							v1752 = 1;
+							break;
+						end
+					end
+				end
+			end
+		end
+	end
+	pcall(function()
+		if (v715 and v715:IsA(v7("\220\92\251\244\240\227\86\231\252\218\253\94\228\254", "\156\143\63\137\155"))) then
+			v715:GetPropertyChangedSignal(v7("\49\42\115\42\137\1\27\114\47\129\6\34\114\50", "\232\114\75\29\92")):Connect(v721);
+		end
+	end);
+	local function v722(v1016, v1017)
+		local v1018 = table.find(v24.PlacementOrder, v1016) or v1016;
+		if (v1018 == v1017) then
+			return;
+		end
+		local v1019 = v24.PlacementOrder[v1017];
+		v24.PlacementOrder[v1017] = v1016;
+		v24.PlacementOrder[v1018] = v1019;
+		v24.UseCustomPlacementOrder = true;
+		for v1461, v1462 in pairs(v154) do
+			v1462();
+		end
+		v29();
+	end
+	getgenv().AJ_HUB_SET_PLACE_PRIORITY = v722;
+	local function v724(v1023, v1024)
+		local v1025 = 1216 - (1202 + 14);
+		local v1026;
+		local v1027;
+		local v1028;
+		while true do
+			if (v1025 == 0) then
+				local v2010 = 635 - (619 + 16);
+				while true do
+					if (v2010 == (679 - (445 + 234))) then
+						v1026 = 0 - 0;
+						v1027 = nil;
+						v2010 = 502 - (295 + 206);
+					end
+					if (v2010 == (1 + 0)) then
+						v1025 = 2 - 1;
+						break;
+					end
+				end
+			end
+			if (v1025 == (1 + 0)) then
+				v1028 = nil;
+				while true do
+					if (v1026 == (3 + 0)) then
+						for v2957, v2958 in pairs(v154) do
+							v2958();
+						end
+						v29();
+						break;
+					end
+					if (v1026 == (1 + 0)) then
+						v1028 = v24.UpgradeOrder[v1024];
+						v24.UpgradeOrder[v1024] = v1023;
+						v1026 = 2 + 0;
+					end
+					if (v1026 == 2) then
+						v24.UpgradeOrder[v1027] = v1028;
+						v24.UseCustomUpgradeOrder = true;
+						v1026 = 3;
+					end
+					if (v1026 == 0) then
+						v1027 = table.find(v24.UpgradeOrder, v1023) or v1023;
+						if (v1027 == v1024) then
+							return;
+						end
+						v1026 = 1;
+					end
+				end
+				break;
+			end
+		end
+	end
+	getgenv().AJ_HUB_SET_UPG_PRIORITY = v724;
+	for v1029 = 1, 153 - (84 + 63) do
+		local v1030 = v24.UnitCustomSettings[v1029] or {};
+		local v1031 = v718[v1029] or (v7("\58\93\246\66\137", "\170\105\49\153\54\169") .. v1029);
+		local v1032 = Instance.new(v7("\57\76\122\195\20", "\212\127\62\27\174\113\134\232"));
+		v1032.Name = v7("\198\15\186\170\213\95\169\247\62", "\219\147\97\211\222\150\62") .. v1029;
+		v1032.Size = UDim2.new(1373 - (913 + 459), 0, 0, 834 - (700 + 82));
+		v1032.BackgroundColor3 = Color3.fromRGB(24, 7 + 17, 26 + 2);
+		v1032.ClipsDescendants = true;
+		Instance.new(v7("\245\105\213\130\151\191\197\82", "\209\160\32\150\237\229"), v1032).CornerRadius = UDim.new(443 - (362 + 81), 7);
+		local v1038 = Instance.new(v7("\134\19\118\86\106\248\135\182", "\236\211\90\37\34\24\151"), v1032);
+		v1038.Color = Color3.fromRGB(221 - (133 + 46), 42, 102 - 52);
+		v1038.Thickness = 1;
+		v1032.LayoutOrder = table.find(v24.PlacementOrder, v1029) or v1029;
+		v1032.Parent = v715;
+		local v1043 = Instance.new(v7("\96\161\171\148\118\177\167\148\91\170", "\224\52\196\211"));
+		v1043.Name = v7("\55\66\68\61\54\241", "\131\127\39\37\89\83");
+		v1043.Size = UDim2.new(1526 - (1219 + 306), 0, 1957 - (1012 + 945), 809 - (481 + 276));
+		v1043.BackgroundTransparency = 2 - 1;
+		v1043.Text = "";
+		v1043.ZIndex = 70 - 45;
+		v1043.Active = true;
+		v1043.Parent = v1032;
+		local v1051 = Instance.new(v7("\239\5\238\78\95", "\165\169\119\143\35\58"));
+		v1051.Size = UDim2.new(0, 40, 123 - (49 + 74), 10 + 30);
+		v1051.Position = UDim2.new(0 - 0, 8, 0.5, -(77 - 57));
+		v1051.BackgroundColor3 = Color3.fromRGB(41 - 25, 11 + 5, 73 - 53);
+		v1051.Active = false;
+		Instance.new(v7("\214\209\11\186\250\31\211\241", "\182\131\152\72\213\136\113"), v1051).CornerRadius = UDim.new(0 - 0, 20 - 13);
+		local v1057 = Instance.new(v7("\115\57\134\188\84\31\190\173", "\200\38\112\213"), v1051);
+		v1057.Color = Color3.fromRGB(146 - 96, 50, 10 + 52);
+		v1051.Parent = v1043;
+		local v1060 = Instance.new(v7("\208\10\215\94\253\222\54\225\3", "\84\132\111\175\42\177\191"));
+		v1060.Size = UDim2.new(2 - 1, 0, 1 + 0, 0 - 0);
+		v1060.BackgroundTransparency = 1;
+		v1060.Font = Enum.Font.GothamBold;
+		v1060.TextSize = 34 - 21;
+		v1060.TextColor3 = Color3.fromRGB(165 + 18, 9 + 167, 475 - 270);
+		v1060.Text = tostring(v1029);
+		v1060.Active = false;
+		v1060.Parent = v1051;
+		pcall(function()
+			local v1463 = v716(v1029);
+			if v1463 then
+				v1463.Active = false;
+				v1060.Visible = false;
+				v1463.Parent = v1051;
+			end
+		end);
+		local v1070 = Instance.new(v7("\220\140\53\221\35\68\49\7\228", "\98\136\233\77\169\111\37\83"));
+		v1070.Size = UDim2.new(0 - 0, 220, 1728 - (17 + 1711), 55 - 37);
+		v1070.Position = UDim2.new(113 - (14 + 99), 35 + 21, 0 - 0, 318 - (287 + 23));
+		v1070.BackgroundTransparency = 2 - 1;
+		v1070.Font = Enum.Font.GothamBold;
+		v1070.TextSize = 27 - 14;
+		v1070.TextColor3 = Color3.fromRGB(689 - (54 + 380), 255, 696 - 441);
+		v1070.TextXAlignment = Enum.TextXAlignment.Left;
+		v1070.TextTruncate = Enum.TextTruncate.AtEnd;
+		v1070.Text = v1031;
+		v1070.Active = false;
+		v1070.Parent = v1043;
+		local v1084 = Instance.new(v7("\87\167\60\163\236", "\185\17\213\93\206\137"));
+		v1084.Size = UDim2.new(1637 - (486 + 1150), -(906 - (356 + 460)), 0, 18 + 0);
+		v1084.Position = UDim2.new(0 - 0, 56, 0, 59 - 31);
+		v1084.BackgroundTransparency = 1 + 0;
+		v1084.Active = false;
+		local v1089 = Instance.new(v7("\137\19\166\28\169\168\22\139\12\181\169\46", "\218\220\90\234\117"), v1084);
+		v1089.FillDirection = Enum.FillDirection.Horizontal;
+		v1089.Padding = UDim.new(1453 - (1281 + 172), 590 - (158 + 427));
+		v1084.Parent = v1043;
+		local function v1094(v1464, v1465, v1466, v1467)
+			local v1468 = 0 + 0;
+			local v1469;
+			local v1470;
+			local v1471;
+			while true do
+				if (v1468 == (7 - 5)) then
+					v1470.PaddingLeft = UDim.new(0 + 0, 882 - (103 + 773));
+					v1470.PaddingRight = UDim.new(0 + 0, 1500 - (739 + 755));
+					v1471 = Instance.new(v7("\47\206\255\34\142\26\201\226\58", "\194\123\171\135\86"), v1469);
+					v1471.Size = UDim2.new(1, 0, 344 - (39 + 304), 0);
+					v1468 = 508 - (129 + 376);
+				end
+				if (v1468 == 3) then
+					v1471.BackgroundTransparency = 1541 - (282 + 1258);
+					v1471.Font = Enum.Font.GothamBold;
+					v1471.TextSize = 1297 - (204 + 1083);
+					v1471.TextColor3 = v1466 or Color3.fromRGB(220, 926 - (471 + 235), 230);
+					v1468 = 11 - 7;
+				end
+				if (v1468 == (1091 - (38 + 1049))) then
+					v1471.Text = v1464;
+					v1471.Active = false;
+					v1469.Parent = v1084;
+					return v1471, v1469;
+				end
+				if (v1468 == (1626 - (1437 + 188))) then
+					v1469.Active = false;
+					Instance.new(v7("\53\32\246\11\154\243\17\18", "\116\96\105\181\100\232\157"), v1469).CornerRadius = UDim.new(0, 4);
+					if v1467 then
+						local v2823 = 0 + 0;
+						local v2824;
+						while true do
+							if (0 == v2823) then
+								v2824 = Instance.new(v7("\124\18\235\24\41\1\123\94", "\59\41\91\184\108\91\110\16"), v1469);
+								v2824.Color = v1467;
+								v2823 = 1 + 0;
+							end
+							if (v2823 == (1 + 0)) then
+								v2824.Thickness = 1;
+								break;
+							end
+						end
+					end
+					v1470 = Instance.new(v7("\189\110\146\90\23\140\78\172\92", "\115\232\39\194\59"), v1469);
+					v1468 = 2;
+				end
+				if (v1468 == (0 + 0)) then
+					v1469 = Instance.new(v7("\228\3\197\45\84", "\17\162\113\164\64\49\74"));
+					v1469.BackgroundColor3 = v1465 or Color3.fromRGB(67 - 31, 79 - (11 + 32), 299 - (81 + 174));
+					v1469.Size = UDim2.new(0, 0 - 0, 1, 0 - 0);
+					v1469.AutomaticSize = Enum.AutomaticSize.X;
+					v1468 = 765 - (513 + 251);
+				end
+			end
+		end
+		local v1095 = table.find(v24.PlacementOrder, v1029) or v1029;
+		local v1096 = table.find(v24.UpgradeOrder, v1029) or v1029;
+		local v1097 = v24.SlotLimits[v1029] or (10 - 4);
+		local v1098 = v24.SlotMaxUpgrades[v1029] or 10;
+		local v1099, v1100 = v1094(v7("\111\142\120\199\49\191\95", "\21\63\226\25\164\84\159\124") .. v1095, Color3.fromRGB(36 + 147, 52 + 124, 1329 - (1075 + 49)), Color3.fromRGB(784 - (373 + 393), 57 - 39, 912 - (875 + 13)));
+		v146(v1100, 45);
+		local v1101, v1102 = v1094(v7("\219\216\184\145\98", "\122\142\168\223\177\65\158") .. v1096, Color3.fromRGB(10 + 26, 18 + 18, 44), Color3.fromRGB(213, 67 + 132, 758 - 575), Color3.fromRGB(494 - 311, 34 + 142, 647 - 442));
+		local v1103 = v1094(((v1097 == (0 + 0)) and v7("\240\40\24\21", "\72\163\67\113\101\186\54")) or ((v1097 > (22 - 17)) and v7("\4\134\236", "\225\73\231\148")) or (v1097 .. v7("\81\27\79\78", "\166\113\86\46\54")), Color3.fromRGB(367 - (273 + 60), 130 - 96, 42), ((v1097 == (0 - 0)) and Color3.fromRGB(942 - 703, 68, 68)) or Color3.fromRGB(317 - 97, 775 - (361 + 194), 198 + 32));
+		local v1104 = v1094(((v1098 > (48 - 36)) and v7("\226\212\111", "\103\175\181\23\189\129\166\231")) or (v7("\132\8\82\70\220\9\180\88", "\109\209\120\53\52\189") .. v1098), Color3.fromRGB(20 + 14, 34, 169 - 127), Color3.fromRGB(84 + 136, 788 - 568, 230));
+		local v1105 = Instance.new(v7("\119\13\229\6\247\179\65\13\241", "\210\35\104\157\114\187"));
+		v1105.Size = UDim2.new(0, 863 - (257 + 590), 0 - 0, 1971 - (856 + 1099));
+		v1105.Position = UDim2.new(1927 - (1556 + 370), -(74 - 52), 0.5, -8);
+		v1105.BackgroundTransparency = 1 - 0;
+		v1105.Font = Enum.Font.SourceSansBold;
+		v1105.TextSize = 14;
+		v1105.TextColor3 = Color3.fromRGB(170, 342 - (24 + 148), 47 + 138);
+		v1105.Text = "\226\150\188";
+		v1105.Active = false;
+		v1105.Parent = v1043;
+		local v1116 = Instance.new(v7("\92\215\180\54\164", "\176\26\165\213\91\193\45\97"));
+		v1116.Name = v7("\21\41\142\249", "\138\87\70\234\128\155\115");
+		v1116.Size = UDim2.new(1 + 0, 0, 0 - 0, 192 + 38);
+		v1116.Position = UDim2.new(0, 0 - 0, 0 - 0, 63 - 11);
+		v1116.BackgroundTransparency = 3 - 2;
+		v1116.Parent = v1032;
+		local v1122 = Instance.new(v7("\135\201\211\77\218", "\173\193\187\178\32\191\194\112"));
+		v1122.Size = UDim2.new(2 - 1, -(2 + 14), 0 + 0, 1 + 0);
+		v1122.Position = UDim2.new(0 - 0, 8, 0 + 0, 0 + 0);
+		v1122.BackgroundColor3 = Color3.fromRGB(97 - 59, 107 - 69, 46);
+		v1122.BorderSizePixel = 0 + 0;
+		v1122.Parent = v1116;
+		local v1128 = Instance.new(v7("\217\11\255\238\6\48\192\35\202\232\0\48", "\68\140\66\179\135\117"), v1116);
+		v1128.Padding = UDim.new(0 - 0, 15 - 9);
+		v1128.FillDirection = Enum.FillDirection.Vertical;
+		local v1132 = Instance.new(v7("\65\163\120\251\63\81\161\122\141", "\200\20\234\40\154\91\53"), v1116);
+		v1132.PaddingTop = UDim.new(0, 11 - 3);
+		v1132.PaddingLeft = UDim.new(0, 8);
+		v1132.PaddingRight = UDim.new(0 + 0, 8);
+		local function v1136(v1472, v1473, v1474, v1475)
+			local v1476 = 0 - 0;
+			local v1477;
+			local v1478;
+			local v1479;
+			local v1480;
+			local v1481;
+			local v1482;
+			local v1483;
+			local v1484;
+			local v1485;
+			while true do
+				if (v1476 == 8) then
+					function v1485(v2488)
+						local v2489 = 0 + 0;
+						while true do
+							if (v2489 == 1) then
+								v1481.TextColor3 = ((v1484 > 1) and Color3.fromRGB(344 - 161, 176, 127 + 78)) or Color3.fromRGB(39 + 36, 1794 - (976 + 743), 178 - 93);
+								v1482.TextColor3 = ((v1484 < (1520 - (1273 + 241))) and Color3.fromRGB(183, 176, 508 - 303)) or Color3.fromRGB(217 - 142, 75, 350 - (135 + 130));
+								break;
+							end
+							if (v2489 == (0 - 0)) then
+								v1484 = math.clamp(v2488, 1, 5 + 1);
+								v1483.Text = tostring(v1484);
+								v2489 = 1 + 0;
+							end
+						end
+					end
+					v1485(v1473);
+					v1481.MouseButton1Click:Connect(function()
+						if (v1484 > (2 - 1)) then
+							v1475(v1484 - (3 - 2));
+						end
+					end);
+					v1482.MouseButton1Click:Connect(function()
+						if (v1484 < 6) then
+							v1475(v1484 + 1);
+						end
+					end);
+					v1483.MouseButton1Click:Connect(function()
+						local v2490 = 0 + 0;
+						local v2491;
+						local v2492;
+						local v2493;
+						local v2494;
+						local v2495;
+						local v2496;
+						local v2497;
+						local v2498;
+						local v2499;
+						while true do
+							if (v2490 == 7) then
+								v2499 = nil;
+								function v2499()
+									local v3246 = 1741 - (1289 + 452);
+									while true do
+										if (v3246 == 1) then
+											if (v720 == v2499) then
+												v720 = nil;
+											end
+											break;
+										end
+										if (v3246 == (0 + 0)) then
+											if (v2493 and v2493.Parent) then
+												v2493:Destroy();
+											end
+											if (v2492 and v2492.Parent) then
+												v2492:Destroy();
+											end
+											v3246 = 330 - (90 + 239);
+										end
+									end
+								end
+								v720 = v2499;
+								v2492.MouseButton1Click:Connect(v2499);
+								v2490 = 8;
+							end
+							if (v2490 == 2) then
+								v2492.Parent = v2491;
+								v2493 = Instance.new(v7("\60\210\4\18\31", "\127\122\160\101"));
+								v2494 = v1479.AbsolutePosition;
+								v2495 = v1479.AbsoluteSize;
+								v2490 = 3;
+							end
+							if (v2490 == 5) then
+								v2493.Parent = v2491;
+								v2497 = Instance.new(v7("\66\138\245\188\100\183\245\180\110\172\204\161", "\213\23\195\185"), v2493);
+								v2497.Padding = UDim.new(0, 931 - (117 + 812));
+								v2498 = Instance.new(v7("\189\9\70\173\201\52\75\137\143", "\231\232\64\22\204\173\80\34"), v2493);
+								v2490 = 6;
+							end
+							if (v2490 == (1002 - (146 + 853))) then
+								v2493.Position = UDim2.fromOffset(v2494.X, v2494.Y + v2495.Y + (1968 - (986 + 979)));
+								v2493.Size = UDim2.fromOffset(v2495.X, ((664 - (555 + 103)) * 24) + 6);
+								v2493.BackgroundColor3 = Color3.fromRGB(33 - 11, 22, 765 - (329 + 408));
+								v2493.ZIndex = 71 + 429;
+								v2490 = 1714 - (838 + 872);
+							end
+							if ((4 + 2) == v2490) then
+								v2498.PaddingTop = UDim.new(0, 3);
+								v2498.PaddingBottom = UDim.new(523 - (400 + 123), 3);
+								v2498.PaddingLeft = UDim.new(0 + 0, 1959 - (547 + 1409));
+								v2498.PaddingRight = UDim.new(80 - (73 + 7), 1 + 2);
+								v2490 = 7;
+							end
+							if (v2490 == (6 + 2)) then
+								for v3247 = 2 - 1, 9 - 3 do
+									local v3248 = 0;
+									local v3249;
+									local v3250;
+									while true do
+										if (v3248 == (0 + 0)) then
+											v3249 = Instance.new(v7("\126\94\215\176\104\78\219\176\69\85", "\196\42\59\175"));
+											v3249.Size = UDim2.new(1 + 0, 0, 0 + 0, 76 - 54);
+											v3249.ZIndex = 2490 - (98 + 1891);
+											v3250 = v3247 == v1484;
+											v3248 = 1;
+										end
+										if ((42 - (16 + 23)) == v3248) then
+											v3249.MouseEnter:Connect(function()
+												v3249.BackgroundColor3 = Color3.fromRGB(1776 - (1184 + 548), 1574 - (270 + 1260), 56);
+											end);
+											v3249.MouseLeave:Connect(function()
+												v3249.BackgroundColor3 = ((v3247 == v1484) and Color3.fromRGB(38, 24 + 14, 783 - (60 + 675))) or Color3.fromRGB(22, 2 + 20, 1230 - (984 + 218));
+											end);
+											v3249.MouseButton1Click:Connect(function()
+												local v3498 = 382 - (45 + 337);
+												local v3499;
+												while true do
+													if (v3498 == (328 - (74 + 254))) then
+														v3499 = 0 + 0;
+														while true do
+															if (v3499 == 0) then
+																v2499();
+																v1475(v3247);
+																break;
+															end
+														end
+														break;
+													end
+												end
+											end);
+											break;
+										end
+										if (v3248 == 1) then
+											v3249.BackgroundColor3 = (v3250 and Color3.fromRGB(22 + 16, 1387 - (1190 + 159), 36 + 12)) or Color3.fromRGB(3 + 19, 19 + 3, 70 - 42);
+											v3249.Font = Enum.Font.GothamMedium;
+											v3249.TextSize = 11;
+											v3249.TextColor3 = (v3250 and Color3.fromRGB(64 + 119, 176, 205)) or Color3.fromRGB(1628 - (192 + 1226), 946 - (511 + 225), 175 + 45);
+											v3248 = 1397 - (1200 + 195);
+										end
+										if (v3248 == (1580 - (329 + 1249))) then
+											v3249.TextXAlignment = Enum.TextXAlignment.Left;
+											v3249.Text = ((v3250 and "  \226\151\143  ") or v7("\98\114\121\80\120\98", "\88\66\82\89\112")) .. tostring(v3247);
+											Instance.new(v7("\43\169\12\90\76\16\133\61", "\62\126\224\79\53"), v3249).CornerRadius = UDim.new(0, 4);
+											v3249.Parent = v2493;
+											v3248 = 3;
+										end
+									end
+								end
+								break;
+							end
+							if (v2490 == (778 - (631 + 146))) then
+								v2492.Size = UDim2.new(3 - 2, 0, 1 + 0, 1033 - (510 + 523));
+								v2492.BackgroundTransparency = 1;
+								v2492.Text = "";
+								v2492.ZIndex = 53 + 446;
+								v2490 = 2;
+							end
+							if (v2490 == 0) then
+								v2491 = v23 and v23.items;
+								if not v2491 then
+									return;
+								end
+								v721();
+								v2492 = Instance.new(v7("\5\250\12\226\16\67\248\158\62\241", "\234\81\159\116\150\82\54\140"));
+								v2490 = 4 - 3;
+							end
+							if ((2 + 2) == v2490) then
+								Instance.new(v7("\98\2\10\230\179\4\127\147", "\225\55\75\73\137\193\106\26"), v2493).CornerRadius = UDim.new(0 - 0, 1476 - (996 + 475));
+								v2496 = Instance.new(v7("\124\146\117\14\91\180\77\31", "\122\41\219\38"), v2493);
+								v2496.Color = Color3.fromRGB(183, 70 + 106, 205);
+								v2496.Thickness = 1 - 0;
+								v2490 = 5 + 0;
+							end
+						end
+					end);
+					return v1485;
+				end
+				if (0 == v1476) then
+					v1477 = Instance.new(v7("\102\169\170\182\126", "\27\32\219\203\219"));
+					v1477.Size = UDim2.new(1 + 0, 1942 - (1132 + 810), 0, 34 - 10);
+					v1477.BackgroundTransparency = 1;
+					v1477.Parent = v1116;
+					v1478 = Instance.new(v7("\18\248\1\170\210\113\80\186\42", "\223\70\157\121\222\158\16\50"));
+					v1478.Size = UDim2.new(0 - 0, 130, 1 + 0, 1961 - (941 + 1020));
+					v1476 = 528 - (313 + 214);
+				end
+				if (v1476 == 7) then
+					v1483.Font = Enum.Font.GothamBold;
+					v1483.TextSize = 11;
+					v1483.TextColor3 = Color3.fromRGB(727 - (363 + 181), 176, 160 + 45);
+					v1483.Parent = v1479;
+					v1484 = v1473;
+					v1485 = nil;
+					v1476 = 8;
+				end
+				if (v1476 == (1 + 3)) then
+					v1481.Position = UDim2.new(0, 0, 0, 0);
+					v1481.BackgroundTransparency = 1450 - (91 + 1358);
+					v1481.Font = Enum.Font.GothamBold;
+					v1481.TextSize = 1 + 10;
+					v1481.Text = "\226\151\132";
+					v1481.Parent = v1479;
+					v1476 = 10 - 5;
+				end
+				if (v1476 == (8 - 3)) then
+					v1482 = Instance.new(v7("\195\160\225\209\32\60\227\177\246\203", "\73\151\197\153\165\98"));
+					v1482.Size = UDim2.new(0 + 0, 70 - 46, 1 - 0, 0 - 0);
+					v1482.Position = UDim2.new(1 + 0, -(16 + 8), 0 + 0, 0 - 0);
+					v1482.BackgroundTransparency = 1 + 0;
+					v1482.Font = Enum.Font.GothamBold;
+					v1482.TextSize = 11;
+					v1476 = 18 - 12;
+				end
+				if (v1476 == 3) then
+					v1480 = Instance.new(v7("\14\27\49\232\13\241\48\55", "\158\91\82\98\156\127"), v1479);
+					v1480.Color = Color3.fromRGB(912 - (311 + 557), 207 - (117 + 46), 28 + 28);
+					v1480.Thickness = 505 - (268 + 236);
+					v1479.Parent = v1477;
+					v1481 = Instance.new(v7("\133\129\250\210\16\32\153\165\139\236", "\237\209\228\130\166\82\85"));
+					v1481.Size = UDim2.new(0 + 0, 204 - (92 + 88), 1 - 0, 1084 - (745 + 339));
+					v1476 = 4;
+				end
+				if (v1476 == (1 + 0)) then
+					v1478.BackgroundTransparency = 1 + 0;
+					v1478.Font = Enum.Font.GothamBold;
+					v1478.TextSize = 11;
+					v1478.TextColor3 = Color3.fromRGB(404 - 164, 68 + 172, 245);
+					v1478.TextXAlignment = Enum.TextXAlignment.Left;
+					v1478.Text = v1472;
+					v1476 = 2;
+				end
+				if (v1476 == (5 - 3)) then
+					v1478.Parent = v1477;
+					v1479 = Instance.new(v7("\150\7\175\224\234", "\73\208\117\206\141\143\46"));
+					v1479.Size = UDim2.new(738 - (582 + 156), 1950 - (268 + 1502), 1447 - (219 + 1227), 0 + 0);
+					v1479.Position = UDim2.new(0, 388 - 253, 0 - 0, 0 - 0);
+					v1479.BackgroundColor3 = Color3.fromRGB(28, 54 - 26, 2012 - (1855 + 121));
+					Instance.new(v7("\154\211\114\124\189\244\84\97", "\19\207\154\49"), v1479).CornerRadius = UDim.new(0 - 0, 5);
+					v1476 = 3;
+				end
+				if (v1476 == (15 - 9)) then
+					v1482.Text = "\226\150\186";
+					v1482.Parent = v1479;
+					v1483 = Instance.new(v7("\97\31\237\222\153\103\49\65\21\251", "\69\53\122\149\170\219\18"));
+					v1483.Size = UDim2.new(1, -(834 - (452 + 334)), 1, 0);
+					v1483.Position = UDim2.new(0 - 0, 1417 - (698 + 695), 0, 0 - 0);
+					v1483.BackgroundTransparency = 1;
+					v1476 = 7;
+				end
+			end
+		end
+		local function v1137(v1486, v1487, v1488, v1489, v1490, v1491, v1492)
+			local v1493 = 0 - 0;
+			local v1494;
+			local v1495;
+			local v1496;
+			local v1497;
+			local v1498;
+			local v1499;
+			local v1500;
+			local v1501;
+			local v1502;
+			while true do
+				if ((17 - 5) == v1493) then
+					v1500.Text = "+";
+					v1500.Parent = v1496;
+					v1501 = v1487;
+					v1502 = nil;
+					v1493 = 27 - 14;
+				end
+				if (v1493 == (7 - 1)) then
+					v1498.Size = UDim2.new(0 - 0, 21 + 3, 1730 - (529 + 1200), 0 + 0);
+					v1498.Position = UDim2.new(0, 278 - (199 + 79), 0 + 0, 0);
+					v1498.BackgroundTransparency = 3 - 2;
+					v1498.Font = Enum.Font.GothamBold;
+					v1493 = 591 - (120 + 464);
+				end
+				if ((15 - 7) == v1493) then
+					v1499 = Instance.new(v7("\50\26\73\168\42\30\83\185\10", "\220\102\127\49"));
+					v1499.Size = UDim2.new(1, -(41 + 7), 1, 0);
+					v1499.Position = UDim2.new(754 - (33 + 721), 1387 - (1061 + 302), 1729 - (719 + 1010), 0 - 0);
+					v1499.BackgroundTransparency = 1;
+					v1493 = 948 - (446 + 493);
+				end
+				if (v1493 == (2 + 11)) then
+					function v1502(v2500)
+						local v2501 = 1144 - (602 + 542);
+						local v2502;
+						while true do
+							if (v2501 == (0 + 0)) then
+								v2502 = 0 - 0;
+								while true do
+									if (v2502 == 0) then
+										v1501 = math.clamp(v2500, v1488, v1489);
+										v1499.Text = (v1491 and v1491(v1501)) or tostring(v1501);
+										v2502 = 362 - (276 + 85);
+									end
+									if (v2502 == (1381 - (816 + 564))) then
+										v1490(v1501);
+										v29();
+										break;
+									end
+								end
+								break;
+							end
+						end
+					end
+					v1498.MouseButton1Click:Connect(function()
+						v1502(v1501 - v1492);
+					end);
+					v1500.MouseButton1Click:Connect(function()
+						v1502(v1501 + v1492);
+					end);
+					return {[v7("\92\68\42\28\75\82\36", "\110\46\33\76")]=function()
+						v1499.Text = (v1491 and v1491(v1501)) or tostring(v1501);
+					end,[v7("\179\132\172\233\54\184\148\189", "\87\212\225\216\191")]=function()
+						return v1501;
+					end,[v7("\245\86\209\190\184\234\70\192", "\217\134\51\165\232")]=function(v2504)
+						v1502(v2504);
+					end};
+				end
+				if (v1493 == (0 - 0)) then
+					v1492 = v1492 or (915 - (854 + 60));
+					v1494 = Instance.new(v7("\122\107\197\133\204", "\169\60\25\164\232"));
+					v1494.Size = UDim2.new(696 - (227 + 468), 0 + 0, 529 - (54 + 475), 40 - 16);
+					v1494.BackgroundTransparency = 1;
+					v1493 = 33 - (21 + 11);
+				end
+				if (v1493 == 11) then
+					v1500.BackgroundTransparency = 1 + 0;
+					v1500.Font = Enum.Font.GothamBold;
+					v1500.TextSize = 13;
+					v1500.TextColor3 = Color3.fromRGB(183, 1771 - (1351 + 244), 175 + 30);
+					v1493 = 12;
+				end
+				if (v1493 == 7) then
+					v1498.TextSize = 51 - 38;
+					v1498.TextColor3 = Color3.fromRGB(183, 600 - (407 + 17), 25 + 180);
+					v1498.Text = "-";
+					v1498.Parent = v1496;
+					v1493 = 5 + 3;
+				end
+				if (5 == v1493) then
+					v1497.Color = Color3.fromRGB(993 - (174 + 775), 44, 1816 - (601 + 1159));
+					v1497.Thickness = 1;
+					v1496.Parent = v1494;
+					v1498 = Instance.new(v7("\71\65\97\16\139\27\13\245\124\74", "\129\19\36\25\100\201\110\121"));
+					v1493 = 1154 - (388 + 760);
+				end
+				if (v1493 == (1 + 2)) then
+					v1495.Text = v1486;
+					v1495.Parent = v1494;
+					v1496 = Instance.new(v7("\233\44\37\184\42", "\72\175\94\68\213\79"));
+					v1496.Size = UDim2.new(0, 2130 - (900 + 1050), 1, 0);
+					v1493 = 4 + 0;
+				end
+				if (v1493 == (1 + 1)) then
+					v1495.Font = Enum.Font.GothamBold;
+					v1495.TextSize = 8 + 3;
+					v1495.TextColor3 = Color3.fromRGB(99 + 141, 822 - 582, 225 + 20);
+					v1495.TextXAlignment = Enum.TextXAlignment.Left;
+					v1493 = 3;
+				end
+				if (v1493 == (286 - (80 + 202))) then
+					v1496.Position = UDim2.new(0 + 0, 397 - 262, 0 + 0, 0 - 0);
+					v1496.BackgroundColor3 = Color3.fromRGB(28, 111 - 83, 36);
+					Instance.new(v7("\238\144\208\196\253\213\188\225", "\143\187\217\147\171"), v1496).CornerRadius = UDim.new(0 + 0, 669 - (308 + 356));
+					v1497 = Instance.new(v7("\232\49\68\171\21\210\19\114", "\103\189\120\23\223"), v1496);
+					v1493 = 5 + 0;
+				end
+				if (1 == v1493) then
+					v1494.Parent = v1116;
+					v1495 = Instance.new(v7("\247\9\152\196\125\12\205\198\0", "\175\163\108\224\176\49\109"));
+					v1495.Size = UDim2.new(0 - 0, 130, 1 + 0, 0);
+					v1495.BackgroundTransparency = 1 - 0;
+					v1493 = 2;
+				end
+				if ((1063 - (1021 + 33)) == v1493) then
+					v1499.Font = Enum.Font.GothamBold;
+					v1499.TextSize = 1062 - (46 + 1005);
+					v1499.TextColor3 = Color3.fromRGB(151 + 32, 176, 205);
+					v1499.Text = (v1491 and v1491(v1487)) or tostring(v1487);
+					v1493 = 22 - 12;
+				end
+				if (v1493 == (8 + 2)) then
+					v1499.Parent = v1496;
+					v1500 = Instance.new(v7("\124\24\87\216\42\161\171\167\71\19", "\211\40\125\47\172\104\212\223"));
+					v1500.Size = UDim2.new(0 - 0, 2 + 22, 1, 0 - 0);
+					v1500.Position = UDim2.new(1, -(68 - 44), 0 - 0, 0 - 0);
+					v1493 = 11;
+				end
+			end
+		end
+		local function v1138(v1503, v1504, v1505, v1506)
+			local v1507 = Instance.new(v7("\133\46\193\8\19", "\118\195\92\160\101"));
+			v1507.Size = UDim2.new(1 + 0, 0 - 0, 0 + 0, 1080 - (131 + 925));
+			v1507.BackgroundTransparency = 1;
+			v1507.Parent = v1116;
+			local v1511 = Instance.new(v7("\148\25\55\59\21\19\162\25\35", "\114\192\124\79\79\89"));
+			v1511.Size = UDim2.new(0, 1418 - (347 + 941), 1622 - (893 + 728), 0 + 0);
+			v1511.BackgroundTransparency = 1;
+			v1511.Font = Enum.Font.GothamBold;
+			v1511.TextSize = 5 + 6;
+			v1511.TextColor3 = Color3.fromRGB(297 - 57, 240, 537 - 292);
+			v1511.TextXAlignment = Enum.TextXAlignment.Left;
+			v1511.Text = v1503;
+			v1511.Parent = v1507;
+			local v1522 = Instance.new(v7("\174\226\182\201\227", "\134\232\144\215\164"));
+			v1522.Size = UDim2.new(0 + 0, 180, 3 - 2, 0 + 0);
+			v1522.Position = UDim2.new(908 - (599 + 309), 2047 - (1598 + 314), 0 + 0, 0 - 0);
+			v1522.BackgroundColor3 = Color3.fromRGB(28, 1642 - (274 + 1340), 30 + 6);
+			Instance.new(v7("\216\111\113\90\155\21\203\33", "\83\141\38\50\53\233\123\174"), v1522).CornerRadius = UDim.new(0, 2 + 3);
+			local v1527 = Instance.new(v7("\8\171\150\65\38\176\74\117", "\16\93\226\197\53\84\223\33"), v1522);
+			v1527.Color = Color3.fromRGB(1458 - (557 + 857), 132 - 88, 56);
+			v1527.Thickness = 3 - 2;
+			v1522.Parent = v1507;
+			local v1531 = Instance.new(v7("\77\214\228\14\138\2\109\199\243\20", "\119\25\179\156\122\200"));
+			v1531.Size = UDim2.new(1, 1112 - (581 + 531), 3 - 2, 1335 - (1314 + 21));
+			v1531.BackgroundTransparency = 1 - 0;
+			v1531.AutoButtonColor = false;
+			v1531.Text = "";
+			v1531.Parent = v1522;
+			local v1537 = Instance.new(v7("\204\234\48\224\212\238\42\241\244", "\148\152\143\72"));
+			v1537.Size = UDim2.new(1 + 0, -26, 1190 - (487 + 702), 0);
+			v1537.Position = UDim2.new(0 + 0, 13 - 5, 0, 0 - 0);
+			v1537.BackgroundTransparency = 1;
+			v1537.Font = Enum.Font.GothamBold;
+			v1537.TextSize = 1 + 10;
+			v1537.TextColor3 = Color3.fromRGB(44 + 139, 176, 205);
+			v1537.TextXAlignment = Enum.TextXAlignment.Left;
+			v1537.TextTruncate = Enum.TextTruncate.AtEnd;
+			v1537.Text = v1505;
+			v1537.Parent = v1531;
+			local v1549 = Instance.new(v7("\200\24\195\208\21\253\31\222\200", "\89\156\125\187\164"));
+			v1549.Size = UDim2.new(538 - (86 + 452), 11 + 7, 1 + 0, 0 - 0);
+			v1549.Position = UDim2.new(1073 - (123 + 949), -(933 - (836 + 77)), 650 - (354 + 296), 92 - (5 + 87));
+			v1549.BackgroundTransparency = 1;
+			v1549.Font = Enum.Font.GothamBold;
+			v1549.TextSize = 10;
+			v1549.TextColor3 = Color3.fromRGB(143 + 40, 176, 205);
+			v1549.Text = "\226\150\188";
+			v1549.Parent = v1531;
+			local v1558 = v1505;
+			v1531.MouseButton1Click:Connect(function()
+				local v1754 = 0 + 0;
+				local v1755;
+				local v1756;
+				local v1757;
+				local v1758;
+				local v1759;
+				local v1760;
+				local v1761;
+				local v1762;
+				local v1763;
+				while true do
+					if (v1754 == (2 + 0)) then
+						v1756.Parent = v1755;
+						v1757 = Instance.new(v7("\62\70\116\55\29", "\90\120\52\21"));
+						v1758 = v1522.AbsolutePosition;
+						v1759 = v1522.AbsoluteSize;
+						v1754 = 5 - 2;
+					end
+					if (v1754 == 0) then
+						v1755 = v23 and v23.items;
+						if not v1755 then
+							return;
+						end
+						v721();
+						v1756 = Instance.new(v7("\244\82\221\172\234\229\203\20\207\89", "\96\160\55\165\216\168\144\191"));
+						v1754 = 1;
+					end
+					if (v1754 == (8 + 0)) then
+						for v2825, v2826 in ipairs(v1504) do
+							local v2827 = Instance.new(v7("\248\73\11\253\227\25\221\216\67\29", "\169\172\44\115\137\161\108"));
+							v2827.Size = UDim2.new(683 - (267 + 415), 0 - 0, 0 + 0, 1 + 21);
+							v2827.ZIndex = 501;
+							local v2830 = v2826 == v1558;
+							v2827.BackgroundColor3 = (v2830 and Color3.fromRGB(38, 85 - 47, 33 + 15)) or Color3.fromRGB(22, 3 + 19, 65 - 37);
+							v2827.Font = Enum.Font.GothamMedium;
+							v2827.TextSize = 11;
+							v2827.TextColor3 = (v2830 and Color3.fromRGB(2075 - (1799 + 93), 59 + 117, 205)) or Color3.fromRGB(210, 42 + 168, 35 + 185);
+							v2827.TextXAlignment = Enum.TextXAlignment.Left;
+							v2827.Text = ((v2830 and "  \226\151\143  ") or v7("\239\181\205\148\28\239", "\60\207\149\237\180")) .. v2826;
+							Instance.new(v7("\194\29\168\233\229\58\142\244", "\134\151\84\235"), v2827).CornerRadius = UDim.new(19 - (6 + 13), 1063 - (383 + 676));
+							v2827.Parent = v1757;
+							v2827.MouseEnter:Connect(function()
+								v2827.BackgroundColor3 = Color3.fromRGB(384 - (119 + 221), 1 + 43, 56);
+							end);
+							v2827.MouseLeave:Connect(function()
+								v2827.BackgroundColor3 = ((v2826 == v1558) and Color3.fromRGB(519 - (345 + 136), 38, 48)) or Color3.fromRGB(35 - 13, 22, 85 - 57);
+							end);
+							v2827.MouseButton1Click:Connect(function()
+								local v2961 = 0;
+								while true do
+									if (v2961 == 0) then
+										v1558 = v2826;
+										v1537.Text = v2826;
+										v2961 = 1 - 0;
+									end
+									if (v2961 == (5 - 3)) then
+										v29();
+										break;
+									end
+									if (v2961 == 1) then
+										v1763();
+										v1506(v2826);
+										v2961 = 478 - (345 + 131);
+									end
+								end
+							end);
+						end
+						break;
+					end
+					if (v1754 == 3) then
+						v1757.Position = UDim2.fromOffset(v1758.X, v1758.Y + v1759.Y + (1304 - (916 + 385)));
+						v1757.Size = UDim2.fromOffset(v1759.X, (#v1504 * (316 - (6 + 286))) + (14 - 8));
+						v1757.BackgroundColor3 = Color3.fromRGB(22, 16 + 6, 28 + 0);
+						v1757.ZIndex = 791 - (151 + 140);
+						v1754 = 6 - 2;
+					end
+					if (v1754 == (958 - (32 + 922))) then
+						Instance.new(v7("\190\57\216\90\214\184\142\2", "\214\235\112\155\53\164"), v1757).CornerRadius = UDim.new(842 - (322 + 520), 5 + 0);
+						v1760 = Instance.new(v7("\124\199\50\56\91\225\10\41", "\76\41\142\97"), v1757);
+						v1760.Color = Color3.fromRGB(119 + 64, 176, 205);
+						v1760.Thickness = 1;
+						v1754 = 2 + 3;
+					end
+					if (v1754 == (6 + 0)) then
+						v1762.PaddingTop = UDim.new(221 - (187 + 34), 3);
+						v1762.PaddingBottom = UDim.new(0, 3 + 0);
+						v1762.PaddingLeft = UDim.new(0, 5 - 2);
+						v1762.PaddingRight = UDim.new(0 + 0, 299 - (194 + 102));
+						v1754 = 559 - (49 + 503);
+					end
+					if (v1754 == (19 - 12)) then
+						v1763 = nil;
+						function v1763()
+							if (v1757 and v1757.Parent) then
+								v1757:Destroy();
+							end
+							if (v1756 and v1756.Parent) then
+								v1756:Destroy();
+							end
+							if (v720 == v1763) then
+								v720 = nil;
+							end
+						end
+						v720 = v1763;
+						v1756.MouseButton1Click:Connect(v1763);
+						v1754 = 8;
+					end
+					if (5 == v1754) then
+						v1757.Parent = v1755;
+						v1761 = Instance.new(v7("\220\237\226\28\105\10\53\23\240\203\219\1", "\118\137\164\174\117\26\126\121"), v1757);
+						v1761.Padding = UDim.new(0, 1351 - (12 + 1337));
+						v1762 = Instance.new(v7("\63\137\126\123\120\10\3\174\73", "\110\106\192\46\26\28"), v1757);
+						v1754 = 6;
+					end
+					if (v1754 == 1) then
+						v1756.Size = UDim2.new(1, 0 - 0, 1, 0);
+						v1756.BackgroundTransparency = 1 + 0;
+						v1756.Text = "";
+						v1756.ZIndex = 499;
+						v1754 = 2;
+					end
+				end
+			end);
+		end
+		local v1139 = v1136(v7("\123\3\179\14\114\11\32\160\9\114\89", "\23\43\111\210\109"), v1095, true, function(v1559)
+			v722(v1029, v1559);
+		end);
+		local v1140 = v1136(v7("\64\8\247\239\29\78\236\53\55\226\249\25\88", "\137\21\120\144\157\124\42"), v1096, false, function(v1560)
+			v724(v1029, v1560);
+		end);
+		v1137(v7("\193\7\16\184\5\227\37\248\6\24\175", "\105\145\107\113\219\96\195"), v24.SlotLimits[v1029] or (1071 - (38 + 1027)), 0 - 0, 127 - (11 + 110), function(v1561)
+			v24.SlotLimits[v1029] = ((v1561 > (820 - (199 + 616))) and (3 + 3)) or v1561;
+			v24.SlotPlacement[v1029] = v1561 > 0;
+			if v24.UnitCustomSettings[v1029] then
+				v24.UnitCustomSettings[v1029].Amount = ((v1561 > 5) and (485 - (396 + 83))) or v1561;
+			end
+			v1103.Text = ((v1561 == (0 - 0)) and v7("\210\248\27\41", "\89\129\147\114")) or ((v1561 > (1 + 4)) and v7("\54\180\185", "\178\123\213\193\124\49")) or (v1561 .. v7("\173\4\166\212", "\20\141\73\199\172\189\237\155"));
+			v1103.TextColor3 = ((v1561 == (1785 - (774 + 1011))) and Color3.fromRGB(239, 191 - 123, 131 - 63)) or Color3.fromRGB(609 - (94 + 295), 1 + 219, 230);
+			v90();
+		end, function(v1566)
+			local v1567 = 0 + 0;
+			while true do
+				if (1 == v1567) then
+					return tostring(v1566);
+				end
+				if (v1567 == (0 - 0)) then
+					if (v1566 == (0 - 0)) then
+						return v7("\223\8\19\21", "\184\140\99\122\101\91\128\43");
+					end
+					if (v1566 > (2 + 3)) then
+						return v7("\214\13\160", "\102\155\108\216");
+					end
+					v1567 = 1 + 0;
+				end
+			end
+		end);
+		local v1141 = v24.SlotMaxUpgrades[v1029] or 10;
+		local v1142 = ((v1141 >= (24 - 9)) and (35 - 22)) or math.min(v1141, 7 + 6);
+		v1137(v7("\3\136\77\229\221\224\188\60\136\81\160", "\219\78\233\53\197\136\144"), v1142, 0 + 0, 13, function(v1568)
+			local v1569 = ((v1568 >= (26 - 13)) and (25 - (6 + 4))) or v1568;
+			v24.SlotMaxUpgrades[v1029] = v1569;
+			if v24.UnitCustomSettings[v1029] then
+				v24.UnitCustomSettings[v1029].MaxUpgrade = v1569;
+			end
+			v1104.Text = ((v1568 >= (39 - 26)) and v7("\22\48\235", "\49\91\81\147\202\87\145")) or (v7("\52\71\95\252\131\36\75\65", "\46\97\55\56\142\226\64") .. v1568);
+		end, function(v1572)
+			local v1573 = 0;
+			while true do
+				if (v1573 == (853 - (629 + 224))) then
+					if (v1572 >= (29 - 16)) then
+						return v7("\42\137\194", "\41\103\232\186\155\37\131\106");
+					end
+					return tostring(v1572);
+				end
+			end
+		end);
+		local function v1143()
+			local v1574 = 1522 - (466 + 1056);
+			local v1575;
+			local v1576;
+			local v1577;
+			while true do
+				if (v1574 == (766 - (485 + 280))) then
+					v1577 = nil;
+					while true do
+						if (v1575 == 1) then
+							local v2962 = 0;
+							while true do
+								if (v2962 == (91 - (51 + 40))) then
+									v1577 = v718 and v718[v1029];
+									if (v1577 and v63({[v7("\50\232\220\222", "\187\92\137\177")]=v1577,[v7("\75\6", "\56\34\98\233\107\23\57")]=v1577})) then
+										return true;
+									end
+									v2962 = 1;
+								end
+								if (1 == v2962) then
+									v1575 = 2;
+									break;
+								end
+							end
+						end
+						if (v1575 == 0) then
+							v1576 = v83();
+							for v3113, v3114 in ipairs(v1576) do
+								if ((v3114.slot == v1029) and v63(v3114)) then
+									return true;
+								end
+							end
+							v1575 = 1;
+						end
+						if (v1575 == 2) then
+							return false;
+						end
+					end
+					break;
+				end
+				if (v1574 == 0) then
+					v1575 = 0;
+					v1576 = nil;
+					v1574 = 794 - (610 + 183);
+				end
+			end
+		end
+		local function v1144()
+			local v1578 = v83();
+			for v1764, v1765 in ipairs(v1578) do
+				if ((v1765.slot == v1029) and v62(v1765)) then
+					return true;
+				end
+			end
+			local v1579 = v718 and v718[v1029];
+			if (v1579 and v62({[v7("\87\230\28\45", "\126\57\135\113\72\74\68")]=v1579,[v7("\143\121", "\65\230\29\19\28\109\142")]=v1579})) then
+				return true;
+			end
+			return false;
+		end
+		local v1145 = v1137(v7("\75\164\161\17\63\184\119\65\114\177\188\22\113", "\50\27\197\213\121\31\232\24"), v1030.CustomPath or (0 + 0), 0 + 0, 14 + 86, function(v1580)
+			local v1581 = 0;
+			while true do
+				if (v1581 == (2 - 1)) then
+					v90();
+					break;
+				end
+				if (v1581 == 0) then
+					if v24.UnitCustomSettings[v1029] then
+						v24.UnitCustomSettings[v1029].CustomPath = v1580;
+					end
+					v87();
+					v1581 = 773 - (572 + 200);
+				end
+			end
+		end, function(v1582)
+			if (v1582 == (1975 - (1598 + 377))) then
+				if v1143() then
+					return v7("\121\80\176\235\24\13\253\177\29\5\135\170\125\11\139\173", "\132\56\37\196");
+				elseif v1144() then
+					return v7("\121\201\35\184\158\175", "\135\56\188\87\215\190") .. (v24.FarmPathPercentage or (171 - 86)) .. v7("\238\105\115\9\72\166\96", "\58\203\73\53\104");
+				else
+					return v7("\58\219\255\214\162\76", "\100\123\174\139\185\130") .. v24.PathPercentage .. v7("\69\105", "\199\96\64\81\86\111");
+				end
+			end
+			return v1582 .. "%";
+		end, 5);
+		local v1146 = v1030.Target or v7("\46\199\85\64", "\127\111\178\33\47");
+		if (v1146 == v7("\43\182\34\211\241\209\228", "\156\111\211\68\178\132\189\144")) then
+			v1146 = v7("\202\197\84\235", "\62\139\176\32\132\148\139\81");
+		end
+		v1138(v7("\196\41\203\80\128\15\49\61\226\33\214\69\140\15\104", "\109\144\72\185\55\229\123\17"), {v7("\240\205\92\87", "\144\177\184\40\56\21"),v7("\165\252\11\180\49", "\218\227\149\121\199\69"),v7("\131\80\208\250", "\233\207\49\163\142\70\217"),v7("\125\205\208\226\207\183\132\93\205", "\225\46\185\162\141\161\208")}, v1146, function(v1583)
+			if v24.UnitCustomSettings[v1029] then
+				v24.UnitCustomSettings[v1029].Target = v1583;
+			end
+		end);
+		local v1147 = v1030.Ability or v7("\224\216\121\83\190\193\213\110\29\137\210\209\120\68", "\219\183\176\28\61");
+		if ((v1147 == v7("\97\6\204\241\226\243\151", "\60\37\99\170\144\151\159\227")) or (v1147 == v7("\101\174\45\179\108", "\46\55\203\76\215\21\82\218"))) then
+			v1147 = v7("\177\214\252\50\230\0\233\148\158\203\57\226\18\245", "\140\230\190\153\92\131\118");
+		end
+		v1138(v7("\234\221\219\72\24\199\78\112\199\193\219\94", "\25\171\168\175\39\56\134\44"), {v7("\24\186\198\63\131\154\121\61\242\241\52\135\136\101", "\28\79\210\163\81\230\236"),v7("\45\216\1\136\187\56\223\23\149\187\51\195\68\168\254\27\194", "\155\122\176\100\230"),v7("\141\151\18\41\184\156\132\11\33", "\152\203\229\125\68"),v7("\242\164\55\240\212\161\33\245", "\145\182\205\68")}, v1147, function(v1584)
+			if v24.UnitCustomSettings[v1029] then
+				v24.UnitCustomSettings[v1029].Ability = v1584;
+			end
+		end);
+		v154[v1029] = function()
+			local v1585 = 627 - (441 + 186);
+			local v1586;
+			local v1587;
+			while true do
+				if (v1585 == (3 + 0)) then
+					v1140(v1587);
+					if (v1145 and v1145.refresh) then
+						v1145.refresh();
+					end
+					v1585 = 1425 - (606 + 815);
+				end
+				if (v1585 == 2) then
+					v1101.Text = v7("\178\98\127\101\196", "\69\231\18\24") .. v1587;
+					v1139(v1586);
+					v1585 = 3;
+				end
+				if (v1585 == (0 - 0)) then
+					v1586 = table.find(v24.PlacementOrder, v1029) or v1029;
+					v1587 = table.find(v24.UpgradeOrder, v1029) or v1029;
+					v1585 = 1 + 0;
+				end
+				if ((4 + 0) == v1585) then
+					pcall(function()
+						local v2525 = 0;
+						local v2526;
+						local v2527;
+						local v2528;
+						local v2529;
+						local v2530;
+						while true do
+							if (v2525 == (1172 - (1055 + 117))) then
+								v2526 = cachedEq or v83(false);
+								v2527 = nil;
+								v2525 = 689 - (266 + 422);
+							end
+							if ((11 - 8) == v2525) then
+								v2530 = v1051 and v1051:FindFirstChildWhichIsA(v7("\7\116\68\222\33\114\83\221\23\111\64\196\52", "\169\81\29\33"));
+								if ((v719[v1029] ~= v2529) or not v2530) then
+									v719[v1029] = v2529;
+									if v1051 then
+										for v3500, v3501 in ipairs(v1051:GetChildren()) do
+											if v3501:IsA(v7("\203\180\215\100\0\242\175\198\85\2\252\176\215", "\112\157\221\178\19")) then
+												v3501:Destroy();
+											end
+										end
+										local v3452 = v716(v1029);
+										if v3452 then
+											local v3546 = 0;
+											while true do
+												if (v3546 == (1892 - (1098 + 793))) then
+													v3452.Parent = v1051;
+													break;
+												end
+												if ((0 + 0) == v3546) then
+													v3452.Active = false;
+													v1060.Visible = false;
+													v3546 = 1560 - (12 + 1547);
+												end
+											end
+										else
+											local v3547 = 1358 - (149 + 1209);
+											local v3548;
+											while true do
+												if (v3547 == (0 + 0)) then
+													v3548 = 1014 - (6 + 1008);
+													while true do
+														if (v3548 == (1346 - (603 + 743))) then
+															v1060.Visible = true;
+															v1060.Text = tostring(v1029);
+															break;
+														end
+													end
+													break;
+												end
+											end
+										end
+									end
+								end
+								break;
+							end
+							if (v2525 == (241 - (152 + 88))) then
+								for v3251, v3252 in ipairs(v2526) do
+									if (v3252.slot == v1029) then
+										v2527 = v3252;
+										break;
+									end
+								end
+								v2528 = (v2527 and v2527.name) or (v7("\85\210\34\62\105\159\122\25\124\208\38\106", "\74\16\191\82") .. v1029 .. ")");
+								v2525 = 319 - (207 + 110);
+							end
+							if (v2525 == (3 - 1)) then
+								if (v1070 and (v1070.Text ~= v2528)) then
+									v1070.Text = v2528;
+								end
+								v2529 = (v2527 and (v2527.uuid or v2527.name)) or (v7("\209\24\80\12\102\141", "\25\180\117\32\120\31\210") .. v1029);
+								v2525 = 7 - 4;
 							end
 						end
 					end);
 					break;
 				end
-				if ((1 + 1) == v1522) then
-					v1070.Text = v7("\109\204\48\247\157", "\135\56\188\87\215\190") .. v1524;
-					v1108(v1523);
-					v1522 = 1452 - (91 + 1358);
-				end
-				if (v1522 == (0 + 0)) then
-					v1523 = table.find(v44.PlacementOrder, v998) or v998;
-					v1524 = table.find(v44.UpgradeOrder, v998) or v998;
-					v1522 = 1 - 0;
-				end
-				if (v1522 == (5 - 2)) then
-					v1109(v1524);
-					if (v1114 and v1114.refresh) then
-						v1114.refresh();
-					end
-					v1522 = 3 + 1;
+				if ((1834 - (1401 + 432)) == v1585) then
+					v1032.LayoutOrder = v1586;
+					v1099.Text = v7("\178\38\71\116\137\116\174", "\141\226\74\38\23\236\84") .. v1586;
+					v1585 = 3 - 1;
 				end
 			end
 		end;
-		local v1118 = false;
-		local v1119 = 0;
-		local function v1120()
-			local v1525 = 0 - 0;
-			local v1526;
+		local v1149 = false;
+		local v1150 = 0;
+		local function v1151()
+			local v1588 = 1037 - (838 + 199);
+			local v1589;
 			while true do
-				if (v1525 == (7 - 3)) then
+				if (v1588 == (7 - 4)) then
+					v1105.TextColor3 = (v1149 and Color3.fromRGB(375 - 192, 606 - (320 + 110), 513 - 308)) or Color3.fromRGB(334 - 164, 74 + 96, 322 - (123 + 14));
+					v1038.Color = (v1149 and Color3.fromRGB(128 + 55, 490 - 314, 307 - (62 + 40))) or Color3.fromRGB(42, 101 - 59, 1147 - (823 + 274));
+					v1588 = 4;
+				end
+				if (v1588 == (965 - (134 + 830))) then
+					v721();
+					v1149 = not v1149;
+					v1588 = 2;
+				end
+				if (v1588 == (4 - 2)) then
+					v1589 = (v1149 and (935 - 653)) or (1633 - (1430 + 151));
+					v1105.Text = (v1149 and "\226\150\178") or "\226\150\188";
+					v1588 = 1361 - (104 + 1254);
+				end
+				if (v1588 == (424 - (161 + 263))) then
+					if ((tick() - v1150) < (0.2 - 0)) then
+						return;
+					end
+					v1150 = tick();
+					v1588 = 1397 - (317 + 1079);
+				end
+				if (v1588 == 4) then
 					pcall(function()
-						v13:Create(v1001, TweenInfo.new(0.2 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {[v7("\60\186\62\215", "\156\111\211\68\178\132\189\144")]=UDim2.new(1 + 0, 0 + 0, 0 + 0, v1526)}):Play();
+						v13:Create(v1032, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {[v7("\192\18\17\33", "\64\147\123\107\68\177\73")]=UDim2.new(1 - 0, 0 - 0, 0, v1589)}):Play();
 					end);
-					task.delay(0.22, function()
-						if (v1001 and v1001.Parent) then
-							v1001.Size = UDim2.new(1, 0 - 0, 0 + 0, v1526);
+					task.delay(315.22 - (76 + 239), function()
+						if (v1032 and v1032.Parent) then
+							v1032.Size = UDim2.new(374 - (349 + 24), 0 - 0, 0 - 0, v1589);
 						end
 					end);
 					break;
-				end
-				if (v1525 == (3 - 2)) then
-					v724();
-					v1118 = not v1118;
-					v1525 = 2;
-				end
-				if (v1525 == (871 - (311 + 557))) then
-					v1074.TextColor3 = (v1118 and Color3.fromRGB(346 - (117 + 46), 176, 102 + 103)) or Color3.fromRGB(674 - (268 + 236), 82 + 88, 365 - (92 + 88));
-					v1007.Color = (v1118 and Color3.fromRGB(242 - 59, 1260 - (745 + 339), 117 + 88)) or Color3.fromRGB(41 + 1, 42, 50);
-					v1525 = 6 - 2;
-				end
-				if (v1525 == (1 + 1)) then
-					v1526 = (v1118 and 282) or (142 - 90);
-					v1074.Text = (v1118 and "\226\150\178") or "\226\150\188";
-					v1525 = 741 - (582 + 156);
-				end
-				if (v1525 == (1770 - (268 + 1502))) then
-					if ((tick() - v1119) < 0.2) then
-						return;
-					end
-					v1119 = tick();
-					v1525 = 1;
 				end
 			end
 		end
 		getgenv().AJ_EXPAND_REGISTRY = getgenv().AJ_EXPAND_REGISTRY or {};
-		getgenv().AJ_EXPAND_REGISTRY[v998] = v1120;
-		v1012.Activated:Connect(v1120);
-		v1012.MouseButton1Click:Connect(v1120);
+		getgenv().AJ_EXPAND_REGISTRY[v1029] = v1151;
+		v1043.Activated:Connect(v1151);
+		v1043.MouseButton1Click:Connect(v1151);
 	end
 end
-local v155 = function()
-	local v729 = v81(false);
-	for v1123 = 1447 - (219 + 1227), 1 + 5 do
-		if v153[v1123] then
-			pcall(v153[v1123], v729);
+local v156 = function()
+	local v726 = 0 + 0;
+	local v727;
+	while true do
+		if (v726 == (0 + 0)) then
+			v727 = v83(false);
+			for v2018 = 1635 - (1428 + 206), 1511 - (1207 + 298) do
+				if v154[v2018] then
+					pcall(v154[v2018], v727);
+				end
+			end
+			break;
 		end
 	end
 end;
-getgenv().AJ_HUB_REFRESH_ROSTER = v155;
-local function v157()
+getgenv().AJ_HUB_REFRESH_ROSTER = v156;
+local function v158()
 	pcall(function()
-		local v1124 = 0;
-		local v1125;
-		local v1126;
-		local v1127;
-		local v1128;
-		while true do
-			if (v1124 == (2 - 1)) then
-				v1126 = v1125:WaitForChild(v7("\227\56\216\64\139\36\100\3\249\60\202", "\109\144\72\185\55\229\123\17"), 27 - 17);
-				if not v1126 then
-					return;
-				end
-				v1124 = 2;
-			end
-			if (v1124 == (6 - 4)) then
-				v1127 = v1126:WaitForChild(v7("\253\209\94\93\102", "\144\177\184\40\56\21"), 10) and v1126.Lives:WaitForChild(v7("\165\231\24\170\32", "\218\227\149\121\199\69"), 19 - 9);
-				v1128 = v1127 and v1127:WaitForChild(v7("\154\95\202\250\53", "\233\207\49\163\142\70\217"), 1986 - (1855 + 121));
-				v1124 = 14 - 11;
-			end
-			if (v1124 == 0) then
-				v1125 = v16:WaitForChild(v7("\219\220\65\253\241\249\22\75\226", "\62\139\176\32\132\148\139\81"), 10);
-				if not v1125 then
-					return;
-				end
-				v1124 = 1;
-			end
-			if (v1124 == (7 - 4)) then
-				if not v1128 then
-					return;
-				end
-				for v2364 = 787 - (452 + 334), 6 do
-					local v2365 = v1128:WaitForChild(tostring(v2364), 5);
-					if v2365 then
-						v2365:GetAttributeChangedSignal(v7("\113\220\211\248\200\160\145\75\221\253\235\211\177\140\75\230\215\227\200\164\190\91\204\203\233", "\225\46\185\162\141\161\208")):Connect(function()
-							local v2909 = 0;
+		local v1154 = v17:WaitForChild(v7("\159\46\37\52\43\100\133\186\43", "\194\207\66\68\77\78\22"), 358 - (224 + 124));
+		if not v1154 then
+			return;
+		end
+		local v1155 = v1154:WaitForChild(v7("\60\13\24\76\47\138\38\16\38\9\10", "\126\79\125\121\59\65\213\83"), 10);
+		if not v1155 then
+			return;
+		end
+		local v1156 = v1155:WaitForChild(v7("\127\202\230\71\64", "\34\51\163\144"), 42 - (7 + 25)) and v1155.Lives:WaitForChild(v7("\192\152\124\76\83", "\54\134\234\29\33"), 25 - 15);
+		local v1157 = v1156 and v1156:WaitForChild(v7("\13\46\53\255\43", "\139\88\64\92"), 1062 - (886 + 166));
+		if not v1157 then
+			return;
+		end
+		for v1590 = 1 - 0, 2 + 4 do
+			local v1591 = 318 - (142 + 176);
+			local v1592;
+			while true do
+				if (v1591 == 0) then
+					v1592 = v1157:WaitForChild(tostring(v1590), 5 + 0);
+					if v1592 then
+						v1592:GetAttributeChangedSignal(v7("\64\43\7\104\30\111\62\19\121\40\121\60\23\112\18\64\59\24\116\3\64\59\3\116\19", "\119\31\78\118\29")):Connect(function()
+							local v2964 = 938 - (584 + 354);
+							local v2965;
 							while true do
-								if (v2909 == (0 - 0)) then
-									task.wait(1393.1 - (698 + 695));
-									v155();
+								if ((488 - (384 + 104)) == v2964) then
+									v2965 = 0 - 0;
+									while true do
+										if (v2965 == (35 - (13 + 22))) then
+											task.wait(0.1);
+											v156();
+											break;
+										end
+									end
 									break;
 								end
 							end
 						end);
 					end
+					break;
 				end
-				break;
 			end
 		end
 	end);
 end
-task.spawn(v157);
-v16.PlayerGui.ChildAdded:Connect(function(v730)
-	if (v730.Name == v7("\196\192\125\74\181\232\197\114\84\175\196", "\219\183\176\28\61")) then
-		local v1527 = 0 - 0;
-		while true do
-			if (v1527 == 0) then
-				task.wait(0.5 - 0);
-				v157();
-				v1527 = 1 - 0;
-			end
-			if (v1527 == 1) then
-				v155();
-				break;
-			end
-		end
+task.spawn(v158);
+v17.PlayerGui.ChildAdded:Connect(function(v728)
+	if (v728.Name == v7("\63\234\78\233\43\215\180\34\243\91\237", "\193\76\154\47\158\69\136")) then
+		task.wait(0.5);
+		v158();
+		v156();
 	end
 end);
 task.spawn(function()
-	local v731 = 0;
-	local v732;
+	local v729 = 0 + 0;
+	local v730;
 	while true do
-		if (v731 == 0) then
-			v732 = "";
+		if (v729 == (0 + 0)) then
+			v730 = "";
 			while true do
-				local v1998 = 0;
-				while true do
-					if (v1998 == (0 - 0)) then
-						task.wait(0.75 - 0);
-						pcall(function()
-							local v2910 = 0 - 0;
-							local v2911;
-							local v2912;
-							while true do
-								if ((1 + 0) == v2910) then
-									if v2912 then
-										local v3370 = 0;
-										local v3371;
-										while true do
-											if (1 == v3370) then
-												if (v3371 ~= v732) then
-													v732 = v3371;
-													v155();
-												end
-												break;
-											end
-											if (v3370 == 0) then
-												v3371 = "";
-												for v3487 = 1, 6 do
-													local v3488 = v2912:FindFirstChild(tostring(v3487));
-													local v3489 = (v3488 and v3488:GetAttribute(v7("\16\183\210\36\143\156\108\42\182\252\55\148\141\113\42\141\214\63\143\152\67\58\167\202\53", "\28\79\210\163\81\230\236"))) or v7("\20\217\8", "\155\122\176\100\230");
-													local v3490 = v3488 and v3488:FindFirstChild(v7("\165\132\16\33", "\152\203\229\125\68"), true);
-													local v3491 = (v3490 and v3490.Text) or v7("\216\162\42\244", "\145\182\205\68");
-													v3371 = v3371 .. v3487 .. ":" .. v3489 .. ":" .. v3491 .. ";";
-												end
-												v3370 = 1730 - (529 + 1200);
-											end
-										end
-									end
-									break;
-								end
-								if (v2910 == 0) then
-									local v3228 = 0 + 0;
-									local v3229;
-									while true do
-										if (v3228 == (278 - (199 + 79))) then
-											v3229 = 0;
+				task.wait(0.75 - 0);
+				pcall(function()
+					local v2346 = 0;
+					local v2347;
+					local v2348;
+					while true do
+						if (v2346 == (2 - 1)) then
+							if v2348 then
+								local v3253 = 0 - 0;
+								local v3254;
+								while true do
+									if (v3253 == (0 + 0)) then
+										v3254 = "";
+										for v3502 = 1 + 0, 1 + 5 do
+											local v3503 = 0 + 0;
+											local v3504;
+											local v3505;
+											local v3506;
+											local v3507;
 											while true do
-												if (v3229 == (1 + 0)) then
-													v2910 = 1;
+												if ((0 - 0) == v3503) then
+													v3504 = v2348:FindFirstChild(tostring(v3502));
+													v3505 = (v3504 and v3504:GetAttribute(v7("\57\134\57\243\9\22\147\45\226\63\0\145\41\235\5\57\150\38\239\20\57\150\61\239\4", "\96\102\227\72\134"))) or v7("\234\75\2", "\114\132\34\110\99");
+													v3503 = 253 - (106 + 146);
+												end
+												if (v3503 == (3 - 1)) then
+													v3254 = v3254 .. v3502 .. ":" .. v3505 .. ":" .. v3507 .. ";";
 													break;
 												end
-												if (v3229 == 0) then
-													v2911 = v16.PlayerGui:FindFirstChild(v7("\86\19\203\231\249\192\150\82\76\23\217", "\60\37\99\170\144\151\159\227"));
-													v2912 = v2911 and v2911:FindFirstChild(v7("\123\162\58\178\102", "\46\55\203\76\215\21\82\218")) and v2911.Lives:FindFirstChild(v7("\160\204\248\49\230", "\140\230\190\153\92\131\118")) and v2911.Lives.Frame:FindFirstChild(v7("\254\198\198\83\75", "\25\171\168\175\39\56\134\44"));
-													v3229 = 3 - 2;
+												if (v3503 == (1 - 0)) then
+													local v3578 = 0 + 0;
+													while true do
+														if (v3578 == (0 - 0)) then
+															v3506 = v3504 and v3504:FindFirstChild(v7("\210\251\31\199", "\29\188\154\114\162\147\186\196"), true);
+															v3507 = (v3506 and v3506.Text) or v7("\12\13\134\234", "\148\98\98\232\143\36");
+															v3578 = 1019 - (75 + 943);
+														end
+														if (v3578 == (1064 - (972 + 91))) then
+															v3503 = 6 - 4;
+															break;
+														end
+													end
 												end
 											end
-											break;
 										end
+										v3253 = 1;
+									end
+									if ((2 - 1) == v3253) then
+										if (v3254 ~= v730) then
+											v730 = v3254;
+											v156();
+										end
+										break;
 									end
 								end
 							end
-						end);
-						break;
+							break;
+						end
+						if (v2346 == (1346 - (918 + 428))) then
+							v2347 = v17.PlayerGui:FindFirstChild(v7("\216\71\9\69\224\178\222\89\1\70\253", "\237\171\55\104\50\142"));
+							v2348 = v2347 and v2347:FindFirstChild(v7("\38\193\220\34\76", "\21\106\168\170\71\63")) and v2347.Lives:FindFirstChild(v7("\14\71\127\93\189", "\216\72\53\30\48")) and v2347.Lives.Frame:FindFirstChild(v7("\103\249\162\151\194", "\177\50\151\203\227"));
+							v2346 = 1598 - (1099 + 498);
+						end
 					end
-				end
+				end);
 			end
 			break;
 		end
 	end
 end);
 pcall(function()
-	local v733 = v22.init_config;
-	v22.init_config = function(v1129, v1130)
-		v1130:seperator({[v7("\140\43\75\114", "\141\226\74\38\23\236\84")]=v7("\180\119\108\49\142\124\127\54", "\69\231\18\24")});
-		local v1131 = v1130:tab({[v7("\126\222\63\47", "\74\16\191\82")]=v7("\247\26\78\30\118\181\106", "\25\180\117\32\120\31\210"),[v7("\56\126\78\199", "\169\81\29\33")]=v7("\239\191\202\114\3\238\184\198\122\20\167\242\157\36\64\170\239\139\43\71\168\237\138", "\112\157\221\178\19"),[v7("\231\26\9\55", "\64\147\123\107\68\177\73")]={v7("\130\35\45\35", "\194\207\66\68\77\78\22")}});
-		local v1132 = v1131:column({});
-		local v1133 = v1132:section({[v7("\33\28\20\94", "\126\79\125\121\59\65\213\83")]=v7("\112\204\254\68\90\196\227", "\34\51\163\144"),[v7("\245\131\103\68", "\54\134\234\29\33")]=(584.52 - (120 + 464)),[v7("\60\37\58\234\45\44\40", "\139\88\64\92")]=true,[v7("\118\45\25\115", "\119\31\78\118\29")]=v7("\62\248\87\255\54\251\164\56\243\75\164\106\167\240\127\163\25\172\125\186\241\126\175\24\168\112\185\240", "\193\76\154\47\158\69\136")});
-		local v1134 = v7("\239\82\14\83\251\129\223", "\237\171\55\104\50\142");
-		local v1135 = v48();
-		local v1136 = v1133:list({[v7("\5\216\222\46\80\123\25", "\21\106\168\170\71\63")]=v1135,[v7("\44\80\120\81\173\36\65", "\216\72\53\30\48")]=v7("\118\242\173\130\196\94\227", "\177\50\151\203\227"),[v7("\5\130\36\234\2\7\128\35", "\96\102\227\72\134")]=function(v1528)
-			v1134 = v1528;
-		end,[v7("\226\78\15\4", "\114\132\34\110\99")]=v7("\223\245\28\196\250\221\155\115\221\247\23\253\255\211\183\105", "\29\188\154\114\162\147\186\196")});
-		local v1137 = v1132:section({[v7("\12\3\133\234", "\148\98\98\232\143\36")]=v7("\143\77\41\16\172\185\64\122\36\166\169\76\53\28\168", "\195\203\36\90\115"),[v7("\79\73\72\87", "\61\60\32\50\50\104\194\169")]=(0.48 - 0),[v7("\182\32\118\24\167\41\100", "\121\210\69\16")]=true,[v7("\39\30\124\79", "\157\78\125\19\33")]=v7("\203\118\232\208\202\103\245\197\208\112\170\158\150\35\160\134\139\35\161\137\138\34\162", "\177\185\20\144")});
-		v1137:toggle({[v7("\82\85\195\32", "\228\60\52\174\69")]=v7("\41\89\224\9\57\55\93\250\14\113\90\107\235\15\113\21\83\229", "\25\122\60\142\109"),[v7("\5\24\97\182", "\128\113\97\17\211")]=v7("\10\221\233\214\242\179", "\214\126\178\142\177\158"),[v7("\69\44\50\79\4\50\85", "\94\33\73\84\46\113")]=v44.WebhookEnabled,[v7("\178\90\87\18\179\90\88\21", "\126\209\59\59")]=function(v1529)
-			v44.WebhookEnabled = v1529;
-			v24();
-		end});
-		v1137:textbox({[v7("\188\78\165\221", "\232\210\47\200\184\193\192")]=v7("\189\245\207\69\180\133\251\141\120\137\166\170", "\219\234\144\173\45"),[v7("\74\77\232\2", "\79\44\33\137\101\121\131\57")]=v7("\202\83\124\69\42\190\246\23\200\68\114\114\44\191\237\61\201", "\72\189\54\30\45\69\209\157"),[v7("\5\188\240\215\67\13\173", "\54\97\217\150\182")]=(v44.WebhookUrl or ""),[v7("\216\190\2\251\3\31\132\208", "\231\187\223\110\151\97\126")]=function(v1531)
-			local v1532 = 0;
+	local v731 = v23.init_config;
+	v23.init_config = function(v1158, v1159)
+		v1159:seperator({[v7("\165\69\55\22", "\195\203\36\90\115")]=v7("\111\69\70\70\1\172\206\78", "\61\60\32\50\50\104\194\169")});
+		local v1160 = v1159:tab({[v7("\188\36\125\28", "\121\210\69\16")]=v7("\13\18\125\71\244\41\14", "\157\78\125\19\33"),[v7("\208\119\255\223", "\177\185\20\144")]=v7("\78\86\214\36\151\79\81\218\44\128\6\27\129\114\212\11\6\151\125\211\9\4\150", "\228\60\52\174\69"),[v7("\14\93\236\30", "\25\122\60\142\109")]={v7("\60\0\120\189", "\128\113\97\17\211")}});
+		local v1161 = v1160:column({});
+		local v1162 = v1161:section({[v7("\16\211\227\212", "\214\126\178\142\177\158")]=v7("\98\38\58\72\24\57\82", "\94\33\73\84\46\113"),[v7("\162\82\65\27", "\126\209\59\59")]=(1422.52 - (1406 + 16)),[v7("\182\74\174\217\180\172\156", "\232\210\47\200\184\193\192")]=true,[v7("\131\243\194\67", "\219\234\144\173\45")]=v7("\94\67\241\4\10\240\92\59\69\69\179\74\86\178\10\118\26\19\177\87\73\177\12\120\26\20\184\84", "\79\44\33\137\101\121\131\57")});
+		local v1163 = v7("\249\83\120\76\48\189\233", "\72\189\54\30\45\69\209\157");
+		local v1164 = v52();
+		local v1165 = v1162:list({[v7("\14\169\226\223\89\15\170", "\54\97\217\150\182")]=v1164,[v7("\223\186\8\246\20\18\147", "\231\187\223\110\151\97\126")]=v7("\20\87\125\12\34\90\36", "\54\80\50\27\109\87"),[v7("\73\223\135\184\120\240\209\219", "\176\42\190\235\212\26\145\178")]=function(v1593)
+			v1163 = v1593;
+		end,[v7("\124\49\58\224", "\232\26\93\91\135\186\224")]=v7("\8\224\246\238\76\247\60\5\238\245\237\122\252\10\24\251", "\99\107\143\152\136\37\144")});
+		local v1166 = v1161:section({[v7("\45\113\209\140", "\184\67\16\188\233\58")]=v7("\43\26\52\73\247\39\11\83\16\79\250\61\0\28\44", "\85\111\115\71\42\152"),[v7("\22\113\49\17", "\153\101\24\75\116\141\20\51")]=(0.48 + 0),[v7("\57\29\195\11\40\20\209", "\106\93\120\165")]=true,[v7("\83\91\123\219", "\181\58\56\20")]=v7("\94\166\233\133\4\95\161\229\141\19\22\235\190\211\71\27\246\166\213\79\31\242\163", "\119\44\196\145\228")});
+		v1166:toggle({[v7("\253\121\180\70", "\190\147\24\217\35\130\197")]=v7("\236\95\254\230\159\119\241\246\220\82\176\213\218\88\248\237\208\81", "\130\191\58\144"),[v7("\102\6\229\36", "\159\18\127\149\65")]=v7("\244\237\21\234\40\11", "\110\128\130\114\141\68"),[v7("\190\84\212\163\55\182\69", "\66\218\49\178\194")]=v24.WebhookEnabled,[v7("\242\194\139\133\42\188\182\74", "\33\145\163\231\233\72\221\213")]=function(v1594)
+			local v1595 = 919 - (715 + 204);
 			while true do
-				if ((0 + 0) == v1532) then
-					v44.WebhookUrl = v1531;
-					v24();
+				if (v1595 == (0 + 0)) then
+					v24.WebhookEnabled = v1594;
+					v29();
 					break;
 				end
 			end
 		end});
-		v1137:toggle({[v7("\62\83\118\8", "\54\80\50\27\109\87")]=v7("\122\215\133\179\58\209\215\198\79\204\146\187\116\244\146\223\68\158\184\177\121\227\215\196", "\176\42\190\235\212\26\145\178"),[v7("\110\36\43\226", "\232\26\93\91\135\186\224")]=v7("\31\224\255\239\73\245", "\99\107\143\152\136\37\144"),[v7("\39\117\218\136\79\212\55", "\184\67\16\188\233\58")]=v44.WebhookPingSecret,[v7("\12\18\43\70\250\52\12\24", "\85\111\115\71\42\152")]=function(v1533)
-			local v1534 = 754 - (33 + 721);
+		v1166:textbox({[v7("\92\94\230\253", "\106\50\63\139\152\217")]=v7("\178\224\241\131\84\138\238\179\190\105\169\191", "\59\229\133\147\235"),[v7("\45\93\24\195", "\55\75\49\121\164\197")]=v7("\173\216\137\13\182\181\214\180\16\171\182\226\130\11\169\175\201", "\217\218\189\235\101"),[v7("\141\125\229\60\36\196\157", "\168\233\24\131\93\81")]=(v24.WebhookUrl or ""),[v7("\70\62\46\125\248\62\181\78", "\214\37\95\66\17\154\95")]=function(v1596)
+			v24.WebhookUrl = v1596;
+			v29();
+		end});
+		v1166:toggle({[v7("\84\92\83\161", "\175\58\61\62\196\137\106\104")]=v7("\193\78\251\252\93\35\39\246\244\85\236\244\19\6\98\239\255\7\198\254\30\17\39\244", "\128\145\39\149\155\125\99\66"),[v7("\53\30\66\76", "\41\65\103\50")]=v7("\37\63\249\70\181\93", "\56\81\80\158\33\217"),[v7("\126\19\22\91\197\227\200", "\119\26\118\112\58\176\143\188")]=v24.WebhookPingSecret,[v7("\45\241\44\126\219\130\45\251", "\227\78\144\64\18\185")]=function(v1598)
+			local v1599 = 0 + 0;
 			while true do
-				if (v1534 == (1363 - (1061 + 302))) then
-					v44.WebhookPingSecret = v1533;
-					v24();
+				if ((663 - (275 + 388)) == v1599) then
+					v24.WebhookPingSecret = v1598;
+					v29();
 					break;
 				end
 			end
 		end});
-		v1137:button({[v7("\11\121\38\17", "\153\101\24\75\116\141\20\51")]=v7("\14\29\203\14\125\44\192\25\41\88\242\15\63\16\202\5\54", "\106\93\120\165"),[v7("\89\89\120\217\88\89\119\222", "\181\58\56\20")]=function()
-			v108(true);
+		v1166:button({[v7("\37\247\135\67", "\38\75\150\234")]=v7("\211\75\27\173\160\122\16\186\244\14\34\172\226\70\26\166\235", "\201\128\46\117"),[v7("\118\187\232\181\58\215\118\177", "\182\21\218\132\217\88")]=function()
+			v110(true);
 		end});
-		local v1138 = v1131:column({});
-		local v1139 = v1138:section({[v7("\66\165\252\129", "\119\44\196\145\228")]=v7("\192\125\173\87\235\171\217\224", "\190\147\24\217\35\130\197"),[v7("\204\83\244\231", "\130\191\58\144")]=v7("\96\22\242\41\235", "\159\18\127\149\65"),[v7("\243\235\8\232", "\110\128\130\114\141\68")]=(1730 - (719 + 1010)),[v7("\190\84\212\163\55\182\69", "\66\218\49\178\194")]=true,[v7("\248\192\136\135", "\33\145\163\231\233\72\221\213")]=v7("\64\93\243\249\170\25\87\75\226\252\227\69\29\14\185\161\234\82\2\14\190\168\236\93\6\12\186\171", "\106\50\63\139\152\217")});
-		local v1140, v1141, v1142 = v45();
-		v1139:label({[v7("\139\228\254\142", "\59\229\133\147\235")]=string.format(v7("\10\82\26\203\176\89\63\11\89\129\182\23\99\120\61\158\229\18\56\24", "\55\75\49\121\164\197"), v1142, v1140)});
-		v1139:textbox({[v7("\180\220\134\0", "\217\218\189\235\101")]=v7("\170\119\237\59\56\207\201\118\226\48\52\146", "\168\233\24\131\93\81"),[v7("\67\51\35\118", "\214\37\95\66\17\154\95")]=v7("\89\82\80\162\224\13\55\193\91\80\91\155\253\15\16\219", "\175\58\61\62\196\137\106\104")});
-		v1139:button({[v7("\255\70\248\254", "\128\145\39\149\155\125\99\66")]=v7("\18\6\68\76\97\19\93\9\5\14\65\66", "\41\65\103\50"),[v7("\50\49\242\77\187\89\50\59", "\56\81\80\158\33\217")]=function()
-			local v1535 = 0;
-			local v1536;
-			local v1537;
+		local v1167 = v1160:column({});
+		local v1168 = v1167:section({[v7("\118\230\242\81", "\215\24\135\159\52\112")]=v7("\32\241\64\149\172\142\166\0", "\193\115\148\52\225\197\224"),[v7("\84\80\6\28", "\108\39\57\98\121\221")]=v7("\245\62\142\243\156", "\156\135\87\233\155\232\138\208"),[v7("\151\74\44\127", "\26\228\35\86")]=1,[v7("\236\186\174\168\77\231\48", "\65\136\223\200\201\56\139\68")]=true,[v7("\247\249\56\249", "\58\158\154\87\151")]=v7("\244\174\246\136\26\99\50\46\239\168\180\198\70\33\101\99\181\244\190\216\92\32\98\109\178\255\191\218", "\90\134\204\142\233\105\16\87")});
+		local v1169, v1170, v1171 = v49();
+		v1168:label({[v7("\174\38\252\166", "\195\192\71\145")]=string.format(v7("\170\210\250\27\79\71\159\139\185\81\73\9\195\248\221\78\26\12\152\152", "\41\235\177\153\116\58"), v1171, v1169)});
+		v1168:textbox({[v7("\230\255\217\5", "\72\136\158\180\96\104")]=v7("\25\126\207\75\51\118\129\67\59\124\196\23", "\45\90\17\161"),[v7("\201\238\70\228", "\28\175\130\39\131\90\142\65")]=v7("\119\119\177\142\220\115\71\177\137\216\113\71\171\141\205\96", "\181\20\24\223\232")});
+		v1168:button({[v7("\83\186\125\181", "\66\61\219\16\208\108\70")]=v7("\109\169\239\142\30\188\246\203\122\161\234\128", "\235\62\200\153"),[v7("\89\173\174\175\88\173\161\168", "\195\58\204\194")]=function()
+			local v1600 = 0;
+			local v1601;
+			local v1602;
 			while true do
-				if (v1535 == (0 - 0)) then
-					v1536 = v22.flags and v22.flags[v7("\121\25\30\92\217\232\227\25\123\27\21\101\196\234\196\3", "\119\26\118\112\58\176\143\188")];
-					v1537 = (v1536 and (#v1536 > (939 - (446 + 493))) and v1536) or v1134 or v7("\10\245\38\115\204\143\58", "\227\78\144\64\18\185");
-					v1535 = 1 + 0;
+				if (v1600 == (2 - 0)) then
+					if (v23.notifications and v23.notifications.create_notification) then
+						v23.notifications:create_notification({[v7("\194\135\176\8", "\102\172\230\221\109\17\190\131")]=v7("\197\157\137\230\217\46", "\157\132\215\169\174\140\108\22"),[v7("\190\245\21\160", "\64\215\155\115\207\154\87\173")]=string.format(v7("\55\182\224\17\254\114\201\47\252\253\42\183\102\136\2\188\234\87\241\122\155\84\252\253\86", "\233\116\217\142\119\151\21"), v1602, v1170)});
+					end
+					break;
 				end
-				if (v1535 == 1) then
-					v23(v1537);
+				if (v1600 == (1 + 0)) then
+					v27(v1602);
 					pcall(function()
-						if (v1136 and v1136.refresh_options) then
-							v1136:refresh_options(v48());
+						if (v1165 and v1165.refresh_options) then
+							v1165:refresh_options(v52());
 						end
 					end);
-					v1535 = 1146 - (602 + 542);
+					v1600 = 1 + 1;
 				end
-				if (v1535 == (2 + 0)) then
-					if (v22.notifications and v22.notifications.create_notification) then
-						v22.notifications:create_notification({[v7("\37\247\135\67", "\38\75\150\234")]=v7("\193\100\85\129\213\108", "\201\128\46\117"),[v7("\124\180\226\182", "\182\21\218\132\217\88")]=string.format(v7("\91\232\241\82\25\176\56\220\186\71\45\247\107\230\233\81\20\247\126\232\237\20\85\164\57", "\215\24\135\159\52\112"), v1537, v1141)});
+				if (v1600 == (0 + 0)) then
+					v1601 = v23.flags and v23.flags[v7("\231\168\251\50\237\160\202\58\229\170\240\11\240\162\237\32", "\84\132\199\149")];
+					v1602 = (v1601 and (#v1601 > (0 - 0)) and v1601) or v1163 or v7("\11\177\128\58\244\232\225", "\61\79\212\230\91\129\132\149");
+					v1600 = 1 + 0;
+				end
+			end
+		end});
+		v1168:button({[v7("\164\43\2\165", "\82\202\74\111\192")]=v7("\252\95\76\133\223\202\26\70\152\209\195\26\100\131\205\197", "\190\174\58\32\234"),[v7("\52\232\56\244\49\239\52\226", "\142\87\137\84\152\83")]=function()
+			local v1603 = 0 - 0;
+			local v1604;
+			local v1605;
+			while true do
+				if (v1603 == (1 + 0)) then
+					v28(v1605);
+					if getgenv().AJ_HUB_UPDATE_CARDS then
+						getgenv().AJ_HUB_UPDATE_CARDS();
+					end
+					v1603 = 2;
+				end
+				if (v1603 == (0 + 0)) then
+					v1604 = v23.flags and v23.flags[v7("\131\164\53\240\199\55\104\142\170\54\243\241\36\82\152\191", "\55\224\203\91\150\174\80")];
+					v1605 = (v1604 and (#v1604 > 0) and v1604) or v1163 or v7("\156\122\123\49\214\23\61", "\31\216\31\29\80\163\123\73");
+					v1603 = 1;
+				end
+				if (2 == v1603) then
+					if (v23.notifications and v23.notifications.create_notification) then
+						v23.notifications:create_notification({[v7("\25\12\228\175", "\186\119\109\137\202\179")]=v7("\27\113\16\234\141\215", "\138\90\59\48\162\216\149"),[v7("\176\162\54\26", "\51\217\204\80\117\126\161\175")]=string.format(v7("\237\171\68\117\195\238\142\159\15\96\247\169\194\171\75\119\207\237\142\162\69\97\138\172\221\229", "\137\174\196\42\19\170"), v1605, v1170)});
 					end
 					break;
 				end
 			end
 		end});
-		v1139:button({[v7("\29\245\89\132", "\193\115\148\52\225\197\224")]=v7("\117\92\14\22\188\8\7\95\16\22\176\76\99\80\17\18", "\108\39\57\98\121\221"),[v7("\228\54\133\247\138\235\179\247", "\156\135\87\233\155\232\138\208")]=function()
-			local v1538 = v22.flags and v22.flags[v7("\135\76\56\124\141\68\9\116\133\78\51\69\144\70\46\110", "\26\228\35\86")];
-			local v1539 = (v1538 and (#v1538 > 0) and v1538) or v1134 or v7("\204\186\174\168\77\231\48", "\65\136\223\200\201\56\139\68");
-			v51(v1539);
-			if getgenv().AJ_HUB_UPDATE_CARDS then
-				getgenv().AJ_HUB_UPDATE_CARDS();
-			end
-			if (v22.notifications and v22.notifications.create_notification) then
-				v22.notifications:create_notification({[v7("\240\251\58\242", "\58\158\154\87\151")]=v7("\199\134\174\161\60\82", "\90\134\204\142\233\105\16\87"),[v7("\169\41\247\172", "\195\192\71\145")]=string.format(v7("\168\222\247\18\83\78\203\234\188\7\103\9\135\222\248\16\95\77\203\215\246\6\26\12\152\144", "\41\235\177\153\116\58"), v1539, v1141)});
-			end
-		end});
-		v1139:button({[v7("\230\255\217\5", "\72\136\158\180\96\104")]=v7("\30\116\205\72\46\116\129\110\53\127\199\68\61", "\45\90\17\161"),[v7("\204\227\75\239\56\239\34\119", "\28\175\130\39\131\90\142\65")]=function()
-			local v1540 = 0 - 0;
-			local v1541;
-			local v1542;
-			while true do
-				if (v1540 == (362 - (276 + 85))) then
-					if (v1542 and (v1542 ~= v7("\121\190\118\177\25\42\54", "\66\61\219\16\208\108\70"))) then
-						local v2810 = 1380 - (816 + 564);
-						while true do
-							if (v2810 == 1) then
-								pcall(function()
-									if (v1136 and v1136.refresh_options) then
-										v1136:refresh_options(v48());
-									end
-								end);
-								if (v22.notifications and v22.notifications.create_notification) then
-									v22.notifications:create_notification({[v7("\84\173\175\166", "\195\58\204\194")]=v7("\197\141\181\28\209\133", "\84\132\199\149"),[v7("\38\186\128\52", "\61\79\212\230\91\129\132\149")]=string.format(v7("\232\131\177\8\101\219\231\70\207\137\179\11\120\217\163\61\137\149\128", "\102\172\230\221\109\17\190\131"), v1542)});
-								end
-								break;
+		v1168:button({[v7("\115\134\234\84", "\34\29\231\135\49\211\50\91")]=v7("\251\41\238\85\65\218\108\193\95\91\217\37\229", "\53\191\76\130\48"),[v7("\48\72\187\89\49\72\180\94", "\53\83\41\215")]=function()
+			local v1606 = v23.flags and v23.flags[v7("\88\173\79\78\172\92\157\79\73\168\94\157\85\77\189\79", "\197\59\194\33\40")];
+			local v1607 = (v1606 and (#v1606 > (0 + 0)) and v1606) or v1163;
+			if (v1607 and (v1607 ~= v7("\169\78\187\235\242\241\175", "\219\237\43\221\138\135\157"))) then
+				local v2019 = 565 - (5 + 560);
+				while true do
+					if (v2019 == (407 - (77 + 329))) then
+						pcall(function()
+							if (v1165 and v1165.refresh_options) then
+								v1165:refresh_options(v52());
 							end
-							if (v2810 == 0) then
-								v49(v1542);
-								v1134 = v7("\122\173\255\138\75\164\237", "\235\62\200\153");
-								v2810 = 2 - 1;
-							end
+						end);
+						if (v23.notifications and v23.notifications.create_notification) then
+							v23.notifications:create_notification({[v7("\238\67\34\200", "\182\128\34\79\173")]=v7("\30\34\169\200\105\29", "\60\95\104\137\128"),[v7("\63\120\179\70", "\41\86\22\213")]=string.format(v7("\43\12\137\87\162\10\13\197\81\185\1\15\140\85\246\52\76\150\111", "\214\111\105\229\50"), v1607)});
 						end
+						break;
 					end
-					break;
-				end
-				if (v1540 == (914 - (854 + 60))) then
-					v1541 = v22.flags and v22.flags[v7("\119\119\177\142\220\115\71\177\137\216\113\71\171\141\205\96", "\181\20\24\223\232")];
-					v1542 = (v1541 and (#v1541 > 0) and v1541) or v1134;
-					v1540 = 696 - (227 + 468);
+					if (v2019 == (0 + 0)) then
+						v53(v1607);
+						v1163 = v7("\208\187\123\160\104\248\170", "\29\148\222\29\193");
+						v2019 = 1 + 0;
+					end
 				end
 			end
 		end});
-		v1139:button({[v7("\234\182\196\203", "\157\132\215\169\174\140\108\22")]=v7("\157\244\26\161\186\19\196\51\180\244\1\171\186\127\238\47\167\226\83\131\243\57\198\105", "\64\215\155\115\207\154\87\173"),[v7("\23\184\226\27\245\116\138\31", "\233\116\217\142\119\151\21")]=function()
-			local v1543 = 0 + 0;
+		v1168:button({[v7("\247\41\241\80", "\78\153\72\156\53")]=v7("\14\41\63\228\100\2\63\249\39\41\36\238\100\110\21\229\52\63\118\198\45\40\61\163", "\138\68\70\86"),[v7("\55\73\238\13\210\232\255\63", "\156\84\40\130\97\176\137")]=function()
+			local v1608 = 1951 - (397 + 1554);
 			while true do
-				if (v1543 == (529 - (54 + 475))) then
+				if (v1608 == (1258 - (219 + 1038))) then
+					if (v23.notifications and v23.notifications.create_notification) then
+						v23.notifications:create_notification({[v7("\142\245\247\196", "\161\224\148\154")]=v7("\30\209\7\215\239\116", "\54\95\155\39\159\186"),[v7("\194\25\177\241", "\158\171\119\215")]=v7("\30\64\178\1\194\77\214\122\69\168\12\198\31\209\53\89\168\7\201\31\198\53\9\162\14\196\79\208\53\72\179\6\140", "\178\90\41\193\98\173\63")});
+					end
+					break;
+				end
+				if (v1608 == 0) then
 					pcall(function()
 						if setclipboard then
-							setclipboard(v7("\162\62\27\176\33\240\101\64\164\59\185\41\0\178\54\228\45\8\239\56\190\56\91\153\19\179\126\40\249", "\82\202\74\111\192"));
+							setclipboard(v7("\231\24\253\29\36\175\160\67\237\4\36\246\224\30\237\67\48\242\160\6\253\31\99\204\206\21\189\42\110", "\149\143\108\137\109\87"));
 						elseif toclipboard then
-							toclipboard(v7("\198\78\84\154\205\148\21\15\142\215\221\89\79\152\218\128\93\71\197\212\218\72\20\179\255\215\14\103\211", "\190\174\58\32\234"));
+							toclipboard(v7("\50\99\239\24\69\96\56\180\12\95\41\116\244\26\82\116\112\252\71\92\46\101\175\49\119\35\35\220\81", "\54\90\23\155\104"));
 						end
 					end);
 					pcall(function()
-						game:GetService(v7("\4\253\53\234\39\235\37\206\33\241", "\142\87\137\84\152\83")):SetCore(v7("\179\174\53\242\224\63\67\137\173\50\245\207\36\94\143\165", "\55\224\203\91\150\174\80"), {[v7("\140\118\105\60\198", "\31\216\31\29\80\163\123\73")]=v7("\54\39\169\130\230\248\87\17\169\142\218\201\20\2\251\174", "\186\119\109\137\202\179"),[v7("\14\94\72\214", "\138\90\59\48\162\216\149")]=v7("\157\165\35\22\17\211\203\19\181\165\62\30\94\194\192\67\176\169\52\85\10\206\143\80\181\165\32\23\17\192\221\87\248", "\51\217\204\80\117\126\161\175"),[v7("\234\177\88\114\222\224\193\170", "\137\174\196\42\19\170")]=4});
+						game:GetService(v7("\2\182\197\6\231\52\176\227\1\250", "\147\81\194\164\116")):SetCore(v7("\31\174\58\46\230\17\98\37\173\61\41\201\10\127\35\165", "\22\76\203\84\74\168\126"), {[v7("\232\220\241\192\168", "\175\188\181\133\172\205\105")]=v7("\145\85\232\29\152\223\240\99\232\17\164\238\179\112\186\49", "\157\208\31\200\85\205"),[v7("\105\253\164\38", "\63\61\152\220\82\24\19\84")]=v7("\163\234\60\212\36\64\170\250\139\234\33\220\107\81\161\170\142\230\43\151\63\93\238\185\139\234\63\213\36\83\188\190\198", "\218\231\131\79\183\75\50\206"),[v7("\209\29\225\225\169\225\180\243", "\157\149\104\147\128\221\136\219")]=(3 + 1)});
 					end);
-					v1543 = 1 - 0;
+					v1608 = 1;
 				end
-				if ((33 - (21 + 11)) == v1543) then
-					if (v22.notifications and v22.notifications.create_notification) then
-						v22.notifications:create_notification({[v7("\115\134\234\84", "\34\29\231\135\49\211\50\91")]=v7("\254\6\162\120\96\253", "\53\191\76\130\48"),[v7("\58\71\177\90", "\53\83\41\215")]=v7("\127\171\82\75\170\73\166\1\68\172\85\169\1\75\170\75\171\68\76\229\79\173\1\75\169\82\178\67\71\164\73\166\0", "\197\59\194\33\40")});
-					end
+			end
+		end});
+		local v1172 = (v24.MenuAccent and Color3.fromRGB(v24.MenuAccent.R, v24.MenuAccent.G, v24.MenuAccent.B)) or Color3.fromRGB(92 + 91, 386 - 210, 444 - 239);
+		v1168:colorpicker({[v7("\41\227\244\207", "\165\71\130\153\170\169\99\100")]=v7("\47\34\62\21\66\6\51\3\7\41\36", "\96\98\71\80"),[v7("\184\71\82\231", "\92\222\43\51\128\35")]=v7("\186\187\196\163\101\92\142\180\187\196\162", "\237\215\222\170\214\58\61"),[v7("\45\45\9\193\200", "\69\78\66\101\174\186\221\202")]=v1172,[v7("\128\7\170\7\129\7\165\0", "\107\227\102\198")]=function(v1609, v1610)
+			local v1611 = 0;
+			while true do
+				if (v1611 == 0) then
+					v23:update_theme(v7("\68\195\52\88\133\76", "\91\37\160\87\61\235\56"), v1609);
+					v24.MenuAccent = {R=math.floor(v1609.R * (487 - 232)),G=math.floor(v1609.G * 255),B=math.floor(v1609.B * (71 + 184)),[v7("\116\78\79", "\63\60\43\55\165\94\146")]=v1609:ToHex()};
+					v1611 = 753 - (404 + 348);
+				end
+				if (v1611 == 1) then
+					v27();
 					break;
 				end
 			end
 		end});
-		local v1143 = (v44.MenuAccent and Color3.fromRGB(v44.MenuAccent.R, v44.MenuAccent.G, v44.MenuAccent.B)) or Color3.fromRGB(181 + 2, 176, 1800 - (1351 + 244));
-		v1139:colorpicker({[v7("\131\74\176\239", "\219\237\43\221\138\135\157")]=v7("\217\187\115\180\61\213\189\126\164\115\224", "\29\148\222\29\193"),[v7("\230\78\46\202", "\182\128\34\79\173")]=v7("\50\13\231\245\99\62\11\234\229\82\43", "\60\95\104\137\128"),[v7("\53\121\185\70\36", "\41\86\22\213")]=v1143,[v7("\12\8\137\94\180\14\10\142", "\214\111\105\229\50")]=function(v1544, v1545)
-			v22:update_theme(v7("\248\43\255\80\32\237", "\78\153\72\156\53"), v1544);
-			v44.MenuAccent = {R=math.floor(v1544.R * 255),G=math.floor(v1544.G * (218 + 37)),B=math.floor(v1544.B * 255),[v7("\12\35\46", "\138\68\70\86")]=v1544:ToHex()};
-			v23();
-		end});
-		local v1144 = nil;
-		if (v44.MenuBind and v44.MenuBind.key and (v44.MenuBind.key ~= v7("\26\103\204\36", "\156\84\40\130\97\176\137"))) then
+		local v1173 = nil;
+		if (v24.MenuBind and v24.MenuBind.key and (v24.MenuBind.key ~= v7("\49\121\193\252", "\193\127\54\143\185\33\47\207"))) then
 			pcall(function()
-				v1144 = v22:convert_enum(v44.MenuBind.key);
+				v1173 = v23:convert_enum(v24.MenuBind.key);
 			end);
 		end
-		v1139:keybind({[v7("\225\13\228\8", "\149\143\108\137\109\87")]=v7("\23\114\245\29\22\24\126\245\12", "\54\90\23\155\104"),[v7("\55\174\197\19", "\147\81\194\164\116")]=v7("\33\174\58\63\247\28\127\34\175", "\22\76\203\84\74\168\126"),[v7("\215\208\252", "\175\188\181\133\172\205\105")]=v1144,[v7("\189\112\172\48", "\157\208\31\200\85\205")]=((v44.MenuBind and v44.MenuBind.mode) or v7("\105\247\187\53\116\118", "\63\61\152\220\82\24\19\84")),[v7("\131\230\41\214\62\94\186", "\218\231\131\79\183\75\50\206")]=true,[v7("\246\9\255\236\191\233\184\246", "\157\149\104\147\128\221\136\219")]=function(v1547)
-			v1130.toggle_menu(v1547);
+		v1168:keybind({[v7("\3\66\68\211", "\184\109\35\41\182\138")]=v7("\18\233\167\111\174\168\176\49\232", "\217\95\140\201\26\142\234"),[v7("\235\115\116\45", "\154\141\31\21\74")]=v7("\227\45\76\226\43\71\231\38\70", "\37\142\72\34\151\116"),[v7("\185\47\154", "\70\210\74\227\190")]=v1173,[v7("\227\75\239\19", "\114\142\36\139\118\160\110")]=((v24.MenuBind and v24.MenuBind.mode) or v7("\148\216\180\37\58\165", "\86\192\183\211\66")),[v7("\135\94\119\75\224\136\151", "\228\227\59\17\42\149")]=true,[v7("\175\168\123\207\174\168\116\200", "\163\204\201\23")]=function(v1612)
+			v1159.toggle_menu(v1612);
 		end});
-		v1139:toggle({[v7("\142\245\247\196", "\161\224\148\154")]=v7("\30\245\83\246\151\119\25\208", "\54\95\155\39\159\186"),[v7("\223\14\167\251", "\158\171\119\215")]=v7("\46\70\166\5\193\90", "\178\90\41\193\98\173\63"),[v7("\35\231\255\203\220\15\16", "\165\71\130\153\170\169\99\100")]=v44.AntiPunishments,[v7("\1\38\60\12\0\38\51\11", "\96\98\71\80")]=function(v1548)
-			v44.AntiPunishments = v1548;
-			v99();
-			v23();
-		end});
-		v1139:toggle({[v7("\176\74\94\229", "\92\222\43\51\128\35")]=v7("\150\171\222\185\26\113\130\182\186", "\237\215\222\170\214\58\61"),[v7("\58\59\21\203", "\69\78\66\101\174\186\221\202")]=v7("\151\9\161\12\143\3", "\107\227\102\198"),[v7("\65\197\49\92\158\84\47", "\91\37\160\87\61\235\56")]=v44.AutoLoad,[v7("\95\74\91\201\60\243\92\87", "\63\60\43\55\165\94\146")]=function(v1550)
-			v44.AutoLoad = v1550;
-			if (v1550 and v98) then
-				v98();
-			end
-			v23();
-		end});
-		v1139:toggle({[v7("\17\87\226\220", "\193\127\54\143\185\33\47\207")]=v7("\61\81\70\219\250\204\77\103\64\197\233\215\31\71\9\217\228\152\62\87\72\196\254\205\29", "\184\109\35\41\182\138"),[v7("\43\245\185\127", "\217\95\140\201\26\142\234")]=v7("\249\112\114\45\246\232", "\154\141\31\21\74"),[v7("\234\45\68\246\1\73\250", "\37\142\72\34\151\116")]=not v44.DontShowDiscordPrompt,[v7("\177\43\143\210\36\179\41\136", "\70\210\74\227\190")]=function(v1552)
-			local v1553 = 0;
+		v1168:toggle({[v7("\20\195\23\67", "\38\122\162\122")]=v7("\8\169\243\246\254\8\129\204", "\211\73\199\135\159"),[v7("\227\26\185\47", "\18\151\99\201\74\188")]=v7("\73\11\184\45\61\195", "\127\61\100\223\74\81\166"),[v7("\92\200\219\206\188\84\217", "\201\56\173\189\175")]=v24.AntiPunishments,[v7("\52\232\142\251\225\54\234\137", "\131\87\137\226\151")]=function(v1613)
+			local v1614 = 0;
 			while true do
-				if (v1553 == (0 - 0)) then
-					v44.DontShowDiscordPrompt = not v1552;
-					v23();
+				if (v1614 == (149 - (99 + 49))) then
+					v27();
+					break;
+				end
+				if (v1614 == 0) then
+					v24.AntiPunishments = v1613;
+					v101();
+					v1614 = 1;
+				end
+			end
+		end});
+		v1168:toggle({[v7("\191\248\4\141", "\126\209\153\105\232\84\109\57")]=v7("\248\206\160\79\148\245\212\181\68", "\180\185\187\212\32"),[v7("\205\77\79\4", "\200\185\52\63\97")]=v7("\110\79\78\223\177\46", "\25\26\32\41\184\221\75\124"),[v7("\177\197\135\47\178\185\212", "\199\213\160\225\78")]=v24.AutoLoad,[v7("\139\133\136\189\31\175\242\131", "\145\232\228\228\209\125\206")]=function(v1615)
+			local v1616 = 0 + 0;
+			while true do
+				if ((1969 - (1223 + 746)) == v1616) then
+					v24.AutoLoad = v1615;
+					if (v1615 and v100) then
+						v100();
+					end
+					v1616 = 1;
+				end
+				if (v1616 == (1 - 0)) then
+					v27();
 					break;
 				end
 			end
+		end});
+		v1168:toggle({[v7("\177\183\242\8", "\109\223\214\159")]=v7("\219\23\220\43\102\1\231\237\226\22\208\41\100\17\231\198\229\69\224\50\119\7\179\220\251", "\169\139\101\179\70\22\117\199"),[v7("\52\29\66\206", "\80\64\100\50\171\40")]=v7("\95\143\216\203\42\218", "\210\43\224\191\172\70\191\61"),[v7("\49\92\130\192\8\57\77", "\125\85\57\228\161")]=not v24.DontShowDiscordPrompt,[v7("\46\60\173\163\47\60\162\164", "\207\77\93\193")]=function(v1617)
+			v24.DontShowDiscordPrompt = not v1617;
+			v27();
 		end});
 	end;
 end);
-local v158, v159 = v147:tab({[v7("\224\69\230\19", "\114\142\36\139\118\160\110")]=v7("\133\193\182\44\34", "\86\192\183\211\66"),[v7("\138\88\126\68", "\228\227\59\17\42\149")]=v7("\190\171\111\194\191\186\114\215\165\173\45\140\227\254\39\148\254\254\37\144\253\249\34", "\163\204\201\23"),[v7("\14\195\24\85", "\38\122\162\122")]={v7("\26\178\234\242\182\59\231\207\234\189\61\231\161\191\131\40\181\243\230", "\211\73\199\135\159"),v7("\212\2\187\46\207\50\177\67\132\47\206\113\255\2\167\62", "\18\151\99\201\74\188")}});
+local v159, v160 = v148:tab({[v7("\92\8\183\163", "\114\50\105\218\198\194\24")]=v7("\202\217\165\219\66", "\180\143\175\192\181\54\136"),[v7("\164\92\29\212", "\227\205\63\114\186\55\121\183")]=v7("\163\182\80\63\85\177\41\165\189\76\100\9\237\123\225\227\26\105\20\241\125\225\225", "\76\209\212\40\94\38\194"),[v7("\13\206\205\101", "\100\121\175\175\22\231\216\61")]={v7("\244\201\238\26\194\206\163\63\210\210\247\87\129\156\211\22\213\200\250", "\119\167\188\131"),v7("\107\0\171\10\94\157\14\65\148\11\95\222\64\0\183\26", "\189\40\97\217\110\45")}});
 do
-	local v735 = {v7("\124\0\169\47\63\210\10\79\1\173\106\5\201\8\83", "\127\61\100\223\74\81\166"),v7("\121\193\212\202\167\24\254\205\206\170\93\222\213\198\185\24\133\232\193\173\93\223\202\206\189\93\223\148", "\201\56\173\189\175"),v7("\22\231\150\183\200\62\231\133\243\236\58\169\202\196\246\58\228\135\229\170", "\131\87\137\226\151"),v7("\144\234\26\137\39\30\80\16\241\201\8\154\63", "\126\209\153\105\232\84\109\57"),v7("\250\206\166\83\209\221\155\146\69\199\205\210\162\65\216", "\180\185\187\212\32"),v7("\253\65\81\6\173\214\90\31\53\160\203\91\81\4", "\200\185\52\63\97"),v7("\92\65\75\212\184\47\92\82\115\78\78\220\178\38\92\49\73\85\68\213\184\57\85", "\25\26\32\41\184\221\75\124"),v7("\147\201\132\32\163\245\227\136\58\190", "\199\213\160\225\78"),v7("\174\145\144\164\15\171\177\171\141\144\168", "\145\232\228\228\209\125\206"),v7("\151\183\234\3\171\179\251\77\158\181\254\9\186\187\230\77\247\133\234\0\178\179\237\68", "\109\223\214\159"),v7("\195\4\198\40\98\16\163\137\198\4\221\53\127\26\169", "\169\139\101\179\70\22\117\199"),v7("\8\1\94\199\65\35\40\68\113\194\92\41", "\80\64\100\50\171\40"),v7("\102\129\216\197\37\159\117\187\71\140\204", "\210\43\224\191\172\70\191\61"),v7("\24\88\131\200\30\117\109\139\214\19", "\125\85\57\228\161"),v7("\0\50\180\161\57\60\168\161\109\9\164\162\61\49\164", "\207\77\93\193"),v7("\124\8\172\191\226\90\19\75", "\114\50\105\218\198\194\24"),v7("\193\198\167\221\66\229\213\253\202\224\225\68\233\221\225", "\180\143\175\192\181\54\136"),v7("\130\75\26\223\69\14\216\145\169\83\11\154\103\21\214\141\168", "\227\205\63\114\186\55\121\183"),v7("\129\184\73\48\67\182\108\150\166\77\59\72\171\41\241\252\123\43\75\175\41\163\253", "\76\209\212\40\94\38\194"),v7("\41\218\223\102\130\172\29\45\10\195\206\120\131\248\21\55\12\194\194\115\149\241", "\100\121\175\175\22\231\216\61"),v7("\245\221\234\25\135\234\234\27\203\221\228\18", "\119\167\188\131"),v7("\122\20\176\0\72\217\8\34\176\26\84", "\189\40\97\217\110\45"),v7("\25\199\195\73\128\46\134\240\87\132\36\195\212", "\229\74\166\160\59"),v7("\97\241\11\28\250\137\91\252\9\25\189\186", "\223\50\144\101\120\218"),v7("\248\175\76\191\161\44\37\65\239\174\86\169\166\60\39\21", "\97\171\199\37\221\212\85\68"),v7("\147\131\69\232\98\210\223\163\154\93\174\87", "\173\192\232\60\200\35\187"),v7("\245\206\240\76\119\106\31\199\203\237", "\115\166\165\137\108\62\25"),v7("\63\137\116\190\21\199\80\160\2\128\127\166\1", "\201\108\231\27"),v7("\108\161\244\87\88\1\107\160\236\78", "\33\63\207\155\32\33"),v7("\186\247\164\73\41\201\196\160\68\56\140\245", "\76\233\135\197\42"),v7("\135\214\133\221\227\160\134\184\192\253\186", "\138\212\166\236\175"),v7("\154\144\214\54\53\150\93\51\166\146\211\32", "\100\201\224\191\68\92\226\125"),v7("\119\12\52\74\67\188\95\77\28\62\87\91\232", "\23\36\120\91\56\46\156"),v7("\220\204\96\29\22\78\234\152\70\19\15\71", "\41\143\184\18\124\120"),v7("\152\6\88\213\71\78\162\79\110\212\92\72\171\0\68", "\47\206\111\42\161\50"),v7("\253\77\201\197\175\206\12\230\192\190\211\12\141\250\191\199\65\192\219\227", "\202\170\44\165\169")};
-	local v736 = {v7("\217\34\66\23\225\47\89\9", "\109\155\78\43"),v7("\7\185\122\27\173", "\127\68\213\31\122\223"),v7("\21\224\2\179\55\233\9", "\220\83\140\109"),v7("\156\15\31\197\22\181\167", "\200\213\97\121\160\100\219\200"),v7("\210\41\220\87\227\18\16", "\155\159\72\187\62\128\115\124"),v7("\3\252\7\18\40", "\124\81\157\110"),v7("\195\126\13\25\151\198\162\49\253", "\67\144\31\99\125\228\178\205"),v7("\224\37\220\37\194\219\42\0", "\108\179\81\189\87\164\186\70"),v7("\229\166\252\238\61\207", "\80\182\210\147\156"),v7("\57\199\30\84\50", "\75\110\174\112\48")};
-	local v737 = {v7("\22\6\181", "\44\87\106\217"),v7("\220\117\29\165\245\98\78\145\226\113\7\186\227", "\214\144\16\110"),v7("\232\177\168\106\250\246\89\82\210\177", "\39\187\197\201\24\218\176\43"),v7("\22\170\61\212\7\219\147\19\44\170\124\142\117\252\136\8\39\177\43\143", "\102\69\222\92\166\39\157\225"),v7("\77\48\63\192\217\62\8\74\44\49\198\211\36", "\40\30\69\82\173\182\80"),v7("\134\75\218\80\49\245\128\92\201\86\41\185\242\109\212\82\32\187", "\213\210\57\187\57\69"),v7("\218\82\213\166\44\49\197\77\213\66\194", "\109\158\39\187\193\73\94\171"),v7("\228\188\90\157\145\202\210\186\84\133\221", "\152\183\200\59\233\177"),v7("\176\183\166\58\233\227\77\10\130\182\246\13\254\177\113\18\143", "\126\227\194\214\95\155\195\30")};
-	local v738 = {v7("\219\97\184\233\249\126", "\136\154\21\204"),v7("\110\113\130\186\114", "\27\60\16\236\221\23\16\207"),v7("\244\14\207\238\211\14\215\236", "\130\183\97\160"),v7("\136\64\19\65\69\221\195\159\87\31\67", "\227\219\37\112\51\32\169"),v7("\15\229\222\186\56\235\39\9\57\252\159\139\112\205\38\6\57", "\101\92\145\191\200\24\172\72"),v7("\143\206\233\248\187\84\55\170\209", "\89\205\162\140\139\200\61"),v7("\146\233\175\199\164\238\226\250\164\253\176\198\178", "\170\193\156\194"),v7("\169\134\88\90\14\175\136\70\72\73\142", "\46\235\233\43\41"),v7("\106\167\197\0\26\139\221\30\91\168\217", "\115\58\207\188"),v7("\136\192\12\68\32\229\229\10\64\34\162\196", "\67\197\161\107\45"),v7("\112\164\186\26\198\112\190\178\0\133\86", "\230\51\214\211\110"),v7("\111\6\79\183\4\142\11\17\81\246\37\135\82\14\76\177", "\235\43\103\34\214\99"),"Money (\194\165)"};
-	local v739 = {v7("\76\123\93\77\250\47\125\127\4\108\246\63\117\96\80", "\76\28\19\36\62\147"),v7("\145\235\165\27\20\1\62\200\175\227\177\6", "\173\220\138\194\114\119\33\108"),v7("\115\209\185\17\205\22\247\185\29\216\66\215", "\180\54\191\220\124"),v7("\159\4\200\23\146\48\252\8\191\15\201", "\120\218\106\173\122\235\16\175"),v7("\129\6\26\230\189\72\45\238\163\13\17", "\139\196\104\127"),v7("\245\29\160\45\201\83\150\40\217\22\169\36", "\64\176\115\197"),v7("\92\239\83\29\17\106\254\85\20\94\93\242\66\5\22\106", "\126\25\151\35\113"),v7("\205\202\211\170\82\85\173\30\234\210\216\249\117\5\141\21\235", "\112\143\191\161\217\38\117\232"),v7("\104\205\9\9\150\240\82\192\13", "\145\38\168\126\41\198"),v7("\42\43\250\124\234\46\88\20\51\180\74\255\36\79\27\35\254\63\204\44\78\14", "\61\122\71\155\31\143\67"),v7("\244\137\241\126\200\199\210\127\200\142\250\116\145\164\252\114\223\132\241", "\19\177\231\148"),v7("\137\171\158\211\107\31\30\147\160\166\149\223\119\11", "\192\207\199\231\182\25\108\62"),v7("\49\48\8\94\13\126\61\82\7\45\4\69\17\45", "\51\116\94\109"),v7("\101\113\132\253\93\118\138\251\78\56\176\225\91\113\136\240\90", "\149\41\24\227"),v7("\252\191\94\186\166\166", "\127\191\202\44\201\195\213")};
-	local v740 = v158:column({[v7("\213\247\66\73", "\91\166\158\56\44\207\234\159")]=1});
-	local v741 = v158:column({[v7("\220\220\101\15", "\77\175\181\31\106\125\47")]=(1615 - (274 + 1340))});
-	local v742 = v740:section({[v7("\34\193\236\249", "\193\76\160\129\156")]=v7("\232\62\73\80\134\192\203\161\206\37\80", "\233\187\75\36\61\227\178\235"),[v7("\81\67\233\160", "\206\56\32\134")]=v7("\42\31\9\12\161\155\61\9\24\9\232\199\119\74\65\90\224\223\106\78\64\93\231", "\232\88\125\113\109\210"),[v7("\89\249\67\48\223\175\108", "\86\61\156\37\81\170\195\24")]=true,[v7("\46\196\220\199", "\69\93\173\166\162\106")]=1});
-	v742:toggle({[v7("\210\200\129\42", "\186\188\169\236\79\139\213\213")]=v7("\241\41\13\210\196\246\53\23\217\196\253\61\13\222\140", "\228\176\92\121\189"),[v7("\211\86\196\239\81\219\71", "\36\183\51\162\142")]=v44.AutoFindMatchSummer,[v7("\186\40\176\143\248\249\142\178", "\237\217\73\220\227\154\152")]=function(v1145)
-		local v1146 = 0 + 0;
+	local v733 = {v7("\11\194\214\94\139\62\211\210\94\151\106\242\207\76\139", "\229\74\166\160\59"),v7("\115\252\12\29\180\255\97\224\4\27\191\172\90\249\21\88\242\138\92\244\0\10\173\190\70\245\23\81", "\223\50\144\101\120\218"),v7("\234\169\81\253\159\60\42\6\207\168\72\253\252\6\49\12\198\162\87\244", "\97\171\199\37\221\212\85\68"),v7("\129\155\79\169\80\200\196\174\200\108\169\81\208", "\173\192\232\60\200\35\187"),v7("\229\208\251\31\91\125\83\224\192\250\24\87\111\18\202", "\115\166\165\137\108\62\25"),v7("\40\146\117\174\9\136\117\233\56\143\105\166\2\130", "\201\108\231\27"),v7("\121\174\249\76\68\69\31\132\242\78\70\69\80\162\187\8\114\84\82\162\254\82\8", "\33\63\207\155\32\33"),v7("\175\238\160\68\40\201\196\172\94\53", "\76\233\135\197\42"),v7("\146\211\152\218\248\177\134\175\198\254\173", "\138\212\166\236\175"),v7("\129\129\202\42\40\135\25\68\136\131\222\32\57\143\4\68\225\179\202\41\49\135\15\77", "\100\201\224\191\68\92\226\125"),v7("\108\25\46\86\90\249\115\4\53\58\86\93\245\120\74", "\23\36\120\91\56\46\156"),v7("\199\221\126\16\17\90\231\152\81\21\12\80", "\41\143\184\18\124\120"),v7("\131\14\77\200\81\15\134\6\70\205\65", "\47\206\111\42\161\50"),v7("\231\77\194\192\169\138\120\202\222\164", "\202\170\44\165\169"),v7("\214\33\94\3\239\47\66\3\187\26\78\0\235\34\78", "\109\155\78\43"),v7("\10\180\105\3\255\61\37\172", "\127\68\213\31\122\223"),v7("\29\229\10\180\39\225\12\174\54\172\57\174\50\229\3", "\220\83\140\109"),v7("\154\21\17\197\22\172\167\186\177\13\0\128\52\183\169\166\176", "\200\213\97\121\160\100\219\200"),v7("\207\36\218\80\229\7\92\220\237\45\222\80\233\22\92\179\204\61\214\83\229\1\85", "\155\159\72\187\62\128\115\124"),v7("\1\232\30\12\52\233\78\53\34\241\15\18\53\189\70\47\36\240\3\25\35\180", "\124\81\157\110"),v7("\194\126\10\19\196\228\164\47\252\126\4\24", "\67\144\31\99\125\228\178\205"),v7("\225\36\212\57\193\222\102\47\218\37\196", "\108\179\81\189\87\164\186\70"),v7("\229\179\240\238\53\210\242\195\240\49\216\183\231", "\80\182\210\147\156"),v7("\61\207\30\84\107\56\199\28\92\42\9\203", "\75\110\174\112\48"),v7("\4\2\176\78\34\19\184\12\19\3\170\88\37\3\186\88", "\44\87\106\217"),v7("\195\123\23\246\209\121\28\181\226\113\8\162", "\214\144\16\110"),v7("\232\174\176\56\147\195\71\70\213\161", "\39\187\197\201\24\218\176\43"),v7("\22\176\51\209\94\189\170\15\43\185\56\201\74", "\102\69\222\92\166\39\157\225"),v7("\77\43\61\218\207\112\124\113\50\60", "\40\30\69\82\173\182\80"),v7("\129\73\218\90\32\245\145\92\213\77\32\167", "\213\210\57\187\57\69"),v7("\205\87\210\179\32\42\139\57\241\80\213", "\109\158\39\187\193\73\94\171"),v7("\228\184\82\155\216\236\151\159\84\155\221\252", "\152\183\200\59\233\177"),v7("\176\182\185\45\246\227\86\23\135\167\185\42\239", "\126\227\194\214\95\155\195\30"),v7("\201\97\190\233\244\114\169\168\206\122\187\230", "\136\154\21\204"),v7("\106\121\158\169\98\113\163\59\120\101\130\186\114\127\161", "\27\60\16\236\221\23\16\207"),v7("\224\0\204\238\210\5\128\193\222\21\217\162\159\50\213\239\218\4\210\171", "\130\183\97\160")};
+	local v734 = {v7("\153\73\25\73\90\200\145\191", "\227\219\37\112\51\32\169"),v7("\31\253\218\169\106", "\101\92\145\191\200\24\172\72"),v7("\139\206\227\228\172\88\61", "\89\205\162\140\139\200\61"),v7("\136\242\164\207\179\242\173", "\170\193\156\194"),v7("\166\136\76\64\77\138\133", "\46\235\233\43\41"),v7("\104\174\213\29\67", "\115\58\207\188"),v7("\150\192\5\73\48\177\206\25\64", "\67\197\161\107\45"),v7("\96\162\178\28\128\82\186\191", "\230\51\214\211\110"),v7("\120\19\77\164\14\146", "\235\43\103\34\214\99"),v7("\75\122\74\90\234", "\76\28\19\36\62\147")};
+	local v735 = {v7("\157\230\174", "\173\220\138\194\114\119\33\108"),v7("\122\218\175\15\209\68\159\155\14\213\95\211\175", "\180\54\191\220\124"),v7("\137\30\204\8\203\86\221\13\179\30", "\120\218\106\173\122\235\16\175"),v7("\151\28\30\249\228\46\13\254\173\28\95\163\150\9\22\229\166\7\8\162", "\139\196\104\127"),v7("\227\6\168\45\223\29\229\20\217\16\174\37\196", "\64\176\115\197"),v7("\77\229\66\24\10\57\197\70\3\17\117\251\3\37\17\114\242\77", "\126\25\151\35\113"),v7("\203\202\207\190\67\26\134\80\196\218\216", "\112\143\191\161\217\38\117\232"),v7("\117\220\31\93\230\195\67\218\17\69\170", "\145\38\168\126\41\198"),v7("\41\50\235\122\253\99\110\14\38\239\63\221\38\79\21\43\247", "\61\122\71\155\31\143\67")};
+	local v736 = {v7("\240\147\224\114\210\140", "\19\177\231\148"),v7("\157\166\137\209\124", "\192\207\199\231\182\25\108\62"),v7("\55\49\2\95\16\49\26\93", "\51\116\94\109"),v7("\122\125\128\231\76\108\195\209\91\119\147", "\149\41\24\227"),v7("\236\190\77\187\227\146\16\211\175\65\233\128\189\30\209\169\73", "\127\191\202\44\201\195\213"),v7("\228\242\93\95\188\131\241\60\213", "\91\166\158\56\44\207\234\159"),v7("\252\192\114\7\24\93\109\255\208\126\24\17\92", "\77\175\181\31\106\125\47"),v7("\14\207\242\239\225\8\193\236\253\166\41", "\193\76\160\129\156"),v7("\235\35\93\78\195\246\138\132\218\44\65", "\233\187\75\36\61\227\178\235"),v7("\117\65\225\167\91\0\194\175\85\65\225\171", "\206\56\32\134"),v7("\27\15\24\25\242\171\48\28\31\14\183", "\232\88\125\113\109\210"),v7("\121\253\72\48\205\166\56\32\78\188\99\61\211\170\118\49", "\86\61\156\37\81\170\195\24"),"Money (\194\165)"};
+	local v737 = {v7("\13\197\223\209\3\38\60\193\134\240\15\54\52\222\210", "\69\93\173\166\162\106"),v7("\241\200\139\38\232\245\135\223\207\192\159\59", "\186\188\169\236\79\139\213\213"),v7("\245\50\28\208\157\144\20\28\220\136\196\52", "\228\176\92\121\189"),v7("\242\93\199\227\93\151\96\210\235\65\211", "\36\183\51\162\142"),v7("\156\39\185\142\227\184\191\188\46\185\141", "\237\217\73\220\227\154\152"),v7("\139\214\235\27\201\130\226\8\167\221\226\18", "\96\206\184\142\118\176\162\177"),v7("\253\46\197\213\53\155\30\252\221\118\241\220\59\156\31\249", "\138\184\86\181\185\90\232\119"),v7("\84\60\150\241\153\151\83\39\129\239\148\151\69\57\129\231\137", "\183\22\73\228\130\237"),v7("\245\181\24\63\9\190\56\43\200", "\67\187\208\111\31\89\223\76"),v7("\118\137\221\133\67\136\217\136\82\202\233\150\65\151\221\130\67\197\255\137\85\145", "\230\38\229\188"),v7("\207\14\181\113\243\64\150\112\243\9\190\123\170\35\184\125\228\3\181", "\28\138\96\208"),v7("\1\185\58\235\61\6\247\20\186\34\252\38\27\176", "\215\71\213\67\142\79\117"),v7("\212\225\15\49\168\177\223\11\47\162\248\249\15\47", "\209\145\143\106\92"),v7("\15\139\216\58\176\46\216\45\133\159\1\176\50\216\40\135\204", "\177\67\226\191\82\196\64"),v7("\235\181\54\96\205\249", "\25\168\192\68\19\168\138\170")};
+	local v738 = v159:column({[v7("\80\176\95\247", "\214\35\217\37\146\92")]=(1629 - (11 + 1617))});
+	local v739 = v159:column({[v7("\67\241\155\123", "\81\48\152\225\30\168")]=(1866 - (1156 + 709))});
+	local v740 = v738:section({[v7("\214\93\119\217", "\140\184\60\26\188\39")]=v7("\72\16\77\83\89\2\62\83\16\78\74", "\30\27\101\32\62\60\112"),[v7("\211\170\89\73", "\76\186\201\54\39")]=v7("\2\193\87\180\25\14\50\4\202\75\239\69\82\96\64\148\29\226\88\78\102\64\150", "\87\112\163\47\213\106\125"),[v7("\41\220\57\93\56\213\43", "\60\77\185\95")]=true,[v7("\9\173\228\33", "\68\122\196\158")]=(2 - 1)});
+	v740:toggle({[v7("\193\169\122\230", "\146\175\200\23\131\21\100")]=v7("\164\167\191\71\197\148\162\70\129\242\134\73\145\177\163", "\40\229\210\203"),[v7("\245\166\35\180\228\175\49", "\213\145\195\69")]=v24.AutoFindMatchSummer,[v7("\186\180\199\38\229\184\182\192", "\135\217\213\171\74")]=function(v1174)
+		local v1175 = 0;
 		while true do
-			if (v1146 == 0) then
-				v27(v7("\143\205\250\25\246\203\223\4\131\217\250\21\216\241\196\13\163\221\252", "\96\206\184\142\118\176\162\177"), v1145);
-				if not v1145 then
+			if (v1175 == 0) then
+				v32(v7("\105\32\184\127\125\164\27\169\101\52\184\115\83\158\0\160\69\48\190", "\205\40\85\204\16\59\205\117"), v1174);
+				if not v1174 then
+					v122();
+				end
+				break;
+			end
+		end
+	end});
+	v740:toggle({[v7("\252\4\166\120", "\29\146\101\203")]=v7("\220\205\194\61\250\215\215\223\60\250\206\205\219\63\191\239\152\254\39\180\233", "\218\157\184\182\82"),[v7("\59\80\183\218\19\33\43", "\77\95\53\209\187\102")]=v24.AutoJoinSummer,[v7("\46\211\184\184\22\189\91\89", "\50\77\178\212\212\116\220\56")]=function(v1176)
+		local v1177 = 0 - 0;
+		while true do
+			if (v1177 == 0) then
+				v32(v7("\196\91\174\72\39\193\236\64\137\82\0\195\224\92", "\174\133\46\218\39\109"), v1176);
+				if (v1176 and v120()) then
 					v121();
 				end
 				break;
 			end
 		end
 	end});
-	v742:toggle({[v7("\214\55\216\220", "\138\184\86\181\185\90\232\119")]=v7("\87\60\144\237\205\253\121\32\138\162\190\194\123\36\129\240\205\255\99\39\144", "\183\22\73\228\130\237"),[v7("\223\181\9\126\44\179\56", "\67\187\208\111\31\89\223\76")]=v44.AutoJoinSummer,[v7("\69\132\208\138\68\132\223\141", "\230\38\229\188")]=function(v1147)
-		v27(v7("\203\21\164\115\192\15\185\114\217\21\189\113\239\18", "\28\138\96\208"), v1147);
-		if (v1147 and v119()) then
-			v120();
-		end
+	v740:dropdown({[v7("\61\90\139\134", "\26\83\59\230\227\107\215")]=v7("\58\217\244\94\73\255\252\94\26", "\46\105\178\157"),[v7("\6\72\252\72\195", "\225\113\33\152\60\171")]=(212 - 112),[v7("\91\222\178\28\95", "\104\54\171\222")]=true,[v7("\23\169\39\245\22", "\39\126\221\66\152\101\110\206")]=v733,[v7("\234\245\8\120\192\8\95", "\43\142\144\110\25\181\100")]=(((type(v24.SummerSkipMaps) == v7("\15\209\45\196\29", "\182\123\176\79\168\120")) and v24.SummerSkipMaps) or {}),[v7("\231\207\6\41\22\229\205\1", "\116\132\174\106\69")]=function(v1178)
+		local v1179 = ((type(v1178) == v7("\226\43\123\160\180", "\209\150\74\25\204")) and v1178) or (v1178 and {v1178}) or {};
+		v24.SummerSkipMaps = v1179;
 	end});
-	v742:dropdown({[v7("\41\180\46\235", "\215\71\213\67\142\79\117")]=v7("\194\228\3\44\241\220\238\26\47", "\209\145\143\106\92"),[v7("\52\139\219\38\172", "\177\67\226\191\82\196\64")]=(33 + 67),[v7("\197\181\40\103\193", "\25\168\192\68\19\168\138\170")]=true,[v7("\74\173\64\255\47", "\214\35\217\37\146\92")]=v735,[v7("\84\253\135\127\221\61\68", "\81\48\152\225\30\168")]=(((type(v44.SummerSkipMaps) == v7("\204\93\120\208\66", "\140\184\60\26\188\39")) and v44.SummerSkipMaps) or {}),[v7("\120\4\76\82\94\17\125\112", "\30\27\101\32\62\60\112")]=function(v1148)
-		local v1149 = 1414 - (557 + 857);
-		local v1150;
+	v740:dropdown({[v7("\178\229\126\49", "\231\220\132\19\84\189\205\197")]=v7("\105\89\138\176\228\57\90\31\78\90\134\178", "\126\58\50\227\192\196\110\63"),[v7("\27\127\196\200\245", "\157\108\22\160\188")]=(50 + 50),[v7("\126\237\59\209\122", "\165\19\152\87")]=true,[v7("\63\16\94\165\149", "\230\86\100\59\200")]=v734,[v7("\37\29\10\225\188\206\53", "\162\65\120\108\128\201")]=(((type(v24.SummerSkipWeather) == v7("\144\56\238\24\23", "\105\228\89\140\116\114\128")) and v24.SummerSkipWeather) or {}),[v7("\127\11\3\184\53\7\127\1", "\102\28\106\111\212\87")]=function(v1181)
+		local v1182 = 0;
+		local v1183;
 		while true do
-			if (v1149 == (0 - 0)) then
-				v1150 = ((type(v1148) == v7("\206\168\84\75\41", "\76\186\201\54\39")) and v1148) or (v1148 and {v1148}) or {};
-				v44.SummerSkipMaps = v1150;
+			if (v1182 == 0) then
+				v1183 = ((type(v1181) == v7("\40\49\86\28\57", "\112\92\80\52")) and v1181) or (v1181 and {v1181}) or {};
+				v24.SummerSkipWeather = v1183;
 				break;
 			end
 		end
 	end});
-	v742:dropdown({[v7("\30\194\66\176", "\87\112\163\47\213\106\125")]=v7("\30\210\54\76\109\238\58\93\57\209\58\78", "\60\77\185\95"),[v7("\13\173\250\48\18", "\68\122\196\158")]=(339 - 239),[v7("\194\189\123\247\124", "\146\175\200\23\131\21\100")]=true,[v7("\140\166\174\69\150", "\40\229\210\203")]=v736,[v7("\245\166\35\180\228\175\49", "\213\145\195\69")]=(((type(v44.SummerSkipWeather) == v7("\173\180\201\38\226", "\135\217\213\171\74")) and v44.SummerSkipWeather) or {}),[v7("\75\52\160\124\89\172\22\166", "\205\40\85\204\16\59\205\117")]=function(v1151)
-		local v1152 = ((type(v1151) == v7("\230\4\169\113\247", "\29\146\101\203")) and v1151) or (v1151 and {v1151}) or {};
-		v44.SummerSkipWeather = v1152;
+	v740:toggle({[v7("\183\89\174\129", "\142\217\56\195\228\43")]=v7("\125\192\180\66\17\127\217\161\68\92\28\248\161\93\17\126\218\161\95\85", "\49\60\181\192\45"),[v7("\35\160\222\72\249\8\51", "\100\71\197\184\41\140")]=v24.AutoClaimMapBoard,[v7("\161\238\38\169\160\238\41\174", "\197\194\143\74")]=function(v1184)
+		v24.AutoClaimMapBoard = v1184;
 	end});
-	v742:toggle({[v7("\243\217\219\55", "\218\157\184\182\82")]=v7("\30\64\165\212\70\14\51\84\184\214\70\0\62\69\241\249\9\44\45\81", "\77\95\53\209\187\102"),[v7("\41\215\178\181\1\176\76", "\50\77\178\212\212\116\220\56")]=v44.AutoClaimMapBoard,[v7("\230\79\182\75\15\207\230\69", "\174\133\46\218\39\109")]=function(v1154)
-		v44.AutoClaimMapBoard = v1154;
+	v740:toggle({[v7("\140\66\239\218", "\185\226\35\130\191\44\43\91")]=v7("\63\206\247\250\2\59\205\230\251\86\94\234\246\240\81\10\200", "\34\126\187\131\149"),[v7("\58\35\249\40\105\50\50", "\28\94\70\159\73")]=v24.AutoEventQuests,[v7("\28\126\52\201\174\30\124\51", "\204\127\31\88\165")]=function(v1186)
+		v24.AutoEventQuests = v1186;
 	end});
-	v742:toggle({[v7("\61\90\139\134", "\26\83\59\230\227\107\215")]=v7("\40\199\233\65\73\247\235\75\7\198\189\127\28\215\238\90\26", "\46\105\178\157"),[v7("\21\68\254\93\222\141\5", "\225\113\33\152\60\171")]=v44.AutoEventQuests,[v7("\85\202\178\4\84\202\189\3", "\104\54\171\222")]=function(v1156)
-		v44.AutoEventQuests = v1156;
+	local v741 = v739:section({[v7("\131\204\212\60", "\177\237\173\185\89")]=v7("\127\65\54\243\31\185\244\168\72\67\42\189\45\240\200\189\95\69\32", "\201\58\55\83\157\107\153\164"),[v7("\59\213\117\42", "\77\82\182\26\68\129\67")]=v7("\254\188\104\22\255\173\117\3\229\186\42\88\163\233\32\64\190\233\33\65\185\238\39", "\119\140\222\16"),[v7("\22\118\95\72\162\11\175", "\219\114\19\57\41\215\103")]=true,[v7("\37\92\183\205", "\148\86\53\205\168")]=0.55});
+	v741:toggle({[v7("\217\206\165\112", "\49\183\175\200\21\147")]=v7("\113\51\47\7\203\175\114\56\110\61\193\248\29\26\43\7\203\227", "\143\61\86\78\113\174"),[v7("\34\88\14\189\88\185\50", "\213\70\61\104\220\45")]=v24.SummerLeaveLowLevel,[v7("\44\18\62\220\209\46\16\57", "\179\79\115\82\176")]=function(v1188)
+		v24.SummerLeaveLowLevel = v1188;
 	end});
-	local v743 = v741:section({[v7("\16\188\47\253", "\39\126\221\66\152\101\110\206")]=v7("\203\230\11\119\193\68\123\239\226\26\96\149\34\66\226\228\11\107\198", "\43\142\144\110\25\181\100"),[v7("\18\211\32\198", "\182\123\176\79\168\120")]=v7("\246\204\18\36\7\247\203\30\44\16\190\129\69\114\68\179\156\93\116\66\177\158\93", "\116\132\174\106\69"),[v7("\242\47\127\173\164\250\62", "\209\150\74\25\204")]=true,[v7("\175\237\105\49", "\231\220\132\19\84\189\205\197")]=(1112.55 - (581 + 531))});
-	v743:toggle({[v7("\84\83\142\165", "\126\58\50\227\192\196\110\63")]=v7("\32\115\193\202\248\76\89\206\156\209\3\97\128\240\248\26\115\204", "\157\108\22\160\188"),[v7("\119\253\49\196\102\244\35", "\165\19\152\87")]=v44.SummerLeaveLowLevel,[v7("\53\5\87\164\132\55\7\80", "\230\86\100\59\200")]=function(v1158)
-		v44.SummerLeaveLowLevel = v1158;
+	v741:slider({[v7("\200\136\252\95", "\115\166\233\145\58")]=v7("\108\54\216\146\137\75\64\38\211\192\249\107\68\41\211\222", "\39\33\95\182\178\217"),[v7("\49\45\196", "\64\92\68\170\217\165")]=(1 - 0),[v7("\25\63\81", "\215\116\94\41")]=(939 - (131 + 558)),[v7("\226\67\24\18\57\243\190\231", "\223\139\45\108\119\75\133")]=(1 - 0),[v7("\115\179\39\210\34\123\162", "\87\23\214\65\179")]=(v24.SummerLowLevelUnder or (6 + 4)),[v7("\244\13\233\185\245\13\230\190", "\213\151\108\133")]=function(v1190)
+		v24.SummerLowLevelUnder = v1190;
 	end});
-	v743:slider({[v7("\47\25\1\229", "\162\65\120\108\128\201")]=v7("\169\48\226\84\34\236\8\157\60\254\84\62\229\31\129\53", "\105\228\89\140\116\114\128"),[v7("\113\3\1", "\102\28\106\111\212\87")]=(3 - 2),[v7("\49\49\76", "\112\92\80\52")]=(1585 - (1314 + 21)),[v7("\176\86\183\129\89\248\184\84", "\142\217\56\195\228\43")]=(1 - 0),[v7("\88\208\166\76\68\80\193", "\49\60\181\192\45")]=(v44.SummerLowLevelUnder or (2 + 8)),[v7("\36\164\212\69\238\5\36\174", "\100\71\197\184\41\140")]=function(v1160)
-		v44.SummerLowLevelUnder = v1160;
+	v741:dropdown({[v7("\19\224\182\187", "\120\125\129\219\222\126")]=v7("\206\250\11\138\63\226\232\168\33\130\45\233\238", "\135\154\136\98\237\88"),[v7("\62\133\131\215\189", "\197\73\236\231\163\213\122\60")]=(316 - 221),[v7("\81\7\119\136\182", "\35\56\115\18\229\197\189")]={v7("\237\238\238\33\12\3\185\188", "\122\220\206\158\77\109"),v7("\233\242\193\181\216\155\89\169\161", "\60\219\210\177\217\185\226"),v7("\108\251\184\226\62\162\173\252\44", "\142\95\219\200"),v7("\131\190\99\32\180\20\215\236\196", "\158\183\158\19\76\213\109\178"),v7("\174\144\186\139\183\5\254\194\185", "\124\155\176\202\231\214")},[v7("\38\226\175\25\55\235\189", "\120\66\135\201")]=((v24.SummerLeaveWhenFound or 1) .. v7("\149\99\218\48\195\208\97", "\186\181\19\182\81") .. ((((v24.SummerLeaveWhenFound or 1) == (1 + 0)) and "") or "s")),[v7("\83\178\205\117\137\181\189\68", "\47\48\211\161\25\235\212\222")]=function(v1192)
+		v24.SummerLeaveWhenFound = tonumber(string.match(v1192, v7("\239\5\78", "\78\202\97\101\237\217\175"))) or (1 + 0);
 	end});
-	v743:dropdown({[v7("\172\238\39\160", "\197\194\143\74")]=v7("\182\81\235\216\75\78\41\153\161\76\247\209\88", "\185\226\35\130\191\44\43\91"),[v7("\9\210\231\225\74", "\34\126\187\131\149")]=(1284 - (487 + 702)),[v7("\55\50\250\36\111", "\28\94\70\159\73")]={v7("\78\63\40\201\173\6\122\42", "\204\127\31\88\165"),v7("\223\141\201\53\208\148\200\203\42", "\177\237\173\185\89"),v7("\9\23\35\241\10\224\193\187\73", "\201\58\55\83\157\107\153\164"),v7("\102\150\106\40\224\58\40\32\197", "\77\82\182\26\68\129\67"),v7("\185\254\96\27\237\167\117\5\255", "\119\140\222\16")},[v7("\22\118\95\72\162\11\175", "\219\114\19\57\41\215\103")]=((v44.SummerLeaveWhenFound or (1 + 0)) .. v7("\118\69\161\201\237\51\71", "\148\86\53\205\168") .. ((((v44.SummerLeaveWhenFound or (1 + 0)) == (539 - (86 + 452))) and "") or "s")),[v7("\212\206\164\121\241\80\212\196", "\49\183\175\200\21\147")]=function(v1162)
-		v44.SummerLeaveWhenFound = tonumber(string.match(v1162, v7("\24\50\101", "\143\61\86\78\113\174"))) or 1;
+	v741:toggle({[v7("\127\127\210\126", "\70\17\30\191\27\229")]=v7("\40\137\233\90\1\204\199\66\68\170\237\91\68\188\228\77\29\137\250\95", "\44\100\236\136"),[v7("\254\46\143\122\59\253\225", "\18\154\75\233\27\78\145\149")]=v24.SummerLeaveFewPlayers,[v7("\209\133\117\88\221\253\173\249", "\146\178\228\25\52\191\156\206")]=function(v1194)
+		v24.SummerLeaveFewPlayers = v1194;
 	end});
-	v743:toggle({[v7("\40\92\5\185", "\213\70\61\104\220\45")]=v7("\3\22\51\198\214\111\60\60\144\245\42\4\114\224\223\46\10\55\194\192", "\179\79\115\82\176"),[v7("\194\140\247\91\6\202\157", "\115\166\233\145\58")]=v44.SummerLeaveFewPlayers,[v7("\66\62\218\222\187\70\66\52", "\39\33\95\182\178\217")]=function(v1164)
-		v44.SummerLeaveFewPlayers = v1164;
+	v741:dropdown({[v7("\29\123\56\172", "\201\115\26\85")]=v7("\14\115\77\24\237\232\213\58\127\81\75", "\180\67\26\35\56\189\132"),[v7("\43\116\203\213\231", "\237\92\29\175\161\143\102")]=(5 + 90),[v7("\62\94\241\207\220", "\175\87\42\148\162")]={v7("\132\245\70\27\70\207\176\68\4", "\39\182\213\54\119"),v7("\1\4\182\198\32\75\65\180\217", "\65\50\36\198\170"),v7("\130\48\74\5\164\45\185\246\197", "\132\182\16\58\105\197\84\220"),v7("\220\83\93\112\25\188\242\155\0", "\151\233\115\45\28\120\197"),v7("\232\142\88\64\191\215\77\94\173", "\44\222\174\40")},[v7("\54\89\116\55\61\71\38", "\43\82\60\18\86\72")]=((v24.SummerLeaveUnder or 5) .. v7("\103\53\120\160\99\174\53\54", "\203\71\69\20\193\26")),[v7("\231\189\63\60\209\233\57\239", "\90\132\220\83\80\179\136")]=function(v1196)
+		v24.SummerLeaveUnder = tonumber(string.match(v1196, v7("\84\124\65", "\186\113\24\106\193\106"))) or (14 - 9);
 	end});
-	v743:dropdown({[v7("\50\37\199\188", "\64\92\68\170\217\165")]=v7("\57\55\71\247\36\50\72\174\17\44\90", "\215\116\94\41"),[v7("\252\68\8\3\35", "\223\139\45\108\119\75\133")]=(54 + 41),[v7("\126\162\36\222\36", "\87\23\214\65\179")]={v7("\165\76\245\185\246\21\224\167\228", "\213\151\108\133"),v7("\78\161\171\178\31\1\24\243\168", "\120\125\129\219\222\126"),v7("\174\168\18\129\57\254\255\250\17", "\135\154\136\98\237\88"),v7("\124\204\151\207\180\3\89\183\58", "\197\73\236\231\163\213\122\60"),v7("\14\83\98\137\164\196\70\74\0", "\35\56\115\18\229\197\189")},[v7("\184\171\248\44\24\22\168", "\122\220\206\158\77\109")]=((v44.SummerLeaveUnder or 5) .. v7("\251\162\221\184\192\135\78\168", "\60\219\210\177\217\185\226")),[v7("\60\186\164\226\61\186\171\229", "\142\95\219\200")]=function(v1166)
-		v44.SummerLeaveUnder = tonumber(string.match(v1166, v7("\146\250\56", "\158\183\158\19\76\213\109\178"))) or (918 - (836 + 77));
-	end});
-	local v744 = v741:section({[v7("\245\209\167\130", "\124\155\176\202\231\214")]=v7("\18\230\187\12\59\167\239\88\15\230\189\27\42\167\154\12\35\243\188\11", "\120\66\135\201"),[v7("\220\112\217\63", "\186\181\19\182\81")]=v7("\66\177\217\120\152\167\187\91\89\183\155\54\196\227\238\24\2\234\150\46\221\229\233", "\47\48\211\161\25\235\212\222"),[v7("\174\4\3\140\172\195\58", "\78\202\97\101\237\217\175")]=true,[v7("\98\119\197\126", "\70\17\30\191\27\229")]=(650.45 - (354 + 296))});
-	local v745 = v744:label({[v7("\10\141\229\73", "\44\100\236\136")]=v7("\201\63\136\111\59\226\175\50\211\37\201\86\47\229\246\122", "\18\154\75\233\27\78\145\149")});
-	local v746 = v744:label({[v7("\220\133\116\81", "\146\178\228\25\52\191\156\206")]=v7("\39\127\52\164\83\73\60\179\22\32\117\248\83\74\57\168\10\127\39\186", "\201\115\26\85")});
-	local v747 = v744:label({[v7("\45\123\78\93", "\180\67\26\35\56\189\132")]=v7("\16\114\216\196\252\18\205\16\120\217\196\227\92\205\15\124\201\196", "\237\92\29\175\161\143\102")});
-	v744:button({[v7("\57\75\249\199", "\175\87\42\148\162")]=v7("\250\176\87\1\66\150\152\87\3\68\222\245\25\87\107\217\183\84\14", "\39\182\213\54\119"),[v7("\81\69\170\198\35\83\71\173", "\65\50\36\198\170")]=function()
+	local v742 = v739:section({[v7("\187\136\219\131", "\230\213\233\182")]=v7("\252\141\20\239\213\204\64\187\225\141\18\248\196\204\53\239\205\152\19\232", "\155\172\236\102"),[v7("\18\182\15\218", "\27\123\213\96\180\110")]=v7("\186\25\235\95\97\187\30\231\87\118\242\84\188\9\34\255\73\170\9\37\254\74\164", "\18\200\123\147\62"),[v7("\6\185\253\228\205\139\26", "\110\98\220\155\133\184\231")]=true,[v7("\100\170\53\56", "\117\23\195\79\93\25\26\235")]=(0.45 + 0)});
+	local v743 = v742:label({[v7("\232\228\175\254", "\155\134\133\194")]=v7("\243\89\119\103\61\211\23\54\90\38\128\96\119\103\43\200", "\72\160\45\22\19")});
+	local v744 = v742:label({[v7("\136\189\31\221", "\104\230\220\114\184\75\139")]=v7("\185\83\34\1\15\190\95\57\9\21\205\7\99\60\67\140\79\38\30\92", "\47\237\54\67\108")});
+	local v745 = v742:label({[v7("\29\67\77\2", "\148\115\34\32\103\101")]=v7("\137\161\106\195\103\177\238\81\195\98\160\162\39\134\71\164\168\120", "\20\197\206\29\166")});
+	v742:button({[v7("\71\42\16\26", "\57\41\75\125\127\181\75\128")]=v7("\44\224\64\13\193\9\45\228\85\24\204\9\79\165\109\20\198\75\25", "\41\96\133\33\123\164"),[v7("\23\51\68\83\255\163\238\120", "\19\116\82\40\63\157\194\141")]=function()
 		pcall(function()
-			if v59() then
-				v116();
+			if v61() then
+				v117();
 			else
-				TeleportService:Teleport(8304191922 - (5 + 87));
+				TeleportService:Teleport(8304191830 - 0);
 			end
 		end);
 	end});
 	task.spawn(function()
-		while task.wait(2 + 0) do
+		while task.wait(269 - (20 + 247)) do
 			pcall(function()
-				local v1707 = v59();
-				local v1708 = v8:GetPlayers();
-				local v1709 = #v1708;
-				local v1710 = 9999;
-				for v2000, v2001 in ipairs(v1708) do
-					local v2002 = 0 + 0;
-					local v2003;
+				local v1766 = v61();
+				local v1767 = v8:GetPlayers();
+				local v1768 = #v1767;
+				local v1769 = 9999;
+				for v2021, v2022 in ipairs(v1767) do
+					local v2023 = 0 + 0;
+					local v2024;
 					while true do
-						if (v2002 == (1 + 0)) then
-							if (v2003 < v1710) then
-								v1710 = v2003;
+						if (v2023 == (0 + 0)) then
+							local v2842 = 0 - 0;
+							while true do
+								if (v2842 == 1) then
+									v2023 = 1;
+									break;
+								end
+								if (0 == v2842) then
+									v2024 = 462 + 537;
+									if (v2022:FindFirstChild(v7("\247\9\5\248\254\30\23\232\250\24\23", "\156\155\108\100")) and v2022.leaderstats:FindFirstChild(v7("\41\68\4\123\9", "\30\101\33\114"))) then
+										v2024 = v2022.leaderstats.Level.Value;
+									elseif v2022:FindFirstChild(v7("\142\236\192\10\47\189", "\74\209\128\165\124")) then
+										v2024 = v2022._level.Value;
+									end
+									v2842 = 1;
+								end
+							end
+						end
+						if (v2023 == 1) then
+							if (v2024 < v1769) then
+								v1769 = v2024;
 							end
 							break;
 						end
-						if (0 == v2002) then
-							v2003 = 999;
-							if (v2001:FindFirstChild(v7("\218\117\91\13\160\38\175\240\215\100\73", "\132\182\16\58\105\197\84\220")) and v2001.leaderstats:FindFirstChild(v7("\165\22\91\121\20", "\151\233\115\45\28\120\197"))) then
-								v2003 = v2001.leaderstats.Level.Value;
-							elseif v2001:FindFirstChild(v7("\129\194\77\90\187\194", "\44\222\174\40")) then
-								v2003 = v2001._level.Value;
-							end
-							v2002 = 1 - 0;
-						end
 					end
 				end
-				if (v745 and v745.items and v745.items[v7("\60\93\127\51", "\43\82\60\18\86\72")]) then
-					v745.items[v7("\41\36\121\164", "\203\71\69\20\193\26")].Text = (v1707 and v7("\215\168\50\36\198\251\96\164\149\61\112\255\231\56\230\165", "\90\132\220\83\80\179\136")) or v7("\34\108\11\181\31\201\75\56\35\175\74\247\16\108\9\169", "\186\113\24\106\193\106");
+				if (v743 and v743.items and v743.items[v7("\70\59\221\71", "\34\40\90\176")]) then
+					v743.items[v7("\185\249\91\167", "\85\215\152\54\194\105")].Text = (v1766 and v7("\196\253\52\223\5\163\183\183\192\59\139\60\191\239\245\240", "\141\151\137\85\171\112\208")) or v7("\127\47\123\185\89\40\32\237\101\53\58\128\77\47\121\165", "\205\44\91\26");
 				end
-				if (v746 and v746.items and v746.items[v7("\187\136\219\131", "\230\213\233\182")]) then
-					v746.items[v7("\194\141\11\254", "\155\172\236\102")].Text = string.format(v7("\47\176\1\217\78\72\18\175\5\142\78\62\31\245\48\216\15\98\30\167\19", "\27\123\213\96\180\110"), v1709);
+				if (v744 and v744.items and v744.items[v7("\242\72\7\141", "\115\156\41\106\232\128\188\195")]) then
+					v744.items[v7("\235\22\166\228", "\44\133\119\203\129\86\177\194")].Text = string.format(v7("\246\255\224\164\124\241\243\251\172\102\130\191\229\233\12\206\251\248\172\46\209", "\92\162\154\129\201"), v1768);
 				end
-				if (v747 and v747.items and v747.items[v7("\166\26\254\91", "\18\200\123\147\62")]) then
-					local v2371 = v1710 < (v44.SummerLowLevelUnder or (9 + 1));
-					v747.items[v7("\12\189\246\224", "\110\98\220\155\133\184\231")].Text = string.format(v7("\91\172\56\56\106\110\203\57\114\181\42\49\35\58\206\17\55\230\60", "\117\23\195\79\93\25\26\235"), ((v1710 == (10681 - (267 + 415))) and (0 - 0)) or v1710, (v2371 and v7("\221\193\131\213\193\192\144\198", "\155\134\133\194")) or v7("\251\126\87\85\13\253", "\72\160\45\22\19"));
+				if (v745 and v745.items and v745.items[v7("\91\126\174\7", "\226\53\31\195\98\81\228\187")]) then
+					local v2356 = 0 - 0;
+					local v2357;
+					while true do
+						if (v2356 == (0 - 0)) then
+							v2357 = v1769 < (v24.SummerLowLevelUnder or 10);
+							v745.items[v7("\72\199\211\88", "\181\38\166\190\61")].Text = string.format(v7("\214\140\225\52\233\151\182\29\255\149\243\61\160\195\179\53\186\198\229", "\81\154\227\150"), ((v1769 == (27500 - 17501)) and (61 - (31 + 30))) or v1769, (v2357 and v7("\144\137\156\199\33\81\153\144", "\20\203\205\221\137\102")) or v7("\182\54\31\155\168\56", "\221\237\101\94"));
+							break;
+						end
+					end
 				end
 			end);
 		end
 	end);
-	local v748 = v159:column({[v7("\149\181\8\221", "\104\230\220\114\184\75\139")]=1});
-	local v749 = v159:column({[v7("\158\95\57\9", "\47\237\54\67\108")]=1});
-	local v750 = v748:section({[v7("\29\67\77\2", "\148\115\34\32\103\101")]=v7("\134\175\111\194\103\229\230\79\201\115\176\171\113\207\127\160\238\50\134\71\176\163\112\195\102\236", "\20\197\206\29\166"),[v7("\64\40\18\17", "\57\41\75\125\127\181\75\128")]=v7("\18\231\89\26\215\90\5\241\72\31\158\6\79\178\17\76\150\30\81\189\17\74\149", "\41\96\133\33\123\164"),[v7("\16\55\78\94\232\174\249", "\19\116\82\40\63\157\194\141")]=true,[v7("\232\5\30\249", "\156\155\108\100")]=(1 + 0)});
-	v750:toggle({[v7("\11\64\31\123", "\30\101\33\114")]=v7("\144\245\209\19\106\129\233\198\23\106\146\225\215\24\57", "\74\209\128\165\124"),[v7("\76\63\214\67\93\54\196", "\34\40\90\176")]=v44.AutoPickCards,[v7("\180\249\90\174\11\52\180\243", "\85\215\152\54\194\105")]=function(v1168)
-		v44.AutoPickCards = v1168;
+	local v746 = v160:column({[v7("\34\31\184\21", "\193\81\118\194\112\231\112\164")]=(1 + 0)});
+	local v747 = v160:column({[v7("\68\79\16\221", "\184\55\38\106")]=(2 - 1)});
+	local v748 = v746:section({[v7("\250\112\119\125", "\225\148\17\26\24\165\217")]=v7("\101\52\66\45\178\6\125\98\38\166\83\48\92\32\170\67\117\31\105\146\83\56\93\44\179\15", "\193\38\85\48\73"),[v7("\126\223\183\8", "\70\23\188\216\102\52\211\124")]=v7("\189\194\250\190\39\57\2\187\201\230\229\123\101\80\255\151\176\232\101\114\87\254\145", "\103\207\160\130\223\84\74"),[v7("\230\188\20\21\174\142\195", "\183\130\217\114\116\219\226")]=true,[v7("\102\27\7\58", "\167\21\114\125\95")]=(1 + 0)});
+	v748:toggle({[v7("\192\21\0\75", "\80\174\116\109\46\234")]=v7("\4\205\0\163\142\21\209\23\167\142\6\217\6\168\221", "\174\69\184\116\204"),[v7("\1\86\129\120\242\28\77", "\57\101\51\231\25\135\112")]=v24.AutoPickCards,[v7("\62\230\211\69\165\253\62\236", "\156\93\135\191\41\199")]=function(v1198)
+		v24.AutoPickCards = v1198;
 	end});
-	v750:toggle({[v7("\249\232\56\206", "\141\151\137\85\171\112\208")]=v7("\110\62\105\185\12\29\117\191\12\30\108\168\66\47\58\142\89\41\104\168\66\56\99", "\205\44\91\26"),[v7("\248\76\12\137\245\208\183", "\115\156\41\106\232\128\188\195")]=(v44.BestForEventCurrency ~= false),[v7("\230\22\167\237\52\208\161\71", "\44\133\119\203\129\86\177\194")]=function(v1170)
-		v44.BestForEventCurrency = v1170;
+	v748:toggle({[v7("\65\17\129\3", "\172\47\112\236\102\216")]=v7("\95\228\69\57\70\166\114\243\22\8\16\133\115\245\22\14\19\146\111\228\88\46\31", "\224\29\129\54\77\102"),[v7("\85\137\240\45\68\128\226", "\76\49\236\150")]=(v24.BestForEventCurrency ~= false),[v7("\134\229\119\4\218\132\231\112", "\184\229\132\27\104")]=function(v1200)
+		v24.BestForEventCurrency = v1200;
 	end});
-	local function v751(v1172, v1173, v1174, v1175, v1176)
-		local v1177 = Instance.new(v7("\228\232\224\164\57", "\92\162\154\129\201"));
-		v1177.Name = v1173:gsub(v7("\16\108\232", "\226\53\31\195\98\81\228\187"), "") .. v7("\101\201\208\73\212\79\200\219\79", "\181\38\166\190\61");
-		v1177.BackgroundTransparency = 1 + 0;
-		v1177.Size = UDim2.new(2 - 1, 0 + 0, 0 + 0, 0);
-		v1177.AutomaticSize = Enum.AutomaticSize.Y;
-		v1177.Parent = v1172;
-		local v1184 = Instance.new(v7("\207\170\218\56\233\151\218\48\227\140\227\37", "\81\154\227\150"));
-		v1184.Padding = UDim.new(0 - 0, 6);
-		v1184.SortOrder = Enum.SortOrder.LayoutOrder;
-		v1184.Parent = v1177;
-		local v1189 = Instance.new(v7("\141\191\188\228\3", "\20\203\205\221\137\102"));
-		v1189.Name = v7("\165\0\63\185\136\23", "\221\237\101\94");
-		v1189.BackgroundTransparency = 1;
-		v1189.Size = UDim2.new(1893 - (1799 + 93), 0, 0 + 0, 16);
-		v1189.LayoutOrder = 1 + 0;
-		v1189.Parent = v1177;
-		local v1195 = Instance.new(v7("\5\19\186\4\171\17\198\164\61", "\193\81\118\194\112\231\112\164"));
-		v1195.Name = v7("\99\79\30\212\82", "\184\55\38\106");
-		v1195.BackgroundTransparency = 1;
-		v1195.Position = UDim2.new(0 + 0, 19 - (6 + 13), 1059 - (383 + 676), 0);
-		v1195.Size = UDim2.new(340.6 - (119 + 221), 0, 1, 0 + 0);
-		v1195.Font = Enum.Font.GothamMedium;
-		v1195.Text = v1173;
-		v1195.TextColor3 = Color3.fromRGB(661 - (345 + 136), 180, 320 - 125);
-		v1195.TextSize = 13;
-		v1195.TextXAlignment = Enum.TextXAlignment.Left;
-		v1195.Parent = v1189;
-		local v1208 = Instance.new(v7("\192\116\98\108\233\184\131\241\125", "\225\148\17\26\24\165\217"));
-		v1208.Name = v7("\106\60\93\32\181\110\48\81\45\164\84", "\193\38\85\48\73");
-		v1208.BackgroundTransparency = 1;
-		v1208.Position = UDim2.new(1, -(366 - 246), 0 - 0, 0);
-		v1208.Size = UDim2.new(0 - 0, 68, 477 - (345 + 131), 0);
-		v1208.Font = Enum.Font.GothamMedium;
-		v1208.Text = v7("\91\213\181\15\64", "\70\23\188\216\102\52\211\124");
-		v1208.TextColor3 = Color3.fromRGB(130, 130, 1446 - (916 + 385));
-		v1208.TextSize = 304 - (6 + 286);
-		v1208.TextXAlignment = Enum.TextXAlignment.Center;
-		v1208.Parent = v1189;
-		local v1220 = Instance.new(v7("\137\210\227\178\49", "\103\207\160\130\223\84\74"));
-		v1220.Name = v7("\208\182\5\7", "\183\130\217\114\116\219\226");
-		v1220.BackgroundTransparency = 1;
-		v1220.Size = UDim2.new(2 - 1, 0 + 0, 0 + 0, 291 - (151 + 140));
-		v1220.AutomaticSize = Enum.AutomaticSize.Y;
-		v1220.LayoutOrder = 2 - 0;
-		v1220.Parent = v1177;
-		local v1227 = Instance.new(v7("\64\59\49\54\212\97\62\28\38\200\96\6", "\167\21\114\125\95"));
-		v1227.Padding = UDim.new(954 - (32 + 922), 6);
-		v1227.SortOrder = Enum.SortOrder.LayoutOrder;
-		v1227.Parent = v1220;
-		local function v1231()
-			local v1554 = 842 - (322 + 520);
-			local v1555;
+	local function v749(v1202, v1203, v1204, v1205, v1206)
+		local v1207 = Instance.new(v7("\152\211\1\183\249", "\220\222\161\96\218\156\21\50"));
+		v1207.Name = v1203:gsub(v7("\3\36\94", "\17\38\87\117\118\174\152"), "") .. v7("\53\190\39\110\226\76\24\180\59", "\37\118\209\73\26\131");
+		v1207.BackgroundTransparency = 1 + 0;
+		v1207.Size = UDim2.new(1 + 0, 0, 0 - 0, 22 - (5 + 17));
+		v1207.AutomaticSize = Enum.AutomaticSize.Y;
+		v1207.Parent = v1202;
+		local v1214 = Instance.new(v7("\220\112\136\119\79\253\117\165\103\83\252\77", "\60\137\57\196\30"));
+		v1214.Padding = UDim.new(0 - 0, 76 - (65 + 5));
+		v1214.SortOrder = Enum.SortOrder.LayoutOrder;
+		v1214.Parent = v1207;
+		local v1219 = Instance.new(v7("\101\106\121\21\130", "\56\35\24\24\120\231"));
+		v1219.Name = v7("\120\182\81\79\198\100", "\143\48\211\48\43\163\22\53");
+		v1219.BackgroundTransparency = 1 + 0;
+		v1219.Size = UDim2.new(2 - 1, 0 + 0, 0 + 0, 857 - (685 + 156));
+		v1219.LayoutOrder = 3 - 2;
+		v1219.Parent = v1207;
+		local v1225 = Instance.new(v7("\123\247\72\246\35\242\231\227\67", "\134\47\146\48\130\111\147\133"));
+		v1225.Name = v7("\62\59\64\13\23", "\209\106\82\52\97\114\63");
+		v1225.BackgroundTransparency = 1 + 0;
+		v1225.Position = UDim2.new(0 - 0, 732 - (620 + 112), 0, 0);
+		v1225.Size = UDim2.new(0.6 - 0, 0, 3 - 2, 249 - (89 + 160));
+		v1225.Font = Enum.Font.GothamMedium;
+		v1225.Text = v1203;
+		v1225.TextColor3 = Color3.fromRGB(432 - 252, 180, 1802 - (975 + 632));
+		v1225.TextSize = 21 - 8;
+		v1225.TextXAlignment = Enum.TextXAlignment.Left;
+		v1225.Parent = v1219;
+		local v1238 = Instance.new(v7("\147\118\55\90\139\114\45\75\171", "\46\199\19\79"));
+		v1238.Name = v7("\248\194\188\139\228\164\209\202\181\135\226", "\236\180\171\209\226\144");
+		v1238.BackgroundTransparency = 1;
+		v1238.Position = UDim2.new(1, -120, 0 + 0, 0 - 0);
+		v1238.Size = UDim2.new(0, 578 - (358 + 152), 1, 0 - 0);
+		v1238.Font = Enum.Font.GothamMedium;
+		v1238.Text = v7("\41\20\84\10\103", "\46\101\125\57\99\19\25");
+		v1238.TextColor3 = Color3.fromRGB(1241 - (727 + 384), 504 - 374, 393 - 248);
+		v1238.TextSize = 31 - 19;
+		v1238.TextXAlignment = Enum.TextXAlignment.Center;
+		v1238.Parent = v1219;
+		local v1250 = Instance.new(v7("\102\196\28\237\185", "\220\32\182\125\128"));
+		v1250.Name = v7("\223\247\28\206", "\148\141\152\107\189");
+		v1250.BackgroundTransparency = 1 + 0;
+		v1250.Size = UDim2.new(1226 - (804 + 421), 0 - 0, 0, 0 - 0);
+		v1250.AutomaticSize = Enum.AutomaticSize.Y;
+		v1250.LayoutOrder = 2;
+		v1250.Parent = v1207;
+		local v1257 = Instance.new(v7("\66\205\113\91\244\170\91\229\68\93\242\170", "\222\23\132\61\50\135"));
+		v1257.Padding = UDim.new(0 - 0, 1079 - (1029 + 44));
+		v1257.SortOrder = Enum.SortOrder.LayoutOrder;
+		v1257.Parent = v1250;
+		local function v1261()
+			local v1619 = 0 + 0;
+			local v1620;
 			while true do
-				if ((0 + 0) == v1554) then
-					for v2514, v2515 in ipairs(v1220:GetChildren()) do
-						if (v2515:IsA(v7("\233\1\4\97\136\58\203\23\25", "\80\174\116\109\46\234")) and (v2515.Name ~= v7("\16\241\56\165\221\49\244\21\181\193\48\204", "\174\69\184\116\204"))) then
-							v2515:Destroy();
+				if (v1619 == (0 + 0)) then
+					for v2531, v2532 in ipairs(v1250:GetChildren()) do
+						if (v2532:IsA(v7("\139\7\247\126\174\24\251\82\184", "\49\204\114\158")) and (v2532.Name ~= v7("\148\194\48\178\91\102\141\234\5\180\93\102", "\18\193\139\124\219\40"))) then
+							v2532:Destroy();
 						end
 					end
-					v1555 = v44[v1174] or {};
-					v1554 = 1;
+					v1620 = v24[v1204] or {};
+					v1619 = 1 + 0;
 				end
-				if (v1554 == (1 + 0)) then
-					for v2516, v2517 in ipairs(v1555) do
-						local v2518 = Instance.new(v7("\49\86\159\109\197\5\77\17\92\137", "\57\101\51\231\25\135\112"));
-						v2518.Name = v7("\15\232\200\118", "\156\93\135\191\41\199") .. tostring(v2516);
-						v2518.AutoButtonColor = false;
-						v2518.Text = "";
-						v2518.Size = UDim2.new(1, 0, 0, 9 + 23);
-						v2518.BackgroundColor3 = Color3.fromRGB(25, 23 + 2, 253 - (187 + 34));
-						v2518.BorderSizePixel = 0;
-						v2518.LayoutOrder = v2516;
-						v2518.Parent = v1220;
-						local v2527 = Instance.new(v7("\122\57\175\9\170\194\74\2", "\172\47\112\236\102\216"));
-						v2527.CornerRadius = UDim.new(0, 6);
-						v2527.Parent = v2518;
-						local v2530 = Instance.new(v7("\72\200\101\57\20\143\118\228", "\224\29\129\54\77\102"));
-						v2530.Color = Color3.fromRGB(35 + 5, 70 - 30, 52);
-						v2530.Thickness = 1 + 0;
-						v2530.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
-						v2530.Parent = v2518;
-						local v2536 = Instance.new(v7("\119\158\247\33\84", "\76\49\236\150"));
-						v2536.Name = v7("\167\229\127\15\221", "\184\229\132\27\104");
-						v2536.BackgroundColor3 = Color3.fromRGB(332 - (194 + 102), 32, 606 - (49 + 503));
-						v2536.BorderSizePixel = 0 - 0;
-						v2536.Position = UDim2.new(0, 1355 - (12 + 1337), 0.5, -(25 - 14));
-						v2536.Size = UDim2.new(0 + 0, 1087 - (38 + 1027), 0, 52 - 30);
-						v2536.Parent = v2518;
-						local v2543 = Instance.new(v7("\139\232\35\181\238\123\87\174", "\220\222\161\96\218\156\21\50"));
-						v2543.CornerRadius = UDim.new(0, 125 - (11 + 110));
-						v2543.Parent = v2536;
-						local v2546 = Instance.new(v7("\114\50\13\2\226\249\115\67\59", "\17\38\87\117\118\174\152"));
-						v2546.BackgroundTransparency = 816 - (199 + 616);
-						v2546.Size = UDim2.new(1 + 0, 0, 480 - (396 + 83), 0 - 0);
-						v2546.Font = Enum.Font.GothamBold;
-						v2546.Text = tostring(v2516);
-						v2546.TextColor3 = Color3.fromRGB(22 + 161, 1961 - (774 + 1011), 205);
-						v2546.TextSize = 12;
-						v2546.Parent = v2536;
-						local v2555 = Instance.new(v7("\34\180\49\110\207\68\20\180\37", "\37\118\209\73\26\131"));
-						v2555.Name = v7("\192\77\161\115\114\232\84\161", "\60\137\57\196\30");
-						v2555.BackgroundTransparency = 2 - 1;
-						v2555.Position = UDim2.new(0 - 0, 424 - (94 + 295), 0 + 0, 0 + 0);
-						v2555.Size = UDim2.new(1, -(347 - 182), 2 - 1, 0 + 0);
-						v2555.Font = Enum.Font.GothamMedium;
-						v2555.Text = tostring(v2517.name or v7("\96\121\106\28", "\56\35\24\24\120\231"));
-						v2555.TextColor3 = Color3.fromRGB(230, 174 + 56, 391 - 149);
-						v2555.TextSize = 35 - 22;
-						v2555.TextXAlignment = Enum.TextXAlignment.Left;
-						v2555.TextTruncate = Enum.TextTruncate.AtEnd;
-						v2555.Parent = v2518;
-						local v2570 = Instance.new(v7("\118\161\81\70\198", "\143\48\211\48\43\163\22\53"));
-						v2570.Name = v7("\124\230\85\242\31\246\247", "\134\47\146\48\130\111\147\133");
-						v2570.BackgroundColor3 = Color3.fromRGB(9 + 9, 11 + 7, 49 - 25);
-						v2570.BorderSizePixel = 10 - (6 + 4);
-						v2570.Position = UDim2.new(2 - 1, -(973 - (629 + 224)), 0.5 - 0, -11);
-						v2570.Size = UDim2.new(0, 1590 - (466 + 1056), 765 - (485 + 280), 22);
-						v2570.Parent = v2518;
-						local v2577 = Instance.new(v7("\63\27\119\14\0\81\180\24", "\209\106\82\52\97\114\63"));
-						v2577.CornerRadius = UDim.new(91 - (51 + 40), 797 - (610 + 183));
-						v2577.Parent = v2570;
-						local v2580 = Instance.new(v7("\146\90\28\90\181\124\36\75", "\46\199\19\79"));
-						v2580.Color = Color3.fromRGB(23 + 11, 34, 43 + 1);
-						v2580.Thickness = 1 + 0;
-						v2580.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
-						v2580.Parent = v2570;
-						local v2585 = Instance.new(v7("\224\206\169\150\210\153\192\223\190\140", "\236\180\171\209\226\144"));
-						v2585.Name = v7("\40\20\87\22\96", "\46\101\125\57\99\19\25");
-						v2585.BackgroundTransparency = 2 - 1;
-						v2585.Position = UDim2.new(0, 772 - (572 + 200), 0, 1975 - (1598 + 377));
-						v2585.Size = UDim2.new(0 - 0, 20, 1, 0 + 0);
-						v2585.Font = Enum.Font.GothamBold;
-						v2585.Text = "-";
-						v2585.TextColor3 = Color3.fromRGB(130, 14 + 116, 1428 - (881 + 397));
-						v2585.TextSize = 14;
-						v2585.Parent = v2570;
-						local v2595 = Instance.new(v7("\116\211\5\244\144\65\212\24\236", "\220\32\182\125\128"));
-						v2595.Name = v7("\219\249\7\200\241", "\148\141\152\107\189");
-						v2595.BackgroundTransparency = 2 - 1;
-						v2595.Position = UDim2.new(0, 20, 0, 1213 - (892 + 321));
-						v2595.Size = UDim2.new(1, -40, 628 - (441 + 186), 0 + 0);
-						v2595.Font = Enum.Font.GothamBold;
-						v2595.Text = ((v2517.limit == (1421 - (606 + 815))) and "\226\136\158") or tostring(v2517.limit or (0 - 0));
-						v2595.TextColor3 = Color3.fromRGB(172 + 11, 176, 155 + 50);
-						v2595.TextSize = 1185 - (1055 + 117);
-						v2595.Parent = v2570;
-						local v2605 = Instance.new(v7("\67\225\69\70\197\171\99\240\82\92", "\222\23\132\61\50\135"));
-						v2605.Name = v7("\156\30\235\66", "\49\204\114\158");
-						v2605.BackgroundTransparency = 689 - (266 + 422);
-						v2605.Position = UDim2.new(3 - 2, -(1911 - (1098 + 793)), 0, 0);
-						v2605.Size = UDim2.new(0 + 0, 20, 1560 - (12 + 1547), 1358 - (149 + 1209));
-						v2605.Font = Enum.Font.GothamBold;
-						v2605.Text = "+";
-						v2605.TextColor3 = Color3.fromRGB(130, 27 + 103, 150);
-						v2605.TextSize = 1028 - (6 + 1008);
-						v2605.Parent = v2570;
-						local v2615 = Instance.new(v7("\135\249\29\182\77", "\18\193\139\124\219\40"));
-						v2615.Name = v7("\40\158\71\113\87\240", "\93\105\236\53\30\32\131");
-						v2615.BackgroundColor3 = Color3.fromRGB(1364 - (603 + 743), 258 - (152 + 88), 341 - (207 + 110));
-						v2615.BorderSizePixel = 0 - 0;
-						v2615.Position = UDim2.new(2 - 1, -(1879 - (1401 + 432)), 0.5, -11);
-						v2615.Size = UDim2.new(0, 76 - 34, 1037 - (838 + 199), 58 - 36);
-						v2615.Parent = v2518;
-						local v2622 = Instance.new(v7("\50\127\97\25\70\94\69\21", "\32\103\54\34\118\52\48"));
-						v2622.CornerRadius = UDim.new(0, 8 - 4);
-						v2622.Parent = v2615;
-						local v2625 = Instance.new(v7("\155\25\68\190\165\186\77\171", "\38\206\80\23\202\215\213"));
-						v2625.Color = Color3.fromRGB(464 - (320 + 110), 84 - 50, 86 - 42);
-						v2625.Thickness = 1 + 0;
-						v2625.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
-						v2625.Parent = v2615;
-						local v2630 = Instance.new(v7("\59\41\2\217\59\26\56\14\194\23", "\121\111\76\122\173"));
-						v2630.Name = v7("\245\240", "\40\160\128\154\112\23\224");
-						v2630.BackgroundTransparency = 138 - (123 + 14);
-						v2630.Position = UDim2.new(0 + 0, 0 - 0, 102 - (62 + 40), 0 - 0);
-						v2630.Size = UDim2.new(1097.5 - (823 + 274), -1, 1, 0);
-						v2630.Font = Enum.Font.GothamBold;
-						v2630.Text = "\226\150\178";
-						v2630.TextColor3 = Color3.fromRGB(1104 - (134 + 830), 372 - 232, 530 - 370);
-						v2630.TextSize = 1590 - (1430 + 151);
-						v2630.Parent = v2615;
-						local v2640 = Instance.new(v7("\106\238\217\116\221", "\117\44\156\184\25\184\166\96"));
-						v2640.BorderSizePixel = 1358 - (104 + 1254);
-						v2640.BackgroundColor3 = Color3.fromRGB(34, 458 - (161 + 263), 44);
-						v2640.Position = UDim2.new(0.5 - 0, 1396 - (317 + 1079), 0 - 0, 2);
-						v2640.Size = UDim2.new(0, 2 - 1, 316 - (76 + 239), -(377 - (349 + 24)));
-						v2640.Parent = v2615;
-						local v2646 = Instance.new(v7("\132\116\12\34\146\100\0\34\191\127", "\86\208\17\116"));
-						v2646.Name = v7("\101\141\4\239", "\155\33\226\115\129\153\170");
-						v2646.BackgroundTransparency = 1;
-						v2646.Position = UDim2.new(0.5, 1 - 0, 0 - 0, 0);
-						v2646.Size = UDim2.new(0.5 + 0, -(1 + 0), 1635 - (1428 + 206), 1505 - (1207 + 298));
-						v2646.Font = Enum.Font.GothamBold;
-						v2646.Text = "\226\150\188";
-						v2646.TextColor3 = Color3.fromRGB(488 - (224 + 124), 172 - (7 + 25), 403 - 243);
-						v2646.TextSize = 9;
-						v2646.Parent = v2615;
-						local v2656 = v2516;
-						v2585.MouseButton1Click:Connect(function()
-							local v2811 = 0;
-							while true do
-								if (v2811 == (1053 - (886 + 166))) then
-									if v1176 then
-										v1176();
-									end
-									break;
-								end
-								if (v2811 == (0 - 0)) then
-									if (v2517.limit == (0 + 0)) then
-										v2517.limit = 333 - (142 + 176);
-									elseif (v2517.limit == (1 + 0)) then
-										v2517.limit = 0;
-									elseif (v2517.limit > (953 - (584 + 354))) then
-										v2517.limit = 15;
-									else
-										v2517.limit = v2517.limit - (489 - (384 + 104));
-									end
-									v2595.Text = ((v2517.limit == (0 - 0)) and "\226\136\158") or tostring(v2517.limit);
-									v2811 = 36 - (13 + 22);
+				if (v1619 == 1) then
+					for v2533, v2534 in ipairs(v1620) do
+						local v2535 = Instance.new(v7("\61\137\77\106\98\246\41\29\131\91", "\93\105\236\53\30\32\131"));
+						v2535.Name = v7("\53\89\85\41", "\32\103\54\34\118\52\48") .. tostring(v2533);
+						v2535.AutoButtonColor = false;
+						v2535.Text = "";
+						v2535.Size = UDim2.new(518 - (139 + 378), 252 - (181 + 71), 0 + 0, 108 - 76);
+						v2535.BackgroundColor3 = Color3.fromRGB(47 - 22, 36 - 11, 331 - (243 + 56));
+						v2535.BorderSizePixel = 143 - (56 + 87);
+						v2535.LayoutOrder = v2533;
+						v2535.Parent = v1250;
+						local v2544 = Instance.new(v7("\155\25\84\165\165\187\67\188", "\38\206\80\23\202\215\213"));
+						v2544.CornerRadius = UDim.new(0 - 0, 6);
+						v2544.Parent = v2535;
+						local v2547 = Instance.new(v7("\58\5\41\217\11\0\39\31", "\121\111\76\122\173"));
+						v2547.Color = Color3.fromRGB(8 + 32, 40, 52);
+						v2547.Thickness = 1;
+						v2547.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+						v2547.Parent = v2535;
+						local v2553 = Instance.new(v7("\230\242\251\29\114", "\40\160\128\154\112\23\224"));
+						v2553.Name = v7("\110\253\220\126\221", "\117\44\156\184\25\184\166\96");
+						v2553.BackgroundColor3 = Color3.fromRGB(883 - (523 + 324), 30 + 2, 54);
+						v2553.BorderSizePixel = 0 - 0;
+						v2553.Position = UDim2.new(0 + 0, 6, 0.5 - 0, -11);
+						v2553.Size = UDim2.new(0 - 0, 17 + 5, 0, 22 + 0);
+						v2553.Parent = v2535;
+						local v2560 = Instance.new(v7("\133\88\55\57\162\127\17\36", "\86\208\17\116"));
+						v2560.CornerRadius = UDim.new(0, 894 - (9 + 881));
+						v2560.Parent = v2553;
+						local v2563 = Instance.new(v7("\117\135\11\245\213\203\249\68\142", "\155\33\226\115\129\153\170"));
+						v2563.BackgroundTransparency = 1486 - (1429 + 56);
+						v2563.Size = UDim2.new(1 - 0, 0 - 0, 1, 0);
+						v2563.Font = Enum.Font.GothamBold;
+						v2563.Text = tostring(v2533);
+						v2563.TextColor3 = Color3.fromRGB(517 - (295 + 39), 534 - (223 + 135), 428 - 223);
+						v2563.TextSize = 22 - 10;
+						v2563.Parent = v2553;
+						local v2572 = Instance.new(v7("\76\122\55\59\207\241\160\125\115", "\194\24\31\79\79\131\144"));
+						v2572.Name = v7("\96\185\33\4\122\9\76\215", "\178\41\205\68\105\52\104\33");
+						v2572.BackgroundTransparency = 1940 - (1472 + 467);
+						v2572.Position = UDim2.new(0 + 0, 16 + 19, 0, 122 - (103 + 19));
+						v2572.Size = UDim2.new(1834 - (1172 + 661), -(47 + 118), 1 + 0, 0 - 0);
+						v2572.Font = Enum.Font.GothamMedium;
+						v2572.Text = tostring(v2534.name or v7("\233\73\53\135", "\45\170\40\71\227\152\171\89"));
+						v2572.TextColor3 = Color3.fromRGB(230, 230, 1314 - (373 + 699));
+						v2572.TextSize = 1562 - (331 + 1218);
+						v2572.TextXAlignment = Enum.TextXAlignment.Left;
+						v2572.TextTruncate = Enum.TextTruncate.AtEnd;
+						v2572.Parent = v2535;
+						local v2587 = Instance.new(v7("\41\215\139\238\51", "\21\111\165\234\131\86"));
+						v2587.Name = v7("\4\231\205\182\39\246\218", "\198\87\147\168");
+						v2587.BackgroundColor3 = Color3.fromRGB(18, 29 - 11, 33 - 9);
+						v2587.BorderSizePixel = 0;
+						v2587.Position = UDim2.new(1 + 0, -(23 + 97), 0.5, -11);
+						v2587.Size = UDim2.new(0, 68, 924 - (169 + 755), 119 - (23 + 74));
+						v2587.Parent = v2535;
+						local v2594 = Instance.new(v7("\103\247\24\254\197\95\29\64", "\120\50\190\91\145\183\49"));
+						v2594.CornerRadius = UDim.new(1962 - (935 + 1027), 4);
+						v2594.Parent = v2587;
+						local v2597 = Instance.new(v7("\34\239\130\231\48\24\205\180", "\66\119\166\209\147"));
+						v2597.Color = Color3.fromRGB(34, 12 + 22, 37 + 7);
+						v2597.Thickness = 1;
+						v2597.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+						v2597.Parent = v2587;
+						local v2602 = Instance.new(v7("\197\0\181\26\159\228\17\185\1\179", "\221\145\101\205\110"));
+						v2602.Name = v7("\142\23\95\65\144", "\227\195\126\49\52");
+						v2602.BackgroundTransparency = 1;
+						v2602.Position = UDim2.new(1869 - (287 + 1582), 0 - 0, 0, 0 - 0);
+						v2602.Size = UDim2.new(0 + 0, 5 + 15, 544 - (198 + 345), 0);
+						v2602.Font = Enum.Font.GothamBold;
+						v2602.Text = "-";
+						v2602.TextColor3 = Color3.fromRGB(378 - 248, 3 + 127, 1135 - (135 + 850));
+						v2602.TextSize = 14;
+						v2602.Parent = v2587;
+						local v2612 = Instance.new(v7("\210\122\232\190\142\7\241\227\115", "\147\134\31\144\202\194\102"));
+						v2612.Name = v7("\222\57\182\214\237", "\163\136\88\218");
+						v2612.BackgroundTransparency = 3 - 2;
+						v2612.Position = UDim2.new(0 - 0, 878 - (150 + 708), 0 - 0, 0 - 0);
+						v2612.Size = UDim2.new(1 + 0, -(4 + 36), 1, 0);
+						v2612.Font = Enum.Font.GothamBold;
+						v2612.Text = ((v2534.limit == (34 - (28 + 6))) and "\226\136\158") or tostring(v2534.limit or (527 - (380 + 147)));
+						v2612.TextColor3 = Color3.fromRGB(152 + 31, 695 - 519, 205);
+						v2612.TextSize = 920 - (875 + 32);
+						v2612.Parent = v2587;
+						local v2622 = Instance.new(v7("\221\76\48\248\141\252\93\60\227\161", "\207\137\41\72\140"));
+						v2622.Name = v7("\55\92\18\225", "\194\103\48\103\146\112\120");
+						v2622.BackgroundTransparency = 4 - 3;
+						v2622.Position = UDim2.new(1 + 0, -(899 - (611 + 268)), 0 - 0, 0 + 0);
+						v2622.Size = UDim2.new(0, 20, 575 - (196 + 378), 0 - 0);
+						v2622.Font = Enum.Font.GothamBold;
+						v2622.Text = "+";
+						v2622.TextColor3 = Color3.fromRGB(505 - 375, 691 - (549 + 12), 338 - 188);
+						v2622.TextSize = 14;
+						v2622.Parent = v2587;
+						local v2632 = Instance.new(v7("\132\209\192\59\167", "\86\194\163\161"));
+						v2632.Name = v7("\136\70\235\95\215\233", "\54\201\52\153\48\160\154");
+						v2632.BackgroundColor3 = Color3.fromRGB(54 - 36, 28 - 10, 21 + 3);
+						v2632.BorderSizePixel = 0 + 0;
+						v2632.Position = UDim2.new(1860 - (1370 + 489), -(10 + 36), 0.5, -(41 - 30));
+						v2632.Size = UDim2.new(0 + 0, 119 - 77, 0 + 0, 22);
+						v2632.Parent = v2535;
+						local v2639 = Instance.new(v7("\41\228\38\39\11\21\232\8", "\122\124\173\101\72\121\123\141"));
+						v2639.CornerRadius = UDim.new(0 + 0, 4 + 0);
+						v2639.Parent = v2632;
+						local v2642 = Instance.new(v7("\222\150\59\20\44\29\69\172", "\201\139\223\104\96\94\114\46"));
+						v2642.Color = Color3.fromRGB(1300 - (1059 + 207), 16 + 18, 44);
+						v2642.Thickness = 1;
+						v2642.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+						v2642.Parent = v2632;
+						local v2647 = Instance.new(v7("\54\248\88\38\82\90\22\233\79\60", "\47\98\157\32\82\16"));
+						v2647.Name = v7("\230\246", "\169\179\134\171\222\231\149\224");
+						v2647.BackgroundTransparency = 1 + 0;
+						v2647.Position = UDim2.new(0 + 0, 0, 0, 0);
+						v2647.Size = UDim2.new(1483.5 - (392 + 1091), -1, 1, 0);
+						v2647.Font = Enum.Font.GothamBold;
+						v2647.Text = "\226\150\178";
+						v2647.TextColor3 = Color3.fromRGB(65 + 75, 262 - 122, 569 - 409);
+						v2647.TextSize = 5 + 4;
+						v2647.Parent = v2632;
+						local v2657 = Instance.new(v7("\159\2\115\55\128", "\88\217\112\18\90\229\235\149"));
+						v2657.BorderSizePixel = 0 - 0;
+						v2657.BackgroundColor3 = Color3.fromRGB(59 - 25, 58 - 24, 150 - 106);
+						v2657.Position = UDim2.new(0.5 - 0, 1414 - (791 + 623), 0 - 0, 1892 - (1704 + 186));
+						v2657.Size = UDim2.new(0, 1 + 0, 627 - (406 + 220), -4);
+						v2657.Parent = v2632;
+						local v2663 = Instance.new(v7("\124\213\60\176\56\147\92\196\43\170", "\230\40\176\68\196\122"));
+						v2663.Name = v7("\224\239\48\45", "\122\164\128\71\67\105\57");
+						v2663.BackgroundTransparency = 3 - 2;
+						v2663.Position = UDim2.new(1795.5 - (779 + 1016), 1 + 0, 0, 0);
+						v2663.Size = UDim2.new(0.5, -1, 1 + 0, 0 + 0);
+						v2663.Font = Enum.Font.GothamBold;
+						v2663.Text = "\226\150\188";
+						v2663.TextColor3 = Color3.fromRGB(400 - 260, 530 - (79 + 311), 160);
+						v2663.TextSize = 123 - (90 + 24);
+						v2663.Parent = v2632;
+						local v2673 = v2533;
+						v2602.MouseButton1Click:Connect(function()
+							if (v2534.limit == (0 - 0)) then
+								v2534.limit = 15;
+							elseif (v2534.limit == (1 + 0)) then
+								v2534.limit = 0 + 0;
+							elseif (v2534.limit > (1199 - (298 + 886))) then
+								v2534.limit = 4 + 11;
+							else
+								v2534.limit = v2534.limit - (1 + 0);
+							end
+							v2612.Text = ((v2534.limit == (0 + 0)) and "\226\136\158") or tostring(v2534.limit);
+							if v1206 then
+								v1206();
+							end
+						end);
+						v2622.MouseButton1Click:Connect(function()
+							if (v2534.limit == 0) then
+								v2534.limit = 1;
+							elseif (v2534.limit >= 15) then
+								v2534.limit = 0;
+							else
+								v2534.limit = v2534.limit + (1 - 0);
+							end
+							v2612.Text = ((v2534.limit == 0) and "\226\136\158") or tostring(v2534.limit);
+							if v1206 then
+								v1206();
+							end
+						end);
+						v2647.MouseButton1Click:Connect(function()
+							if (v2673 > (1 - 0)) then
+								local v3117 = v24[v1204][v2673];
+								v24[v1204][v2673] = v24[v1204][v2673 - 1];
+								v24[v1204][v2673 - 1] = v3117;
+								v1261();
+								if v1206 then
+									v1206();
 								end
 							end
 						end);
-						v2605.MouseButton1Click:Connect(function()
-							local v2812 = 0;
-							local v2813;
-							while true do
-								if (v2812 == (0 + 0)) then
-									v2813 = 0;
-									while true do
-										if (v2813 == (0 + 0)) then
-											if (v2517.limit == 0) then
-												v2517.limit = 1;
-											elseif (v2517.limit >= (30 - 15)) then
-												v2517.limit = 0 - 0;
-											else
-												v2517.limit = v2517.limit + 1;
-											end
-											v2595.Text = ((v2517.limit == (0 - 0)) and "\226\136\158") or tostring(v2517.limit);
-											v2813 = 1 + 0;
+						v2663.MouseButton1Click:Connect(function()
+							if (v2673 < #v24[v1204]) then
+								local v3120 = 0;
+								local v3121;
+								while true do
+									if (v3120 == 2) then
+										if v1206 then
+											v1206();
 										end
-										if ((1 + 0) == v2813) then
-											if v1176 then
-												v1176();
+										break;
+									end
+									if (v3120 == (1 + 0)) then
+										v24[v1204][v2673 + (1 - 0)] = v3121;
+										v1261();
+										v3120 = 1 + 1;
+									end
+									if (v3120 == (1477 - (956 + 521))) then
+										v3121 = v24[v1204][v2673];
+										v24[v1204][v2673] = v24[v1204][v2673 + (1 - 0)];
+										v3120 = 1 - 0;
+									end
+								end
+							end
+						end);
+						v2535.MouseButton2Click:Connect(function()
+							local v2845 = 0 - 0;
+							local v2846;
+							while true do
+								if (v2845 == (4 - 2)) then
+									if (v2846 and v2846.set and v2846.multi_items) then
+										local v3368 = 0 - 0;
+										local v3369;
+										while true do
+											if (v3368 == (0 - 0)) then
+												v3369 = {};
+												for v3563, v3564 in ipairs(v24[v1204]) do
+													table.insert(v3369, v3564.name);
+												end
+												v3368 = 1;
 											end
+											if ((2 - 1) == v3368) then
+												v2846.multi_items = v3369;
+												v2846.set(v3369);
+												break;
+											end
+										end
+									end
+									break;
+								end
+								if (v2845 == (0 + 0)) then
+									table.remove(v24[v1204], v2673);
+									v1261();
+									v2845 = 1 + 0;
+								end
+								if (1 == v2845) then
+									if v1206 then
+										v1206();
+									end
+									v2846 = v1205 and v1205();
+									v2845 = 2;
+								end
+							end
+						end);
+					end
+					break;
+				end
+			end
+		end
+		v1261();
+		return {[v7("\239\219\140\164\183\185\16\233\198", "\126\140\180\226\208\214\208")]=v1207,[v7("\241\125\21\96\73\67\80", "\237\131\24\115\18\44\48\56")]=v1261};
+	end
+	local v750 = v748.items and v748.items[v7("\244\54\179\89\114\255\46\165", "\23\145\90\214\52")];
+	local v751 = {};
+	if ((type(v24.TakeCardsPriority) == v7("\111\136\17\62\64", "\221\27\233\115\82\37")) and (#v24.TakeCardsPriority > (0 + 0))) then
+		for v1770, v1771 in ipairs(v24.TakeCardsPriority) do
+			local v1772 = ((type(v1771) == v7("\168\209\211\237\222", "\158\220\176\177\129\187\65")) and v1771.name) or tostring(v1771);
+			table.insert(v751, v1772);
+		end
+	elseif ((type(v24.TakeCards) == v7("\224\68\80\223\241", "\179\148\37\50")) and (#v24.TakeCards > (0 + 0))) then
+		v751 = v24.TakeCards;
+		v24.TakeCardsPriority = {};
+		for v2358, v2359 in ipairs(v751) do
+			table.insert(v24.TakeCardsPriority, {[v7("\213\118\192\59", "\174\187\23\173\94\131\88")]=v2359,[v7("\170\165\168\51\83", "\59\198\204\197\90\39\196\215")]=(((v2359:lower() == v7("\236\185\32\179\74\218", "\114\141\205\84\210\41\177\79")) and (22 - 14)) or (4 + 1))});
+		end
+	else
+		local v2027 = 0 + 0;
+		while true do
+			if (v2027 == 0) then
+				v751 = {v7("\165\41\38\139\39\216", "\99\228\93\82\234\68\179")};
+				v24.TakeCardsPriority = {{[v7("\95\114\33\64", "\180\49\19\76\37\189")]=v7("\50\82\165\184\84\200", "\198\115\38\209\217\55\163"),[v7("\161\88\235\58\31", "\46\205\49\134\83\107")]=(7 + 1)}};
+				break;
+			end
+		end
+	end
+	local v752;
+	v752 = v748:dropdown({[v7("\61\15\222\85", "\162\83\110\179\48\97\131\215")]=v7("\118\183\11\198\243\212\60\234\70\165\64\244\186\227\53", "\152\34\214\96\163\211\151\93"),[v7("\11\6\119\186\11", "\35\124\111\19\206\99\112")]=115,[v7("\83\7\164\216\25", "\137\62\114\200\172\112\22")]=true,[v7("\199\184\58\241\27", "\125\174\204\95\156\104\83\137")]=v736,[v7("\163\43\52\212\61\171\58", "\72\199\78\82\181")]=v751,[v7("\161\212\83\177\36\163\214\84", "\70\194\181\63\221")]=function(v1262)
+		local v1263 = ((type(v1262) == v7("\7\123\49\29\160", "\158\115\26\83\113\197")) and v1262) or (v1262 and {v1262}) or {};
+		v24.TakeCards = v1263;
+		local v1265 = {};
+		for v1621, v1622 in ipairs(v1263) do
+			if (v1622 and (v1622 ~= "") and (v1622 ~= v7("\95\182\206\181", "\117\17\217\160\208"))) then
+				v1265[v1622:lower()] = true;
+			end
+		end
+		local v1266 = v24.TakeCardsPriority or {};
+		local v1267 = {};
+		local v1268 = {};
+		for v1623, v1624 in ipairs(v1266) do
+			local v1625 = ((type(v1624) == v7("\65\217\137\93\205", "\53\53\184\235\49\168")) and v1624.name) or tostring(v1624);
+			if v1265[v1625:lower()] then
+				local v2029 = 0 + 0;
+				while true do
+					if ((0 + 0) == v2029) then
+						table.insert(v1267, v1624);
+						v1268[v1625:lower()] = true;
+						break;
+					end
+				end
+			end
+		end
+		for v1626, v1627 in ipairs(v1263) do
+			if (v1627 and (v1627 ~= "") and (v1627 ~= v7("\249\250\231\177", "\212\183\149\137"))) then
+				if not v1268[v1627:lower()] then
+					local v2674 = ((v1627:lower() == v7("\163\151\72\11\161\136", "\106\194\227\60")) and (4 + 4)) or (1224 - (1130 + 89));
+					table.insert(v1267, {[v7("\46\71\18\129", "\228\64\38\127")]=v1627,[v7("\173\117\86\249\152", "\74\193\28\59\144\236\36\71")]=v2674});
+					v1268[v1627:lower()] = true;
+				end
+			end
+		end
+		v24.TakeCardsPriority = v1267;
+		if (v25.TakePriorityUI and v25.TakePriorityUI.refresh) then
+			v25.TakePriorityUI.refresh();
+		end
+		v29();
+	end});
+	v25.TakePriorityUI = v749(v750, v7("\56\170\228\70\23\60\185\230\76\69\5\191\246", "\55\108\203\143\35"), v7("\192\228\216\231\151\165\230\225\192\210\166\173\251\247\218\246\173", "\196\148\133\179\130\212"), function()
+		return v752;
+	end, function()
+		v29();
+	end);
+	local v754 = {};
+	if ((type(v24.AvoidCardsPriority) == v7("\69\119\113\50\45", "\126\49\22\19\94\72\233\227")) and (#v24.AvoidCardsPriority > 0)) then
+		for v1773, v1774 in ipairs(v24.AvoidCardsPriority) do
+			local v1775 = ((type(v1774) == v7("\144\54\186\136\186", "\185\228\87\216\228\223")) and v1774.name) or tostring(v1774);
+			table.insert(v754, v1775);
+		end
+	elseif ((type(v24.AvoidCards) == v7("\78\161\29\36\7", "\39\58\192\127\72\98\179\141")) and (#v24.AvoidCards > (0 + 0))) then
+		v754 = v24.AvoidCards;
+		v24.AvoidCardsPriority = {};
+		for v2360, v2361 in ipairs(v754) do
+			table.insert(v24.AvoidCardsPriority, {[v7("\192\94\13\205", "\208\174\63\96\168")]=v2361,[v7("\138\4\63\176\158", "\234\230\109\82\217")]=(1761 - (1437 + 324))});
+		end
+	else
+		local v2032 = 0;
+		while true do
+			if (v2032 == (0 + 0)) then
+				v754 = {v7("\219\167\41\224\231\233\30\232\249\172\34", "\141\158\201\76")};
+				v24.AvoidCardsPriority = {{[v7("\206\181\37\93", "\181\160\212\72\56")]=v7("\219\3\237\221\29\243\204\8\239\213\10", "\211\158\109\136\176\100"),[v7("\7\30\210\21\252", "\44\107\119\191\124\136")]=(0 + 0)}};
+				break;
+			end
+		end
+	end
+	local v755;
+	v755 = v748:dropdown({[v7("\219\9\138\58", "\146\181\104\231\95\123\162")]=v7("\201\252\138\215\236\170\166\223\250\238\150\158\223\227\145\214", "\190\136\138\229"),[v7("\236\75\194\147\166", "\206\155\34\166\231")]=(365 - 250),[v7("\52\197\38\178\35", "\58\89\176\74\198\74\145")]=true,[v7("\20\216\222\92\34", "\54\125\172\187\49\81\127\195")]=v737,[v7("\190\178\205\177\184\162\167", "\72\218\215\171\208\205\206\211")]=v754,[v7("\82\211\18\53\220\164\161\211", "\184\49\178\126\89\190\197\194")]=function(v1270)
+		local v1271 = ((type(v1270) == v7("\164\27\237\193\20", "\113\208\122\143\173")) and v1270) or (v1270 and {v1270}) or {};
+		v24.AvoidCards = v1271;
+		local v1273 = {};
+		for v1628, v1629 in ipairs(v1271) do
+			if (v1629 and (v1629 ~= "") and (v1629 ~= v7("\53\233\76\223", "\161\123\134\34\186\104\164"))) then
+				v1273[v1629:lower()] = true;
+			end
+		end
+		local v1274 = v24.AvoidCardsPriority or {};
+		local v1275 = {};
+		local v1276 = {};
+		for v1630, v1631 in ipairs(v1274) do
+			local v1632 = 0 - 0;
+			local v1633;
+			while true do
+				if (v1632 == 0) then
+					v1633 = ((type(v1631) == v7("\239\169\219\115\143", "\27\155\200\185\31\234\87")) and v1631.name) or tostring(v1631);
+					if v1273[v1633:lower()] then
+						local v2850 = 962 - (105 + 857);
+						while true do
+							if (v2850 == (925 - (859 + 66))) then
+								table.insert(v1275, v1631);
+								v1276[v1633:lower()] = true;
+								break;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+		for v1634, v1635 in ipairs(v1271) do
+			if (v1635 and (v1635 ~= "") and (v1635 ~= v7("\43\166\17\21", "\207\101\201\127\112\37"))) then
+				if not v1276[v1635:lower()] then
+					local v2676 = 0 - 0;
+					while true do
+						if (v2676 == 0) then
+							table.insert(v1275, {[v7("\178\133\48\132", "\52\220\228\93\225\30\224")]=v1635,[v7("\81\66\116\12\35", "\166\61\43\25\101\87")]=0});
+							v1276[v1635:lower()] = true;
+							break;
+						end
+					end
+				end
+			end
+		end
+		v24.AvoidCardsPriority = v1275;
+		if (v25.AvoidPriorityUI and v25.AvoidPriorityUI.refresh) then
+			v25.AvoidPriorityUI.refresh();
+		end
+		v29();
+	end});
+	v25.AvoidPriorityUI = v749(v750, v7("\211\82\3\207\180\94\120\224\77\3\212\185\10\81", "\40\146\36\108\166\208\126"), v7("\132\99\137\220\161\86\135\199\161\102\182\199\172\122\148\220\177\108", "\181\197\21\230"), function()
+		return v755;
+	end, function()
+		v29();
+	end);
+	local v757 = v748:label({[v7("\218\92\54\65", "\36\180\61\91")]=v7("\39\69\161\117\196\226\33\70\182\105\213\172\1\74\228\89\223\172\23\64\254\59\200\243\76\3\244\59\152\233\82\22\237", "\194\98\51\196\27\176")});
+	task.spawn(function()
+		while task.wait(8 - 5) do
+			pcall(function()
+				local v1776 = 0 - 0;
+				local v1777;
+				local v1778;
+				while true do
+					if (v1776 == 0) then
+						v1777 = v7("\95\0\162\209\208\192\0\12\1\169\200", "\40\39\49\140\225\224\224");
+						v1778 = getgenv().XT_AnimeAdventures;
+						v1776 = 1 + 0;
+					end
+					if (v1776 == (1 + 0)) then
+						if (v1778 and v1778.UI and v1778.UI.Values and v1778.UI.Values[v7("\9\48\15\77\56\5\31\81\62\35\4\64\53\4\5\77\57\53", "\35\76\70\106")]) then
+							v1777 = tostring(v1778.UI.Values[v7("\134\213\178\2\183\224\162\30\177\198\185\15\186\225\184\2\182\208", "\108\195\163\215")]);
+						else
+							local v2967 = 0;
+							local v2968;
+							local v2969;
+							while true do
+								if (v2967 == (0 + 0)) then
+									local v3315 = 0 - 0;
+									while true do
+										if (v3315 == (0 - 0)) then
+											v2968 = v17:FindFirstChild(v7("\139\74\129\23\227\169\97\149\7", "\134\219\38\224\110"));
+											v2969 = v2968 and v2968:FindFirstChild(v7("\249\26\253\135\212\55\241\136\210\50\254\132\247", "\237\190\123\144\226\152\82\135")) and v2968.GameLevelInfo:FindFirstChild(v7("\193\208\46\1\233\255\222", "\182\141\185\93\117")) and v2968.GameLevelInfo.List_rg:FindFirstChild(v7("\74\173\181\163\12", "\210\35\195\219\198\126\193\88")) and v2968.GameLevelInfo.List_rg.inner:FindFirstChild(v7("\222\41\228\130\193\38", "\237\173\74\150")) and v2968.GameLevelInfo.List_rg.inner.scroll:FindFirstChild(v7("\207\67\193\89\255", "\195\141\54\167\63\140")) and v2968.GameLevelInfo.List_rg.inner.scroll.Buffs:FindFirstChild(v7("\41\83\31\26\50\88\14\20\18\89", "\117\96\61\121"));
+											v3315 = 1;
+										end
+										if (v3315 == (3 - 2)) then
+											v2967 = 2 - 1;
 											break;
 										end
 									end
-									break;
 								end
-							end
-						end);
-						v2630.MouseButton1Click:Connect(function()
-							if (v2656 > (1 + 0)) then
-								local v3017 = 0;
-								local v3018;
-								while true do
-									if (v3017 == 1) then
-										v44[v1174][v2656 - 1] = v3018;
-										v1231();
-										v3017 = 1 + 1;
-									end
-									if (v3017 == 2) then
-										if v1176 then
-											v1176();
-										end
-										break;
-									end
-									if (v3017 == (0 - 0)) then
-										v3018 = v44[v1174][v2656];
-										v44[v1174][v2656] = v44[v1174][v2656 - 1];
-										v3017 = 253 - (106 + 146);
-									end
-								end
-							end
-						end);
-						v2646.MouseButton1Click:Connect(function()
-							if (v2656 < #v44[v1174]) then
-								local v3019 = 0 - 0;
-								local v3020;
-								while true do
-									if (v3019 == (3 - 1)) then
-										if v1176 then
-											v1176();
-										end
-										break;
-									end
-									if (v3019 == (0 + 0)) then
-										v3020 = v44[v1174][v2656];
-										v44[v1174][v2656] = v44[v1174][v2656 + (3 - 2)];
-										v3019 = 1;
-									end
-									if ((1019 - (75 + 943)) == v3019) then
-										v44[v1174][v2656 + (1064 - (972 + 91))] = v3020;
-										v1231();
-										v3019 = 6 - 4;
-									end
-								end
-							end
-						end);
-						v2518.MouseButton2Click:Connect(function()
-							table.remove(v44[v1174], v2656);
-							v1231();
-							if v1176 then
-								v1176();
-							end
-							local v2814 = v1175 and v1175();
-							if (v2814 and v2814.set and v2814.multi_items) then
-								local v3021 = {};
-								for v3147, v3148 in ipairs(v44[v1174]) do
-									table.insert(v3021, v3148.name);
-								end
-								v2814.multi_items = v3021;
-								v2814.set(v3021);
-							end
-						end);
-					end
-					break;
-				end
-			end
-		end
-		v1231();
-		return {[v7("\123\112\33\59\226\249\172\125\109", "\194\24\31\79\79\131\144")]=v1177,[v7("\91\168\34\27\81\27\73", "\178\41\205\68\105\52\104\33")]=v1231};
-	end
-	local v752 = v750.items and v750.items[v7("\207\68\34\142\253\197\45\94", "\45\170\40\71\227\152\171\89")];
-	local v753 = {};
-	if ((type(v44.TakeCardsPriority) == v7("\27\196\136\239\51", "\21\111\165\234\131\86")) and (#v44.TakeCardsPriority > 0)) then
-		for v1711, v1712 in ipairs(v44.TakeCardsPriority) do
-			local v1713 = ((type(v1712) == v7("\35\242\202\170\50", "\198\87\147\168")) and v1712.name) or tostring(v1712);
-			table.insert(v753, v1713);
-		end
-	elseif ((type(v44.TakeCards) == v7("\70\223\57\253\210", "\120\50\190\91\145\183\49")) and (#v44.TakeCards > (0 - 0))) then
-		v753 = v44.TakeCards;
-		v44.TakeCardsPriority = {};
-		for v2373, v2374 in ipairs(v753) do
-			table.insert(v44.TakeCardsPriority, {[v7("\25\199\188\246", "\66\119\166\209\147")]=v2374,[v7("\253\12\160\7\169", "\221\145\101\205\110")]=(((v2374:lower() == v7("\162\10\69\85\128\168", "\227\195\126\49\52")) and (1354 - (918 + 428))) or (1602 - (1099 + 498)))});
-		end
-	else
-		local v2006 = 0;
-		while true do
-			if (v2006 == 0) then
-				v753 = {v7("\199\107\228\171\161\13", "\147\134\31\144\202\194\102")};
-				v44.TakeCardsPriority = {{[v7("\230\57\183\198", "\163\136\88\218")]=v7("\200\93\60\237\172\226", "\207\137\41\72\140"),[v7("\11\89\10\251\4", "\194\103\48\103\146\112\120")]=(5 + 3)}};
-				break;
-			end
-		end
-	end
-	local v754;
-	v754 = v750:dropdown({[v7("\172\194\204\51", "\86\194\163\161")]=v7("\157\85\242\85\128\217\87\187\80\234\16\247\243\66\161", "\54\201\52\153\48\160\154"),[v7("\11\196\1\60\17", "\122\124\173\101\72\121\123\141")]=(1034 - (715 + 204)),[v7("\230\170\4\20\55", "\201\139\223\104\96\94\114\46")]=true,[v7("\11\233\69\63\99", "\47\98\157\32\82\16")]=v738,[v7("\215\227\205\191\146\249\148", "\169\179\134\171\222\231\149\224")]=v753,[v7("\186\17\126\54\135\138\246\51", "\88\217\112\18\90\229\235\149")]=function(v1232)
-		local v1233 = ((type(v1232) == v7("\92\209\38\168\31", "\230\40\176\68\196\122")) and v1232) or (v1232 and {v1232}) or {};
-		v44.TakeCards = v1233;
-		local v1235 = {};
-		for v1556, v1557 in ipairs(v1233) do
-			if (v1557 and (v1557 ~= "") and (v1557 ~= v7("\234\239\41\38", "\122\164\128\71\67\105\57"))) then
-				v1235[v1557:lower()] = true;
-			end
-		end
-		local v1236 = v44.TakeCardsPriority or {};
-		local v1237 = {};
-		local v1238 = {};
-		for v1558, v1559 in ipairs(v1236) do
-			local v1560 = ((type(v1559) == v7("\248\213\128\188\179", "\126\140\180\226\208\214\208")) and v1559.name) or tostring(v1559);
-			if v1235[v1560:lower()] then
-				table.insert(v1237, v1559);
-				v1238[v1560:lower()] = true;
-			end
-		end
-		for v1561, v1562 in ipairs(v1233) do
-			if (v1562 and (v1562 ~= "") and (v1562 ~= v7("\205\119\29\119", "\237\131\24\115\18\44\48\56"))) then
-				if not v1238[v1562:lower()] then
-					local v2657 = 0 + 0;
-					local v2658;
-					while true do
-						if (v2657 == (1 + 0)) then
-							v1238[v1562:lower()] = true;
-							break;
-						end
-						if (v2657 == (663 - (275 + 388))) then
-							v2658 = ((v1562:lower() == v7("\240\46\162\85\116\250", "\23\145\90\214\52")) and (10 - 2)) or (4 + 1);
-							table.insert(v1237, {[v7("\117\136\30\55", "\221\27\233\115\82\37")]=v1562,[v7("\176\217\220\232\207", "\158\220\176\177\129\187\65")]=v2658});
-							v2657 = 1;
-						end
-					end
-				end
-			end
-		end
-		v44.TakeCardsPriority = v1237;
-		if (v55.TakePriorityUI and v55.TakePriorityUI.refresh) then
-			v55.TakePriorityUI.refresh();
-		end
-		v24();
-	end});
-	v55.TakePriorityUI = v751(v752, v7("\192\68\89\214\180\117\64\218\251\87\91\199\237", "\179\148\37\50"), v7("\239\118\198\59\192\57\220\223\100\253\44\234\55\220\210\99\212", "\174\187\23\173\94\131\88"), function()
-		return v754;
-	end, function()
-		v24();
-	end);
-	local v756 = {};
-	if ((type(v44.AvoidCardsPriority) == v7("\178\173\167\54\66", "\59\198\204\197\90\39\196\215")) and (#v44.AvoidCardsPriority > (0 + 0))) then
-		for v1714, v1715 in ipairs(v44.AvoidCardsPriority) do
-			local v1716 = 0 + 0;
-			local v1717;
-			while true do
-				if ((0 - 0) == v1716) then
-					v1717 = ((type(v1715) == v7("\249\172\54\190\76", "\114\141\205\84\210\41\177\79")) and v1715.name) or tostring(v1715);
-					table.insert(v756, v1717);
-					break;
-				end
-			end
-		end
-	elseif ((type(v44.AvoidCards) == v7("\144\60\48\134\33", "\99\228\93\82\234\68\179")) and (#v44.AvoidCards > (0 + 0))) then
-		local v2009 = 0 - 0;
-		while true do
-			if (v2009 == (1 + 0)) then
-				for v2913, v2914 in ipairs(v756) do
-					table.insert(v44.AvoidCardsPriority, {[v7("\95\114\33\64", "\180\49\19\76\37\189")]=v2914,[v7("\31\79\188\176\67", "\198\115\38\209\217\55\163")]=0});
-				end
-				break;
-			end
-			if (v2009 == 0) then
-				v756 = v44.AvoidCards;
-				v44.AvoidCardsPriority = {};
-				v2009 = 1 + 0;
-			end
-		end
-	else
-		local v2010 = 0;
-		local v2011;
-		while true do
-			if (v2010 == (0 + 0)) then
-				v2011 = 0;
-				while true do
-					if ((565 - (5 + 560)) == v2011) then
-						v756 = {v7("\136\95\227\62\18\14\159\84\225\54\5", "\46\205\49\134\83\107")};
-						v44.AvoidCardsPriority = {{[v7("\61\15\222\85", "\162\83\110\179\48\97\131\215")]=v7("\103\184\5\206\170\183\15\253\69\179\14", "\152\34\214\96\163\211\151\93"),[v7("\16\6\126\167\23", "\35\124\111\19\206\99\112")]=(0 + 0)}};
-						break;
-					end
-				end
-				break;
-			end
-		end
-	end
-	local v757;
-	v757 = v750:dropdown({[v7("\80\19\165\201", "\137\62\114\200\172\112\22")]=v7("\239\186\48\245\12\115\202\28\220\168\44\188\63\58\253\21", "\125\174\204\95\156\104\83\137"),[v7("\176\39\54\193\32", "\72\199\78\82\181")]=(2066 - (397 + 1554)),[v7("\175\192\83\169\47", "\70\194\181\63\221")]=true,[v7("\26\110\54\28\182", "\158\115\26\83\113\197")]=v739,[v7("\117\188\198\177\0\125\173", "\117\17\217\160\208")]=v756,[v7("\86\217\135\93\202\84\86\211", "\53\53\184\235\49\168")]=function(v1240)
-		local v1241 = 1257 - (219 + 1038);
-		local v1242;
-		local v1243;
-		local v1244;
-		local v1245;
-		local v1246;
-		while true do
-			if (v1241 == (0 + 0)) then
-				local v2012 = 0;
-				while true do
-					if ((1 + 1) == v2012) then
-						v1241 = 1;
-						break;
-					end
-					if (v2012 == 1) then
-						v1243 = {};
-						for v2915, v2916 in ipairs(v1242) do
-							if (v2916 and (v2916 ~= "") and (v2916 ~= v7("\140\140\82\15", "\106\194\227\60"))) then
-								v1243[v2916:lower()] = true;
-							end
-						end
-						v2012 = 3 - 1;
-					end
-					if (v2012 == 0) then
-						v1242 = ((type(v1240) == v7("\195\244\235\184\210", "\212\183\149\137")) and v1240) or (v1240 and {v1240}) or {};
-						v44.AvoidCards = v1242;
-						v2012 = 1;
-					end
-				end
-			end
-			if ((1 - 0) == v1241) then
-				local v2013 = 0 + 0;
-				while true do
-					if (v2013 == (754 - (404 + 348))) then
-						v1241 = 150 - (99 + 49);
-						break;
-					end
-					if (v2013 == (0 + 0)) then
-						v1244 = v44.AvoidCardsPriority or {};
-						v1245 = {};
-						v2013 = 1970 - (1223 + 746);
-					end
-					if (v2013 == (1 - 0)) then
-						v1246 = {};
-						for v2917, v2918 in ipairs(v1244) do
-							local v2919 = 0;
-							local v2920;
-							while true do
-								if (v2919 == (0 + 0)) then
-									v2920 = ((type(v2918) == v7("\52\71\29\136\37", "\228\64\38\127")) and v2918.name) or tostring(v2918);
-									if v1243[v2920:lower()] then
-										local v3373 = 1361 - (1247 + 114);
-										while true do
-											if ((0 - 0) == v3373) then
-												table.insert(v1245, v2918);
-												v1246[v2920:lower()] = true;
+								if (v2967 == 1) then
+									if (v2969 and v2969.Text and (#v2969.Text > (0 + 0))) then
+										v1777 = v2969.Text:gsub(v7("\70\100\225\32\115\2\64", "\172\24\74\204\26\86\113\106"), "");
+									elseif (v2968 and v2968:FindFirstChild(v7("\7\117\224\23\79", "\200\80\20\150\114\60\117")) and v2968.Waves:FindFirstChild(v7("\8\63\195\122", "\145\69\94\170\20"))) then
+										for v3565, v3566 in ipairs(v2968.Waves.Main:GetDescendants()) do
+											if (v3566:IsA(v7("\51\68\86\163\210\88\5\68\66", "\57\103\33\46\215\158")) and v3566.Text and v3566.Text:find(v7("\238\84\168\235\157\159\179\21\231", "\177\150\113\204\192\184"))) then
+												v1777 = v3566.Text;
 												break;
 											end
 										end
@@ -10942,157 +11576,99 @@ do
 								end
 							end
 						end
-						v2013 = 2;
-					end
-				end
-			end
-			if (v1241 == 2) then
-				for v2375, v2376 in ipairs(v1242) do
-					if (v2376 and (v2376 ~= "") and (v2376 ~= v7("\143\115\85\245", "\74\193\28\59\144\236\36\71"))) then
-						if not v1246[v2376:lower()] then
-							table.insert(v1245, {[v7("\2\170\226\70", "\55\108\203\143\35")]=v2376,[v7("\248\236\222\235\160", "\196\148\133\179\130\212")]=0});
-							v1246[v2376:lower()] = true;
+						if (v757 and v757.items and v757.items[v7("\140\7\171\53", "\80\226\102\198")]) then
+							v757.items[v7("\134\44\92\170", "\207\232\77\49")].Text = v7("\37\218\77\212\20\140\107\207\18\222\77\212\3\213\8\248\15\194\93\201\90\140", "\186\96\172\40") .. v1777;
 						end
+						break;
 					end
-				end
-				v44.AvoidCardsPriority = v1245;
-				if (v55.AvoidPriorityUI and v55.AvoidPriorityUI.refresh) then
-					v55.AvoidPriorityUI.refresh();
-				end
-				v24();
-				break;
-			end
-		end
-	end});
-	v55.AvoidPriorityUI = v751(v752, v7("\112\96\124\55\44\201\179\12\88\121\97\55\60\144", "\126\49\22\19\94\72\233\227"), v7("\165\33\183\141\187\250\133\37\188\151\143\203\141\56\170\141\171\192", "\185\228\87\216\228\223"), function()
-		return v757;
-	end, function()
-		v24();
-	end);
-	local v759 = v750:label({[v7("\84\161\18\45", "\39\58\192\127\72\98\179\141")]=v7("\235\73\5\198\164\142\124\21\218\162\203\81\3\209\240\236\80\14\221\163\148\31\24\153\254\158\15\64\128\251\158\26\73", "\208\174\63\96\168")});
-	task.spawn(function()
-		while task.wait(3 + 0) do
-			pcall(function()
-				local v1718 = v7("\158\92\124\233\218\198\69\121\233\207\207", "\234\230\109\82\217");
-				local v1719 = getgenv().XT_AnimeAdventures;
-				if (v1719 and v1719.UI and v1719.UI.Values and v1719.UI.Values[v7("\219\191\41\227\234\138\57\255\236\172\34\238\231\139\35\227\235\186", "\141\158\201\76")]) then
-					v1718 = tostring(v1719.UI.Values[v7("\229\162\45\86\193\227\161\58\74\208\206\183\49\122\218\206\161\59", "\181\160\212\72\56")]);
-				else
-					local v2377 = 0;
-					local v2378;
-					local v2379;
-					while true do
-						if (v2377 == (0 - 0)) then
-							v2378 = v16:FindFirstChild(v7("\206\1\233\201\1\161\217\24\225", "\211\158\109\136\176\100"));
-							v2379 = v2378 and v2378:FindFirstChild(v7("\44\22\210\25\196\73\29\18\211\53\230\74\4", "\44\107\119\191\124\136")) and v2378.GameLevelInfo:FindFirstChild(v7("\249\1\148\43\36\208\245", "\146\181\104\231\95\123\162")) and v2378.GameLevelInfo.List_rg:FindFirstChild(v7("\225\228\139\219\250", "\190\136\138\229")) and v2378.GameLevelInfo.List_rg.inner:FindFirstChild(v7("\232\65\212\136\162\247", "\206\155\34\166\231")) and v2378.GameLevelInfo.List_rg.inner.scroll:FindFirstChild(v7("\27\197\44\160\57", "\58\89\176\74\198\74\145")) and v2378.GameLevelInfo.List_rg.inner.scroll.Buffs:FindFirstChild(v7("\52\194\221\94\3\26\180\87\15\200", "\54\125\172\187\49\81\127\195"));
-							v2377 = 2 - 1;
-						end
-						if (v2377 == 1) then
-							if (v2379 and v2379.Text and (#v2379.Text > (0 - 0))) then
-								v1718 = v2379.Text:gsub(v7("\132\249\134\234\232\189\249", "\72\218\215\171\208\205\206\211"), "");
-							elseif (v2378 and v2378:FindFirstChild(v7("\102\211\8\60\205", "\184\49\178\126\89\190\197\194")) and v2378.Waves:FindFirstChild(v7("\157\27\230\195", "\113\208\122\143\173"))) then
-								for v3374, v3375 in ipairs(v2378.Waves.Main:GetDescendants()) do
-									if (v3375:IsA(v7("\47\227\90\206\36\197\195\30\234", "\161\123\134\34\186\104\164")) and v3375.Text and v3375.Text:find(v7("\227\237\221\52\207\121\62\255\227", "\27\155\200\185\31\234\87"))) then
-										v1718 = v3375.Text;
-										break;
-									end
-								end
-							end
-							break;
-						end
-					end
-				end
-				if (v759 and v759.items and v759.items[v7("\11\168\18\21", "\207\101\201\127\112\37")]) then
-					v759.items[v7("\178\133\48\132", "\52\220\228\93\225\30\224")].Text = v7("\120\93\124\11\35\134\126\94\107\23\50\200\94\82\57\39\56\200\72\88\35\69", "\166\61\43\25\101\87") .. v1718;
 				end
 			end);
 		end
 	end);
-	local v760 = v749:section({[v7("\252\69\1\195", "\40\146\36\108\166\208\126")]=v7("\145\103\135\195\160\121\143\219\162\53\171\208\183\118\142\212\171\97", "\181\197\21\230"),[v7("\221\94\52\74", "\36\180\61\91")]=v7("\16\81\188\122\195\177\7\71\173\127\138\237\77\4\244\44\130\245\80\2\253\43\132", "\194\98\51\196\27\176"),[v7("\67\84\234\128\149\140\92", "\40\39\49\140\225\224\224")]=true,[v7("\63\47\16\70", "\35\76\70\106")]=(1939.58 - (291 + 1648))});
-	v760:toggle({[v7("\173\194\186\9", "\108\195\163\215")]=v7("\154\83\148\1\166\153\83\153\78\210\169\71\150\11\234\178\72\135\78\203\190\84\131\6\231\181\82", "\134\219\38\224\110"),[v7("\218\30\246\131\237\62\243", "\237\190\123\144\226\152\82\135")]=v44.AutoBuyMerchant,[v7("\238\216\49\25\212\236\218\54", "\182\141\185\93\117")]=function(v1247)
-		v44.AutoBuyMerchant = v1247;
+	local v758 = v747:section({[v7("\69\47\202\28", "\229\43\78\167\121\33\117")]=v7("\220\203\34\81\194\253\209\86\239\153\14\66\213\242\208\89\230\205", "\56\136\185\67\39\167\145\184"),[v7("\14\127\243\162", "\113\103\28\156\204\133\125")]=v7("\171\39\105\240\170\54\116\229\176\33\43\190\246\114\33\166\235\114\35\160\224\117\37", "\145\217\69\17"),[v7("\132\49\132\255\243\140\32", "\134\224\84\226\158")]=true,[v7("\91\39\144\173", "\142\40\78\234\200")]=(0.58 - 0)});
+	v758:toggle({[v7("\35\17\246\180", "\62\77\112\155\209\148\142\86")]=v7("\21\105\68\179\116\94\69\165\116\72\66\189\34\121\92\181\58\123\16\145\49\110\83\180\53\114\68", "\220\84\28\48"),[v7("\218\225\176\242\203\232\162", "\147\190\132\214")]=v24.AutoBuyMerchant,[v7("\134\164\125\44\135\164\114\43", "\64\229\197\17")]=function(v1278)
+		v24.AutoBuyMerchant = v1278;
 	end});
-	v760:dropdown({[v7("\77\162\182\163", "\210\35\195\219\198\126\193\88")]=v7("\228\62\243\128\222\106\194\130\141\8\227\148", "\237\173\74\150"),[v7("\250\95\195\75\228", "\195\141\54\167\63\140")]=(294 - 189),[v7("\9\73\28\24\19", "\117\96\61\121")]=v737,[v7("\124\47\170\123\35\29\30", "\172\24\74\204\26\86\113\106")]=(v44.MerchantItem or v7("\17\120\250", "\200\80\20\150\114\60\117")),[v7("\38\63\198\120\243\36\61\193", "\145\69\94\170\20")]=function(v1249)
-		local v1250 = 0 - 0;
+	v758:dropdown({[v7("\92\121\39\92", "\220\50\24\74\57\135\51\106")]=v7("\215\60\120\232\236\190\28\114\165\221\235\49", "\159\158\72\29\133"),[v7("\211\193\34\227\243", "\85\164\168\70\151\155\72")]=105,[v7("\216\201\247\11\183", "\133\177\189\146\102\196\151\20")]=v735,[v7("\242\200\201\234\62\250\217", "\75\150\173\175\139")]=(v24.MerchantItem or v7("\208\213\187", "\44\145\185\215\201")),[v7("\57\209\129\91\172\24\57\219", "\121\90\176\237\55\206")]=function(v1280)
+		local v1281 = 0;
 		while true do
-			if (v1250 == (0 + 0)) then
-				v44.MerchantItem = v1249;
-				v44.MerchantItems = {v1249};
+			if (0 == v1281) then
+				v24.MerchantItem = v1280;
+				v24.MerchantItems = {v1280};
 				break;
 			end
 		end
 	end});
-	v760:slider({[v7("\9\64\67\178", "\57\103\33\46\215\158")]=v7("\221\20\169\176\152\226\227\28\161\165\202\145\198\20\173\178\212\194", "\177\150\113\204\192\184"),[v7("\143\15\168", "\80\226\102\198")]=0,[v7("\133\44\73", "\207\232\77\49")]=(169342 - 119342),[v7("\9\194\92\223\18\218\73\214", "\186\96\172\40")]=100,[v7("\79\43\193\24\84\25\145", "\229\43\78\167\121\33\117")]=(v44.KeepSummerPearls or 0),[v7("\235\216\47\75\197\240\219\83", "\56\136\185\67\39\167\145\184")]=function(v1251)
-		v44.KeepSummerPearls = v1251;
+	v758:slider({[v7("\224\6\86\193", "\77\142\103\59\164\95")]=v7("\34\135\223\227\183\213\28\143\215\246\229\166\57\135\219\225\251\245", "\134\105\226\186\147\151"),[v7("\135\29\168", "\70\234\116\198\237\183\95")]=0,[v7("\161\208\20", "\163\204\177\108\82\28")]=(101494 - 51494),[v7("\250\80\151\120\111\229\95\143", "\29\147\62\227\29")]=100,[v7("\181\15\126\62\111\208\178", "\198\209\106\24\95\26\188")]=(v24.KeepSummerPearls or (0 + 0)),[v7("\142\50\45\189\32\63\255\134", "\156\237\83\65\209\66\94")]=function(v1282)
+		v24.KeepSummerPearls = v1282;
 	end});
-	v760:slider({[v7("\9\125\241\169", "\113\103\28\156\204\133\125")]=v7("\146\32\116\225\249\2\116\252\170", "\145\217\69\17"),[v7("\141\61\140", "\134\224\84\226\158")]=0,[v7("\69\47\146", "\142\40\78\234\200")]=(97644 + 2356),[v7("\36\30\239\180\230\248\55\82", "\62\77\112\155\209\148\142\86")]=(2198 - (1584 + 114)),[v7("\48\121\86\189\33\112\68", "\220\84\28\48")]=(v44.KeepGems or (0 - 0)),[v7("\221\229\186\255\220\229\181\248", "\147\190\132\214")]=function(v1253)
-		v44.KeepGems = v1253;
+	v758:slider({[v7("\86\70\87\213", "\54\56\39\58\176")]=v7("\51\34\121\5\15\27\58\228\11", "\137\120\71\28\117\47\92\95"),[v7("\228\186\3", "\158\137\211\109\40\26")]=0,[v7("\192\240\176", "\157\173\145\200\23\204\109")]=(100665 - (203 + 462)),[v7("\174\118\203\10\181\110\222\3", "\111\199\24\191")]=(776 - 276),[v7("\168\181\115\186\34\121\184", "\21\204\208\21\219\87")]=(v24.KeepGems or (267 - (250 + 17))),[v7("\48\243\240\8\46\16\192\213", "\190\83\146\156\100\76\113\163")]=function(v1284)
+		v24.KeepGems = v1284;
 	end});
-	local v761 = v749:section({[v7("\139\164\124\37", "\64\229\197\17")]=v7("\122\97\40\75\238\87\74\137\92\113\62\74", "\220\50\24\74\57\135\51\106"),[v7("\247\43\114\235", "\159\158\72\29\133")]=v7("\214\202\62\246\232\59\48\208\193\34\173\180\103\98\148\159\116\160\169\121\100\156\144", "\85\164\168\70\151\155\72"),[v7("\213\216\244\7\177\251\96", "\133\177\189\146\102\196\151\20")]=true,[v7("\229\196\213\238", "\75\150\173\175\139")]=(1765.42 - (957 + 808))});
-	local v762 = {v7("\223\214\185\172", "\44\145\185\215\201"),v7("\27\220\129\23\134\0\56\194\132\83", "\121\90\176\237\55\206")};
+	local v759 = v747:section({[v7("\172\36\44\3", "\235\194\69\65\102\137\103")]=v7("\154\211\120\110\242\255\245\135\196\115\104\232", "\213\210\170\26\28\155\155"),[v7("\137\230\208\229", "\139\224\133\191")]=v7("\242\220\95\140\42\89\171\244\215\67\215\118\5\249\176\137\21\218\107\27\255\184\134", "\206\128\190\39\237\89\42"),[v7("\220\14\222\226\4\120\180", "\115\184\107\184\131\113\20\192")]=true,[v7("\9\29\51\72", "\21\122\116\73\45\25")]=(0.42 - 0)});
+	local v760 = {v7("\255\201\139\224", "\214\177\166\229\133\199\89"),v7("\173\65\62\84\97\30\93\160\133\73", "\210\236\45\82\116\41\103\63")};
 	pcall(function()
-		local v1255 = v81();
-		for v1563, v1564 in ipairs(v1255) do
-			if (v1564.isHybrid and not table.find(v762, v1564.name)) then
-				table.insert(v762, v1564.name);
+		local v1286 = 0;
+		local v1287;
+		while true do
+			if (v1286 == 0) then
+				v1287 = v83();
+				for v2362, v2363 in ipairs(v1287) do
+					if (v2363.isHybrid and not table.find(v760, v2363.name)) then
+						table.insert(v760, v2363.name);
+					end
+				end
+				break;
 			end
 		end
 	end);
-	v761:dropdown({[v7("\224\6\86\193", "\77\142\103\59\164\95")]=v7("\38\140\154\212\229\233\28\140\222", "\134\105\226\186\147\151"),[v7("\157\29\162\153\223", "\70\234\116\198\237\183\95")]=105,[v7("\165\197\9\63\111", "\163\204\177\108\82\28")]=v762,[v7("\247\91\133\124\104\255\74", "\29\147\62\227\29")]=(v44.HybridGround or v7("\159\5\118\58", "\198\209\106\24\95\26\188")),[v7("\142\50\45\189\32\63\255\134", "\156\237\83\65\209\66\94")]=function(v1256)
-		v44.HybridGround = v1256;
-		v85();
-		v88();
+	v759:dropdown({[v7("\28\72\34\53", "\162\114\41\79\80")]=v7("\217\58\203\156\105\86\227\58\143", "\57\150\84\235\219\27"),[v7("\199\31\87\75\5", "\109\176\118\51\63")]=(100 + 5),[v7("\90\25\255\3\210", "\161\51\109\154\110")]=v760,[v7("\224\54\214\61\1\191\240", "\211\132\83\176\92\116")]=(v24.HybridGround or v7("\121\251\199\184", "\74\55\148\169\221\91\150")),[v7("\61\33\165\16\60\33\170\23", "\124\94\64\201")]=function(v1288)
+		v24.HybridGround = v1288;
+		v87();
+		v90();
 	end});
-	v761:dropdown({[v7("\86\70\87\213", "\54\56\39\58\176")]=v7("\55\41\60\61\70\48\51", "\137\120\71\28\117\47\92\95"),[v7("\254\186\9\92\114", "\158\137\211\109\40\26")]=(1176 - (435 + 636)),[v7("\196\229\173\122\191", "\157\173\145\200\23\204\109")]=v762,[v7("\163\125\217\14\178\116\203", "\111\199\24\191")]=(v44.HybridHill or v7("\130\191\123\190", "\21\204\208\21\219\87")),[v7("\48\243\240\8\46\16\192\213", "\190\83\146\156\100\76\113\163")]=function(v1258)
-		local v1259 = 0 + 0;
-		while true do
-			if (v1259 == (786 - (342 + 443))) then
-				v88();
-				break;
-			end
-			if (v1259 == 0) then
-				v44.HybridHill = v1258;
-				v85();
-				v1259 = 1;
-			end
-		end
+	v759:dropdown({[v7("\233\238\7\175", "\206\135\143\106\202\80")]=v7("\195\71\101\141\192\210\6", "\42\140\41\69\197\169\190\106"),[v7("\163\143\227\167\188", "\211\212\230\135")]=(199 - 94),[v7("\91\178\114\235\205", "\190\50\198\23\134")]=v760,[v7("\71\81\165\93\203\125\235", "\151\35\52\195\60\190\17\159")]=(v24.HybridHill or v7("\152\187\117\236", "\226\214\212\27\137")),[v7("\125\62\189\40\233\205\125\52", "\172\30\95\209\68\139")]=function(v1290)
+		v24.HybridHill = v1290;
+		v87();
+		v90();
 	end});
 end
-v22:init_config(v147);
-v55.UIInitialized = true;
+v23:init_config(v148);
+v25.UIInitialized = true;
 pcall(function()
-	if (v44.MenuBind and v44.MenuBind.key and (v44.MenuBind.key ~= v7("\140\10\15\35", "\235\194\69\65\102\137\103"))) then
-		local v1565 = v22.config_flags and v22.config_flags[v7("\191\207\116\105\196\249\188\188\206", "\213\210\170\26\28\155\155")];
-		if v1565 then
-			local v2018 = 0;
-			local v2019;
-			while true do
-				if (v2018 == 0) then
-					v2019 = v22:convert_enum(v44.MenuBind.key);
-					v1565({[v7("\141\234\219\238", "\139\224\133\191")]=(v44.MenuBind.mode or v7("\212\209\64\138\53\79", "\206\128\190\39\237\89\42")),[v7("\211\14\193", "\115\184\107\184\131\113\20\192")]=(v2019 or v44.MenuBind.key),[v7("\27\23\61\68\111\112", "\21\122\116\73\45\25")]=(v44.MenuBind.active ~= false)});
-					break;
+	if (v24.MenuBind and v24.MenuBind.key and (v24.MenuBind.key ~= v7("\216\55\6\112", "\53\150\120\72"))) then
+		local v1636 = 0 + 0;
+		local v1637;
+		while true do
+			if (v1636 == (1270 - (506 + 764))) then
+				v1637 = v23.config_flags and v23.config_flags[v7("\114\1\216\22\114\125\13\216\7", "\45\31\100\182\99")];
+				if v1637 then
+					local v2851 = 0 + 0;
+					local v2852;
+					while true do
+						if ((0 + 0) == v2851) then
+							v2852 = v23:convert_enum(v24.MenuBind.key);
+							v1637({[v7("\60\120\12\49", "\120\81\23\104\84")]=(v24.MenuBind.mode or v7("\252\64\122\112\196\74", "\23\168\47\29")),[v7("\123\190\146", "\234\16\219\235")]=(v2852 or v24.MenuBind.key),[v7("\69\21\64\59\61\15", "\34\36\118\52\82\75\106")]=(v24.MenuBind.active ~= false)});
+							break;
+						end
+					end
 				end
+				break;
 			end
 		end
 	end
 end);
 if getgenv().AJ_HUB_AUTOSAVE_THREAD then
-	local v1260 = 0 - 0;
-	while true do
-		if (v1260 == (0 + 0)) then
-			pcall(task.cancel, getgenv().AJ_HUB_AUTOSAVE_THREAD);
-			getgenv().AJ_HUB_AUTOSAVE_THREAD = nil;
-			break;
-		end
-	end
+	pcall(task.cancel, getgenv().AJ_HUB_AUTOSAVE_THREAD);
+	getgenv().AJ_HUB_AUTOSAVE_THREAD = nil;
 end
 getgenv().AJ_HUB_AUTOSAVE_THREAD = task.spawn(function()
 	while true do
-		local v1261 = 0;
+		local v1293 = 0 + 0;
 		while true do
-			if ((0 + 0) == v1261) then
+			if (v1293 == 0) then
 				task.wait(10);
-				v23();
+				v27();
 				break;
 			end
 		end
